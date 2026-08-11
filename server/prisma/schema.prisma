@@ -11,3 +11,41 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+/// Adulto responsable (apoderado/docente) — único rol con credenciales en el MVP.
+model AdultUser {
+  id           String         @id @default(cuid())
+  email        String         @unique
+  passwordHash String
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  consents     Consent[]
+  children     ChildProfile[]
+}
+
+/// Consentimiento explícito de un adulto. Es obligatorio y precede a la
+/// creación de cualquier perfil infantil (ver relación 1-a-1 en ChildProfile).
+model Consent {
+  id           String        @id @default(cuid())
+  adultUserId  String
+  adultUser    AdultUser     @relation(fields: [adultUserId], references: [id])
+  scope        String
+  grantedAt    DateTime      @default(now())
+  revokedAt    DateTime?
+  childProfile ChildProfile?
+}
+
+/// Perfil del estudiante. Datos mínimos: sin diagnósticos ni datos de salud.
+model ChildProfile {
+  id          String    @id @default(cuid())
+  adultUserId String
+  adultUser   AdultUser @relation(fields: [adultUserId], references: [id])
+  consentId   String    @unique
+  consent     Consent   @relation(fields: [consentId], references: [id])
+  displayName String
+  /// MVP v1: fijo en 1° básico. Se guarda el valor real igualmente para no
+  /// tener que migrar el esquema cuando se habiliten otros cursos.
+  grade       Int
+  language    String    @default("es")
+  createdAt   DateTime  @default(now())
+}
