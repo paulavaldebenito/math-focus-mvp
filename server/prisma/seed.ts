@@ -42,59 +42,106 @@ async function main() {
         // oaCode: pendiente de validación curricular — no se inventa.
       },
     });
+    console.log("OK: habilidad de siembra creada.");
+  }
 
+  {
     // Todos los ejercicios de este seed son FICTICIOS (isFictitious: true por
-    // defecto) — sirven para probar el modelo de datos, no son contenido
-    // curricular aprobado.
-    await prisma.exercise.create({
-      data: {
-        mathSkillId: skill.id,
-        prompt: "¿Cuánto es 8 + 5?",
-        procedureNote: "Conteo hacia adelante desde 8, avanzando 5 posiciones: 9, 10, 11, 12, 13.",
-        options: {
-          create: [
-            { label: "13", isCorrect: true },
-            { label: "3", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
-            { label: "12", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
-            { label: "18", isCorrect: false },
-          ],
-        },
+    // defecto) — sirven para probar el modelo de datos y el flujo completo,
+    // no son contenido curricular aprobado. difficultyLevel 1-3 permite que
+    // el motor adaptativo (T4) pida un ejercicio más fácil o más difícil.
+    // Idempotente por ejercicio (no por habilidad): así, si se agregan
+    // ejercicios nuevos a este arreglo, se siembran aunque la habilidad ya
+    // existiera de una corrida anterior.
+    const exercises = [
+      {
+        prompt: "¿Cuánto es 6 + 7?",
+        procedureNote: "Conteo hacia adelante desde 6, avanzando 7 posiciones.",
+        difficultyLevel: 1,
+        options: [
+          { label: "13", isCorrect: true },
+          { label: "1", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "12", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "14", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
       },
-    });
-
-    await prisma.exercise.create({
-      data: {
-        mathSkillId: skill.id,
-        prompt: "Tienes 14 manzanas y regalas 6. ¿Cuántas te quedan?",
-        procedureNote: "Resta: parte de 14 y quita 6 → 14 − 6 = 8.",
-        options: {
-          create: [
-            { label: "8", isCorrect: true },
-            { label: "20", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
-            { label: "6", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
-            { label: "9", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
-          ],
-        },
-      },
-    });
-
-    await prisma.exercise.create({
-      data: {
-        mathSkillId: skill.id,
+      {
         prompt: "¿Cuánto es 20 − 20?",
         procedureNote: "Restar una cantidad de sí misma siempre da 0.",
-        options: {
-          create: [
-            { label: "0", isCorrect: true },
-            { label: "20", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
-            { label: "1", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
-            { label: "40", isCorrect: false },
-          ],
-        },
+        difficultyLevel: 1,
+        options: [
+          { label: "0", isCorrect: true },
+          { label: "20", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "1", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "40", isCorrect: false },
+        ],
       },
-    });
+      {
+        prompt: "¿Cuánto es 8 + 5?",
+        procedureNote: "Conteo hacia adelante desde 8, avanzando 5 posiciones: 9, 10, 11, 12, 13.",
+        difficultyLevel: 2,
+        options: [
+          { label: "13", isCorrect: true },
+          { label: "3", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "12", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "18", isCorrect: false },
+        ],
+      },
+      {
+        prompt: "Tienes 14 manzanas y regalas 6. ¿Cuántas te quedan?",
+        procedureNote: "Resta: parte de 14 y quita 6 → 14 − 6 = 8.",
+        difficultyLevel: 2,
+        options: [
+          { label: "8", isCorrect: true },
+          { label: "20", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "6", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+          { label: "9", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 9 + 9?",
+        procedureNote: "Duplicar 9: 9 + 9 = 18.",
+        difficultyLevel: 2,
+        options: [
+          { label: "18", isCorrect: true },
+          { label: "0", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "17", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "19", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "Tenías 20 lápices y perdiste 15. ¿Cuántos te quedan?",
+        procedureNote: "Resta: 20 − 15 = 5.",
+        difficultyLevel: 3,
+        options: [
+          { label: "5", isCorrect: true },
+          { label: "35", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "4", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "15", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+    ];
 
-    console.log("OK: 3 ejercicios ficticios sembrados con sus alternativas.");
+    let created = 0;
+    for (const ex of exercises) {
+      const exists = await prisma.exercise.findFirst({
+        where: { mathSkillId: skill.id, prompt: ex.prompt },
+      });
+      if (exists) continue;
+
+      await prisma.exercise.create({
+        data: {
+          mathSkillId: skill.id,
+          prompt: ex.prompt,
+          procedureNote: ex.procedureNote,
+          difficultyLevel: ex.difficultyLevel,
+          options: { create: ex.options },
+        },
+      });
+      created += 1;
+    }
+
+    console.log(`OK: ${created} ejercicio(s) ficticio(s) nuevo(s) sembrados (${exercises.length - created} ya existían).`);
   }
 }
 

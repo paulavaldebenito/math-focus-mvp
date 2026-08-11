@@ -94,3 +94,56 @@ sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
 
   res.status(201).json({ isCorrect, action, level: newLevel });
 });
+
+export const nextExerciseRouter = Router({ mergeParams: true });
+
+nextExerciseRouter.get("/", requireAuth, async (req, res) => {
+  const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
+  if (!child) {
+    res.status(404).json({ error: "child_not_found" });
+    return;
+  }
+
+  const sessionId = typeof req.query.sessionId === "string" ? req.query.sessionId : undefined;
+  const currentLevel = await getCurrentLevelForChild(child.id);
+
+  const alreadyAttempted = sessionId
+    ? (await prisma.attempt.findMany({ where: { sessionId }, select: { exerciseId: true } })).map(
+        (a) => a.exerciseId,
+      )
+    : [];
+
+  // Se prioriza el nivel actual del niño; si ya no quedan ejercicios sin
+  // repetir en ese nivel, se amplía a cualquier nivel del mismo curso antes
+  // de repetir uno ya visto en esta sesión.
+  const atLevel = await prisma.exercise.findMany({
+    where: {
+      mathSkill: { grade: child.grade },
+      difficultyLevel: currentLevel,
+      id: { notIn: alreadyAttempted },
+    },
+    include: { options: { select: { id: true, label: true } } },
+  });
+
+  const pool =
+    atLevel.length > 0
+      ? atLevel
+      : await prisma.exercise.findMany({
+          where: { mathSkill: { grade: child.grade }, id: { notIn: alreadyAttempted } },
+          include: { options: { select: { id: true, label: true } } },
+        });
+
+  if (pool.length === 0) {
+    res.status(404).json({ error: "no_exercises_available" });
+    return;
+  }
+
+  const chosen = pool[Math.floor(Math.random() * pool.length)]!;
+
+  res.status(200).json({
+    id: chosen.id,
+    prompt: chosen.prompt,
+    difficultyLevel: chosen.difficultyLevel,
+    options: chosen.options,
+  });
+});
