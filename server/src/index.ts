@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import { authRouter } from "./routes/auth.js";
 import { consentRouter } from "./routes/consent.js";
+import { childrenRouter } from "./routes/children.js";
 import { sessionMiddleware } from "./auth/session.js";
 
 export const app = express();
@@ -14,6 +15,7 @@ app.get("/api/health", (_req, res) => {
 
 app.use("/api/auth", authRouter);
 app.use("/api/consent", consentRouter);
+app.use("/api/children", childrenRouter);
 
 if (process.env.NODE_ENV !== "test") {
   const PORT = process.env.PORT ? Number(process.env.PORT) : 4100;

@@ -19,3 +19,14 @@ export const consentSchema = z.object({
 });
 
 export type ConsentInput = z.infer<typeof consentSchema>;
+
+// MVP v1: sin campo `grade` — el curso queda fijo en el servidor (1° básico).
+// No se acepta desde el cliente para no reabrir por error la cobertura de
+// curso en una versión que debe quedar acotada.
+export const childProfileSchema = z.object({
+  consentId: z.string().min(1),
+  displayName: z.string().trim().min(1).max(60),
+  language: z.enum(["es", "en"]).default("es"),
+});
+
+export type ChildProfileInput = z.infer<typeof childProfileSchema>;
