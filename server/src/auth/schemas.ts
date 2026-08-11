@@ -30,3 +30,18 @@ export const childProfileSchema = z.object({
 });
 
 export type ChildProfileInput = z.infer<typeof childProfileSchema>;
+
+export const initialAssessmentAttemptsSchema = z.object({
+  attempts: z
+    .array(
+      z.object({
+        exerciseId: z.string().min(1),
+        selectedOptionId: z.string().min(1),
+        responseTimeMs: z.number().int().positive().optional(),
+      }),
+    )
+    .min(3, "La evaluación inicial requiere al menos 3 respuestas.")
+    .max(5, "La evaluación inicial no debe exceder 5 preguntas."),
+});
+
+export type InitialAssessmentAttemptsInput = z.infer<typeof initialAssessmentAttemptsSchema>;
