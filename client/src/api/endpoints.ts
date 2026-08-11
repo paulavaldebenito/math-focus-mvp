@@ -34,6 +34,11 @@ export function createChild(consentId: string, displayName: string) {
   return api.post<ChildProfile>("/api/children", { consentId, displayName });
 }
 
+export async function listChildren(): Promise<ChildProfile[]> {
+  const { children } = await api.get<{ children: ChildProfile[] }>("/api/children");
+  return children;
+}
+
 export function getInitialAssessment(childId: string) {
   return api.get<InitialAssessmentResponse>(`/api/children/${childId}/initial-assessment`);
 }
