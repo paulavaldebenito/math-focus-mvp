@@ -37,17 +37,19 @@ model Consent {
 
 /// Perfil del estudiante. Datos mínimos: sin diagnósticos ni datos de salud.
 model ChildProfile {
-  id          String    @id @default(cuid())
-  adultUserId String
-  adultUser   AdultUser @relation(fields: [adultUserId], references: [id])
-  consentId   String    @unique
-  consent     Consent   @relation(fields: [consentId], references: [id])
-  displayName String
+  id                String             @id @default(cuid())
+  adultUserId       String
+  adultUser         AdultUser          @relation(fields: [adultUserId], references: [id])
+  consentId         String             @unique
+  consent           Consent            @relation(fields: [consentId], references: [id])
+  displayName       String
   /// MVP v1: fijo en 1° básico. Se guarda el valor real igualmente para no
   /// tener que migrar el esquema cuando se habiliten otros cursos.
-  grade       Int
-  language    String    @default("es")
-  createdAt   DateTime  @default(now())
+  grade             Int
+  language          String             @default("es")
+  createdAt         DateTime           @default(now())
+  sessions          Session[]
+  progressSnapshots ProgressSnapshot[]
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -59,6 +61,7 @@ model ErrorType {
   label       String
   description String
   options     ExerciseOption[]
+  attempts    Attempt[]
 }
 
 /// Habilidad matemática. MVP v1: fija en 1° básico, eje Números y operaciones.
@@ -87,6 +90,7 @@ model Exercise {
   isFictitious  Boolean          @default(true)
   createdAt     DateTime         @default(now())
   options       ExerciseOption[]
+  attempts      Attempt[]
 }
 
 /// Alternativa de un ejercicio. Si es incorrecta, puede señalar qué patrón
@@ -100,4 +104,85 @@ model ExerciseOption {
   isCorrect   Boolean
   errorTypeId String?
   errorType   ErrorType? @relation(fields: [errorTypeId], references: [id])
+  attempts    Attempt[]
+}
+
+/// Una práctica corta (5-10 min) de un niño. Contenedor de intentos, pausas
+/// y decisiones adaptativas.
+model Session {
+  id                String             @id @default(cuid())
+  childProfileId    String
+  childProfile      ChildProfile       @relation(fields: [childProfileId], references: [id])
+  startedAt         DateTime           @default(now())
+  endedAt           DateTime?
+  attempts          Attempt[]
+  pauseEvents       PauseEvent[]
+  adaptiveDecisions AdaptiveDecision[]
+}
+
+/// Un intento de respuesta a un ejercicio dentro de una sesión.
+/// `responseTimeMs` registra el patrón observable "respuesta excesivamente
+/// rápida" sin interpretarlo como impulsividad ni déficit atencional.
+model Attempt {
+  id               String          @id @default(cuid())
+  sessionId        String
+  session          Session         @relation(fields: [sessionId], references: [id])
+  exerciseId       String
+  exercise         Exercise        @relation(fields: [exerciseId], references: [id])
+  selectedOptionId String?
+  selectedOption   ExerciseOption? @relation(fields: [selectedOptionId], references: [id])
+  isCorrect        Boolean
+  errorTypeId      String?
+  errorType        ErrorType?      @relation(fields: [errorTypeId], references: [id])
+  responseTimeMs   Int?
+  attemptNumber    Int             @default(1)
+  createdAt        DateTime        @default(now())
+  hints            Hint[]
+}
+
+/// Pista mostrada durante un intento. Progresiva: `level` 1, 2, 3…
+model Hint {
+  id        String   @id @default(cuid())
+  attemptId String
+  attempt   Attempt  @relation(fields: [attemptId], references: [id])
+  level     Int
+  text      String
+  shownAt   DateTime @default(now())
+}
+
+/// Pausa activa ofrecida durante una sesión. Siempre opcional — `accepted`
+/// puede ser falso, la app nunca bloquea ni castiga por rechazarla.
+model PauseEvent {
+  id         String   @id @default(cuid())
+  sessionId  String
+  session    Session  @relation(fields: [sessionId], references: [id])
+  kind       String
+  offeredAt  DateTime @default(now())
+  accepted   Boolean  @default(true)
+  durationMs Int?
+}
+
+/// Registro auditable de cada cambio de dificultad. `ruleCode` identifica
+/// la regla determinista aplicada (nunca una decisión opaca de IA).
+model AdaptiveDecision {
+  id            String   @id @default(cuid())
+  sessionId     String
+  session       Session  @relation(fields: [sessionId], references: [id])
+  ruleCode      String
+  reason        String
+  previousLevel Int
+  newLevel      Int
+  createdAt     DateTime @default(now())
+}
+
+/// Fotografía de progreso personal — nunca comparado con otros estudiantes.
+model ProgressSnapshot {
+  id                 String       @id @default(cuid())
+  childProfileId     String
+  childProfile       ChildProfile @relation(fields: [childProfileId], references: [id])
+  periodStart        DateTime
+  periodEnd          DateTime
+  exercisesCompleted Int
+  accuracyRate       Float
+  createdAt          DateTime     @default(now())
 }
