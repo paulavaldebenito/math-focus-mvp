@@ -136,6 +136,9 @@ model Attempt {
   errorType        ErrorType?      @relation(fields: [errorTypeId], references: [id])
   responseTimeMs   Int?
   attemptNumber    Int             @default(1)
+  /// Cantidad de pistas usadas en este intento — insumo directo del motor
+  /// adaptativo (regla "uso repetido de pistas").
+  hintsUsed        Int             @default(0)
   createdAt        DateTime        @default(now())
   hints            Hint[]
 }
