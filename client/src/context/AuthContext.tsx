@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import * as endpoints from "../api/endpoints.js";
 import type { AdultUser } from "../api/types.js";
 import { AuthReactContext } from "./useAuth.js";
@@ -6,8 +6,12 @@ import { AuthReactContext } from "./useAuth.js";
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [adult, setAdult] = useState<AdultUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const started = useRef(false);
 
   useEffect(() => {
+    if (started.current) return;
+    started.current = true;
+
     endpoints
       .me()
       .then(setAdult)

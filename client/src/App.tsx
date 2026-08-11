@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import { AuthProvider } from "./context/AuthContext.js";
 import { useAuth } from "./context/useAuth.js";
@@ -20,8 +20,12 @@ function Onboarding({
 }) {
   const [step, setStep] = useState<OnboardingStep>("loading-children");
   const [consentId, setConsentId] = useState<string | null>(null);
+  const started = useRef(false);
 
   useEffect(() => {
+    if (started.current) return;
+    started.current = true;
+
     endpoints
       .listChildren()
       .then((children) => {

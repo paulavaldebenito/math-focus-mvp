@@ -30,8 +30,15 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   const [answeredCount, setAnsweredCount] = useState(0);
   const [level, setLevel] = useState(startingLevel);
   const questionShownAt = useRef<number>(Date.now());
+  const sessionStarted = useRef(false);
 
   useEffect(() => {
+    // Guardia contra doble invocación (React StrictMode en desarrollo, o un
+    // remount rápido): sin esto, se crea una Session duplicada en el
+    // servidor por cada montaje adicional del componente.
+    if (sessionStarted.current) return;
+    sessionStarted.current = true;
+
     endpoints
       .startSession(childId)
       .then(({ sessionId: id, currentLevel }) => {

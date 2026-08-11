@@ -15,8 +15,12 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const questionShownAt = useRef<number>(Date.now());
+  const started = useRef(false);
 
   useEffect(() => {
+    if (started.current) return;
+    started.current = true;
+
     endpoints
       .getInitialAssessment(childId)
       .then((res) => setExercises(res.exercises))
