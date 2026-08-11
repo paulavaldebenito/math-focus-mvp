@@ -8,7 +8,8 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "oxlint"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.1",
@@ -25,6 +26,7 @@
     "@types/express": "^5.0.5",
     "@types/express-session": "^1.19.0",
     "@types/node": "^24.10.1",
+    "oxlint": "^1.78.0",
     "tsx": "^4.19.2",
     "typescript": "^5.9.3",
     "vitest": "^4.1.10"

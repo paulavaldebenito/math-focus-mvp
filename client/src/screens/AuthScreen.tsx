@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { useAuth } from "../context/AuthContext.js";
+import { useAuth } from "../context/useAuth.js";
 import { ApiError } from "../api/client.js";
 
 function errorMessage(err: unknown, mode: "login" | "register"): string {

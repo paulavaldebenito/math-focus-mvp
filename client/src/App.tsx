@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { AuthProvider, useAuth } from "./context/AuthContext.js";
+import { AuthProvider } from "./context/AuthContext.js";
+import { useAuth } from "./context/useAuth.js";
 import { AuthScreen } from "./screens/AuthScreen.js";
 import { ConsentScreen } from "./screens/ConsentScreen.js";
 import { CreateChildScreen } from "./screens/CreateChildScreen.js";

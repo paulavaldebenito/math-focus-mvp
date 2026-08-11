@@ -1,17 +1,7 @@
-import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
 import * as endpoints from "../api/endpoints.js";
-import { ApiError } from "../api/client.js";
 import type { AdultUser } from "../api/types.js";
-
-interface AuthContextValue {
-  adult: AdultUser | null;
-  loading: boolean;
-  login: (email: string, password: string) => Promise<void>;
-  register: (email: string, password: string) => Promise<void>;
-  logout: () => Promise<void>;
-}
-
-const AuthContext = createContext<AuthContextValue | null>(null);
+import { AuthReactContext } from "./useAuth.js";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [adult, setAdult] = useState<AdultUser | null>(null);
@@ -42,16 +32,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ adult, loading, login, register, logout }}>
+    <AuthReactContext.Provider value={{ adult, loading, login, register, logout }}>
       {children}
-    </AuthContext.Provider>
+    </AuthReactContext.Provider>
   );
 }
-
-export function useAuth(): AuthContextValue {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error("useAuth debe usarse dentro de <AuthProvider>");
-  return ctx;
-}
-
-export { ApiError };
