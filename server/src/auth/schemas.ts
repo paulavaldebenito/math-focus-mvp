@@ -13,3 +13,9 @@ export const loginSchema = z.object({
 });
 
 export type LoginInput = z.infer<typeof loginSchema>;
+
+export const consentSchema = z.object({
+  scope: z.string().trim().min(10, "Describe brevemente qué se consiente (mínimo 10 caracteres)."),
+});
+
+export type ConsentInput = z.infer<typeof consentSchema>;
