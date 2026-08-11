@@ -1,9 +1,11 @@
 import "dotenv/config";
 import express from "express";
 import { authRouter } from "./routes/auth.js";
+import { sessionMiddleware } from "./auth/session.js";
 
 export const app = express();
 app.use(express.json());
+app.use(sessionMiddleware);
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true });
