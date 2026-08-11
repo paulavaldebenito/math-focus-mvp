@@ -59,3 +59,14 @@ export interface AttemptResult {
   action: AdaptiveAction;
   level: number;
 }
+
+export interface ProgressResponse {
+  child: { id: string; displayName: string; grade: number };
+  currentLevel: number;
+  totalSessions: number;
+  lastSessionAt: string | null;
+  totalAttempts: number;
+  correctAttempts: number;
+  accuracy: number | null;
+  errorBreakdown: Record<string, number>;
+}

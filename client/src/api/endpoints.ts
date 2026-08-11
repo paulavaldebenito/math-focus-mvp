@@ -7,6 +7,7 @@ import type {
   ExercisePublic,
   InitialAssessmentResponse,
   InitialAssessmentResult,
+  ProgressResponse,
   StartSessionResponse,
 } from "./types.js";
 
@@ -82,4 +83,8 @@ export interface PauseEventInput {
 
 export function submitPauseEvent(sessionId: string, input: PauseEventInput) {
   return api.post<{ id: string; accepted: boolean }>(`/api/sessions/${sessionId}/pause-events`, input);
+}
+
+export function getProgress(childId: string) {
+  return api.get<ProgressResponse>(`/api/children/${childId}/progress`);
 }

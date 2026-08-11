@@ -6,6 +6,7 @@ import { ConsentScreen } from "./screens/ConsentScreen.js";
 import { CreateChildScreen } from "./screens/CreateChildScreen.js";
 import { InitialAssessmentScreen } from "./screens/InitialAssessmentScreen.js";
 import { PracticeScreen } from "./screens/PracticeScreen.js";
+import { FamilyDashboardScreen } from "./screens/FamilyDashboardScreen.js";
 import * as endpoints from "./api/endpoints.js";
 import type { ChildProfile } from "./api/types.js";
 
@@ -59,7 +60,7 @@ function Onboarding({
   return null;
 }
 
-type Stage = "assessment" | "practice" | "session-done";
+type Stage = "assessment" | "practice" | "session-done" | "dashboard";
 
 function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boolean }) {
   const [stage, setStage] = useState<Stage>(isNewChild ? "assessment" : "practice");
@@ -79,12 +80,19 @@ function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boo
     );
   }
 
+  if (stage === "dashboard") {
+    return <FamilyDashboardScreen childId={child.id} onBack={() => setStage("session-done")} />;
+  }
+
   return (
     <main className="screen">
       <h1>Math Focus</h1>
       <p>Perfil: {child.displayName}.</p>
       <button className="btn-primary" type="button" onClick={() => setStage("practice")}>
         Practicar de nuevo
+      </button>
+      <button className="btn-secondary" type="button" onClick={() => setStage("dashboard")}>
+        Ver progreso
       </button>
       <button className="btn-secondary" type="button" onClick={() => void logout()}>
         Cerrar sesión
