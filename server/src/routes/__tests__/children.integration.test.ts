@@ -100,4 +100,19 @@ describe("POST /api/children (HU3)", () => {
     });
     expect(res.status).toBe(409);
   });
+
+  it("GET /api/children solo lista los hijos del adulto autenticado", async () => {
+    const resA = await fetch(`${baseUrl}/api/children`, { headers: { Cookie: cookieA } });
+    const bodyA = (await resA.json()) as { children: Array<{ id: string }> };
+    expect(bodyA.children.some((c) => createdChildIds.includes(c.id))).toBe(true);
+
+    const resB = await fetch(`${baseUrl}/api/children`, { headers: { Cookie: cookieB } });
+    const bodyB = (await resB.json()) as { children: Array<{ id: string }> };
+    expect(bodyB.children.some((c) => createdChildIds.includes(c.id))).toBe(false);
+  });
+
+  it("GET /api/children rechaza sin sesión (401)", async () => {
+    const res = await fetch(`${baseUrl}/api/children`);
+    expect(res.status).toBe(401);
+  });
 });

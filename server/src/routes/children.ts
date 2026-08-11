@@ -8,6 +8,15 @@ const MVP_GRADE = 1;
 
 export const childrenRouter = Router();
 
+childrenRouter.get("/", requireAuth, async (req, res) => {
+  const children = await prisma.childProfile.findMany({
+    where: { adultUserId: req.session.adultUserId! },
+    orderBy: { createdAt: "asc" },
+    select: { id: true, displayName: true, grade: true, language: true },
+  });
+  res.status(200).json({ children });
+});
+
 childrenRouter.post("/", requireAuth, async (req, res) => {
   const parsed = childProfileSchema.safeParse(req.body);
   if (!parsed.success) {
