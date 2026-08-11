@@ -1,0 +1,22 @@
+# Math Focus — MVP regulado
+
+MVP de "Math Focus" construido bajo un proceso por fases (diagnóstico → definición → plan → implementación → verificación), con reglas estrictas contra alucinaciones y foco en seguridad/privacidad infantil.
+
+**Relación con `math-focus-app/`** (carpeta hermana): ese proyecto es un prototipo anterior (React+JS, sin autenticación, SQLite) que se conserva **solo como referencia visual/UX** — patrones de pausas, pistas y contenido pictórico ya validados ahí guían el diseño de este MVP, pero el código no se reutiliza directamente.
+
+## Alcance del MVP v1 (aprobado)
+
+- Nivel escolar: 1° básico.
+- Eje: Números y operaciones (conteo 0–20, adición y sustracción dentro de 20).
+- Registro de adulto responsable + consentimiento explícito, obligatorios antes de crear cualquier perfil infantil.
+- Motor adaptativo determinista y auditable (reglas explícitas, cada decisión con motivo persistido).
+- Sin ranking entre estudiantes, sin lenguaje clínico/diagnóstico.
+
+## Stack
+
+- Cliente: `client/` — React + TypeScript (Vite).
+- Servidor: `server/` — Node + TypeScript + Express. Base de datos PostgreSQL vía Prisma (pendiente: T0.2).
+
+## Estado
+
+Ver historial de commits y el plan de tareas (T0.x–T6.x) acordado en la fase de planificación. Ningún dato de Objetivo de Aprendizaje curricular está codificado sin marcar su origen; cualquier código de OA queda como "pendiente de validación curricular" hasta contar con la fuente oficial de MINEDUC.
