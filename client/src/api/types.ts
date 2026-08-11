@@ -26,6 +26,8 @@ export interface ExercisePublic {
   prompt: string;
   difficultyLevel?: number;
   options: ExerciseOptionPublic[];
+  /** Solo presente en /next-exercise. Se muestra únicamente si el niño pide una pista. */
+  procedureNote?: string;
 }
 
 export interface InitialAssessmentResponse {

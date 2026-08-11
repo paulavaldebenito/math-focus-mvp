@@ -73,3 +73,13 @@ export interface SubmitAttemptInput {
 export function submitAttempt(sessionId: string, input: SubmitAttemptInput) {
   return api.post<AttemptResult>(`/api/sessions/${sessionId}/attempts`, input);
 }
+
+export interface PauseEventInput {
+  kind: "respiracion" | "movimiento";
+  accepted: boolean;
+  durationMs?: number;
+}
+
+export function submitPauseEvent(sessionId: string, input: PauseEventInput) {
+  return api.post<{ id: string; accepted: boolean }>(`/api/sessions/${sessionId}/pause-events`, input);
+}

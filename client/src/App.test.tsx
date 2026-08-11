@@ -9,6 +9,9 @@ const mocks = vi.hoisted(() => ({
   listChildren: vi.fn(),
   createConsent: vi.fn(),
   createChild: vi.fn(),
+  getInitialAssessment: vi.fn(),
+  startSession: vi.fn(),
+  getNextExercise: vi.fn(),
 }));
 
 vi.mock("./api/endpoints.js", () => mocks);
@@ -28,6 +31,9 @@ describe("App", () => {
     mocks.listChildren.mockResolvedValue([]);
     mocks.createConsent.mockResolvedValue({ id: "consent-1", scope: "x", grantedAt: "now" });
     mocks.createChild.mockResolvedValue({ id: "child-1", displayName: "Ana", grade: 1, language: "es" });
+    mocks.getInitialAssessment.mockResolvedValue({
+      exercises: [{ id: "ex1", prompt: "¿Cuánto es 6 + 7?", options: [{ id: "a1", label: "13" }] }],
+    });
 
     render(<App />);
     const user = userEvent.setup();
@@ -45,6 +51,19 @@ describe("App", () => {
     await user.type(screen.getByLabelText("Nombre"), "Ana");
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
-    expect(await screen.findByTestId("child-ready-marker")).toHaveTextContent("Ana");
+    // Un perfil recién creado entra directo a la evaluación inicial.
+    expect(await screen.findByText("¿Cuánto es 6 + 7?")).toBeInTheDocument();
+  });
+
+  it("un adulto que ya tiene un hijo salta la evaluación inicial y va directo a practicar", async () => {
+    mocks.me.mockResolvedValue({ id: "adult-1", email: "ficticio@example.test" });
+    mocks.listChildren.mockResolvedValue([{ id: "child-2", displayName: "Beto", grade: 1, language: "es" }]);
+    mocks.startSession.mockReturnValue(new Promise(() => {})); // se queda "cargando" a propósito
+
+    render(<App />);
+
+    await waitFor(() => {
+      expect(screen.getByText("Preparando tu práctica…")).toBeInTheDocument();
+    });
   });
 });
