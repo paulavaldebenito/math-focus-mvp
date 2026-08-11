@@ -6,6 +6,12 @@ dist-ssr
 .env.*
 !.env.example
 
+# Datos locales de Postgres embebido (nunca versionar)
+.pgdata/
+
+# Cliente Prisma generado (se regenera con `prisma generate`)
+src/generated/
+
 # Editor/OS
 .DS_Store
 .vscode/*
