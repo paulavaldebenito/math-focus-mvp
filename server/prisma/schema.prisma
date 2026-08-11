@@ -49,3 +49,55 @@ model ChildProfile {
   language    String    @default("es")
   createdAt   DateTime  @default(now())
 }
+
+/// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
+/// sembrado por seed — ver regla del proyecto: "no interpretar un error como
+/// prueba de déficit atencional".
+model ErrorType {
+  id          String           @id @default(cuid())
+  code        String           @unique
+  label       String
+  description String
+  options     ExerciseOption[]
+}
+
+/// Habilidad matemática. MVP v1: fija en 1° básico, eje Números y operaciones.
+model MathSkill {
+  id        String     @id @default(cuid())
+  grade     Int
+  axis      String
+  name      String
+  /// Código de Objetivo de Aprendizaje. NULL a propósito: no existe una fuente
+  /// curricular oficial verificada en este entorno. No completar sin validar
+  /// contra el documento oficial de MINEDUC.
+  oaCode    String?
+  exercises Exercise[]
+}
+
+/// Ejercicio. `isFictitious` marca explícitamente los datos de prueba —
+/// nunca se presentan como contenido curricular real sin revisión.
+model Exercise {
+  id            String           @id @default(cuid())
+  mathSkillId   String
+  mathSkill     MathSkill        @relation(fields: [mathSkillId], references: [id])
+  prompt        String
+  /// Procedimiento o justificación esperada — trazabilidad pedagógica
+  /// exigida por el proyecto para cada ejercicio.
+  procedureNote String
+  isFictitious  Boolean          @default(true)
+  createdAt     DateTime         @default(now())
+  options       ExerciseOption[]
+}
+
+/// Alternativa de un ejercicio. Si es incorrecta, puede señalar qué patrón
+/// de error observable representa (opcional: no todas las opciones erróneas
+/// están clasificadas todavía).
+model ExerciseOption {
+  id          String     @id @default(cuid())
+  exerciseId  String
+  exercise    Exercise   @relation(fields: [exerciseId], references: [id])
+  label       String
+  isCorrect   Boolean
+  errorTypeId String?
+  errorType   ErrorType? @relation(fields: [errorTypeId], references: [id])
+}

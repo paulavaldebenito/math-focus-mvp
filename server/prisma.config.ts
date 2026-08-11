@@ -7,8 +7,13 @@ export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
     path: "prisma/migrations",
+    seed: "tsx prisma/seed.ts",
   },
   datasource: {
+    // `prisma dev` replica DDL entre bases del mismo servidor vía su WAL
+    // interno, lo que rompe el aislamiento que `migrate dev` necesita para
+    // su base sombra. Por eso en este entorno se usa `prisma db push` en
+    // vez de `migrate dev` — ver README.
     url: process.env["DATABASE_URL"],
   },
 });
