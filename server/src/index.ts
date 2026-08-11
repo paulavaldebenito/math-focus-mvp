@@ -4,6 +4,7 @@ import cors from "cors";
 import { authRouter } from "./routes/auth.js";
 import { consentRouter } from "./routes/consent.js";
 import { childrenRouter } from "./routes/children.js";
+import { progressRouter } from "./routes/progress.js";
 import { initialAssessmentRouter } from "./routes/initialAssessment.js";
 import {
   childSessionsRouter,
@@ -33,6 +34,7 @@ app.get("/api/health", (_req, res) => {
 app.use("/api/auth", authRouter);
 app.use("/api/consent", consentRouter);
 app.use("/api/children", childrenRouter);
+app.use("/api/children/:childId/progress", progressRouter);
 app.use("/api/children/:childId/initial-assessment", initialAssessmentRouter);
 app.use("/api/children/:childId/sessions", childSessionsRouter);
 app.use("/api/children/:childId/next-exercise", nextExerciseRouter);
