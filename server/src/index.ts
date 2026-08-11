@@ -5,7 +5,12 @@ import { authRouter } from "./routes/auth.js";
 import { consentRouter } from "./routes/consent.js";
 import { childrenRouter } from "./routes/children.js";
 import { initialAssessmentRouter } from "./routes/initialAssessment.js";
-import { childSessionsRouter, sessionAttemptsRouter, nextExerciseRouter } from "./routes/sessions.js";
+import {
+  childSessionsRouter,
+  sessionAttemptsRouter,
+  nextExerciseRouter,
+  pauseEventsRouter,
+} from "./routes/sessions.js";
 import { sessionMiddleware } from "./auth/session.js";
 
 export const app = express();
@@ -32,6 +37,7 @@ app.use("/api/children/:childId/initial-assessment", initialAssessmentRouter);
 app.use("/api/children/:childId/sessions", childSessionsRouter);
 app.use("/api/children/:childId/next-exercise", nextExerciseRouter);
 app.use("/api/sessions/:sessionId/attempts", sessionAttemptsRouter);
+app.use("/api/sessions/:sessionId/pause-events", pauseEventsRouter);
 
 if (process.env.NODE_ENV !== "test") {
   const PORT = process.env.PORT ? Number(process.env.PORT) : 4100;

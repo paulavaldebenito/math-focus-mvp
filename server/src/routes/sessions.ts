@@ -145,5 +145,40 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
     prompt: chosen.prompt,
     difficultyLevel: chosen.difficultyLevel,
     options: chosen.options,
+    // Se envía para poder mostrarlo como pista SI el niño la pide — nunca
+    // se muestra por defecto (eso lo decide el cliente).
+    procedureNote: chosen.procedureNote,
   });
+});
+
+const pauseEventSchema = z.object({
+  kind: z.enum(["respiracion", "movimiento"]),
+  accepted: z.boolean(),
+  durationMs: z.number().int().positive().optional(),
+});
+
+export const pauseEventsRouter = Router({ mergeParams: true });
+
+pauseEventsRouter.post("/", requireAuth, async (req, res) => {
+  const practiceSession = await prisma.session.findUnique({
+    where: { id: String(req.params.sessionId) },
+    include: { childProfile: true },
+  });
+
+  if (!practiceSession || practiceSession.childProfile.adultUserId !== req.session.adultUserId!) {
+    res.status(404).json({ error: "session_not_found" });
+    return;
+  }
+
+  const parsed = pauseEventSchema.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: "invalid_payload", details: parsed.error.flatten() });
+    return;
+  }
+
+  const pause = await prisma.pauseEvent.create({
+    data: { sessionId: practiceSession.id, ...parsed.data },
+  });
+
+  res.status(201).json({ id: pause.id, accepted: pause.accepted });
 });
