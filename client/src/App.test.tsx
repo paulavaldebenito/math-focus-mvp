@@ -7,10 +7,10 @@ vi.mock("./api/endpoints.js", () => ({
 }));
 
 describe("App", () => {
-  it("muestra el estado de sesión no iniciada cuando /me falla", async () => {
+  it("muestra la pantalla de inicio de sesión cuando /me falla", async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getByTestId("logged-out-marker")).toBeInTheDocument();
+      expect(screen.getByRole("heading", { name: "Inicia sesión" })).toBeInTheDocument();
     });
   });
 });

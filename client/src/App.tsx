@@ -1,5 +1,6 @@
 import "./App.css";
 import { AuthProvider, useAuth } from "./context/AuthContext.js";
+import { AuthScreen } from "./screens/AuthScreen.js";
 
 function AppShell() {
   const { adult, loading } = useAuth();
@@ -13,12 +14,7 @@ function AppShell() {
   }
 
   if (!adult) {
-    return (
-      <main className="screen">
-        <h1>Math Focus</h1>
-        <p data-testid="logged-out-marker">Necesitas iniciar sesión.</p>
-      </main>
-    );
+    return <AuthScreen />;
   }
 
   return (
