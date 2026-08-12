@@ -1,34 +1,70 @@
 :root {
-  --ground: #F7F8F6;
+  --ground: #F6F3FF;
   --surface: #FFFFFF;
-  --border: #D9DED9;
-  --ink: #23291F;
-  --ink-soft: #55604F;
-  --ink-faint: #838C7C;
+  --border: #E3DBFA;
+  --ink: #241C33;
+  --ink-soft: #6B6280;
+  --ink-faint: #9891A8;
 
-  --brand: #2E6E5E;
-  --brand-bg: #DCEBE5;
-  --brand-dark: #1F4E42;
+  --brand: #0EA5E9;
+  --brand-bg: #DFF3FE;
+  --brand-dark: #0B7FB0;
 
-  --alert: #B4502E;
-  --alert-bg: #F1DDD3;
+  --success: #22C55E;
+  --success-bg: #DCFCE7;
+  --success-dark: #16A34A;
+
+  /* Solo para errores técnicos reales (conexión, servidor) — nunca para una
+     respuesta incorrecta del niño. Ver --retry para eso. */
+  --alert: #FF6F59;
+  --alert-bg: #FFE1DB;
+
+  --star: #F5A623;
+  --star-bg: #FFEEC9;
+  --star-dark: #C97D0A;
+
+  /* "Probemos otra estrategia" — deliberadamente NO es rojo/rust, para no
+     leerse como una alarma ante un error del niño. */
+  --retry: #7A5C99;
+  --retry-bg: #E6DEEF;
+
+  --info: #38BDF8;
+  --info-bg: #E0F5FE;
+
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --ground: #171B15;
-    --surface: #20251D;
-    --border: #38412F;
-    --ink: #E9ECE4;
-    --ink-soft: #B7C0AC;
-    --ink-faint: #838C7C;
+    --ground: #180F26;
+    --surface: #221733;
+    --border: #3A2C52;
+    --ink: #F1ECFB;
+    --ink-soft: #B7AECD;
+    --ink-faint: #8A80A0;
 
-    --brand: #6FBFA6;
-    --brand-bg: #1F3730;
-    --brand-dark: #2E6E5E;
+    --brand: #38BDF8;
+    --brand-bg: #113247;
+    --brand-dark: #0B7FB0;
 
-    --alert: #E0906D;
-    --alert-bg: #3A241B;
+    --success: #4ADE80;
+    --success-bg: #10301D;
+    --success-dark: #16A34A;
+
+    --alert: #FF8A75;
+    --alert-bg: #3A1E18;
+
+    --star: #FFC94D;
+    --star-bg: #3A2C10;
+    --star-dark: #C97D0A;
+
+    --retry: #B49BD1;
+    --retry-bg: #2E2740;
+
+    --info: #7DD3FC;
+    --info-bg: #113247;
+
+    color-scheme: dark;
   }
 }
 
@@ -40,13 +76,17 @@ body {
   margin: 0;
   background: var(--ground);
   color: var(--ink);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Avenir Next", "Century Gothic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1, h2, h3 {
+  margin: 0;
+  text-wrap: balance;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
 
 button {
   font-family: inherit;

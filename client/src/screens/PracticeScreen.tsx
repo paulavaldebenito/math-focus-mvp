@@ -1,9 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 import * as endpoints from "../api/endpoints.js";
 import type { AttemptResult, ExercisePublic } from "../api/types.js";
+import { ExerciseVisual } from "../components/ExerciseVisual.js";
+import { BreathingPause } from "../components/BreathingPause.js";
+import { MovementPause } from "../components/MovementPause.js";
+import { CompanionAvatar, type CompanionMood } from "../components/CompanionAvatar.js";
+import { Confetti } from "../components/Confetti.js";
+import { companionByKey, type Companion } from "../lib/companions.js";
+import { cancelSpeech, speak, speechSupported } from "../lib/speech.js";
+import {
+  playComplete,
+  playCorrect,
+  playHint,
+  playLevelUp,
+  playMascotChirp,
+  playRetry,
+  playStar,
+} from "../lib/sound.js";
+import { localize, t, useLang } from "../lib/i18n.js";
 
 const QUESTIONS_PER_SESSION = 6;
-const QUESTION_TIME_WINDOW_MS = 45000; // solo visual, nunca bloquea ni penaliza
 
 interface Props {
   childId: string;
@@ -11,15 +27,27 @@ interface Props {
   onSessionComplete: () => void;
 }
 
-type Phase = "loading" | "question" | "feedback" | "pause-offer" | "done" | "error";
+type Phase =
+  | "loading"
+  | "pre-pause-offer"
+  | "pre-pause-breathing"
+  | "pre-pause-movement"
+  | "question"
+  | "feedback"
+  | "pause-offer"
+  | "pause-breathing"
+  | "pause-movement"
+  | "done"
+  | "error";
 
-function feedbackMessage(result: AttemptResult): string {
-  if (result.isCorrect) return "Avanzaste un paso más.";
-  if (result.action.ruleCode === "FAST_THEN_WRONG") return "Mira nuevamente este dato.";
-  return "Probemos otra estrategia.";
+function feedbackKey(result: AttemptResult): "feedbackCorrect" | "feedbackReview" | "feedbackRetry" {
+  if (result.isCorrect) return "feedbackCorrect";
+  if (result.action.ruleCode === "FAST_THEN_WRONG") return "feedbackReview";
+  return "feedbackRetry";
 }
 
 export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Props) {
+  const { lang } = useLang();
   const [phase, setPhase] = useState<Phase>("loading");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [exercise, setExercise] = useState<ExercisePublic | null>(null);
@@ -29,8 +57,12 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   const [showHint, setShowHint] = useState(false);
   const [answeredCount, setAnsweredCount] = useState(0);
   const [level, setLevel] = useState(startingLevel);
+  const [starsThisSession, setStarsThisSession] = useState(0);
+  const [companion, setCompanion] = useState<Companion>(companionByKey(null));
+  const [mood, setMood] = useState<CompanionMood>("idle");
   const questionShownAt = useRef<number>(Date.now());
   const sessionStarted = useRef(false);
+  const sessionCompleted = useRef(false);
 
   useEffect(() => {
     // Guardia contra doble invocación (React StrictMode en desarrollo, o un
@@ -38,6 +70,13 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     // servidor por cada montaje adicional del componente.
     if (sessionStarted.current) return;
     sessionStarted.current = true;
+
+    endpoints
+      .getHomeSummary(childId)
+      .then((summary) => setCompanion(companionByKey(summary.companion)))
+      .catch(() => {
+        // El compañero es decorativo en esta pantalla — si falla, se usa el default.
+      });
 
     endpoints
       .startSession(childId)
@@ -48,12 +87,34 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
       })
       .then((ex) => {
         setExercise(ex);
-        setPhase("question");
+        setPhase("pre-pause-offer");
         questionShownAt.current = Date.now();
       })
       .catch(() => setPhase("error"));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [childId]);
+
+  useEffect(() => {
+    // Narración del enunciado — para niños que aún no leen con soltura.
+    // Se cancela al desmontar o al cambiar de ejercicio, para que dos
+    // enunciados no se lean encimados.
+    if (phase === "question" && exercise) {
+      speak(localize(lang, exercise.prompt, exercise.promptEn), lang);
+    }
+    return () => cancelSpeech();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, exercise]);
+
+  useEffect(() => {
+    if (phase !== "done" || sessionCompleted.current || !sessionId) return;
+    sessionCompleted.current = true;
+    setStarsThisSession((s) => s + 1);
+    playComplete();
+    void endpoints.completeSession(sessionId).catch(() => {
+      // El cierre de sesión nunca bloquea la vuelta al inicio, aunque falle.
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, sessionId]);
 
   async function loadNextExercise(currentSessionId: string) {
     try {
@@ -62,6 +123,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
       setSelectedOptionId(null);
       setHintsUsed(0);
       setShowHint(false);
+      setMood("idle");
       setPhase("question");
       questionShownAt.current = Date.now();
     } catch {
@@ -82,8 +144,18 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
         hintsUsed,
       });
       setResult(res);
+      if (res.action.type === "RAISE_LEVEL") playLevelUp();
       setLevel(res.level);
       setPhase("feedback");
+      if (res.isCorrect) {
+        playCorrect();
+        setTimeout(playMascotChirp, 180);
+        setMood("happy");
+        setStarsThisSession((s) => s + 1);
+      } else {
+        playRetry();
+        setMood("encourage");
+      }
     } catch {
       setPhase("error");
     }
@@ -110,20 +182,45 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     await loadNextExercise(sessionId);
   }
 
-  async function handlePauseChoice(accepted: boolean) {
+  async function recordPauseEvent(kind: "respiracion" | "movimiento", accepted: boolean) {
     if (!sessionId) return;
     try {
-      await endpoints.submitPauseEvent(sessionId, { kind: "respiracion", accepted });
+      await endpoints.submitPauseEvent(sessionId, { kind, accepted });
+      if (accepted) {
+        setStarsThisSession((s) => s + 1);
+        playStar();
+      }
     } catch {
       // La pausa nunca bloquea el progreso, incluso si el registro falla.
     }
+  }
+
+  async function handleDeclinePause() {
+    await recordPauseEvent("respiracion", false);
     await proceedToNextOrDone(answeredCount);
+  }
+
+  async function handlePauseDone(kind: "respiracion" | "movimiento") {
+    await recordPauseEvent(kind, true);
+    await proceedToNextOrDone(answeredCount);
+  }
+
+  async function handleSkipPrePause() {
+    await recordPauseEvent("respiracion", false);
+    setPhase("question");
+    questionShownAt.current = Date.now();
+  }
+
+  async function handlePrePauseDone(kind: "respiracion" | "movimiento") {
+    await recordPauseEvent(kind, true);
+    setPhase("question");
+    questionShownAt.current = Date.now();
   }
 
   if (phase === "loading") {
     return (
       <main className="screen" aria-busy="true">
-        <p>Preparando tu práctica…</p>
+        <p>{t(lang, "preparingPractice")}</p>
       </main>
     );
   }
@@ -132,8 +229,45 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     return (
       <main className="screen">
         <p className="error-text" role="alert">
-          No se pudo continuar. Intenta de nuevo en un momento.
+          {t(lang, "genericError")}
         </p>
+      </main>
+    );
+  }
+
+  if (phase === "pre-pause-offer") {
+    return (
+      <main className="screen">
+        <CompanionAvatar companion={companion} />
+        <div className="pause-card">
+          <h1>{t(lang, "prePauseTitle")}</h1>
+          <p>{t(lang, "prePauseQuestion")}</p>
+        </div>
+        <button className="btn-primary" type="button" onClick={() => setPhase("pre-pause-breathing")}>
+          {t(lang, "pauseAccept")}
+        </button>
+        <button className="btn-secondary" type="button" onClick={() => setPhase("pre-pause-movement")}>
+          {t(lang, "pauseMovementOption")}
+        </button>
+        <button className="btn-secondary" type="button" onClick={() => void handleSkipPrePause()}>
+          {t(lang, "prePauseSkip")}
+        </button>
+      </main>
+    );
+  }
+
+  if (phase === "pre-pause-breathing") {
+    return (
+      <main className="screen">
+        <BreathingPause lang={lang} onDone={() => void handlePrePauseDone("respiracion")} />
+      </main>
+    );
+  }
+
+  if (phase === "pre-pause-movement") {
+    return (
+      <main className="screen">
+        <MovementPause lang={lang} onDone={() => void handlePrePauseDone("movimiento")} />
       </main>
     );
   }
@@ -141,14 +275,36 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "pause-offer") {
     return (
       <main className="screen">
-        <h1>Pausa para respirar</h1>
-        <p>¿Quieres tomarte un momento antes de seguir?</p>
-        <button className="btn-primary" type="button" onClick={() => void handlePauseChoice(true)}>
-          Sí, hagamos una pausa
+        <CompanionAvatar companion={companion} />
+        <div className="pause-card">
+          <h1>{t(lang, "pauseTitle")}</h1>
+          <p>{t(lang, "pauseQuestion")}</p>
+        </div>
+        <button className="btn-primary" type="button" onClick={() => setPhase("pause-breathing")}>
+          {t(lang, "pauseAccept")}
         </button>
-        <button className="btn-secondary" type="button" onClick={() => void handlePauseChoice(false)}>
-          Prefiero seguir
+        <button className="btn-secondary" type="button" onClick={() => setPhase("pause-movement")}>
+          {t(lang, "pauseMovementOption")}
         </button>
+        <button className="btn-secondary" type="button" onClick={() => void handleDeclinePause()}>
+          {t(lang, "pauseDecline")}
+        </button>
+      </main>
+    );
+  }
+
+  if (phase === "pause-breathing") {
+    return (
+      <main className="screen">
+        <BreathingPause lang={lang} onDone={() => void handlePauseDone("respiracion")} />
+      </main>
+    );
+  }
+
+  if (phase === "pause-movement") {
+    return (
+      <main className="screen">
+        <MovementPause lang={lang} onDone={() => void handlePauseDone("movimiento")} />
       </main>
     );
   }
@@ -156,10 +312,15 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "done") {
     return (
       <main className="screen">
-        <h1>¡Sesión terminada!</h1>
-        <p>Buen trabajo hoy.</p>
+        <Confetti />
+        <CompanionAvatar companion={companion} mood="happy" />
+        <h1>{t(lang, "sessionDoneTitle")}</h1>
+        <p>{t(lang, "sessionDoneBody")}</p>
+        <span className="star-chip">
+          ★ {starsThisSession} {t(lang, "starsEarnedThisSession")}
+        </span>
         <button className="btn-primary" type="button" onClick={onSessionComplete}>
-          Volver al inicio
+          {t(lang, "backHome")}
         </button>
       </main>
     );
@@ -169,81 +330,90 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
 
   return (
     <main className="screen">
+      <CompanionAvatar companion={companion} mood={phase === "feedback" ? mood : "idle"} />
+
       <p className="hint-text">
-        Pregunta {answeredCount + 1} de {QUESTIONS_PER_SESSION} · nivel {level}
+        {t(lang, "level")} {level}
       </p>
 
-      {phase === "question" && (
-        <div
-          key={exercise.id}
-          aria-hidden="true"
-          style={{
-            width: "100%",
-            height: "4px",
-            background: "var(--border)",
-            borderRadius: "2px",
-            overflow: "hidden",
-          }}
-        >
-          <div
-            style={{
-              height: "100%",
-              background: "var(--brand-bg)",
-              animation: `fill-timer ${QUESTION_TIME_WINDOW_MS}ms linear forwards`,
-            }}
-          />
-        </div>
-      )}
+      <div className="progress-dots" aria-hidden="true">
+        {Array.from({ length: QUESTIONS_PER_SESSION }, (_, i) => (
+          <span key={i} className={i < answeredCount ? "done" : ""} />
+        ))}
+      </div>
 
-      <h1>{exercise.prompt}</h1>
+      {(phase === "question" || phase === "feedback") && (
+        <div className="focus-frame" key={exercise.id}>
+          <span className="fc-bl" aria-hidden="true" />
+          <span className="fc-br" aria-hidden="true" />
 
-      {phase === "question" && (
-        <>
+          {exercise.visual && <ExerciseVisual visual={exercise.visual} />}
+
+          <h1>{localize(lang, exercise.prompt, exercise.promptEn)}</h1>
+
+          {phase === "question" && speechSupported && (
+            <button
+              className="btn-listen"
+              type="button"
+              onClick={() => speak(localize(lang, exercise.prompt, exercise.promptEn), lang)}
+            >
+              {t(lang, "listenAgain")}
+            </button>
+          )}
+
           <div className="form">
-            {exercise.options.map((opt) => (
-              <button
-                key={opt.id}
-                className="btn-secondary"
-                type="button"
-                onClick={() => void handleAnswer(opt.id)}
-              >
-                {opt.label}
-              </button>
-            ))}
+            {exercise.options.map((opt) => {
+              let cls = "option-btn";
+              if (phase === "feedback" && opt.id === selectedOptionId) {
+                cls += result?.isCorrect ? " correct" : " incorrect";
+              }
+              return (
+                <button
+                  key={opt.id}
+                  className={cls}
+                  type="button"
+                  disabled={phase === "feedback"}
+                  onClick={() => void handleAnswer(opt.id)}
+                >
+                  {opt.label}
+                </button>
+              );
+            })}
           </div>
 
-          {!showHint && (
+          {phase === "question" && !showHint && (
             <button
               className="btn-secondary"
               type="button"
               onClick={() => {
                 setShowHint(true);
                 setHintsUsed((h) => h + 1);
+                playHint();
               }}
             >
-              Necesito una pista
+              {t(lang, "needHint")}
             </button>
           )}
-          {showHint && exercise.procedureNote && <p className="hint-text">Pista: {exercise.procedureNote}</p>}
-        </>
-      )}
-
-      {phase === "feedback" && result && (
-        <div className="form">
-          <p aria-live="polite">{feedbackMessage(result)}</p>
-          {selectedOptionId && (
+          {phase === "question" && showHint && exercise.procedureNote && (
             <p className="hint-text">
-              {result.isCorrect ? "✓" : "Elegiste: "}
-              {!result.isCorrect && exercise.options.find((o) => o.id === selectedOptionId)?.label}
+              {t(lang, "hintLabel")}: {localize(lang, exercise.procedureNote, exercise.procedureNoteEn)}
             </p>
           )}
-          <button className="btn-primary" type="button" onClick={() => void handleContinueAfterFeedback()}>
-            Continuar
-          </button>
+
+          {phase === "feedback" && result && (
+            <div className={`feedback-card ${result.isCorrect ? "correct" : "retry"}`} aria-live="polite">
+              <span className="icon" aria-hidden="true">{result.isCorrect ? "✓" : "↻"}</span>
+              <span>{t(lang, feedbackKey(result))}</span>
+            </div>
+          )}
         </div>
       )}
 
-      <style>{`@keyframes fill-timer { from { width: 0% } to { width: 100% } }`}</style>
+      {phase === "feedback" && (
+        <button className="btn-primary" type="button" onClick={() => void handleContinueAfterFeedback()}>
+          {t(lang, "continueBtn")}
+        </button>
+      )}
     </main>
   );
 }

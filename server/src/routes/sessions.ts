@@ -63,6 +63,18 @@ sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
     },
   });
 
+  // Estrella por acierto — nunca se resta por error, nunca aleatoria (regla
+  // de gamificación del proyecto: siempre trazable a un motivo concreto).
+  if (isCorrect) {
+    await prisma.starEvent.create({
+      data: {
+        childProfileId: practiceSession.childProfileId,
+        sessionId: practiceSession.id,
+        reason: "correct_answer",
+      },
+    });
+  }
+
   const priorAttempts = await prisma.attempt.findMany({
     where: { sessionId: practiceSession.id },
     include: { errorType: true },
@@ -143,11 +155,14 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
   res.status(200).json({
     id: chosen.id,
     prompt: chosen.prompt,
+    promptEn: chosen.promptEn,
     difficultyLevel: chosen.difficultyLevel,
     options: chosen.options,
+    visual: chosen.visual,
     // Se envía para poder mostrarlo como pista SI el niño la pide — nunca
     // se muestra por defecto (eso lo decide el cliente).
     procedureNote: chosen.procedureNote,
+    procedureNoteEn: chosen.procedureNoteEn,
   });
 });
 
@@ -180,5 +195,48 @@ pauseEventsRouter.post("/", requireAuth, async (req, res) => {
     data: { sessionId: practiceSession.id, ...parsed.data },
   });
 
+  // Estrella por tomarse la pausa — nunca por rechazarla (regla: la pausa
+  // jamás bloquea ni castiga).
+  if (pause.accepted) {
+    await prisma.starEvent.create({
+      data: {
+        childProfileId: practiceSession.childProfileId,
+        sessionId: practiceSession.id,
+        reason: "pause_taken",
+      },
+    });
+  }
+
   res.status(201).json({ id: pause.id, accepted: pause.accepted });
+});
+
+export const sessionCompleteRouter = Router({ mergeParams: true });
+
+sessionCompleteRouter.post("/", requireAuth, async (req, res) => {
+  const practiceSession = await prisma.session.findUnique({
+    where: { id: String(req.params.sessionId) },
+    include: { childProfile: true },
+  });
+
+  if (!practiceSession || practiceSession.childProfile.adultUserId !== req.session.adultUserId!) {
+    res.status(404).json({ error: "session_not_found" });
+    return;
+  }
+
+  // Idempotente: si ya se cerró antes (doble click, reintento de red), no
+  // se otorga una segunda estrella por la misma sesión.
+  const alreadyCompleted = practiceSession.endedAt !== null;
+
+  if (!alreadyCompleted) {
+    await prisma.session.update({ where: { id: practiceSession.id }, data: { endedAt: new Date() } });
+    await prisma.starEvent.create({
+      data: {
+        childProfileId: practiceSession.childProfileId,
+        sessionId: practiceSession.id,
+        reason: "session_complete",
+      },
+    });
+  }
+
+  res.status(200).json({ id: practiceSession.id, starAwarded: !alreadyCompleted });
 });

@@ -8,9 +8,19 @@ const mocks = vi.hoisted(() => ({
   getNextExercise: vi.fn(),
   submitAttempt: vi.fn(),
   submitPauseEvent: vi.fn(),
+  getHomeSummary: vi.fn(),
+  completeSession: vi.fn(),
 }));
 
 vi.mock("../api/endpoints.js", () => mocks);
+
+mocks.getHomeSummary.mockResolvedValue({ companion: "capi", totalStars: 0, starsToday: 0, streak: 0 });
+mocks.completeSession.mockResolvedValue({ id: "s1", starAwarded: true });
+
+async function skipPrePause(user: ReturnType<typeof userEvent.setup>) {
+  await screen.findByRole("button", { name: "Empezar ahora" });
+  await user.click(screen.getByRole("button", { name: "Empezar ahora" }));
+}
 
 const ex1 = {
   id: "ex1",
@@ -38,6 +48,7 @@ describe("PracticeScreen", () => {
     render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
     const user = userEvent.setup();
 
+    await skipPrePause(user);
     await screen.findByText("¿Cuánto es 6 + 7?");
     await user.click(screen.getByRole("button", { name: "13" }));
 
@@ -63,6 +74,7 @@ describe("PracticeScreen", () => {
     render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
     const user = userEvent.setup();
 
+    await skipPrePause(user);
     await screen.findByText("¿Cuánto es 6 + 7?");
     await user.click(screen.getByRole("button", { name: "Necesito una pista" }));
     expect(screen.getByText("Pista: Cuenta hacia adelante desde 6.")).toBeInTheDocument();
@@ -84,6 +96,7 @@ describe("PracticeScreen", () => {
     render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
     const user = userEvent.setup();
 
+    await skipPrePause(user);
     await screen.findByText("¿Cuánto es 6 + 7?");
     await user.click(screen.getByRole("button", { name: "12" }));
     await user.click(screen.getByRole("button", { name: "Continuar" }));

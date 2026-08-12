@@ -1,7 +1,8 @@
 import { Router } from "express";
 import { prisma } from "../db/prisma.js";
-import { childProfileSchema } from "../auth/schemas.js";
+import { childProfileSchema, companionSchema } from "../auth/schemas.js";
 import { requireAuth } from "../auth/session.js";
+import { getOwnedChild } from "./childAccess.js";
 
 // MVP v1: fijo, no configurable por el cliente. Ver ADR en README.
 const MVP_GRADE = 1;
@@ -12,7 +13,7 @@ childrenRouter.get("/", requireAuth, async (req, res) => {
   const children = await prisma.childProfile.findMany({
     where: { adultUserId: req.session.adultUserId! },
     orderBy: { createdAt: "asc" },
-    select: { id: true, displayName: true, grade: true, language: true },
+    select: { id: true, displayName: true, grade: true, language: true, companion: true },
   });
   res.status(200).json({ children });
 });
@@ -53,5 +54,27 @@ childrenRouter.post("/", requireAuth, async (req, res) => {
     displayName: child.displayName,
     grade: child.grade,
     language: child.language,
+    companion: child.companion,
   });
+});
+
+childrenRouter.patch("/:childId/companion", requireAuth, async (req, res) => {
+  const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
+  if (!child) {
+    res.status(404).json({ error: "child_not_found" });
+    return;
+  }
+
+  const parsed = companionSchema.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: "invalid_payload", details: parsed.error.flatten() });
+    return;
+  }
+
+  const updated = await prisma.childProfile.update({
+    where: { id: child.id },
+    data: { companion: parsed.data.companion },
+  });
+
+  res.status(200).json({ id: updated.id, companion: updated.companion });
 });

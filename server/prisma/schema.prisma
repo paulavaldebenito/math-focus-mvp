@@ -47,9 +47,13 @@ model ChildProfile {
   /// tener que migrar el esquema cuando se habiliten otros cursos.
   grade             Int
   language          String             @default("es")
+  /// Clave fija de un catálogo cerrado (ver COMPANION_KEYS en el servidor).
+  /// Nullable: un perfil recién creado todavía no lo eligió.
+  companion         String?
   createdAt         DateTime           @default(now())
   sessions          Session[]
   progressSnapshots ProgressSnapshot[]
+  starEvents        StarEvent[]
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -84,13 +88,21 @@ model Exercise {
   mathSkillId     String
   mathSkill       MathSkill        @relation(fields: [mathSkillId], references: [id])
   prompt          String
+  /// Traducción al inglés del enunciado. Nullable: no todo ejercicio tiene
+  /// una todavía — el cliente cae de vuelta al español si falta.
+  promptEn        String?
   /// Procedimiento o justificación esperada — trazabilidad pedagógica
   /// exigida por el proyecto para cada ejercicio.
   procedureNote   String
+  procedureNoteEn String?
   /// Nivel de dificultad 1-3, usado por el motor adaptativo para pedir un
   /// ejercicio más fácil o más difícil. No confundir con `grade`.
   difficultyLevel Int              @default(2)
   isFictitious    Boolean          @default(true)
+  /// Representación concreta/pictórica del ejercicio (grupos de objetos a
+  /// combinar o a quitar) — para niños de 1° básico que aún no leen con
+  /// soltura. Nullable: no todo ejercicio antiguo tiene una todavía.
+  visual          Json?
   createdAt       DateTime         @default(now())
   options         ExerciseOption[]
   attempts        Attempt[]
@@ -121,6 +133,7 @@ model Session {
   attempts          Attempt[]
   pauseEvents       PauseEvent[]
   adaptiveDecisions AdaptiveDecision[]
+  starEvents        StarEvent[]
 }
 
 /// Un intento de respuesta a un ejercicio dentro de una sesión.
@@ -179,6 +192,20 @@ model AdaptiveDecision {
   previousLevel Int
   newLevel      Int
   createdAt     DateTime @default(now())
+}
+
+/// Una estrella otorgada — siempre con un motivo trazable, nunca aleatorio
+/// ni comprable con dinero real (reglas de gamificación del proyecto).
+/// `reason` es un código cerrado: "correct_answer" | "pause_taken" |
+/// "session_complete".
+model StarEvent {
+  id             String       @id @default(cuid())
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id])
+  sessionId      String?
+  session        Session?     @relation(fields: [sessionId], references: [id])
+  reason         String
+  createdAt      DateTime     @default(now())
 }
 
 /// Fotografía de progreso personal — nunca comparado con otros estudiantes.

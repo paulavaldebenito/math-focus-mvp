@@ -56,6 +56,7 @@ describe("POST /api/sessions/:sessionId/pause-events", () => {
 
   afterAll(async () => {
     await prisma.pauseEvent.deleteMany({ where: { sessionId } });
+    await prisma.starEvent.deleteMany({ where: { childProfileId: childId } });
     await prisma.session.deleteMany({ where: { childProfileId: childId } });
     const child = await prisma.childProfile.findUnique({ where: { id: childId } });
     if (child) {

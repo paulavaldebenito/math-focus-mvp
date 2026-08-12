@@ -6,9 +6,12 @@ import { InitialAssessmentScreen } from "./InitialAssessmentScreen.js";
 const mocks = vi.hoisted(() => ({
   getInitialAssessment: vi.fn(),
   submitInitialAssessment: vi.fn(),
+  getHomeSummary: vi.fn(),
 }));
 
 vi.mock("../api/endpoints.js", () => mocks);
+
+mocks.getHomeSummary.mockResolvedValue({ companion: "capi", totalStars: 0, starsToday: 0, streak: 0 });
 
 const exercises = [
   { id: "ex1", prompt: "¿Cuánto es 6 + 7?", options: [{ id: "a1", label: "13" }, { id: "a2", label: "12" }] },
@@ -20,18 +23,20 @@ describe("InitialAssessmentScreen", () => {
     mocks.getInitialAssessment.mockResolvedValue({ exercises });
 
     render(<InitialAssessmentScreen childId="child-1" onDone={vi.fn()} />);
+    const user = userEvent.setup();
+
+    await user.click(await screen.findByRole("button", { name: "Empezar" }));
 
     await screen.findByText("¿Cuánto es 6 + 7?");
     expect(screen.queryByText("¿Cuánto es 20 − 20?")).not.toBeInTheDocument();
 
-    const user = userEvent.setup();
     await user.click(screen.getByRole("button", { name: "13" }));
 
     await screen.findByText("¿Cuánto es 20 − 20?");
     expect(screen.queryByText("¿Cuánto es 6 + 7?")).not.toBeInTheDocument();
   });
 
-  it("al responder la última pregunta, envía todos los intentos y llama onDone con el resultado", async () => {
+  it("al responder la última pregunta, envía todos los intentos, muestra el cierre y llama onDone al continuar", async () => {
     mocks.getInitialAssessment.mockResolvedValue({ exercises });
     mocks.submitInitialAssessment.mockResolvedValue({
       sessionId: "s1",
@@ -44,6 +49,8 @@ describe("InitialAssessmentScreen", () => {
     render(<InitialAssessmentScreen childId="child-1" onDone={onDone} />);
     const user = userEvent.setup();
 
+    await user.click(await screen.findByRole("button", { name: "Empezar" }));
+
     await screen.findByText("¿Cuánto es 6 + 7?");
     await user.click(screen.getByRole("button", { name: "13" }));
     await screen.findByText("¿Cuánto es 20 − 20?");
@@ -53,6 +60,11 @@ describe("InitialAssessmentScreen", () => {
       expect.objectContaining({ exerciseId: "ex1", selectedOptionId: "a1" }),
       expect.objectContaining({ exerciseId: "ex2", selectedOptionId: "b1" }),
     ]);
+
+    const continueBtn = await screen.findByRole("button", { name: "Vamos a practicar" });
+    expect(onDone).not.toHaveBeenCalled();
+    await user.click(continueBtn);
+
     expect(onDone).toHaveBeenCalledWith(
       expect.objectContaining({ initialLevel: 3, correctCount: 2 }),
     );

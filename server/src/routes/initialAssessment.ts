@@ -10,6 +10,18 @@ const NEUTRAL_STARTING_LEVEL = 2;
 
 export const initialAssessmentRouter = Router({ mergeParams: true });
 
+// Fisher-Yates — sin esto, `findMany` sin `orderBy` tiende a devolver
+// siempre el mismo orden (el de inserción), así que la evaluación mostraba
+// las mismas 5 preguntas cada vez.
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j]!, result[i]!];
+  }
+  return result;
+}
+
 initialAssessmentRouter.get("/", requireAuth, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
   if (!child) {
@@ -17,17 +29,20 @@ initialAssessmentRouter.get("/", requireAuth, async (req, res) => {
     return;
   }
 
-  const exercises = await prisma.exercise.findMany({
+  const pool = await prisma.exercise.findMany({
     where: { mathSkill: { grade: child.grade } },
-    take: ASSESSMENT_SIZE,
     include: { options: { select: { id: true, label: true } } }, // sin isCorrect ni errorTypeId
   });
+
+  const exercises = shuffle(pool).slice(0, ASSESSMENT_SIZE);
 
   res.status(200).json({
     exercises: exercises.map((ex) => ({
       id: ex.id,
       prompt: ex.prompt,
+      promptEn: ex.promptEn,
       options: ex.options,
+      visual: ex.visual,
     })),
   });
 });

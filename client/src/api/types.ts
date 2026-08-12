@@ -14,6 +14,14 @@ export interface ChildProfile {
   displayName: string;
   grade: number;
   language: string;
+  companion?: string | null;
+}
+
+export interface HomeSummary {
+  companion: string | null;
+  totalStars: number;
+  starsToday: number;
+  streak: number;
 }
 
 export interface ExerciseOptionPublic {
@@ -21,13 +29,27 @@ export interface ExerciseOptionPublic {
   label: string;
 }
 
+/**
+ * Representación concreta/pictórica de un ejercicio, para niños que aún no
+ * leen con soltura: dos grupos a combinar (suma), o un grupo del que se
+ * quita una cantidad (resta).
+ */
+export type ExerciseVisualDescriptor =
+  | { kind: "combine"; a: number; b: number; emoji?: string }
+  | { kind: "takeaway"; total: number; removed: number; emoji?: string };
+
 export interface ExercisePublic {
   id: string;
   prompt: string;
+  /** Traducción al inglés — puede faltar; el contenido cae de vuelta al español si es así. */
+  promptEn?: string | null;
   difficultyLevel?: number;
   options: ExerciseOptionPublic[];
+  /** Ausente si el ejercicio todavía no tiene una representación concreta cargada. */
+  visual?: ExerciseVisualDescriptor | null;
   /** Solo presente en /next-exercise. Se muestra únicamente si el niño pide una pista. */
   procedureNote?: string;
+  procedureNoteEn?: string | null;
 }
 
 export interface InitialAssessmentResponse {

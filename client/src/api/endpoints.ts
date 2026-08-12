@@ -5,6 +5,7 @@ import type {
   ChildProfile,
   Consent,
   ExercisePublic,
+  HomeSummary,
   InitialAssessmentResponse,
   InitialAssessmentResult,
   ProgressResponse,
@@ -87,4 +88,16 @@ export function submitPauseEvent(sessionId: string, input: PauseEventInput) {
 
 export function getProgress(childId: string) {
   return api.get<ProgressResponse>(`/api/children/${childId}/progress`);
+}
+
+export function setCompanion(childId: string, companion: string) {
+  return api.patch<{ id: string; companion: string }>(`/api/children/${childId}/companion`, { companion });
+}
+
+export function completeSession(sessionId: string) {
+  return api.post<{ id: string; starAwarded: boolean }>(`/api/sessions/${sessionId}/complete`);
+}
+
+export function getHomeSummary(childId: string) {
+  return api.get<HomeSummary>(`/api/children/${childId}/home`);
 }

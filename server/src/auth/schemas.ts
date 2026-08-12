@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { COMPANION_KEYS } from "../domain/companions.js";
 
 export const registerSchema = z.object({
   email: z.string().trim().toLowerCase().email(),
@@ -30,6 +31,12 @@ export const childProfileSchema = z.object({
 });
 
 export type ChildProfileInput = z.infer<typeof childProfileSchema>;
+
+export const companionSchema = z.object({
+  companion: z.enum(COMPANION_KEYS),
+});
+
+export type CompanionInput = z.infer<typeof companionSchema>;
 
 export const initialAssessmentAttemptsSchema = z.object({
   attempts: z

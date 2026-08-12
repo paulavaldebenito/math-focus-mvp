@@ -87,6 +87,7 @@ describe("GET /api/children/:childId/progress (T6.1)", () => {
   afterAll(async () => {
     await prisma.adaptiveDecision.deleteMany({ where: { session: { childProfileId: { in: childIdsToClean } } } });
     await prisma.attempt.deleteMany({ where: { session: { childProfileId: { in: childIdsToClean } } } });
+    await prisma.starEvent.deleteMany({ where: { childProfileId: { in: childIdsToClean } } });
     await prisma.session.deleteMany({ where: { childProfileId: { in: childIdsToClean } } });
     for (const cid of childIdsToClean) {
       const child = await prisma.childProfile.findUnique({ where: { id: cid } });

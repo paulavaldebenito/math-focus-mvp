@@ -9,12 +9,16 @@ const mocks = vi.hoisted(() => ({
   listChildren: vi.fn(),
   createConsent: vi.fn(),
   createChild: vi.fn(),
+  setCompanion: vi.fn(),
   getInitialAssessment: vi.fn(),
   startSession: vi.fn(),
   getNextExercise: vi.fn(),
+  getHomeSummary: vi.fn(),
 }));
 
 vi.mock("./api/endpoints.js", () => mocks);
+
+mocks.getHomeSummary.mockResolvedValue({ companion: "capi", totalStars: 0, starsToday: 0, streak: 0 });
 
 describe("App", () => {
   it("muestra la pantalla de inicio de sesión cuando /me falla", async () => {
@@ -31,6 +35,7 @@ describe("App", () => {
     mocks.listChildren.mockResolvedValue([]);
     mocks.createConsent.mockResolvedValue({ id: "consent-1", scope: "x", grantedAt: "now" });
     mocks.createChild.mockResolvedValue({ id: "child-1", displayName: "Ana", grade: 1, language: "es" });
+    mocks.setCompanion.mockResolvedValue({ id: "child-1", companion: "capi" });
     mocks.getInitialAssessment.mockResolvedValue({
       exercises: [{ id: "ex1", prompt: "¿Cuánto es 6 + 7?", options: [{ id: "a1", label: "13" }] }],
     });
@@ -51,7 +56,12 @@ describe("App", () => {
     await user.type(screen.getByLabelText("Nombre"), "Ana");
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
-    // Un perfil recién creado entra directo a la evaluación inicial.
+    // Un perfil recién creado elige compañero antes de la evaluación inicial.
+    await screen.findByRole("heading", { name: "Elige tu compañero" });
+    await user.click(screen.getByRole("button", { name: /Capi/ }));
+    await user.click(screen.getByRole("button", { name: "¡Listo, empezar!" }));
+
+    await user.click(await screen.findByRole("button", { name: "Empezar" }));
     expect(await screen.findByText("¿Cuánto es 6 + 7?")).toBeInTheDocument();
   });
 

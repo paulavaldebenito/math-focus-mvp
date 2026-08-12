@@ -1,23 +1,24 @@
 import { useState, type FormEvent } from "react";
 import { useAuth } from "../context/useAuth.js";
 import { ApiError } from "../api/client.js";
+import { t, useLang } from "../lib/i18n.js";
+import type { Lang } from "../lib/i18n.js";
 
-function errorMessage(err: unknown, mode: "login" | "register"): string {
+function errorMessage(err: unknown, mode: "login" | "register", lang: Lang): string {
   if (err instanceof ApiError) {
     const code = (err.body as { error?: string } | null)?.error;
-    if (code === "email_already_registered") return "Ese correo ya tiene una cuenta. Intenta iniciar sesión.";
-    if (code === "invalid_credentials") return "Correo o contraseña incorrectos.";
+    if (code === "email_already_registered") return t(lang, "authErrEmailTaken");
+    if (code === "invalid_credentials") return t(lang, "authErrInvalidCredentials");
     if (code === "invalid_payload") {
-      return mode === "register"
-        ? "Revisa el correo y usa una contraseña de al menos 8 caracteres."
-        : "Revisa el correo y la contraseña.";
+      return mode === "register" ? t(lang, "authErrInvalidPayloadRegister") : t(lang, "authErrInvalidPayloadLogin");
     }
   }
-  return "Algo no funcionó. Intenta de nuevo en un momento.";
+  return t(lang, "authErrGeneric");
 }
 
 export function AuthScreen() {
   const { login, register } = useAuth();
+  const { lang, setLang } = useLang();
   const [mode, setMode] = useState<"login" | "register">("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,7 +36,7 @@ export function AuthScreen() {
         await register(email, password);
       }
     } catch (err) {
-      setError(errorMessage(err, mode));
+      setError(errorMessage(err, mode, lang));
     } finally {
       setSubmitting(false);
     }
@@ -43,13 +44,30 @@ export function AuthScreen() {
 
   return (
     <main className="screen">
-      <h1>Math Focus</h1>
-      <h2>{mode === "login" ? "Inicia sesión" : "Crea tu cuenta"}</h2>
-      <p className="hint-text">Cuenta del adulto responsable — el perfil de tu hijo/a se crea después.</p>
+      <div className="choice-grid" role="group" aria-label={t(lang, "chooseLanguageLabel")}>
+        <button
+          type="button"
+          className={`choice-card ${lang === "es" ? "selected" : ""}`}
+          onClick={() => setLang("es")}
+        >
+          <span className="emoji">🇪🇸</span>Español
+        </button>
+        <button
+          type="button"
+          className={`choice-card ${lang === "en" ? "selected" : ""}`}
+          onClick={() => setLang("en")}
+        >
+          <span className="emoji">🇬🇧</span>English
+        </button>
+      </div>
+
+      <h1>{t(lang, "authTitle")}</h1>
+      <h2>{mode === "login" ? t(lang, "authLoginTitle") : t(lang, "authRegisterTitle")}</h2>
+      <p className="hint-text">{t(lang, "authSubtitle")}</p>
 
       <form className="form" onSubmit={handleSubmit}>
         <div className="field">
-          <label htmlFor="email">Correo electrónico</label>
+          <label htmlFor="email">{t(lang, "authEmail")}</label>
           <input
             id="email"
             type="email"
@@ -61,7 +79,7 @@ export function AuthScreen() {
         </div>
 
         <div className="field">
-          <label htmlFor="password">Contraseña</label>
+          <label htmlFor="password">{t(lang, "authPassword")}</label>
           <input
             id="password"
             type="password"
@@ -71,7 +89,7 @@ export function AuthScreen() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          {mode === "register" && <span className="hint-text">Al menos 8 caracteres.</span>}
+          {mode === "register" && <span className="hint-text">{t(lang, "authPasswordHint")}</span>}
         </div>
 
         {error && (
@@ -81,7 +99,7 @@ export function AuthScreen() {
         )}
 
         <button className="btn-primary" type="submit" disabled={submitting}>
-          {submitting ? "Un momento…" : mode === "login" ? "Iniciar sesión" : "Crear cuenta"}
+          {submitting ? t(lang, "authSubmitting") : mode === "login" ? t(lang, "authLogin") : t(lang, "authRegister")}
         </button>
       </form>
 
@@ -93,7 +111,7 @@ export function AuthScreen() {
           setError(null);
         }}
       >
-        {mode === "login" ? "¿No tienes cuenta? Regístrate" : "¿Ya tienes cuenta? Inicia sesión"}
+        {mode === "login" ? t(lang, "authSwitchToRegister") : t(lang, "authSwitchToLogin")}
       </button>
     </main>
   );

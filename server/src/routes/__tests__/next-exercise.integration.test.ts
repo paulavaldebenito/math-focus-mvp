@@ -52,6 +52,7 @@ describe("GET /api/children/:childId/next-exercise (T4.3)", () => {
     if (child) {
       await prisma.adaptiveDecision.deleteMany({ where: { session: { childProfileId: childId } } });
       await prisma.attempt.deleteMany({ where: { session: { childProfileId: childId } } });
+      await prisma.starEvent.deleteMany({ where: { childProfileId: childId } });
       await prisma.session.deleteMany({ where: { childProfileId: childId } });
       await prisma.childProfile.delete({ where: { id: childId } });
       await prisma.consent.delete({ where: { id: child.consentId } });

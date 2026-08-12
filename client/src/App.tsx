@@ -5,11 +5,16 @@ import { useAuth } from "./context/useAuth.js";
 import { AuthScreen } from "./screens/AuthScreen.js";
 import { ConsentScreen } from "./screens/ConsentScreen.js";
 import { CreateChildScreen } from "./screens/CreateChildScreen.js";
+import { ChooseCompanionScreen } from "./screens/ChooseCompanionScreen.js";
 import { InitialAssessmentScreen } from "./screens/InitialAssessmentScreen.js";
 import { PracticeScreen } from "./screens/PracticeScreen.js";
 import { FamilyDashboardScreen } from "./screens/FamilyDashboardScreen.js";
+import { HomeScreen } from "./screens/HomeScreen.js";
 import * as endpoints from "./api/endpoints.js";
 import type { ChildProfile } from "./api/types.js";
+import { LangProvider } from "./context/LangContext.js";
+import { t, useLang } from "./lib/i18n.js";
+import { isMuted, setMuted } from "./lib/sound.js";
 
 type OnboardingStep = "loading-children" | "consent" | "create-child" | "done";
 
@@ -18,6 +23,7 @@ function Onboarding({
 }: {
   onChildReady: (child: ChildProfile, isNew: boolean) => void;
 }) {
+  const { lang } = useLang();
   const [step, setStep] = useState<OnboardingStep>("loading-children");
   const [consentId, setConsentId] = useState<string | null>(null);
   const started = useRef(false);
@@ -42,7 +48,7 @@ function Onboarding({
   if (step === "loading-children") {
     return (
       <main className="screen" aria-busy="true">
-        <p>Cargando…</p>
+        <p>{t(lang, "loading")}</p>
       </main>
     );
   }
@@ -65,11 +71,14 @@ function Onboarding({
   return null;
 }
 
-type Stage = "assessment" | "practice" | "session-done" | "dashboard";
+type Stage = "choose-companion" | "assessment" | "practice" | "home" | "dashboard";
 
 function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boolean }) {
-  const [stage, setStage] = useState<Stage>(isNewChild ? "assessment" : "practice");
-  const { logout } = useAuth();
+  const [stage, setStage] = useState<Stage>(isNewChild ? "choose-companion" : "practice");
+
+  if (stage === "choose-companion") {
+    return <ChooseCompanionScreen childId={child.id} onDone={() => setStage("assessment")} />;
+  }
 
   if (stage === "assessment") {
     return <InitialAssessmentScreen childId={child.id} onDone={() => setStage("practice")} />;
@@ -77,36 +86,53 @@ function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boo
 
   if (stage === "practice") {
     return (
-      <PracticeScreen
-        childId={child.id}
-        startingLevel={2}
-        onSessionComplete={() => setStage("session-done")}
-      />
+      <PracticeScreen childId={child.id} startingLevel={2} onSessionComplete={() => setStage("home")} />
     );
   }
 
   if (stage === "dashboard") {
-    return <FamilyDashboardScreen childId={child.id} onBack={() => setStage("session-done")} />;
+    return <FamilyDashboardScreen childId={child.id} onBack={() => setStage("home")} />;
   }
 
   return (
-    <main className="screen">
-      <h1>Math Focus</h1>
-      <p>Perfil: {child.displayName}.</p>
-      <button className="btn-primary" type="button" onClick={() => setStage("practice")}>
-        Practicar de nuevo
+    <HomeScreen
+      childId={child.id}
+      displayName={child.displayName}
+      onPractice={() => setStage("practice")}
+      onViewProgress={() => setStage("dashboard")}
+    />
+  );
+}
+
+function TopNav() {
+  const { lang, setLang } = useLang();
+  const [soundOn, setSoundOn] = useState(!isMuted());
+
+  function toggleSound() {
+    const next = !soundOn;
+    setSoundOn(next);
+    setMuted(!next);
+  }
+
+  return (
+    <div className="top-nav">
+      <button
+        className="sound-toggle"
+        type="button"
+        onClick={toggleSound}
+        aria-label={t(lang, soundOn ? "soundOnLabel" : "soundOffLabel")}
+      >
+        {soundOn ? "🔊" : "🔇"}
       </button>
-      <button className="btn-secondary" type="button" onClick={() => setStage("dashboard")}>
-        Ver progreso
+      <button className="lang-toggle" type="button" onClick={() => setLang(lang === "es" ? "en" : "es")}>
+        {t(lang, "langToggleLabel")}
       </button>
-      <button className="btn-secondary" type="button" onClick={() => void logout()}>
-        Cerrar sesión
-      </button>
-    </main>
+    </div>
   );
 }
 
 function AppShell() {
+  const { lang } = useLang();
   const { adult, loading } = useAuth();
   const [child, setChild] = useState<ChildProfile | null>(null);
   const [isNewChild, setIsNewChild] = useState(false);
@@ -114,7 +140,7 @@ function AppShell() {
   if (loading) {
     return (
       <main className="screen" aria-busy="true">
-        <p>Cargando…</p>
+        <p>{t(lang, "loading")}</p>
       </main>
     );
   }
@@ -139,8 +165,11 @@ function AppShell() {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <AppShell />
-    </AuthProvider>
+    <LangProvider>
+      <AuthProvider>
+        <TopNav />
+        <AppShell />
+      </AuthProvider>
+    </LangProvider>
   );
 }
