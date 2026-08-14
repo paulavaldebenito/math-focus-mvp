@@ -65,3 +65,61 @@ jobs:
         run: npx prisma migrate diff --from-config-datasource --to-schema ./prisma/schema.prisma --exit-code
       - run: npx prisma db seed
       - run: npm test
+
+  e2e:
+    name: E2E — recorrido completo (Playwright)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: template1
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/template1?sslmode=disable
+      SESSION_SECRET: ci-only-secret-not-for-production
+      PORT: 4100
+      CLIENT_ORIGIN: http://localhost:5173
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install server deps
+        working-directory: server
+        run: npm ci
+      - name: Generate Prisma Client
+        working-directory: server
+        run: npx prisma generate
+      - name: Migrate + seed test database
+        working-directory: server
+        run: |
+          npx prisma migrate deploy
+          npx prisma db seed
+      - name: Install client deps
+        working-directory: client
+        run: npm ci
+      - name: Install e2e deps
+        working-directory: e2e
+        run: npm ci
+      - name: Install Playwright browsers
+        working-directory: e2e
+        run: npx playwright install --with-deps chromium
+      - name: Run E2E tests
+        working-directory: e2e
+        run: npx playwright test
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: e2e/playwright-report/
+          retention-days: 7

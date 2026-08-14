@@ -4,13 +4,28 @@
 
 - [x] **1.1 CI** — `.github/workflows/ci.yml`: jobs `client` y `server` (lint + typecheck + test),
       servidor con servicio `postgres:16` real + `migrate deploy` + `seed` antes de los tests.
-      Pendiente de primera corrida real en GitHub Actions (no validable con Docker en este entorno).
+      Corrida real en GitHub Actions: primer intento falló (faltaba `prisma generate` antes del
+      typecheck en un checkout limpio — `src/generated/prisma` está gitignored y localmente ya lo
+      tenía generado de sesiones anteriores, por eso no se detectó antes). Corregido y verificado
+      en verde: https://github.com/paulavaldebenito/math-focus-mvp/actions/runs/31765984262
 - [x] **1.2 Migraciones automatizadas** — paso `prisma migrate diff --from-config-datasource
       --to-schema ... --exit-code` agregado al job de servidor en `ci.yml`, después de
-      `migrate deploy`. Sintaxis y exit code (0, sin diferencia) validados localmente contra la DB
-      real.
-- [ ] **1.3 Pruebas E2E** — elegir herramienta (Playwright candidato), definir arranque conjunto
-      cliente+servidor+DB de test, cubrir el recorrido completo de `specs/001-mvp-regulado/spec.md`.
+      `migrate deploy`. Validado tanto local como en la corrida real de CI enlazada en 1.1.
+- [x] **1.3 Pruebas E2E** — Playwright, en `e2e/` (paquete propio, no vive dentro de `client/` ni
+      `server/`). `playwright.config.ts` arranca cliente y servidor reales vía `webServer` (array
+      de dos entradas) — nada de mocks. Un test (`tests/full-journey.spec.ts`) cubre el recorrido
+      completo de `specs/001-mvp-regulado/spec.md`: registro (con auto-login) → consentimiento →
+      perfil infantil → elegir compañero → evaluación inicial → sesión de práctica adaptativa
+      (incluyendo el camino de pausa ofrecida, si el motor la dispara) → panel familiar.
+      Validado localmente con Playwright 1.40 (macOS 12/arm64 de este entorno no soporta los
+      binarios de navegador de la versión moderna declarada en `package.json`, `^1.48.0` — CI corre
+      en Ubuntu, sin esa limitación): 3/3 corridas en verde, ~6s cada una. Nuevo job `e2e` en
+      `ci.yml`: mismo patrón de Postgres real + generate + migrate + seed que el job de servidor,
+      más instalación de navegadores y subida del reporte HTML como artefacto en caso de falla.
+      Hallazgo real durante la escritura: la evaluación inicial avanza directo entre preguntas (sin
+      pantalla de "Continuar" intermedia), a diferencia de la sesión de práctica que sí la tiene —
+      un primer intento de reusar la misma función de ayuda para ambas quedó esperando para
+      siempre un botón que la evaluación inicial nunca muestra.
 - [x] **1.4 Seguridad de sesiones** — auditoría de `server/src/auth/session.ts`: `httpOnly`,
       `sameSite: lax`, `secure` en producción y `maxAge` de 7 días ya estaban bien. Encontrado y
       corregido: el login no regeneraba el ID de sesión (fijación de sesión) — ahora
