@@ -315,6 +315,40 @@
   margin: 0 0.3rem;
 }
 
+/* Bloque de decena (2° básico, números > 20): un objeto por unidad deja de
+   ser legible, así que una decena se ve como un bloque "10" en vez de diez
+   íconos sueltos — misma idea que las pistas de "separa decenas y unidades". */
+.pictorial-ten {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.9rem;
+  height: 1.9rem;
+  padding: 0 0.35rem;
+  border-radius: 8px;
+  background: var(--brand-bg);
+  color: var(--brand-dark);
+  font-family: "SF Mono", SFMono-Regular, Menlo, Consolas, ui-monospace, monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.pictorial-ten.removed { opacity: 0.3; }
+
+.pictorial-ten.removed::after {
+  content: "✕";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--retry);
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-shadow: 0 0 3px var(--surface);
+}
+
 .pictorial-eq { font-size: 1rem; }
 
 .progress-dots {

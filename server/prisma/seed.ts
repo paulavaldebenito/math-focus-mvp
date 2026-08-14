@@ -480,7 +480,7 @@ async function main() {
         procedureNote: "Suma las decenas (10 y 10) y las unidades (2 y 5) por separado, y junta los dos resultados.",
         procedureNoteEn: "Add the tens (10 and 10) and the units (2 and 5) separately, then add the two results together.",
         difficultyLevel: 1,
-        visual: null,
+        visual: { kind: "combine", a: 12, b: 15, emoji: "🔵" },
         options: [
           { label: "27", isCorrect: true },
           { label: "3", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -493,7 +493,7 @@ async function main() {
         procedureNote: "Suma las decenas (20 y 10) y las unidades (4 y 3) por separado, y junta los dos resultados.",
         procedureNoteEn: "Add the tens (20 and 10) and the units (4 and 3) separately, then add the two results together.",
         difficultyLevel: 1,
-        visual: null,
+        visual: { kind: "combine", a: 24, b: 13, emoji: "🔵" },
         options: [
           { label: "37", isCorrect: true },
           { label: "11", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -506,7 +506,7 @@ async function main() {
         procedureNote: "Resta las decenas (30 y 10) y las unidades (5 y 2) por separado, y junta los dos resultados.",
         procedureNoteEn: "Subtract the tens (30 and 10) and the units (5 and 2) separately, then add the two results together.",
         difficultyLevel: 1,
-        visual: null,
+        visual: { kind: "takeaway", total: 35, removed: 12, emoji: "🔵" },
         options: [
           { label: "23", isCorrect: true },
           { label: "47", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -519,7 +519,7 @@ async function main() {
         procedureNote: "Resta las decenas (40 y 10) y las unidades (7 y 5) por separado, y junta los dos resultados.",
         procedureNoteEn: "Subtract the tens (40 and 10) and the units (7 and 5) separately, then add the two results together.",
         difficultyLevel: 1,
-        visual: null,
+        visual: { kind: "takeaway", total: 47, removed: 15, emoji: "🔵" },
         options: [
           { label: "32", isCorrect: true },
           { label: "62", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -532,7 +532,7 @@ async function main() {
         procedureNote: "Suma las decenas (20 y 10) y las unidades (3 y 5) por separado, y junta los dos resultados.",
         procedureNoteEn: "Add the tens (20 and 10) and the units (3 and 5) separately, then add the two results together.",
         difficultyLevel: 2,
-        visual: null,
+        visual: { kind: "combine", a: 23, b: 15, emoji: "🔵" },
         options: [
           { label: "38", isCorrect: true },
           { label: "8", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -545,7 +545,7 @@ async function main() {
         procedureNote: "Suma las decenas (30 y 20) y las unidades (4 y 5) por separado, y junta los dos resultados.",
         procedureNoteEn: "Add the tens (30 and 20) and the units (4 and 5) separately, then add the two results together.",
         difficultyLevel: 2,
-        visual: null,
+        visual: { kind: "combine", a: 34, b: 25, emoji: "🔵" },
         options: [
           { label: "59", isCorrect: true },
           { label: "9", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -558,7 +558,7 @@ async function main() {
         procedureNote: "Resta las decenas (60 y 20) y las unidades (8 y 4) por separado, y junta los dos resultados.",
         procedureNoteEn: "Subtract the tens (60 and 20) and the units (8 and 4) separately, then add the two results together.",
         difficultyLevel: 2,
-        visual: null,
+        visual: { kind: "takeaway", total: 68, removed: 24, emoji: "🔵" },
         options: [
           { label: "44", isCorrect: true },
           { label: "92", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -571,7 +571,7 @@ async function main() {
         procedureNote: "Resta las decenas (50 y 20) y las unidades (6 y 3) por separado, y junta los dos resultados.",
         procedureNoteEn: "Subtract the tens (50 and 20) and the units (6 and 3) separately, then add the two results together.",
         difficultyLevel: 2,
-        visual: null,
+        visual: { kind: "takeaway", total: 56, removed: 23, emoji: "🔵" },
         options: [
           { label: "33", isCorrect: true },
           { label: "79", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -584,7 +584,7 @@ async function main() {
         procedureNote: "Regalar más es juntar. Suma las decenas (40 y 20) y las unidades (5 y 0) por separado, y junta los dos resultados.",
         procedureNoteEn: "Getting more means joining. Add the tens (40 and 20) and the units (5 and 0) separately, then add the two results together.",
         difficultyLevel: 3,
-        visual: null,
+        visual: { kind: "combine", a: 45, b: 20, emoji: "🌟" },
         options: [
           { label: "65", isCorrect: true },
           { label: "25", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -598,7 +598,7 @@ async function main() {
         procedureNote: "Bajarse es quitar. Resta las decenas (70 y 30) y las unidades (6 y 2) por separado, y junta los dos resultados.",
         procedureNoteEn: "Getting off means taking away. Subtract the tens (70 and 30) and the units (6 and 2) separately, then add the two results together.",
         difficultyLevel: 3,
-        visual: null,
+        visual: { kind: "takeaway", total: 76, removed: 32, emoji: "🧑" },
         options: [
           { label: "44", isCorrect: true },
           { label: "108", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -612,7 +612,7 @@ async function main() {
         procedureNote: "Suma las decenas (60 y 20) y las unidades (3 y 6) por separado, y junta los dos resultados.",
         procedureNoteEn: "Add the tens (60 and 20) and the units (3 and 6) separately, then add the two results together.",
         difficultyLevel: 3,
-        visual: null,
+        visual: { kind: "combine", a: 63, b: 26, emoji: "🔵" },
         options: [
           { label: "89", isCorrect: true },
           { label: "37", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
@@ -625,7 +625,7 @@ async function main() {
         procedureNote: "Resta las decenas (80 y 40) y las unidades (8 y 5) por separado, y junta los dos resultados.",
         procedureNoteEn: "Subtract the tens (80 and 40) and the units (8 and 5) separately, then add the two results together.",
         difficultyLevel: 3,
-        visual: null,
+        visual: { kind: "takeaway", total: 88, removed: 45, emoji: "🔵" },
         options: [
           { label: "43", isCorrect: true },
           { label: "133", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },

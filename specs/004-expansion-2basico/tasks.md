@@ -20,13 +20,23 @@
 - [x] Suite completa en verde: servidor 87 tests, cliente 27 tests, E2E 1/1 (validado localmente
       con Playwright 1.40 por la limitación de macOS 12 de este entorno), lint y typecheck limpios.
 
+## Ampliación posterior (2026-08-14)
+
+- [x] **Representación pictórica para 2° básico.** `ExerciseVisual` gana un umbral: n ≤ 20 sigue
+      renderizando un objeto por unidad (1° básico, sin cambios); n > 20 renderiza bloques de
+      decena ("10") + unidades sueltas, descomponiendo también la cantidad tachada (`removed`) en
+      su propia decena/unidad — nunca cruza una columna, coherente con "sin reserva". Los 12
+      ejercicios de MA02 OA09 quedaron con su `visual` poblado (antes `null`). Sin cambios de
+      schema — mismo tipo `ExerciseVisualDescriptor`, solo la lógica de render en el componente.
+      Suite completa verde tras el cambio (88 servidor, 27 cliente); no se agregó test dedicado a
+      `ExerciseVisual` (componente decorativo, `aria-hidden`, sin tests previos tampoco para
+      `combine`/`takeaway`).
+
 ## Backlog (explícitamente fuera de esta expansión)
 
 - [ ] Interacciones ricas (arrastrar y soltar, unir elementos, detectar errores en un
       procedimiento) del diseño pedagógico original — el motor de ejercicios solo soporta opción
       múltiple hoy. Proyecto de UI aparte.
-- [ ] Representación pictórica (`visual`) para números de dos dígitos — `ExerciseVisual` no
-      escala más allá de ~20 con el enfoque actual (un emoji por unidad).
 - [ ] Los otros 10 OA de Números y Operaciones de 2° básico.
 - [ ] Los otros 4 ejes de 2° básico (Patrones y Álgebra, Geometría, Medición, Datos y
       Probabilidades).

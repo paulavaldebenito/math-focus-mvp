@@ -32,11 +32,10 @@ básico ya cubre (adición/sustracción, un paso más de dificultad).
   — solo `prompt` + opciones. Se adaptó el contenido matemático de esas 6 actividades a ejercicios
   de opción múltiple, perdiendo la interacción rica. Construir esos tipos de interacción es un
   proyecto de UI aparte, no incluido acá.
-- **Sin representación pictórica (`visual`).** El componente `ExerciseVisual` cuenta objetos con
-  emoji uno por uno — funciona para cifras hasta ~20 (1° básico) pero no escala a números de dos
-  dígitos sin verse mal o requerir un componente nuevo (bloques de decenas/unidades). Los
-  ejercicios de 2° básico quedan sin `visual` (`null`) — solo texto narrado por voz, que ya es el
-  contenido accesible principal según el propio componente.
+- ~~**Sin representación pictórica (`visual`).**~~ Resuelto el 2026-08-14 — ver
+  `specs/004-expansion-2basico/tasks.md`, sección "Ampliación posterior": `ExerciseVisual` ahora
+  renderiza números > 20 como bloques de decena + unidades sueltas, y los 12 ejercicios quedaron
+  con su `visual` poblado.
 - **Otros 10 OA de Números y Operaciones de 2° básico** (conteo, comparación, cálculo mental,
   decenas/unidades como concepto explícito, tablas de multiplicar 2/5/10) — no construidos.
 - **Los otros 4 ejes de 2° básico** (Patrones y Álgebra, Geometría, Medición, Datos y
