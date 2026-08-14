@@ -13,6 +13,13 @@ decida ampliar a otros cursos y/o ejes, no como una tarea activa de `specs/003`.
 este documento parte en 2° básico, así que **no completa ningún `oaCode` existente**. Antes de
 usarlo para eso hará falta además la codificación de 1° básico, que no está incluida acá.
 
+**Corrección conocida (2026-08-14):** al verificar OA09 de 2° básico contra la fuente oficial
+(curriculumnacional.mineduc.cl) para diseñar `actividades-oa09-2basico.md`, se encontró que este
+resumen dice que 2° básico incluye adición y sustracción **"con reserva"**, pero el texto oficial
+de OA09 dice explícitamente **"sin considerar reserva"** — la reserva se introduce en un curso
+posterior. Este resumen es un resumen de trabajo, no la fuente primaria: **verificar cada OA
+puntual contra la fuente oficial antes de usarlo**, no asumir que esta tabla es exacta.
+
 ---
 
 ## 1. Números y Operaciones
