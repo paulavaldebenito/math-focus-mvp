@@ -20,3 +20,11 @@ MVP de "Math Focus" construido bajo un proceso por fases (diagnóstico → defin
 ## Estado
 
 Ver historial de commits y el plan de tareas (T0.x–T6.x) acordado en la fase de planificación. Ningún dato de Objetivo de Aprendizaje curricular está codificado sin marcar su origen; cualquier código de OA queda como "pendiente de validación curricular" hasta contar con la fuente oficial de MINEDUC.
+
+## Spec, plan y tareas
+
+El proceso por fases mencionado arriba está versionado en [`specs/001-mvp-regulado/`](specs/001-mvp-regulado/):
+
+- [`spec.md`](specs/001-mvp-regulado/spec.md) — alcance, historias de usuario, principios no negociables.
+- [`plan.md`](specs/001-mvp-regulado/plan.md) — stack, arquitectura, modelo de datos, deuda técnica abierta.
+- [`tasks.md`](specs/001-mvp-regulado/tasks.md) — historial de tareas T0–T7 con su commit, y backlog pendiente.
