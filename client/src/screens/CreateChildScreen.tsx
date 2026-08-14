@@ -9,18 +9,22 @@ interface Props {
   onCreated: (child: ChildProfile) => void;
 }
 
+const SUPPORTED_GRADES = [1, 2] as const;
+
 export function CreateChildScreen({ consentId, onCreated }: Props) {
   const { lang } = useLang();
   const [displayName, setDisplayName] = useState("");
+  const [grade, setGrade] = useState<(typeof SUPPORTED_GRADES)[number] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
+    if (!grade) return;
     setError(null);
     setSubmitting(true);
     try {
-      const child = await endpoints.createChild(consentId, displayName.trim());
+      const child = await endpoints.createChild(consentId, displayName.trim(), grade);
       onCreated(child);
     } catch (err) {
       if (err instanceof ApiError && (err.body as { error?: string } | null)?.error === "consent_already_used") {
@@ -51,13 +55,33 @@ export function CreateChildScreen({ consentId, onCreated }: Props) {
           />
         </div>
 
+        <div className="field">
+          <label id="grade-label">{t(lang, "createChildGradeLabel")}</label>
+          <div className="choice-grid" role="group" aria-labelledby="grade-label">
+            {SUPPORTED_GRADES.map((g) => (
+              <button
+                key={g}
+                type="button"
+                className={`choice-card ${grade === g ? "selected" : ""}`}
+                onClick={() => setGrade(g)}
+              >
+                {t(lang, g === 1 ? "grade1Label" : "grade2Label")}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {error && (
           <p className="error-text" role="alert">
             {error}
           </p>
         )}
 
-        <button className="btn-primary" type="submit" disabled={displayName.trim().length === 0 || submitting}>
+        <button
+          className="btn-primary"
+          type="submit"
+          disabled={displayName.trim().length === 0 || !grade || submitting}
+        >
           {submitting ? t(lang, "authSubmitting") : t(lang, "continueBtn")}
         </button>
       </form>

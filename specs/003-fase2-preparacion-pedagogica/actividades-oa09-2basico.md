@@ -1,7 +1,10 @@
 # Actividades diseñadas — MA02 OA09 (2° básico)
 
-**Estado:** contenido de referencia, no implementado — la app hoy cubre solo 1° básico
-(`specs/001-mvp-regulado/spec.md`). **Última revisión:** 2026-08-14.
+**Estado:** implementado (parcialmente) — ver `specs/004-expansion-2basico/`. El contenido
+matemático de estas 6 actividades se adaptó a 12 ejercicios de opción múltiple en
+`server/prisma/seed.ts`; las interacciones ricas (arrastrar y soltar, unir elementos, detectar
+errores) siguen sin construir — el motor de ejercicios actual solo soporta opción múltiple.
+**Última revisión:** 2026-08-14.
 
 Diseñadas con la metodología pedida por el usuario: un equipo simulado de currículista +
 especialista en TDAH/neurodiversidad + diseñador UX infantil, aplicando reglas de brevedad,

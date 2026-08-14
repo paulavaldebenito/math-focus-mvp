@@ -13,6 +13,85 @@ const ERROR_TYPES = [
   { code: "solicitud_ayuda_repetida", label: "Solicitud repetida de ayuda", description: "Pide pistas de forma reiterada en ejercicios similares." },
 ] as const;
 
+interface SeedExercise {
+  prompt: string;
+  promptEn: string;
+  procedureNote: string;
+  procedureNoteEn: string;
+  difficultyLevel: number;
+  visual: unknown;
+  options: Array<{ label: string; isCorrect: boolean; errorTypeId?: string }>;
+}
+
+interface SeedSkill {
+  grade: number;
+  axis: string;
+  name: string;
+  oaCode?: string;
+}
+
+// Todos los ejercicios de este seed son FICTICIOS (isFictitious: true por
+// defecto) — sirven para probar el modelo de datos y el flujo completo, no
+// son contenido curricular aprobado (salvo el oaCode, verificado aparte
+// contra la fuente oficial cuando está presente). difficultyLevel 1-3
+// permite que el motor adaptativo pida un ejercicio más fácil o más
+// difícil. Idempotente por ejercicio (no por habilidad): si se agregan
+// ejercicios nuevos al arreglo de una habilidad ya sembrada, igual se crean.
+async function seedSkill(skillData: SeedSkill, exercises: SeedExercise[]) {
+  let skill = await prisma.mathSkill.findFirst({
+    where: { grade: skillData.grade, axis: skillData.axis, name: skillData.name },
+  });
+
+  if (skill) {
+    console.log(`OK: habilidad "${skillData.name}" ya existía, no se duplica.`);
+  } else {
+    skill = await prisma.mathSkill.create({ data: skillData });
+    console.log(`OK: habilidad "${skillData.name}" creada.`);
+  }
+
+  let created = 0;
+  let updated = 0;
+  for (const ex of exercises) {
+    const exists = await prisma.exercise.findFirst({
+      where: { mathSkillId: skill.id, prompt: ex.prompt },
+    });
+
+    if (exists) {
+      // No se tocan las opciones (Attempt ya puede referenciarlas) — solo
+      // se actualizan campos de contenido, útil para backfillear `visual`
+      // en ejercicios sembrados antes de que existiera este campo.
+      await prisma.exercise.update({
+        where: { id: exists.id },
+        data: {
+          procedureNote: ex.procedureNote,
+          procedureNoteEn: ex.procedureNoteEn,
+          promptEn: ex.promptEn,
+          difficultyLevel: ex.difficultyLevel,
+          visual: ex.visual as never,
+        },
+      });
+      updated += 1;
+      continue;
+    }
+
+    await prisma.exercise.create({
+      data: {
+        mathSkillId: skill.id,
+        prompt: ex.prompt,
+        promptEn: ex.promptEn,
+        procedureNote: ex.procedureNote,
+        procedureNoteEn: ex.procedureNoteEn,
+        difficultyLevel: ex.difficultyLevel,
+        visual: ex.visual as never,
+        options: { create: ex.options },
+      },
+    });
+    created += 1;
+  }
+
+  console.log(`OK: ${created} ejercicio(s) nuevo(s), ${updated} actualizado(s) para "${skillData.name}".`);
+}
+
 async function main() {
   for (const et of ERROR_TYPES) {
     await prisma.errorType.upsert({
@@ -27,33 +106,14 @@ async function main() {
     (await prisma.errorType.findMany()).map((e) => [e.code, e.id]),
   );
 
-  let skill = await prisma.mathSkill.findFirst({
-    where: { grade: 1, axis: "Números y operaciones", name: "Adición y sustracción dentro de 20" },
-  });
-
-  if (skill) {
-    console.log("OK: la habilidad de siembra ya existía, no se duplica.");
-  } else {
-    skill = await prisma.mathSkill.create({
-      data: {
-        grade: 1,
-        axis: "Números y operaciones",
-        name: "Adición y sustracción dentro de 20",
-        // oaCode: pendiente de validación curricular — no se inventa.
-      },
-    });
-    console.log("OK: habilidad de siembra creada.");
-  }
-
-  {
-    // Todos los ejercicios de este seed son FICTICIOS (isFictitious: true por
-    // defecto) — sirven para probar el modelo de datos y el flujo completo,
-    // no son contenido curricular aprobado. difficultyLevel 1-3 permite que
-    // el motor adaptativo (T4) pida un ejercicio más fácil o más difícil.
-    // Idempotente por ejercicio (no por habilidad): así, si se agregan
-    // ejercicios nuevos a este arreglo, se siembran aunque la habilidad ya
-    // existiera de una corrida anterior.
-    const exercises = [
+  await seedSkill(
+    {
+      grade: 1,
+      axis: "Números y operaciones",
+      name: "Adición y sustracción dentro de 20",
+      // oaCode: pendiente de validación curricular — no se inventa.
+    },
+    [
       {
         prompt: "¿Cuánto es 6 + 7?",
         promptEn: "How much is 6 + 7?",
@@ -393,50 +453,182 @@ async function main() {
           { label: "17", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
         ],
       },
-    ];
+    ],
+  );
 
-    let created = 0;
-    let updated = 0;
-    for (const ex of exercises) {
-      const exists = await prisma.exercise.findFirst({
-        where: { mathSkillId: skill.id, prompt: ex.prompt },
-      });
-
-      if (exists) {
-        // No se tocan las opciones (Attempt ya puede referenciarlas) — solo
-        // se actualizan campos de contenido, útil para backfillear `visual`
-        // en ejercicios sembrados antes de que existiera este campo.
-        await prisma.exercise.update({
-          where: { id: exists.id },
-          data: {
-            procedureNote: ex.procedureNote,
-            procedureNoteEn: ex.procedureNoteEn,
-            promptEn: ex.promptEn,
-            difficultyLevel: ex.difficultyLevel,
-            visual: ex.visual,
-          },
-        });
-        updated += 1;
-        continue;
-      }
-
-      await prisma.exercise.create({
-        data: {
-          mathSkillId: skill.id,
-          prompt: ex.prompt,
-          promptEn: ex.promptEn,
-          procedureNote: ex.procedureNote,
-          procedureNoteEn: ex.procedureNoteEn,
-          difficultyLevel: ex.difficultyLevel,
-          visual: ex.visual,
-          options: { create: ex.options },
-        },
-      });
-      created += 1;
-    }
-
-    console.log(`OK: ${created} ejercicio(s) nuevo(s), ${updated} actualizado(s).`);
-  }
+  // === 2° básico — MA02 OA09, verificado contra curriculumnacional.mineduc.cl
+  // el 2026-08-14 (ver specs/003-fase2-preparacion-pedagogica/actividades-oa09-2basico.md).
+  // OA09 es explícito en que el algoritmo es SIN reserva/canje — todos los
+  // pares de este bloque están elegidos para que cada columna (unidades,
+  // decenas) se sume o reste sin necesidad de reagrupar.
+  await seedSkill(
+    {
+      grade: 2,
+      axis: "Números y operaciones",
+      name: "Adición y sustracción dentro de 100",
+      oaCode: "MA02 OA09",
+    },
+    [
+      {
+        prompt: "¿Cuánto es 12 + 15?",
+        promptEn: "How much is 12 + 15?",
+        procedureNote: "Suma las decenas (10 y 10) y después las unidades (2 y 5): 20 + 7 = 27.",
+        procedureNoteEn: "Add the tens (10 and 10), then the units (2 and 5): 20 + 7 = 27.",
+        difficultyLevel: 1,
+        visual: null,
+        options: [
+          { label: "27", isCorrect: true },
+          { label: "3", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "28", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 24 + 13?",
+        promptEn: "How much is 24 + 13?",
+        procedureNote: "Suma las decenas (20 y 10) y después las unidades (4 y 3): 30 + 7 = 37.",
+        procedureNoteEn: "Add the tens (20 and 10), then the units (4 and 3): 30 + 7 = 37.",
+        difficultyLevel: 1,
+        visual: null,
+        options: [
+          { label: "37", isCorrect: true },
+          { label: "11", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "38", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 35 − 12?",
+        promptEn: "How much is 35 − 12?",
+        procedureNote: "Resta las decenas (30 y 10) y después las unidades (5 y 2): 20 + 3 = 23.",
+        procedureNoteEn: "Subtract the tens (30 and 10), then the units (5 and 2): 20 + 3 = 23.",
+        difficultyLevel: 1,
+        visual: null,
+        options: [
+          { label: "23", isCorrect: true },
+          { label: "47", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "22", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 47 − 15?",
+        promptEn: "How much is 47 − 15?",
+        procedureNote: "Resta las decenas (40 y 10) y después las unidades (7 y 5): 30 + 2 = 32.",
+        procedureNoteEn: "Subtract the tens (40 and 10), then the units (7 and 5): 30 + 2 = 32.",
+        difficultyLevel: 1,
+        visual: null,
+        options: [
+          { label: "32", isCorrect: true },
+          { label: "62", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "31", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 23 + 15?",
+        promptEn: "How much is 23 + 15?",
+        procedureNote: "Suma las decenas (20 y 10) y después las unidades (3 y 5): 30 + 8 = 38.",
+        procedureNoteEn: "Add the tens (20 and 10), then the units (3 and 5): 30 + 8 = 38.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "38", isCorrect: true },
+          { label: "8", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "39", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 34 + 25?",
+        promptEn: "How much is 34 + 25?",
+        procedureNote: "Suma las decenas (30 y 20) y después las unidades (4 y 5): 50 + 9 = 59.",
+        procedureNoteEn: "Add the tens (30 and 20), then the units (4 and 5): 50 + 9 = 59.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "59", isCorrect: true },
+          { label: "9", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "58", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 68 − 24?",
+        promptEn: "How much is 68 − 24?",
+        procedureNote: "Resta las decenas (60 y 20) y después las unidades (8 y 4): 40 + 4 = 44.",
+        procedureNoteEn: "Subtract the tens (60 and 20), then the units (8 and 4): 40 + 4 = 44.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "44", isCorrect: true },
+          { label: "92", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "43", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 56 − 23?",
+        promptEn: "How much is 56 − 23?",
+        procedureNote: "Resta las decenas (50 y 20) y después las unidades (6 y 3): 30 + 3 = 33.",
+        procedureNoteEn: "Subtract the tens (50 and 20), then the units (6 and 3): 30 + 3 = 33.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "33", isCorrect: true },
+          { label: "79", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "32", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "Tenías 45 stickers y un amigo te regaló 20 más. ¿Cuántos tienes ahora?",
+        promptEn: "You had 45 stickers and a friend gave you 20 more. How many do you have now?",
+        procedureNote: "Regalar más es juntar: suma 45 + 20 = 65.",
+        procedureNoteEn: "Getting more means joining: add 45 + 20 = 65.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "65", isCorrect: true },
+          { label: "25", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "64", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "20", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+      {
+        prompt: "Había 76 personas en el bus y bajaron 32. ¿Cuántas personas quedan?",
+        promptEn: "There were 76 people on the bus and 32 got off. How many people are left?",
+        procedureNote: "Bajarse es quitar: resta 76 − 32 = 44.",
+        procedureNoteEn: "Getting off means taking away: subtract 76 − 32 = 44.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "44", isCorrect: true },
+          { label: "108", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "43", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+          { label: "32", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 63 + 26?",
+        promptEn: "How much is 63 + 26?",
+        procedureNote: "Suma las decenas (60 y 20) y después las unidades (3 y 6): 80 + 9 = 89.",
+        procedureNoteEn: "Add the tens (60 and 20), then the units (3 and 6): 80 + 9 = 89.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "89", isCorrect: true },
+          { label: "37", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "88", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuánto es 88 − 45?",
+        promptEn: "How much is 88 − 45?",
+        procedureNote: "Resta las decenas (80 y 40) y después las unidades (8 y 5): 40 + 3 = 43.",
+        procedureNoteEn: "Subtract the tens (80 and 40), then the units (8 and 5): 40 + 3 = 43.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "43", isCorrect: true },
+          { label: "133", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "42", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+    ],
+  );
 }
 
 main()

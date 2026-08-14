@@ -59,7 +59,7 @@ describe("Control de acceso cruzado entre adultos (IDOR)", () => {
     const childRes = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieA },
-      body: JSON.stringify({ consentId, displayName: "Niño ficticio A" }),
+      body: JSON.stringify({ consentId, displayName: "Niño ficticio A", grade: 1 }),
     });
     ({ id: childIdA } = (await childRes.json()) as { id: string });
 

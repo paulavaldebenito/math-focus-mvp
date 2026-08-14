@@ -41,7 +41,7 @@ describe("GET /api/children/:childId/next-exercise (T4.3)", () => {
     const childRes = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookie },
-      body: JSON.stringify({ consentId, displayName: "Niño ficticio" }),
+      body: JSON.stringify({ consentId, displayName: "Niño ficticio", grade: 1 }),
     });
     const child = (await childRes.json()) as { id: string };
     childId = child.id;
@@ -99,5 +99,36 @@ describe("GET /api/children/:childId/next-exercise (T4.3)", () => {
         body: JSON.stringify({ exerciseId: body.id, selectedOptionId: body.options[0]!.id }),
       });
     }
+  });
+
+  it("un niño de 2° básico recibe ejercicios de 2° básico, no del banco de 1°", async () => {
+    const consentRes = await fetch(`${baseUrl}/api/consent`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: cookie },
+      body: JSON.stringify({ scope: "MVP v1 — datos mínimos, ficticio de prueba (2° básico)" }),
+    });
+    const { id: consentId2 } = (await consentRes.json()) as { id: string };
+
+    const childRes = await fetch(`${baseUrl}/api/children`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: cookie },
+      body: JSON.stringify({ consentId: consentId2, displayName: "Niño ficticio 2° básico", grade: 2 }),
+    });
+    const { id: childId2 } = (await childRes.json()) as { id: string };
+
+    const res = await fetch(`${baseUrl}/api/children/${childId2}/next-exercise`, {
+      headers: { Cookie: cookie },
+    });
+    expect(res.status).toBe(200);
+    const body = (await res.json()) as { id: string };
+
+    const exercise = await prisma.exercise.findUnique({
+      where: { id: body.id },
+      include: { mathSkill: true },
+    });
+    expect(exercise?.mathSkill.grade).toBe(2);
+
+    await prisma.childProfile.delete({ where: { id: childId2 } });
+    await prisma.consent.delete({ where: { id: consentId2 } });
   });
 });

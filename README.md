@@ -6,7 +6,9 @@ MVP de "Math Focus" construido bajo un proceso por fases (diagnóstico → defin
 
 ## Alcance del MVP v1 (aprobado)
 
-- Nivel escolar: 1° básico.
+- Nivel escolar: 1° básico. **Expandido a 2° básico (mismo eje) el 2026-08-14** — ver
+  [`specs/004-expansion-2basico/`](specs/004-expansion-2basico/); el resto de este documento
+  describe el alcance original de v1.
 - Eje: Números y operaciones (conteo 0–20, adición y sustracción dentro de 20).
 - Registro de adulto responsable + consentimiento explícito, obligatorios antes de crear cualquier perfil infantil.
 - Motor adaptativo determinista y auditable (reglas explícitas, cada decisión con motivo persistido).
@@ -33,3 +35,7 @@ El backlog post-MVP está organizado en dos fases, cada una con su propio spec/p
 
 - [`specs/002-fase1-robustez-tecnica/`](specs/002-fase1-robustez-tecnica/) — CI, E2E, migraciones automatizadas, seguridad de sesiones, control de acceso, errores y reintentos.
 - [`specs/003-fase2-preparacion-pedagogica/`](specs/003-fase2-preparacion-pedagogica/) — completar OA, auditar el banco de ejercicios, validar reglas adaptativas, revisar ES/EN, consola mínima de contenido.
+
+Expansión de alcance post-MVP:
+
+- [`specs/004-expansion-2basico/`](specs/004-expansion-2basico/) — 2° básico, eje Números y operaciones, MA02 OA09 (adición y sustracción dentro de 100, sin reserva).

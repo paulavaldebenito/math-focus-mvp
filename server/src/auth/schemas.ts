@@ -21,12 +21,17 @@ export const consentSchema = z.object({
 
 export type ConsentInput = z.infer<typeof consentSchema>;
 
-// MVP v1: sin campo `grade` — el curso queda fijo en el servidor (1° básico).
-// No se acepta desde el cliente para no reabrir por error la cobertura de
-// curso en una versión que debe quedar acotada.
+// Cursos con banco de ejercicios real (Números y operaciones). Whitelist
+// explícita — no un rango abierto — para no aceptar por error un curso sin
+// contenido todavía. Ver specs/004-expansion-2basico/spec.md.
+export const SUPPORTED_GRADES = [1, 2] as const;
+
 export const childProfileSchema = z.object({
   consentId: z.string().min(1),
   displayName: z.string().trim().min(1).max(60),
+  grade: z.number().int().refine((g) => (SUPPORTED_GRADES as readonly number[]).includes(g), {
+    message: `El curso debe ser uno de: ${SUPPORTED_GRADES.join(", ")}.`,
+  }),
   language: z.enum(["es", "en"]).default("es"),
 });
 

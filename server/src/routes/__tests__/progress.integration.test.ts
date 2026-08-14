@@ -24,7 +24,7 @@ async function registerLoginAndChild(baseUrl: string, email: string, password: s
   const childRes = await fetch(`${baseUrl}/api/children`, {
     method: "POST",
     headers: { "Content-Type": "application/json", Cookie: cookie },
-    body: JSON.stringify({ consentId, displayName: "Niño ficticio" }),
+    body: JSON.stringify({ consentId, displayName: "Niño ficticio", grade: 1 }),
   });
   const child = (await childRes.json()) as { id: string };
   return { cookie, childId: child.id };

@@ -87,8 +87,9 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   await page.getByRole("checkbox").check();
   await page.getByRole("button", { name: "Continuar" }).click();
 
-  // Perfil infantil.
+  // Perfil infantil — el curso es obligatorio desde la expansión a 2° básico.
   await page.getByLabel("Nombre").fill("Niño E2E");
+  await page.getByRole("button", { name: "1° básico" }).click();
   await page.getByRole("button", { name: "Continuar" }).click();
 
   // Elegir compañero.

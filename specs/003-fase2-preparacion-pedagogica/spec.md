@@ -40,10 +40,11 @@ código no falle.
 ## Referencia disponible para una expansión futura
 
 El usuario aportó el currículum MINEDUC de 2° a 6° básico (los 5 ejes), guardado en
-[`curriculo-mineduc-2-a-6-basico.md`](curriculo-mineduc-2-a-6-basico.md). **No desbloquea el ítem 1
-de esta fase**: el banco de ejercicios actual es 100% 1° básico y ese documento empieza en 2°, así
-que no completa ningún `oaCode` existente. Queda como insumo para cuando se decida expandir a
-otros cursos — una decisión de alcance explícita, no algo que esta fase dispare por sí sola.
+[`curriculo-mineduc-2-a-6-basico.md`](curriculo-mineduc-2-a-6-basico.md). No desbloquea el ítem 1
+de esta fase (los otros OA de 1° básico siguen sin fuente), pero **el usuario sí decidió expandir
+a 2° básico** — ver [`specs/004-expansion-2basico/`](../004-expansion-2basico/). Esa expansión
+cubre solo MA02 OA09; el resto del documento de 2°-6° básico sigue siendo referencia sin
+implementar.
 
 ## Bloqueos conocidos
 

@@ -54,6 +54,7 @@ describe("App", () => {
 
     await screen.findByRole("heading", { name: "Crea el perfil de tu hijo/a" });
     await user.type(screen.getByLabelText("Nombre"), "Ana");
+    await user.click(screen.getByRole("button", { name: "1° básico" }));
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
     // Un perfil recién creado elige compañero antes de la evaluación inicial.

@@ -32,8 +32,8 @@ export function createConsent(scope: string) {
   return api.post<Consent>("/api/consent", { scope });
 }
 
-export function createChild(consentId: string, displayName: string) {
-  return api.post<ChildProfile>("/api/children", { consentId, displayName });
+export function createChild(consentId: string, displayName: string, grade: number) {
+  return api.post<ChildProfile>("/api/children", { consentId, displayName, grade });
 }
 
 export async function listChildren(): Promise<ChildProfile[]> {

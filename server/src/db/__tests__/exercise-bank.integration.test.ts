@@ -16,16 +16,23 @@ describe("Banco de ejercicios sembrado (T1.2)", () => {
     for (const ex of exercises) {
       expect(ex.isFictitious).toBe(true);
       expect(ex.procedureNote.length).toBeGreaterThan(0);
-      expect(ex.mathSkill.grade).toBe(1);
+      expect([1, 2]).toContain(ex.mathSkill.grade);
       const correctOptions = ex.options.filter((o) => o.isCorrect);
       expect(correctOptions).toHaveLength(1);
     }
   });
 
-  it("ningún Objetivo de Aprendizaje está codificado sin validar (oaCode debe quedar nulo)", async () => {
+  it("ningún Objetivo de Aprendizaje está codificado sin validar contra la fuente oficial", async () => {
     const skills = await prisma.mathSkill.findMany();
     for (const skill of skills) {
-      expect(skill.oaCode).toBeNull();
+      if (skill.grade === 2 && skill.axis === "Números y operaciones") {
+        // Único OA verificado contra curriculumnacional.mineduc.cl hasta ahora
+        // (ver specs/003-fase2-preparacion-pedagogica/actividades-oa09-2basico.md)
+        // — cualquier cambio acá debe venir con la misma verificación.
+        expect(skill.oaCode).toBe("MA02 OA09");
+      } else {
+        expect(skill.oaCode).toBeNull();
+      }
     }
   });
 

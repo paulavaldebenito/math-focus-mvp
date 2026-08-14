@@ -66,7 +66,7 @@ describe("POST /api/children (HU3)", () => {
     const res = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio" }),
+      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio", grade: 1 }),
     });
     expect(res.status).toBe(401);
   });
@@ -75,28 +75,37 @@ describe("POST /api/children (HU3)", () => {
     const res = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieB },
-      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio" }),
+      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio", grade: 1 }),
     });
     expect(res.status).toBe(403);
   });
 
-  it("ignora cualquier `grade` enviado por el cliente y fuerza 1° básico", async () => {
+  it("rechaza un curso sin banco de ejercicios (400) — no cualquier número es válido", async () => {
     const res = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieA },
       body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio", grade: 6 }),
     });
+    expect(res.status).toBe(400);
+  });
+
+  it("crea el perfil con el curso elegido por el adulto (1° o 2° básico)", async () => {
+    const res = await fetch(`${baseUrl}/api/children`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: cookieA },
+      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio", grade: 2 }),
+    });
     expect(res.status).toBe(201);
     const body = (await res.json()) as { id: string; grade: number };
     createdChildIds.push(body.id);
-    expect(body.grade).toBe(1);
+    expect(body.grade).toBe(2);
   });
 
   it("rechaza reutilizar el mismo consentimiento para un segundo perfil (409)", async () => {
     const res = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieA },
-      body: JSON.stringify({ consentId: consentIdA, displayName: "Otro niño ficticio" }),
+      body: JSON.stringify({ consentId: consentIdA, displayName: "Otro niño ficticio", grade: 1 }),
     });
     expect(res.status).toBe(409);
   });

@@ -4,9 +4,6 @@ import { childProfileSchema, companionSchema } from "../auth/schemas.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
 
-// MVP v1: fijo, no configurable por el cliente. Ver ADR en README.
-const MVP_GRADE = 1;
-
 export const childrenRouter = Router();
 
 childrenRouter.get("/", requireAuth, async (req, res) => {
@@ -25,7 +22,7 @@ childrenRouter.post("/", requireAuth, async (req, res) => {
     return;
   }
 
-  const { consentId, displayName, language } = parsed.data;
+  const { consentId, displayName, grade, language } = parsed.data;
 
   const consent = await prisma.consent.findUnique({ where: { id: consentId } });
   if (!consent || consent.adultUserId !== req.session.adultUserId! || consent.revokedAt) {
@@ -44,7 +41,7 @@ childrenRouter.post("/", requireAuth, async (req, res) => {
       adultUserId: req.session.adultUserId!,
       consentId,
       displayName,
-      grade: MVP_GRADE,
+      grade,
       language,
     },
   });
