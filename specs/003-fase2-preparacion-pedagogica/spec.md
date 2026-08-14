@@ -37,11 +37,20 @@ código no falle.
 - Cualquier cambio a la arquitectura técnica — eso es Fase 1
   (`specs/002-fase1-robustez-tecnica/`).
 
+## Referencia disponible para una expansión futura
+
+El usuario aportó el currículum MINEDUC de 2° a 6° básico (los 5 ejes), guardado en
+[`curriculo-mineduc-2-a-6-basico.md`](curriculo-mineduc-2-a-6-basico.md). **No desbloquea el ítem 1
+de esta fase**: el banco de ejercicios actual es 100% 1° básico y ese documento empieza en 2°, así
+que no completa ningún `oaCode` existente. Queda como insumo para cuando se decida expandir a
+otros cursos — una decisión de alcance explícita, no algo que esta fase dispare por sí sola.
+
 ## Bloqueos conocidos
 
 Este roadmap se documenta ahora, pero varios ítems no son ejecutables sin un insumo externo:
 
-- **1 (OA)** bloqueado hasta tener la fuente oficial de MINEDUC.
+- **1 (OA)** bloqueado hasta tener la fuente oficial de MINEDUC para 1° básico específicamente
+  (ver nota arriba: lo ya aportado es de 2°-6° básico y no cubre este curso).
 - **2 y 4** requieren criterio humano (docente de 1° básico; hablante nativo de inglés) — no son
   auditorías que el código o un modelo puedan cerrar solos con confianza suficiente para contenido
   dirigido a niños.
