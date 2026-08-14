@@ -35,14 +35,32 @@ export function ExerciseVisual({ visual }: Props) {
     );
   }
 
+  if (visual.kind === "takeaway") {
+    return (
+      <div className="pictorial-row" aria-hidden="true">
+        {Array.from({ length: visual.total }, (_, i) => (
+          <span key={i} className={`pictorial-icon ${i >= visual.total - visual.removed ? "removed" : ""}`}>
+            {emoji}
+          </span>
+        ))}
+        <span className="pictorial-eq">= ?</span>
+      </div>
+    );
+  }
+
   return (
     <div className="pictorial-row" aria-hidden="true">
-      {Array.from({ length: visual.total }, (_, i) => (
-        <span key={i} className={`pictorial-icon ${i >= visual.total - visual.removed ? "removed" : ""}`}>
+      {Array.from({ length: visual.a }, (_, i) => (
+        <span key={`a${i}`} className="pictorial-icon">
           {emoji}
         </span>
       ))}
-      <span className="pictorial-eq">= ?</span>
+      <span className="pictorial-op">vs</span>
+      {Array.from({ length: visual.b }, (_, i) => (
+        <span key={`b${i}`} className="pictorial-icon">
+          {emoji}
+        </span>
+      ))}
     </div>
   );
 }

@@ -26,16 +26,19 @@ describe("Banco de ejercicios sembrado (T1.2)", () => {
     // OA verificados contra curriculumnacional.mineduc.cl (páginas de OA
     // individuales, no un resumen) — cualquier cambio acá debe venir con la
     // misma verificación, no con un resumen de trabajo.
+    // Clave por nombre de habilidad, no grado+eje — puede haber más de una
+    // habilidad en el mismo grado y eje (ej. dos de 1° básico, Números y
+    // operaciones).
     const VERIFIED_OA: Record<string, string> = {
-      "1:Números y operaciones": "MA01 OA09", // ver specs/003.../curriculo-1basico.md
-      "2:Números y operaciones": "MA02 OA09", // ver specs/003.../actividades-oa09-2basico.md
+      "Adición y sustracción dentro de 20": "MA01 OA09", // ver specs/003.../curriculo-1basico.md
+      "Comparar y ordenar números dentro de 20": "MA01 OA04", // ver specs/003.../curriculo-1basico.md
+      "Adición y sustracción dentro de 100": "MA02 OA09", // ver specs/003.../actividades-oa09-2basico.md
     };
 
     const skills = await prisma.mathSkill.findMany();
     for (const skill of skills) {
-      const key = `${skill.grade}:${skill.axis}`;
-      if (key in VERIFIED_OA) {
-        expect(skill.oaCode).toBe(VERIFIED_OA[key]);
+      if (skill.name in VERIFIED_OA) {
+        expect(skill.oaCode).toBe(VERIFIED_OA[skill.name]);
       } else {
         expect(skill.oaCode).toBeNull();
       }

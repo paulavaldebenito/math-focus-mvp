@@ -36,7 +36,8 @@ export interface ExerciseOptionPublic {
  */
 export type ExerciseVisualDescriptor =
   | { kind: "combine"; a: number; b: number; emoji?: string }
-  | { kind: "takeaway"; total: number; removed: number; emoji?: string };
+  | { kind: "takeaway"; total: number; removed: number; emoji?: string }
+  | { kind: "compare"; a: number; b: number; emoji?: string };
 
 export interface ExercisePublic {
   id: string;

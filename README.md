@@ -39,3 +39,4 @@ El backlog post-MVP está organizado en dos fases, cada una con su propio spec/p
 Expansión de alcance post-MVP:
 
 - [`specs/004-expansion-2basico/`](specs/004-expansion-2basico/) — 2° básico, eje Números y operaciones, MA02 OA09 (adición y sustracción dentro de 100, sin reserva).
+- [`specs/005-ampliacion-1basico-oa04/`](specs/005-ampliacion-1basico-oa04/) — 1° básico, MA01 OA04 (comparar y ordenar números dentro de 20).

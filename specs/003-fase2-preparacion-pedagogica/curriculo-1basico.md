@@ -44,13 +44,20 @@ pistas rediseñadas el 2026-08-14 (`server/prisma/seed.ts`): conteo hacia adelan
 sumas a X para llegar a Y?") son, literalmente, las tres estrategias que pide este OA — no una
 elección de diseño arbitraria.
 
+**MA01 OA04 — Números y operaciones** *(verificado después, página individual)*
+> "Comparar y ordenar números del 0 al 20 de menor a mayor y/o viceversa, utilizando material
+> concreto y/o usando software educativo."
+
+Implementado el 2026-08-14 como nueva habilidad ("Comparar y ordenar números dentro de 20", 12
+ejercicios) — ver [`specs/005-ampliacion-1basico-oa04/`](../005-ampliacion-1basico-oa04/).
+
 ## Resto del currículum de 1° básico (numeración corregida, no verificada OA por OA)
 
 ### Números y operaciones
 - OA 1: Contar 0-100 de 1 en 1, 2 en 2, 5 en 5 y 10 en 10, hacia adelante y atrás.
 - OA 2: Identificar el orden de elementos con números ordinales del 1º al 10º.
 - OA 3: Leer números 0-20 en forma concreta, pictórica y simbólica.
-- OA 4: Comparar y ordenar números 0-20.
+- OA 4: *(verificado arriba)*
 - OA 5: Estimar cantidades hasta 20 usando un referente.
 - OA 6: Componer y descomponer números 0-20 de manera aditiva.
 - OA 7: *(verificado arriba)*

@@ -634,6 +634,167 @@ async function main() {
       },
     ],
   );
+
+  // === 1° básico — MA01 OA04, verificado contra curriculumnacional.mineduc.cl
+  // el 2026-08-14 (ver specs/003-fase2-preparacion-pedagogica/curriculo-1basico.md).
+  // "Ordenar" se adapta a opción múltiple como "identificar el mayor/menor de
+  // un grupo pequeño" — no hay UI de arrastrar-para-ordenar todavía.
+  await seedSkill(
+    {
+      grade: 1,
+      axis: "Números y operaciones",
+      name: "Comparar y ordenar números dentro de 20",
+      oaCode: "MA01 OA04",
+    },
+    [
+      {
+        prompt: "¿Cuál número es mayor: 3 o 9?",
+        promptEn: "Which number is greater: 3 or 9?",
+        procedureNote: "Cuenta los dos grupos de objetos — el número mayor es el que tiene más objetos.",
+        procedureNoteEn: "Count both groups of objects — the greater number is the one with more objects.",
+        difficultyLevel: 1,
+        visual: { kind: "compare", a: 3, b: 9, emoji: "🔵" },
+        options: [
+          { label: "9", isCorrect: true },
+          { label: "3", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+        ],
+      },
+      {
+        prompt: "¿Cuál número es menor: 15 o 6?",
+        promptEn: "Which number is smaller: 15 or 6?",
+        procedureNote: "Cuenta los dos grupos de objetos — el número menor es el que tiene menos objetos.",
+        procedureNoteEn: "Count both groups of objects — the smaller number is the one with fewer objects.",
+        difficultyLevel: 1,
+        visual: { kind: "compare", a: 15, b: 6, emoji: "🔵" },
+        options: [
+          { label: "6", isCorrect: true },
+          { label: "15", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+        ],
+      },
+      {
+        prompt: "¿Cuál número es mayor: 8 o 2?",
+        promptEn: "Which number is greater: 8 or 2?",
+        procedureNote: "Cuenta los dos grupos de objetos — el número mayor es el que tiene más objetos.",
+        procedureNoteEn: "Count both groups of objects — the greater number is the one with more objects.",
+        difficultyLevel: 1,
+        visual: { kind: "compare", a: 8, b: 2, emoji: "🔵" },
+        options: [
+          { label: "8", isCorrect: true },
+          { label: "2", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+        ],
+      },
+      {
+        prompt: "¿Cuál número es menor: 4 o 17?",
+        promptEn: "Which number is smaller: 4 or 17?",
+        procedureNote: "Cuenta los dos grupos de objetos — el número menor es el que tiene menos objetos.",
+        procedureNoteEn: "Count both groups of objects — the smaller number is the one with fewer objects.",
+        difficultyLevel: 1,
+        visual: { kind: "compare", a: 4, b: 17, emoji: "🔵" },
+        options: [
+          { label: "4", isCorrect: true },
+          { label: "17", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+        ],
+      },
+      {
+        prompt: "¿Cuál número es mayor: 11 o 9?",
+        promptEn: "Which number is greater: 11 or 9?",
+        procedureNote: "Cuenta desde 1: el número que dices después en el conteo es el mayor.",
+        procedureNoteEn: "Count from 1: the number you say later while counting is the greater one.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "11", isCorrect: true },
+          { label: "9", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+        ],
+      },
+      {
+        prompt: "¿Cuál número es menor: 14 o 16?",
+        promptEn: "Which number is smaller: 14 or 16?",
+        procedureNote: "Cuenta desde 1: el número que dices primero en el conteo es el menor.",
+        procedureNoteEn: "Count from 1: the number you say earlier while counting is the smaller one.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "14", isCorrect: true },
+          { label: "16", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+        ],
+      },
+      {
+        prompt: "¿Cuál de estos números es el más grande: 5, 12, 8?",
+        promptEn: "Which of these numbers is the greatest: 5, 12, 8?",
+        procedureNote: "Compara los números de a dos: primero dos, y el resultado con el tercero.",
+        procedureNoteEn: "Compare the numbers two at a time: first two, then that result with the third.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "12", isCorrect: true },
+          { label: "5", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "8", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "¿Cuál de estos números es el más chico: 18, 3, 10?",
+        promptEn: "Which of these numbers is the smallest: 18, 3, 10?",
+        procedureNote: "Compara los números de a dos: primero dos, y el resultado con el tercero.",
+        procedureNoteEn: "Compare the numbers two at a time: first two, then that result with the third.",
+        difficultyLevel: 2,
+        visual: null,
+        options: [
+          { label: "3", isCorrect: true },
+          { label: "18", isCorrect: false, errorTypeId: errorTypeByCode.conceptual },
+          { label: "10", isCorrect: false, errorTypeId: errorTypeByCode.calculo },
+        ],
+      },
+      {
+        prompt: "Ana tiene 8 stickers y Pedro tiene 13. ¿Quién tiene más?",
+        promptEn: "Ana has 8 stickers and Pedro has 13. Who has more?",
+        procedureNote: "Cuenta cuántos stickers tiene cada uno y compara.",
+        procedureNoteEn: "Count how many stickers each one has and compare.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "Pedro", isCorrect: true },
+          { label: "Ana", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+      {
+        prompt: "Tomás tiene 16 lápices y Sofía tiene 9. ¿Quién tiene menos lápices?",
+        promptEn: "Tomás has 16 pencils and Sofía has 9. Who has fewer pencils?",
+        procedureNote: "Cuenta cuántos lápices tiene cada uno y compara.",
+        procedureNoteEn: "Count how many pencils each one has and compare.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "Sofía", isCorrect: true },
+          { label: "Tomás", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+      {
+        prompt: "Camila leyó 12 páginas y Beto leyó 19. ¿Quién leyó más páginas?",
+        promptEn: "Camila read 12 pages and Beto read 19. Who read more pages?",
+        procedureNote: "Cuenta cuántas páginas leyó cada uno y compara.",
+        procedureNoteEn: "Count how many pages each one read and compare.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "Beto", isCorrect: true },
+          { label: "Camila", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+      {
+        prompt: "En el jardín hay 6 flores rojas y 14 flores amarillas. ¿Hay más flores rojas o amarillas?",
+        promptEn: "In the garden there are 6 red flowers and 14 yellow flowers. Are there more red or yellow flowers?",
+        procedureNote: "Cuenta cuántas flores hay de cada color y compara.",
+        procedureNoteEn: "Count how many flowers there are of each color and compare.",
+        difficultyLevel: 3,
+        visual: null,
+        options: [
+          { label: "Amarillas", isCorrect: true },
+          { label: "Rojas", isCorrect: false, errorTypeId: errorTypeByCode.comprension_enunciado },
+        ],
+      },
+    ],
+  );
 }
 
 main()
