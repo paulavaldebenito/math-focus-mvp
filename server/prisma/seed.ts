@@ -43,7 +43,10 @@ async function seedSkill(skillData: SeedSkill, exercises: SeedExercise[]) {
   });
 
   if (skill) {
-    console.log(`OK: habilidad "${skillData.name}" ya existía, no se duplica.`);
+    // Actualiza campos de contenido (ej. oaCode, cuando se verifica después
+    // de haber sembrado la habilidad) sin tocar el id ni sus relaciones.
+    skill = await prisma.mathSkill.update({ where: { id: skill.id }, data: skillData });
+    console.log(`OK: habilidad "${skillData.name}" ya existía, actualizada.`);
   } else {
     skill = await prisma.mathSkill.create({ data: skillData });
     console.log(`OK: habilidad "${skillData.name}" creada.`);
@@ -111,7 +114,9 @@ async function main() {
       grade: 1,
       axis: "Números y operaciones",
       name: "Adición y sustracción dentro de 20",
-      // oaCode: pendiente de validación curricular — no se inventa.
+      // Verificado contra curriculumnacional.mineduc.cl el 2026-08-14 (ver
+      // specs/003-fase2-preparacion-pedagogica/curriculo-1basico.md).
+      oaCode: "MA01 OA09",
     },
     [
       {
