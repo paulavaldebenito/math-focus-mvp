@@ -28,3 +28,8 @@ El proceso por fases mencionado arriba está versionado en [`specs/001-mvp-regul
 - [`spec.md`](specs/001-mvp-regulado/spec.md) — alcance, historias de usuario, principios no negociables.
 - [`plan.md`](specs/001-mvp-regulado/plan.md) — stack, arquitectura, modelo de datos, deuda técnica abierta.
 - [`tasks.md`](specs/001-mvp-regulado/tasks.md) — historial de tareas T0–T7 con su commit, y backlog pendiente.
+
+El backlog post-MVP está organizado en dos fases, cada una con su propio spec/plan/tasks:
+
+- [`specs/002-fase1-robustez-tecnica/`](specs/002-fase1-robustez-tecnica/) — CI, E2E, migraciones automatizadas, seguridad de sesiones, control de acceso, errores y reintentos.
+- [`specs/003-fase2-preparacion-pedagogica/`](specs/003-fase2-preparacion-pedagogica/) — completar OA, auditar el banco de ejercicios, validar reglas adaptativas, revisar ES/EN, consola mínima de contenido.

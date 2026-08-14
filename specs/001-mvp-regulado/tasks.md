@@ -85,14 +85,24 @@
       `dist/**/*.test.js` compilado. Corregido: `exclude: ["dist/**", "node_modules/**"]` en
       `vitest.config.ts` — `c4cb535` · 2026-08-13
 
-## Backlog (no iniciado)
+- [x] **H4** Documentación SDD: spec/plan/tasks versionados en `specs/` — este directorio —
+      `2a289ba` · 2026-08-13
 
-- [ ] **H3** CI: workflow de GitHub Actions que corra lint + typecheck + tests de `client/` y
-      `server/` en cada push/PR.
+## Backlog
+
+El backlog restante se organizó en dos fases con su propio spec/plan/tasks:
+
+- **[`specs/002-fase1-robustez-tecnica/`](../002-fase1-robustez-tecnica/)** — cierra **H3** (CI,
+  ya implementado en `.github/workflows/ci.yml`) más pruebas E2E, migraciones automatizadas,
+  seguridad de sesiones, control de acceso, errores y reintentos.
+- **[`specs/003-fase2-preparacion-pedagogica/`](../003-fase2-preparacion-pedagogica/)** — completar
+  OA, auditar el banco de ejercicios, validar reglas adaptativas, revisar ES/EN, consola mínima de
+  contenido.
+
+Quedan fuera de ambas fases (sin fecha, mencionados en `specs/001-mvp-regulado/spec.md`):
+
 - [ ] Resolver bug de audio de voz en Chrome/Safari (reproducido en un equipo específico, sin
       causa raíz identificada aún).
 - [ ] Construir los otros 4 ejes curriculares de 1° básico (hoy solo existe "Números y operaciones").
 - [ ] Función de comunidad (mencionada como fuera de alcance en Fase D).
 - [ ] Motor de pausas con auto-reporte del niño.
-- [ ] Validar y completar códigos de Objetivo de Aprendizaje (`MathSkill.oaCode`) contra la fuente
-      oficial de MINEDUC — hoy quedan `null` a propósito.
