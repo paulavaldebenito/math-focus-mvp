@@ -57,6 +57,7 @@ jobs:
           cache: npm
           cache-dependency-path: server/package-lock.json
       - run: npm ci
+      - run: npx prisma generate
       - run: npm run lint
       - run: npm run typecheck
       - run: npx prisma migrate deploy
