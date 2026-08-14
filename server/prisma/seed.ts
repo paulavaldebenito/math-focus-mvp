@@ -131,8 +131,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 20 − 20?",
         promptEn: "How much is 20 − 20?",
-        procedureNote: "Restar una cantidad de sí misma siempre da 0.",
-        procedureNoteEn: "Subtracting a number from itself always gives 0.",
+        procedureNote: "Cuando restas un número de sí mismo, siempre da 0 — fíjate si los dos números son iguales.",
+        procedureNoteEn: "When you subtract a number from itself, it's always 0 — check if both numbers are equal.",
         difficultyLevel: 1,
         visual: { kind: "takeaway", total: 20, removed: 20, emoji: "🔵" },
         options: [
@@ -159,8 +159,8 @@ async function main() {
       {
         prompt: "Tienes 14 manzanas y regalas 6. ¿Cuántas te quedan?",
         promptEn: "You have 14 apples and give away 6. How many do you have left?",
-        procedureNote: "Resta: parte de 14 y quita 6 → 14 − 6 = 8.",
-        procedureNoteEn: "Subtraction: start from 14 and take away 6 → 14 − 6 = 8.",
+        procedureNote: "Regalar es quitar. Piensa: ¿qué número le sumas a 6 para llegar a 14?",
+        procedureNoteEn: "Giving away means taking away. Think: what number do you add to 6 to reach 14?",
         difficultyLevel: 2,
         visual: { kind: "takeaway", total: 14, removed: 6, emoji: "🍎" },
         options: [
@@ -173,8 +173,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 9 + 9?",
         promptEn: "How much is 9 + 9?",
-        procedureNote: "Duplicar 9: 9 + 9 = 18.",
-        procedureNoteEn: "Double 9: 9 + 9 = 18.",
+        procedureNote: "Los dos números son iguales — es un doble. Piensa en el doble de 9.",
+        procedureNoteEn: "Both numbers are the same — it's a double. Think about double 9.",
         difficultyLevel: 2,
         visual: { kind: "combine", a: 9, b: 9, emoji: "🔵" },
         options: [
@@ -187,8 +187,8 @@ async function main() {
       {
         prompt: "Tenías 20 lápices y perdiste 15. ¿Cuántos te quedan?",
         promptEn: "You had 20 pencils and lost 15. How many do you have left?",
-        procedureNote: "Resta: 20 − 15 = 5.",
-        procedureNoteEn: "Subtraction: 20 − 15 = 5.",
+        procedureNote: "Perder es quitar. Piensa: ¿qué número le sumas a 15 para llegar a 20?",
+        procedureNoteEn: "Losing means taking away. Think: what number do you add to 15 to reach 20?",
         difficultyLevel: 3,
         visual: { kind: "takeaway", total: 20, removed: 15, emoji: "✏️" },
         options: [
@@ -230,8 +230,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 5 + 5?",
         promptEn: "How much is 5 + 5?",
-        procedureNote: "Duplicar 5: 5 + 5 = 10.",
-        procedureNoteEn: "Double 5: 5 + 5 = 10.",
+        procedureNote: "Los dos números son iguales — es un doble. Piensa en el doble de 5.",
+        procedureNoteEn: "Both numbers are the same — it's a double. Think about double 5.",
         difficultyLevel: 1,
         visual: { kind: "combine", a: 5, b: 5, emoji: "🔵" },
         options: [
@@ -244,8 +244,8 @@ async function main() {
       {
         prompt: "Tienes 6 globos y se te vuelan 2. ¿Cuántos te quedan?",
         promptEn: "You have 6 balloons and 2 fly away. How many do you have left?",
-        procedureNote: "Resta: parte de 6 y quita 2 → 6 − 2 = 4.",
-        procedureNoteEn: "Subtraction: start from 6 and take away 2 → 6 − 2 = 4.",
+        procedureNote: "Volarse es quitar. Cuenta hacia atrás desde 6, dos veces.",
+        procedureNoteEn: "Flying away means taking away. Count back from 6, two times.",
         difficultyLevel: 1,
         visual: { kind: "takeaway", total: 6, removed: 2, emoji: "🎈" },
         options: [
@@ -301,8 +301,8 @@ async function main() {
       {
         prompt: "Tienes 15 galletas y comes 7. ¿Cuántas te quedan?",
         promptEn: "You have 15 cookies and eat 7. How many do you have left?",
-        procedureNote: "Resta: parte de 15 y quita 7 → 15 − 7 = 8.",
-        procedureNoteEn: "Subtraction: start from 15 and take away 7 → 15 − 7 = 8.",
+        procedureNote: "Comer es quitar. Piensa: ¿qué número le sumas a 7 para llegar a 15?",
+        procedureNoteEn: "Eating means taking away. Think: what number do you add to 7 to reach 15?",
         difficultyLevel: 2,
         visual: { kind: "takeaway", total: 15, removed: 7, emoji: "🍪" },
         options: [
@@ -315,8 +315,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 12 − 5?",
         promptEn: "How much is 12 − 5?",
-        procedureNote: "Resta: parte de 12 y quita 5 → 12 − 5 = 7.",
-        procedureNoteEn: "Subtraction: start from 12 and take away 5 → 12 − 5 = 7.",
+        procedureNote: "Piensa: ¿qué número le sumas a 5 para llegar a 12?",
+        procedureNoteEn: "Think: what number do you add to 5 to reach 12?",
         difficultyLevel: 2,
         visual: { kind: "takeaway", total: 12, removed: 5, emoji: "🔵" },
         options: [
@@ -343,8 +343,8 @@ async function main() {
       {
         prompt: "Tenías 16 stickers y le diste 9 a tu amigo. ¿Cuántos te quedan?",
         promptEn: "You had 16 stickers and gave 9 to your friend. How many do you have left?",
-        procedureNote: "Resta: parte de 16 y quita 9 → 16 − 9 = 7.",
-        procedureNoteEn: "Subtraction: start from 16 and take away 9 → 16 − 9 = 7.",
+        procedureNote: "Dar es quitar. Piensa: ¿qué número le sumas a 9 para llegar a 16?",
+        procedureNoteEn: "Giving means taking away. Think: what number do you add to 9 to reach 16?",
         difficultyLevel: 2,
         visual: { kind: "takeaway", total: 16, removed: 9, emoji: "🌟" },
         options: [
@@ -372,8 +372,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 20 − 8?",
         promptEn: "How much is 20 − 8?",
-        procedureNote: "Resta: parte de 20 y quita 8 → 20 − 8 = 12.",
-        procedureNoteEn: "Subtraction: start from 20 and take away 8 → 20 − 8 = 12.",
+        procedureNote: "Piensa: ¿qué número le sumas a 8 para llegar a 20?",
+        procedureNoteEn: "Think: what number do you add to 8 to reach 20?",
         difficultyLevel: 3,
         visual: { kind: "takeaway", total: 20, removed: 8, emoji: "🔵" },
         options: [
@@ -386,8 +386,8 @@ async function main() {
       {
         prompt: "Tienes 18 canicas y regalas 11. ¿Cuántas te quedan?",
         promptEn: "You have 18 marbles and give away 11. How many do you have left?",
-        procedureNote: "Resta: parte de 18 y quita 11 → 18 − 11 = 7.",
-        procedureNoteEn: "Subtraction: start from 18 and take away 11 → 18 − 11 = 7.",
+        procedureNote: "Regalar es quitar. Piensa: ¿qué número le sumas a 11 para llegar a 18?",
+        procedureNoteEn: "Giving away means taking away. Think: what number do you add to 11 to reach 18?",
         difficultyLevel: 3,
         visual: { kind: "takeaway", total: 18, removed: 11, emoji: "🔴" },
         options: [
@@ -414,8 +414,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 19 − 12?",
         promptEn: "How much is 19 − 12?",
-        procedureNote: "Resta: parte de 19 y quita 12 → 19 − 12 = 7.",
-        procedureNoteEn: "Subtraction: start from 19 and take away 12 → 19 − 12 = 7.",
+        procedureNote: "Piensa: ¿qué número le sumas a 12 para llegar a 19?",
+        procedureNoteEn: "Think: what number do you add to 12 to reach 19?",
         difficultyLevel: 3,
         visual: { kind: "takeaway", total: 19, removed: 12, emoji: "🔵" },
         options: [
@@ -428,8 +428,8 @@ async function main() {
       {
         prompt: "Tenías 20 monedas y gastaste 14. ¿Cuántas te quedan?",
         promptEn: "You had 20 coins and spent 14. How many do you have left?",
-        procedureNote: "Resta: parte de 20 y quita 14 → 20 − 14 = 6.",
-        procedureNoteEn: "Subtraction: start from 20 and take away 14 → 20 − 14 = 6.",
+        procedureNote: "Gastar es quitar. Piensa: ¿qué número le sumas a 14 para llegar a 20?",
+        procedureNoteEn: "Spending means taking away. Think: what number do you add to 14 to reach 20?",
         difficultyLevel: 3,
         visual: { kind: "takeaway", total: 20, removed: 14, emoji: "🪙" },
         options: [
@@ -472,8 +472,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 12 + 15?",
         promptEn: "How much is 12 + 15?",
-        procedureNote: "Suma las decenas (10 y 10) y después las unidades (2 y 5): 20 + 7 = 27.",
-        procedureNoteEn: "Add the tens (10 and 10), then the units (2 and 5): 20 + 7 = 27.",
+        procedureNote: "Suma las decenas (10 y 10) y las unidades (2 y 5) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Add the tens (10 and 10) and the units (2 and 5) separately, then add the two results together.",
         difficultyLevel: 1,
         visual: null,
         options: [
@@ -485,8 +485,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 24 + 13?",
         promptEn: "How much is 24 + 13?",
-        procedureNote: "Suma las decenas (20 y 10) y después las unidades (4 y 3): 30 + 7 = 37.",
-        procedureNoteEn: "Add the tens (20 and 10), then the units (4 and 3): 30 + 7 = 37.",
+        procedureNote: "Suma las decenas (20 y 10) y las unidades (4 y 3) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Add the tens (20 and 10) and the units (4 and 3) separately, then add the two results together.",
         difficultyLevel: 1,
         visual: null,
         options: [
@@ -498,8 +498,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 35 − 12?",
         promptEn: "How much is 35 − 12?",
-        procedureNote: "Resta las decenas (30 y 10) y después las unidades (5 y 2): 20 + 3 = 23.",
-        procedureNoteEn: "Subtract the tens (30 and 10), then the units (5 and 2): 20 + 3 = 23.",
+        procedureNote: "Resta las decenas (30 y 10) y las unidades (5 y 2) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Subtract the tens (30 and 10) and the units (5 and 2) separately, then add the two results together.",
         difficultyLevel: 1,
         visual: null,
         options: [
@@ -511,8 +511,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 47 − 15?",
         promptEn: "How much is 47 − 15?",
-        procedureNote: "Resta las decenas (40 y 10) y después las unidades (7 y 5): 30 + 2 = 32.",
-        procedureNoteEn: "Subtract the tens (40 and 10), then the units (7 and 5): 30 + 2 = 32.",
+        procedureNote: "Resta las decenas (40 y 10) y las unidades (7 y 5) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Subtract the tens (40 and 10) and the units (7 and 5) separately, then add the two results together.",
         difficultyLevel: 1,
         visual: null,
         options: [
@@ -524,8 +524,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 23 + 15?",
         promptEn: "How much is 23 + 15?",
-        procedureNote: "Suma las decenas (20 y 10) y después las unidades (3 y 5): 30 + 8 = 38.",
-        procedureNoteEn: "Add the tens (20 and 10), then the units (3 and 5): 30 + 8 = 38.",
+        procedureNote: "Suma las decenas (20 y 10) y las unidades (3 y 5) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Add the tens (20 and 10) and the units (3 and 5) separately, then add the two results together.",
         difficultyLevel: 2,
         visual: null,
         options: [
@@ -537,8 +537,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 34 + 25?",
         promptEn: "How much is 34 + 25?",
-        procedureNote: "Suma las decenas (30 y 20) y después las unidades (4 y 5): 50 + 9 = 59.",
-        procedureNoteEn: "Add the tens (30 and 20), then the units (4 and 5): 50 + 9 = 59.",
+        procedureNote: "Suma las decenas (30 y 20) y las unidades (4 y 5) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Add the tens (30 and 20) and the units (4 and 5) separately, then add the two results together.",
         difficultyLevel: 2,
         visual: null,
         options: [
@@ -550,8 +550,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 68 − 24?",
         promptEn: "How much is 68 − 24?",
-        procedureNote: "Resta las decenas (60 y 20) y después las unidades (8 y 4): 40 + 4 = 44.",
-        procedureNoteEn: "Subtract the tens (60 and 20), then the units (8 and 4): 40 + 4 = 44.",
+        procedureNote: "Resta las decenas (60 y 20) y las unidades (8 y 4) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Subtract the tens (60 and 20) and the units (8 and 4) separately, then add the two results together.",
         difficultyLevel: 2,
         visual: null,
         options: [
@@ -563,8 +563,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 56 − 23?",
         promptEn: "How much is 56 − 23?",
-        procedureNote: "Resta las decenas (50 y 20) y después las unidades (6 y 3): 30 + 3 = 33.",
-        procedureNoteEn: "Subtract the tens (50 and 20), then the units (6 and 3): 30 + 3 = 33.",
+        procedureNote: "Resta las decenas (50 y 20) y las unidades (6 y 3) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Subtract the tens (50 and 20) and the units (6 and 3) separately, then add the two results together.",
         difficultyLevel: 2,
         visual: null,
         options: [
@@ -576,8 +576,8 @@ async function main() {
       {
         prompt: "Tenías 45 stickers y un amigo te regaló 20 más. ¿Cuántos tienes ahora?",
         promptEn: "You had 45 stickers and a friend gave you 20 more. How many do you have now?",
-        procedureNote: "Regalar más es juntar: suma 45 + 20 = 65.",
-        procedureNoteEn: "Getting more means joining: add 45 + 20 = 65.",
+        procedureNote: "Regalar más es juntar. Suma las decenas (40 y 20) y las unidades (5 y 0) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Getting more means joining. Add the tens (40 and 20) and the units (5 and 0) separately, then add the two results together.",
         difficultyLevel: 3,
         visual: null,
         options: [
@@ -590,8 +590,8 @@ async function main() {
       {
         prompt: "Había 76 personas en el bus y bajaron 32. ¿Cuántas personas quedan?",
         promptEn: "There were 76 people on the bus and 32 got off. How many people are left?",
-        procedureNote: "Bajarse es quitar: resta 76 − 32 = 44.",
-        procedureNoteEn: "Getting off means taking away: subtract 76 − 32 = 44.",
+        procedureNote: "Bajarse es quitar. Resta las decenas (70 y 30) y las unidades (6 y 2) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Getting off means taking away. Subtract the tens (70 and 30) and the units (6 and 2) separately, then add the two results together.",
         difficultyLevel: 3,
         visual: null,
         options: [
@@ -604,8 +604,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 63 + 26?",
         promptEn: "How much is 63 + 26?",
-        procedureNote: "Suma las decenas (60 y 20) y después las unidades (3 y 6): 80 + 9 = 89.",
-        procedureNoteEn: "Add the tens (60 and 20), then the units (3 and 6): 80 + 9 = 89.",
+        procedureNote: "Suma las decenas (60 y 20) y las unidades (3 y 6) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Add the tens (60 and 20) and the units (3 and 6) separately, then add the two results together.",
         difficultyLevel: 3,
         visual: null,
         options: [
@@ -617,8 +617,8 @@ async function main() {
       {
         prompt: "¿Cuánto es 88 − 45?",
         promptEn: "How much is 88 − 45?",
-        procedureNote: "Resta las decenas (80 y 40) y después las unidades (8 y 5): 40 + 3 = 43.",
-        procedureNoteEn: "Subtract the tens (80 and 40), then the units (8 and 5): 40 + 3 = 43.",
+        procedureNote: "Resta las decenas (80 y 40) y las unidades (8 y 5) por separado, y junta los dos resultados.",
+        procedureNoteEn: "Subtract the tens (80 and 40) and the units (8 and 5) separately, then add the two results together.",
         difficultyLevel: 3,
         visual: null,
         options: [

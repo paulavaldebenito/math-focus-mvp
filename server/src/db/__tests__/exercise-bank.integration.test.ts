@@ -44,6 +44,41 @@ describe("Banco de ejercicios sembrado (T1.2)", () => {
     }
   });
 
+  it("ninguna pista de resta revela la respuesta correcta como número exacto", async () => {
+    // Regla: una pista guía la estrategia, no resuelve el ejercicio. Antes,
+    // varias pistas de resta decían literalmente "→ 14 − 6 = 8" — se
+    // corrigieron a estrategia (conteo hacia atrás / suma relacionada /
+    // separar decenas y unidades) sin computar el resultado final. Acotado a
+    // resta (lo que se pidió arreglar) — el banco de suma de 1° básico tiene
+    // el mismo problema en algunos ejercicios más viejos, sin tocar todavía.
+    const exercises = await prisma.exercise.findMany({ include: { options: true } });
+
+    function isSubtraction(ex: (typeof exercises)[number]): boolean {
+      const visual = ex.visual as { kind?: string } | null;
+      // Grade 1: siempre marcado con visual.kind "takeaway". Grade 2 (sin
+      // visual): se detecta por el símbolo, salvo el único problema de
+      // contexto sin "−" en el enunciado.
+      return (
+        visual?.kind === "takeaway" ||
+        ex.prompt.includes("−") ||
+        ex.prompt.startsWith("Había 76 personas")
+      );
+    }
+
+    // Única excepción legítima: enseña la regla general "un número menos sí
+    // mismo siempre da 0" — es un patrón transferible a memorizar, no el
+    // resultado calculado de este ejercicio puntual.
+    const EXCEPTIONS = new Set(["¿Cuánto es 20 − 20?"]);
+
+    for (const ex of exercises) {
+      if (!isSubtraction(ex) || EXCEPTIONS.has(ex.prompt)) continue;
+      const correct = ex.options.find((o) => o.isCorrect);
+      if (!correct) continue;
+      const answerAsToken = new RegExp(`(?<!\\d)${correct.label}(?!\\d)`);
+      expect(ex.procedureNote).not.toMatch(answerAsToken);
+    }
+  });
+
   it("el seed es idempotente: correr db seed dos veces no duplica la habilidad sembrada", async () => {
     const before = await prisma.mathSkill.count({
       where: { grade: 1, axis: "Números y operaciones", name: "Adición y sustracción dentro de 20" },
