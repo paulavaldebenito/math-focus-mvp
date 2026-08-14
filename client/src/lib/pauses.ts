@@ -104,10 +104,10 @@ export const MOVEMENT_EXERCISES: MovementExercise[] = [
   {
     key: "congelados",
     icon: "🧊",
-    es: "Muévete libremente y, cuando digas '¡Congelado!', quédate quieto",
-    en: "Move around freely, and when you say 'Freeze!', stay still",
-    seatedEs: "Igual, sentado/a: mueve los brazos y congélate",
-    seatedEn: "Same, seated: move your arms and freeze",
+    es: "Muévete libremente unos segundos y después congélate como una estatua, sin moverte",
+    en: "Move around freely for a few seconds, then freeze like a statue, without moving",
+    seatedEs: "Igual, sentado/a: mueve los brazos unos segundos y después congélate",
+    seatedEn: "Same, seated: move your arms for a few seconds, then freeze",
   },
 ];
 
