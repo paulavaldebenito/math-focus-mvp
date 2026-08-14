@@ -44,8 +44,17 @@ authRouter.post("/login", async (req, res) => {
     return;
   }
 
-  req.session.adultUserId = adult.id;
-  res.status(200).json({ id: adult.id, email: adult.email });
+  // Regenera el ID de sesión antes de autenticar — evita fijación de sesión
+  // (un atacante que fija un session ID en la víctima antes del login no
+  // puede heredar la sesión ya autenticada, porque el ID cambia acá).
+  req.session.regenerate((err) => {
+    if (err) {
+      res.status(500).json({ error: "session_error" });
+      return;
+    }
+    req.session.adultUserId = adult.id;
+    res.status(200).json({ id: adult.id, email: adult.email });
+  });
 });
 
 authRouter.post("/logout", (req, res) => {

@@ -63,14 +63,12 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   const questionShownAt = useRef<number>(Date.now());
   const sessionStarted = useRef(false);
   const sessionCompleted = useRef(false);
+  // Guarda cómo reintentar la última acción que falló, para que la pantalla
+  // de error pueda ofrecer "Intentar de nuevo" en vez de dejar al niño
+  // varado a mitad de sesión.
+  const retryActionRef = useRef<() => void>(() => {});
 
-  useEffect(() => {
-    // Guardia contra doble invocación (React StrictMode en desarrollo, o un
-    // remount rápido): sin esto, se crea una Session duplicada en el
-    // servidor por cada montaje adicional del componente.
-    if (sessionStarted.current) return;
-    sessionStarted.current = true;
-
+  function bootstrapSession() {
     endpoints
       .getHomeSummary(childId)
       .then((summary) => setCompanion(companionByKey(summary.companion)))
@@ -90,7 +88,19 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
         setPhase("pre-pause-offer");
         questionShownAt.current = Date.now();
       })
-      .catch(() => setPhase("error"));
+      .catch(() => {
+        retryActionRef.current = bootstrapSession;
+        setPhase("error");
+      });
+  }
+
+  useEffect(() => {
+    // Guardia contra doble invocación (React StrictMode en desarrollo, o un
+    // remount rápido): sin esto, se crea una Session duplicada en el
+    // servidor por cada montaje adicional del componente.
+    if (sessionStarted.current) return;
+    sessionStarted.current = true;
+    bootstrapSession();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [childId]);
 
@@ -127,6 +137,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
       setPhase("question");
       questionShownAt.current = Date.now();
     } catch {
+      retryActionRef.current = () => void loadNextExercise(currentSessionId);
       setPhase("error");
     }
   }
@@ -157,6 +168,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
         setMood("encourage");
       }
     } catch {
+      retryActionRef.current = () => void handleAnswer(optionId);
       setPhase("error");
     }
   }
@@ -231,6 +243,9 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
         <p className="error-text" role="alert">
           {t(lang, "genericError")}
         </p>
+        <button className="btn-primary" type="button" onClick={() => retryActionRef.current()}>
+          {t(lang, "retryButton")}
+        </button>
       </main>
     );
   }

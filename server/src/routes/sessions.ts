@@ -2,7 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
-import { getOwnedChild } from "./childAccess.js";
+import { getOwnedChild, getOwnedSession } from "./childAccess.js";
 import { getCurrentLevelForChild } from "../adaptive/levelLookup.js";
 import { evaluateAdaptiveRules, applyLevelChange, type AttemptRecord } from "../adaptive/adaptiveEngine.js";
 
@@ -30,12 +30,9 @@ const attemptSchema = z.object({
 });
 
 sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
-  const practiceSession = await prisma.session.findUnique({
-    where: { id: String(req.params.sessionId) },
-    include: { childProfile: true },
-  });
+  const practiceSession = await getOwnedSession(String(req.params.sessionId), req.session.adultUserId!);
 
-  if (!practiceSession || practiceSession.childProfile.adultUserId !== req.session.adultUserId!) {
+  if (!practiceSession) {
     res.status(404).json({ error: "session_not_found" });
     return;
   }
@@ -175,12 +172,9 @@ const pauseEventSchema = z.object({
 export const pauseEventsRouter = Router({ mergeParams: true });
 
 pauseEventsRouter.post("/", requireAuth, async (req, res) => {
-  const practiceSession = await prisma.session.findUnique({
-    where: { id: String(req.params.sessionId) },
-    include: { childProfile: true },
-  });
+  const practiceSession = await getOwnedSession(String(req.params.sessionId), req.session.adultUserId!);
 
-  if (!practiceSession || practiceSession.childProfile.adultUserId !== req.session.adultUserId!) {
+  if (!practiceSession) {
     res.status(404).json({ error: "session_not_found" });
     return;
   }
@@ -213,12 +207,9 @@ pauseEventsRouter.post("/", requireAuth, async (req, res) => {
 export const sessionCompleteRouter = Router({ mergeParams: true });
 
 sessionCompleteRouter.post("/", requireAuth, async (req, res) => {
-  const practiceSession = await prisma.session.findUnique({
-    where: { id: String(req.params.sessionId) },
-    include: { childProfile: true },
-  });
+  const practiceSession = await getOwnedSession(String(req.params.sessionId), req.session.adultUserId!);
 
-  if (!practiceSession || practiceSession.childProfile.adultUserId !== req.session.adultUserId!) {
+  if (!practiceSession) {
     res.status(404).json({ error: "session_not_found" });
     return;
   }

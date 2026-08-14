@@ -13,3 +13,20 @@ export async function getOwnedChild(childId: string, adultUserId: string) {
   }
   return child;
 }
+
+/**
+ * Devuelve la sesión de práctica solo si el niño dueño de esa sesión
+ * pertenece al adulto autenticado. Mismo control de acceso que
+ * `getOwnedChild`, para rutas identificadas por `sessionId` en vez de
+ * `childId` (POST attempts/pause-events/complete).
+ */
+export async function getOwnedSession(sessionId: string, adultUserId: string) {
+  const session = await prisma.session.findUnique({
+    where: { id: sessionId },
+    include: { childProfile: true },
+  });
+  if (!session || session.childProfile.adultUserId !== adultUserId) {
+    return null;
+  }
+  return session;
+}

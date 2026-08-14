@@ -107,4 +107,31 @@ describe("PracticeScreen", () => {
     expect(mocks.submitPauseEvent).toHaveBeenCalledWith("s1", { kind: "respiracion", accepted: false });
     await screen.findByText("¿Cuánto es 8 + 5?");
   });
+
+  it("si falla el envío de una respuesta, el botón de reintento vuelve a enviar la misma respuesta", async () => {
+    mocks.startSession.mockResolvedValue({ sessionId: "s1", currentLevel: 2 });
+    mocks.getNextExercise.mockResolvedValueOnce(ex1);
+    mocks.submitAttempt
+      .mockRejectedValueOnce(new Error("network down"))
+      .mockResolvedValueOnce({
+        isCorrect: true,
+        action: { type: "NO_CHANGE", ruleCode: "NO_RULE_TRIGGERED", reason: "x" },
+        level: 2,
+      });
+
+    render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
+    const user = userEvent.setup();
+
+    await skipPrePause(user);
+    await screen.findByText("¿Cuánto es 6 + 7?");
+    await user.click(screen.getByRole("button", { name: "13" }));
+
+    await user.click(await screen.findByRole("button", { name: "Intentar de nuevo" }));
+
+    expect(await screen.findByText("Avanzaste un paso más.")).toBeInTheDocument();
+    expect(mocks.submitAttempt).toHaveBeenLastCalledWith(
+      "s1",
+      expect.objectContaining({ exerciseId: "ex1", selectedOptionId: "a1" }),
+    );
+  });
 });

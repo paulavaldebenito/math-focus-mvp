@@ -1,5 +1,6 @@
 import "dotenv/config";
 import express from "express";
+import type { NextFunction, Request, Response } from "express";
 import cors from "cors";
 import { authRouter } from "./routes/auth.js";
 import { consentRouter } from "./routes/consent.js";
@@ -44,6 +45,21 @@ app.use("/api/sessions/:sessionId/attempts", sessionAttemptsRouter);
 app.use("/api/sessions/:sessionId/pause-events", pauseEventsRouter);
 app.use("/api/sessions/:sessionId/complete", sessionCompleteRouter);
 app.use("/api/children/:childId/home", homeSummaryRouter);
+
+// Cualquier ruta no definida arriba — JSON consistente en vez del HTML por
+// defecto de Express (el cliente espera poder parsear `.json()` siempre).
+app.use((_req, res) => {
+  res.status(404).json({ error: "not_found" });
+});
+
+// Manejador de errores global: cualquier excepción no capturada en una ruta
+// (ej. Prisma pierde la conexión) caía antes en la página HTML de error por
+// defecto de Express — el cliente recibía un body vacío sin poder saber qué
+// pasó. Nunca se expone el mensaje/stack real al cliente, solo se loguea.
+app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
+  console.error(err);
+  res.status(500).json({ error: "internal_error" });
+});
 
 if (process.env.NODE_ENV !== "test") {
   const PORT = process.env.PORT ? Number(process.env.PORT) : 4100;

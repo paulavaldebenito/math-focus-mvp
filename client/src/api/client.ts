@@ -11,8 +11,37 @@ export class ApiError extends Error {
   }
 }
 
+const RETRYABLE_NETWORK_ATTEMPTS = 3;
+const RETRY_BASE_DELAY_MS = 300;
+
+function wait(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Reintenta solo cuando `fetch` mismo falla (sin internet, DNS, conexión
+// rechazada) — nunca cuando el servidor sí respondió, aunque sea con un
+// error. Reintentar una respuesta de error real (4xx/5xx) no tiene sentido
+// (el servidor ya decidió), y reintentar un POST que sí llegó al servidor
+// arriesgaría duplicar la escritura (ej. un intento contado dos veces) —
+// eso requeriría claves de idempotencia en el servidor, fuera de este
+// alcance. Esto solo cubre la falla de red más común: la request nunca salió.
+async function fetchWithRetry(input: string, init: RequestInit): Promise<Response> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= RETRYABLE_NETWORK_ATTEMPTS; attempt++) {
+    try {
+      return await fetch(input, init);
+    } catch (err) {
+      lastError = err;
+      if (attempt < RETRYABLE_NETWORK_ATTEMPTS) {
+        await wait(RETRY_BASE_DELAY_MS * 2 ** (attempt - 1));
+      }
+    }
+  }
+  throw lastError;
+}
+
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
-  const res = await fetch(`${API_URL}${path}`, {
+  const res = await fetchWithRetry(`${API_URL}${path}`, {
     ...options,
     credentials: "include", // manda/recibe la cookie de sesión httpOnly
     headers: {

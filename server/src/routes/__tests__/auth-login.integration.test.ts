@@ -64,4 +64,38 @@ describe("POST /api/auth/login + sesión (HU1)", () => {
     const body = (await meRes.json()) as { email: string };
     expect(body.email).toBe(email);
   });
+
+  it("regenera el ID de sesión en login — evita fijación de sesión", async () => {
+    const emailB = `ficticio.login.b.${Date.now()}@example.test`;
+    const passwordB = "otra-clave-de-prueba-segura";
+    await fetch(`${baseUrl}/api/auth/register`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: emailB, password: passwordB }),
+    });
+
+    // 1) Adulto A inicia sesión — la sesión queda activa y guardada.
+    const loginA = await fetch(`${baseUrl}/api/auth/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    const cookieA = loginA.headers.get("set-cookie")!.split(";")[0]!;
+
+    // 2) Sin cerrar esa sesión, adulto B inicia sesión enviando la cookie de
+    //    A (equipo compartido / cookie fijada por un atacante). La sesión de
+    //    A sigue activa y guardada en el store en este momento — el caso
+    //    real que fixation explota. Si el servidor no regenerara el ID acá,
+    //    B terminaría autenticado sobre el mismo ID que A ya conocía.
+    const loginB = await fetch(`${baseUrl}/api/auth/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: cookieA },
+      body: JSON.stringify({ email: emailB, password: passwordB }),
+    });
+    const cookieB = loginB.headers.get("set-cookie")!.split(";")[0]!;
+
+    expect(cookieB).not.toBe(cookieA);
+
+    await prisma.adultUser.deleteMany({ where: { email: emailB } });
+  });
 });
