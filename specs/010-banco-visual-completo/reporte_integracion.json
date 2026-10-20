@@ -47,16 +47,16 @@
  ],
  "promptMismatch": [],
  "legends": {
-  "generic": 568,
-  "none": 933,
+  "generic": 559,
+  "none": 950,
   "named:optionBindings": 19,
   "named:prompt": 101,
-  "named:rowLabels": 91
+  "named:rowLabels": 83
  },
  "genericReasons": {
   "grupos_sin_nombre": 351,
   "nombres_no_verificables": 161,
-  "rowLabels_revela_respuesta": 56
+  "rowLabels_revela_respuesta": 47
  },
  "byGrade": {
   "1": 331,
@@ -66,8 +66,8 @@
   "5": 199,
   "6": 326
  },
- "rutasVerificadas": 4206,
- "rutasTotales": 4206,
+ "rutasVerificadas": 4189,
+ "rutasTotales": 4189,
  "conImagen": 1774,
  "porCurso": {
   "1": 331,

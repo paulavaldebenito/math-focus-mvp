@@ -140,12 +140,18 @@ describe("toImage", () => {
   it("misma imagen para ambos idiomas, alt en inglés con el enunciado vigente y sin datos internos", () => {
     const e = entry({ kind: "rows", prompt: { es: "¿Cuánto es 6 + 7?", en: "How much is 6 + 7?" }, alt: { es: "Grupos. ¿Cuánto es 6 + 7?", en: "Groups. How much is 6 + 7?" } });
     const legend = buildLegend(e, exercise({}), GENERIC);
-    const image = toImage(e, exercise({ promptEn: "What is 6 + 7?" }), legend);
+    const image = toImage(e, exercise({ prompt: "¿Cuánto es 6 + 7?", promptEn: "What is 6 + 7?" }), legend);
     expect(image.src).toEqual({ es: e.src, en: e.src });
     expect(image.alt).toEqual({ es: "Grupos. ¿Cuánto es 6 + 7?", en: "Groups. What is 6 + 7?" });
     expect(image.legend).toEqual({ type: "generic", text: GENERIC });
     expect(JSON.stringify(image)).not.toMatch(/reason|values|visualData/);
     expect(publicLegend({ type: "none" })).toEqual({ type: "none" });
+  });
+
+  it("con un enunciado editado, el alt en español también termina con el texto vigente", () => {
+    const e = entry({ kind: "fractions", prompt: { es: "Ema usa 3 partes.", en: "Ema uses 3 parts." }, alt: { es: "Una barra. Ema usa 3 partes.", en: "A bar. Ema uses 3 parts." } });
+    const image = toImage(e, exercise({ prompt: "Ema usa 2 partes.", promptEn: "Ema uses 2 parts." }), buildLegend(e, exercise({}), GENERIC));
+    expect(image.alt).toEqual({ es: "Una barra. Ema usa 2 partes.", en: "A bar. Ema uses 2 parts." });
   });
 });
 
@@ -153,12 +159,12 @@ describe("banco_visual.json", () => {
   const { entries } = loadBancoVisual();
   const publicDir = fileURLToPath(new URL("../../../../../client/public", import.meta.url));
 
-  it("tiene 2.116 ejercicios únicos y las 4.206 rutas (2.116 PNG + 2.090 SVG; los dibujos de dinosaurios y de comida redonda de 3.° a 6.° son solo PNG) existen en client/public", () => {
+  it("tiene 2.116 ejercicios únicos y las 4.189 rutas (2.116 PNG + 2.073 SVG; los dibujos nuevos de fracciones — dinosaurios, comida redonda y rectángulos — son solo PNG) existen en client/public", () => {
     expect(entries).toHaveLength(2116);
     expect(new Set(entries.map((e) => e.exerciseId)).size).toBe(2116);
     const paths = entries.flatMap((e) => (e.svgSrc ? [e.src, e.svgSrc] : [e.src]));
     expect(paths.filter((p) => p.endsWith(".png"))).toHaveLength(2116);
-    expect(paths.filter((p) => p.endsWith(".svg"))).toHaveLength(2090);
+    expect(paths.filter((p) => p.endsWith(".svg"))).toHaveLength(2073);
     expect(paths.filter((p) => !existsSync(publicDir + p))).toEqual([]);
   });
 

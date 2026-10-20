@@ -308,14 +308,14 @@ export interface BancoVisualReport {
   byGrade: Record<number, number>;
 }
 
-/// alt del paquete = descripción + enunciado del paquete. En inglés se
-/// reemplaza ese enunciado por el vigente en la BD (inglés de aula).
-function localizedAlt(entry: BancoVisualEntry, promptEn: string | null): Bilingual {
-  const en =
-    promptEn && entry.alt.en.endsWith(entry.prompt.en)
-      ? entry.alt.en.slice(0, entry.alt.en.length - entry.prompt.en.length) + promptEn
-      : entry.alt.en;
-  return { es: entry.alt.es, en };
+/// alt del paquete = descripción + enunciado del paquete. En ambos idiomas se
+/// reemplaza ese enunciado por el vigente en la BD (inglés de aula, o un
+/// enunciado editado en enunciados_editados.json), para que el lector de
+/// pantalla nunca lea un texto distinto al que está en pantalla.
+function localizedAlt(entry: BancoVisualEntry, prompt: string, promptEn: string | null): Bilingual {
+  const swap = (alt: string, packaged: string, current: string | null) =>
+    current && alt.endsWith(packaged) ? alt.slice(0, alt.length - packaged.length) + current : alt;
+  return { es: swap(entry.alt.es, entry.prompt.es, prompt), en: swap(entry.alt.en, entry.prompt.en, promptEn) };
 }
 
 export function toImage(entry: BancoVisualEntry, ex: ExerciseForLegend, legend: Legend): BancoVisualImage {
@@ -326,7 +326,7 @@ export function toImage(entry: BancoVisualEntry, ex: ExerciseForLegend, legend: 
     size: { es: size, en: size },
     // Sin palabras incrustadas: la misma imagen sirve para ambos idiomas.
     src: { es: entry.src, en: entry.src },
-    alt: localizedAlt(entry, ex.promptEn),
+    alt: localizedAlt(entry, ex.prompt, ex.promptEn),
     legend: publicLegend(legend),
   };
 }

@@ -4533,33 +4533,17 @@
   {
    "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
    "grade": 3,
-   "prompt": "Una tableta de chocolate tiene 4 barras iguales. Ema come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
+   "prompt": "Una tableta de chocolate tiene 4 barras iguales. Sofía come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
    "promptEn": {
-    "old": "A chocolate tablet has 4 equal bars. Ema eats 1 bar and gives away 2. What fraction of the tablet is left?",
-    "new": "A chocolate bar has 4 equal pieces. Ema eats 1 piece and gives away 2. What fraction of the chocolate bar is left?"
+    "old": [
+     "A chocolate tablet has 4 equal bars. Ema eats 1 bar and gives away 2. What fraction of the tablet is left?",
+     "A chocolate bar has 4 equal pieces. Ema eats 1 piece and gives away 2. What fraction of the chocolate bar is left?"
+    ],
+    "new": "A chocolate bar has 4 equal pieces. Sofía eats 1 piece and gives away 2. What fraction of the chocolate bar is left?"
    },
    "procedureNoteEn": {
     "old": "First find how many bars are left after eating and giving away. Then write that amount over the total number of bars.",
     "new": "First find how many pieces are left after eating and giving away. Then write that amount over the total number of pieces."
-   }
-  },
-  {
-   "exerciseId": "cmulu2wna03yr4crhk74yawbg",
-   "grade": 3,
-   "prompt": "Hay dos cables iguales, cada uno cortado en 4 partes iguales. Ema usa 3 partes de un cable y Leo usa 2 partes del otro. ¿Quién usó más cable y qué fracción de su cable usó?",
-   "promptEn": {
-    "old": [
-     "A cable is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more cable and what fraction did he or she use?",
-     "A cable is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more cable and what fraction did they use?"
-    ],
-    "new": "There are two identical cables, each cut into 4 equal parts. Ema uses 3 parts of one cable and Leo uses 2 parts of the other. Who used more cable, and what fraction of their cable did they use?"
-   },
-   "procedureNoteEn": {
-    "old": [
-     "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts he or she took over the total.",
-     "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took over the total."
-    ],
-    "new": "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took out of the total number of parts in their cable."
    }
   },
   {
@@ -4587,18 +4571,6 @@
    "promptEn": {
     "old": "A ribbon for marking the pitch is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?",
     "new": "A ribbon for marking the field is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
-   }
-  },
-  {
-   "exerciseId": "cmulu2wkz03w94crhqgkt0hjb",
-   "grade": 3,
-   "prompt": "Hay dos cintas iguales para decorar la cancha, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?",
-   "promptEn": {
-    "old": [
-     "A ribbon for decorating the pitch is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
-     "A ribbon for decorating the field is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?"
-    ],
-    "new": "There are two identical ribbons for decorating the field, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
    }
   },
   {

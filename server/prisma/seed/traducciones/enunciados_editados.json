@@ -832,159 +832,629 @@
   "grade": 3,
   "prompt": {
    "old": "Una cinta se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
-   "new": "Hay dos cintas iguales, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+   "new": "Una cinta se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cinta y qué fracción de la cinta usó?"
   },
   "promptEn": {
    "old": "A ribbon is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
-   "new": "There are two identical ribbons, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+   "new": "A ribbon is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more ribbon, and what fraction of the ribbon did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de la cinta."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in the ribbon."
+  },
+  "options": [
+   {
+    "optionId": "cmuli7it800qz6krhpuaxcgi3",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmuli7it800r06krh2j0ekm7t",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmuli7it800r16krh65scspu0",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmuli7it800r26krhxloomugg",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wkz03w94crhqgkt0hjb",
   "grade": 3,
   "prompt": {
    "old": "Una cinta para decorar la cancha se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
-   "new": "Hay dos cintas iguales para decorar la cancha, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+   "new": "Una cinta para decorar la cancha se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cinta y qué fracción de la cinta usó?"
   },
   "promptEn": {
    "old": "A ribbon for decorating the field is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
-   "new": "There are two identical ribbons for decorating the field, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+   "new": "A ribbon for decorating the field is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more ribbon, and what fraction of the ribbon did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de la cinta."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in the ribbon."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wkz03wa4crha5p62ysm",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wkz03wb4crhxynl46jp",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wkz03wc4crh4nxi92du",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wkz03wd4crhpqv3qitl",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wlv03x84crhudbhlgxu",
   "grade": 3,
   "prompt": {
    "old": "Una cinta para decorar el escenario se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
-   "new": "Hay dos cintas iguales para decorar el escenario, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+   "new": "Una cinta para decorar el escenario se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cinta y qué fracción de la cinta usó?"
   },
   "promptEn": {
    "old": "A ribbon to decorate the stage is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
-   "new": "There are two identical ribbons to decorate the stage, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+   "new": "A ribbon to decorate the stage is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more ribbon, and what fraction of the ribbon did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de la cinta."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in the ribbon."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wlw03x94crhaep3kww7",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wlw03xa4crhszr4eyne",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wlw03xb4crhwlc13aau",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wlw03xc4crhffzy58oi",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wnt03zb4crhy1jm65rs",
   "grade": 3,
   "prompt": {
    "old": "Una cinta para decorar la sala de los dinosaurios se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
-   "new": "Hay dos cintas iguales para decorar la sala de los dinosaurios, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+   "new": "Una cinta para decorar la sala de los dinosaurios se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cinta y qué fracción de la cinta usó?"
   },
   "promptEn": {
    "old": "A ribbon for decorating the dinosaur room is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
-   "new": "There are two identical ribbons for decorating the dinosaur room, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+   "new": "A ribbon for decorating the dinosaur room is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more ribbon, and what fraction of the ribbon did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de la cinta."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts were taken over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in the ribbon."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wnu03zc4crhxeh4w67a",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wnu03zd4crhcuep86vp",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wnu03ze4crh444x8j4b",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wnu03zf4crhiekczh4z",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wq4041y4crhyvxaqmqa",
   "grade": 3,
   "prompt": {
    "old": "Una cinta de gimnasia se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
-   "new": "Hay dos cintas de gimnasia iguales, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+   "new": "Una cinta de gimnasia se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cinta y qué fracción de la cinta usó?"
   },
   "promptEn": {
    "old": "A gymnastics ribbon is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
-   "new": "There are two identical gymnastics ribbons, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+   "new": "A gymnastics ribbon is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more ribbon, and what fraction of the ribbon did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de la cinta."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in the ribbon."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wq4041z4crh729zhl5b",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wq404204crhgmh1l5ej",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wq404214crhskavkdf2",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wq404224crh1ep02b8v",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wot040f4crh34hf04h3",
   "grade": 3,
   "prompt": {
    "old": "Una masa de pizza se divide en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más masa y qué fracción usó?",
-   "new": "Hay dos masas de pizza iguales, cada una dividida en 4 partes iguales. Ema usa 3 partes de una masa y Leo usa 2 partes de la otra. ¿Quién usó más masa y qué fracción de su masa usó?"
+   "new": "Una lámina de masa de pizza se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más masa y qué fracción de la masa usó?"
   },
   "promptEn": {
    "old": "A pizza dough is divided into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more dough and what fraction did they use?",
-   "new": "There are two identical balls of pizza dough, each divided into 4 equal parts. Ema uses 3 parts of one and Leo uses 2 parts of the other. Who used more dough, and what fraction of their dough did they use?"
+   "new": "A sheet of pizza dough is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more dough, and what fraction of the dough did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más masa quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más masa quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su masa."
+   "new": "Todas las partes son del mismo tamaño, así que usa más masa quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de la masa."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more dough. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more dough. Then write how many parts they took out of the total number of parts in their dough."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more dough. Then write how many parts they took out of the total number of parts in the dough."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wou040g4crhx048kquc",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wou040h4crhjbz4vs0n",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wou040i4crhpsa0gbz3",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wou040j4crhov4d6xg0",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wna03yr4crhk74yawbg",
   "grade": 3,
   "prompt": {
    "old": "Un cable se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cable y qué fracción usó?",
-   "new": "Hay dos cables iguales, cada uno cortado en 4 partes iguales. Ema usa 3 partes de un cable y Leo usa 2 partes del otro. ¿Quién usó más cable y qué fracción de su cable usó?"
+   "new": "Un cable se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cable y qué fracción del cable usó?"
   },
   "promptEn": {
    "old": "A cable is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more cable and what fraction did they use?",
-   "new": "There are two identical cables, each cut into 4 equal parts. Ema uses 3 parts of one cable and Leo uses 2 parts of the other. Who used more cable, and what fraction of their cable did they use?"
+   "new": "A cable is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more cable, and what fraction of the cable did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cable quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cable quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cable."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cable quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes del cable."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took out of the total number of parts in their cable."
-  }
+   "new": "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took out of the total number of parts in the cable."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wna03ys4crhr83ludnl",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wna03yt4crhxisxog0s",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wna03yu4crhfhttgizi",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wna03yv4crhm7pwm2m1",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
  },
  {
   "exerciseId": "cmulu2wpn041e4crh8m7hlhls",
   "grade": 3,
   "prompt": {
    "old": "Un cordel se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cordel y qué fracción usó?",
-   "new": "Hay dos cordeles iguales, cada uno cortado en 4 partes iguales. Ema usa 3 partes de un cordel y Leo usa 2 partes del otro. ¿Quién usó más cordel y qué fracción de su cordel usó?"
+   "new": "Un cordel se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cordel y qué fracción del cordel usó?"
   },
   "promptEn": {
    "old": "A cord is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more cord and what fraction did they use?",
-   "new": "There are two identical cords, each cut into 4 equal parts. Ema uses 3 parts of one cord and Leo uses 2 parts of the other. Who used more cord, and what fraction of their cord did they use?"
+   "new": "A cord is cut into 4 equal parts. Ema uses 2 parts and Leo uses 1 part. Who used more cord, and what fraction of the cord did they use?"
   },
   "procedureNote": {
    "old": "Todas las partes son del mismo tamaño, así que usa más cordel quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
-   "new": "Todas las partes son del mismo tamaño, así que usa más cordel quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cordel."
+   "new": "Todas las partes son del mismo tamaño, así que usa más cordel quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes del cordel."
   },
   "procedureNoteEn": {
    "old": "All the parts are the same size, so whoever takes more parts uses more cord. Then write how many parts they took over the total.",
-   "new": "All the parts are the same size, so whoever takes more parts uses more cord. Then write how many parts they took out of the total number of parts in their cord."
+   "new": "All the parts are the same size, so whoever takes more parts uses more cord. Then write how many parts they took out of the total number of parts in the cord."
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wpo041f4crhb2wnh72x",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wpo041g4crhf9s5mnpl",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wpo041h4crh16nnab0o",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wpo041i4crhqy5ost7a",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wqs042n4crh073hwczj",
+  "grade": 3,
+  "prompt": {
+   "old": "Una pista se divide en 4 tramos iguales. Ema recorre 3 tramos y Leo recorre 2 tramos. ¿Quién recorrió más pista y qué fracción recorrió?",
+   "new": "Una pista se divide en 4 tramos iguales. Ema recorre 2 tramos y Leo recorre 1 tramo. ¿Quién recorrió más pista y qué fracción de la pista recorrió?"
+  },
+  "promptEn": {
+   "old": "A track is divided into 4 equal sections. Ema travels 3 sections and Leo travels 2 sections. Who traveled more of the track and what fraction did they travel?",
+   "new": "A track is divided into 4 equal sections. Ema travels 2 sections and Leo travels 1 section. Who traveled more of the track, and what fraction of the track did they travel?"
+  },
+  "options": [
+   {
+    "optionId": "cmulu2wqt042o4crholwg77f1",
+    "label": {
+     "old": "Ema, 3/4",
+     "new": "Ema, 2/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wqt042p4crhvom5lrky",
+    "label": {
+     "old": "Leo, 2/4",
+     "new": "Leo, 1/4"
+    }
+   },
+   {
+    "optionId": "cmulu2wqt042q4crh2kw4ljfm",
+    "label": {
+     "old": "Ema, 4/3",
+     "new": "Ema, 4/2"
+    }
+   },
+   {
+    "optionId": "cmulu2wqt042r4crh12nxapix",
+    "label": {
+     "old": "Leo, 3/4",
+     "new": "Leo, 2/4"
+    }
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wof04004crhhgs81usk",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos pizzas iguales se reparten: Marta come 2 de 3 partes iguales de la suya y Luis come 1 de 3 partes iguales de la otra. ¿Quién comió más?",
+   "new": "Una barra de chocolate se divide en 3 partes iguales. Marta come 2 partes y Luis come 1 parte. ¿Quién comió más chocolate?"
+  },
+  "promptEn": {
+   "old": "Two identical pizzas are shared: Marta eats 2 of 3 equal parts of hers and Luis eats 1 of 3 equal parts of the other. Who ate more?",
+   "new": "A chocolate bar is divided into 3 equal parts. Marta eats 2 parts and Luis eats 1 part. Who ate more chocolate?"
+  },
+  "procedureNote": {
+   "old": "Las dos pizzas están divididas en partes del mismo tamaño. Compara cuántas partes comió cada uno.",
+   "new": "Todas las partes de la barra son del mismo tamaño. Compara cuántas partes comió cada uno."
+  },
+  "procedureNoteEn": {
+   "old": "Both pizzas are divided into parts of the same size. Compare how many parts each one ate.",
+   "new": "All the parts of the bar are the same size. Compare how many parts each one ate."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xvj056n4crhqbzpxmq2",
+  "grade": 4,
+  "prompt": {
+   "old": "Ana comió 2/6 de una torta y Pedro comió 3/6 de la misma torta. ¿Quién comió más?",
+   "new": "Ana comió 2/6 de un queque rectangular y Pedro comió 3/6 del mismo queque. ¿Quién comió más?"
+  },
+  "promptEn": {
+   "old": "Ana ate 2/6 of a cake and Pedro ate 3/6 of the same cake. Who ate more?",
+   "new": "Ana ate 2/6 of a rectangular loaf cake and Pedro ate 3/6 of the same cake. Who ate more?"
+  },
+  "procedureNote": {
+   "old": "Los dos comieron de una torta cortada en partes del mismo tamaño. Compara cuántas partes tomó cada uno.",
+   "new": "Los dos comieron del mismo queque, cortado en partes del mismo tamaño. Compara cuántas partes tomó cada uno."
+  },
+  "procedureNoteEn": {
+   "old": "They both ate from a cake divided into parts of the same size. Compare how many parts each one took.",
+   "new": "They both ate from the same cake, cut into parts of the same size. Compare how many parts each one took."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xt705404crhzp2cy4nc",
+  "grade": 4,
+  "prompt": {
+   "old": "Después del partido, Ana comió 2/6 de una pizza y Pedro comió 3/6 de la misma pizza. ¿Quién comió más?",
+   "new": "Después del partido, Ana comió 2/6 de una pizza rectangular y Pedro comió 3/6 de la misma pizza. ¿Quién comió más?"
+  },
+  "promptEn": {
+   "old": "After the match, Ana ate 2/6 of a pizza and Pedro ate 3/6 of the same pizza. Who ate more?",
+   "new": "After the game, Ana ate 2/6 of a rectangular pizza and Pedro ate 3/6 of the same pizza. Who ate more?"
+  },
+  "procedureNote": {
+   "old": "Las dos porciones vienen de la misma pizza, cortada en partes del mismo tamaño. Compara cuántas partes tomó cada uno.",
+   "new": "Las dos porciones vienen de la misma pizza, cortada en partes del mismo tamaño. Compara cuántas partes tomó cada uno."
+  },
+  "procedureNoteEn": {
+   "old": "Both portions come from the same pizza, cut into parts of the same size. Compare how many parts each one took.",
+   "new": "Both portions come from the same pizza, cut into parts of the same size. Compare how many parts each one took."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jcv01b86krh5nnstnr8",
+  "grade": 5,
+  "prompt": {
+   "old": "Ana comió 3/8 de una pizza y Beto comió 1/2 de otra pizza igual. ¿Quién comió más?",
+   "new": "Ana comió 3/8 de una barra de chocolate y Beto comió 1/2 de otra barra igual. ¿Quién comió más?"
+  },
+  "promptEn": {
+   "old": "Ana ate 3/8 of a pizza and Beto ate 1/2 of another identical pizza. Who ate more?",
+   "new": "Ana ate 3/8 of a chocolate bar and Beto ate 1/2 of another identical bar. Who ate more?"
+  },
+  "procedureNote": {
+   "old": "Como las pizzas son iguales, puedes comparar las fracciones. Escribe 1/2 con denominador 8 para verlas en la misma unidad.",
+   "new": "Como las barras son iguales, puedes comparar las fracciones. Escribe 1/2 con denominador 8 para verlas en la misma unidad."
+  },
+  "procedureNoteEn": {
+   "old": "Since the pizzas are identical, you can compare the fractions. Write 1/2 with denominator 8 to see them in the same unit.",
+   "new": "Since the bars are identical, you can compare the fractions. Write 1/2 with a denominator of 8 so both are in the same unit."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yra06124crhf6hr9tyz",
+  "grade": 5,
+  "prompt": {
+   "old": "Después del partido, Ana comió 3/8 de una pizza y Beto comió 1/2 de otra pizza igual. ¿Quién comió más?",
+   "new": "Después del partido, Ana comió 3/8 de una barra de cereal y Beto comió 1/2 de otra barra igual. ¿Quién comió más?"
+  },
+  "promptEn": {
+   "old": "After the match, Ana ate 3/8 of a pizza and Beto ate 1/2 of another identical pizza. Who ate more?",
+   "new": "After the game, Ana ate 3/8 of a cereal bar and Beto ate 1/2 of another identical bar. Who ate more?"
+  },
+  "procedureNote": {
+   "old": "Como las pizzas son iguales, puedes comparar las fracciones. Escribe 1/2 con denominador 8 para verlas en la misma unidad.",
+   "new": "Como las barras son iguales, puedes comparar las fracciones. Escribe 1/2 con denominador 8 para verlas en la misma unidad."
+  },
+  "procedureNoteEn": {
+   "old": "Since the pizzas are identical, you can compare the fractions. Write 1/2 with denominator 8 to see them in the same unit.",
+   "new": "Since the bars are identical, you can compare the fractions. Write 1/2 with a denominator of 8 so both are in the same unit."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jn201lp6krhcrh6eomm",
+  "grade": 6,
+  "prompt": {
+   "old": "Ana comió 1/4 de una pizza y Beto comió 1/3 de la misma pizza. ¿Qué parte de la pizza comieron entre los dos?",
+   "new": "Ana comió 1/4 de una barra de chocolate y Beto comió 1/3 de otra barra igual. ¿Qué parte de una barra comieron entre los dos?"
+  },
+  "promptEn": {
+   "old": "Ana ate 1/4 of a pizza and Beto ate 1/3 of the same pizza. What part of the pizza did they eat together?",
+   "new": "Ana ate 1/4 of a chocolate bar and Beto ate 1/3 of another identical bar. How much of a bar did they eat altogether?"
+  },
+  "procedureNote": {
+   "old": "Juntar lo que comieron es sumar. Busca un denominador común para 4 y 3 y convierte las dos fracciones.",
+   "new": "Juntar lo que comieron es sumar. Busca un denominador común para 4 y 3 y convierte las dos fracciones."
+  },
+  "procedureNoteEn": {
+   "old": "Putting together what they ate means adding. Find a common denominator for 4 and 3 and convert both fractions.",
+   "new": "Putting together what they ate means adding. Find a common denominator for 4 and 3 and convert both fractions."
+  }
+ },
+ {
+  "exerciseId": "cmulu2zsh07254crhm99e0t9y",
+  "grade": 6,
+  "prompt": {
+   "old": "Después del partido, Ana comió 1/4 de una pizza y Beto comió 1/3 de la misma pizza. ¿Qué parte de la pizza comieron entre los dos?",
+   "new": "Después del partido, Ana comió 1/4 de una pizza rectangular y Beto comió 1/3 de otra pizza igual. ¿Qué parte de una pizza comieron entre los dos?"
+  },
+  "promptEn": {
+   "old": "After the match, Ana ate 1/4 of a pizza and Beto ate 1/3 of the same pizza. What part of the pizza did they eat together?",
+   "new": "After the game, Ana ate 1/4 of a rectangular pizza and Beto ate 1/3 of another identical pizza. How much of a pizza did they eat altogether?"
+  },
+  "procedureNote": {
+   "old": "Juntar lo que comieron es sumar. Busca un denominador común para 4 y 3 y convierte las dos fracciones.",
+   "new": "Juntar lo que comieron es sumar. Busca un denominador común para 4 y 3 y convierte las dos fracciones."
+  },
+  "procedureNoteEn": {
+   "old": "Putting together what they ate is adding. Find a common denominator for 4 and 3 and convert both fractions.",
+   "new": "Putting together what they ate means adding. Find a common denominator for 4 and 3 and convert both fractions."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yta063a4crhpgje0uds",
+  "grade": 5,
+  "prompt": {
+   "old": "Luisa tiene 2/3 de una torta y Mateo tiene 4/6 de otra torta igual. ¿Qué afirmación es correcta?",
+   "new": "Luisa tiene 2/3 de un queque rectangular y Mateo tiene 4/6 de otro queque igual. ¿Qué afirmación es correcta?"
+  },
+  "promptEn": {
+   "old": "Luisa has 2/3 of a cake and Mateo has 4/6 of another identical cake. Which statement is correct?",
+   "new": "Luisa has 2/3 of a rectangular loaf cake and Mateo has 4/6 of another identical cake. Which statement is correct?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
+  "grade": 3,
+  "prompt": {
+   "old": "Una caja trae 4 barras de cereal espacial iguales. Ema come 1 barra y regala 2. ¿Qué fracción de las barras le queda?",
+   "new": "La astronauta Sofía lleva 4 barras de cereal iguales en la nave. Come 1 barra y regala 2. ¿Qué fracción de las barras le queda?"
+  },
+  "promptEn": {
+   "old": "A box has 4 equal space cereal bars. Ema eats 1 bar and gives away 2. What fraction of the bars is left?",
+   "new": "Astronaut Sofía has 4 identical cereal bars on the spaceship. She eats 1 bar and gives away 2. What fraction of the bars does she have left?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
+  "grade": 3,
+  "prompt": {
+   "old": "Una tableta de chocolate tiene 4 barras iguales. Ema come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
+   "new": "Una tableta de chocolate tiene 4 barras iguales. Sofía come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?"
+  },
+  "promptEn": {
+   "old": "A chocolate bar has 4 equal pieces. Ema eats 1 piece and gives away 2. What fraction of the chocolate bar is left?",
+   "new": "A chocolate bar has 4 equal pieces. Sofía eats 1 piece and gives away 2. What fraction of the chocolate bar is left?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wok04054crhobn34ss1",
+  "grade": 3,
+  "prompt": {
+   "old": "Una tarta se divide en 4 porciones iguales. Ema come 1 porción y regala 2 porciones. ¿Qué fracción de la tarta le queda?",
+   "new": "Una tarta se divide en 4 porciones iguales. Sofía come 1 porción y regala 2 porciones. ¿Qué fracción de la tarta le queda?"
+  },
+  "promptEn": {
+   "old": "A pie is divided into 4 equal slices. Ema eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?",
+   "new": "A pie is divided into 4 equal slices. Sofía eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?"
   }
  }
 ]

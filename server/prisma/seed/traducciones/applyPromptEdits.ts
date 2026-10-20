@@ -8,7 +8,10 @@
  * mismo ancho" para calzar con el dibujo del dinosaurio (2026-10-20). Y
  * los 8 de "Ema usa 3 partes y Leo usa 2" de 3.°: sumaban 5 partes de una
  * cinta de 4; ahora son dos cintas (u otro material) iguales, como ya
- * mostraba la imagen de dos barras (2026-10-20).
+ * mostraba la imagen de dos barras (2026-10-20). Después, para calzar con
+ * MA03 OA11 ("fracciones de un mismo todo"), las 9 versiones de Ema y Leo
+ * pasaron a UN todo con Ema 3 partes y Leo 1 — de ahí la edición de la
+ * alternativa "Leo, 2/4" → "Leo, 1/4" (2026-10-20).
  *
  * Mismo contrato que applyClassroomEnglish: solo escribe si la BD tiene
  * EXACTAMENTE el texto anterior; si ya tiene el nuevo no hace nada; si
@@ -27,6 +30,10 @@ export interface PromptEdit {
   /** Pistas editadas junto al enunciado (p. ej. "del pictograma"). */
   procedureNote?: { old: string; new: string };
   procedureNoteEn?: { old: string; new: string };
+  /** Texto de alternativas que cambia junto con el enunciado (p. ej. Leo
+   * pasa de 2 a 1 parte: "Leo, 2/4" → "Leo, 1/4"). Por id de alternativa;
+   * nunca cambia cuál es la correcta ni su tipo de error. */
+  options?: Array<{ optionId: string; label: { old: string; new: string } }>;
 }
 
 export function loadPromptEdits(): PromptEdit[] {
@@ -58,6 +65,15 @@ export async function applyPromptEdits(
     if (Object.keys(data).length > 0) {
       await prisma.exercise.update({ where: { id: e.exerciseId }, data });
       report.written += Object.keys(data).length;
+    }
+    for (const o of e.options ?? []) {
+      const opt = await prisma.exerciseOption.findUnique({ where: { id: o.optionId }, select: { exerciseId: true, label: true } });
+      if (!opt || opt.exerciseId !== e.exerciseId) report.problems.push(`${o.optionId}: alternativa no encontrada en ${e.exerciseId}`);
+      else if (opt.label === o.label.new) report.already += 1;
+      else if (opt.label === o.label.old) {
+        await prisma.exerciseOption.update({ where: { id: o.optionId }, data: { label: o.label.new } });
+        report.written += 1;
+      } else report.problems.push(`${o.optionId}: alternativa "${opt.label}" distinta de la esperada, no se edita`);
     }
   }
   return report;
