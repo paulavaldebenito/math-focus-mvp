@@ -4,23 +4,16 @@ import { initialAssessmentAttemptsSchema } from "../auth/schemas.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
 import { computeInitialLevel } from "../assessment/initialCalibration.js";
+import { shuffle } from "../lib/shuffle.js";
+import { allowedThemeWhere, pickExercise } from "../exercises/select.js";
 
-const ASSESSMENT_SIZE = 5;
+// Antes eran 5 — se acortó a pedido del usuario para que el control inicial
+// sea más breve. `computeInitialLevel` es proporcional (ratio de aciertos),
+// así que sigue funcionando igual con menos preguntas.
+const ASSESSMENT_SIZE = 3;
 const NEUTRAL_STARTING_LEVEL = 2;
 
 export const initialAssessmentRouter = Router({ mergeParams: true });
-
-// Fisher-Yates — sin esto, `findMany` sin `orderBy` tiende a devolver
-// siempre el mismo orden (el de inserción), así que la evaluación mostraba
-// las mismas 5 preguntas cada vez.
-function shuffle<T>(items: T[]): T[] {
-  const result = [...items];
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [result[i], result[j]] = [result[j]!, result[i]!];
-  }
-  return result;
-}
 
 initialAssessmentRouter.get("/", requireAuth, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
@@ -29,20 +22,32 @@ initialAssessmentRouter.get("/", requireAuth, async (req, res) => {
     return;
   }
 
-  const pool = await prisma.exercise.findMany({
-    where: { mathSkill: { grade: child.grade } },
-    include: { options: { select: { id: true, label: true } } }, // sin isCorrect ni errorTypeId
+  // Solo contenido neutro o de sus intereses, y un único ejercicio por
+  // problema base: la evaluación no calibra con la misma historia repetida.
+  let pool = await prisma.exercise.findMany({
+    where: { AND: [{ mathSkill: { grade: child.grade } }, allowedThemeWhere(child.interests)] },
+    include: { options: { select: { id: true, label: true, labelEn: true } } }, // sin isCorrect ni errorTypeId
   });
 
-  const exercises = shuffle(pool).slice(0, ASSESSMENT_SIZE);
+  const exercises: typeof pool = [];
+  while (exercises.length < ASSESSMENT_SIZE) {
+    const chosen = pickExercise(pool);
+    if (!chosen) break;
+    exercises.push(chosen);
+    pool = pool.filter((e) => e.id !== chosen.id && (chosen.baseKey === null || e.baseKey !== chosen.baseKey));
+  }
 
   res.status(200).json({
     exercises: exercises.map((ex) => ({
       id: ex.id,
       prompt: ex.prompt,
       promptEn: ex.promptEn,
-      options: ex.options,
+      // La opción correcta se siembra siempre primera en el banco de
+      // ejercicios — sin mezclar acá, la evaluación inicial también
+      // delataría la respuesta por posición.
+      options: shuffle(ex.options),
       visual: ex.visual,
+      image: ex.image,
     })),
   });
 });

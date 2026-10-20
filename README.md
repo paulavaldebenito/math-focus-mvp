@@ -7,7 +7,8 @@ MVP de "Math Focus" construido bajo un proceso por fases (diagnóstico → defin
 ## Alcance del MVP v1 (aprobado)
 
 - Nivel escolar: 1° básico. **Expandido a 2° básico (mismo eje) el 2026-08-14** — ver
-  [`specs/004-expansion-2basico/`](specs/004-expansion-2basico/); el resto de este documento
+  [`specs/004-expansion-2basico/`](specs/004-expansion-2basico/) — y **a 3°–6° básico el 2026-09-28** — ver
+  [`specs/006-expansion-3a6-basico/`](specs/006-expansion-3a6-basico/); el resto de este documento
   describe el alcance original de v1.
 - Eje: Números y operaciones (conteo 0–20, adición y sustracción dentro de 20).
 - Registro de adulto responsable + consentimiento explícito, obligatorios antes de crear cualquier perfil infantil.
@@ -40,3 +41,8 @@ Expansión de alcance post-MVP:
 
 - [`specs/004-expansion-2basico/`](specs/004-expansion-2basico/) — 2° básico, eje Números y operaciones, MA02 OA09 (adición y sustracción dentro de 100, sin reserva).
 - [`specs/005-ampliacion-1basico-oa04/`](specs/005-ampliacion-1basico-oa04/) — 1° básico, MA01 OA04 (comparar y ordenar números dentro de 20).
+- [`specs/006-expansion-3a6-basico/`](specs/006-expansion-3a6-basico/) — 3° a 6° básico y ampliación de 1° y 2°: banco por contenidos (los 5 ejes) escrito por agentes por curso (`.claude/agents/banco-N-basico.md`).
+- [`specs/007-intereses-multiples/`](specs/007-intereses-multiples/) — 10 intereses, elección de hasta 3, y ~70 % de las preguntas temáticas mediante variantes ligadas al ejercicio base (`.claude/agents/variantes-tematicas.md`).
+- [`specs/008-banco-imagenes-por-curso/`](specs/008-banco-imagenes-por-curso/) — 805 ilustraciones SVG (español/inglés) de 1° a 6° básico, alternativas traducidas al inglés y propuestas para 8 enunciados (`npm run bank:images` en `server/`).
+- [`specs/009-animo-y-pausas/`](specs/009-animo-y-pausas/) — check-in opcional de ánimo y de cómo se siente con las matemáticas (5 caritas) al empezar cada práctica, y pausas que no repiten el mismo ejercicio en la sesión.
+- [`specs/010-banco-visual-completo/`](specs/010-banco-visual-completo/) — 2.108 ejercicios con imagen del banco visual completo (PNG sin palabras, fondo blanco), vinculados solo por `exerciseId`, con leyendas A/B/C bilingües fuera de la imagen.

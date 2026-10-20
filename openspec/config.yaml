@@ -1,0 +1,58 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+context: |
+  Math Focus — MVP regulado de matemáticas para niños (1° a 6° básico), construido
+  bajo un proceso por fases (diagnóstico → definición → plan → implementación →
+  verificación) con reglas estrictas contra alucinaciones y foco en seguridad y
+  privacidad infantil.
+
+  Stack:
+  - Cliente (`client/`): React 19 + TypeScript, Vite, Vitest + Testing Library.
+  - Servidor (`server/`): Node + TypeScript + Express 5, sesiones vía
+    express-session, validación con Zod, Prisma 7 (adapter-pg) sobre PostgreSQL,
+    Vitest, oxlint.
+  - E2E (`e2e/`): Playwright.
+  - Monorepo simple sin workspaces compartidos: cada carpeta (`client/`, `server/`,
+    `e2e/`) tiene su propio `package.json`.
+
+  Dominio y convenciones:
+  - Motor adaptativo determinista y auditable: cada decisión de qué ejercicio
+    mostrar tiene una regla explícita y un motivo persistido — nada de ranking
+    entre estudiantes ni lenguaje clínico/diagnóstico.
+  - Contenido curricular (`MathSkill.oaCode`) solo se completa tras verificar el
+    Objetivo de Aprendizaje contra su página individual en
+    curriculumnacional.mineduc.cl — nunca contra un resumen o listado general.
+    Ver `specs/003-fase2-preparacion-pedagogica/curriculo-1basico.md` para el
+    historial de errores de numeración ya detectados con este método.
+  - Ejercicios semilla marcan `isFictitious` explícitamente cuando no son
+    contenido curricular aprobado.
+  - Carpeta hermana `math-focus-app/` es un prototipo anterior (React+JS, sin
+    auth, SQLite) que se conserva solo como referencia visual/UX — su código no
+    se reutiliza directamente.
+  - El historial de fases y expansiones de alcance vive en `specs/` (spec.md,
+    plan.md, tasks.md por carpeta) — no se repite aquí.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing

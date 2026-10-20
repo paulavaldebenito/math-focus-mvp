@@ -84,12 +84,12 @@ describe("POST /api/children (HU3)", () => {
     const res = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieA },
-      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio", grade: 6 }),
+      body: JSON.stringify({ consentId: consentIdA, displayName: "Niño ficticio", grade: 7 }),
     });
     expect(res.status).toBe(400);
   });
 
-  it("crea el perfil con el curso elegido por el adulto (1° o 2° básico)", async () => {
+  it("crea el perfil con el curso elegido por el adulto (2° básico)", async () => {
     const res = await fetch(`${baseUrl}/api/children`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieA },

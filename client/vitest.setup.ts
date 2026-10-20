@@ -7,3 +7,19 @@ import { cleanup } from "@testing-library/react";
 afterEach(() => {
   cleanup();
 });
+
+// jsdom no implementa matchMedia — lo usan Confetti (prefers-reduced-motion)
+// y cualquier otro componente que consulte una media query. Sin esto, un
+// test que llega a renderizarlos lanza "matchMedia is not a function".
+if (typeof window !== "undefined" && !window.matchMedia) {
+  window.matchMedia = (query: string) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: () => {},
+    removeListener: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    dispatchEvent: () => false,
+  });
+}

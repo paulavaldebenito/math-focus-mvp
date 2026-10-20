@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { ExerciseVisualDescriptor } from "../api/types.js";
+import type { Interest } from "../lib/interests.js";
 
 const DEFAULT_EMOJI = "🔵";
 /** Sobre este umbral, un objeto por unidad deja de ser legible (2° básico
@@ -7,9 +8,24 @@ const DEFAULT_EMOJI = "🔵";
  * estrategia que ya enseñan las pistas ("separa decenas y unidades"). Nunca
  * se activa para 1° básico (tope 20), así que su representación no cambia. */
 const BLOCK_THRESHOLD = 20;
+// Cada ícono aparece con un pequeño retraso respecto al anterior — más vivo
+// que aparecer todos de golpe. Tope para que un ejercicio con muchos objetos
+// no demore visiblemente en terminar de aparecer.
+const POP_DELAY_STEP_MS = 35;
+const POP_DELAY_MAX_MS = 350;
+
+function popDelay(i: number): string {
+  return `${Math.min(i * POP_DELAY_STEP_MS, POP_DELAY_MAX_MS)}ms`;
+}
 
 interface Props {
   visual: ExerciseVisualDescriptor;
+  /** Interés elegido por el niño (el primero de hasta 3) — si el ejercicio
+   * no trae un emoji propio (contenido neutro, `DEFAULT_EMOJI`), se usa el
+   * suyo en su lugar para que hasta las preguntas sin tema se sientan
+   * elegidas por él. Nunca reemplaza un emoji que el contenido sí definió a
+   * propósito (p. ej. uno ya temático por `theme`). */
+  interest?: Interest;
 }
 
 /**
@@ -27,12 +43,20 @@ function renderQuantity(n: number, removed: number, emoji: string, keyPrefix: st
     return (
       <>
         {Array.from({ length: tens }, (_, i) => (
-          <span key={`${keyPrefix}-t${i}`} className={`pictorial-ten ${i >= tens - removedTens ? "removed" : ""}`}>
+          <span
+            key={`${keyPrefix}-t${i}`}
+            className={`pictorial-ten ${i >= tens - removedTens ? "removed" : ""}`}
+            style={{ animationDelay: popDelay(i) }}
+          >
             10
           </span>
         ))}
         {Array.from({ length: ones }, (_, i) => (
-          <span key={`${keyPrefix}-o${i}`} className={`pictorial-icon ${i >= ones - removedOnes ? "removed" : ""}`}>
+          <span
+            key={`${keyPrefix}-o${i}`}
+            className={`pictorial-icon ${i >= ones - removedOnes ? "removed" : ""}`}
+            style={{ animationDelay: popDelay(tens + i) }}
+          >
             {emoji}
           </span>
         ))}
@@ -41,7 +65,11 @@ function renderQuantity(n: number, removed: number, emoji: string, keyPrefix: st
   }
 
   return Array.from({ length: n }, (_, i) => (
-    <span key={`${keyPrefix}-${i}`} className={`pictorial-icon ${i >= n - removed ? "removed" : ""}`}>
+    <span
+      key={`${keyPrefix}-${i}`}
+      className={`pictorial-icon ${i >= n - removed ? "removed" : ""}`}
+      style={{ animationDelay: popDelay(i) }}
+    >
       {emoji}
     </span>
   ));
@@ -54,8 +82,12 @@ function renderQuantity(n: number, removed: number, emoji: string, keyPrefix: st
  * (aria-hidden): el enunciado en texto y la narración por voz siguen siendo
  * el contenido accesible principal.
  */
-export function ExerciseVisual({ visual }: Props) {
-  const emoji = visual.emoji ?? DEFAULT_EMOJI;
+export function ExerciseVisual({ visual, interest }: Props) {
+  // Contenido neutro (sin tema propio) queda con DEFAULT_EMOJI a propósito
+  // en el banco — ahí es donde se personaliza con el interés del niño. Un
+  // emoji ya temático (p. ej. 🐟 en un ejercicio de "animales") nunca se
+  // reemplaza: fue elegido a mano para calzar con ese enunciado.
+  const emoji = (!visual.emoji || visual.emoji === DEFAULT_EMOJI ? interest?.emoji : visual.emoji) ?? DEFAULT_EMOJI;
 
   if (visual.kind === "combine") {
     return (

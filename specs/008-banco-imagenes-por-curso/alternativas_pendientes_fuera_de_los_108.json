@@ -1,0 +1,2290 @@
+[
+ {
+  "exerciseId": "cmulu2tei00t44crh1b35qzi8",
+  "grade": 1,
+  "theme": "naturaleza",
+  "prompt": "Al lado del sendero hay 6 flores rojas y 14 flores amarillas. ¿Hay más flores rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u9801nh4crh7iibsx7x",
+  "grade": 1,
+  "theme": "vehiculos",
+  "prompt": "Ana armó una pista de juguete de 6 cuadritos y Bea armó otra de 9 cuadritos. ¿Cuál pista es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u6s01kp4crhs0nhbv4x",
+  "grade": 1,
+  "theme": "dinosaurios",
+  "prompt": "Ana dibujó una huella de 6 cuadritos y Bea dibujó una de 9 cuadritos. ¿Cuál huella es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u5u01jl4crh3kuu8om0",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "Ana dibujó una pista de aterrizaje de 6 cuadritos y Bea dibujó una de 9 cuadritos. ¿Cuál pista es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u7e01le4crhqwjv55sz",
+  "grade": 1,
+  "theme": "cocina",
+  "prompt": "Ana tiene un rollo de masa de 6 cuadritos y Bea tiene uno de 9 cuadritos. ¿Cuál rollo es más corto?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i7k006r6krhko1pcxtu",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Ana tiene una cinta de 6 cuadritos y Bea tiene una de 9 cuadritos. ¿Cuál cinta es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u2x01g94crhgie9zprf",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "Ana tiene una cinta de capitana de 6 cuadritos y Bea tiene una de 9 cuadritos. ¿Cuál cinta es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u8801md4crhgwje956y",
+  "grade": 1,
+  "theme": "deportes",
+  "prompt": "Ana tiene una cinta de gimnasia de 6 cuadritos y Bea tiene una de 9 cuadritos. ¿Cuál cinta es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i96008b6krhnbvu0hdh",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Cada dibujo vale 1 flor. Rosas: 🌹🌹🌹🌹🌹🌹. Tulipanes: 🌷🌷🌷. ¿De qué flor hay más?",
+  "labelsSinIngles": [
+   "Rosas",
+   "Tulipanes",
+   "Hay igual cantidad",
+   "6"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i9a008g6krhjubt4k8o",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Cada dibujo vale 1 fruta. Frutillas: 🍓🍓. Uvas: 🍇🍇🍇🍇🍇🍇. ¿De qué fruta hay menos?",
+  "labelsSinIngles": [
+   "Frutillas",
+   "Uvas",
+   "Hay igual cantidad",
+   "2"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i9n008v6krhuulyg55v",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Cada dibujo vale 1 voto. Pelota: ⚽⚽⚽⚽⚽⚽. Bicicleta: 🚲🚲🚲🚲🚲. Cometa: 🪁🪁🪁🪁. ¿Cuál es el juego favorito, el que tiene más votos?",
+  "labelsSinIngles": [
+   "Pelota",
+   "Cometa",
+   "Bicicleta",
+   "6"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2tu201874crh8sc0xctg",
+  "grade": 1,
+  "theme": "musica",
+  "prompt": "En el baile del acto, el ritmo es: palmada, pisada, palmada, pisada, palmada, ... ¿Qué sonido sigue?",
+  "labelsSinIngles": [
+   "pisada",
+   "palmada",
+   "silbido",
+   "salto"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2t7q00oj4crhftvz37xj",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "En el camarín hay 6 camisetas rojas y 14 camisetas amarillas. ¿Hay más camisetas rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2teq00ta4crh71clgzw9",
+  "grade": 1,
+  "theme": "deportes",
+  "prompt": "En el gimnasio hay 6 pelotas rojas y 14 pelotas amarillas. ¿Hay más pelotas rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2t9700pl4crhtnaih4ye",
+  "grade": 1,
+  "theme": "animales",
+  "prompt": "En el jardín de mariposas hay 6 mariposas rojas y 14 mariposas amarillas. ¿Hay más mariposas rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18th009cftrhlee0rrmr",
+  "grade": 1,
+  "theme": null,
+  "prompt": "En el jardín hay 6 flores rojas y 14 flores amarillas. ¿Hay más flores rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2t9q00px4crhh088xi6r",
+  "grade": 1,
+  "theme": "musica",
+  "prompt": "En la sala hay 6 guitarras rojas y 14 guitarras amarillas. ¿Hay más guitarras rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2tan00ql4crhka3gni80",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "En un mapa del cielo hay 6 estrellas rojas y 14 estrellas amarillas. ¿Hay más estrellas rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u3x01hd4crhcogc8ofz",
+  "grade": 1,
+  "theme": "animales",
+  "prompt": "La correa del perro de Ana mide 6 cuadritos y la del perro de Bea mide 9 cuadritos. ¿Cuál correa es más corta?",
+  "labelsSinIngles": [
+   "La de Ana",
+   "La de Bea",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2ts501644crh6i5c4tzy",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "La hinchada repite este patrón de sonidos: palmada, pisada, palmada, pisada, palmada, ... ¿Qué sonido sigue?",
+  "labelsSinIngles": [
+   "pisada",
+   "palmada",
+   "silbido",
+   "salto"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2tzl01dc4crhozjhy57z",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "Los marcadores de la cancha de entrenamiento terminan en punta arriba y se apoyan en una base circular. ¿Cuál de estas figuras 3D se parece a ellos?",
+  "labelsSinIngles": [
+   "cono",
+   "cilindro",
+   "esfera",
+   "cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2tdk00sf4crhkey2bihf",
+  "grade": 1,
+  "theme": "cocina",
+  "prompt": "Para una tarta hay 6 manzanas rojas y 14 manzanas amarillas. ¿Hay más manzanas rojas o amarillas?",
+  "labelsSinIngles": [
+   "Amarillas",
+   "Rojas"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i3s003i6krhcm69lx2i",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Patrón de sonidos: palmada, pisada, palmada, pisada, palmada, ... ¿Qué sonido sigue?",
+  "labelsSinIngles": [
+   "pisada",
+   "palmada",
+   "silbido",
+   "salto"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i4c003x6krhtes8ossp",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Patrón: gato, perro, pez, gato, perro, pez, gato, ... ¿Qué sigue?",
+  "labelsSinIngles": [
+   "perro",
+   "pez",
+   "gato",
+   "conejo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u8c01mi4crhqyfecnd1",
+  "grade": 1,
+  "theme": "deportes",
+  "prompt": "Pedro dice: \"Mi cuerda de saltar es más larga que la tuya\". Tu cuerda de saltar mide 7 pasos. ¿Cuál de estas medidas puede tener la cuerda de Pedro?",
+  "labelsSinIngles": [
+   "10 pasos",
+   "4 pasos",
+   "7 pasos",
+   "5 pasos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i7o006w6krhjhah5f43",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Pedro dice: \"Mi cuerda es más larga que la tuya\". Tu cuerda mide 7 pasos. ¿Cuál de estas medidas puede tener la cuerda de Pedro?",
+  "labelsSinIngles": [
+   "10 pasos",
+   "4 pasos",
+   "7 pasos",
+   "5 pasos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u3201ge4crh3syxh7z9",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "Pedro dice: «Mi tiro libre llegó más lejos que el tuyo». El tuyo llegó a 7 pasos. ¿Cuál de estas medidas puede haber recorrido el tiro de Pedro?",
+  "labelsSinIngles": [
+   "10 pasos",
+   "4 pasos",
+   "7 pasos",
+   "5 pasos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u0n01eg4crh2jolfbki",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "Sofía busca un bloque para la base de su estación espacial de juguete que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
+  "labelsSinIngles": [
+   "cubo",
+   "esfera",
+   "cilindro",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i73006b6krhptqblaxv",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Sofía busca un bloque que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
+  "labelsSinIngles": [
+   "cubo",
+   "esfera",
+   "cilindro",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u1h01fa4crh7b975v71",
+  "grade": 1,
+  "theme": "cocina",
+  "prompt": "Sofía busca un envase para guardar galletas que no ruede aunque lo empujes por la mesa. ¿Cuál figura 3D le sirve?",
+  "labelsSinIngles": [
+   "cubo",
+   "esfera",
+   "cilindro",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i8j007q6krhyslgwfo2",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Toby mide 6 huellas de largo, Rocky mide 4 huellas y Luna mide 9 huellas. ¿Quién es el más largo y quién el más corto?",
+  "labelsSinIngles": [
+   "Luna el más largo, Rocky el más corto",
+   "Rocky el más largo, Luna el más corto",
+   "Luna el más largo, Toby el más corto",
+   "Toby el más largo, Rocky el más corto"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u7a01l94crhdr650riu",
+  "grade": 1,
+  "theme": "dinosaurios",
+  "prompt": "Toby, Rocky y Luna son dinosaurios de juguete. Toby mide 6 huellas de largo, Rocky mide 4 huellas y Luna mide 9 huellas. ¿Quién es el más largo y quién el más corto?",
+  "labelsSinIngles": [
+   "Luna el más largo, Rocky el más corto",
+   "Rocky el más largo, Luna el más corto",
+   "Luna el más largo, Toby el más corto",
+   "Toby el más largo, Rocky el más corto"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u6401jv4crha840c002",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "Tres antenas de juguete miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u3701gj4crh7pdslowk",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "Tres banderines de equipo miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u8h01mn4crhep0gvwnr",
+  "grade": 1,
+  "theme": "deportes",
+  "prompt": "Tres bastones de gimnasia miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u3b01go4crh97om0lwt",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "Tres bufandas de hinchada miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u8l01ms4crh5nlv0k6x",
+  "grade": 1,
+  "theme": "deportes",
+  "prompt": "Tres cintas de gimnasia miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u5z01jq4crh3rkcd2iq",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "Tres cohetes de juguete miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u4701hn4crhebkp9hji",
+  "grade": 1,
+  "theme": "animales",
+  "prompt": "Tres correas de perro miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u5101im4crhy56ge7ki",
+  "grade": 1,
+  "theme": "musica",
+  "prompt": "Tres cuerdas de guitarra miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u7201kz4crhmzacdiwp",
+  "grade": 1,
+  "theme": "dinosaurios",
+  "prompt": "Tres huellas de dinosaurio miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u6w01ku4crhyqrp9gqq",
+  "grade": 1,
+  "theme": "dinosaurios",
+  "prompt": "Tres huesos fósiles miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i7u00716krhzih87rrg",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Tres lápices miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u7q01lt4crhkl1ynk24",
+  "grade": 1,
+  "theme": "naturaleza",
+  "prompt": "Tres palitos miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u4201hi4crh0q3l9l5b",
+  "grade": 1,
+  "theme": "animales",
+  "prompt": "Tres peces miden 4 cubos, 9 cubos y 6 cubos de largo. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u9f01nr4crhg6tzwwlj",
+  "grade": 1,
+  "theme": "vehiculos",
+  "prompt": "Tres pistas de juguete miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i7z00766krh5l0se450",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Tres tiras miden 12 palitos, 7 palitos y 15 palitos. ¿Cuál es la más corta?",
+  "labelsSinIngles": [
+   "La de 7 palitos",
+   "La de 15 palitos",
+   "La de 12 palitos",
+   "Todas miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u9c01nm4crhvedefpkc",
+  "grade": 1,
+  "theme": "vehiculos",
+  "prompt": "Tres trenes de juguete miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u4v01ih4crhhufuj1lx",
+  "grade": 1,
+  "theme": "musica",
+  "prompt": "Tres tubos sonoros miden 4 cubos, 9 cubos y 6 cubos. ¿Cuál es el más largo?",
+  "labelsSinIngles": [
+   "El de 9 cubos",
+   "El de 4 cubos",
+   "El de 6 cubos",
+   "Todos miden lo mismo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u9301nc4crhklglukw5",
+  "grade": 1,
+  "theme": "vehiculos",
+  "prompt": "Un autito de juguete mide 8 clips de largo y otro mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u8401m84crh20pd81u3",
+  "grade": 1,
+  "theme": "deportes",
+  "prompt": "Un bastón de gimnasia mide 8 clips de largo y otro mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u5q01jg4crhkp7eoj1l",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "Un cohete de juguete mide 8 clips de largo y otro mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u2t01g44crhitw3kro9",
+  "grade": 1,
+  "theme": "futbol",
+  "prompt": "Un cordón de botín mide 8 clips de largo y otro mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u3s01h84crhqwjwemuq",
+  "grade": 1,
+  "theme": "animales",
+  "prompt": "Un gusano mide 8 clips de largo y otro gusano mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u6o01kk4crh7qxg1svz",
+  "grade": 1,
+  "theme": "dinosaurios",
+  "prompt": "Un hueso fósil mide 8 clips de largo y otro hueso mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i7b006h6krhxi27shor",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Un lápiz mide 8 clips de largo y otro mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u4s01ic4crh159qpbe4",
+  "grade": 1,
+  "theme": "musica",
+  "prompt": "Un palillo de tambor mide 8 clips de largo y otro mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u7m01lo4crhrpttgffs",
+  "grade": 1,
+  "theme": "naturaleza",
+  "prompt": "Un palito del bosque mide 8 clips de largo y otro palito mide 5 clips de largo. ¿Cuál es más largo?",
+  "labelsSinIngles": [
+   "El de 8 clips",
+   "El de 5 clips",
+   "Miden lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2tzp01dh4crhlvi5eedp",
+  "grade": 1,
+  "theme": "musica",
+  "prompt": "Un tambor se parece a una de estas figuras 3D. ¿A cuál?",
+  "labelsSinIngles": [
+   "cilindro",
+   "esfera",
+   "cubo",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u0a01e14crh1ozs1mho",
+  "grade": 1,
+  "theme": "espacio",
+  "prompt": "Un tarro de comida para astronautas se parece a una de estas figuras 3D. ¿A cuál?",
+  "labelsSinIngles": [
+   "cilindro",
+   "esfera",
+   "cubo",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u0v01eq4crhgdm6qj86",
+  "grade": 1,
+  "theme": "cocina",
+  "prompt": "Un tarro de harina se parece a una de estas figuras 3D. ¿A cuál?",
+  "labelsSinIngles": [
+   "cilindro",
+   "esfera",
+   "cubo",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2u1k01ff4crhon673bgj",
+  "grade": 1,
+  "theme": "naturaleza",
+  "prompt": "Un tronco de árbol cortado, sin ramas, se parece a una de estas figuras 3D. ¿A cuál?",
+  "labelsSinIngles": [
+   "cilindro",
+   "esfera",
+   "cubo",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i5z00576krhaqxkw58z",
+  "grade": 1,
+  "theme": null,
+  "prompt": "Una lata de conservas se parece a una de estas figuras 3D. ¿A cuál?",
+  "labelsSinIngles": [
+   "cilindro",
+   "esfera",
+   "cubo",
+   "cono"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i6p005w6krhd0z1ta80",
+  "grade": 1,
+  "theme": null,
+  "prompt": "¿Cuál de estas figuras 3D tiene una punta arriba y una base circular abajo?",
+  "labelsSinIngles": [
+   "cono",
+   "cilindro",
+   "esfera",
+   "cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i6d005m6krhijs249d7",
+  "grade": 1,
+  "theme": null,
+  "prompt": "¿Cuál de estos objetos tiene forma de cubo?",
+  "labelsSinIngles": [
+   "Un dado",
+   "Una pelota",
+   "Una lata",
+   "Un gorro de cumpleaños"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i7e006m6krhsp155eyy",
+  "grade": 1,
+  "theme": null,
+  "prompt": "¿Cuál objeto es más largo: una regla de colegio o una goma de borrar?",
+  "labelsSinIngles": [
+   "La regla",
+   "La goma",
+   "Miden lo mismo",
+   "No se puede comparar"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ij600gd6krhsakkxsqh",
+  "grade": 2,
+  "theme": null,
+  "prompt": "El reloj digital marca 4:00. ¿Qué hora es?",
+  "labelsSinIngles": [
+   "Las 4 en punto",
+   "Las 4 y media",
+   "Las 5 en punto",
+   "Las 12 y media"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ijb00gi6krh1mvywprk",
+  "grade": 2,
+  "theme": null,
+  "prompt": "El reloj digital marca 7:30. ¿Qué hora es?",
+  "labelsSinIngles": [
+   "Las 7 y media",
+   "Las 7 en punto",
+   "Las 8 y media",
+   "Las 6 y media"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2viw02vg4crhn0cjt15r",
+  "grade": 2,
+  "theme": "cocina",
+  "prompt": "En el taller de repostería, el reloj digital marca 7:30. ¿Qué hora es?",
+  "labelsSinIngles": [
+   "Las 7 y media",
+   "Las 7 en punto",
+   "Las 8 y media",
+   "Las 6 y media"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vir02vb4crhf9gfeaan",
+  "grade": 2,
+  "theme": "cocina",
+  "prompt": "En la clase de cocina, el reloj digital marca 4:00. ¿Qué hora es?",
+  "labelsSinIngles": [
+   "Las 4 en punto",
+   "Las 4 y media",
+   "Las 5 en punto",
+   "Las 12 y media"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7il700ih6krhgaooqp9r",
+  "grade": 2,
+  "theme": null,
+  "prompt": "En un gráfico de barras, la barra de helado de frutilla llega al 7 y la de vainilla llega al 3. ¿Qué sabor eligieron menos niños?",
+  "labelsSinIngles": [
+   "Vainilla",
+   "Frutilla",
+   "Los dos igual",
+   "3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vdl02q64crhi65ojhw7",
+  "grade": 2,
+  "theme": "videojuegos",
+  "prompt": "En un mapa del juego, ¿cuál de estos objetos tiene forma de rectángulo?",
+  "labelsSinIngles": [
+   "La puerta de la sala",
+   "Una moneda de $100",
+   "Un reloj de pared redondo",
+   "Un cartel de “ceda el paso”"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7il200ic6krhmu6c08n8",
+  "grade": 2,
+  "theme": null,
+  "prompt": "En un pictograma de frutas, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta. ¿De qué fruta hay más?",
+  "labelsSinIngles": [
+   "Peras",
+   "Manzanas",
+   "Hay la misma cantidad",
+   "8"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vt2035q4crh8y2lhoyf",
+  "grade": 2,
+  "theme": "naturaleza",
+  "prompt": "En un pictograma del huerto, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta cosechada. ¿De qué fruta hay más?",
+  "labelsSinIngles": [
+   "Peras",
+   "Manzanas",
+   "Hay la misma cantidad",
+   "8"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2uw8028t4crhmh6y0spl",
+  "grade": 2,
+  "theme": "dinosaurios",
+  "prompt": "Hay 52 huevos de juguete y se guardan en cartones de 10 huevos. ¿Cuántos cartones llenos se arman y cuántos huevos sobran?",
+  "labelsSinIngles": [
+   "5 cartones y 2 huevos",
+   "2 cartones y 5 huevos",
+   "7 cartones",
+   "5 cartones y 0 huevos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7idl00az6krhkz59pwlo",
+  "grade": 2,
+  "theme": null,
+  "prompt": "Hay 52 huevos y se guardan en cartones de 10 huevos. ¿Cuántos cartones llenos se arman y cuántos huevos sobran?",
+  "labelsSinIngles": [
+   "5 cartones y 2 huevos",
+   "2 cartones y 5 huevos",
+   "7 cartones",
+   "5 cartones y 0 huevos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2uv1027k4crhsxwhmxdd",
+  "grade": 2,
+  "theme": "animales",
+  "prompt": "Las gallinas de una granja pusieron 52 huevos y se guardan en cartones de 10 huevos. ¿Cuántos cartones llenos se arman y cuántos huevos sobran?",
+  "labelsSinIngles": [
+   "5 cartones y 2 huevos",
+   "2 cartones y 5 huevos",
+   "7 cartones",
+   "5 cartones y 0 huevos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2uwh02934crh8jec4w6z",
+  "grade": 2,
+  "theme": "cocina",
+  "prompt": "Para la feria de pasteles hay 52 huevos y se guardan en cartones de 10 huevos. ¿Cuántos cartones llenos se arman y cuántos huevos sobran?",
+  "labelsSinIngles": [
+   "5 cartones y 2 huevos",
+   "2 cartones y 5 huevos",
+   "7 cartones",
+   "5 cartones y 0 huevos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iix00g76krhs1beaind",
+  "grade": 2,
+  "theme": null,
+  "prompt": "Tomás dice: “Todos los rectángulos tienen los 4 lados iguales”. Camila dice: “Un rectángulo tiene 4 esquinas rectas”. ¿Quién tiene razón?",
+  "labelsSinIngles": [
+   "Camila",
+   "Tomás",
+   "Los dos",
+   "Ninguno de los dos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iij00fs6krhzrikt4rb",
+  "grade": 2,
+  "theme": null,
+  "prompt": "¿Cuál de estos objetos tiene forma de rectángulo?",
+  "labelsSinIngles": [
+   "La puerta de la sala",
+   "Una moneda de $100",
+   "Un reloj de pared redondo",
+   "Un cartel de “ceda el paso”"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ii900fi6krhx1posyh6",
+  "grade": 2,
+  "theme": null,
+  "prompt": "¿En qué se parecen un cuadrado y un rectángulo?",
+  "labelsSinIngles": [
+   "Los dos tienen 4 lados y 4 esquinas rectas",
+   "Los dos tienen todos sus lados iguales",
+   "Los dos tienen 3 lados",
+   "Los dos son redondos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wwo047s4crhhok3la3g",
+  "grade": 3,
+  "theme": "espacio",
+  "prompt": "Beatriz arma un modelo de cohete con una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Cubo",
+   "Prisma rectangular"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wxu04914crhfcnoqdk6",
+  "grade": 3,
+  "theme": "naturaleza",
+  "prompt": "Beatriz arma una cajita para guardar semillas con una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Cubo",
+   "Prisma rectangular"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wxi048m4crh9ckgv8rp",
+  "grade": 3,
+  "theme": "cocina",
+  "prompt": "Beatriz recorta una red plana formada por 2 círculos iguales y 1 rectángulo para armar un envase de galletas. ¿Qué figura 3D forma al armarla?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Cubo",
+   "Prisma rectangular"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ivp00ti6krhsvsdlqxd",
+  "grade": 3,
+  "theme": null,
+  "prompt": "Beatriz tiene una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Cubo",
+   "Prisma rectangular"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
+  "grade": 3,
+  "theme": "musica",
+  "prompt": "Dos afiches iguales del concierto se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
+  "grade": 3,
+  "theme": "futbol",
+  "prompt": "Dos camisetas de papel iguales se colorean: Marta pinta 2 de 3 franjas iguales de la suya y Luis pinta 1 de 3 franjas iguales de la otra. ¿Quién coloreó más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wnp03z64crhgw1uui5b",
+  "grade": 3,
+  "theme": "dinosaurios",
+  "prompt": "Dos dibujos de dinosaurio iguales se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ist00qj6krhr1419an5",
+  "grade": 3,
+  "theme": null,
+  "prompt": "Dos figuras iguales se colorean: Marta pinta 2 de 3 partes iguales de la suya y Luis pinta 1 de 3 partes iguales de la otra. ¿Quién coloreó más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wpf04144crhozj6o79w",
+  "grade": 3,
+  "theme": "naturaleza",
+  "prompt": "Dos jardines iguales se siembran: Marta siembra 2 de 3 partes iguales del suyo y Luis siembra 1 de 3 partes iguales del otro. ¿Quién sembró más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
+  "grade": 3,
+  "theme": "vehiculos",
+  "prompt": "Dos pistas de autitos iguales: Marta recorre 2 de los 3 tramos iguales de la suya y Luis recorre 1 de los 3 tramos iguales de la otra. ¿Quién avanzó más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wof04004crhhgs81usk",
+  "grade": 3,
+  "theme": "cocina",
+  "prompt": "Dos pizzas iguales se reparten: Marta come 2 de 3 partes iguales de la suya y Luis come 1 de 3 partes iguales de la otra. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
+  "grade": 3,
+  "theme": "espacio",
+  "prompt": "Dos planetas de cartón iguales se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+  "labelsSinIngles": [
+   "Marta",
+   "Luis",
+   "Los dos igual",
+   "2/3"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7isb00pz6krh3wvwmc2h",
+  "grade": 3,
+  "theme": null,
+  "prompt": "En la fracción 3/4, ¿qué indica el número 4?",
+  "labelsSinIngles": [
+   "En cuántas partes iguales se dividió el entero",
+   "Cuántas partes se toman",
+   "Cuántas partes sobran",
+   "Cuántos enteros hay"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vzf03bk4crh5ill0zs8",
+  "grade": 3,
+  "theme": "dinosaurios",
+  "prompt": "En la tienda del museo hay bolsas de 100 huevos de juguete, paquetes de 10 y huevos sueltos. Para tener 234 huevos de juguete, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ixo00vd6krh99f51gfa",
+  "grade": 3,
+  "theme": null,
+  "prompt": "En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?",
+  "labelsSinIngles": [
+   "Fútbol",
+   "Básquetbol",
+   "Natación",
+   "10"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ixu00vi6krhsxtgt0mm",
+  "grade": 3,
+  "theme": null,
+  "prompt": "En un gráfico de barras de frutas, plátano llega hasta 8, manzana hasta 5 y pera hasta 3. ¿Qué fruta tiene la barra más corta?",
+  "labelsSinIngles": [
+   "Pera",
+   "Manzana",
+   "Plátano",
+   "3"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2x7s04iw4crhswlu0hh7",
+  "grade": 3,
+  "theme": "videojuegos",
+  "prompt": "En un gráfico de barras de juegos favoritos, carreras llega hasta 10, puzles hasta 6 y plataformas hasta 4. ¿Qué juego prefieren más niños?",
+  "labelsSinIngles": [
+   "Fútbol",
+   "Básquetbol",
+   "Natación",
+   "10"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2w0c03cj4crhytgeybqp",
+  "grade": 3,
+  "theme": "naturaleza",
+  "prompt": "En un vivero hay bolsas de 100 semillas, paquetes de 10 y semillas sueltas. Para tener 234 semillas, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ink00l06krhmig612dj",
+  "grade": 3,
+  "theme": null,
+  "prompt": "En una dulcería hay bolsas de 100 caramelos, paquetes de 10 y caramelos sueltos. Para tener 234 caramelos, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vzj03bp4crh2p73vypp",
+  "grade": 3,
+  "theme": "cocina",
+  "prompt": "En una pastelería hay bolsas de 100 galletas, paquetes de 10 y galletas sueltas. Para tener 234 galletas, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2w0t03d34crhsflaek3l",
+  "grade": 3,
+  "theme": "vehiculos",
+  "prompt": "En una tienda de autitos de juguete hay bolsas de 100 autitos, paquetes de 10 y autitos sueltos. Para tener 234 autitos, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vy003a14crh6lc3dl3x",
+  "grade": 3,
+  "theme": "futbol",
+  "prompt": "En una tienda de deportes hay bolsas de 100 cromos de fútbol, paquetes de 10 cromos y cromos sueltos. Para tener 234 cromos, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vy503a64crhj19ksr3h",
+  "grade": 3,
+  "theme": "animales",
+  "prompt": "En una tienda de mascotas hay bolsas de 100 croquetas, paquetes de 10 y croquetas sueltas. Para tener 234 croquetas, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2vyk03al4crhc4v72iaj",
+  "grade": 3,
+  "theme": "musica",
+  "prompt": "En una tienda de música hay bolsas de 100 cascabeles, paquetes de 10 y cascabeles sueltos. Para tener 234 cascabeles, ¿qué se necesita?",
+  "labelsSinIngles": [
+   "2 bolsas, 3 paquetes y 4 sueltos",
+   "4 bolsas, 3 paquetes y 2 sueltos",
+   "3 bolsas, 2 paquetes y 4 sueltos",
+   "2 bolsas, 3 paquetes y 40 sueltos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ivu00tn6krh8gcmky3b",
+  "grade": 3,
+  "theme": null,
+  "prompt": "Un cubo y una caja de zapatos, ¿qué tienen en común?",
+  "labelsSinIngles": [
+   "Los dos tienen 8 vértices",
+   "Los dos tienen 4 caras",
+   "Los dos tienen caras curvas",
+   "Todas sus caras son cuadrados"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2ww0046y4crhr08bpqhk",
+  "grade": 3,
+  "theme": "musica",
+  "prompt": "Un tambor tiene forma de una figura 3D. ¿Cuál es?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Esfera",
+   "Cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wwf047i4crhddnbtcr2",
+  "grade": 3,
+  "theme": "espacio",
+  "prompt": "Un tarro de comida para astronautas tiene forma de una figura 3D. ¿Cuál es?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Esfera",
+   "Cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wxa048c4crhs6b1skk6",
+  "grade": 3,
+  "theme": "cocina",
+  "prompt": "Un tarro de harina tiene forma de una figura 3D. ¿Cuál es?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Esfera",
+   "Cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2wxq048w4crhnu55l7f0",
+  "grade": 3,
+  "theme": "naturaleza",
+  "prompt": "Un tronco de árbol cortado y sin ramas tiene forma de una figura 3D. ¿Cuál es?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Esfera",
+   "Cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iv200st6krh4fqe84ie",
+  "grade": 3,
+  "theme": null,
+  "prompt": "Una lata de atún tiene forma de una figura 3D. ¿Cuál es?",
+  "labelsSinIngles": [
+   "Cilindro",
+   "Cono",
+   "Esfera",
+   "Cubo"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iuz00so6krhhnjgwgid",
+  "grade": 3,
+  "theme": null,
+  "prompt": "¿Qué figura 2D forman las caras de un cubo?",
+  "labelsSinIngles": [
+   "Cuadrados",
+   "Rectángulos",
+   "Triángulos",
+   "Círculos"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j3o011q6krh86szkaem",
+  "grade": 4,
+  "theme": null,
+  "prompt": "Ana comió 2/6 de un queque y Pedro comió 3/6 del mismo queque. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Pedro",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xvj056n4crhqbzpxmq2",
+  "grade": 4,
+  "theme": "cocina",
+  "prompt": "Ana comió 2/6 de una torta y Pedro comió 3/6 de la misma torta. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Pedro",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xut055t4crhn0mhbcyf",
+  "grade": 4,
+  "theme": "espacio",
+  "prompt": "Ana pintó 2/6 de un planeta de cartón y Pedro pintó 3/6 del mismo planeta. ¿Quién pintó más?",
+  "labelsSinIngles": [
+   "Pedro",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xwh057r4crhaz1qeeup",
+  "grade": 4,
+  "theme": "deportes",
+  "prompt": "Ana recorrió 2/6 de un circuito de ciclismo y Pedro recorrió 3/6 del mismo circuito. ¿Quién recorrió más?",
+  "labelsSinIngles": [
+   "Pedro",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xtt054p4crhi5pephsl",
+  "grade": 4,
+  "theme": "musica",
+  "prompt": "Ana tocó 2/6 de una melodía y Pedro tocó 3/6 de la misma melodía. ¿Quién tocó más?",
+  "labelsSinIngles": [
+   "Pedro",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xt705404crhzp2cy4nc",
+  "grade": 4,
+  "theme": "futbol",
+  "prompt": "Después del partido, Ana comió 2/6 de una pizza y Pedro comió 3/6 de la misma pizza. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Pedro",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5c05fo4crhzbj52un4",
+  "grade": 4,
+  "theme": "musica",
+  "prompt": "El escenario rectangular del colegio mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y6405gi4crh2gne7yzk",
+  "grade": 4,
+  "theme": "espacio",
+  "prompt": "El patio rectangular de un observatorio mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5l05fy4crh09b9jjcz",
+  "grade": 4,
+  "theme": "musica",
+  "prompt": "El piso cuadrado de la sala de ensayo tiene lados de 9 m y se cubre completo con alfombra. ¿Cuántos metros cuadrados de alfombra se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8v05jf4crhj9qtkl5q",
+  "grade": 4,
+  "theme": "vehiculos",
+  "prompt": "El piso de un garaje rectangular mide 4 m de largo y 3 m de ancho y se va a cubrir completo con cerámica. ¿Cuántos metros cuadrados hay que cubrir?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y7z05il4crhuokeb996",
+  "grade": 4,
+  "theme": "naturaleza",
+  "prompt": "Se pintará un mural del mar en una pared rectangular de 4 m de largo y 3 m de alto, completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xhz04sw4crhwhlept06",
+  "grade": 4,
+  "theme": "vehiculos",
+  "prompt": "Un aeropuerto recibió 7.508 pasajeros en un día. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xel04pf4crh1otgpyy6",
+  "grade": 4,
+  "theme": "futbol",
+  "prompt": "Un club de fútbol tiene 7.508 socios. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y4x05f94crhkc8mkcdq",
+  "grade": 4,
+  "theme": "animales",
+  "prompt": "Un corral rectangular para gallinas mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8z05jk4crhetc4nroy",
+  "grade": 4,
+  "theme": "vehiculos",
+  "prompt": "Un estacionamiento cuadrado tiene lados de 9 m y se pinta todo el piso. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8q05ja4crhpqbnioi4",
+  "grade": 4,
+  "theme": "vehiculos",
+  "prompt": "Un estacionamiento rectangular mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7izv00xm6krh3klfxb4g",
+  "grade": 4,
+  "theme": null,
+  "prompt": "Un estadio tiene capacidad para 7.508 personas. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5205fe4crht0u1ie4u",
+  "grade": 4,
+  "theme": "animales",
+  "prompt": "Un gallinero rectangular mide 4 m de largo y 3 m de ancho y se cubre todo el piso con paja. ¿Cuántos metros cuadrados hay que cubrir?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xhk04sh4crh5tlfc9q1",
+  "grade": 4,
+  "theme": "deportes",
+  "prompt": "Un gimnasio techado tiene capacidad para 7.508 personas. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xf604q44crhhj5x7qxy",
+  "grade": 4,
+  "theme": "musica",
+  "prompt": "Un gran teatro de conciertos tiene capacidad para 7.508 personas. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y7q05ib4crhnlbjkd4p",
+  "grade": 4,
+  "theme": "naturaleza",
+  "prompt": "Un huerto rectangular mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j74015f6krhmlxe4shl",
+  "grade": 4,
+  "theme": null,
+  "prompt": "Un jardín cuadrado tiene lados de 9 m y se planta pasto en todo el jardín. ¿Cuántos metros cuadrados de pasto se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y6w05hc4crheyajhrp1",
+  "grade": 4,
+  "theme": "dinosaurios",
+  "prompt": "Un mural de dinosaurios ocupa una pared rectangular de 4 m de largo y 3 m de alto y se va a pintar completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y4j05eu4crh6xdjmaec",
+  "grade": 4,
+  "theme": "futbol",
+  "prompt": "Un muro del gimnasio donde entrena el club mide 4 m de largo y 3 m de alto y se va a pintar completo. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xg704r84crh6lvy18nm",
+  "grade": 4,
+  "theme": "espacio",
+  "prompt": "Un observatorio recibió 7.508 visitantes durante un año. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xh804s24crh1x1e8x6c",
+  "grade": 4,
+  "theme": "naturaleza",
+  "prompt": "Un parque nacional recibió 7.508 visitantes en un año. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y7005hh4crhyveffenu",
+  "grade": 4,
+  "theme": "dinosaurios",
+  "prompt": "Un patio cuadrado para buscar fósiles tiene lados de 9 m y se cubre todo con arena nueva. ¿Cuántos metros cuadrados de arena se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y6f05gs4crhysvgx0hd",
+  "grade": 4,
+  "theme": "espacio",
+  "prompt": "Un patio cuadrado tiene lados de 9 m y se pinta todo el suelo con un dibujo de planetas. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8d05iv4crh5q3ryrv8",
+  "grade": 4,
+  "theme": "deportes",
+  "prompt": "Un patio deportivo rectangular mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y4g05ep4crh42x0kwab",
+  "grade": 4,
+  "theme": "futbol",
+  "prompt": "Un patio donde se juega a la pelota mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y6r05h74crh7lat703s",
+  "grade": 4,
+  "theme": "dinosaurios",
+  "prompt": "Un patio rectangular del museo de dinosaurios mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j6l014v6krh3x4lgpva",
+  "grade": 4,
+  "theme": null,
+  "prompt": "Un patio rectangular mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5705fj4crhq170l7tt",
+  "grade": 4,
+  "theme": "animales",
+  "prompt": "Un potrero cuadrado tiene lados de 9 m y se siembra pasto para los caballos en todo el potrero. ¿Cuántos metros cuadrados de pasto se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2xes04pp4crh7zslb8mt",
+  "grade": 4,
+  "theme": "animales",
+  "prompt": "Un zoológico recibió 7.508 visitantes en el año. ¿Cómo se lee esa cantidad?",
+  "labelsSinIngles": [
+   "siete mil quinientos ocho",
+   "siete mil quinientos ochenta",
+   "setenta y cinco mil ocho",
+   "siete mil cincuenta y ocho"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5x05gd4crhlyj0454l",
+  "grade": 4,
+  "theme": "videojuegos",
+  "prompt": "Una arena cuadrada para torneos tiene lados de 9 m y se cubre con pasto sintético completa. ¿Cuántos metros cuadrados de pasto sintético se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y4o05ez4crh4sk5ilj4",
+  "grade": 4,
+  "theme": "futbol",
+  "prompt": "Una cancha cuadrada tiene lados de 9 m y se cubre con pasto sintético. ¿Cuántos metros cuadrados de pasto se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8m05j54crhv76y4tek",
+  "grade": 4,
+  "theme": "deportes",
+  "prompt": "Una cancha cuadrada tiene lados de 9 m y se cubre toda con pasto sintético. ¿Cuántos metros cuadrados de pasto se necesitan?",
+  "labelsSinIngles": [
+   "81 m²",
+   "36 m²",
+   "18 m²",
+   "91 m²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5t05g84crha8m6xorz",
+  "grade": 4,
+  "theme": "videojuegos",
+  "prompt": "Una pantalla rectangular mide 4 m de largo y 3 m de alto y se va a decorar completa con un mural de un juego. ¿Cuántos metros cuadrados hay que decorar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8i05j04crh2j7w3sgp",
+  "grade": 4,
+  "theme": "deportes",
+  "prompt": "Una pared del gimnasio mide 4 m de largo y 3 m de alto y se va a pintar completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5h05ft4crh1qyh44sk",
+  "grade": 4,
+  "theme": "musica",
+  "prompt": "Una pared rectangular de la sala de música mide 4 m de largo y 3 m de alto y se va a pintar completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y6a05gn4crhafztnm6r",
+  "grade": 4,
+  "theme": "espacio",
+  "prompt": "Una pared rectangular del taller de cohetes mide 4 m de largo y 3 m de alto y se va a pintar completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j6y015a6krhlxgd4aqy",
+  "grade": 4,
+  "theme": null,
+  "prompt": "Una pared rectangular mide 4 m de largo y 3 m de alto y se va a pintar completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "labelsSinIngles": [
+   "12 m²",
+   "14 m²",
+   "7 m²",
+   "12 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y5q05g34crhjqeee0ur",
+  "grade": 4,
+  "theme": "videojuegos",
+  "prompt": "Una zona rectangular de un mapa mide 8 m de largo y 5 m de ancho. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "40 m²",
+   "26 m²",
+   "13 m²",
+   "40 m"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j6t01556krhdodmvj87",
+  "grade": 4,
+  "theme": null,
+  "prompt": "¿Cuál de estos rectángulos tiene un área de 12 cm²?",
+  "labelsSinIngles": [
+   "3 cm por 4 cm",
+   "5 cm por 7 cm",
+   "2 cm por 5 cm",
+   "3 cm por 3 cm"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y8505iq4crhd72mpl9p",
+  "grade": 4,
+  "theme": "deportes",
+  "prompt": "¿Qué unidad conviene más para medir el área del piso de un gimnasio?",
+  "labelsSinIngles": [
+   "m²",
+   "m",
+   "cm",
+   "cm²"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2y4s05f44crhp9s6cqub",
+  "grade": 4,
+  "theme": "futbol",
+  "prompt": "¿Qué unidad conviene más para medir el área del piso de una cancha de baby fútbol?",
+  "labelsSinIngles": [
+   "m²",
+   "m",
+   "cm",
+   "cm²"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j6h014q6krheea6k0rt",
+  "grade": 4,
+  "theme": null,
+  "prompt": "¿Qué unidad conviene más para medir el área del piso de una sala de clases?",
+  "labelsSinIngles": [
+   "m²",
+   "m",
+   "cm",
+   "cm²"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jcv01b86krh5nnstnr8",
+  "grade": 5,
+  "theme": null,
+  "prompt": "Ana comió 3/8 de una pizza y Beto comió 1/2 de otra pizza igual. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yt106304crhy3gbqv5z",
+  "grade": 5,
+  "theme": "cocina",
+  "prompt": "Ana comió 3/8 de una tarta y Beto comió 1/2 de otra tarta igual. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2ysd062b4crhvxn6vdz5",
+  "grade": 5,
+  "theme": "espacio",
+  "prompt": "Ana pintó 3/8 de un planeta de cartón y Beto pintó 1/2 de otro planeta igual. ¿Quién pintó más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yti063k4crhqtu59bgj",
+  "grade": 5,
+  "theme": "naturaleza",
+  "prompt": "Ana plantó 3/8 de un jardín y Beto plantó 1/2 de otro jardín igual. ¿Quién plantó más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yrm061h4crh7rjh90go",
+  "grade": 5,
+  "theme": "musica",
+  "prompt": "Ana tocó 3/8 de una partitura y Beto tocó 1/2 de otra partitura igual de larga. ¿Quién tocó más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yra06124crhf6hr9tyz",
+  "grade": 5,
+  "theme": "futbol",
+  "prompt": "Después del partido, Ana comió 3/8 de una pizza y Beto comió 1/2 de otra pizza igual. ¿Quién comió más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z1j06bc4crh2eqdjpnk",
+  "grade": 5,
+  "theme": "espacio",
+  "prompt": "Dos planetas, A(5, 2) y B(5, 7), se marcan en el plano de un mapa del espacio. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Están en la misma línea vertical",
+   "Están en la misma línea horizontal",
+   "Los dos están sobre el eje x",
+   "Los dos están sobre el eje y"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z04069o4crhpx6o8ysu",
+  "grade": 5,
+  "theme": "futbol",
+  "prompt": "En el mapa del club, la cancha está en (4, 6) y el camarín en (4, 2). ¿Cómo hay que moverse de la cancha al camarín?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z1206as4crh84v4mgq7",
+  "grade": 5,
+  "theme": "videojuegos",
+  "prompt": "En el mapa del juego, la base está en (4, 6) y el cofre en (4, 2). ¿Cómo hay que moverse de la base al cofre?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2ys1061w4crhl695ci1f",
+  "grade": 5,
+  "theme": "videojuegos",
+  "prompt": "En un juego, un personaje llenó 5/6 de su barra de energía y otro llenó 3/4 de la suya. ¿Cuál barra está más llena?",
+  "labelsSinIngles": [
+   "5/6",
+   "3/4",
+   "Son iguales",
+   "No se pueden comparar"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z3x06dz4crhafrbwu49",
+  "grade": 5,
+  "theme": "vehiculos",
+  "prompt": "En un mapa de la ciudad, el terminal de buses está en (4, 6) y la estación de trenes en (4, 2). ¿Cómo hay que moverse del terminal a la estación?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jfi01e76krhpxeravyw",
+  "grade": 5,
+  "theme": null,
+  "prompt": "En un mapa de la plaza, la fuente está en (4, 6) y el kiosco en (4, 2). ¿Cómo hay que moverse de la fuente al kiosco?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z1n06bh4crhn2zmmnaa",
+  "grade": 5,
+  "theme": "espacio",
+  "prompt": "En un mapa de una base espacial, la antena está en (4, 6) y el laboratorio en (4, 2). ¿Cómo hay que moverse de la antena al laboratorio?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z2z06cv4crhwt6esvzl",
+  "grade": 5,
+  "theme": "naturaleza",
+  "prompt": "En un mapa del bosque, el lago está en (4, 6) y el mirador en (4, 2). ¿Cómo hay que moverse del lago al mirador?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z0k06a84crh0311igvw",
+  "grade": 5,
+  "theme": "musica",
+  "prompt": "En un mapa del colegio, el escenario está en (4, 6) y la sala de música en (4, 2). ¿Cómo hay que moverse del escenario a la sala de música?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z2506c14crh8tzc4uj8",
+  "grade": 5,
+  "theme": "dinosaurios",
+  "prompt": "En un mapa del museo, el esqueleto grande está en (4, 6) y la tienda en (4, 2). ¿Cómo hay que moverse del esqueleto a la tienda?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z3b06da4crhuc5609bc",
+  "grade": 5,
+  "theme": "deportes",
+  "prompt": "En un mapa del parque deportivo, la piscina está en (4, 6) y el gimnasio en (4, 2). ¿Cómo hay que moverse de la piscina al gimnasio?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z0d069y4crhuxp5hio9",
+  "grade": 5,
+  "theme": "animales",
+  "prompt": "En un mapa del zoológico, la jaula de los monos está en (4, 6) y la de los loros en (4, 2). ¿Cómo hay que moverse de la jaula de los monos a la de los loros?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z2k06cg4crhapfnae1q",
+  "grade": 5,
+  "theme": "cocina",
+  "prompt": "En un plano de la cocina del colegio, el refrigerador está en (4, 6) y el mesón en (4, 2). ¿Cómo hay que moverse del refrigerador al mesón?",
+  "labelsSinIngles": [
+   "4 unidades hacia abajo",
+   "4 unidades a la izquierda",
+   "2 unidades hacia abajo",
+   "4 unidades hacia arriba"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jf801dx6krh4ldjfq8c",
+  "grade": 5,
+  "theme": null,
+  "prompt": "Los puntos A(5, 2) y B(5, 7) se marcan en el plano. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Están en la misma línea vertical",
+   "Están en la misma línea horizontal",
+   "Los dos están sobre el eje x",
+   "Los dos están sobre el eje y"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yud064j4crhohb4zosu",
+  "grade": 5,
+  "theme": "vehiculos",
+  "prompt": "Luisa llenó 2/3 de un camión de juguete con bloques y Mateo llenó 4/6 de otro camión igual. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Tienen la misma cantidad",
+   "Mateo tiene más, porque 4 es mayor que 2",
+   "Luisa tiene más, porque 3 es menor que 6",
+   "No se pueden comparar, porque tienen distinto denominador"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2ysm062l4crh2brmmqv0",
+  "grade": 5,
+  "theme": "espacio",
+  "prompt": "Luisa llenó 2/3 de un tanque de agua de juguete y Mateo llenó 4/6 de otro tanque igual. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Tienen la misma cantidad",
+   "Mateo tiene más, porque 4 es mayor que 2",
+   "Luisa tiene más, porque 3 es menor que 6",
+   "No se pueden comparar, porque tienen distinto denominador"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jd401bi6krhut58y5hl",
+  "grade": 5,
+  "theme": null,
+  "prompt": "Luisa tiene 2/3 de una barra de chocolate y Mateo tiene 4/6 de otra barra igual. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Tienen la misma cantidad",
+   "Mateo tiene más, porque 4 es mayor que 2",
+   "Luisa tiene más, porque 3 es menor que 6",
+   "No se pueden comparar, porque tienen distinto denominador"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yu106444crh0k5gihiv",
+  "grade": 5,
+  "theme": "deportes",
+  "prompt": "Luisa tiene 2/3 de una cinta de gimnasia y Mateo tiene 4/6 de otra cinta igual. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Tienen la misma cantidad",
+   "Mateo tiene más, porque 4 es mayor que 2",
+   "Luisa tiene más, porque 3 es menor que 6",
+   "No se pueden comparar, porque tienen distinto denominador"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2yta063a4crhpgje0uds",
+  "grade": 5,
+  "theme": "cocina",
+  "prompt": "Luisa tiene 2/3 de una torta y Mateo tiene 4/6 de otra torta igual. ¿Qué afirmación es correcta?",
+  "labelsSinIngles": [
+   "Tienen la misma cantidad",
+   "Mateo tiene más, porque 4 es mayor que 2",
+   "Luisa tiene más, porque 3 es menor que 6",
+   "No se pueden comparar, porque tienen distinto denominador"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jhg01g16krhug68a0ii",
+  "grade": 5,
+  "theme": null,
+  "prompt": "Todos estos rectángulos tienen un perímetro de 20 cm. ¿Cuál de ellos tiene el mayor área?",
+  "labelsSinIngles": [
+   "5 cm por 5 cm",
+   "8 cm por 2 cm",
+   "6 cm por 4 cm",
+   "9 cm por 1 cm"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jg901f26krhh2hn9d4h",
+  "grade": 5,
+  "theme": null,
+  "prompt": "Un cuadrado tiene 6 m de lado. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "36 m²",
+   "24 m²",
+   "12 m²",
+   "36 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z8a06ia4crh93bjx3uf",
+  "grade": 5,
+  "theme": "naturaleza",
+  "prompt": "Un huerto cuadrado tiene 6 m de lado. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "36 m²",
+   "24 m²",
+   "12 m²",
+   "36 m"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2ys506214crhwjsm39gt",
+  "grade": 5,
+  "theme": "videojuegos",
+  "prompt": "Un jugador completó 3/8 de un mapa y otro completó 1/2 de un mapa igual. ¿Quién completó más?",
+  "labelsSinIngles": [
+   "Beto",
+   "Ana",
+   "Comieron lo mismo",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmulu2z6u06gm4crh77z1qdle",
+  "grade": 5,
+  "theme": "dinosaurios",
+  "prompt": "Un patio cuadrado del museo de dinosaurios tiene 6 m de lado. ¿Cuál es su área?",
+  "labelsSinIngles": [
+   "36 m²",
+   "24 m²",
+   "12 m²",
+   "36 m"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jh301fm6krhb4hnmluy",
+  "grade": 5,
+  "theme": null,
+  "prompt": "¿Cuál de estos rectángulos tiene un área de 24 cm²?",
+  "labelsSinIngles": [
+   "6 cm por 4 cm",
+   "8 cm por 4 cm",
+   "7 cm por 3 cm",
+   "5 cm por 4 cm"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+  "grade": 5,
+  "theme": null,
+  "prompt": "¿Cuál es mayor: 3/8 o 3/5?",
+  "labelsSinIngles": [
+   "3/5",
+   "3/8",
+   "Son iguales",
+   "No se puede saber"
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jcn01ay6krhbr7oz8t9",
+  "grade": 5,
+  "theme": null,
+  "prompt": "¿Cuál es mayor: 5/6 o 3/4?",
+  "labelsSinIngles": [
+   "5/6",
+   "3/4",
+   "Son iguales",
+   "No se pueden comparar"
+  ]
+ }
+]

@@ -1,0 +1,978 @@
+{
+ "1": {
+  "assessment": {
+   "id": "cmtsx18sf008pftrhuqgo5bfx",
+   "prompt": "¿Cuál número es mayor: 11 o 9?",
+   "promptEn": "Which number is greater: 11 or 9?",
+   "difficultyLevel": 2,
+   "options": [
+    {
+     "id": "cmtsx18sg008qftrhtgnb0lk0",
+     "label": "11",
+     "labelEn": null
+    },
+    {
+     "id": "cmtsx18sg008rftrh4g4do18k",
+     "label": "9",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Groups of counters representing the quantities in the prompt. Which number is greater: 11 or 9?",
+     "es": "Grupos de fichas que representan los datos del enunciado. ¿Cuál número es mayor: 11 o 9?"
+    },
+    "src": {
+     "en": "/exercise-images/1b__cmtsx18sf008pftrhuqgo5bfx__rows.png",
+     "es": "/exercise-images/1b__cmtsx18sf008pftrhuqgo5bfx__rows.png"
+    },
+    "kind": "rows",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "text": {
+      "en": "The letters A, B, C… follow the order in the question.",
+      "es": "Las letras A, B, C… siguen el orden del enunciado."
+     },
+     "type": "generic"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Cuenta desde 1: el número que dices después en el conteo es el mayor.",
+   "procedureNoteEn": "Count from 1: the number you say later while counting is the greater one."
+  },
+  "practice": {
+   "id": "cmuli7i0d001d6krhe2xp7b3b",
+   "prompt": "Ema junta stickers en grupos de 5. Los va contando: 5, 10, 15, 20, 25. Si agrega un grupo más, ¿cuántos stickers tiene?",
+   "promptEn": "Ema collects stickers in groups of 5. She counts them: 5, 10, 15, 20, 25. If she adds one more group, how many stickers does she have?",
+   "difficultyLevel": 3,
+   "options": [
+    {
+     "id": "cmuli7i0e001e6krhkrbs3744",
+     "label": "30",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7i0e001f6krhixgqgubj",
+     "label": "26",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7i0e001g6krheu9nx4fy",
+     "label": "35",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7i0e001h6krhum79cksc",
+     "label": "5",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Precise visual support constructed from the data given in the prompt. Ema collects stickers in groups of 5. She counts them: 5, 10, 15, 20, 25. If she adds one more group, how many stickers does she have?",
+     "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Ema junta stickers en grupos de 5. Los va contando: 5, 10, 15, 20, 25. Si agrega un grupo más, ¿cuántos stickers tiene?"
+    },
+    "src": {
+     "en": "/exercise-images/1b__cmuli7i0d001d6krhe2xp7b3b__grouped.png",
+     "es": "/exercise-images/1b__cmuli7i0d001d6krhe2xp7b3b__grouped.png"
+    },
+    "kind": "grouped",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "none"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Cada grupo nuevo agrega 5 stickers. Sigue la cuenta de 5 en 5 desde el último número.",
+   "procedureNoteEn": "Each new group adds 5 stickers. Keep counting by 5s from the last number."
+  }
+ },
+ "2": {
+  "assessment": {
+   "id": "cmuli7ikx00i76krhuorhgztb",
+   "prompt": "En un gráfico de barras, la barra de los perros llega hasta el 6 y la de los gatos hasta el 4. ¿Cuántos niños prefieren los perros?",
+   "promptEn": "In a bar graph, the dogs' bar reaches 6 and the cats' bar reaches 4. How many children prefer dogs?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7iky00i86krhlaefo3ek",
+     "label": "6",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7iky00i96krh15098jy7",
+     "label": "4",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7iky00ia6krh7wiala1d",
+     "label": "10",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7iky00ib6krh5p80wm89",
+     "label": "2",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Bar chart showing the given data; categories follow their order in the prompt. In a bar graph, the dogs' bar reaches 6 and the cats' bar reaches 4. How many children prefer dogs?",
+     "es": "Gráfico de barras con los datos dados; las categorías siguen el orden del enunciado. En un gráfico de barras, la barra de los perros llega hasta el 6 y la de los gatos hasta el 4. ¿Cuántos niños prefieren los perros?"
+    },
+    "src": {
+     "en": "/exercise-images/2b__cmuli7ikx00i76krhuorhgztb__bars.png",
+     "es": "/exercise-images/2b__cmuli7ikx00i76krhuorhgztb__bars.png"
+    },
+    "kind": "bars",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "named",
+     "items": [
+      {
+       "key": "A",
+       "label": {
+        "en": "dogs",
+        "es": "perros"
+       }
+      },
+      {
+       "key": "B",
+       "label": {
+        "en": "cats",
+        "es": "gatos"
+       }
+      }
+     ],
+     "source": "prompt"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Mira hasta qué número llega la barra de la mascota por la que te preguntan.",
+   "procedureNoteEn": "Look at which number the bar of the pet you are asked about reaches."
+  },
+  "practice": {
+   "id": "cmuli7icb009l6krh4g20qoz0",
+   "prompt": "En el número 47, ¿cuántas decenas hay?",
+   "promptEn": "In the number 47, how many tens are there?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7icc009m6krhridbjshb",
+     "label": "4",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7icc009n6krhmiaofsr1",
+     "label": "7",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7icc009o6krhd6mb6bdy",
+     "label": "40",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7icc009p6krhpuh6fr91",
+     "label": "11",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Precise visual support constructed from the data given in the prompt. In the number 47, how many tens are there?",
+     "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En el número 47, ¿cuántas decenas hay?"
+    },
+    "src": {
+     "en": "/exercise-images/2b__cmuli7icb009l6krh4g20qoz0__place_value.png",
+     "es": "/exercise-images/2b__cmuli7icb009l6krh4g20qoz0__place_value.png"
+    },
+    "kind": "place_value",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "none"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Una decena es un grupo de 10. La cifra de la izquierda te dice cuántos grupos de 10 hay.",
+   "procedureNoteEn": "A ten is a group of 10. The digit on the left tells you how many groups of 10 there are."
+  }
+ },
+ "3": {
+  "assessment": {
+   "id": "cmuli7ixo00vd6krh99f51gfa",
+   "prompt": "En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?",
+   "promptEn": "In a bar graph of favorite sports, soccer reaches 10, basketball reaches 6 and swimming reaches 4. Which sport do most children prefer?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7ixo00vh6krhhqj44smf",
+     "label": "10",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7ixo00vf6krhapf03lwb",
+     "label": "Básquetbol",
+     "labelEn": "Basketball"
+    },
+    {
+     "id": "cmuli7ixo00vg6krhu9des5x0",
+     "label": "Natación",
+     "labelEn": "Swimming"
+    },
+    {
+     "id": "cmuli7ixo00ve6krhpxp3lt59",
+     "label": "Fútbol",
+     "labelEn": "Soccer"
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Bar chart showing the given data; categories follow their order in the prompt. In a bar graph of favorite sports, soccer reaches 10, basketball reaches 6 and swimming reaches 4. Which sport do most children prefer?",
+     "es": "Gráfico de barras con los datos dados; las categorías siguen el orden del enunciado. En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?"
+    },
+    "src": {
+     "en": "/exercise-images/3b__cmuli7ixo00vd6krh99f51gfa__bars.png",
+     "es": "/exercise-images/3b__cmuli7ixo00vd6krh99f51gfa__bars.png"
+    },
+    "kind": "bars",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "named",
+     "items": [
+      {
+       "key": "A",
+       "label": {
+        "en": "soccer",
+        "es": "fútbol"
+       }
+      },
+      {
+       "key": "B",
+       "label": {
+        "en": "basketball",
+        "es": "básquetbol"
+       }
+      },
+      {
+       "key": "C",
+       "label": {
+        "en": "swimming",
+        "es": "natación"
+       }
+      }
+     ],
+     "source": "prompt"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "La barra más larga es la que representa más niños. Compara hasta dónde llega cada barra.",
+   "procedureNoteEn": "The longest bar represents the most children. Compare how far each bar reaches."
+  },
+  "practice": {
+   "id": "cmuli7imf00jr6krhho4qw7h0",
+   "prompt": "En el número 372, ¿qué dígito está en el lugar de las centenas?",
+   "promptEn": "In the number 372, which digit is in the hundreds place?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7img00js6krh5h4feb1y",
+     "label": "3",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7img00jt6krhie1hx8rz",
+     "label": "7",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7img00ju6krh3ilqhrlb",
+     "label": "2",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7img00jv6krhf83c4xyg",
+     "label": "300",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Precise visual support constructed from the data given in the prompt. In the number 372, which digit is in the hundreds place?",
+     "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En el número 372, ¿qué dígito está en el lugar de las centenas?"
+    },
+    "src": {
+     "en": "/exercise-images/3b__cmuli7imf00jr6krhho4qw7h0__place_value.png",
+     "es": "/exercise-images/3b__cmuli7imf00jr6krhho4qw7h0__place_value.png"
+    },
+    "kind": "place_value",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "none"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Las centenas son el lugar que está más a la izquierda en un número de tres cifras.",
+   "procedureNoteEn": "The hundreds are the leftmost place in a three-digit number."
+  }
+ },
+ "4": {
+  "assessment": {
+   "id": "cmuli7j7e015q6krhrs33vy7f",
+   "prompt": "En un pictograma, cada símbolo vale 5 puntos. El equipo Rojo tiene 4 símbolos. ¿Cuántos puntos tiene?",
+   "promptEn": "In a pictograph, each symbol stands for 5 points. The Red team has 4 symbols. How many points does it have?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7j7e015r6krhm637tg7j",
+     "label": "20",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7j7e015s6krhw7y8ht3m",
+     "label": "4",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7j7e015t6krhogrj15i1",
+     "label": "9",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7j7e015u6krhy1yyuwbo",
+     "label": "25",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Pictogram containing the given symbols; each row corresponds to a category in the prompt. In a pictograph, each symbol stands for 5 points. The Red team has 4 symbols. How many points does it have?",
+     "es": "Pictograma con los símbolos dados; cada fila corresponde a una categoría del enunciado. En un pictograma, cada símbolo vale 5 puntos. El equipo Rojo tiene 4 símbolos. ¿Cuántos puntos tiene?"
+    },
+    "src": {
+     "en": "/exercise-images/4b__cmuli7j7e015q6krhrs33vy7f__pictogram.png",
+     "es": "/exercise-images/4b__cmuli7j7e015q6krhrs33vy7f__pictogram.png"
+    },
+    "kind": "pictogram",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "named",
+     "items": [
+      {
+       "key": "A",
+       "label": {
+        "en": "Red team",
+        "es": "equipo Rojo"
+       }
+      }
+     ],
+     "source": "prompt"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Lee primero la escala: cuánto vale cada símbolo. Luego multiplica por la cantidad de símbolos.",
+   "procedureNoteEn": "Read the scale first: how many each symbol stands for. Then multiply by the number of symbols."
+  },
+  "practice": {
+   "id": "cmuli7iz600ws6krh0hp3r09q",
+   "prompt": "¿Qué número se forma con 3 unidades de mil, 4 centenas, 5 decenas y 2 unidades?",
+   "promptEn": "Which number is made of 3 thousands, 4 hundreds, 5 tens and 2 ones?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7iz700wt6krh70eoivmt",
+     "label": "3.452",
+     "labelEn": "3,452"
+    },
+    {
+     "id": "cmuli7iz700wu6krh0v0wi6d4",
+     "label": "4.352",
+     "labelEn": "4,352"
+    },
+    {
+     "id": "cmuli7iz700wv6krhq8pp0wql",
+     "label": "3.542",
+     "labelEn": "3,542"
+    },
+    {
+     "id": "cmuli7iz700ww6krhv6l2ue9e",
+     "label": "3.450",
+     "labelEn": "3,450"
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Precise visual support constructed from the data given in the prompt. Which number is made of 3 thousands, 4 hundreds, 5 tens and 2 ones?",
+     "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué número se forma con 3 unidades de mil, 4 centenas, 5 decenas y 2 unidades?"
+    },
+    "src": {
+     "en": "/exercise-images/4b__cmuli7iz600ws6krh0hp3r09q__components.png",
+     "es": "/exercise-images/4b__cmuli7iz600ws6krh0hp3r09q__components.png"
+    },
+    "kind": "components",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "none"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Escribe cada cantidad en su lugar: primero los miles, luego las centenas, las decenas y al final las unidades.",
+   "procedureNoteEn": "Write each amount in its place: thousands first, then hundreds, tens and finally ones."
+  }
+ },
+ "5": {
+  "assessment": {
+   "id": "cmuli7jbj01a46krh1fhdakwj",
+   "prompt": "¿Cuál de estas fracciones es equivalente a 1/2?",
+   "promptEn": "Which of these fractions is equivalent to 1/2?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7jbj01a56krhb8sf1lvq",
+     "label": "2/4",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jbj01a66krhsdy5si1p",
+     "label": "1/4",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jbj01a76krhldxlugo3",
+     "label": "2/3",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jbj01a86krho2sr69z5",
+     "label": "3/5",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Which of these fractions is equivalent to 1/2?",
+     "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuál de estas fracciones es equivalente a 1/2?"
+    },
+    "src": {
+     "en": "/exercise-images/5b__cmuli7jbj01a46krh1fhdakwj__fractions.png",
+     "es": "/exercise-images/5b__cmuli7jbj01a46krh1fhdakwj__fractions.png"
+    },
+    "kind": "fractions",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "named",
+     "items": [
+      {
+       "key": "A",
+       "label": {
+        "en": "1/2",
+        "es": "1/2"
+       }
+      }
+     ],
+     "source": "rowLabels"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Dos fracciones son equivalentes si al multiplicar (o dividir) numerador y denominador por el mismo número obtienes la otra.",
+   "procedureNoteEn": "Two fractions are equivalent if multiplying (or dividing) the numerator and denominator by the same number gives you the other one."
+  },
+  "practice": {
+   "id": "cmuli7j8k01706krhdvcldwmf",
+   "prompt": "¿Qué dígito ocupa la posición de las centenas de mil en el número 3.482.915?",
+   "promptEn": "Which digit is in the hundred thousands place in the number 3,482,915?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7j8l01716krhf5vgq34z",
+     "label": "4",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7j8l01726krh3o4fqlxl",
+     "label": "3",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7j8l01736krh29u0123o",
+     "label": "8",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7j8l01746krhfklzkxz3",
+     "label": "2",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Precise visual support constructed from the data given in the prompt. Which digit is in the hundred thousands place in the number 3,482,915?",
+     "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué dígito ocupa la posición de las centenas de mil en el número 3.482.915?"
+    },
+    "src": {
+     "en": "/exercise-images/5b__cmuli7j8k01706krhdvcldwmf__place_value.png",
+     "es": "/exercise-images/5b__cmuli7j8k01706krhdvcldwmf__place_value.png"
+    },
+    "kind": "place_value",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "none"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Cuenta las posiciones desde la derecha: unidades, decenas, centenas, unidades de mil, decenas de mil y luego centenas de mil.",
+   "procedureNoteEn": "Count the places from the right: ones, tens, hundreds, thousands, ten thousands, and then hundred thousands."
+  }
+ },
+ "6": {
+  "assessment": {
+   "id": "cmuli7jrp01qo6krha7rvzuuf",
+   "prompt": "Un gráfico de barras muestra las mascotas de un curso: perros 9, gatos 6 y peces 3. ¿Cuántas mascotas hay en total?",
+   "promptEn": "A bar graph shows the pets of a class: dogs 9, cats 6 and fish 3. How many pets are there in total?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7jrq01qp6krh3n7fqrg5",
+     "label": "18",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jrq01qq6krhfx7kjmks",
+     "label": "15",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jrq01qr6krh86f5vb8k",
+     "label": "17",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jrq01qs6krhrkbdrldh",
+     "label": "9",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "Bar chart showing the given data; categories follow their order in the prompt. A bar graph shows the pets of a class: dogs 9, cats 6 and fish 3. How many pets are there in total?",
+     "es": "Gráfico de barras con los datos dados; las categorías siguen el orden del enunciado. Un gráfico de barras muestra las mascotas de un curso: perros 9, gatos 6 y peces 3. ¿Cuántas mascotas hay en total?"
+    },
+    "src": {
+     "en": "/exercise-images/6b__cmuli7jrp01qo6krha7rvzuuf__bars.png",
+     "es": "/exercise-images/6b__cmuli7jrp01qo6krha7rvzuuf__bars.png"
+    },
+    "kind": "bars",
+    "size": {
+     "en": {
+      "width": 1000,
+      "height": 650
+     },
+     "es": {
+      "width": 1000,
+      "height": 650
+     }
+    },
+    "legend": {
+     "type": "named",
+     "items": [
+      {
+       "key": "A",
+       "label": {
+        "en": "dogs",
+        "es": "perros"
+       }
+      },
+      {
+       "key": "B",
+       "label": {
+        "en": "cats",
+        "es": "gatos"
+       }
+      },
+      {
+       "key": "C",
+       "label": {
+        "en": "fish",
+        "es": "peces"
+       }
+      }
+     ],
+     "source": "prompt"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "La pregunta pide el total de las tres barras. Suma todos los valores del gráfico.",
+   "procedureNoteEn": "The question asks for the total of the three bars. Add all the values on the graph."
+  },
+  "practice": {
+   "id": "cmuli7jjb01hw6krhxmpsz1cy",
+   "prompt": "En una bolsa hay 3 pelotas rojas y 5 pelotas azules. ¿Cuál es la razón entre pelotas rojas y pelotas azules?",
+   "promptEn": "A bag has 3 red balls and 5 blue balls. What is the ratio of red balls to blue balls?",
+   "difficultyLevel": 1,
+   "options": [
+    {
+     "id": "cmuli7jjc01hx6krhshul9pvv",
+     "label": "3 : 5",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jjc01hy6krhqlpjsr0j",
+     "label": "5 : 3",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jjc01hz6krhrce0k9r1",
+     "label": "3 : 8",
+     "labelEn": null
+    },
+    {
+     "id": "cmuli7jjc01i06krha9et5rzc",
+     "label": "8 : 5",
+     "labelEn": null
+    }
+   ],
+   "visual": null,
+   "image": {
+    "alt": {
+     "en": "A bag containing three red balls and five blue balls.",
+     "es": "Una bolsa con tres pelotas rojas y cinco pelotas azules."
+    },
+    "src": {
+     "en": "/exercise-images/6b__cmuli7jjb01hw6krhxmpsz1cy__existing.png",
+     "es": "/exercise-images/6b__cmuli7jjb01hw6krhxmpsz1cy__existing.png"
+    },
+    "kind": "existing",
+    "size": {
+     "en": {
+      "width": 1536,
+      "height": 1024
+     },
+     "es": {
+      "width": 1536,
+      "height": 1024
+     }
+    },
+    "legend": {
+     "type": "none"
+    },
+    "source": "banco_visual"
+   },
+   "procedureNote": "Una razón compara dos cantidades. Escribe primero la cantidad que nombra primero la pregunta y después la otra.",
+   "procedureNoteEn": "A ratio compares two quantities. Write first the quantity the question names first, then the other one."
+  }
+ },
+ "textual": {
+  "id": "cmulu2ubn01pf4crh39w5k1i3",
+  "prompt": "Los niños del curso votan por el color de la camiseta de su equipo. Mira los dibujos. Cada dibujo vale 1 voto. Dos niños más votan por el verde. ¿Qué color queda con más votos?",
+  "promptEn": "The children in the class vote for the color of their team jersey. Look at the pictures. Each picture stands for 1 vote. Two more children vote for green. Which color ends up with the most votes?",
+  "difficultyLevel": 3,
+  "options": [
+   {
+    "id": "cmulu2ubn01pg4crh1bqfgjsu",
+    "label": "Azul",
+    "labelEn": "Blue"
+   },
+   {
+    "id": "cmulu2ubn01ph4crhjvikv5h9",
+    "label": "Verde",
+    "labelEn": "Green"
+   },
+   {
+    "id": "cmulu2ubn01pi4crh2pxe5qe7",
+    "label": "Rojo",
+    "labelEn": "Red"
+   },
+   {
+    "id": "cmulu2ubn01pj4crhr4w6bk1u",
+    "label": "Rojo y verde quedan empatados",
+    "labelEn": "Red and green are tied"
+   }
+  ],
+  "visual": null,
+  "image": {
+   "alt": {
+    "en": "Rows of pictures: Red, 4; Blue, 7; Green, 2.",
+    "es": "Filas de dibujos: Rojo, 4; Azul, 7; Verde, 2."
+   },
+   "kind": "pictograph",
+   "rows": [
+    {
+     "count": 4,
+     "emoji": "🔴",
+     "label": {
+      "en": "Red",
+      "es": "Rojo"
+     }
+    },
+    {
+     "count": 7,
+     "emoji": "🔵",
+     "label": {
+      "en": "Blue",
+      "es": "Azul"
+     }
+    },
+    {
+     "count": 2,
+     "emoji": "🟢",
+     "label": {
+      "en": "Green",
+      "es": "Verde"
+     }
+    }
+   ],
+   "source": "emoji_pictograph"
+  },
+  "procedureNote": "Agrega los votos nuevos a la fila del verde y compara las tres filas.",
+  "procedureNoteEn": "Add the new votes to the green row and compare the three rows."
+ },
+ "optionBindings": {
+  "id": "cmuli7i6j005r6krh9bfv2o3m",
+  "prompt": "¿Cuál de estas figuras 2D tiene el borde completamente curvo?",
+  "promptEn": "Which of these 2D shapes has a completely curved edge?",
+  "difficultyLevel": 2,
+  "options": [
+   {
+    "id": "cmuli7i6k005s6krhzd9ibp2u",
+    "label": "círculo",
+    "labelEn": "circle"
+   },
+   {
+    "id": "cmuli7i6k005t6krhypxnmkm3",
+    "label": "cuadrado",
+    "labelEn": "square"
+   },
+   {
+    "id": "cmuli7i6k005v6krhwd2ghvy0",
+    "label": "rectángulo",
+    "labelEn": "rectangle"
+   },
+   {
+    "id": "cmuli7i6k005u6krhk299pr3a",
+    "label": "triángulo",
+    "labelEn": "triangle"
+   }
+  ],
+  "visual": null,
+  "image": {
+   "alt": {
+    "en": "Precise visual support constructed from the data given in the prompt. Which of these 2D shapes has a completely curved edge?",
+    "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál de estas figuras 2D tiene el borde completamente curvo?"
+   },
+   "src": {
+    "en": "/exercise-images/1b__cmuli7i6j005r6krh9bfv2o3m__shapes.png",
+    "es": "/exercise-images/1b__cmuli7i6j005r6krh9bfv2o3m__shapes.png"
+   },
+   "kind": "shapes",
+   "size": {
+    "en": {
+     "width": 1000,
+     "height": 650
+    },
+    "es": {
+     "width": 1000,
+     "height": 650
+    }
+   },
+   "legend": {
+    "type": "named",
+    "items": [
+     {
+      "key": "A",
+      "label": {
+       "en": "circle",
+       "es": "círculo"
+      },
+      "optionId": "cmuli7i6k005s6krhzd9ibp2u"
+     },
+     {
+      "key": "B",
+      "label": {
+       "en": "square",
+       "es": "cuadrado"
+      },
+      "optionId": "cmuli7i6k005t6krhypxnmkm3"
+     },
+     {
+      "key": "C",
+      "label": {
+       "en": "triangle",
+       "es": "triángulo"
+      },
+      "optionId": "cmuli7i6k005u6krhk299pr3a"
+     },
+     {
+      "key": "D",
+      "label": {
+       "en": "rectangle",
+       "es": "rectángulo"
+      },
+      "optionId": "cmuli7i6k005v6krhwd2ghvy0"
+     }
+    ],
+    "source": "optionBindings"
+   },
+   "source": "banco_visual"
+  },
+  "procedureNote": "Pasa el dedo por el borde: ¿en cuál figura nunca sientes una esquina?",
+  "procedureNoteEn": "Run your finger along the edge: in which shape do you never feel a corner?"
+ },
+ "emojiPictograph": {
+  "id": "cmuli7i8v00816krhe5b1h7o0",
+  "prompt": "Mira los dibujos. Cada dibujo vale 1 fruta. ¿Cuántas manzanas hay?",
+  "promptEn": "Look at the pictures. Each picture stands for 1 fruit. How many apples are there?",
+  "difficultyLevel": 1,
+  "options": [
+   {
+    "id": "cmuli7i8w00826krh7gvo6hr1",
+    "label": "4",
+    "labelEn": null
+   },
+   {
+    "id": "cmuli7i8w00836krhwccze82c",
+    "label": "2",
+    "labelEn": null
+   },
+   {
+    "id": "cmuli7i8w00846krh69t96ieg",
+    "label": "6",
+    "labelEn": null
+   },
+   {
+    "id": "cmuli7i8w00856krh4fesdkgs",
+    "label": "5",
+    "labelEn": null
+   }
+  ],
+  "visual": null,
+  "image": {
+   "alt": {
+    "en": "Rows of pictures: Apples, 4; Bananas, 2.",
+    "es": "Filas de dibujos: Manzanas, 4; Plátanos, 2."
+   },
+   "kind": "pictograph",
+   "rows": [
+    {
+     "count": 4,
+     "emoji": "🍎",
+     "label": {
+      "en": "Apples",
+      "es": "Manzanas"
+     }
+    },
+    {
+     "count": 2,
+     "emoji": "🍌",
+     "label": {
+      "en": "Bananas",
+      "es": "Plátanos"
+     }
+    }
+   ],
+   "source": "emoji_pictograph"
+  },
+  "procedureNote": "Cuenta los dibujos de la fila de las manzanas, uno por uno.",
+  "procedureNoteEn": "Count the pictures in the apples row, one by one."
+ }
+}

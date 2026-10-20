@@ -3,6 +3,7 @@ import { useAuth } from "../context/useAuth.js";
 import { ApiError } from "../api/client.js";
 import { t, useLang } from "../lib/i18n.js";
 import type { Lang } from "../lib/i18n.js";
+import { playClick, playSelect, playWelcome, primeAudio } from "../lib/sound.js";
 
 function errorMessage(err: unknown, mode: "login" | "register", lang: Lang): string {
   if (err instanceof ApiError) {
@@ -27,6 +28,9 @@ export function AuthScreen() {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
+    // El contexto de audio se "despierta" dentro del gesto; la bienvenida
+    // suena recién cuando el login/registro responde bien (sin doble sonido).
+    primeAudio();
     setError(null);
     setSubmitting(true);
     try {
@@ -35,6 +39,7 @@ export function AuthScreen() {
       } else {
         await register(email, password);
       }
+      playWelcome();
     } catch (err) {
       setError(errorMessage(err, mode, lang));
     } finally {
@@ -48,14 +53,20 @@ export function AuthScreen() {
         <button
           type="button"
           className={`choice-card ${lang === "es" ? "selected" : ""}`}
-          onClick={() => setLang("es")}
+          onClick={() => {
+            playSelect();
+            setLang("es");
+          }}
         >
           <span className="emoji">🇪🇸</span>Español
         </button>
         <button
           type="button"
           className={`choice-card ${lang === "en" ? "selected" : ""}`}
-          onClick={() => setLang("en")}
+          onClick={() => {
+            playSelect();
+            setLang("en");
+          }}
         >
           <span className="emoji">🇬🇧</span>English
         </button>
@@ -107,6 +118,7 @@ export function AuthScreen() {
         className="btn-secondary"
         type="button"
         onClick={() => {
+          playClick();
           setMode(mode === "login" ? "register" : "login");
           setError(null);
         }}

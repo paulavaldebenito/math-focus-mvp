@@ -1,0 +1,80 @@
+{
+ "entries": 2116,
+ "linked": 1774,
+ "emojiPreferred": 334,
+ "emojiPictographs": 62,
+ "absent": [
+  {
+   "exerciseId": "cmulu2x7s04iw4crhswlu0hh7",
+   "grade": 3,
+   "prompt": "En un gráfico de barras de juegos favoritos, carreras llega hasta 10, puzles hasta 6 y plataformas hasta 4. ¿Qué juego prefieren más niños?"
+  },
+  {
+   "exerciseId": "cmulu2xtt054p4crhi5pephsl",
+   "grade": 4,
+   "prompt": "Ana tocó 2/6 de una melodía y Pedro tocó 3/6 de la misma melodía. ¿Quién tocó más?"
+  },
+  {
+   "exerciseId": "cmulu2xut055t4crhn0mhbcyf",
+   "grade": 4,
+   "prompt": "Ana pintó 2/6 de un planeta de cartón y Pedro pintó 3/6 del mismo planeta. ¿Quién pintó más?"
+  },
+  {
+   "exerciseId": "cmulu2xwh057r4crhaz1qeeup",
+   "grade": 4,
+   "prompt": "Ana recorrió 2/6 de un circuito de ciclismo y Pedro recorrió 3/6 del mismo circuito. ¿Quién recorrió más?"
+  },
+  {
+   "exerciseId": "cmulu2yrm061h4crh7rjh90go",
+   "grade": 5,
+   "prompt": "Ana tocó 3/8 de una partitura y Beto tocó 1/2 de otra partitura igual de larga. ¿Quién tocó más?"
+  },
+  {
+   "exerciseId": "cmulu2ys506214crhwjsm39gt",
+   "grade": 5,
+   "prompt": "Un jugador completó 3/8 de un mapa y otro completó 1/2 de un mapa igual. ¿Quién completó más?"
+  },
+  {
+   "exerciseId": "cmulu2ysd062b4crhvxn6vdz5",
+   "grade": 5,
+   "prompt": "Ana pintó 3/8 de un planeta de cartón y Beto pintó 1/2 de otro planeta igual. ¿Quién pintó más?"
+  },
+  {
+   "exerciseId": "cmulu2yti063k4crhqtu59bgj",
+   "grade": 5,
+   "prompt": "Ana plantó 3/8 de un jardín y Beto plantó 1/2 de otro jardín igual. ¿Quién plantó más?"
+  }
+ ],
+ "promptMismatch": [],
+ "legends": {
+  "generic": 577,
+  "none": 918,
+  "named:optionBindings": 19,
+  "named:prompt": 101,
+  "named:rowLabels": 97
+ },
+ "genericReasons": {
+  "grupos_sin_nombre": 351,
+  "nombres_no_verificables": 161,
+  "rowLabels_revela_respuesta": 65
+ },
+ "byGrade": {
+  "1": 331,
+  "2": 288,
+  "3": 343,
+  "4": 287,
+  "5": 199,
+  "6": 326
+ },
+ "rutasVerificadas": 4221,
+ "rutasTotales": 4221,
+ "conImagen": 1774,
+ "porCurso": {
+  "1": 331,
+  "2": 288,
+  "3": 343,
+  "4": 287,
+  "5": 199,
+  "6": 326
+ }
+}

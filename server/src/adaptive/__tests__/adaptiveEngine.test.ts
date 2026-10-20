@@ -4,7 +4,7 @@ import { applyLevelChange, evaluateAdaptiveRules, type AttemptRecord } from "../
 function attempt(overrides: Partial<AttemptRecord> = {}): AttemptRecord {
   return {
     isCorrect: true,
-    errorTypeCode: null,
+    errorLevel: null,
     responseTimeMs: 5000,
     hintsUsed: 0,
     ...overrides,
@@ -17,10 +17,10 @@ describe("evaluateAdaptiveRules", () => {
     expect(action.ruleCode).toBe("NO_RULE_TRIGGERED");
   });
 
-  it("regla: 2 errores conceptuales consecutivos → baja nivel con representación visual", () => {
+  it("regla: 2 errores de nivel 1 (conceptual) consecutivos → baja nivel con representación visual", () => {
     const history = [
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
     ];
     const action = evaluateAdaptiveRules(history);
     expect(action.type).toBe("LOWER_LEVEL");
@@ -30,17 +30,17 @@ describe("evaluateAdaptiveRules", () => {
     }
   });
 
-  it("2 errores consecutivos de tipos MIXTOS (no ambos conceptuales) → no dispara la regla de bajar nivel", () => {
+  it("2 errores consecutivos de niveles MIXTOS (no ambos nivel 1) → no dispara la regla de bajar nivel", () => {
     const history = [
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
-      attempt({ isCorrect: false, errorTypeCode: "calculo" }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
+      attempt({ isCorrect: false, errorLevel: 2 }),
     ];
     const action = evaluateAdaptiveRules(history);
     expect(action.ruleCode).not.toBe("TWO_CONCEPTUAL_ERRORS");
   });
 
   it("regla: error justo después de una respuesta muy rápida → sugiere revisar el enunciado (nunca dice 'impulsivo')", () => {
-    const history = [attempt({ isCorrect: false, errorTypeCode: "calculo", responseTimeMs: 1200 })];
+    const history = [attempt({ isCorrect: false, errorLevel: 2, responseTimeMs: 1200 })];
     const action = evaluateAdaptiveRules(history);
     expect(action.type).toBe("SUGGEST_REVIEW_PROMPT");
     expect(action.ruleCode).toBe("FAST_THEN_WRONG");
@@ -70,9 +70,9 @@ describe("evaluateAdaptiveRules", () => {
 
   it("regla: 3 respuestas incorrectas seguidas (cualquier tipo) → ofrece pausa, sin bloquear", () => {
     const history = [
-      attempt({ isCorrect: false, errorTypeCode: "calculo" }),
-      attempt({ isCorrect: false, errorTypeCode: "procedimiento" }),
-      attempt({ isCorrect: false, errorTypeCode: "comprension_enunciado" }),
+      attempt({ isCorrect: false, errorLevel: 2 }),
+      attempt({ isCorrect: false, errorLevel: 2 }),
+      attempt({ isCorrect: false, errorLevel: 3 }),
     ];
     const action = evaluateAdaptiveRules(history);
     expect(action.type).toBe("OFFER_PAUSE");
@@ -81,13 +81,14 @@ describe("evaluateAdaptiveRules", () => {
     }
   });
 
-  it("prioridad: cansancio (3 incorrectas) gana sobre 2 conceptuales consecutivas dentro de esas 3", () => {
-    // Las últimas 2 de las 3 son conceptuales — igual gana la señal de cansancio,
-    // porque se evalúa primero según el orden de prioridad documentado.
+  it("prioridad: cansancio (3 incorrectas) gana sobre 2 de nivel 1 consecutivas dentro de esas 3", () => {
+    // Las últimas 2 de las 3 son de nivel 1 — igual gana la señal de
+    // cansancio, porque se evalúa primero según el orden de prioridad
+    // documentado.
     const history = [
-      attempt({ isCorrect: false, errorTypeCode: "calculo" }),
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
+      attempt({ isCorrect: false, errorLevel: 2 }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
     ];
     const action = evaluateAdaptiveRules(history);
     expect(action.ruleCode).toBe("FATIGUE_SIGNAL");
@@ -95,7 +96,7 @@ describe("evaluateAdaptiveRules", () => {
 
   it("no interpreta ningún patrón como diagnóstico: ningún 'reason' menciona TDAH ni déficit atencional", () => {
     const scenarios: AttemptRecord[][] = [
-      [attempt({ isCorrect: false, errorTypeCode: "conceptual" }), attempt({ isCorrect: false, errorTypeCode: "conceptual" })],
+      [attempt({ isCorrect: false, errorLevel: 1 }), attempt({ isCorrect: false, errorLevel: 1 })],
       [attempt({ isCorrect: false, responseTimeMs: 500 })],
       [attempt({ hintsUsed: 1 }), attempt({ hintsUsed: 1 })],
     ];
@@ -111,8 +112,8 @@ describe("evaluateAdaptiveRules", () => {
 describe("applyLevelChange", () => {
   it("baja de nivel sin pasar de 1", () => {
     const action = evaluateAdaptiveRules([
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
-      attempt({ isCorrect: false, errorTypeCode: "conceptual" }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
+      attempt({ isCorrect: false, errorLevel: 1 }),
     ]);
     expect(applyLevelChange(1, action)).toBe(1);
     expect(applyLevelChange(2, action)).toBe(1);

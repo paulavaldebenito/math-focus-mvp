@@ -10,12 +10,15 @@ import { initialAssessmentRouter } from "./routes/initialAssessment.js";
 import {
   childSessionsRouter,
   sessionAttemptsRouter,
+  spotErrorAttemptsRouter,
   nextExerciseRouter,
   pauseEventsRouter,
   sessionCompleteRouter,
 } from "./routes/sessions.js";
 import { homeSummaryRouter } from "./routes/homeSummary.js";
+import { skillPathRouter } from "./routes/skillPath.js";
 import { sessionMiddleware } from "./auth/session.js";
+import { checkInsRouter } from "./routes/checkIns.js";
 
 export const app = express();
 
@@ -42,9 +45,12 @@ app.use("/api/children/:childId/initial-assessment", initialAssessmentRouter);
 app.use("/api/children/:childId/sessions", childSessionsRouter);
 app.use("/api/children/:childId/next-exercise", nextExerciseRouter);
 app.use("/api/sessions/:sessionId/attempts", sessionAttemptsRouter);
+app.use("/api/sessions/:sessionId/spot-error-attempts", spotErrorAttemptsRouter);
 app.use("/api/sessions/:sessionId/pause-events", pauseEventsRouter);
+app.use("/api/sessions/:sessionId/check-in", checkInsRouter);
 app.use("/api/sessions/:sessionId/complete", sessionCompleteRouter);
 app.use("/api/children/:childId/home", homeSummaryRouter);
+app.use("/api/children/:childId/skill-path", skillPathRouter);
 
 // Cualquier ruta no definida arriba — JSON consistente en vez del HTML por
 // defecto de Express (el cliente espera poder parsear `.json()` siempre).

@@ -1,15 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import * as endpoints from "../api/endpoints.js";
-import type { AttemptResult, ExercisePublic } from "../api/types.js";
-import { ExerciseVisual } from "../components/ExerciseVisual.js";
+import type { CheckInInput } from "../api/endpoints.js";
+import type { AttemptResult, NextExercisePublic } from "../api/types.js";
+import { ExerciseIllustration } from "../components/ExerciseIllustration.js";
 import { BreathingPause } from "../components/BreathingPause.js";
 import { MovementPause } from "../components/MovementPause.js";
-import { CompanionAvatar, type CompanionMood } from "../components/CompanionAvatar.js";
+import { MoodCheckIn } from "../components/MoodCheckIn.js";
+import { BrickCompanionAvatar, type CompanionMood } from "../components/BrickCompanionAvatar.js";
 import { Confetti } from "../components/Confetti.js";
-import { companionByKey, type Companion } from "../lib/companions.js";
+import { MascotMoment } from "../components/MascotMoment.js";
+import { companionByKey, companionName, type Companion } from "../lib/companions.js";
+import { interestByKey } from "../lib/interests.js";
 import { cancelSpeech, speak, speechSupported } from "../lib/speech.js";
 import {
+  playClick,
   playComplete,
+  playCombo,
   playCorrect,
   playHint,
   playLevelUp,
@@ -17,18 +23,40 @@ import {
   playRetry,
   playStar,
 } from "../lib/sound.js";
-import { localize, t, useLang } from "../lib/i18n.js";
+import {
+  DIAGNOSIS_CHIPS,
+  ERROR_FEEDBACK,
+  FEEDBACK_CORRECT_VARIANTS,
+  FEEDBACK_RETRY_VARIANTS,
+  localize,
+  t,
+  useLang,
+  type Lang,
+} from "../lib/i18n.js";
 
 const QUESTIONS_PER_SESSION = 6;
+// A mitad de sesión se ofrece un recreo con movimiento/respiración aunque no
+// haya señal de cansancio — antes la única pausa "segura" era la del inicio.
+const MIDPOINT_CHECKPOINT = Math.ceil(QUESTIONS_PER_SESSION / 2);
 
 interface Props {
   childId: string;
   startingLevel: number;
+  /** Nodo del mapa de habilidades que se practica (mapa de habilidades).
+   * Sin él, la sesión es "de todo el curso" (compatibilidad hacia atrás). */
+  mathSkillId?: string;
+  /** Solo para mostrar como subtítulo — la habilidad real la decide el servidor. */
+  skillName?: string;
+  /** Traducción al inglés del nombre de la habilidad — null cae al español. */
+  skillNameEn?: string | null;
+  /** Curso del niño (1-6): las pausas de movimiento repasan contenidos de su nivel. */
+  grade?: number;
   onSessionComplete: () => void;
 }
 
 type Phase =
   | "loading"
+  | "check-in"
   | "pre-pause-offer"
   | "pre-pause-breathing"
   | "pre-pause-movement"
@@ -40,17 +68,52 @@ type Phase =
   | "done"
   | "error";
 
-function feedbackKey(result: AttemptResult): "feedbackCorrect" | "feedbackReview" | "feedbackRetry" {
-  if (result.isCorrect) return "feedbackCorrect";
-  if (result.action.ruleCode === "FAST_THEN_WRONG") return "feedbackReview";
-  return "feedbackRetry";
+/**
+ * Mensaje de feedback al equivocarse: prioriza el mensaje propio de la
+ * alternativa elegida (si el ejercicio lo tiene) y luego la explicación
+ * concreta del tipo de error clasificado (ver ERROR_FEEDBACK) por sobre el aviso genérico
+ * de "responde muy rápido" y, en último caso, una variante genérica cálida.
+ * Se resuelve una sola vez por intento (no en cada render) para que no
+ * cambie de texto mientras la tarjeta de feedback sigue en pantalla.
+ */
+function wrongFeedbackText(lang: Lang, result: AttemptResult): string {
+  if (result.feedback) return localize(lang, result.feedback, result.feedbackEn);
+  const specific = result.errorCode ? ERROR_FEEDBACK[lang][result.errorCode] : undefined;
+  if (specific) return specific;
+  if (result.action.ruleCode === "FAST_THEN_WRONG") return t(lang, "feedbackReview");
+  const variants = FEEDBACK_RETRY_VARIANTS[lang];
+  return variants[Math.floor(Math.random() * variants.length)]!;
 }
 
-export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Props) {
+/**
+ * Feedback de una ronda "detecta el error": a diferencia de wrongFeedbackText
+ * (que le habla al niño sobre SU error), acá se confirma o corrige su
+ * diagnóstico sobre una respuesta ajena — siempre en base a `correctCode`,
+ * revelado recién en la respuesta del servidor (nunca antes de diagnosticar).
+ */
+function spotErrorFeedbackText(lang: Lang, isCorrect: boolean, correctCode: string): string {
+  const chip = DIAGNOSIS_CHIPS[lang][correctCode] ?? correctCode;
+  const prefix = t(lang, isCorrect ? "spotErrorCorrectPrefix" : "spotErrorWrongPrefix");
+  return `${prefix} ${chip}.`;
+}
+
+export function PracticeScreen({
+  childId,
+  startingLevel,
+  mathSkillId,
+  skillName,
+  skillNameEn,
+  grade,
+  onSessionComplete,
+}: Props) {
   const { lang } = useLang();
   const [phase, setPhase] = useState<Phase>("loading");
   const [sessionId, setSessionId] = useState<string | null>(null);
-  const [exercise, setExercise] = useState<ExercisePublic | null>(null);
+  // Ejercicios de pausa (respiración o movimiento) ya hechos en esta sesión:
+  // la siguiente pausa elige otro, nunca repite el mismo.
+  const [usedPauseKeys, setUsedPauseKeys] = useState<string[]>([]);
+  const checkInDueRef = useRef(false);
+  const [exercise, setExercise] = useState<NextExercisePublic | null>(null);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [result, setResult] = useState<AttemptResult | null>(null);
   const [hintsUsed, setHintsUsed] = useState(0);
@@ -58,8 +121,37 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   const [answeredCount, setAnsweredCount] = useState(0);
   const [level, setLevel] = useState(startingLevel);
   const [starsThisSession, setStarsThisSession] = useState(0);
+  // Para el reporte de fin de sesión (pulido "estilo Duolingo"): cuántas de
+  // las QUESTIONS_PER_SESSION fueron correctas, y la racha de días que ya
+  // traía el niño al empezar (se lee una sola vez, no cambia durante la
+  // sesión — la sesión actual recién se cuenta al volver a Inicio).
+  const [correctThisSession, setCorrectThisSession] = useState(0);
+  const [dayStreak, setDayStreak] = useState(0);
   const [companion, setCompanion] = useState<Companion>(companionByKey(null));
+  // Nombre propio que el niño le puso a su mascota — null usa el nombre por
+  // defecto del personaje (ver companionName en lib/companions.ts).
+  const [mascotName, setMascotName] = useState<string | null>(null);
   const [mood, setMood] = useState<CompanionMood>("idle");
+  // Intereses del niño (elegidos en ChooseInterestScreen) — solo para temar
+  // esta pantalla (camino de misión, acento de color); nunca cambia qué
+  // ejercicio llega, eso ya lo decide el servidor.
+  const [childInterests, setChildInterests] = useState<string[]>([]);
+  // Por qué se está ofreciendo la pausa actual: decide el texto mostrado en
+  // la fase "pause-offer" (nunca crea fases nuevas, solo cambia el copy).
+  const [pauseFlavor, setPauseFlavor] = useState<"fatigue" | "checkpoint">("fatigue");
+  // Aciertos seguidos EN ESTA SESIÓN — puramente presentacional (combo/racha
+  // visible al niño). Nunca se persiste ni influye en el motor adaptativo:
+  // esa sigue siendo la única fuente de verdad para nivel y pausas.
+  const [streak, setStreak] = useState(0);
+  // Momento destacado de la mascota: grande, festejante, "de vez en cuando"
+  // — cuando se otorga la estrella bonus de racha (cada 3 aciertos seguidos,
+  // ver bonusStarAwarded/applyCorrectEffects) o al completar una pausa de
+  // respiración/movimiento (siempre gana una estrella, ver recordPauseEvent).
+  // null = no se muestra; el texto cambia según cuál de los dos motivos fue.
+  // Puramente visual: se cierra sola (ver MascotMoment) y nunca cambia nivel
+  // ni estrellas por sí mismo — la estrella ya se otorgó antes de mostrarlo.
+  const [mascotMoment, setMascotMoment] = useState<"streak" | "pause" | null>(null);
+  const [feedbackVariant, setFeedbackVariant] = useState("");
   const questionShownAt = useRef<number>(Date.now());
   const sessionStarted = useRef(false);
   const sessionCompleted = useRef(false);
@@ -71,21 +163,29 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   function bootstrapSession() {
     endpoints
       .getHomeSummary(childId)
-      .then((summary) => setCompanion(companionByKey(summary.companion)))
+      .then((summary) => {
+        setCompanion(companionByKey(summary.companion));
+        setMascotName(summary.mascotName);
+        setChildInterests(summary.interests ?? []);
+        setDayStreak(summary.streak);
+      })
       .catch(() => {
-        // El compañero es decorativo en esta pantalla — si falla, se usa el default.
+        // El compañero y el interés son decorativos en esta pantalla — si
+        // falla, se usa el default (mascota genérica, camino sin temar).
       });
 
     endpoints
-      .startSession(childId)
-      .then(({ sessionId: id, currentLevel }) => {
+      .startSession(childId, mathSkillId)
+      .then(({ sessionId: id, currentLevel, checkInDue }) => {
         setSessionId(id);
+        // Las preguntas de ánimo van solo en la primera práctica del día.
+        checkInDueRef.current = checkInDue === true;
         setLevel(currentLevel);
         return endpoints.getNextExercise(childId, id);
       })
       .then((ex) => {
         setExercise(ex);
-        setPhase("pre-pause-offer");
+        setPhase(checkInDueRef.current ? "check-in" : "pre-pause-offer");
         questionShownAt.current = Date.now();
       })
       .catch(() => {
@@ -105,12 +205,10 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   }, [childId]);
 
   useEffect(() => {
-    // Narración del enunciado — para niños que aún no leen con soltura.
-    // Se cancela al desmontar o al cambiar de ejercicio, para que dos
-    // enunciados no se lean encimados.
-    if (phase === "question" && exercise) {
-      speak(localize(lang, exercise.prompt, exercise.promptEn), lang);
-    }
+    // La narración ya no se dispara sola al mostrar la pregunta (voz
+    // robótica no pedida). Se mantiene solo la limpieza: si el niño pidió
+    // "Escuchar de nuevo" y cambia de ejercicio o sale de la pantalla, se
+    // corta esa lectura en vez de dejarla sonando encima de la siguiente.
     return () => cancelSpeech();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, exercise]);
@@ -134,6 +232,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
       setHintsUsed(0);
       setShowHint(false);
       setMood("idle");
+      setMascotMoment(null);
       setPhase("question");
       questionShownAt.current = Date.now();
     } catch {
@@ -142,9 +241,35 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     }
   }
 
+  // Efectos comunes a cualquier respuesta correcta, sea de resolver un
+  // ejercicio o de acertar el diagnóstico en una ronda "detecta el error" —
+  // streak/combo/mascota/estrellas se sienten igual sin importar la mecánica.
+  function applyCorrectEffects(res: AttemptResult) {
+    const newStreak = streak + 1;
+    setStreak(newStreak);
+    playCorrect(newStreak % 2);
+    // A partir de 2 seguidos suena además un pequeño arpegio de combo —
+    // nunca al revés: romper la racha nunca suena distinto ni se anuncia.
+    if (newStreak >= 2) playCombo();
+    setTimeout(playMascotChirp, 180);
+    setMood("happy");
+    // La estrella bonus (racha de 3) es ADEMÁS de la estrella normal del
+    // acierto — nunca la reemplaza, nunca se quita si se corta la racha.
+    setStarsThisSession((s) => s + (res.bonusStarAwarded ? 2 : 1));
+    if (res.bonusStarAwarded) {
+      playStar();
+      // La mascota festeja en grande solo acá — "de vez en cuando" (cada 3
+      // aciertos seguidos), nunca en cada acierto, para que se sienta como
+      // una sorpresa especial y no como una repetición cansadora.
+      setMascotMoment("streak");
+    }
+    setCorrectThisSession((c) => c + 1);
+  }
+
   async function handleAnswer(optionId: string) {
-    if (!exercise || !sessionId) return;
+    if (!exercise || exercise.mode === "spot_error" || !sessionId) return;
     setSelectedOptionId(optionId);
+    setMascotMoment(null);
     const responseTimeMs = Date.now() - questionShownAt.current;
 
     try {
@@ -159,11 +284,16 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
       setLevel(res.level);
       setPhase("feedback");
       if (res.isCorrect) {
-        playCorrect();
-        setTimeout(playMascotChirp, 180);
-        setMood("happy");
-        setStarsThisSession((s) => s + 1);
+        const variants = FEEDBACK_CORRECT_VARIANTS[lang];
+        setFeedbackVariant(
+          res.feedback
+            ? localize(lang, res.feedback, res.feedbackEn)
+            : variants[Math.floor(Math.random() * variants.length)]!,
+        );
+        applyCorrectEffects(res);
       } else {
+        setFeedbackVariant(wrongFeedbackText(lang, res));
+        setStreak(0);
         playRetry();
         setMood("encourage");
       }
@@ -173,11 +303,48 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     }
   }
 
+  async function handleSpotErrorAnswer(chosenCode: string) {
+    if (!exercise || exercise.mode !== "spot_error" || !sessionId) return;
+    setSelectedOptionId(chosenCode);
+    setMascotMoment(null);
+
+    try {
+      const res = await endpoints.submitSpotErrorAttempt(sessionId, {
+        exerciseId: exercise.id,
+        wrongOptionId: exercise.wrongOptionId,
+        chosenCode,
+      });
+      setResult(res);
+      setLevel(res.level);
+      setPhase("feedback");
+      setFeedbackVariant(spotErrorFeedbackText(lang, res.isCorrect, res.correctCode!));
+      if (res.isCorrect) {
+        applyCorrectEffects(res);
+      } else {
+        setStreak(0);
+        playRetry();
+        setMood("encourage");
+      }
+    } catch {
+      retryActionRef.current = () => void handleSpotErrorAnswer(chosenCode);
+      setPhase("error");
+    }
+  }
+
   async function handleContinueAfterFeedback() {
     const nextCount = answeredCount + 1;
     setAnsweredCount(nextCount);
 
     if (result?.action.type === "OFFER_PAUSE") {
+      // Señal real de cansancio del motor adaptativo — tiene prioridad sobre
+      // el recreo de mitad de sesión: nunca se ofrecen dos pausas seguidas.
+      setPauseFlavor("fatigue");
+      setPhase("pause-offer");
+      return;
+    }
+
+    if (nextCount === MIDPOINT_CHECKPOINT) {
+      setPauseFlavor("checkpoint");
       setPhase("pause-offer");
       return;
     }
@@ -194,10 +361,11 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     await loadNextExercise(sessionId);
   }
 
-  async function recordPauseEvent(kind: "respiracion" | "movimiento", accepted: boolean) {
+  async function recordPauseEvent(kind: "respiracion" | "movimiento", accepted: boolean, exerciseKey?: string) {
+    if (exerciseKey) setUsedPauseKeys((keys) => (keys.includes(exerciseKey) ? keys : [...keys, exerciseKey]));
     if (!sessionId) return;
     try {
-      await endpoints.submitPauseEvent(sessionId, { kind, accepted });
+      await endpoints.submitPauseEvent(sessionId, { kind, accepted, ...(exerciseKey && { exerciseKey }) });
       if (accepted) {
         setStarsThisSession((s) => s + 1);
         playStar();
@@ -212,9 +380,13 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     await proceedToNextOrDone(answeredCount);
   }
 
-  async function handlePauseDone(kind: "respiracion" | "movimiento") {
-    await recordPauseEvent(kind, true);
+  async function handlePauseDone(kind: "respiracion" | "movimiento", exerciseKey: string) {
+    await recordPauseEvent(kind, true, exerciseKey);
     await proceedToNextOrDone(answeredCount);
+    // Se marca DESPUÉS de avanzar (nunca antes): loadNextExercise limpia
+    // mascotMoment al empezar a cargar la siguiente pregunta — si se
+    // marcara antes, esa limpieza lo taparía de inmediato.
+    setMascotMoment("pause");
   }
 
   async function handleSkipPrePause() {
@@ -223,10 +395,24 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     questionShownAt.current = Date.now();
   }
 
-  async function handlePrePauseDone(kind: "respiracion" | "movimiento") {
-    await recordPauseEvent(kind, true);
+  async function handleCheckInDone(answer: CheckInInput | null) {
+    // Nunca bloquea: si el registro falla, sigue igual. Saltar también se
+    // registra (cuerpo vacío) para no volver a preguntarle hoy.
+    if (sessionId) {
+      try {
+        await endpoints.submitCheckIn(sessionId, answer ?? {});
+      } catch {
+        // El autorreporte es opcional — un error no interrumpe la práctica.
+      }
+    }
+    setPhase("pre-pause-offer");
+  }
+
+  async function handlePrePauseDone(kind: "respiracion" | "movimiento", exerciseKey: string) {
+    await recordPauseEvent(kind, true, exerciseKey);
     setPhase("question");
     questionShownAt.current = Date.now();
+    setMascotMoment("pause");
   }
 
   if (phase === "loading") {
@@ -243,9 +429,25 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
         <p className="error-text" role="alert">
           {t(lang, "genericError")}
         </p>
-        <button className="btn-primary" type="button" onClick={() => retryActionRef.current()}>
+        <button
+          className="btn-primary"
+          type="button"
+          onClick={() => {
+            playClick();
+            retryActionRef.current();
+          }}
+        >
           {t(lang, "retryButton")}
         </button>
+      </main>
+    );
+  }
+
+  if (phase === "check-in") {
+    return (
+      <main className="screen">
+        <BrickCompanionAvatar companion={companion} />
+        <MoodCheckIn lang={lang} onDone={(answer) => void handleCheckInDone(answer)} />
       </main>
     );
   }
@@ -253,18 +455,39 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "pre-pause-offer") {
     return (
       <main className="screen">
-        <CompanionAvatar companion={companion} />
+        <BrickCompanionAvatar companion={companion} />
         <div className="pause-card">
           <h1>{t(lang, "prePauseTitle")}</h1>
           <p>{t(lang, "prePauseQuestion")}</p>
         </div>
-        <button className="btn-primary" type="button" onClick={() => setPhase("pre-pause-breathing")}>
+        <button
+          className="btn-primary"
+          type="button"
+          onClick={() => {
+            playClick();
+            setPhase("pre-pause-breathing");
+          }}
+        >
           {t(lang, "pauseAccept")}
         </button>
-        <button className="btn-secondary" type="button" onClick={() => setPhase("pre-pause-movement")}>
+        <button
+          className="btn-secondary"
+          type="button"
+          onClick={() => {
+            playClick();
+            setPhase("pre-pause-movement");
+          }}
+        >
           {t(lang, "pauseMovementOption")}
         </button>
-        <button className="btn-secondary" type="button" onClick={() => void handleSkipPrePause()}>
+        <button
+          className="btn-secondary"
+          type="button"
+          onClick={() => {
+            playClick();
+            void handleSkipPrePause();
+          }}
+        >
           {t(lang, "prePauseSkip")}
         </button>
       </main>
@@ -274,7 +497,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "pre-pause-breathing") {
     return (
       <main className="screen">
-        <BreathingPause lang={lang} onDone={() => void handlePrePauseDone("respiracion")} />
+        <BreathingPause lang={lang} companion={companion} exclude={usedPauseKeys} onDone={(key) => void handlePrePauseDone("respiracion", key)} />
       </main>
     );
   }
@@ -282,26 +505,53 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "pre-pause-movement") {
     return (
       <main className="screen">
-        <MovementPause lang={lang} onDone={() => void handlePrePauseDone("movimiento")} />
+        <MovementPause lang={lang} companion={companion} grade={grade} exclude={usedPauseKeys} onDone={(key) => void handlePrePauseDone("movimiento", key)} />
       </main>
     );
   }
 
   if (phase === "pause-offer") {
+    // A mitad de sesión, la mascota aparece grande y festejante como parte
+    // de la oferta de recreo — no es una pantalla nueva, solo un momento más
+    // destacado de la que ya existía (nunca en la pausa por cansancio: ahí
+    // el foco es ofrecer calma, no una celebración).
+    const isCheckpoint = pauseFlavor === "checkpoint";
     return (
       <main className="screen">
-        <CompanionAvatar companion={companion} />
+        <BrickCompanionAvatar companion={companion} mood={isCheckpoint ? "happy" : "idle"} size={isCheckpoint ? "lg" : "sm"} />
         <div className="pause-card">
-          <h1>{t(lang, "pauseTitle")}</h1>
-          <p>{t(lang, "pauseQuestion")}</p>
+          <h1>{t(lang, isCheckpoint ? "checkpointTitle" : "pauseTitle")}</h1>
+          <p>{t(lang, isCheckpoint ? "checkpointQuestion" : "pauseQuestion")}</p>
+          {isCheckpoint && <p className="mascot-cheer">{t(lang, "checkpointMascotCheer")}</p>}
         </div>
-        <button className="btn-primary" type="button" onClick={() => setPhase("pause-breathing")}>
+        <button
+          className="btn-primary"
+          type="button"
+          onClick={() => {
+            playClick();
+            setPhase("pause-breathing");
+          }}
+        >
           {t(lang, "pauseAccept")}
         </button>
-        <button className="btn-secondary" type="button" onClick={() => setPhase("pause-movement")}>
+        <button
+          className="btn-secondary"
+          type="button"
+          onClick={() => {
+            playClick();
+            setPhase("pause-movement");
+          }}
+        >
           {t(lang, "pauseMovementOption")}
         </button>
-        <button className="btn-secondary" type="button" onClick={() => void handleDeclinePause()}>
+        <button
+          className="btn-secondary"
+          type="button"
+          onClick={() => {
+            playClick();
+            void handleDeclinePause();
+          }}
+        >
           {t(lang, "pauseDecline")}
         </button>
       </main>
@@ -311,7 +561,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "pause-breathing") {
     return (
       <main className="screen">
-        <BreathingPause lang={lang} onDone={() => void handlePauseDone("respiracion")} />
+        <BreathingPause lang={lang} companion={companion} exclude={usedPauseKeys} onDone={(key) => void handlePauseDone("respiracion", key)} />
       </main>
     );
   }
@@ -319,7 +569,7 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
   if (phase === "pause-movement") {
     return (
       <main className="screen">
-        <MovementPause lang={lang} onDone={() => void handlePauseDone("movimiento")} />
+        <MovementPause lang={lang} companion={companion} grade={grade} exclude={usedPauseKeys} onDone={(key) => void handlePauseDone("movimiento", key)} />
       </main>
     );
   }
@@ -328,13 +578,37 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
     return (
       <main className="screen">
         <Confetti />
-        <CompanionAvatar companion={companion} mood="happy" />
+        <BrickCompanionAvatar companion={companion} mood="happy" />
         <h1>{t(lang, "sessionDoneTitle")}</h1>
         <p>{t(lang, "sessionDoneBody")}</p>
-        <span className="star-chip">
-          ★ {starsThisSession} {t(lang, "starsEarnedThisSession")}
-        </span>
-        <button className="btn-primary" type="button" onClick={onSessionComplete}>
+        <div className="stat-row">
+          <div className="stat">
+            <span className="value">★ {starsThisSession}</span>
+            <span className="label">{t(lang, "starsEarnedThisSession")}</span>
+          </div>
+          <div className="stat">
+            <span className="value">
+              {correctThisSession}/{QUESTIONS_PER_SESSION}
+            </span>
+            <span className="label">{t(lang, "sessionCorrectCount")}</span>
+          </div>
+        </div>
+        {dayStreak > 0 && (
+          <span className="streak-pill">
+            🔥 {dayStreak} {t(lang, dayStreak === 1 ? "streakDay" : "streakDays")}
+          </span>
+        )}
+        <p className="hint-text">
+          {t(lang, "sessionDoneHabitatPrefix")} {companionName(companion, lang, mascotName)}.
+        </p>
+        <button
+          className="btn-primary"
+          type="button"
+          onClick={() => {
+            playClick();
+            onSessionComplete();
+          }}
+        >
           {t(lang, "backHome")}
         </button>
       </main>
@@ -343,28 +617,61 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
 
   if (!exercise) return null;
 
+  // Interés elegido por el niño (el primero de hasta 3) para temar esta
+  // sesión: emoji del camino de misión y acento de color de la tarjeta.
+  // Sin interés elegido (perfil viejo, o aún no eligió), queda undefined y
+  // todo cae a su apariencia neutra de siempre.
+  const interest = interestByKey(childInterests[0]);
+  const accentStyle = interest
+    ? ({ "--interest-color": interest.color, "--interest-accent": interest.color } as React.CSSProperties)
+    : undefined;
+
   return (
     <main className="screen">
-      <CompanionAvatar companion={companion} mood={phase === "feedback" ? mood : "idle"} />
+      {mascotMoment && (
+        <MascotMoment
+          companion={companion}
+          message={t(lang, mascotMoment === "pause" ? "pauseCelebrationMessage" : "mascotStreakMessage")}
+          onDone={() => setMascotMoment(null)}
+        />
+      )}
+      <BrickCompanionAvatar companion={companion} mood={phase === "feedback" ? mood : "idle"} />
 
+      {skillName && <p className="skill-name-chip">{localize(lang, skillName, skillNameEn)}</p>}
       <p className="hint-text">
         {t(lang, "level")} {level}
       </p>
 
-      <div className="progress-dots" aria-hidden="true">
+      <div className="quest-path" aria-hidden="true" style={accentStyle}>
         {Array.from({ length: QUESTIONS_PER_SESSION }, (_, i) => (
-          <span key={i} className={i < answeredCount ? "done" : ""} />
+          <span
+            key={i}
+            className={`quest-step${i < answeredCount ? " done" : ""}${i === answeredCount ? " current" : ""}`}
+          >
+            {interest ? interest.emoji : "⭐"}
+          </span>
         ))}
       </div>
 
       {(phase === "question" || phase === "feedback") && (
-        <div className="focus-frame" key={exercise.id}>
+        <div className="focus-frame" key={exercise.id} style={accentStyle}>
           <span className="fc-bl" aria-hidden="true" />
           <span className="fc-br" aria-hidden="true" />
 
-          {exercise.visual && <ExerciseVisual visual={exercise.visual} />}
+          <ExerciseIllustration image={exercise.image} visual={exercise.visual} interest={interest} options={exercise.mode === "spot_error" ? undefined : exercise.options} />
+
+          {exercise.mode === "spot_error" && <p className="spot-error-lead">{t(lang, "spotErrorLead")}</p>}
 
           <h1>{localize(lang, exercise.prompt, exercise.promptEn)}</h1>
+
+          {exercise.mode === "spot_error" && (
+            <>
+              <p className="spot-error-answer">
+                💬 {localize(lang, exercise.characterAnswerLabel, exercise.characterAnswerLabelEn)}
+              </p>
+              <p className="hint-text">{t(lang, "spotErrorAsk")}</p>
+            </>
+          )}
 
           {phase === "question" && speechSupported && (
             <button
@@ -377,24 +684,54 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
           )}
 
           <div className="form">
-            {exercise.options.map((opt) => {
-              let cls = "option-btn";
-              if (phase === "feedback" && opt.id === selectedOptionId) {
-                cls += result?.isCorrect ? " correct" : " incorrect";
-              }
-              return (
-                <button
-                  key={opt.id}
-                  className={cls}
-                  type="button"
-                  disabled={phase === "feedback"}
-                  onClick={() => void handleAnswer(opt.id)}
-                >
-                  {opt.label}
-                </button>
-              );
-            })}
+            {exercise.mode === "spot_error"
+              ? exercise.explanationOptions.map((code) => {
+                  let cls = "option-btn";
+                  if (phase === "feedback" && code === selectedOptionId) {
+                    cls += result?.isCorrect ? " correct" : " incorrect";
+                  }
+                  return (
+                    <button
+                      key={code}
+                      className={cls}
+                      type="button"
+                      disabled={phase === "feedback"}
+                      onClick={() => {
+                        playClick();
+                        void handleSpotErrorAnswer(code);
+                      }}
+                    >
+                      {DIAGNOSIS_CHIPS[lang][code] ?? code}
+                    </button>
+                  );
+                })
+              : exercise.options.map((opt) => {
+                  let cls = "option-btn";
+                  if (phase === "feedback" && opt.id === selectedOptionId) {
+                    cls += result?.isCorrect ? " correct" : " incorrect";
+                  }
+                  return (
+                    <button
+                      key={opt.id}
+                      className={cls}
+                      type="button"
+                      disabled={phase === "feedback"}
+                      onClick={() => {
+                        playClick();
+                        void handleAnswer(opt.id);
+                      }}
+                    >
+                      {localize(lang, opt.label, opt.labelEn)}
+                    </button>
+                  );
+                })}
           </div>
+
+          {phase === "feedback" && exercise.mode === "spot_error" && (
+            <p className="hint-text">
+              {t(lang, "spotErrorRevealPrefix")}: {localize(lang, exercise.correctAnswerLabel, exercise.correctAnswerLabelEn)}
+            </p>
+          )}
 
           {phase === "question" && !showHint && (
             <button
@@ -418,14 +755,44 @@ export function PracticeScreen({ childId, startingLevel, onSessionComplete }: Pr
           {phase === "feedback" && result && (
             <div className={`feedback-card ${result.isCorrect ? "correct" : "retry"}`} aria-live="polite">
               <span className="icon" aria-hidden="true">{result.isCorrect ? "✓" : "↻"}</span>
-              <span>{t(lang, feedbackKey(result))}</span>
+              <span>{feedbackVariant}</span>
             </div>
+          )}
+          {/* Al fallar, siempre se muestra el "cómo se hace" — antes solo
+              aparecía si el niño pedía pista ANTES de responder, dejando sin
+              ninguna guía a quien no la pidió. Ayuda a mejorar en el momento,
+              no reemplaza la pista proactiva (que sigue disponible arriba).
+              En una ronda "detecta el error" se muestra siempre, haya
+              acertado el diagnóstico o no — ver cómo se resuelve el
+              problema real siempre suma, incluso si ya identificó el error. */}
+          {phase === "feedback" &&
+            result &&
+            (!result.isCorrect || exercise.mode === "spot_error") &&
+            exercise.procedureNote && (
+              <p className="hint-text strategy-note">
+                {t(lang, "strategyLabel")}: {localize(lang, exercise.procedureNote, exercise.procedureNoteEn)}
+              </p>
+            )}
+          {phase === "feedback" && result?.isCorrect && streak >= 2 && (
+            <span className="streak-badge">
+              🔥 {streak} {t(lang, "comboStreakLabel")}
+            </span>
+          )}
+          {phase === "feedback" && result?.bonusStarAwarded && (
+            <span className="bonus-star-badge">🌟 {t(lang, "bonusStarLabel")}</span>
           )}
         </div>
       )}
 
       {phase === "feedback" && (
-        <button className="btn-primary" type="button" onClick={() => void handleContinueAfterFeedback()}>
+        <button
+          className="btn-primary"
+          type="button"
+          onClick={() => {
+            playClick();
+            void handleContinueAfterFeedback();
+          }}
+        >
           {t(lang, "continueBtn")}
         </button>
       )}

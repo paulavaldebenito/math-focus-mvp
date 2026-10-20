@@ -1,0 +1,990 @@
+[
+ {
+  "exerciseId": "cmulu2uch01qe4crhxsewhd2x",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 instrumento. Guitarras: 🎸🎸🎸🎸🎸🎸🎸. Violines: 🎻🎻🎻🎻. Si se llevan 2 guitarras a afinar, ¿cuántas guitarras quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 instrumento. Si se llevan 2 guitarras a afinar, ¿cuántas guitarras quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 instrument. Guitars: 🎸🎸🎸🎸🎸🎸🎸. Violins: 🎻🎻🎻🎻. If 2 guitars are taken to be tuned, how many guitars are left?",
+   "new": "Look at the pictures. Each picture stands for 1 instrument. If 2 guitars are taken to be tuned, how many guitars are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con las guitarras del pictograma y quita las que se llevan.",
+   "new": "Empieza con las guitarras y quita las que se llevan."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the guitars in the pictograph and take away the ones that are taken.",
+   "new": "Start with the guitars and take away the ones that are taken."
+  }
+ },
+ {
+  "exerciseId": "cmulu2uej01sr4crhkw99m6nm",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 huevo. Nido azul: 🥚🥚🥚🥚. Nido verde: 🥚🥚. ¿Cuántos huevos hay en el nido azul?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 huevo. ¿Cuántos huevos hay en el nido azul?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 egg. Blue nest: 🥚🥚🥚🥚. Green nest: 🥚🥚. How many eggs are in the blue nest?",
+   "new": "Look at the pictures. Each picture stands for 1 egg. How many eggs are in the blue nest?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ui001wi4crhg4wlvxst",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 vehículo. Autos: 🚗🚗🚗🚗🚗🚗🚗. Buses: 🚌🚌🚌🚌. Si se van 2 autos del estacionamiento, ¿cuántos autos quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 vehículo. Si se van 2 autos del estacionamiento, ¿cuántos autos quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vehicle. Cars: 🚗🚗🚗🚗🚗🚗🚗. Buses: 🚌🚌🚌🚌. If 2 cars leave the parking lot, how many cars are left?",
+   "new": "Look at the pictures. Each picture stands for 1 vehicle. If 2 cars leave the parking lot, how many cars are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con los autos del pictograma y quita los que se van.",
+   "new": "Empieza con los autos y quita los que se van."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the cars in the pictograph and take away the ones that leave.",
+   "new": "Start with the cars and take away the ones that leave."
+  }
+ },
+ {
+  "exerciseId": "cmuli7i9t00906krhj83dovtx",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 fruta. Manzanas: 🍎🍎🍎🍎🍎🍎🍎. Plátanos: 🍌🍌🍌🍌. Si se comen 2 manzanas, ¿cuántas manzanas quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 fruta. Si se comen 2 manzanas, ¿cuántas manzanas quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 fruit. Apples: 🍎🍎🍎🍎🍎🍎🍎. Bananas: 🍌🍌🍌🍌. If 2 apples are eaten, how many apples are left?",
+   "new": "Look at the pictures. Each picture stands for 1 fruit. If 2 apples are eaten, how many apples are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con las manzanas del pictograma y quita las que se comen.",
+   "new": "Empieza con las manzanas y quita las que se comen."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the apples in the pictograph and take away the ones that are eaten.",
+   "new": "Start with the apples and take away the ones that are eaten."
+  }
+ },
+ {
+  "exerciseId": "cmuli7i8z00866krh2uvrdib4",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 mascota. Gatos: 🐱🐱🐱. Perros: 🐶🐶🐶🐶🐶. ¿Cuántos perros hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 mascota. ¿Cuántos perros hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 pet. Cats: 🐱🐱🐱. Dogs: 🐶🐶🐶🐶🐶. How many dogs are there?",
+   "new": "Look at the pictures. Each picture stands for 1 pet. How many dogs are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2udr01rx4crhb4kg4bmn",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 aparato espacial. Cohetes: 🚀🚀🚀🚀. Satélites: 🛰️🛰️. ¿Cuántos cohetes hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 aparato espacial. ¿Cuántos cohetes hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 space device. Rockets: 🚀🚀🚀🚀. Satellites: 🛰️🛰️. How many rockets are there?",
+   "new": "Look at the pictures. Each picture stands for 1 space device. How many rockets are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ubv01pp4crhxw54ca35",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 animal. Conejos: 🐇🐇🐇🐇🐇🐇🐇. Tortugas: 🐢🐢🐢🐢. Si adoptan 2 conejos, ¿cuántos conejos quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 animal. Si adoptan 2 conejos, ¿cuántos conejos quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 animal. Rabbits: 🐇🐇🐇🐇🐇🐇🐇. Turtles: 🐢🐢🐢🐢. If 2 rabbits get adopted, how many rabbits are left?",
+   "new": "Look at the pictures. Each picture stands for 1 animal. If 2 rabbits get adopted, how many rabbits are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con los conejos del pictograma y quita los que se adoptan.",
+   "new": "Empieza con los conejos y quita los que se adoptan."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the rabbits in the pictograph and take away the ones that get adopted.",
+   "new": "Start with the rabbits and take away the ones that get adopted."
+  }
+ },
+ {
+  "exerciseId": "cmulu2udx01s24crhrlslgt7m",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 aparato espacial. Cohetes: 🚀🚀🚀. Satélites: 🛰️🛰️🛰️🛰️🛰️. ¿Cuántos satélites hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 aparato espacial. ¿Cuántos satélites hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 space device. Rockets: 🚀🚀🚀. Satellites: 🛰️🛰️🛰️🛰️🛰️. How many satellites are there?",
+   "new": "Look at the pictures. Each picture stands for 1 space device. How many satellites are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uf901tl4crhbkmacvja",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma de la feria cada dibujo vale 1 pastel. Tortas: 🍰🍰🍰🍰. Cupcakes: 🧁🧁. ¿Cuántas tortas hay?",
+   "new": "Mira los dibujos. En la feria, cada dibujo vale 1 pastel. ¿Cuántas tortas hay?"
+  },
+  "promptEn": {
+   "old": "In this bake sale pictograph each picture stands for 1 treat. Cakes: 🍰🍰🍰🍰. Cupcakes: 🧁🧁. How many cakes are there?",
+   "new": "Look at the pictures. At the bake sale, each picture stands for 1 treat. How many cakes are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ug701up4crhhdg948oe",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 ave. Gaviotas: 🐦🐦🐦🐦🐦. Patos: 🦆🦆🦆🦆🦆🦆🦆🦆. Cisnes: 🦢🦢🦢🦢. ¿Cuántos patos más que gaviotas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 ave. ¿Cuántos patos más que gaviotas hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 bird. Seagulls: 🐦🐦🐦🐦🐦. Ducks: 🦆🦆🦆🦆🦆🦆🦆🦆. Swans: 🦢🦢🦢🦢. How many more ducks than seagulls are there?",
+   "new": "Look at the pictures. Each picture stands for 1 bird. How many more ducks than seagulls are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uhu01w84crhqqlz3qlv",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 vehículo. Bicicletas: 🚲🚲🚲🚲🚲. Autos: 🚗🚗🚗🚗🚗🚗🚗🚗. Trenes: 🚂🚂🚂🚂. ¿Cuántos autos más que bicicletas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 vehículo. ¿Cuántos autos más que bicicletas hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vehicle. Bicycles: 🚲🚲🚲🚲🚲. Cars: 🚗🚗🚗🚗🚗🚗🚗🚗. Trains: 🚂🚂🚂🚂. How many more cars than bicycles are there?",
+   "new": "Look at the pictures. Each picture stands for 1 vehicle. How many more cars than bicycles are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ubs01pk4crheb5byn32",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 animal. Loros: 🦜🦜🦜🦜. Peces: 🐟🐟. ¿Cuántos loros hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 animal. ¿Cuántos loros hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 animal. Parrots: 🦜🦜🦜🦜. Fish: 🐟🐟. How many parrots are there?",
+   "new": "Look at the pictures. Each picture stands for 1 animal. How many parrots are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2udn01rs4crh3n0w0j7p",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Los niños eligen el color de su avatar. Rojo: 🔴🔴🔴🔴. Azul: 🔵🔵🔵🔵🔵🔵🔵. Verde: 🟢🟢. Dos niños más votan por el verde. ¿Qué color queda con más votos?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. Los niños eligen el color de su avatar. Dos niños más votan por el verde. ¿Qué color queda con más votos?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. The children choose the color of their avatar. Red: 🔴🔴🔴🔴. Blue: 🔵🔵🔵🔵🔵🔵🔵. Green: 🟢🟢. Two more children vote for green. Which color ends up with the most votes?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. The children choose the color of their avatar. Two more children vote for green. Which color ends up with the most votes?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2udb01rd4crh0qhin51l",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 objeto. Gemas: 💎💎💎💎💎💎💎. Monedas: 🪙🪙🪙🪙. Si gastas 2 gemas en la tienda, ¿cuántas gemas quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 objeto. Si gastas 2 gemas en la tienda, ¿cuántas gemas quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 item. Gems: 💎💎💎💎💎💎💎. Coins: 🪙🪙🪙🪙. If you spend 2 gems in the shop, how many gems are left?",
+   "new": "Look at the pictures. Each picture stands for 1 item. If you spend 2 gems in the shop, how many gems are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con las gemas del pictograma y quita las que gastas.",
+   "new": "Empieza con las gemas y quita las que gastas."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the gems in the pictograph and take away the ones you spend.",
+   "new": "Start with the gems and take away the ones you spend."
+  }
+ },
+ {
+  "exerciseId": "cmulu2ufl01u04crhsytebb3e",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 postre. Galletas: 🍪🍪🍪🍪🍪. Cupcakes: 🧁🧁🧁🧁🧁🧁🧁🧁. Donas: 🍩🍩🍩🍩. ¿Cuántos postres hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 postre. ¿Cuántos postres hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 dessert. Cookies: 🍪🍪🍪🍪🍪. Cupcakes: 🧁🧁🧁🧁🧁🧁🧁🧁. Donuts: 🍩🍩🍩🍩. How many desserts are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 dessert. How many desserts are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uhl01vy4crhyq0qd734",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 vehículo. Autos: 🚗🚗🚗🚗. Buses: 🚌🚌. ¿Cuántos autos hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 vehículo. ¿Cuántos autos hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 vehicle. Cars: 🚗🚗🚗🚗. Buses: 🚌🚌. How many cars are there?",
+   "new": "Look at the pictures. Each picture stands for 1 vehicle. How many cars are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uhx01wd4crh89pddw9h",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 vehículo. Bicicletas: 🚲🚲🚲🚲🚲. Autos: 🚗🚗🚗🚗🚗🚗🚗🚗. Trenes: 🚂🚂🚂🚂. ¿Cuántos vehículos hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 vehículo. ¿Cuántos vehículos hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vehicle. Bicycles: 🚲🚲🚲🚲🚲. Cars: 🚗🚗🚗🚗🚗🚗🚗🚗. Trains: 🚂🚂🚂🚂. How many vehicles are there in all?",
+   "new": "Look at the pictures. Each picture stands for 1 vehicle. How many vehicles are there in all?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7i9n008v6krhuulyg55v",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Pelota: ⚽⚽⚽⚽⚽⚽. Bicicleta: 🚲🚲🚲🚲🚲. Cometa: 🪁🪁🪁🪁. ¿Cuál es el juego favorito, el que tiene más votos?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. ¿Cuál es el juego favorito, el que tiene más votos?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. Ball: ⚽⚽⚽⚽⚽⚽. Bicycle: 🚲🚲🚲🚲🚲. Kite: 🪁🪁🪁🪁. Which game is the favorite, the one with the most votes?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. Which game is the favorite, the one with the most votes?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7i9j008q6krh3adi03em",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 mascota. Gatos: 🐱🐱🐱🐱🐱. Perros: 🐶🐶🐶🐶🐶🐶🐶🐶. Hámsters: 🐹🐹🐹🐹. ¿Cuántas mascotas hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 mascota. ¿Cuántas mascotas hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 pet. Cats: 🐱🐱🐱🐱🐱. Dogs: 🐶🐶🐶🐶🐶🐶🐶🐶. Hamsters: 🐹🐹🐹🐹. How many pets are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 pet. How many pets are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uc501pz4crhe244911v",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 instrumento. Violines: 🎻🎻🎻. Trompetas: 🎺🎺🎺🎺🎺. ¿Cuántas trompetas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 instrumento. ¿Cuántas trompetas hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 instrument. Violins: 🎻🎻🎻. Trumpets: 🎺🎺🎺🎺🎺. How many trumpets are there?",
+   "new": "Look at the pictures. Each picture stands for 1 instrument. How many trumpets are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ud701r84crhbp97du4n",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 objeto. Monedas: 🪙🪙🪙🪙🪙. Estrellas: ⭐⭐⭐⭐⭐⭐⭐⭐. Gemas: 💎💎💎💎. ¿Cuántos objetos hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 objeto. ¿Cuántos objetos hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 item. Coins: 🪙🪙🪙🪙🪙. Stars: ⭐⭐⭐⭐⭐⭐⭐⭐. Gems: 💎💎💎💎. How many items are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 item. How many items are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uea01sh4crh9q7mbr4l",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 aparato espacial. Cohetes: 🚀🚀🚀🚀🚀🚀🚀. Satélites: 🛰️🛰️🛰️🛰️. Si despegan 2 cohetes, ¿cuántos cohetes quedan en la plataforma?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 aparato espacial. Si despegan 2 cohetes, ¿cuántos cohetes quedan en la plataforma?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 space device. Rockets: 🚀🚀🚀🚀🚀🚀🚀. Satellites: 🛰️🛰️🛰️🛰️. If 2 rockets lift off, how many rockets are left on the platform?",
+   "new": "Look at the pictures. Each picture stands for 1 space device. If 2 rockets lift off, how many rockets are left on the platform?"
+  },
+  "procedureNote": {
+   "old": "Empieza con los cohetes del pictograma y quita los que despegan.",
+   "new": "Empieza con los cohetes y quita los que despegan."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the rockets in the pictograph and take away the ones that lift off.",
+   "new": "Start with the rockets and take away the ones that lift off."
+  }
+ },
+ {
+  "exerciseId": "cmulu2ufh01tv4crhjvs8lhi8",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 postre. Galletas: 🍪🍪🍪🍪🍪. Cupcakes: 🧁🧁🧁🧁🧁🧁🧁🧁. Donas: 🍩🍩🍩🍩. ¿Cuántos cupcakes más que galletas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 postre. ¿Cuántos cupcakes más que galletas hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 dessert. Cookies: 🍪🍪🍪🍪🍪. Cupcakes: 🧁🧁🧁🧁🧁🧁🧁🧁. Donuts: 🍩🍩🍩🍩. How many more cupcakes than cookies are there?",
+   "new": "Look at the pictures. Each picture stands for 1 dessert. How many more cupcakes than cookies are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uh101vj4crhchhg5c54",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 medalla. Oro: 🥇🥇🥇🥇🥇🥇🥇. Plata: 🥈🥈🥈🥈. Si se regalan 2 medallas de oro, ¿cuántas medallas de oro quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 medalla. Si se regalan 2 medallas de oro, ¿cuántas medallas de oro quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 medal. Gold: 🥇🥇🥇🥇🥇🥇🥇. Silver: 🥈🥈🥈🥈. If 2 gold medals are given away, how many gold medals are left?",
+   "new": "Look at the pictures. Each picture stands for 1 medal. If 2 gold medals are given away, how many gold medals are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con las medallas de oro del pictograma y quita las que se regalan.",
+   "new": "Empieza con las medallas de oro y quita las que se regalan."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the gold medals in the pictograph and take away the ones given away.",
+   "new": "Start with the gold medals and take away the ones given away."
+  }
+ },
+ {
+  "exerciseId": "cmuli7i96008b6krhnbvu0hdh",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 flor. Rosas: 🌹🌹🌹🌹🌹🌹. Tulipanes: 🌷🌷🌷. ¿De qué flor hay más?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 flor. ¿De qué flor hay más?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 flower. Roses: 🌹🌹🌹🌹🌹🌹. Tulips: 🌷🌷🌷. Which flower are there more of?",
+   "new": "Look at the pictures. Each picture stands for 1 flower. Which flower are there more of?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uc101pu4crh7to45knv",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 instrumento. Tambores: 🥁🥁🥁🥁. Guitarras: 🎸🎸. ¿Cuántos tambores hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 instrumento. ¿Cuántos tambores hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 instrument. Drums: 🥁🥁🥁🥁. Guitars: 🎸🎸. How many drums are there?",
+   "new": "Look at the pictures. Each picture stands for 1 instrument. How many drums are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ud301r34crht4h7inuu",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 objeto. Monedas: 🪙🪙🪙🪙🪙. Estrellas: ⭐⭐⭐⭐⭐⭐⭐⭐. Gemas: 💎💎💎💎. ¿Cuántas estrellas más que monedas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 objeto. ¿Cuántas estrellas más que monedas hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 item. Coins: 🪙🪙🪙🪙🪙. Stars: ⭐⭐⭐⭐⭐⭐⭐⭐. Gems: 💎💎💎💎. How many more stars than coins are there?",
+   "new": "Look at the pictures. Each picture stands for 1 item. How many more stars than coins are there?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7i8v00816krhe5b1h7o0",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 fruta. Manzanas: 🍎🍎🍎🍎. Plátanos: 🍌🍌. ¿Cuántas manzanas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 fruta. ¿Cuántas manzanas hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 fruit. Apples: 🍎🍎🍎🍎. Bananas: 🍌🍌. How many apples are there?",
+   "new": "Look at the pictures. Each picture stands for 1 fruit. How many apples are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ucd01q94crhavmpynmi",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 instrumento. Guitarras: 🎸🎸🎸🎸🎸. Tambores: 🥁🥁🥁🥁🥁🥁🥁🥁. Trompetas: 🎺🎺🎺🎺. ¿Cuántos instrumentos hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 instrumento. ¿Cuántos instrumentos hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 instrument. Guitars: 🎸🎸🎸🎸🎸. Drums: 🥁🥁🥁🥁🥁🥁🥁🥁. Trumpets: 🎺🎺🎺🎺. How many instruments are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 instrument. How many instruments are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ufp01u54crh3gv0tbx1",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 fruta. Manzanas: 🍎🍎🍎🍎🍎🍎🍎. Plátanos: 🍌🍌🍌🍌. Si se usan 2 manzanas para una tarta, ¿cuántas manzanas quedan?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 fruta. Si se usan 2 manzanas para una tarta, ¿cuántas manzanas quedan?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 fruit. Apples: 🍎🍎🍎🍎🍎🍎🍎. Bananas: 🍌🍌🍌🍌. If 2 apples are used for a pie, how many apples are left?",
+   "new": "Look at the pictures. Each picture stands for 1 fruit. If 2 apples are used for a pie, how many apples are left?"
+  },
+  "procedureNote": {
+   "old": "Empieza con las manzanas del pictograma y quita las que se usan en la tarta.",
+   "new": "Empieza con las manzanas y quita las que se usan en la tarta."
+  },
+  "procedureNoteEn": {
+   "old": "Start with the apples in the pictograph and take away the ones used in the pie.",
+   "new": "Start with the apples and take away the ones used in the pie."
+  }
+ },
+ {
+  "exerciseId": "cmulu2ugb01uu4crh8s3dqiuu",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 ave. Gaviotas: 🐦🐦🐦🐦🐦. Patos: 🦆🦆🦆🦆🦆🦆🦆🦆. Cisnes: 🦢🦢🦢🦢. ¿Cuántas aves hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 ave. ¿Cuántas aves hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 bird. Seagulls: 🐦🐦🐦🐦🐦. Ducks: 🦆🦆🦆🦆🦆🦆🦆🦆. Swans: 🦢🦢🦢🦢. How many birds are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 bird. How many birds are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7i9f008l6krh03v2upd1",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 mascota. Gatos: 🐱🐱🐱🐱🐱. Perros: 🐶🐶🐶🐶🐶🐶🐶🐶. Hámsters: 🐹🐹🐹🐹. ¿Cuántos perros más que gatos hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 mascota. ¿Cuántos perros más que gatos hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 pet. Cats: 🐱🐱🐱🐱🐱. Dogs: 🐶🐶🐶🐶🐶🐶🐶🐶. Hamsters: 🐹🐹🐹🐹. How many more dogs than cats are there?",
+   "new": "Look at the pictures. Each picture stands for 1 pet. How many more dogs than cats are there?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ia3009a6krhmhujw5oa",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Rojo: 🔴🔴🔴🔴. Azul: 🔵🔵🔵🔵🔵🔵🔵. Verde: 🟢🟢. ¿Cuántos votos más tiene el azul que el verde?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. ¿Cuántos votos más tiene el azul que el verde?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. Red: 🔴🔴🔴🔴. Blue: 🔵🔵🔵🔵🔵🔵🔵. Green: 🟢🟢. How many more votes does blue have than green?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. How many more votes does blue have than green?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uf101tb4crhp7a5vgdq",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 huevo. Nido grande: 🥚🥚🥚🥚🥚🥚🥚. Nido chico: 🥚🥚🥚🥚. Si se abren 2 huevos del nido grande, ¿cuántos huevos quedan sin abrir en el nido grande?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 huevo. Si se abren 2 huevos del nido grande, ¿cuántos huevos quedan sin abrir en el nido grande?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 egg. Big nest: 🥚🥚🥚🥚🥚🥚🥚. Small nest: 🥚🥚🥚🥚. If 2 eggs hatch in the big nest, how many unopened eggs are left in the big nest?",
+   "new": "Look at the pictures. Each picture stands for 1 egg. If 2 eggs hatch in the big nest, how many unopened eggs are left in the big nest?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ufz01uf4crhdwqdecxw",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 flor. Girasoles: 🌻🌻🌻🌻. Tulipanes: 🌷🌷. ¿Cuántos girasoles hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 flor. ¿Cuántos girasoles hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 flower. Sunflowers: 🌻🌻🌻🌻. Tulips: 🌷🌷. How many sunflowers are there?",
+   "new": "Look at the pictures. Each picture stands for 1 flower. How many sunflowers are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ue501sc4crhed4gep4f",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 aparato espacial. Cohetes: 🚀🚀🚀🚀🚀. Satélites: 🛰️🛰️🛰️🛰️🛰️🛰️🛰️🛰️. Telescopios: 🔭🔭🔭🔭. ¿Cuántos aparatos espaciales hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 aparato espacial. ¿Cuántos aparatos espaciales hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 space device. Rockets: 🚀🚀🚀🚀🚀. Satellites: 🛰️🛰️🛰️🛰️🛰️🛰️🛰️🛰️. Telescopes: 🔭🔭🔭🔭. How many space devices are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 space device. How many space devices are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uhg01vt4crhy7talnn9",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Natación: 🏊🏊🏊🏊. Atletismo: 🏃🏃🏃🏃🏃🏃🏃. Gimnasia: 🤸🤸. ¿Cuántos votos más tiene el atletismo que la gimnasia?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. ¿Cuántos votos más tiene el atletismo que la gimnasia?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. Swimming: 🏊🏊🏊🏊. Track and field: 🏃🏃🏃🏃🏃🏃🏃. Gymnastics: 🤸🤸. How many more votes does track and field have than gymnastics?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. How many more votes does track and field have than gymnastics?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ugn01v94crh11tbricn",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 balón. Básquetbol: 🏀🏀🏀🏀🏀. Vóleibol: 🏐🏐🏐🏐🏐🏐🏐🏐. Tenis de mesa: 🏓🏓🏓🏓. ¿Cuántos balones de vóleibol más que de básquetbol hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 balón. ¿Cuántos balones de vóleibol más que de básquetbol hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 ball. Basketball: 🏀🏀🏀🏀🏀. Volleyball: 🏐🏐🏐🏐🏐🏐🏐🏐. Table tennis: 🏓🏓🏓🏓. How many more volleyballs than basketballs are there?",
+   "new": "Look at the pictures. Each picture stands for 1 ball. How many more volleyballs than basketballs are there?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ia8009f6krht1amvnjx",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Rojo: 🔴🔴🔴🔴. Azul: 🔵🔵🔵🔵🔵🔵🔵. Verde: 🟢🟢. Dos niños más votan por el verde. ¿Qué color queda con más votos?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. Dos niños más votan por el verde. ¿Qué color queda con más votos?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. Red: 🔴🔴🔴🔴. Blue: 🔵🔵🔵🔵🔵🔵🔵. Green: 🟢🟢. Two more children vote for green. Which color ends up with the most votes?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. Two more children vote for green. Which color ends up with the most votes?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uba01p04crhbf1k5r7b",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 pelota. Bolsa roja: ⚽⚽⚽⚽⚽⚽⚽. Bolsa azul: ⚽⚽⚽⚽. Si se prestan 2 pelotas de la bolsa roja, ¿cuántas pelotas quedan en la bolsa roja?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 pelota. Si se prestan 2 pelotas de la bolsa roja, ¿cuántas pelotas quedan en la bolsa roja?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 ball. Red bag: ⚽⚽⚽⚽⚽⚽⚽. Blue bag: ⚽⚽⚽⚽. If 2 balls are lent from the red bag, how many balls are left in the red bag?",
+   "new": "Look at the pictures. Each picture stands for 1 ball. If 2 balls are lent from the red bag, how many balls are left in the red bag?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ugu01ve4crhrawgd82z",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 balón. Básquetbol: 🏀🏀🏀🏀🏀. Vóleibol: 🏐🏐🏐🏐🏐🏐🏐🏐. Tenis de mesa: 🏓🏓🏓🏓. ¿Cuántos balones hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 balón. ¿Cuántos balones hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 ball. Basketball: 🏀🏀🏀🏀🏀. Volleyball: 🏐🏐🏐🏐🏐🏐🏐🏐. Table tennis: 🏓🏓🏓🏓. How many balls are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 ball. How many balls are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ub101oq4crhos0p83vf",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 gol. Lunes: ⚽⚽⚽⚽⚽. Miércoles: ⚽⚽⚽⚽⚽⚽⚽⚽. Viernes: ⚽⚽⚽⚽. ¿Cuántos goles más se hicieron el miércoles que el lunes?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 gol. ¿Cuántos goles más se hicieron el miércoles que el lunes?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 goal. Monday: ⚽⚽⚽⚽⚽. Wednesday: ⚽⚽⚽⚽⚽⚽⚽⚽. Friday: ⚽⚽⚽⚽. How many more goals were scored on Wednesday than on Monday?",
+   "new": "Look at the pictures. Each picture stands for 1 goal. How many more goals were scored on Wednesday than on Monday?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ubn01pf4crh39w5k1i3",
+  "grade": 1,
+  "prompt": {
+   "old": "Los niños del curso votan por el color de la camiseta de su equipo. Cada dibujo vale 1 voto. Rojo: 🔴🔴🔴🔴. Azul: 🔵🔵🔵🔵🔵🔵🔵. Verde: 🟢🟢. Dos niños más votan por el verde. ¿Qué color queda con más votos?",
+   "new": "Los niños del curso votan por el color de la camiseta de su equipo. Mira los dibujos. Cada dibujo vale 1 voto. Dos niños más votan por el verde. ¿Qué color queda con más votos?"
+  },
+  "promptEn": {
+   "old": "The children in the class vote for the color of their team jersey. Each picture stands for 1 vote. Red: 🔴🔴🔴🔴. Blue: 🔵🔵🔵🔵🔵🔵🔵. Green: 🟢🟢. Two more children vote for green. Which color ends up with the most votes?",
+   "new": "The children in the class vote for the color of their team jersey. Look at the pictures. Each picture stands for 1 vote. Two more children vote for green. Which color ends up with the most votes?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uc901q44crh60udf6fj",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 instrumento. Guitarras: 🎸🎸🎸🎸🎸. Tambores: 🥁🥁🥁🥁🥁🥁🥁🥁. Trompetas: 🎺🎺🎺🎺. ¿Cuántos tambores más que guitarras hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 instrumento. ¿Cuántos tambores más que guitarras hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 instrument. Guitars: 🎸🎸🎸🎸🎸. Drums: 🥁🥁🥁🥁🥁🥁🥁🥁. Trumpets: 🎺🎺🎺🎺. How many more drums than guitars are there?",
+   "new": "Look at the pictures. Each picture stands for 1 instrument. How many more drums than guitars are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2udj01rn4crhuaj36k8s",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Los niños eligen el color de su avatar. Rojo: 🔴🔴🔴🔴. Azul: 🔵🔵🔵🔵🔵🔵🔵. Verde: 🟢🟢. ¿Cuántos votos más tiene el azul que el verde?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. Los niños eligen el color de su avatar. ¿Cuántos votos más tiene el azul que el verde?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. The children choose the color of their avatar. Red: 🔴🔴🔴🔴. Blue: 🔵🔵🔵🔵🔵🔵🔵. Green: 🟢🟢. How many more votes does blue have than green?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. The children choose the color of their avatar. How many more votes does blue have than green?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ue201s74crhzzf21qrx",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 aparato espacial. Cohetes: 🚀🚀🚀🚀🚀. Satélites: 🛰️🛰️🛰️🛰️🛰️🛰️🛰️🛰️. Telescopios: 🔭🔭🔭🔭. ¿Cuántos satélites más que cohetes hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 aparato espacial. ¿Cuántos satélites más que cohetes hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 space device. Rockets: 🚀🚀🚀🚀🚀. Satellites: 🛰️🛰️🛰️🛰️🛰️🛰️🛰️🛰️. Telescopes: 🔭🔭🔭🔭. How many more satellites than rockets are there?",
+   "new": "Look at the pictures. Each picture stands for 1 space device. How many more satellites than rockets are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uep01t14crhs5hymopk",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 dinosaurio. Manada del río: 🦕🦕🦕🦕🦕. Manada del bosque: 🦕🦕🦕🦕🦕🦕🦕🦕. Manada del cerro: 🦕🦕🦕🦕. ¿Cuántos dinosaurios más hay en la manada del bosque que en la del río?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 dinosaurio. ¿Cuántos dinosaurios más hay en la manada del bosque que en la del río?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 dinosaur. River herd: 🦕🦕🦕🦕🦕. Forest herd: 🦕🦕🦕🦕🦕🦕🦕🦕. Hill herd: 🦕🦕🦕🦕. How many more dinosaurs are in the forest herd than in the river herd?",
+   "new": "Look at the pictures. Each picture stands for 1 dinosaur. How many more dinosaurs are in the forest herd than in the river herd?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uew01t64crh2mffz5m3",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 dinosaurio. Manada del río: 🦕🦕🦕🦕🦕. Manada del bosque: 🦕🦕🦕🦕🦕🦕🦕🦕. Manada del cerro: 🦕🦕🦕🦕. ¿Cuántos dinosaurios hay en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 dinosaurio. ¿Cuántos dinosaurios hay en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 dinosaur. River herd: 🦕🦕🦕🦕🦕. Forest herd: 🦕🦕🦕🦕🦕🦕🦕🦕. Hill herd: 🦕🦕🦕🦕. How many dinosaurs are there in total?",
+   "new": "Look at the pictures. Each picture stands for 1 dinosaur. How many dinosaurs are there in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ub501ov4crhu2b9khy7",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 gol. Lunes: ⚽⚽⚽⚽⚽. Miércoles: ⚽⚽⚽⚽⚽⚽⚽⚽. Viernes: ⚽⚽⚽⚽. ¿Cuántos goles se hicieron en total?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 gol. ¿Cuántos goles se hicieron en total?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 goal. Monday: ⚽⚽⚽⚽⚽. Wednesday: ⚽⚽⚽⚽⚽⚽⚽⚽. Friday: ⚽⚽⚽⚽. How many goals were scored in total?",
+   "new": "Look at the pictures. Each picture stands for 1 goal. How many goals were scored in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ucz01qy4crh7147g96l",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 premio. Trofeos: 🏆🏆🏆. Estrellas: ⭐⭐⭐⭐⭐. ¿Cuántas estrellas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 premio. ¿Cuántas estrellas hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 prize. Trophies: 🏆🏆🏆. Stars: ⭐⭐⭐⭐⭐. How many stars are there?",
+   "new": "Look at the pictures. Each picture stands for 1 prize. How many stars are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ufe01tq4crhcu9qapdl",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 pastelito. Donas: 🍩🍩🍩. Muffins: 🧁🧁🧁🧁🧁. ¿Cuántos muffins hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 pastelito. ¿Cuántos muffins hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 little pastry. Donuts: 🍩🍩🍩. Muffins: 🧁🧁🧁🧁🧁. How many muffins are there?",
+   "new": "Look at the pictures. Each picture stands for 1 little pastry. How many muffins are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ug301uk4crhf8pe4zw8",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 pez. Peces grises: 🐟🐟🐟. Peces de colores: 🐠🐠🐠🐠🐠. ¿Cuántos peces de colores hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 pez. ¿Cuántos peces de colores hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 fish. Gray fish: 🐟🐟🐟. Colorful fish: 🐠🐠🐠🐠🐠. How many colorful fish are there?",
+   "new": "Look at the pictures. Each picture stands for 1 fish. How many colorful fish are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uhp01w34crhxc6xfo3g",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 vehículo. Bicicletas: 🚲🚲🚲. Camiones: 🚚🚚🚚🚚🚚. ¿Cuántos camiones hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 vehículo. ¿Cuántos camiones hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vehicle. Bicycles: 🚲🚲🚲. Trucks: 🚚🚚🚚🚚🚚. How many trucks are there?",
+   "new": "Look at the pictures. Each picture stands for 1 vehicle. How many trucks are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uaq01og4crhj9gk7969",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 gol. Primer tiempo: ⚽⚽⚽⚽. Segundo tiempo: ⚽⚽. ¿Cuántos goles hay en el primer tiempo?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 gol. ¿Cuántos goles hay en el primer tiempo?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 goal. First half: ⚽⚽⚽⚽. Second half: ⚽⚽. How many goals are there in the first half?",
+   "new": "Look at the pictures. Each picture stands for 1 goal. How many goals are there in the first half?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ucu01qt4crhqp5gvhwb",
+  "grade": 1,
+  "prompt": {
+   "old": "En este pictograma cada dibujo vale 1 objeto del juego. Gemas: 💎💎💎💎. Monedas: 🪙🪙. ¿Cuántas gemas hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 objeto del juego. ¿Cuántas gemas hay?"
+  },
+  "promptEn": {
+   "old": "In this pictograph each picture stands for 1 game item. Gems: 💎💎💎💎. Coins: 🪙🪙. How many gems are there?",
+   "new": "Look at the pictures. Each picture stands for 1 game item. How many gems are there?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7i9a008g6krhjubt4k8o",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 fruta. Frutillas: 🍓🍓. Uvas: 🍇🍇🍇🍇🍇🍇. ¿De qué fruta hay menos?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 fruta. ¿De qué fruta hay menos?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 fruit. Strawberries: 🍓🍓. Grapes: 🍇🍇🍇🍇🍇🍇. Which fruit are there fewer of?",
+   "new": "Look at the pictures. Each picture stands for 1 fruit. Which fruit are there fewer of?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ucp01qo4crh9ycjhjmy",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto. Guitarra: 🎸🎸🎸🎸. Tambor: 🥁🥁🥁🥁🥁🥁🥁. Trompeta: 🎺🎺. ¿Cuántos votos más tiene el tambor que la trompeta?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto. ¿Cuántos votos más tiene el tambor que la trompeta?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote. Guitar: 🎸🎸🎸🎸. Drum: 🥁🥁🥁🥁🥁🥁🥁. Trumpet: 🎺🎺. How many more votes does the drum have than the trumpet?",
+   "new": "Look at the pictures. Each picture stands for 1 vote. How many more votes does the drum have than the trumpet?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ugj01v44crh77qskrce",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 balón. Básquetbol: 🏀🏀🏀. Vóleibol: 🏐🏐🏐🏐🏐. ¿Cuántos balones de vóleibol hay?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 balón. ¿Cuántos balones de vóleibol hay?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 ball. Basketball: 🏀🏀🏀. Volleyball: 🏐🏐🏐🏐🏐. How many volleyballs are there?",
+   "new": "Look at the pictures. Each picture stands for 1 ball. How many volleyballs are there?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uau01ol4crh04uw15pd",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 gol. Equipo Rojo: ⚽⚽⚽. Equipo Azul: ⚽⚽⚽⚽⚽. ¿Cuántos goles hizo el equipo Azul?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 gol. ¿Cuántos goles hizo el equipo Azul?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 goal. Red team: ⚽⚽⚽. Blue team: ⚽⚽⚽⚽⚽. How many goals did the Blue team score?",
+   "new": "Look at the pictures. Each picture stands for 1 goal. How many goals did the Blue team score?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2uem01sw4crh4sym1j3y",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 dinosaurio. Manada del río: 🦕🦕🦕. Manada del bosque: 🦕🦕🦕🦕🦕. ¿Cuántos dinosaurios hay en la manada del bosque?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 dinosaurio. ¿Cuántos dinosaurios hay en la manada del bosque?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 dinosaur. River herd: 🦕🦕🦕. Forest herd: 🦕🦕🦕🦕🦕. How many dinosaurs are in the forest herd?",
+   "new": "Look at the pictures. Each picture stands for 1 dinosaur. How many dinosaurs are in the forest herd?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ubj01pa4crhzp3twf3l",
+  "grade": 1,
+  "prompt": {
+   "old": "Los niños del curso votan por el color de la camiseta de su equipo. Cada dibujo vale 1 voto. Rojo: 🔴🔴🔴🔴. Azul: 🔵🔵🔵🔵🔵🔵🔵. Verde: 🟢🟢. ¿Cuántos votos más tiene el azul que el verde?",
+   "new": "Los niños del curso votan por el color de la camiseta de su equipo. Mira los dibujos. Cada dibujo vale 1 voto. ¿Cuántos votos más tiene el azul que el verde?"
+  },
+  "promptEn": {
+   "old": "The children in the class vote for the color of their team jersey. Each picture stands for 1 vote. Red: 🔴🔴🔴🔴. Blue: 🔵🔵🔵🔵🔵🔵🔵. Green: 🟢🟢. How many more votes does blue have than green?",
+   "new": "The children in the class vote for the color of their team jersey. Look at the pictures. Each picture stands for 1 vote. How many more votes does blue have than green?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ui901ws4crhutjsbdaa",
+  "grade": 1,
+  "prompt": {
+   "old": "Cada dibujo vale 1 voto por el vehículo favorito. Autos: 🚗🚗🚗🚗. Trenes: 🚂🚂🚂🚂🚂🚂🚂. Barcos: 🚢🚢. ¿Cuántos votos más tiene el tren que el barco?",
+   "new": "Mira los dibujos. Cada dibujo vale 1 voto por el vehículo favorito. ¿Cuántos votos más tiene el tren que el barco?"
+  },
+  "promptEn": {
+   "old": "Each picture stands for 1 vote for the favorite vehicle. Cars: 🚗🚗🚗🚗. Trains: 🚂🚂🚂🚂🚂🚂🚂. Ships: 🚢🚢. How many more votes does the train have than the ship?",
+   "new": "Look at the pictures. Each picture stands for 1 vote for the favorite vehicle. How many more votes does the train have than the ship?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wnp03z64crhgw1uui5b",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos dibujos de dinosaurio iguales se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+   "new": "Marta y Luis tienen dos dibujos iguales de un dinosaurio, cada uno dividido en 3 franjas del mismo ancho. Marta pinta 2 franjas de su dibujo y Luis pinta 1 franja del suyo. ¿Quién pintó más?"
+  },
+  "promptEn": {
+   "old": "Two identical dinosaur drawings are colored in: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?",
+   "new": "Marta and Luis have two identical dinosaur drawings. Each one is divided into 3 strips of the same width. Marta colors 2 strips on her drawing and Luis colors 1 strip on his. Who colored more?"
+  },
+  "procedureNote": {
+   "old": "Los dos dibujos están divididos en partes del mismo tamaño. Compara cuántas partes pintó cada uno.",
+   "new": "Los dos dibujos son iguales y están divididos de la misma forma. Compara cuántas franjas pintó cada uno."
+  },
+  "procedureNoteEn": {
+   "old": "Both drawings are divided into parts of the same size. Compare how many parts each one painted.",
+   "new": "Both drawings are the same and are divided the same way. Compare how many strips each one colored."
+  }
+ },
+ {
+  "exerciseId": "cmuli7it700qy6krhqpa91j90",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
+   "new": "Hay dos cintas iguales, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+  },
+  "promptEn": {
+   "old": "A ribbon is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
+   "new": "There are two identical ribbons, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wkz03w94crhqgkt0hjb",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta para decorar la cancha se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
+   "new": "Hay dos cintas iguales para decorar la cancha, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+  },
+  "promptEn": {
+   "old": "A ribbon for decorating the field is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
+   "new": "There are two identical ribbons for decorating the field, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wlv03x84crhudbhlgxu",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta para decorar el escenario se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
+   "new": "Hay dos cintas iguales para decorar el escenario, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+  },
+  "promptEn": {
+   "old": "A ribbon to decorate the stage is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
+   "new": "There are two identical ribbons to decorate the stage, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wnt03zb4crhy1jm65rs",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta para decorar la sala de los dinosaurios se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
+   "new": "Hay dos cintas iguales para decorar la sala de los dinosaurios, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+  },
+  "promptEn": {
+   "old": "A ribbon for decorating the dinosaur room is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
+   "new": "There are two identical ribbons for decorating the dinosaur room, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts were taken over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wq4041y4crhyvxaqmqa",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta de gimnasia se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
+   "new": "Hay dos cintas de gimnasia iguales, cada una cortada en 4 partes iguales. Ema usa 3 partes de una cinta y Leo usa 2 partes de la otra. ¿Quién usó más cinta y qué fracción de su cinta usó?"
+  },
+  "promptEn": {
+   "old": "A gymnastics ribbon is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
+   "new": "There are two identical gymnastics ribbons, each cut into 4 equal parts. Ema uses 3 parts of one ribbon and Leo uses 2 parts of the other. Who used more ribbon, and what fraction of their ribbon did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cinta."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took out of the total number of parts in their ribbon."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wot040f4crh34hf04h3",
+  "grade": 3,
+  "prompt": {
+   "old": "Una masa de pizza se divide en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más masa y qué fracción usó?",
+   "new": "Hay dos masas de pizza iguales, cada una dividida en 4 partes iguales. Ema usa 3 partes de una masa y Leo usa 2 partes de la otra. ¿Quién usó más masa y qué fracción de su masa usó?"
+  },
+  "promptEn": {
+   "old": "A pizza dough is divided into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more dough and what fraction did they use?",
+   "new": "There are two identical balls of pizza dough, each divided into 4 equal parts. Ema uses 3 parts of one and Leo uses 2 parts of the other. Who used more dough, and what fraction of their dough did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más masa quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más masa quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su masa."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more dough. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more dough. Then write how many parts they took out of the total number of parts in their dough."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wna03yr4crhk74yawbg",
+  "grade": 3,
+  "prompt": {
+   "old": "Un cable se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cable y qué fracción usó?",
+   "new": "Hay dos cables iguales, cada uno cortado en 4 partes iguales. Ema usa 3 partes de un cable y Leo usa 2 partes del otro. ¿Quién usó más cable y qué fracción de su cable usó?"
+  },
+  "promptEn": {
+   "old": "A cable is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more cable and what fraction did they use?",
+   "new": "There are two identical cables, each cut into 4 equal parts. Ema uses 3 parts of one cable and Leo uses 2 parts of the other. Who used more cable, and what fraction of their cable did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cable quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cable quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cable."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more cable. Then write how many parts they took out of the total number of parts in their cable."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wpn041e4crh8m7hlhls",
+  "grade": 3,
+  "prompt": {
+   "old": "Un cordel se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cordel y qué fracción usó?",
+   "new": "Hay dos cordeles iguales, cada uno cortado en 4 partes iguales. Ema usa 3 partes de un cordel y Leo usa 2 partes del otro. ¿Quién usó más cordel y qué fracción de su cordel usó?"
+  },
+  "promptEn": {
+   "old": "A cord is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more cord and what fraction did they use?",
+   "new": "There are two identical cords, each cut into 4 equal parts. Ema uses 3 parts of one cord and Leo uses 2 parts of the other. Who used more cord, and what fraction of their cord did they use?"
+  },
+  "procedureNote": {
+   "old": "Todas las partes son del mismo tamaño, así que usa más cordel quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+   "new": "Todas las partes son del mismo tamaño, así que usa más cordel quien toma más partes. Luego escribe cuántas partes tomó sobre el total de partes de su cordel."
+  },
+  "procedureNoteEn": {
+   "old": "All the parts are the same size, so whoever takes more parts uses more cord. Then write how many parts they took over the total.",
+   "new": "All the parts are the same size, so whoever takes more parts uses more cord. Then write how many parts they took out of the total number of parts in their cord."
+  }
+ }
+]

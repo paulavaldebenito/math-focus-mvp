@@ -1,0 +1,5 @@
+ALTER TABLE "MathSkill" ADD COLUMN     "order" INTEGER NOT NULL DEFAULT 0;
+
+ALTER TABLE "Session" ADD COLUMN     "mathSkillId" TEXT;
+
+ALTER TABLE "Session" ADD CONSTRAINT "Session_mathSkillId_fkey" FOREIGN KEY ("mathSkillId") REFERENCES "MathSkill"("id") ON DELETE SET NULL ON UPDATE CASCADE;

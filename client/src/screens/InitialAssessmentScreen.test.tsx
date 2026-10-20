@@ -18,6 +18,12 @@ const exercises = [
   { id: "ex2", prompt: "¿Cuánto es 20 − 20?", options: [{ id: "b1", label: "0" }, { id: "b2", label: "20" }] },
 ];
 
+// Antes del control aparece un momento de respiración, siempre saltable —
+// se salta en cada prueba para llegar directo a la pantalla de intro.
+async function skipBreathingOffer(user: ReturnType<typeof userEvent.setup>) {
+  await user.click(await screen.findByRole("button", { name: "Empezar ahora" }));
+}
+
 describe("InitialAssessmentScreen", () => {
   it("muestra una pregunta a la vez y avanza al responder", async () => {
     mocks.getInitialAssessment.mockResolvedValue({ exercises });
@@ -25,6 +31,7 @@ describe("InitialAssessmentScreen", () => {
     render(<InitialAssessmentScreen childId="child-1" onDone={vi.fn()} />);
     const user = userEvent.setup();
 
+    await skipBreathingOffer(user);
     await user.click(await screen.findByRole("button", { name: "Empezar" }));
 
     await screen.findByText("¿Cuánto es 6 + 7?");
@@ -49,6 +56,7 @@ describe("InitialAssessmentScreen", () => {
     render(<InitialAssessmentScreen childId="child-1" onDone={onDone} />);
     const user = userEvent.setup();
 
+    await skipBreathingOffer(user);
     await user.click(await screen.findByRole("button", { name: "Empezar" }));
 
     await screen.findByText("¿Cuánto es 6 + 7?");
@@ -68,5 +76,33 @@ describe("InitialAssessmentScreen", () => {
     expect(onDone).toHaveBeenCalledWith(
       expect.objectContaining({ initialLevel: 3, correctCount: 2 }),
     );
+  });
+
+  it("aceptar el momento de respiración muestra el ejercicio (sin pedir nada al servidor: aún no hay sesión creada)", async () => {
+    mocks.getInitialAssessment.mockResolvedValue({ exercises });
+
+    render(<InitialAssessmentScreen childId="child-1" onDone={vi.fn()} />);
+    const user = userEvent.setup();
+
+    await screen.findByRole("heading", { name: "Antes de empezar" });
+    await user.click(screen.getByRole("button", { name: "Respiración" }));
+
+    // Deja la pantalla de oferta y muestra el ejercicio de respiración
+    // (auto-avanza solo; no se espera a que termine, sería lento y no es lo
+    // que prueba este caso). El control real llega con "Antes de empezar".
+    expect(screen.queryByRole("heading", { name: "Antes de empezar" })).not.toBeInTheDocument();
+    expect(document.querySelector(".pause-body")).toBeTruthy();
+  });
+
+  it("saltar el momento de respiración lleva directo a la intro del control", async () => {
+    mocks.getInitialAssessment.mockResolvedValue({ exercises });
+
+    render(<InitialAssessmentScreen childId="child-1" onDone={vi.fn()} />);
+    const user = userEvent.setup();
+
+    await screen.findByRole("heading", { name: "Antes de empezar" });
+    await user.click(screen.getByRole("button", { name: "Empezar ahora" }));
+
+    await screen.findByRole("heading", { name: "Vamos a conocernos" });
   });
 });

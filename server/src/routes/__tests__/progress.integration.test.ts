@@ -121,6 +121,18 @@ describe("GET /api/children/:childId/progress (T6.1)", () => {
     expect(Object.values(body.errorBreakdown).reduce((a, b) => a + b, 0)).toBe(1);
   });
 
+  it("incluye el cruce ánimo × rendimiento y los contenidos a repasar (vacíos si aún no hay datos suficientes)", async () => {
+    const res = await fetch(`${baseUrl}/api/children/${childId}/progress`, { headers: { Cookie: cookie } });
+    const body = (await res.json()) as {
+      wellbeing: { days: unknown[]; comparison: Record<string, { days: number }>; recentMathFeeling: number | null };
+      skillsToReview: unknown[];
+    };
+    expect(Array.isArray(body.wellbeing.days)).toBe(true);
+    expect(Object.keys(body.wellbeing.comparison).sort()).toEqual(["mathCalm", "mathNervous", "moodHigh", "moodLow"]);
+    // 2 intentos: bajo el mínimo para sugerir repasar un contenido.
+    expect(body.skillsToReview).toEqual([]);
+  });
+
   it("un adulto no puede ver el progreso de un niño que no es suyo (404) — sin ranking posible", async () => {
     const res = await fetch(`${baseUrl}/api/children/${childId}/progress`, { headers: { Cookie: otherCookie } });
     expect(res.status).toBe(404);

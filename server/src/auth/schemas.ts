@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { COMPANION_KEYS } from "../domain/companions.js";
+import { INTEREST_KEYS, MAX_INTERESTS } from "../domain/interests.js";
 
 export const registerSchema = z.object({
   email: z.string().trim().toLowerCase().email(),
@@ -21,10 +22,11 @@ export const consentSchema = z.object({
 
 export type ConsentInput = z.infer<typeof consentSchema>;
 
-// Cursos con banco de ejercicios real (Números y operaciones). Whitelist
+// Cursos con banco de ejercicios sembrado (1° a 6° básico). Whitelist
 // explícita — no un rango abierto — para no aceptar por error un curso sin
-// contenido todavía. Ver specs/004-expansion-2basico/spec.md.
-export const SUPPORTED_GRADES = [1, 2] as const;
+// contenido todavía. Ver specs/004-expansion-2basico y
+// specs/006-expansion-3a6-basico.
+export const SUPPORTED_GRADES = [1, 2, 3, 4, 5, 6] as const;
 
 export const childProfileSchema = z.object({
   consentId: z.string().min(1),
@@ -42,6 +44,31 @@ export const companionSchema = z.object({
 });
 
 export type CompanionInput = z.infer<typeof companionSchema>;
+
+export const interestsSchema = z.object({
+  interests: z
+    .array(z.enum(INTEREST_KEYS))
+    .min(1, "Elige al menos un interés.")
+    .max(MAX_INTERESTS, `Elige como máximo ${MAX_INTERESTS} intereses.`)
+    .refine((list) => new Set(list).size === list.length, { message: "No repitas intereses." }),
+});
+
+export type InterestsInput = z.infer<typeof interestsSchema>;
+
+// Tope de largo generoso para un nombre inventado por un niño — no es
+// moderación de contenido (esto no se comparte con nadie más), solo evita un
+// texto absurdamente largo rompiendo el layout donde se muestra el nombre.
+const MASCOT_NAME_MAX_LENGTH = 20;
+
+export const mascotNameSchema = z.object({
+  mascotName: z
+    .string()
+    .trim()
+    .min(1, "El nombre no puede estar vacío.")
+    .max(MASCOT_NAME_MAX_LENGTH, `El nombre puede tener como máximo ${MASCOT_NAME_MAX_LENGTH} caracteres.`),
+});
+
+export type MascotNameInput = z.infer<typeof mascotNameSchema>;
 
 export const initialAssessmentAttemptsSchema = z.object({
   attempts: z

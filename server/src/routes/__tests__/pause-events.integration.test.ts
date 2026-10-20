@@ -90,4 +90,21 @@ describe("POST /api/sessions/:sessionId/pause-events", () => {
     const stored = await prisma.pauseEvent.findMany({ where: { sessionId } });
     expect(stored.some((p) => p.kind === "movimiento" && p.durationMs === 15000)).toBe(true);
   });
+  it("guarda el ejercicio concreto de la pausa (exerciseKey) y valida su formato", async () => {
+    const ok = await fetch(`${baseUrl}/api/sessions/${sessionId}/pause-events`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: cookie },
+      body: JSON.stringify({ kind: "respiracion", accepted: true, exerciseKey: "globo" }),
+    });
+    expect(ok.status).toBe(201);
+    const { id } = (await ok.json()) as { id: string };
+    expect((await prisma.pauseEvent.findUnique({ where: { id } }))?.exerciseKey).toBe("globo");
+
+    const bad = await fetch(`${baseUrl}/api/sessions/${sessionId}/pause-events`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: cookie },
+      body: JSON.stringify({ kind: "respiracion", accepted: true, exerciseKey: "<script>" }),
+    });
+    expect(bad.status).toBe(400);
+  });
 });

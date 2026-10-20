@@ -17,3 +17,17 @@ src/generated/
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# Exports de trabajo del banco (la fuente versionada es server/prisma/seed/)
+banco_ejercicios_exportado/
+banco_ejercicios_exportado 2/
+banco_ejercicios_exportado.zip
+
+# Capturas que generan los tests E2E
+e2e/screenshots/
+e2e/screenshots-before/
+test-results/
+playwright-report/
+
+# Estado local de Claude Code
+.claude/scheduled_tasks.lock

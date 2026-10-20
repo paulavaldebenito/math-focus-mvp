@@ -4,11 +4,12 @@ import type {
   AttemptResult,
   ChildProfile,
   Consent,
-  ExercisePublic,
   HomeSummary,
   InitialAssessmentResponse,
   InitialAssessmentResult,
+  NextExercisePublic,
   ProgressResponse,
+  SkillPathResult,
   StartSessionResponse,
 } from "./types.js";
 
@@ -57,12 +58,16 @@ export function submitInitialAssessment(childId: string, attempts: InitialAssess
   });
 }
 
-export function startSession(childId: string) {
-  return api.post<StartSessionResponse>(`/api/children/${childId}/sessions`);
+export function startSession(childId: string, mathSkillId?: string) {
+  return api.post<StartSessionResponse>(`/api/children/${childId}/sessions`, mathSkillId ? { mathSkillId } : undefined);
+}
+
+export function getSkillPath(childId: string) {
+  return api.get<SkillPathResult>(`/api/children/${childId}/skill-path`);
 }
 
 export function getNextExercise(childId: string, sessionId: string) {
-  return api.get<ExercisePublic>(`/api/children/${childId}/next-exercise?sessionId=${sessionId}`);
+  return api.get<NextExercisePublic>(`/api/children/${childId}/next-exercise?sessionId=${sessionId}`);
 }
 
 export interface SubmitAttemptInput {
@@ -76,10 +81,32 @@ export function submitAttempt(sessionId: string, input: SubmitAttemptInput) {
   return api.post<AttemptResult>(`/api/sessions/${sessionId}/attempts`, input);
 }
 
+export interface SubmitSpotErrorAttemptInput {
+  exerciseId: string;
+  wrongOptionId: string;
+  chosenCode: string;
+}
+
+export function submitSpotErrorAttempt(sessionId: string, input: SubmitSpotErrorAttemptInput) {
+  return api.post<AttemptResult>(`/api/sessions/${sessionId}/spot-error-attempts`, input);
+}
+
 export interface PauseEventInput {
   kind: "respiracion" | "movimiento";
   accepted: boolean;
   durationMs?: number;
+  /** Ejercicio concreto de la pausa (lib/pauses.ts), para no repetirlo en la sesión. */
+  exerciseKey?: string;
+}
+
+/** Autorreporte con caritas (1-5) en la primera práctica del día; vacío = lo saltó. */
+export interface CheckInInput {
+  mood?: number;
+  mathFeeling?: number;
+}
+
+export function submitCheckIn(sessionId: string, input: CheckInInput) {
+  return api.post<{ id: string }>(`/api/sessions/${sessionId}/check-in`, input);
 }
 
 export function submitPauseEvent(sessionId: string, input: PauseEventInput) {
@@ -92,6 +119,14 @@ export function getProgress(childId: string) {
 
 export function setCompanion(childId: string, companion: string) {
   return api.patch<{ id: string; companion: string }>(`/api/children/${childId}/companion`, { companion });
+}
+
+export function setInterests(childId: string, interests: string[]) {
+  return api.patch<{ id: string; interests: string[] }>(`/api/children/${childId}/interests`, { interests });
+}
+
+export function setMascotName(childId: string, mascotName: string) {
+  return api.patch<{ id: string; mascotName: string }>(`/api/children/${childId}/mascot-name`, { mascotName });
 }
 
 export function completeSession(sessionId: string) {

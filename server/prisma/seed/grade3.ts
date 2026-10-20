@@ -1,0 +1,709 @@
+import { block, type ErrorIds, type SeedExercise, type SkillBlock } from "./lib.js";
+
+// Banco de 3° básico. Cada OA se verificó en curriculumnacional.mineduc.cl
+// (que hoy redirige a curriculumnacional.cl) el 2026-09-28:
+//   MA03 OA05 valor posicional · OA06 adición/sustracción hasta 1.000 ·
+//   OA08 tablas de multiplicar · OA09 división · OA11 fracciones de uso común ·
+//   OA12 patrones numéricos · OA15 figuras 3D y redes · OA21 perímetro ·
+//   OA25 pictogramas y gráficos de barra simple.
+
+type Code = "E1_OP" | "E2_RES" | "E2_CAL" | "E3_PREG" | "E3_DATO";
+type Wrong = [label: string, code: Code];
+
+/// Separador de miles chileno ("1.250") y convención inglesa ("1,250").
+const fmtEs = (n: number): string => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const money = (n: number): string => `$${fmtEs(n)}`;
+
+/// Dígitos (de unidades hacia arriba) sin llevar ni pedir prestado: modelan E2_RES.
+function digitwise(a: number, b: number, f: (da: number, db: number) => number): number {
+  let out = 0;
+  let mult = 1;
+  let x = a;
+  let y = b;
+  while (x > 0 || y > 0) {
+    out += f(x % 10, y % 10) * mult;
+    x = Math.floor(x / 10);
+    y = Math.floor(y / 10);
+    mult *= 10;
+  }
+  return out;
+}
+const noCarry = (a: number, b: number): number => digitwise(a, b, (da, db) => (da + db) % 10);
+const noBorrow = (a: number, b: number): number => digitwise(a, b, (da, db) => Math.abs(da - db));
+
+export function grade3(errorTypeByCode: ErrorIds): SkillBlock[] {
+  const code = (c: Code): string | undefined => errorTypeByCode[c];
+
+  /// Ejercicio con la correcta primero y exactamente 4 opciones únicas.
+  function mc(
+    level: number,
+    prompt: string,
+    promptEn: string,
+    procedureNote: string,
+    procedureNoteEn: string,
+    correct: string,
+    wrongs: Wrong[],
+  ): SeedExercise {
+    const options = [
+      { label: correct, isCorrect: true },
+      ...wrongs.map(([label, c]) => ({ label, isCorrect: false, errorTypeId: code(c) })),
+    ];
+    if (options.length !== 4 || new Set(options.map((o) => o.label)).size !== 4) {
+      throw new Error(`grade3: opciones inválidas en "${prompt}"`);
+    }
+    return { prompt, promptEn, procedureNote, procedureNoteEn, difficultyLevel: level, visual: null, options };
+  }
+
+  /// Ejercicio numérico: completa hasta 3 distractores con los candidatos dados,
+  /// descartando repetidos y la respuesta correcta.
+  function numeric(
+    level: number,
+    prompt: string,
+    promptEn: string,
+    note: string,
+    noteEn: string,
+    answer: number,
+    candidates: Array<[number, Code]>,
+    fmt: (n: number) => string = fmtEs,
+  ): SeedExercise {
+    const seen = new Set<number>([answer]);
+    const wrongs: Wrong[] = [];
+    for (const [n, c] of candidates) {
+      if (n <= 0 || seen.has(n)) continue;
+      seen.add(n);
+      wrongs.push([fmt(n), c]);
+      if (wrongs.length === 3) break;
+    }
+    return mc(level, prompt, promptEn, note, noteEn, fmt(answer), wrongs);
+  }
+
+  // Candidatos típicos por operación.
+  const addCands = (a: number, b: number, extra: Array<[number, Code]> = []): Array<[number, Code]> => {
+    const s = a + b;
+    return [...extra, [Math.abs(a - b), "E1_OP"], [noCarry(a, b), "E2_RES"], [s + 10, "E2_CAL"], [s - 10, "E2_CAL"], [s + 1, "E2_CAL"]];
+  };
+  const subCands = (a: number, b: number, extra: Array<[number, Code]> = []): Array<[number, Code]> => {
+    const d = a - b;
+    return [...extra, [a + b, "E1_OP"], [noBorrow(a, b), "E2_RES"], [d + 10, "E2_CAL"], [d - 10, "E2_CAL"], [d + 1, "E2_CAL"]];
+  };
+  const mulCands = (a: number, b: number): Array<[number, Code]> => [[a + b, "E1_OP"], [a * b + a, "E2_CAL"], [a * b - b, "E2_CAL"]];
+  const divCands = (a: number, b: number): Array<[number, Code]> => [[a - b, "E1_OP"], [a / b + 1, "E2_CAL"], [a / b - 1, "E2_CAL"]];
+
+  const blocks: SkillBlock[] = [];
+
+  // === Números y operaciones — MA03 OA05: valor posicional hasta 1.000 ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "Valor posicional: unidades, decenas y centenas",
+      nameEn: "Place value: ones, tens and hundreds",
+      oaCode: "MA03 OA05",
+    },
+    [
+      mc(1, "En el número 372, ¿qué dígito está en el lugar de las centenas?",
+        "In the number 372, which digit is in the hundreds place?",
+        "Las centenas son el lugar que está más a la izquierda en un número de tres cifras.",
+        "The hundreds are the leftmost place in a three-digit number.",
+        "3", [["7", "E2_RES"], ["2", "E2_RES"], ["300", "E1_OP"]]),
+      mc(1, "¿Qué número se forma con 4 centenas, 5 decenas y 8 unidades?",
+        "Which number is made with 4 hundreds, 5 tens and 8 ones?",
+        "Escribe cada cantidad en su lugar: centenas a la izquierda, luego decenas y al final unidades.",
+        "Write each amount in its place: hundreds on the left, then tens, and ones last.",
+        "458", [["485", "E2_RES"], ["548", "E2_RES"], ["17", "E1_OP"]]),
+      mc(1, "En el número 806, ¿qué dígito está en el lugar de las decenas?",
+        "In the number 806, which digit is in the tens place?",
+        "Mira el dígito que está justo a la izquierda de las unidades.",
+        "Look at the digit just to the left of the ones.",
+        "0", [["8", "E2_RES"], ["6", "E2_RES"], ["80", "E1_OP"]]),
+      mc(2, "¿Cuál es el valor del dígito 6 en el número 762?",
+        "What is the value of the digit 6 in the number 762?",
+        "Primero ubica en qué lugar está el 6 (centenas, decenas o unidades) y luego di cuánto vale en ese lugar.",
+        "First find which place the 6 is in (hundreds, tens or ones), then say how much it is worth there.",
+        "60", [["6", "E1_OP"], ["600", "E2_RES"], ["62", "E2_CAL"]]),
+      mc(2, "¿Qué número es 700 + 20 + 5?",
+        "Which number is 700 + 20 + 5?",
+        "Cada sumando aporta a un lugar distinto: centenas, decenas y unidades.",
+        "Each addend goes to a different place: hundreds, tens and ones.",
+        "725", [["752", "E2_RES"], ["7.205", "E2_RES"], ["745", "E2_CAL"]]),
+      mc(2, "¿Cuál es el número que tiene 5 centenas y 6 unidades?",
+        "Which number has 5 hundreds and 6 ones?",
+        "Si no hay decenas, ese lugar se llena con un cero para no cambiar el valor de los demás dígitos.",
+        "If there are no tens, that place is filled with a zero so the other digits keep their value.",
+        "506", [["56", "E2_RES"], ["560", "E2_RES"], ["11", "E1_OP"]]),
+      mc(2, "¿Cuál es la descomposición correcta del número 638?",
+        "Which is the correct expanded form of the number 638?",
+        "Cada dígito vale según el lugar donde está: el primero vale centenas, el segundo decenas y el último unidades.",
+        "Each digit's value depends on its place: the first is hundreds, the second tens and the last ones.",
+        "600 + 30 + 8", [["600 + 3 + 8", "E2_RES"], ["60 + 30 + 8", "E2_RES"], ["6 + 3 + 8", "E1_OP"]]),
+      mc(3, "Ana anotó un número con 7 unidades, 4 centenas y 9 decenas. ¿Qué número anotó?",
+        "Ana wrote a number with 7 ones, 4 hundreds and 9 tens. Which number did she write?",
+        "El enunciado no da los datos en orden. Ordénalos de mayor a menor lugar antes de escribir el número.",
+        "The problem does not give the places in order. Sort them from the biggest place to the smallest before writing the number.",
+        "497", [["749", "E2_RES"], ["479", "E2_RES"], ["20", "E1_OP"]]),
+      mc(3, "Tomás dice: «En mi número el 3 vale 300 y el 8 vale 80». Su número tiene tres cifras y termina en 1. ¿Cuál es?",
+        "Tomás says: \"In my number the 3 is worth 300 and the 8 is worth 80.\" His number has three digits and ends in 1. Which is it?",
+        "Si el 3 vale 300 está en las centenas. Usa el valor del 8 para saber en qué lugar va, y el último dígito son las unidades.",
+        "If the 3 is worth 300 it is in the hundreds. Use the value of the 8 to find its place; the last digit is the ones.",
+        "381", [["831", "E2_RES"], ["318", "E2_RES"], ["81", "E3_DATO"]]),
+      mc(3, "En una dulcería hay bolsas de 100 caramelos, paquetes de 10 y caramelos sueltos. Para tener 234 caramelos, ¿qué se necesita?",
+        "A candy shop has bags of 100 candies, packs of 10 and loose candies. To have 234 candies, what is needed?",
+        "Cada bolsa es una centena, cada paquete una decena y cada caramelo suelto una unidad. Mira cada dígito del número.",
+        "Each bag is a hundred, each pack a ten and each loose candy a one. Look at each digit of the number.",
+        "2 bolsas, 3 paquetes y 4 sueltos",
+        [["4 bolsas, 3 paquetes y 2 sueltos", "E2_RES"], ["3 bolsas, 2 paquetes y 4 sueltos", "E2_RES"], ["2 bolsas, 3 paquetes y 40 sueltos", "E2_RES"]]),
+    ],
+  ));
+
+  // === Números y operaciones — MA03 OA06: adición y sustracción hasta 1.000 ===
+  const reagrupaSuma = "Suma por columnas: unidades, luego decenas, luego centenas. Si una columna pasa de 9, lleva 1 a la columna de la izquierda.";
+  const reagrupaSumaEn = "Add by columns: ones, then tens, then hundreds. If a column goes over 9, carry 1 to the column on the left.";
+  const reagrupaResta = "Resta por columnas empezando por las unidades. Si no alcanza, canjea una decena (o una centena) de la columna de la izquierda.";
+  const reagrupaRestaEn = "Subtract by columns starting with the ones. If there is not enough, trade one ten (or one hundred) from the column on the left.";
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "Adición y sustracción hasta 1.000",
+      nameEn: "Addition and subtraction within 1,000",
+      oaCode: "MA03 OA06",
+    },
+    [
+      numeric(1, "¿Cuánto es 243 + 125?", "What is 243 + 125?",
+        "Suma las unidades, luego las decenas y luego las centenas. En este caso ninguna columna pasa de 9.",
+        "Add the ones, then the tens, then the hundreds. Here no column goes over 9.",
+        243 + 125, addCands(243, 125)),
+      numeric(1, "¿Cuánto es 685 − 243?", "What is 685 − 243?",
+        "Resta las unidades, luego las decenas y luego las centenas. En cada columna el número de arriba es mayor.",
+        "Subtract the ones, then the tens, then the hundreds. In each column the top number is bigger.",
+        685 - 243, subCands(685, 243)),
+      numeric(1, "¿Cuánto es 512 + 346?", "What is 512 + 346?",
+        "Suma las unidades, luego las decenas y luego las centenas. En este caso ninguna columna pasa de 9.",
+        "Add the ones, then the tens, then the hundreds. Here no column goes over 9.",
+        512 + 346, addCands(512, 346)),
+      numeric(2, "¿Cuánto es 258 + 167?", "What is 258 + 167?", reagrupaSuma, reagrupaSumaEn, 258 + 167, addCands(258, 167)),
+      numeric(2, "¿Cuánto es 346 + 289?", "What is 346 + 289?", reagrupaSuma, reagrupaSumaEn, 346 + 289, addCands(346, 289)),
+      numeric(2, "¿Cuánto es 604 − 278?", "What is 604 − 278?", reagrupaResta, reagrupaRestaEn, 604 - 278, subCands(604, 278)),
+      numeric(2, "¿Cuánto es 452 − 187?", "What is 452 − 187?", reagrupaResta, reagrupaRestaEn, 452 - 187, subCands(452, 187)),
+      numeric(3, "En la feria del colegio se vendieron 385 bebidas el sábado y 279 el domingo. ¿Cuántas bebidas se vendieron en total?",
+        "At the school fair, 385 drinks were sold on Saturday and 279 on Sunday. How many drinks were sold in total?",
+        "Vender el sábado y el domingo son cantidades que se juntan. Suma por columnas y reagrupa cuando haga falta.",
+        "Saturday and Sunday sales are amounts you put together. Add by columns and regroup when needed.",
+        385 + 279, addCands(385, 279, [[385, "E3_DATO"]])),
+      numeric(3, "Una biblioteca tenía 800 libros y prestó 356. ¿Cuántos libros quedan en la biblioteca?",
+        "A library had 800 books and lent out 356. How many books are left in the library?",
+        "Prestar es quitar. Para restar desde 800 tendrás que canjear una centena y luego una decena.",
+        "Lending means taking away. To subtract from 800 you will have to trade a hundred and then a ten.",
+        800 - 356, subCands(800, 356, [[356, "E3_PREG"]])),
+      numeric(3, "Camila tiene $470 y Diego tiene $285. ¿Cuánto dinero tienen entre los dos?",
+        "Camila has 470 pesos and Diego has 285 pesos. How much money do they have together?",
+        "Entre los dos significa juntar el dinero de ambos. Suma por columnas y lleva cuando una columna pase de 9.",
+        "Together means putting both amounts of money together. Add by columns and carry when a column goes over 9.",
+        470 + 285, addCands(470, 285, [[470, "E3_DATO"]]), money),
+      mc(3, "Sofía tenía 250 stickers. Le regalaron 175 y después regaló 90 a su prima. ¿Cuántos stickers tiene ahora?",
+        "Sofía had 250 stickers. She was given 175 and then gave 90 to her cousin. How many stickers does she have now?",
+        "Hay dos pasos. Primero decide qué pasa con los stickers cuando le regalan y luego qué pasa cuando ella regala.",
+        "There are two steps. First decide what happens to the stickers when she is given some, then what happens when she gives some away.",
+        fmtEs(250 + 175 - 90), [[fmtEs(250 + 175), "E3_PREG"], [fmtEs(250 + 175 + 90), "E1_OP"], [fmtEs(250 + 175 - 90 + 10), "E2_CAL"]]),
+    ],
+  ));
+
+  // === Números y operaciones — MA03 OA08: tablas de multiplicar hasta 10 ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "Tablas de multiplicar hasta el 10",
+      nameEn: "Multiplication tables up to 10",
+      oaCode: "MA03 OA08",
+    },
+    [
+      numeric(1, "¿Cuánto es 6 × 7?", "What is 6 × 7?",
+        "Piensa en 6 grupos de 7 objetos, o usa lo que sabes de la tabla del 6.",
+        "Think of 6 groups of 7 objects, or use what you know from the 6 times table.",
+        42, mulCands(6, 7)),
+      numeric(1, "¿Cuánto es 8 × 4?", "What is 8 × 4?",
+        "Piensa en 8 grupos de 4 objetos, o en 4 grupos de 8.",
+        "Think of 8 groups of 4 objects, or of 4 groups of 8.",
+        32, mulCands(8, 4)),
+      mc(1, "¿Cuánto es 4 + 4 + 4 + 4 + 4 + 4? Puedes ayudarte con una multiplicación.",
+        "What is 4 + 4 + 4 + 4 + 4 + 4? You can use a multiplication to help you.",
+        "Cuenta cuántas veces se repite el mismo sumando y usa la tabla de ese número.",
+        "Count how many times the same addend repeats and use that number's times table.",
+        "24", [["10", "E1_OP"], ["20", "E3_DATO"], ["28", "E2_CAL"]]),
+      numeric(2, "¿Cuánto es 9 × 6?", "What is 9 × 6?",
+        "Puedes pensar en 10 × 6 y quitar un grupo de 6.",
+        "You can think of 10 × 6 and take away one group of 6.",
+        54, mulCands(9, 6)),
+      mc(2, "¿Qué número falta? 8 × □ = 56",
+        "Which number is missing? 8 × □ = 56",
+        "Piensa en la tabla del 8: ¿por qué número hay que multiplicar el 8 para llegar a ese resultado?",
+        "Think of the 8 times table: what number do you multiply 8 by to reach that result?",
+        "7", [["64", "E1_OP"], ["48", "E1_OP"], ["6", "E2_CAL"]]),
+      mc(2, "¿Cuál de estas multiplicaciones da el mismo resultado que 3 × 8?",
+        "Which of these multiplications gives the same result as 3 × 8?",
+        "Piensa en cambiar el orden de los factores: ¿cambia el total de objetos si armas los grupos al revés?",
+        "Think about swapping the factors: does the total number of objects change if you make the groups the other way round?",
+        "8 × 3", [["3 + 8", "E1_OP"], ["3 × 9", "E2_CAL"], ["2 × 8", "E2_CAL"]]),
+      mc(2, "Sabes que 5 × 6 = 30. ¿Cuánto es 6 × 6?",
+        "You know that 5 × 6 = 30. What is 6 × 6?",
+        "6 × 6 es un grupo de 6 más que 5 × 6. Suma ese grupo al resultado que ya conoces.",
+        "6 × 6 is one more group of 6 than 5 × 6. Add that group to the result you already know.",
+        "36", [["30", "E3_DATO"], ["12", "E1_OP"], ["35", "E2_CAL"]]),
+      numeric(3, "En un curso hay 7 mesas y en cada una se sientan 4 estudiantes. ¿Cuántos estudiantes hay en total?",
+        "In a class there are 7 tables and 4 students sit at each one. How many students are there in total?",
+        "Hay grupos iguales de estudiantes. Multiplica el número de grupos por cuántos hay en cada grupo.",
+        "There are equal groups of students. Multiply the number of groups by how many are in each group.",
+        28, [[11, "E1_OP"], [24, "E2_CAL"], [35, "E2_CAL"]]),
+      numeric(3, "Cada paquete trae 8 galletas. Si compras 6 paquetes, ¿cuántas galletas tienes?",
+        "Each pack has 8 cookies. If you buy 6 packs, how many cookies do you have?",
+        "Son 6 grupos iguales de galletas. Puedes sumar 8 varias veces o usar la tabla del 8.",
+        "There are 6 equal groups of cookies. You can add 8 several times or use the 8 times table.",
+        48, [[14, "E1_OP"], [42, "E2_CAL"], [56, "E2_CAL"]]),
+      numeric(3, "Un álbum tiene 9 páginas con 6 fotos cada una, todas llenas. Ya tienes 20 fotos pegadas. ¿Cuántas fotos faltan por pegar?",
+        "An album has 9 pages with 6 photos on each one, all full. You have already stuck in 20 photos. How many photos are left to stick in?",
+        "Hay dos pasos: primero averigua cuántas fotos caben en todo el álbum y luego cuántas faltan para llenarlo.",
+        "There are two steps: first find how many photos fit in the whole album, then how many are missing to fill it.",
+        9 * 6 - 20, [[9 * 6, "E3_PREG"], [9 * 6 + 20, "E1_OP"], [9 * 6 - 20 + 1, "E2_CAL"]]),
+
+      // === Movimiento: multiplicar dando saltos repetidos de la tabla ===
+      mc(1, "Si saltas de 4 en 4 y das 5 saltos partiendo del 0, ¿en qué número quedas?",
+        "If you jump by 4s and take 5 jumps starting from 0, which number do you land on?",
+        "Cada salto de 4 en 4 es un grupo más de 4. Cuenta de 4 en 4 tantas veces como saltos des, o usa la tabla del 4.",
+        "Each jump of 4 is one more group of 4. Count by 4s as many times as the jumps you take, or use the 4 times table.",
+        "20", [["9", "E1_OP"], ["16", "E2_CAL"], ["24", "E2_CAL"]]),
+      mc(2, "Un canguro da saltos de 6 en 6 desde el número 0. Si da 5 saltos, ¿en qué número queda?",
+        "A kangaroo takes jumps of 6 from number 0. If it takes 5 jumps, which number is it on?",
+        "Cada salto de 6 en 6 es un grupo más de 6. Cuenta de 6 en 6 tantas veces como saltos dé el canguro, o usa la tabla del 6.",
+        "Each jump of 6 is one more group of 6. Count by 6s as many times as the kangaroo's jumps, or use the 6 times table.",
+        "30", [["11", "E1_OP"], ["24", "E2_CAL"], ["36", "E2_CAL"]]),
+      mc(3, "Un grillo salta de 8 en 8 desde el número 0 y llega justo al número 56. ¿Cuántos saltos dio?",
+        "A cricket jumps by 8s from number 0 and lands exactly on number 56. How many jumps did it take?",
+        "Piensa: ¿cuántas veces tienes que contar de 8 en 8 para llegar a ese número? Usa la tabla del 8.",
+        "Think: how many times do you have to count by 8s to reach that number? Use the 8 times table.",
+        "7", [["63", "E1_OP"], ["6", "E2_CAL"], ["8", "E2_CAL"]]),
+    ],
+  ));
+
+  // === Números y operaciones — MA03 OA09: división en el contexto de las tablas ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "División como reparto y agrupación",
+      nameEn: "Division as sharing and grouping",
+      oaCode: "MA03 OA09",
+    },
+    [
+      numeric(1, "¿Cuánto es 42 ÷ 6?", "What is 42 ÷ 6?",
+        "Pregúntate: ¿por qué número multiplico el 6 para llegar a ese resultado? La división y la multiplicación se ayudan.",
+        "Ask yourself: what number do I multiply 6 by to reach that result? Division and multiplication help each other.",
+        7, divCands(42, 6)),
+      numeric(1, "¿Cuánto es 48 ÷ 8?", "What is 48 ÷ 8?",
+        "Pregúntate: ¿cuántas veces cabe el 8 en ese número? Usa la tabla del 8.",
+        "Ask yourself: how many times does 8 fit in that number? Use the 8 times table.",
+        6, divCands(48, 8)),
+      mc(1, "Reparte 20 lápices en partes iguales entre 4 niños. ¿Cuántos lápices recibe cada niño?",
+        "Share 20 pencils equally among 4 children. How many pencils does each child get?",
+        "Repartir en partes iguales es dividir. Piensa cuántos lápices le tocan a cada uno si vas dando uno por vuelta.",
+        "Sharing equally is dividing. Think how many pencils each one gets if you hand out one per round.",
+        "5", [["16", "E1_OP"], ["80", "E1_OP"], ["4", "E3_PREG"]]),
+      mc(2, "¿Qué multiplicación te ayuda a resolver 56 ÷ 7?",
+        "Which multiplication helps you solve 56 ÷ 7?",
+        "Dividir es lo contrario de multiplicar. Busca la multiplicación que tiene el 7 y llega al número que se reparte.",
+        "Dividing is the opposite of multiplying. Look for the multiplication that has the 7 and reaches the number being shared.",
+        "7 × 8", [["7 + 8", "E1_OP"], ["7 × 9", "E2_CAL"], ["56 × 7", "E1_OP"]]),
+      numeric(2, "¿Cuánto es 63 ÷ 9?", "What is 63 ÷ 9?",
+        "Piensa en la tabla del 9: ¿cuántas veces cabe el 9 en ese número?",
+        "Think of the 9 times table: how many times does 9 fit in that number?",
+        7, divCands(63, 9)),
+      mc(2, "¿Qué número falta? 72 ÷ □ = 9",
+        "Which number is missing? 72 ÷ □ = 9",
+        "Piensa en la tabla del 9: ¿qué número multiplicado por 9 da 72?",
+        "Think of the 9 times table: which number times 9 gives 72?",
+        "8", [["63", "E1_OP"], ["81", "E1_OP"], ["7", "E2_CAL"]]),
+      mc(2, "Si a 18 le restas 3 una y otra vez hasta llegar a 0, ¿cuántas veces restaste 3?",
+        "If you keep subtracting 3 from 18 until you reach 0, how many times did you subtract 3?",
+        "Restar el mismo número muchas veces es una división. Ve restando y lleva la cuenta de cuántas veces lo haces.",
+        "Subtracting the same number many times is a division. Keep subtracting and count how many times you do it.",
+        "6", [["15", "E1_OP"], ["21", "E1_OP"], ["5", "E2_CAL"]]),
+      mc(3, "Hay 30 estudiantes que se juntan en equipos de 5. ¿Cuántos equipos se forman?",
+        "There are 30 students who form teams of 5. How many teams are made?",
+        "Pregunta cuántos grupos salen, no cuántos hay en cada uno. ¿Cuántas veces cabe 5 en 30?",
+        "The question asks how many groups there are, not how many are in each. How many times does 5 fit in 30?",
+        "6", [["35", "E1_OP"], ["25", "E1_OP"], ["5", "E3_PREG"]]),
+      mc(3, "Una cinta de 45 cm se corta en trozos de 9 cm cada uno. ¿Cuántos trozos salen?",
+        "A 45 cm ribbon is cut into pieces of 9 cm each. How many pieces are made?",
+        "Piensa en cuántas veces cabe el largo de un trozo en la cinta completa. Puedes usar la tabla del 9.",
+        "Think how many times the length of one piece fits in the whole ribbon. You can use the 9 times table.",
+        "5", [["54", "E1_OP"], ["36", "E1_OP"], ["4", "E2_CAL"]]),
+      mc(3, "Se reparten 32 caramelos en partes iguales entre 4 amigos y luego cada uno regala 3. ¿Cuántos caramelos le quedan a cada amigo?",
+        "32 candies are shared equally among 4 friends and then each one gives away 3. How many candies does each friend have left?",
+        "Hay dos pasos. Primero averigua cuántos caramelos recibe cada amigo y luego resta lo que regala.",
+        "There are two steps. First find how many candies each friend gets, then subtract what they give away.",
+        "5", [["8", "E3_PREG"], ["11", "E1_OP"], ["29", "E3_DATO"]]),
+      numeric(3, "Ocho cuadernos iguales cuestan $72 en total. ¿Cuánto cuesta cada cuaderno?",
+        "Eight identical notebooks cost 72 pesos in total. How much does each notebook cost?",
+        "Reparte el precio total en partes iguales, una por cada cuaderno. Usa la tabla del 8.",
+        "Split the total price into equal parts, one for each notebook. Use the 8 times table.",
+        9, [[80, "E1_OP"], [64, "E1_OP"], [8, "E3_PREG"]], money),
+
+      // === Movimiento: dividir dando saltos hacia atrás del mismo tamaño ===
+      mc(1, "Estás en el número 24 y das saltos hacia atrás de 4 en 4 hasta llegar al 0. ¿Cuántos saltos diste?",
+        "You are at number 24 and take jumps backward of 4 until you reach 0. How many jumps did you take?",
+        "Cada salto hacia atrás de 4 en 4 es como restar un grupo de 4. Cuenta cuántas veces restas 4 hasta llegar a 0, o usa la tabla del 4.",
+        "Each backward jump of 4 is like subtracting one group of 4. Count how many times you subtract 4 to reach 0, or use the 4 times table.",
+        "6", [["28", "E1_OP"], ["5", "E2_CAL"], ["7", "E2_CAL"]]),
+      mc(2, "Estás en el número 45 y das saltos hacia atrás de 5 en 5 hasta llegar al 0. ¿Cuántos saltos diste?",
+        "You are at number 45 and take jumps backward of 5 until you reach 0. How many jumps did you take?",
+        "Cada salto hacia atrás de 5 en 5 es como restar un grupo de 5. Cuenta cuántas veces restas 5 hasta llegar a 0.",
+        "Each backward jump of 5 is like subtracting one group of 5. Count how many times you subtract 5 to reach 0.",
+        "9", [["50", "E1_OP"], ["8", "E2_CAL"], ["10", "E2_CAL"]]),
+      mc(3, "Un sapo está en el número 63 y quiere llegar al 0 dando saltos hacia atrás, todos del mismo tamaño. Si da exactamente 9 saltos, ¿de cuánto en cuánto salta?",
+        "A frog is at number 63 and wants to reach 0 by taking jumps backward, all the same size. If it takes exactly 9 jumps, how big is each jump?",
+        "Piensa qué número multiplicado por 9 te da 63. Ese es el tamaño de cada salto.",
+        "Think about what number times 9 gives 63. That is the size of each jump.",
+        "7", [["54", "E1_OP"], ["6", "E2_CAL"], ["8", "E2_CAL"]]),
+    ],
+  ));
+
+  // === Números y operaciones — MA03 OA11: fracciones de uso común ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+      nameEn: "Common fractions: 1/4, 1/3, 1/2, 2/3 and 3/4",
+      oaCode: "MA03 OA11",
+    },
+    [
+      mc(1, "Una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
+        "A pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?",
+        "El número de abajo dice en cuántas partes iguales se cortó el entero, y el de arriba cuántas partes tomaste.",
+        "The bottom number says how many equal parts the whole was cut into, and the top one how many parts you took.",
+        "1/4", [["3/4", "E3_PREG"], ["4/1", "E2_RES"], ["1/2", "E1_OP"]]),
+      mc(1, "Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?",
+        "A chocolate bar is divided into 3 equal parts. What fraction of the bar is one of those parts?",
+        "Escribe arriba cuántas partes tomas y abajo en cuántas partes iguales se dividió la barra.",
+        "Write on top how many parts you take and on the bottom how many equal parts the bar was divided into.",
+        "1/3", [["3/1", "E2_RES"], ["1/2", "E2_CAL"], ["2/3", "E1_OP"]]),
+      mc(1, "En la fracción 3/4, ¿qué indica el número 4?",
+        "In the fraction 3/4, what does the number 4 tell you?",
+        "En una fracción, el número de abajo se llama denominador. Piensa en cómo se dividió el entero.",
+        "In a fraction, the bottom number is called the denominator. Think about how the whole was divided.",
+        "En cuántas partes iguales se dividió el entero",
+        [["Cuántas partes se toman", "E1_OP"], ["Cuántas partes sobran", "E1_OP"], ["Cuántos enteros hay", "E3_PREG"]]),
+      mc(2, "Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?",
+        "3 of the 4 equal parts of a wall are painted. What fraction of the wall is painted?",
+        "Pregúntate qué te piden: la parte pintada. Arriba va lo pintado y abajo el total de partes iguales.",
+        "Ask yourself what is being asked: the painted part. Put the painted parts on top and the total equal parts on the bottom.",
+        "3/4", [["4/3", "E2_RES"], ["1/4", "E3_PREG"], ["3/7", "E1_OP"]]),
+      mc(2, "Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+        "A rope is cut into 3 equal parts and 2 are used. What fraction of the rope was used?",
+        "Arriba va lo que se usó y abajo el total de partes iguales en que se cortó la cuerda.",
+        "Put what was used on top and the total equal parts the rope was cut into on the bottom.",
+        "2/3", [["3/2", "E2_RES"], ["1/3", "E3_PREG"], ["2/5", "E1_OP"]]),
+      mc(2, "¿Cuál de estas fracciones es la mayor?",
+        "Which of these fractions is the biggest?",
+        "Imagina cada fracción en un pastel entero: ¿en cuántas partes iguales se corta y cuántas partes tomas? Compara cuánto pastel es en cada caso.",
+        "Picture each fraction on a whole cake: how many equal parts is it cut into and how many parts do you take? Compare how much cake it is in each case.",
+        "3/4", [["1/4", "E1_OP"], ["1/2", "E1_OP"], ["1/3", "E2_CAL"]]),
+      mc(2, "Dos figuras iguales se colorean: Marta pinta 2 de 3 partes iguales de la suya y Luis pinta 1 de 3 partes iguales de la otra. ¿Quién coloreó más?",
+        "Two identical shapes are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?",
+        "Las dos figuras están divididas en partes del mismo tamaño. Compara cuántas partes pintó cada uno.",
+        "Both shapes are divided into parts of the same size. Compare how many parts each one painted.",
+        "Marta", [["Luis", "E1_OP"], ["Los dos igual", "E1_OP"], ["2/3", "E3_PREG"]]),
+      mc(3, "Una tableta de chocolate tiene 4 barras iguales. Ema come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
+        "A chocolate bar has 4 equal pieces. Ema eats 1 piece and gives away 2. What fraction of the chocolate bar is left?",
+        "Primero averigua cuántas barras le quedan después de comer y regalar. Luego escribe esa cantidad sobre el total de barras.",
+        "First find how many pieces are left after eating and giving away. Then write that amount over the total number of pieces.",
+        "1/4", [["3/4", "E3_PREG"], ["2/4", "E3_DATO"], ["1/3", "E2_CAL"]]),
+      mc(3, "Una jarra se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la jarra tomaron entre los dos?",
+        "A jug is divided into 3 equal parts. Vicente takes 1 part and Ana takes 1 part. What fraction of the jug did they take together?",
+        "Las partes siguen siendo del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió la jarra.",
+        "The parts are still the same size. Put together the parts they took and do not change how many parts the jug was divided into.",
+        "2/3", [["1/3", "E3_DATO"], ["2/6", "E1_OP"], ["3/3", "E2_CAL"]]),
+      mc(3, "Una cinta se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?",
+        "A ribbon is cut into 4 equal parts. Ema uses 3 parts and Leo uses 2 parts. Who used more ribbon and what fraction did they use?",
+        "Todas las partes son del mismo tamaño, así que usa más cinta quien toma más partes. Luego escribe cuántas partes tomó sobre el total.",
+        "All the parts are the same size, so whoever takes more parts uses more ribbon. Then write how many parts they took over the total.",
+        "Ema, 3/4", [["Leo, 2/4", "E1_OP"], ["Ema, 4/3", "E2_RES"], ["Leo, 3/4", "E3_DATO"]]),
+    ],
+  ));
+
+  // === Patrones y álgebra — MA03 OA12: patrones numéricos ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Patrones y álgebra",
+      axisEn: "Patterns and Algebra",
+      name: "Patrones numéricos que crecen y decrecen",
+      nameEn: "Increasing and decreasing number patterns",
+      oaCode: "MA03 OA12",
+    },
+    [
+      mc(1, "¿Qué número sigue? 5, 10, 15, 20, …",
+        "Which number comes next? 5, 10, 15, 20, …",
+        "Mira cuánto aumenta de un número al siguiente y repite ese salto una vez más.",
+        "Look at how much it grows from one number to the next and repeat that jump once more.",
+        "25", [["30", "E2_CAL"], ["21", "E1_OP"], ["40", "E1_OP"]]),
+      mc(1, "¿Qué número sigue? 100, 90, 80, 70, …",
+        "Which number comes next? 100, 90, 80, 70, …",
+        "Este patrón baja. Fíjate cuánto baja cada vez y aplica lo mismo al último número.",
+        "This pattern goes down. Notice how much it drops each time and apply the same drop to the last number.",
+        "60", [["50", "E2_CAL"], ["71", "E1_OP"], ["110", "E1_OP"]]),
+      mc(1, "¿Qué número falta? 2, 4, 6, □, 10",
+        "Which number is missing? 2, 4, 6, □, 10",
+        "Mira cuánto crece el patrón entre los números que ya están.",
+        "Look at how much the pattern grows between the numbers already there.",
+        "8", [["7", "E1_OP"], ["9", "E2_CAL"], ["12", "E2_CAL"]]),
+      mc(2, "¿Cuál es la regla de este patrón? 25, 50, 75, 100, …",
+        "What is the rule of this pattern? 25, 50, 75, 100, …",
+        "Calcula la diferencia entre dos números seguidos y comprueba que sea la misma en todo el patrón.",
+        "Work out the difference between two consecutive numbers and check that it is the same throughout the pattern.",
+        "Sumar 25", [["Sumar 50", "E2_CAL"], ["Restar 25", "E1_OP"], ["Multiplicar por 2", "E1_OP"]]),
+      mc(2, "¿Qué número sigue? 3, 6, 9, 12, 15, …",
+        "Which number comes next? 3, 6, 9, 12, 15, …",
+        "Observa cuánto crece el patrón cada vez. Es como contar de tres en tres.",
+        "Notice how much the pattern grows each time. It is like counting by threes.",
+        "18", [["17", "E1_OP"], ["20", "E2_CAL"], ["16", "E2_CAL"]]),
+      mc(2, "En una tabla del 100 pintas los números 5, 15, 25 y 35. ¿Qué número pintas después?",
+        "On a 100 chart you color the numbers 5, 15, 25 and 35. Which number do you color next?",
+        "Mira cuánto avanza cada vez. En la tabla del 100 también puedes seguir la misma columna hacia abajo.",
+        "Look at how far it moves each time. On the 100 chart you can also follow the same column downwards.",
+        "45", [["40", "E2_CAL"], ["36", "E1_OP"], ["55", "E2_CAL"]]),
+      mc(2, "¿Qué número falta? 200, 300, □, 500, 600",
+        "Which number is missing? 200, 300, □, 500, 600",
+        "Fíjate cuánto crece el patrón entre los números conocidos y aplícalo al lugar vacío.",
+        "Notice how much the pattern grows between the known numbers and apply it to the empty spot.",
+        "400", [["350", "E2_CAL"], ["401", "E1_OP"], ["450", "E2_CAL"]]),
+      numeric(3, "Bruno ahorra $100 el lunes, $200 el martes, $300 el miércoles y así sigue. ¿Cuánto ahorra el viernes?",
+        "Bruno saves 100 pesos on Monday, 200 pesos on Tuesday, 300 pesos on Wednesday and it keeps going. How much does he save on Friday?",
+        "Encuentra cuánto aumenta cada día y sigue el patrón día por día hasta llegar al viernes.",
+        "Find how much it goes up each day and follow the pattern day by day until you reach Friday.",
+        500, [[400, "E3_DATO"], [600, "E2_CAL"], [1500, "E1_OP"]], money),
+      mc(3, "Una planta mide 10 cm y crece 5 cm cada semana. ¿Cuánto mide después de 4 semanas?",
+        "A plant is 10 cm tall and grows 5 cm each week. How tall is it after 4 weeks?",
+        "Cada semana se suma la misma cantidad a la altura. Ve semana por semana y no olvides la altura con que empezó.",
+        "Each week the same amount is added to the height. Go week by week and do not forget the height it started with.",
+        "30 cm", [["40 cm", "E1_OP"], ["25 cm", "E2_CAL"], ["20 cm", "E3_DATO"]]),
+      mc(3, "Un patrón empieza en 50 y baja de 5 en 5: 50, 45, 40, … ¿Cuál es el sexto número del patrón?",
+        "A pattern starts at 50 and goes down by 5 each time: 50, 45, 40, … What is the sixth number in the pattern?",
+        "Escribe los números uno por uno, contando cada posición, hasta llegar al sexto lugar.",
+        "Write the numbers one by one, counting each position, until you reach the sixth place.",
+        "25", [["20", "E2_CAL"], ["30", "E2_CAL"], ["55", "E1_OP"]]),
+
+      // === Movimiento: patrones numéricos dando saltos ===
+      mc(1, "Un niño salta de 3 en 3 empezando en el número 2: 2, 5, 8, 11, … Si sigue el mismo patrón, ¿qué número sigue?",
+        "A boy jumps by 3s starting at number 2: 2, 5, 8, 11, … If he keeps the same pattern, which number comes next?",
+        "Mira cuánto avanza cada salto y suma esa misma cantidad al último número de la lista.",
+        "Look at how much each jump moves forward and add that same amount to the last number in the list.",
+        "14", [["13", "E1_OP"], ["12", "E2_CAL"], ["15", "E2_CAL"]]),
+      mc(2, "Una rana da saltos hacia atrás, siempre del mismo tamaño, y va marcando los números 50, 43, 36, 29, … Si sigue el mismo patrón, ¿qué número sigue?",
+        "A frog takes jumps backward, always the same size, landing on the numbers 50, 43, 36, 29, … If it keeps the same pattern, which number comes next?",
+        "Fíjate cuánto retrocede cada salto y resta esa misma cantidad al último número de la lista.",
+        "Notice how much each jump goes back and subtract that same amount from the last number in the list.",
+        "22", [["23", "E1_OP"], ["21", "E2_CAL"], ["15", "E2_CAL"]]),
+    ],
+  ));
+
+  // === Geometría — MA03 OA15: figuras 3D y redes ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Geometría",
+      axisEn: "Geometry",
+      name: "Figuras 3D, sus caras y sus redes",
+      nameEn: "3D shapes, their faces and nets",
+      oaCode: "MA03 OA15",
+    },
+    [
+      mc(1, "¿Cuántas caras tiene un cubo?",
+        "How many faces does a cube have?",
+        "Las caras son las superficies planas. Imagina un dado y cuenta cada lado.",
+        "Faces are the flat surfaces. Picture a die and count each side.",
+        "6", [["8", "E1_OP"], ["12", "E1_OP"], ["4", "E2_CAL"]]),
+      mc(1, "¿Qué figura 2D forman las caras de un cubo?",
+        "Which 2D shape do the faces of a cube make?",
+        "Mira una cara de un dado: todos sus lados miden lo mismo y tiene cuatro esquinas rectas.",
+        "Look at one face of a die: all its sides are equal and it has four square corners.",
+        "Cuadrados", [["Rectángulos", "E1_OP"], ["Triángulos", "E1_OP"], ["Círculos", "E1_OP"]]),
+      mc(1, "Una lata de atún tiene forma de una figura 3D. ¿Cuál es?",
+        "A can of tuna looks like one of these 3D shapes. Which one?",
+        "Fíjate en que tiene dos bases circulares iguales y un lado curvo que las une.",
+        "Notice it has two equal circular bases and a curved side joining them.",
+        "Cilindro", [["Cono", "E1_OP"], ["Esfera", "E1_OP"], ["Cubo", "E1_OP"]]),
+      mc(2, "¿Cuántos vértices tiene un cubo?",
+        "How many vertices does a cube have?",
+        "Los vértices son las esquinas, donde se juntan las aristas. Cuenta las esquinas de arriba y las de abajo.",
+        "Vertices are the corners, where edges meet. Count the corners on top and the ones on the bottom.",
+        "8", [["6", "E1_OP"], ["12", "E1_OP"], ["4", "E2_CAL"]]),
+      mc(2, "¿Qué figuras 2D forman la red de un cilindro?",
+        "Which 2D shapes make the net of a cylinder?",
+        "Al desplegar el cilindro, las bases quedan planas y el lado curvo se abre como una hoja.",
+        "When you unfold a cylinder, the bases lie flat and the curved side opens up like a sheet of paper.",
+        "2 círculos y 1 rectángulo", [["1 círculo y 1 rectángulo", "E3_DATO"], ["2 círculos y 2 rectángulos", "E2_CAL"], ["6 cuadrados", "E1_OP"]]),
+      mc(2, "Una caja de zapatos es un prisma rectangular. ¿Cuántas caras tiene?",
+        "A shoebox is a rectangular prism. How many faces does it have?",
+        "Cuenta la tapa, el fondo y los lados de la caja.",
+        "Count the lid, the bottom and the sides of the box.",
+        "6", [["4", "E2_CAL"], ["8", "E1_OP"], ["12", "E1_OP"]]),
+      mc(2, "¿Cuántas aristas tiene un cubo?",
+        "How many edges does a cube have?",
+        "Las aristas son los bordes donde se juntan dos caras. Cuenta 4 arriba, 4 abajo y las que unen ambos pisos.",
+        "Edges are the borders where two faces meet. Count those on top, those on the bottom and those joining the two levels.",
+        "12", [["6", "E1_OP"], ["8", "E1_OP"], ["10", "E2_CAL"]]),
+      mc(3, "Beatriz tiene una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
+        "Beatriz has a flat net made of 2 equal circles and 1 rectangle. Which 3D shape does it make when assembled?",
+        "Imagina que doblas el rectángulo formando un tubo y pegas los círculos en los extremos.",
+        "Imagine you roll the rectangle into a tube and stick the circles on the ends.",
+        "Cilindro", [["Cono", "E2_CAL"], ["Cubo", "E1_OP"], ["Prisma rectangular", "E2_RES"]]),
+      mc(3, "Un cubo y una caja de zapatos, ¿qué tienen en común?",
+        "A cube and a shoebox: what do they have in common?",
+        "Compara las esquinas de ambos. Recuerda que una caja de zapatos no siempre tiene caras cuadradas.",
+        "Compare the corners of both. Remember that a shoebox does not always have square faces.",
+        "Los dos tienen 8 vértices",
+        [["Los dos tienen 4 caras", "E2_CAL"], ["Los dos tienen caras curvas", "E1_OP"], ["Todas sus caras son cuadrados", "E1_OP"]]),
+      mc(3, "Lucía tiene 3 dados con forma de cubo. ¿Cuántas caras tienen en total los 3 dados?",
+        "Lucía has 3 cube-shaped dice. How many faces do the 3 dice have in total?",
+        "Primero recuerda cuántas caras tiene un dado. Luego junta las caras de los tres dados.",
+        "First remember how many faces one die has. Then put together the faces of all three dice.",
+        "18", [["6", "E3_PREG"], ["24", "E1_OP"], ["9", "E1_OP"]]),
+    ],
+  ));
+
+  // === Medición — MA03 OA21: perímetro ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Medición",
+      axisEn: "Measurement",
+      name: "Perímetro de cuadrados, rectángulos y otras figuras",
+      nameEn: "Perimeter of squares, rectangles and other shapes",
+      oaCode: "MA03 OA21",
+    },
+    [
+      mc(1, "Un cuadrado tiene lados de 6 cm. ¿Cuál es su perímetro?",
+        "A square has sides of 6 cm. What is its perimeter?",
+        "El perímetro es el largo del contorno. Un cuadrado tiene 4 lados iguales: súmalos todos.",
+        "The perimeter is the length of the outline. A square has 4 equal sides: add them all.",
+        "24 cm", [["36 cm", "E1_OP"], ["12 cm", "E2_RES"], ["18 cm", "E3_DATO"]]),
+      mc(1, "¿Cuál es el perímetro de un rectángulo de 7 cm de largo y 3 cm de ancho?",
+        "What is the perimeter of a rectangle that is 7 cm long and 3 cm wide?",
+        "Un rectángulo tiene dos lados largos y dos lados anchos. Suma el contorno completo.",
+        "A rectangle has two long sides and two short sides. Add the whole outline.",
+        "20 cm", [["21 cm", "E1_OP"], ["10 cm", "E2_RES"], ["13 cm", "E3_DATO"]]),
+      mc(1, "Un triángulo tiene lados de 4 cm, 5 cm y 7 cm. ¿Cuál es su perímetro?",
+        "A triangle has sides of 4 cm, 5 cm and 7 cm. What is its perimeter?",
+        "Para el perímetro se suman las medidas de todos los lados de la figura.",
+        "For the perimeter you add the measures of all the sides of the shape.",
+        "16 cm", [["140 cm", "E1_OP"], ["9 cm", "E3_DATO"], ["15 cm", "E2_CAL"]]),
+      mc(2, "Un terreno rectangular mide 12 m de largo y 8 m de ancho. ¿Cuánto mide su perímetro?",
+        "A rectangular plot is 12 m long and 8 m wide. What is its perimeter?",
+        "Piensa en caminar por todo el borde del terreno: recorres dos veces el largo y dos veces el ancho.",
+        "Think of walking all around the edge of the plot: you walk the length twice and the width twice.",
+        "40 m", [["96 m", "E1_OP"], ["20 m", "E2_RES"], ["28 m", "E3_DATO"]]),
+      mc(2, "El perímetro de un cuadrado es 28 cm. ¿Cuánto mide cada lado?",
+        "The perimeter of a square is 28 cm. How long is each side?",
+        "Los 4 lados del cuadrado son iguales y juntos forman el perímetro. Reparte el perímetro en partes iguales.",
+        "The 4 sides of the square are equal and together they make the perimeter. Divide the perimeter into equal parts.",
+        "7 cm", [["112 cm", "E1_OP"], ["14 cm", "E2_CAL"], ["24 cm", "E1_OP"]]),
+      mc(2, "Un rectángulo tiene un perímetro de 30 cm y su largo mide 10 cm. ¿Cuánto mide su ancho?",
+        "A rectangle has a perimeter of 30 cm and its length is 10 cm. How wide is it?",
+        "Al restar los dos lados largos del perímetro, lo que queda son los dos lados anchos. Luego reparte en partes iguales.",
+        "If you subtract the two long sides from the perimeter, what is left is the two short sides. Then divide it equally.",
+        "5 cm", [["20 cm", "E3_DATO"], ["10 cm", "E2_CAL"], ["15 cm", "E2_RES"]]),
+      mc(2, "Un cuaderno mide 20 cm de largo y 15 cm de ancho. ¿Cuál es su perímetro?",
+        "A notebook is 20 cm long and 15 cm wide. What is its perimeter?",
+        "Suma el largo y el ancho, y recuerda que el contorno los recorre dos veces.",
+        "Add the length and the width, and remember the outline goes along each of them twice.",
+        "70 cm", [["300 cm", "E1_OP"], ["35 cm", "E2_RES"], ["55 cm", "E3_DATO"]]),
+      mc(3, "Don José cercará un jardín cuadrado de 15 m de lado con una reja. ¿Cuántos metros de reja necesita?",
+        "Mr. José will put a fence around a square garden with 15 m sides. How many meters of fence does he need?",
+        "La reja va por todo el contorno del jardín. Piensa cuántos lados tiene un cuadrado.",
+        "The fence goes all around the garden. Think how many sides a square has.",
+        "60 m", [["225 m", "E1_OP"], ["30 m", "E2_RES"], ["45 m", "E3_DATO"]]),
+      mc(3, "Una plaza rectangular mide 40 m de largo y 25 m de ancho. Camila da una vuelta completa caminando por el borde. ¿Cuántos metros camina?",
+        "A rectangular plaza measures 40 m long and 25 m wide. Camila walks once all the way around the edge. How many meters does she walk?",
+        "Una vuelta completa por el borde es el perímetro. Recuerda que hay dos lados largos y dos lados anchos.",
+        "One full lap around the edge is the perimeter. Remember there are two long sides and two short sides.",
+        "130 m", [["1.000 m", "E1_OP"], ["65 m", "E2_RES"], ["105 m", "E3_DATO"]]),
+      mc(3, "Ema da 2 vueltas completas al borde de una cancha rectangular de 30 m por 20 m. ¿Cuántos metros recorrió en total?",
+        "Ema runs 2 full laps around the edge of a rectangular court of 30 m by 20 m. How many meters did she run in total?",
+        "Hay dos pasos: primero calcula cuánto mide una vuelta al borde y luego considera cuántas vueltas dio.",
+        "There are two steps: first work out how long one lap around the edge is, then take into account how many laps she ran.",
+        "200 m", [["100 m", "E3_PREG"], ["1.200 m", "E1_OP"], ["50 m", "E2_RES"]]),
+    ],
+  ));
+
+  // === Datos y probabilidades — MA03 OA25: pictogramas y gráficos de barra ===
+  blocks.push(block(
+    {
+      grade: 3,
+      axis: "Datos y probabilidades",
+      axisEn: "Data and Probability",
+      name: "Pictogramas y gráficos de barra simple",
+      nameEn: "Pictographs and simple bar graphs",
+      oaCode: "MA03 OA25",
+    },
+    [
+      mc(1, "En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?",
+        "In a bar graph of favorite sports, soccer reaches 10, basketball reaches 6 and swimming reaches 4. Which sport do most children prefer?",
+        "La barra más larga es la que representa más niños. Compara hasta dónde llega cada barra.",
+        "The longest bar represents the most children. Compare how far each bar reaches.",
+        "Fútbol", [["Básquetbol", "E1_OP"], ["Natación", "E1_OP"], ["10", "E3_PREG"]]),
+      mc(1, "En un gráfico de barras de frutas, plátano llega hasta 8, manzana hasta 5 y pera hasta 3. ¿Qué fruta tiene la barra más corta?",
+        "In a bar graph of fruits, banana reaches 8, apple reaches 5 and pear reaches 3. Which fruit has the shortest bar?",
+        "Compara hasta dónde llega cada barra y busca la que llega menos arriba.",
+        "Compare how far each bar reaches and find the one that goes up the least.",
+        "Pera", [["Manzana", "E1_OP"], ["Plátano", "E1_OP"], ["3", "E3_PREG"]]),
+      mc(1, "En un pictograma, cada dibujo de libro vale 2 libros. En «Lunes» hay 4 dibujos de libro. ¿Cuántos libros representa?",
+        "In a pictograph, each book picture stands for 2 books. In the “Monday” row there are 4 book pictures. How many books does that represent?",
+        "Mira la clave del pictograma: cada dibujo no vale 1, vale más. Usa esa escala para contar.",
+        "Look at the key of the pictograph: each picture does not stand for 1, it stands for more. Use that scale to count.",
+        "8", [["4", "E1_OP"], ["6", "E2_CAL"], ["2", "E3_PREG"]]),
+      mc(2, "En un gráfico de barras, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?",
+        "In a bar graph, each square on the axis stands for 5. Saturday's bar reaches 6 squares. How many people does it represent?",
+        "Cada cuadrito no es 1, vale más. Usa la escala del eje para saber el valor de la barra.",
+        "Each square does not stand for 1, it stands for more. Use the scale of the axis to find the value of the bar.",
+        "30", [["6", "E1_OP"], ["11", "E1_OP"], ["25", "E2_CAL"]]),
+      mc(2, "En un gráfico, la barra de manzanas llega a 7 y la de peras a 4. ¿Cuántas manzanas más que peras hay?",
+        "In a bar graph, the apple bar reaches 7 and the pear bar reaches 4. How many more apples than pears are there?",
+        "«Cuántas más» compara dos cantidades. Piensa en cuánto le falta a la barra corta para llegar a la larga.",
+        "\"How many more\" compares two amounts. Think how much the short bar needs to reach the long one.",
+        "3", [["11", "E1_OP"], ["4", "E3_PREG"], ["2", "E2_CAL"]]),
+      mc(2, "Un gráfico de mascotas muestra: perros 8, gatos 6 y peces 3. ¿Cuántos niños respondieron en total?",
+        "A pet graph shows: dogs 8, cats 6 and fish 3. How many children answered in total?",
+        "Cada barra cuenta niños distintos. Para saber el total hay que considerar todas las barras del gráfico.",
+        "Each bar counts different children. To find the total you have to take all the bars of the graph into account.",
+        "17", [["8", "E3_PREG"], ["14", "E3_DATO"], ["5", "E1_OP"]]),
+      mc(2, "En un pictograma cada auto vale 5 personas. El grupo A tiene 3 autos y el grupo B tiene 5 autos. ¿Cuántas personas hay en el grupo B?",
+        "In a pictograph each car stands for 5 people. Group A has 3 cars and group B has 5 cars. How many people are in group B?",
+        "Fíjate en qué grupo te preguntan y multiplica sus dibujos por lo que vale cada uno.",
+        "Check which group you are asked about and multiply its pictures by what each one stands for.",
+        "25", [["5", "E3_PREG"], ["15", "E3_DATO"], ["10", "E1_OP"]]),
+      mc(3, "En un gráfico, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?",
+        "In a bar graph, each square stands for 10 points. Sara's bar reaches 7 squares and Tomás's reaches 4. How many more points does Sara have than Tomás?",
+        "Primero convierte cada barra a puntos usando la escala. Después compara los dos valores.",
+        "First turn each bar into points using the scale. Then compare the two values.",
+        "30", [["3", "E2_CAL"], ["110", "E1_OP"], ["70", "E3_DATO"]]),
+      mc(3, "En un pictograma cada libro dibujado representa 3 libros prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos libros se prestaron en total?",
+        "In a pictograph each drawn book represents 3 borrowed books. Monday has 2 pictures, Tuesday 4 and Wednesday 3. How many books were borrowed in total?",
+        "Cuenta todos los dibujos de los tres días y luego usa lo que vale cada dibujo.",
+        "Count all the pictures from the three days and then use what each picture stands for.",
+        "27", [["9", "E1_OP"], ["18", "E3_DATO"], ["12", "E2_CAL"]]),
+      mc(3, "En un curso de 30 estudiantes, las barras muestran el color favorito: rojo 9, azul 12 y verde 6. El resto eligió amarillo. ¿Cuántos estudiantes eligieron amarillo?",
+        "In a class of 30 students, the bars show favorite color: red 9, blue 12 and green 6. The rest chose yellow. How many students chose yellow?",
+        "Junta primero los estudiantes que ya aparecen en las barras. Lo que falta para completar el curso es el resto.",
+        "First put together the students already shown in the bars. What is missing to complete the class is the rest.",
+        "3", [["27", "E3_PREG"], ["21", "E3_DATO"], ["57", "E1_OP"]]),
+    ],
+  ));
+
+  return blocks;
+}

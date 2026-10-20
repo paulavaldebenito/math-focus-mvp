@@ -14,6 +14,9 @@ import { test, expect, type Page } from "@playwright/test";
  * para no colgarse si algo queda mal encadenado.
  */
 
+// Localmente, si Chromium de Playwright no está disponible: PW_CHANNEL=chrome.
+if (process.env.PW_CHANNEL) test.use({ channel: process.env.PW_CHANNEL });
+
 // Nunca .option-btn a secas: mientras carga el siguiente ejercicio hay una
 // llamada de red de por medio, y los botones de la pregunta anterior siguen
 // un instante en el DOM pero deshabilitados — engancharse a esos hace que
@@ -57,6 +60,10 @@ async function answerPracticeUntil(page: Page, doneHeading: string, maxSteps: nu
 
     if (await pauseDecline.isVisible()) {
       await pauseDecline.click();
+      // La pantalla de pausa sigue visible mientras carga la siguiente
+      // pregunta: sin esperar a que desaparezca, la próxima vuelta del bucle
+      // la vuelve a pulsar justo cuando se desmonta y el click se cuelga.
+      await pauseDecline.waitFor({ state: "hidden" });
       continue;
     }
 
@@ -96,13 +103,32 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   await page.getByRole("button", { name: /Zorro/ }).click();
   await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
 
+  // Elegir interés (tematiza los ejercicios; no bloquea el resto del recorrido).
+  await page.getByRole("button", { name: /Animales/ }).click();
+  await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+
+  // Antes de la evaluación: ofrece un momento de respiración (siempre se puede saltar).
+  await expect(page.getByRole("heading", { name: "Antes de empezar" })).toBeVisible();
+  await page.getByRole("button", { name: "Empezar ahora" }).click();
+
   // Evaluación inicial breve.
   await expect(page.getByRole("heading", { name: "Vamos a conocernos" })).toBeVisible();
   await page.getByRole("button", { name: "Empezar" }).click();
   await answerAssessmentUntil(page, "¡Perfecto!", 10);
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
+  // El mapa de habilidades reemplazó al botón directo de practicar: se elige
+  // el primer nodo disponible (los demás arrancan bloqueados).
+  await page.getByRole("heading", { name: "Mapa de aprendizaje" }).waitFor();
+  await page.locator(".skill-node:not([disabled])").first().click();
+
+
   // Sesión de práctica adaptativa.
+  // Check-in breve con caritas al empezar la práctica (opcional).
+  await expect(page.getByRole("heading", { name: "¿Cómo estás hoy?" })).toBeVisible();
+  await page.getByRole("radio", { name: "Bien", exact: true }).click();
+  await page.getByRole("radio", { name: "Tranquilo/a", exact: true }).click();
+  await page.getByRole("button", { name: "Listo" }).click();
   await expect(page.getByRole("heading", { name: "Antes de empezar" })).toBeVisible();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
   await answerPracticeUntil(page, "¡Sesión terminada!", 20);

@@ -99,6 +99,28 @@ describe("Evaluación inicial breve (HU4)", () => {
     }
   });
 
+  it("solo trae contenido neutro o de los intereses del niño, sin repetir un problema base", async () => {
+    await prisma.childProfile.update({ where: { id: childId }, data: { interests: ["cocina", "vehiculos"] } });
+    for (let i = 0; i < 20; i++) {
+      const res = await fetch(`${baseUrl}/api/children/${childId}/initial-assessment`, {
+        headers: { Cookie: cookie },
+      });
+      const body = (await res.json()) as { exercises: Array<{ id: string }> };
+      const rows = await prisma.exercise.findMany({ where: { id: { in: body.exercises.map((e) => e.id) } } });
+      expect(rows).toHaveLength(body.exercises.length);
+      for (const row of rows) expect([null, "cocina", "vehiculos"]).toContain(row.theme);
+      const keys = rows.flatMap((r) => (r.baseKey ? [r.baseKey] : []));
+      expect(new Set(keys).size).toBe(keys.length);
+    }
+
+    // Sin intereses: solo neutros.
+    await prisma.childProfile.update({ where: { id: childId }, data: { interests: [] } });
+    const res = await fetch(`${baseUrl}/api/children/${childId}/initial-assessment`, { headers: { Cookie: cookie } });
+    const body = (await res.json()) as { exercises: Array<{ id: string }> };
+    const rows = await prisma.exercise.findMany({ where: { id: { in: body.exercises.map((e) => e.id) } } });
+    for (const row of rows) expect(row.theme).toBeNull();
+  });
+
   it("un adulto no puede ver la evaluación de un niño que no es suyo (404)", async () => {
     const res = await fetch(`${baseUrl}/api/children/${childId}/initial-assessment`, {
       headers: { Cookie: otherCookie },

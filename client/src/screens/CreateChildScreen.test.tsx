@@ -32,4 +32,17 @@ describe("CreateChildScreen", () => {
     expect(mocks.createChild).toHaveBeenCalledWith("consent-abc", "Ana", 2);
     expect(onCreated).toHaveBeenCalledWith({ id: "child-1", displayName: "Ana", grade: 2, language: "es" });
   });
+
+  it("ofrece los seis cursos (1° a 6° básico) y crea el perfil con uno de los más altos", async () => {
+    mocks.createChild.mockResolvedValue({ id: "child-6", displayName: "Luis", grade: 6, language: "es" });
+    render(<CreateChildScreen consentId="consent-xyz" onCreated={vi.fn()} />);
+    const user = userEvent.setup();
+    for (const label of ["1° básico", "2° básico", "3° básico", "4° básico", "5° básico", "6° básico"]) {
+      expect(screen.getByRole("button", { name: label })).toBeInTheDocument();
+    }
+    await user.type(screen.getByLabelText("Nombre"), "Luis");
+    await user.click(screen.getByRole("button", { name: "6° básico" }));
+    await user.click(screen.getByRole("button", { name: "Continuar" }));
+    expect(mocks.createChild).toHaveBeenCalledWith("consent-xyz", "Luis", 6);
+  });
 });

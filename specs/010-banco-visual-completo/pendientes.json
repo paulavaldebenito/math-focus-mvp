@@ -1,0 +1,1404 @@
+{
+ "ausentesEnBD": [
+  {
+   "exerciseId": "cmulu2x7s04iw4crhswlu0hh7",
+   "grade": 3,
+   "prompt": "En un gráfico de barras de juegos favoritos, carreras llega hasta 10, puzles hasta 6 y plataformas hasta 4. ¿Qué juego prefieren más niños?"
+  },
+  {
+   "exerciseId": "cmulu2xtt054p4crhi5pephsl",
+   "grade": 4,
+   "prompt": "Ana tocó 2/6 de una melodía y Pedro tocó 3/6 de la misma melodía. ¿Quién tocó más?"
+  },
+  {
+   "exerciseId": "cmulu2xut055t4crhn0mhbcyf",
+   "grade": 4,
+   "prompt": "Ana pintó 2/6 de un planeta de cartón y Pedro pintó 3/6 del mismo planeta. ¿Quién pintó más?"
+  },
+  {
+   "exerciseId": "cmulu2xwh057r4crhaz1qeeup",
+   "grade": 4,
+   "prompt": "Ana recorrió 2/6 de un circuito de ciclismo y Pedro recorrió 3/6 del mismo circuito. ¿Quién recorrió más?"
+  },
+  {
+   "exerciseId": "cmulu2yrm061h4crh7rjh90go",
+   "grade": 5,
+   "prompt": "Ana tocó 3/8 de una partitura y Beto tocó 1/2 de otra partitura igual de larga. ¿Quién tocó más?"
+  },
+  {
+   "exerciseId": "cmulu2ys506214crhwjsm39gt",
+   "grade": 5,
+   "prompt": "Un jugador completó 3/8 de un mapa y otro completó 1/2 de un mapa igual. ¿Quién completó más?"
+  },
+  {
+   "exerciseId": "cmulu2ysd062b4crhvxn6vdz5",
+   "grade": 5,
+   "prompt": "Ana pintó 3/8 de un planeta de cartón y Beto pintó 1/2 de otro planeta igual. ¿Quién pintó más?"
+  },
+  {
+   "exerciseId": "cmulu2yti063k4crhqtu59bgj",
+   "grade": 5,
+   "prompt": "Ana plantó 3/8 de un jardín y Beto plantó 1/2 de otro jardín igual. ¿Quién plantó más?"
+  }
+ ],
+ "rowLabels_revela_respuesta": [
+  {
+   "exerciseId": "cmuli7is700pu6krh5z4wydmg",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?"
+  },
+  {
+   "exerciseId": "cmuli7isg00q46krhb23ijzah",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?"
+  },
+  {
+   "exerciseId": "cmuli7isk00q96krh17rqb6ci",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?"
+  },
+  {
+   "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una tableta de chocolate tiene 4 barras iguales. Ema come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?"
+  },
+  {
+   "exerciseId": "cmuli7it700qy6krhqpa91j90",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wkb03vk4crh4pgj6xpt",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Después del partido, una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?"
+  },
+  {
+   "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se pintan 3 de las 4 partes iguales de un mural de la hinchada. ¿Qué fracción del mural está pintada?"
+  },
+  {
+   "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta para marcar la cancha se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wkz03w94crhqgkt0hjb",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta para decorar la cancha se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wl203we4crhh3az5clo",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un corral se divide en 4 partes iguales y las ovejas pastan en 3 de esas partes. ¿Qué fracción del corral ocupan las ovejas?"
+  },
+  {
+   "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un saco de alimento para perros alcanza para 3 comidas iguales y ya se usaron 2. ¿Qué fracción del saco se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se pintan 3 de las 4 partes iguales de un mural con instrumentos musicales. ¿Qué fracción del mural está pintada?"
+  },
+  {
+   "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta del pandero se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wlv03x84crhudbhlgxu",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta para decorar el escenario se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wm003xd4crhplnbocpo",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un mapa se divide en 4 zonas iguales y ya exploraste 1. ¿Qué fracción del mapa exploraste?"
+  },
+  {
+   "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se completan 3 de las 4 partes iguales de una barra de progreso. ¿Qué fracción de la barra está completa?"
+  },
+  {
+   "exerciseId": "cmulu2wm903xn4crhewpkqe38",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un mapa tiene 4 zonas iguales. Un jugador ya completó 1 zona y le regala el control de otras 2 a un amigo. ¿Qué fracción del mapa le queda a él?"
+  },
+  {
+   "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una galleta redonda decorada como un planeta se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la galleta te comiste?"
+  },
+  {
+   "exerciseId": "cmulu2wmk03xx4crh9sugrj3m",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "El panel de control de una nave de cartón se divide en 3 partes iguales. ¿Qué fracción del panel es una de esas partes?"
+  },
+  {
+   "exerciseId": "cmulu2wmo03y24crhjsb51fve",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se pintan 3 de las 4 partes iguales del casco de una nave de cartón. ¿Qué fracción del casco está pintada?"
+  },
+  {
+   "exerciseId": "cmulu2wmt03y74crh45agw2ho",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un cable se corta en 3 partes iguales y se usan 2 para armar un satélite de juguete. ¿Qué fracción del cable se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una caja trae 4 barras de cereal espacial iguales. Ema come 1 barra y regala 2. ¿Qué fracción de las barras le queda?"
+  },
+  {
+   "exerciseId": "cmulu2wna03yr4crhk74yawbg",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un cable se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cable y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wng03yw4crhtgj2ty2v",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se pintan 3 de las 4 partes iguales de un mural de dinosaurios. ¿Qué fracción del mural está pintada?"
+  },
+  {
+   "exerciseId": "cmulu2wnk03z14crhgeh910n2",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cuerda para marcar una excavación se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wnt03zb4crhy1jm65rs",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta para decorar la sala de los dinosaurios se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wny03zg4crhjmjd6ubp",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una pizza casera se reparte en 4 porciones iguales y tú comes 1. ¿Qué fracción de la pizza comiste?"
+  },
+  {
+   "exerciseId": "cmulu2wo103zl4crhqot2gbnc",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una tarta se divide en 3 partes iguales. ¿Qué fracción de la tarta es una de esas partes?"
+  },
+  {
+   "exerciseId": "cmulu2wo503zq4crhx8fhese4",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se cubren con crema 3 de las 4 partes iguales de una torta. ¿Qué fracción de la torta está cubierta con crema?"
+  },
+  {
+   "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un queque se divide en 3 partes iguales y se comen 2. ¿Qué fracción del queque se comió?"
+  },
+  {
+   "exerciseId": "cmulu2wok04054crhobn34ss1",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una tarta se divide en 4 porciones iguales. Ema come 1 porción y regala 2 porciones. ¿Qué fracción de la tarta le queda?"
+  },
+  {
+   "exerciseId": "cmulu2wot040f4crh34hf04h3",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una masa de pizza se divide en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más masa y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wox040k4crhhdw8hwq1",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un huerto se divide en 4 partes iguales y plantas lechugas en 1 de ellas. ¿Qué fracción del huerto tiene lechugas?"
+  },
+  {
+   "exerciseId": "cmulu2wp1040p4crhnjg3l0iw",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un jardín se divide en 3 partes iguales. ¿Qué fracción del jardín es una de esas partes?"
+  },
+  {
+   "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se plantan flores en 3 de las 4 partes iguales de un jardín. ¿Qué fracción del jardín tiene flores?"
+  },
+  {
+   "exerciseId": "cmulu2wp9040z4crh84shmq9d",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cuerda para amarrar un bote se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wpn041e4crh8m7hlhls",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un cordel se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cordel y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wps041j4crhbt2yycs8",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Se pintan 3 de las 4 partes iguales del piso de una cancha. ¿Qué fracción de la cancha está pintada?"
+  },
+  {
+   "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta de gimnasia se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?"
+  },
+  {
+   "exerciseId": "cmulu2wq4041y4crhyvxaqmqa",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una cinta de gimnasia se corta en 4 partes iguales. Ema usa 3 partes y Leo usa 2 partes. ¿Quién usó más cinta y qué fracción usó?"
+  },
+  {
+   "exerciseId": "cmulu2wq904234crhdtvmc97s",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un camino se divide en 4 partes iguales y un auto recorre 1. ¿Qué fracción del camino recorrió?"
+  },
+  {
+   "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un tren tiene 4 vagones iguales y 3 son rojos. ¿Qué fracción del tren es roja?"
+  },
+  {
+   "exerciseId": "cmulu2wqk042d4crhccfb95la",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Un camino de tierra se divide en 3 tramos iguales y un tractor recorre 2. ¿Qué fracción del camino recorrió?"
+  },
+  {
+   "exerciseId": "cmulu2wqs042n4crh073hwczj",
+   "grade": 3,
+   "kind": "fractions",
+   "prompt": "Una pista se divide en 4 tramos iguales. Ema recorre 3 tramos y Leo recorre 2 tramos. ¿Quién recorrió más pista y qué fracción recorrió?"
+  },
+  {
+   "exerciseId": "cmuli7j3201116krh0izz2nky",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Ordena de menor a mayor: 1/2, 1/8, 1/4."
+  },
+  {
+   "exerciseId": "cmulu2xsp053g4crh1giclebz",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Después del partido, una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?"
+  },
+  {
+   "exerciseId": "cmulu2xtw054u4crhjwgd8mch",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Un mapa se divide en 8 zonas iguales y un jugador ya exploró 3. ¿Qué fracción del mapa exploró?"
+  },
+  {
+   "exerciseId": "cmulu2xu905594crhy66lbk88",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Un planeta de cartón está dividido en 8 partes iguales y Camila pinta 3. ¿Qué fracción del planeta pintó?"
+  },
+  {
+   "exerciseId": "cmulu2xv605684crhknnilf5g",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Un queque está dividido en 8 partes iguales y Camila come 3. ¿Qué fracción del queque comió?"
+  },
+  {
+   "exerciseId": "cmulu2xvo056s4crh8dpsm0tq",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Un huerto está dividido en 8 partes iguales y Camila siembra 3. ¿Qué fracción del huerto sembró?"
+  },
+  {
+   "exerciseId": "cmulu2xwl057w4crhe34nm0np",
+   "grade": 4,
+   "kind": "fractions",
+   "prompt": "Una ruta está dividida en 8 tramos iguales y Camila ya viajó por 3. ¿Qué fracción de la ruta recorrió?"
+  },
+  {
+   "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "¿Cuál es mayor: 3/8 o 3/5?"
+  },
+  {
+   "exerciseId": "cmuli7jcg01at6krhvp0yoxkt",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "¿Qué lista ordena las fracciones de menor a mayor?"
+  },
+  {
+   "exerciseId": "cmuli7jcn01ay6krhbr7oz8t9",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "¿Cuál es mayor: 5/6 o 3/4?"
+  },
+  {
+   "exerciseId": "cmuli7jcq01b36krhw8l1p34m",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "¿Qué lista ordena de menor a mayor las fracciones 2/3, 1/6 y 5/12?"
+  },
+  {
+   "exerciseId": "cmulu2yr6060x4crhjgamlb9e",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Después del partido, una pizza se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la pizza se comió?"
+  },
+  {
+   "exerciseId": "cmulu2yri061c4crhht3wxt1v",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Un saco de alimento para caballos se divide en 8 raciones iguales y se usan 3. ¿Qué fracción del saco se usó?"
+  },
+  {
+   "exerciseId": "cmulu2yru061r4crhj5ioe6vv",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Un mapa se divide en 8 zonas iguales y ya se exploraron 3. ¿Qué fracción del mapa se exploró?"
+  },
+  {
+   "exerciseId": "cmulu2ys1061w4crhl695ci1f",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "En un juego, un personaje llenó 5/6 de su barra de energía y otro llenó 3/4 de la suya. ¿Cuál barra está más llena?"
+  },
+  {
+   "exerciseId": "cmulu2ys906264crhzflgs0qd",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Un afiche del sistema solar se divide en 8 partes iguales y se pintan 3. ¿Qué fracción del afiche se pintó?"
+  },
+  {
+   "exerciseId": "cmulu2ysv062v4crh5p5whalg",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Una tarta se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la tarta se comió?"
+  },
+  {
+   "exerciseId": "cmulu2yte063f4crh3to5xagx",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Un huerto se divide en 8 partes iguales y se cosechan 3. ¿Qué fracción del huerto se cosechó?"
+  },
+  {
+   "exerciseId": "cmulu2ytr063u4crhem7lswqc",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Una ruta de ciclismo se divide en 8 tramos iguales y se recorren 3. ¿Qué fracción de la ruta se recorrió?"
+  },
+  {
+   "exerciseId": "cmulu2yu406494crhcy55jn9c",
+   "grade": 5,
+   "kind": "fractions",
+   "prompt": "Una ruta se divide en 8 tramos iguales y se recorren 3. ¿Qué fracción de la ruta se recorrió?"
+  },
+  {
+   "exerciseId": "cmuli7jlm01k56krh6m1fhiar",
+   "grade": 6,
+   "kind": "fractions",
+   "prompt": "¿Cuál de estos valores es el mayor?"
+  }
+ ],
+ "nombres_no_verificables": [
+  {
+   "exerciseId": "cmuli7i9w00956krhb33aij41",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren los gatos, 7 prefieren los perros y 3 prefieren los peces. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2ube01p54crhx5mdu0kb",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren jugar de delantero, 7 prefieren jugar de defensa y 3 prefieren jugar de arquero. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2ucm01qj4crh1pojjsdt",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren la guitarra, 7 prefieren el tambor y 3 prefieren la flauta. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2udg01ri4crh192txb8p",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren los juegos de puzles, 7 prefieren los de carreras y 3 prefieren los de aventuras. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2uee01sm4crhdge91mrk",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren los cohetes, 7 prefieren los planetas y 3 prefieren los telescopios. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2uf501tg4crhmxi5mamu",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren los dinos verdes, 7 prefieren los azules y 3 prefieren los naranjos. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2ufu01ua4crh4e196gq2",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren las galletas, 7 prefieren los cupcakes y 3 prefieren las tartas. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2ugg01uz4crhjl7uyo5i",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren la playa, 7 prefieren el bosque y 3 prefieren el huerto. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2uhc01vo4crhzumtvzu3",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren el básquetbol, 7 prefieren el vóleibol y 3 prefieren la natación. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmulu2ui501wn4crhsf5oif9f",
+   "grade": 1,
+   "kind": "pictogram",
+   "prompt": "En el curso, 5 niños prefieren viajar en auto, 7 prefieren el bus y 3 prefieren el tren. Si haces un pictograma con un dibujo por niño, ¿cuántos dibujos tendrá en total?"
+  },
+  {
+   "exerciseId": "cmuli7ikr00i26krhmj1bo2jh",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de pelota y cada dibujo vale 1 pelota. ¿Cuántas pelotas tiene Camila?"
+  },
+  {
+   "exerciseId": "cmuli7il200ic6krhmu6c08n8",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma de frutas, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta. ¿De qué fruta hay más?"
+  },
+  {
+   "exerciseId": "cmuli7ilb00im6krhtin5nzdf",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que vienen en bus tiene 4 estrellas. ¿Cuántos niños vienen en bus?"
+  },
+  {
+   "exerciseId": "cmuli7ilf00ir6krh85dkdxh3",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada helado dibujado vale 5 helados vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos helados se vendieron el viernes?"
+  },
+  {
+   "exerciseId": "cmuli7ill00iw6krhgqyb546a",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada pelota dibujada vale 10 goles. La fila de un equipo tiene 4 pelotas. ¿Cuántos goles hizo el equipo?"
+  },
+  {
+   "exerciseId": "cmuli7ilz00jb6krhwx3bu2do",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada manzana dibujada vale 2 manzanas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas manzanas se comieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmuli7im500jg6krhapb1ul47",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada bicicleta dibujada vale 5 bicicletas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas bicicletas más hubo el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vlv02y34crhryvt7gk4",
+   "grade": 2,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras, la barra de los que juegan de delantero llega hasta el 6 y la de los que juegan de defensa hasta el 4. ¿Cuántos niños prefieren jugar de delantero?"
+  },
+  {
+   "exerciseId": "cmulu2vm202y84crh7klr2f0d",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada balón dibujado vale 2 goles. La fila del sábado tiene 4 balones. ¿Cuántos goles se hicieron el sábado?"
+  },
+  {
+   "exerciseId": "cmulu2vma02yd4crhrinmpjr4",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada camiseta dibujada vale 5 camisetas vendidas. Hay 3 dibujos en la fila del viernes. ¿Cuántas camisetas se vendieron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vmx02ys4crhflms5sd5",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada balón dibujado vale 2 goles. El sábado hay 5 dibujos y el domingo hay 3 dibujos. ¿Cuántos goles se hicieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vn102yx4crh5l5npj3z",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada pelota dibujada vale 5 pelotas prestadas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas pelotas más se prestaron el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vn902z74crh4nsee2d4",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de pez y cada dibujo vale 1 pez. ¿Cuántos peces tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vnd02zc4crhz2bcvks1",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada huevo dibujado vale 5 huevos recogidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos huevos se recogieron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vnn02zm4crha8pu55h3",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada zanahoria dibujada vale 2 zanahorias. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas zanahorias comieron los conejos entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vnr02zr4crh9w4n3alk",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma de los peces vistos en un estanque, cada pez dibujado vale 5 peces. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántos peces más se vieron el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vnw02zw4crhx9plmz5i",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de tambor y cada dibujo vale 1 tambor. ¿Cuántos tambores tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vo503064crhlhyk36hx",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada nota musical vale 2 niños. La fila de los que tocan la flauta tiene 4 notas. ¿Cuántos niños tocan la flauta?"
+  },
+  {
+   "exerciseId": "cmulu2vo8030b4crhat63yjvm",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada entrada dibujada vale 5 entradas vendidas. Hay 3 dibujos en la fila del viernes. ¿Cuántas entradas se vendieron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vod030g4crh5hxkcxez",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada mano dibujada vale 10 aplausos. La fila de una banda tiene 4 manos. ¿Cuántos aplausos recibió la banda?"
+  },
+  {
+   "exerciseId": "cmulu2vos030v4crh9hu4xnkh",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada nota dibujada vale 2 canciones ensayadas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas canciones se ensayaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vox03104crhw7z4dr75",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada instrumento dibujado vale 5 instrumentos prestados. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántos instrumentos más se prestaron el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vpa031f4crhgrm88hft",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada estrella dibujada vale 10 puntos. La fila de un jugador tiene 4 estrellas. ¿Cuántos puntos hizo el jugador?"
+  },
+  {
+   "exerciseId": "cmulu2vpi031p4crhezxmjgai",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de cohete y cada dibujo vale 1 cohete. ¿Cuántos cohetes tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vps031z4crhhlkfmree",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que quieren ser astronautas tiene 4 estrellas. ¿Cuántos niños quieren ser astronautas?"
+  },
+  {
+   "exerciseId": "cmulu2vpv03244crha99mwpsr",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada cohete dibujado vale 5 cohetes de juguete vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos cohetes de juguete se vendieron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vq7032j4crhxl4okusi",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada cohete dibujado vale 2 cohetes armados. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántos cohetes se armaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vqc032o4crhlvvow43b",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada satélite dibujado vale 5 satélites. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántos satélites más hubo el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vqn032y4crhvij0cbel",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de huevo y cada dibujo vale 1 huevo. ¿Cuántos huevos tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vqv03384crhjwze6oub",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que llegan al museo de dinosaurios en bus tiene 4 estrellas. ¿Cuántos niños llegan en bus?"
+  },
+  {
+   "exerciseId": "cmulu2vqz033d4crh9hoir03j",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada huevo dibujado vale 10 huevos de dinosaurio. La fila de un criadero tiene 4 huevos dibujados. ¿Cuántos huevos hay en el criadero?"
+  },
+  {
+   "exerciseId": "cmulu2vrb033s4crhx46jhiz2",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un cuento, un dinosaurio herbívoro come hojas. En un pictograma, cada hoja dibujada vale 2 hojas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas hojas comió entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vrf033x4crh5u63gbwv",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada huella dibujada vale 5 huellas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas huellas más hubo el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vrq03474crhiycabkdp",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de galleta y cada dibujo vale 1 galleta. ¿Cuántas galletas tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vry034h4crh3klyioq1",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada cupcake dibujado vale 5 cupcakes vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos cupcakes se vendieron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vs3034m4crh3pj4mwrg",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada galleta dibujada vale 10 galletas vendidas. La fila de un curso tiene 4 galletas. ¿Cuántas galletas vendió el curso?"
+  },
+  {
+   "exerciseId": "cmulu2vsg03514crh0wv743ks",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada huevo dibujado vale 2 huevos. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántos huevos se usaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vsm03564crhyx3707n5",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada pizza dibujada vale 5 pizzas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas pizzas más se hicieron el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vsu035g4crhzyngupbi",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de concha y cada dibujo vale 1 concha. ¿Cuántas conchas juntó Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vt2035q4crh8y2lhoyf",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma del huerto, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta cosechada. ¿De qué fruta hay más?"
+  },
+  {
+   "exerciseId": "cmulu2vt7035v4crhaqrabni4",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada hoja vale 2 niños. La fila de los que van a la playa tiene 4 hojas. ¿Cuántos niños van a la playa?"
+  },
+  {
+   "exerciseId": "cmulu2vtl036a4crh2414s2nv",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada tomate dibujado vale 2 tomates. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántos tomates se cosecharon entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vtt036k4crhymo6ws8o",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de medalla y cada dibujo vale 1 medalla. ¿Cuántas medallas tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vu2036u4crhn169h0xc",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que van al taller de natación tiene 4 estrellas. ¿Cuántos niños van al taller de natación?"
+  },
+  {
+   "exerciseId": "cmulu2vu6036z4crh3hs4npfz",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada botella dibujada vale 5 botellas de agua vendidas. Hay 3 dibujos en la fila del viernes. ¿Cuántas botellas se vendieron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vuk03744crhw2i4e6rf",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada pelota dibujada vale 10 puntos. La fila de un equipo de vóleibol tiene 4 pelotas. ¿Cuántos puntos hizo el equipo?"
+  },
+  {
+   "exerciseId": "cmulu2vv0037j4crhfwc48mzq",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada botella dibujada vale 2 botellas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas botellas se tomaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vv6037o4crhe7d43buf",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada casco dibujado vale 5 cascos. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántos cascos más hubo el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmulu2vve037y4crhlj47kuut",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de autito y cada dibujo vale 1 autito. ¿Cuántos autitos tiene Camila?"
+  },
+  {
+   "exerciseId": "cmulu2vvn03884crhon8zfxix",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que llegan en bicicleta tiene 4 estrellas. ¿Cuántos niños llegan en bicicleta?"
+  },
+  {
+   "exerciseId": "cmulu2vvs038d4crh146yvp3g",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada bus dibujado vale 5 buses que pasaron por la calle. Hay 3 dibujos en la fila del viernes. ¿Cuántos buses pasaron el viernes?"
+  },
+  {
+   "exerciseId": "cmulu2vvz038i4crhwv4r4rd3",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada auto dibujado vale 10 autos que pasaron por el túnel. La fila del sábado tiene 4 autos dibujados. ¿Cuántos autos pasaron el sábado?"
+  },
+  {
+   "exerciseId": "cmulu2vwc038x4crh8uxlaqsk",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada tren dibujado vale 2 trenes. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántos trenes pasaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2vwg03924crhzsiasj0c",
+   "grade": 2,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada camión dibujado vale 5 camiones. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántos camiones más hubo el martes que el lunes?"
+  },
+  {
+   "exerciseId": "cmuli7ixx00vn6krhh0au2498",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de libro vale 2 libros. En «Lunes» hay 4 dibujos de libro. ¿Cuántos libros representa?"
+  },
+  {
+   "exerciseId": "cmuli7iy200vs6krh8zoftlh2",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?"
+  },
+  {
+   "exerciseId": "cmuli7iyf00w76krht6b9adyq",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada auto vale 5 personas. El grupo A tiene 3 autos y el grupo B tiene 5 autos. ¿Cuántas personas hay en el grupo B?"
+  },
+  {
+   "exerciseId": "cmuli7iyj00wc6krhlkggl5v1",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?"
+  },
+  {
+   "exerciseId": "cmuli7iyt00wh6krh25euztl0",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada libro dibujado representa 3 libros prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos libros se prestaron en total?"
+  },
+  {
+   "exerciseId": "cmulu2x5i04g94crhj45mahi1",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de balón vale 2 goles. En «Lunes» hay 4 dibujos de balón. ¿Cuántos goles representa?"
+  },
+  {
+   "exerciseId": "cmulu2x5m04ge4crhxpsqhlih",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras, cada cuadrito del eje vale 5 hinchas. La barra del sábado llega a 6 cuadritos. ¿Cuántos hinchas representa?"
+  },
+  {
+   "exerciseId": "cmulu2x5p04gj4crhhvuhd20b",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico, la barra del equipo Rojo llega a 7 goles y la del equipo Azul a 4 goles. ¿Cuántos goles más hizo el equipo Rojo que el Azul?"
+  },
+  {
+   "exerciseId": "cmulu2x5y04gt4crht9clzpo8",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada bus vale 5 hinchas. El grupo A tiene 3 buses y el grupo B tiene 5 buses. ¿Cuántos hinchas hay en el grupo B?"
+  },
+  {
+   "exerciseId": "cmulu2x6504gy4crhzgobitk3",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico, cada cuadrito vale 10 puntos. La barra del equipo Verde llega a 7 cuadritos y la del equipo Amarillo a 4. ¿Cuántos puntos más tiene el Verde que el Amarillo?"
+  },
+  {
+   "exerciseId": "cmulu2x6904h34crhyj2okwwk",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada balón dibujado representa 3 goles. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos goles se hicieron en total?"
+  },
+  {
+   "exerciseId": "cmulu2x6h04hd4crh2dlgr34p",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de pez vale 2 peces. En «Lunes» hay 4 dibujos de pez. ¿Cuántos peces representa?"
+  },
+  {
+   "exerciseId": "cmulu2x6p04hn4crhwl6s7pnl",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada huevo dibujado representa 3 huevos recogidos. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos huevos se recogieron en total?"
+  },
+  {
+   "exerciseId": "cmulu2x6y04hx4crh0ry6bxjr",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de partitura vale 2 partituras. En «Lunes» hay 4 dibujos de partitura. ¿Cuántas partituras representa?"
+  },
+  {
+   "exerciseId": "cmulu2x7304i24crhi0aarty1",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras del público de un concierto, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?"
+  },
+  {
+   "exerciseId": "cmulu2x7g04ih4crhudywdden",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada tambor vale 5 niños. El grupo A tiene 3 tambores y el grupo B tiene 5 tambores. ¿Cuántos niños hay en el grupo B?"
+  },
+  {
+   "exerciseId": "cmulu2x7k04im4crhykux8f8g",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada instrumento dibujado representa 3 instrumentos prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos instrumentos se prestaron en total?"
+  },
+  {
+   "exerciseId": "cmulu2x8204j64crha8062g6m",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un curso de 30 estudiantes, las barras muestran el personaje favorito de un juego: A tiene 9, B tiene 12 y C tiene 6. El resto eligió el personaje D. ¿Cuántos estudiantes eligieron el personaje D?"
+  },
+  {
+   "exerciseId": "cmulu2x8504jb4crh34opi9ey",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de cohete vale 2 cohetes. En «Lunes» hay 4 dibujos de cohete. ¿Cuántos cohetes representa?"
+  },
+  {
+   "exerciseId": "cmulu2x8a04jg4crhgccf5kgk",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántos visitantes del planetario representa?"
+  },
+  {
+   "exerciseId": "cmulu2x8m04jv4crhc05yo1kh",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada cohete vale 5 personas. El grupo A tiene 3 cohetes y el grupo B tiene 5 cohetes. ¿Cuántas personas hay en el grupo B?"
+  },
+  {
+   "exerciseId": "cmulu2x8q04k04crhrqryrbva",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de un juego de misiones espaciales, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?"
+  },
+  {
+   "exerciseId": "cmulu2x8u04k54crhiifhdva7",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada telescopio dibujado representa 3 telescopios prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos telescopios se prestaron en total?"
+  },
+  {
+   "exerciseId": "cmulu2x9504kf4crhh0sz9xg3",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de huevo vale 2 huevos. En «Lunes» hay 4 dibujos de huevo. ¿Cuántos huevos representa?"
+  },
+  {
+   "exerciseId": "cmulu2x9904kk4crhz8i5fheh",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras de visitantes de un museo de dinosaurios, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?"
+  },
+  {
+   "exerciseId": "cmulu2x9l04kz4crhibk7yafo",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada bus del museo vale 5 personas. El grupo A tiene 3 buses y el grupo B tiene 5 buses. ¿Cuántas personas hay en el grupo B?"
+  },
+  {
+   "exerciseId": "cmulu2x9q04l44crhajk821xk",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada hueso dibujado representa 3 huesos encontrados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos huesos se encontraron en total?"
+  },
+  {
+   "exerciseId": "cmulu2x9t04l94crhqhv6m5ld",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de cupcake vale 2 cupcakes. En «Lunes» hay 4 dibujos de cupcake. ¿Cuántos cupcakes representa?"
+  },
+  {
+   "exerciseId": "cmulu2x9z04le4crh4yhf0100",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras de galletas vendidas en la feria, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas galletas representa?"
+  },
+  {
+   "exerciseId": "cmulu2xac04lt4crhaxwuwifi",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada bandeja vale 5 galletas. La mesa A tiene 3 bandejas y la mesa B tiene 5 bandejas. ¿Cuántas galletas hay en la mesa B?"
+  },
+  {
+   "exerciseId": "cmulu2xaf04ly4crh1zv13d0t",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada galleta dibujada representa 3 galletas vendidas. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántas galletas se vendieron en total?"
+  },
+  {
+   "exerciseId": "cmulu2xb704m84crh28gr1wj6",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de árbol vale 2 árboles plantados. En «Lunes» hay 4 dibujos de árbol. ¿Cuántos árboles representa?"
+  },
+  {
+   "exerciseId": "cmulu2xbb04md4crhwy2p59ro",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras de visitas a la playa, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?"
+  },
+  {
+   "exerciseId": "cmulu2xbq04ms4crhwutww07h",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada bote vale 5 pescadores. La caleta A tiene 3 botes y la caleta B tiene 5 botes. ¿Cuántos pescadores hay en la caleta B?"
+  },
+  {
+   "exerciseId": "cmulu2xbu04mx4crhgykkhpvq",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada árbol dibujado representa 3 árboles plantados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos árboles se plantaron en total?"
+  },
+  {
+   "exerciseId": "cmulu2xc304n74crhng12ie6w",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de medalla vale 2 medallas. En «Lunes» hay 4 dibujos de medalla. ¿Cuántas medallas representa?"
+  },
+  {
+   "exerciseId": "cmulu2xc604nc4crh037orrfp",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras de la asistencia a la olimpiada escolar, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?"
+  },
+  {
+   "exerciseId": "cmulu2xcl04nr4crhj3o1v0ss",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico, cada cuadrito vale 10 puntos. La barra del equipo Verde llega a 7 cuadritos y la del equipo Naranja a 4. ¿Cuántos puntos más tiene el equipo Verde que el Naranja?"
+  },
+  {
+   "exerciseId": "cmulu2xcp04nw4crhcvcx6taa",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada pelota dibujada representa 3 pelotas prestadas. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántas pelotas se prestaron en total?"
+  },
+  {
+   "exerciseId": "cmulu2xcy04o64crhjbev7jro",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada dibujo de bus vale 2 buses. En «Lunes» hay 4 dibujos de bus. ¿Cuántos buses representa?"
+  },
+  {
+   "exerciseId": "cmulu2xd104ob4crhu04tqr8w",
+   "grade": 3,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras de pasajeros, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántos pasajeros representa?"
+  },
+  {
+   "exerciseId": "cmulu2xdg04oq4crhisw8eox6",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada bus vale 5 personas. El grupo A tiene 3 buses y el grupo B tiene 5 buses. ¿Cuántas personas hay en el grupo B?"
+  },
+  {
+   "exerciseId": "cmulu2xdl04ov4crhtnc52h82",
+   "grade": 3,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada bus dibujado representa 3 buses que pasaron por la calle. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos buses pasaron en total?"
+  },
+  {
+   "exerciseId": "cmuli7j7j015v6krhwhdp453u",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los gatos llega a la tercera línea después del 0. ¿Cuántos gatos hay?"
+  },
+  {
+   "exerciseId": "cmuli7j82016f6krhczkg6hd8",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 libros. El martes hay 2 símbolos y medio. ¿Cuántos libros se prestaron el martes?"
+  },
+  {
+   "exerciseId": "cmuli7j86016k6krhsoqlrpxm",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "La biblioteca tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmuli7j8a016p6krhyrc791vj",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras con escala de 20 en 20, la barra de María llega justo a la mitad entre 40 y 60 y la de Juan llega a 80. ¿Cuántos puntos más tiene Juan?"
+  },
+  {
+   "exerciseId": "cmuli7j8f016u6krhrhikngjt",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 helados. El lunes hay 3 símbolos y el martes 5. ¿Cuántos helados se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2y9q05ju4crhywtoqhj2",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los goles llega a la tercera línea después del 0. ¿Cuántos goles hay?"
+  },
+  {
+   "exerciseId": "cmulu2yaa05ke4crhmbv4ixq9",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 entradas. El martes hay 2 símbolos y medio. ¿Cuántas entradas se vendieron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2yae05kj4crht8nmxxun",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "La cancha del barrio tuvo 15 visitantes el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitantes y el día con menos visitantes?"
+  },
+  {
+   "exerciseId": "cmulu2yaj05ko4crhcz0wj2wx",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 bebidas vendidas en el kiosco del club. El lunes hay 3 símbolos y el martes 5. ¿Cuántas bebidas se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2yar05ky4crhxen0pvcs",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En el gráfico de animales favoritos, el gato tiene 18 votos y el conejo tiene 9. ¿Cuántos votos más tiene el gato que el conejo?"
+  },
+  {
+   "exerciseId": "cmulu2yav05l34crhem5tzjhf",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 huevos. El martes hay 2 símbolos y medio. ¿Cuántos huevos se recogieron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2yay05l84crh0bw00i77",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "Un refugio de animales tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmulu2yb305ld4crhbpxc07ec",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 huevos. El lunes hay 3 símbolos y el martes 5. ¿Cuántos huevos se recogieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2ybe05ln4crhww0abiuw",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de las guitarras llega a la tercera línea después del 0. ¿Cuántas guitarras hay?"
+  },
+  {
+   "exerciseId": "cmulu2ybi05ls4crh03hdfnvi",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 entradas vendidas. El martes hay 2 símbolos y medio. ¿Cuántas entradas se vendieron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2ybn05lx4crhkw55vl6f",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "La sala de música tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmulu2ybq05m24crhfp6f9jol",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 entradas. El lunes hay 3 símbolos y el martes 5. ¿Cuántas entradas se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2yc605mh4crh7ra5qcpu",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 monedas ganadas. El lunes hay 3 símbolos y el martes 5. ¿Cuántas monedas se ganaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2ycb05mm4crhl6ajjxhc",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada símbolo vale 5 puntos. La tripulación Roja de un juego de misiones tiene 4 símbolos. ¿Cuántos puntos tiene?"
+  },
+  {
+   "exerciseId": "cmulu2ycg05mr4crhwwqwlcsy",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los cohetes llega a la tercera línea después del 0. ¿Cuántos cohetes hay?"
+  },
+  {
+   "exerciseId": "cmulu2ycs05n64crhzm05ignl",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 fotos. El martes hay 2 símbolos y medio. ¿Cuántas fotos del cielo se sacaron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2ycw05nb4crhru43hiiv",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "El planetario tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmulu2yd405ng4crh1f2ym01b",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 entradas al planetario vendidas. El lunes hay 3 símbolos y el martes 5. ¿Cuántas entradas se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2ydd05nq4crhfaw2l6cu",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los huesos encontrados llega a la tercera línea después del 0. ¿Cuántos huesos hay?"
+  },
+  {
+   "exerciseId": "cmulu2ydp05o54crh0tqilqcd",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En el gráfico de dinos favoritos, el dino azul tiene 18 votos y el dino verde tiene 9 votos. ¿Cuántos votos más tiene el azul que el verde?"
+  },
+  {
+   "exerciseId": "cmulu2ydv05oa4crhhhzltjbg",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 huevos. El martes hay 2 símbolos y medio. ¿Cuántos huevos se encontraron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2ye005of4crhqyilm3ag",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "El museo de dinosaurios tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmulu2ye505ok4crh463nbq0q",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 entradas del museo. El lunes hay 3 símbolos y el martes 5. ¿Cuántas entradas se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2ye805op4crh8shyulyg",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de las galletas vendidas llega a la tercera línea después del 0. ¿Cuántas galletas se vendieron?"
+  },
+  {
+   "exerciseId": "cmulu2yen05p44crhbupcuacv",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 galletas. El martes hay 2 símbolos y medio. ¿Cuántas galletas se vendieron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2yer05p94crh02h5wrcy",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "La pastelería del barrio vendió 15 tortas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más ventas y el día con menos ventas?"
+  },
+  {
+   "exerciseId": "cmulu2yeu05pe4crhr8wv863i",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 cupcakes. El lunes hay 3 símbolos y el martes 5. ¿Cuántos cupcakes se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2yez05pj4crh3fpg53sc",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma, cada símbolo vale 5 árboles plantados. El curso A tiene 4 símbolos. ¿Cuántos árboles plantó?"
+  },
+  {
+   "exerciseId": "cmulu2yf305po4crho0frhvwg",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de las gaviotas llega a la tercera línea después del 0. ¿Cuántas gaviotas hay?"
+  },
+  {
+   "exerciseId": "cmulu2yf805pt4crhd3gqkwvw",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 kilos de pescado. El martes hay 2 símbolos y medio. ¿Cuántos kilos se vendieron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2yfd05py4crhsfyqmkl5",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "Un parque nacional tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmulu2yfi05q34crhv7a9y11h",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 plantas vendidas. El lunes hay 3 símbolos y el martes 5. ¿Cuántas plantas se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2yfs05qd4crhga8gaglg",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de las pelotas de vóleibol llega a la tercera línea después del 0. ¿Cuántas pelotas de vóleibol hay?"
+  },
+  {
+   "exerciseId": "cmulu2yg705qx4crhijfzmvik",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 medallas. El martes hay 2 símbolos y medio. ¿Cuántas medallas se entregaron el martes?"
+  },
+  {
+   "exerciseId": "cmulu2ygd05r24crhrzmwvf72",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "El gimnasio del colegio tuvo 15 visitas el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más visitas y el día con menos visitas?"
+  },
+  {
+   "exerciseId": "cmulu2ygh05r74crhb2mzay89",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras con escala de 20 en 20, la barra del equipo Rojo llega justo a la mitad entre 40 y 60 y la del equipo Azul llega a 80. ¿Cuántos puntos más tiene el equipo Azul?"
+  },
+  {
+   "exerciseId": "cmulu2ygm05rc4crhpqa1awkb",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 botellas de agua. El lunes hay 3 símbolos y el martes 5. ¿Cuántas botellas de agua se vendieron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmulu2ygq05rh4crh2r13zmi7",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los autos llega a la tercera línea después del 0. ¿Cuántos autos hay?"
+  },
+  {
+   "exerciseId": "cmulu2ygu05rm4crh2tod2wx7",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 10 autos. El martes hay 2 símbolos y medio. ¿Cuántos autos pasaron por el peaje el martes?"
+  },
+  {
+   "exerciseId": "cmulu2ygy05rr4crhwpxmg2v3",
+   "grade": 4,
+   "kind": "bars",
+   "prompt": "Por un peaje pasaron 15 buses el lunes, 25 el martes y 20 el miércoles. ¿Cuál es la diferencia entre el día con más buses y el día con menos buses?"
+  },
+  {
+   "exerciseId": "cmulu2yh105rw4crhomwk6ojp",
+   "grade": 4,
+   "kind": "pictogram",
+   "prompt": "En un pictograma cada símbolo vale 6 autos. El lunes hay 3 símbolos y el martes 5. ¿Cuántos autos pasaron entre los dos días?"
+  },
+  {
+   "exerciseId": "cmuli7jrl01qj6krhcsglvhj4",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras muestra el deporte favorito de un curso: fútbol tiene 12 votos y básquetbol tiene 8 votos. ¿Cuántos votos más tiene el fútbol que el básquetbol?"
+  },
+  {
+   "exerciseId": "cmuli7jry01qy6krhjspvkl2b",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras dobles compara la nota de dos cursos en Matemática. Aprobaron 28 estudiantes de 6°A y 24 de 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?"
+  },
+  {
+   "exerciseId": "cmulu30bi07kc4crh9u2xcicy",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras muestra el instrumento favorito de un curso: la guitarra tiene 12 votos y el tambor tiene 8 votos. ¿Cuántos votos más tiene la guitarra que el tambor?"
+  },
+  {
+   "exerciseId": "cmulu30ck07lg4crh8z6phjsl",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras muestra el juego favorito de un curso: carreras tiene 12 votos y puzles tiene 8 votos. ¿Cuántos votos más tiene carreras que puzles?"
+  },
+  {
+   "exerciseId": "cmulu30cy07lv4crh37k8wow1",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras muestra el objeto espacial favorito de un curso: los cohetes tienen 12 votos y los telescopios tienen 8 votos. ¿Cuántos votos más tienen los cohetes que los telescopios?"
+  },
+  {
+   "exerciseId": "cmulu30ew07ny4crhhb247nxz",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras muestra el paseo favorito de un curso: la playa tiene 12 votos y el bosque tiene 8 votos. ¿Cuántos votos más tiene la playa que el bosque?"
+  },
+  {
+   "exerciseId": "cmulu30fs07ox4crhle3ucndt",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras muestra el deporte favorito de un curso: vóleibol tiene 12 votos y natación tiene 8 votos. ¿Cuántos votos más tiene el vóleibol que la natación?"
+  },
+  {
+   "exerciseId": "cmulu30g107p74crhxq7ka6xw",
+   "grade": 6,
+   "kind": "bars",
+   "prompt": "Un gráfico de barras dobles compara la prueba de natación de dos cursos. Aprobaron 28 estudiantes de 6°A y 24 de 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?"
+  }
+ ]
+}

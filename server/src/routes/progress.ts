@@ -3,6 +3,8 @@ import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
 import { getCurrentLevelForChild } from "../adaptive/levelLookup.js";
+import { buildWellbeingCross, skillsToReview } from "../domain/wellbeing.js";
+import { familyTipFor } from "../domain/familyTips.js";
 
 export const progressRouter = Router({ mergeParams: true });
 
@@ -18,9 +20,15 @@ progressRouter.get("/", requireAuth, async (req, res) => {
     orderBy: { startedAt: "desc" },
   });
 
+  // isSpotError: false — la precisión que ve la familia es de resolver
+  // ejercicios; una ronda de "detecta el error" mide diagnóstico, no
+  // cálculo, y mezclarla distorsionaría este número.
   const attempts = await prisma.attempt.findMany({
-    where: { session: { childProfileId: child.id } },
-    include: { errorType: true },
+    where: { session: { childProfileId: child.id }, isSpotError: false },
+    include: {
+      errorType: true,
+      exercise: { select: { mathSkill: { select: { id: true, grade: true, name: true, nameEn: true } } } },
+    },
   });
 
   const totalAttempts = attempts.length;
@@ -36,6 +44,17 @@ progressRouter.get("/", requireAuth, async (req, res) => {
 
   const currentLevel = await getCurrentLevelForChild(child.id);
 
+  // Cruce ánimo × rendimiento por día (descriptivo, nunca un diagnóstico) y
+  // contenidos con menos aciertos, cada uno con una sugerencia para la casa.
+  const checkIns = await prisma.wellbeingCheckIn.findMany({
+    where: { childProfileId: child.id },
+    select: { createdAt: true, mood: true, mathFeeling: true },
+  });
+  const wellbeing = buildWellbeingCross(checkIns, attempts);
+  const toReview = skillsToReview(attempts.map((a) => ({ isCorrect: a.isCorrect, skill: a.exercise.mathSkill }))).map(
+    (s) => ({ ...s, tip: familyTipFor(s.grade, s.name) }),
+  );
+
   res.status(200).json({
     child: { id: child.id, displayName: child.displayName, grade: child.grade },
     currentLevel,
@@ -45,5 +64,7 @@ progressRouter.get("/", requireAuth, async (req, res) => {
     correctAttempts,
     accuracy,
     errorBreakdown,
+    wellbeing,
+    skillsToReview: toReview,
   });
 });

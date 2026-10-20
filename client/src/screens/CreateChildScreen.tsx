@@ -2,14 +2,24 @@ import { useState, type FormEvent } from "react";
 import * as endpoints from "../api/endpoints.js";
 import { ApiError } from "../api/client.js";
 import type { ChildProfile } from "../api/types.js";
-import { t, useLang } from "../lib/i18n.js";
+import { t, useLang, type StringKey } from "../lib/i18n.js";
+import { playConfirm, playSelect } from "../lib/sound.js";
 
 interface Props {
   consentId: string;
   onCreated: (child: ChildProfile) => void;
 }
 
-const SUPPORTED_GRADES = [1, 2] as const;
+const SUPPORTED_GRADES = [1, 2, 3, 4, 5, 6] as const;
+
+const GRADE_LABEL_KEYS: Record<(typeof SUPPORTED_GRADES)[number], StringKey> = {
+  1: "grade1Label",
+  2: "grade2Label",
+  3: "grade3Label",
+  4: "grade4Label",
+  5: "grade5Label",
+  6: "grade6Label",
+};
 
 export function CreateChildScreen({ consentId, onCreated }: Props) {
   const { lang } = useLang();
@@ -21,6 +31,7 @@ export function CreateChildScreen({ consentId, onCreated }: Props) {
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     if (!grade) return;
+    playConfirm();
     setError(null);
     setSubmitting(true);
     try {
@@ -63,9 +74,12 @@ export function CreateChildScreen({ consentId, onCreated }: Props) {
                 key={g}
                 type="button"
                 className={`choice-card ${grade === g ? "selected" : ""}`}
-                onClick={() => setGrade(g)}
+                onClick={() => {
+                  playSelect();
+                  setGrade(g);
+                }}
               >
-                {t(lang, g === 1 ? "grade1Label" : "grade2Label")}
+                {t(lang, GRADE_LABEL_KEYS[g])}
               </button>
             ))}
           </div>

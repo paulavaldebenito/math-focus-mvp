@@ -1,35 +1,47 @@
 :root {
-  --ground: #F6F3FF;
+  /* Letra de toda la app: Comic Sans (Windows/Mac). En iPhone, iPad y
+     Android no viene instalada: ahí se usa Comic Neue (Google Fonts, cargada
+     en index.html), su versión libre casi idéntica. */
+  --font-app: "Comic Sans MS", "Comic Sans", "Comic Neue", "Chalkboard SE", sans-serif;
+  --ground: #FBF3E3;
   --surface: #FFFFFF;
-  --border: #E3DBFA;
-  --ink: #241C33;
-  --ink-soft: #6B6280;
-  --ink-faint: #9891A8;
+  --border: #E8D9B8;
+  --ink: #3A2A1A;
+  --ink-soft: #7A6650;
+  --ink-faint: #A6937A;
 
-  --brand: #0EA5E9;
-  --brand-bg: #DFF3FE;
-  --brand-dark: #0B7FB0;
+  /* Azul de confianza — color principal de marca y navegación. */
+  --brand: #1D68C4;
+  --brand-bg: #DCE9FA;
+  --brand-dark: #12488C;
 
-  --success: #22C55E;
-  --success-bg: #DCFCE7;
-  --success-dark: #16A34A;
+  /* Verde Lego. */
+  --success: #2E9E3F;
+  --success-bg: #DCF3DE;
+  --success-dark: #1F7A2E;
 
   /* Solo para errores técnicos reales (conexión, servidor) — nunca para una
-     respuesta incorrecta del niño. Ver --retry para eso. */
-  --alert: #FF6F59;
-  --alert-bg: #FFE1DB;
+     respuesta incorrecta del niño. Ver --retry para eso. Naranja a
+     propósito: se mantiene como familia de color distinta de --brand,
+     nunca rojo, para no leerse como una alarma. */
+  --alert: #FF7A45;
+  --alert-bg: #FFE3D5;
 
-  --star: #F5A623;
-  --star-bg: #FFEEC9;
-  --star-dark: #C97D0A;
+  /* Amarillo Lego. */
+  --star: #F5B400;
+  --star-bg: #FFF0C2;
+  --star-dark: #C98A00;
 
   /* "Probemos otra estrategia" — deliberadamente NO es rojo/rust, para no
      leerse como una alarma ante un error del niño. */
   --retry: #7A5C99;
   --retry-bg: #E6DEEF;
 
-  --info: #38BDF8;
-  --info-bg: #E0F5FE;
+  /* Azul Lego. */
+  --info: #2A7DE1;
+  --info-bg: #DCEBFB;
+
+  --baseplate-dot: rgba(0, 0, 0, 0.06);
 
   color-scheme: light;
 }
@@ -43,26 +55,28 @@
     --ink-soft: #B7AECD;
     --ink-faint: #8A80A0;
 
-    --brand: #38BDF8;
-    --brand-bg: #113247;
-    --brand-dark: #0B7FB0;
+    --brand: #4A8FE0;
+    --brand-bg: #12283F;
+    --brand-dark: #1D68C4;
 
     --success: #4ADE80;
     --success-bg: #10301D;
-    --success-dark: #16A34A;
+    --success-dark: #2E9E3F;
 
-    --alert: #FF8A75;
-    --alert-bg: #3A1E18;
+    --alert: #FF9466;
+    --alert-bg: #3A2013;
 
     --star: #FFC94D;
     --star-bg: #3A2C10;
-    --star-dark: #C97D0A;
+    --star-dark: #C98A00;
 
     --retry: #B49BD1;
     --retry-bg: #2E2740;
 
-    --info: #7DD3FC;
-    --info-bg: #113247;
+    --info: #6CB0F5;
+    --info-bg: #112B47;
+
+    --baseplate-dot: rgba(255, 255, 255, 0.05);
 
     color-scheme: dark;
   }
@@ -70,14 +84,23 @@
 
 * { box-sizing: border-box; }
 
+/* Tamaño base de toda la app: como el resto de las reglas usa unidades
+   rem/em (relativas a ESTE font-size del <html>, no al de <body>), subirlo
+   acá —no en body— es lo que hace que títulos, botones y textos
+   secundarios escalen todos juntos sin tocarlos uno por uno. */
+html { font-size: 1.2rem; }
+
 html, body, #root { height: 100%; }
 
 body {
   margin: 0;
-  background: var(--ground);
+  background-color: var(--ground);
+  /* Textura "placa base" — el guiño Lego más reconocible, presente en
+     todas las pantallas sin tocar ningún componente. */
+  background-image: radial-gradient(circle, var(--baseplate-dot) 2.5px, transparent 3px);
+  background-size: 28px 28px;
   color: var(--ink);
-  font-family: "Avenir Next", "Century Gothic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.0625rem;
+  font-family: var(--font-app);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -85,7 +108,7 @@ body {
 h1, h2, h3 {
   margin: 0;
   text-wrap: balance;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-family: var(--font-app);
 }
 
 button {

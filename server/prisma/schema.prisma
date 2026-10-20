@@ -50,10 +50,26 @@ model ChildProfile {
   /// Clave fija de un catálogo cerrado (ver COMPANION_KEYS en el servidor).
   /// Nullable: un perfil recién creado todavía no lo eligió.
   companion         String?
+  /// Nombre propio que el niño le puso a su mascota (p. ej. "Pelusa") — nunca
+  /// se modera/valida el contenido más allá de largo, es un nombre inventado
+  /// por el niño para su personaje, no un dato público ni compartido con
+  /// otros niños. Nullable: sin nombre propio, la UI usa el nombre por
+  /// defecto del personaje (ver companions.ts).
+  mascotName        String?
+  /// Nombre propio que el niño le puso a CADA mascota, por clave del
+  /// catálogo ({ "zorro": "Pelusa", "buho": "Sabio" }). Así, al cambiar de
+  /// mascota y volver, recupera el nombre que ya le había puesto.
+  /// `mascotName` sigue siendo el nombre de la mascota ACTUAL.
+  mascotNames       Json               @default("{}")
+  /// Claves de un catálogo cerrado (ver INTEREST_KEYS en el servidor). De 1 a
+  /// MAX_INTERESTS al elegir; vacío = un perfil recién creado (o anterior a
+  /// esta funcionalidad) que todavía no eligió.
+  interests         String[]           @default([])
   createdAt         DateTime           @default(now())
   sessions          Session[]
   progressSnapshots ProgressSnapshot[]
   starEvents        StarEvent[]
+  checkIns          WellbeingCheckIn[]
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -64,6 +80,11 @@ model ErrorType {
   code        String           @unique
   label       String
   description String
+  /// Nivel del error (modelo matefriendly): 1=conceptual, 2=procedimental,
+  /// 3=lectura/comprensión del enunciado. NULL para los patrones de
+  /// comportamiento (respuesta_rapida/abandono/solicitud_ayuda_repetida),
+  /// que no son "por qué esta alternativa está mal" sino señales de sesión.
+  level       Int?
   options     ExerciseOption[]
   attempts    Attempt[]
 }
@@ -74,11 +95,24 @@ model MathSkill {
   grade     Int
   axis      String
   name      String
+  /// Traducción al inglés del eje/nombre de la habilidad — se muestran en el
+  /// mapa de aprendizaje. Nullable: no todas las habilidades la tienen
+  /// todavía — el cliente cae de vuelta al español si falta (mismo patrón
+  /// que Exercise.promptEn). Debe usar el vocabulario escolar real en inglés
+  /// (p. ej. "pie chart", no una traducción literal), no una traducción
+  /// palabra por palabra.
+  axisEn    String?
+  nameEn    String?
   /// Código de Objetivo de Aprendizaje. NULL a propósito: no existe una fuente
   /// curricular oficial verificada en este entorno. No completar sin validar
   /// contra el documento oficial de MINEDUC.
   oaCode    String?
+  /// Orden dentro de su curso — posición en el mapa de habilidades (un
+  /// contenido se desbloquea al completar el anterior). Lo asigna el seed
+  /// según el orden en que cada agente de curso escribió sus contenidos.
+  order     Int        @default(0)
   exercises Exercise[]
+  sessions  Session[]
 }
 
 /// Ejercicio. `isFictitious` marca explícitamente los datos de prueba —
@@ -103,6 +137,22 @@ model Exercise {
   /// combinar o a quitar) — para niños de 1° básico que aún no leen con
   /// soltura. Nullable: no todo ejercicio antiguo tiene una todavía.
   visual          Json?
+  /// Ilustración SVG del banco de imágenes por curso, una por idioma:
+  /// { kind, width, height, src: { es, en }, alt: { es, en } } — rutas
+  /// públicas del cliente (client/public/banco-imagenes). Si está presente,
+  /// reemplaza a `visual` en la interfaz; el enunciado se sigue mostrando
+  /// como texto. Nullable: la mayoría de los ejercicios no tiene imagen y
+  /// conserva su representación actual. La vincula
+  /// prisma/seed/imagenes/linkImages.ts, nunca a mano.
+  image           Json?
+  /// Tema de un catálogo cerrado (ver INTEREST_KEYS en el servidor) que
+  /// reescribe el enunciado con vocabulario de ese interés. Nullable: NULL
+  /// significa contenido neutro/existente, usado siempre como respaldo.
+  theme           String?
+  /// Agrupa un ejercicio base con sus variantes temáticas (mismo problema,
+  /// otra historia). Sirve para no entregar dos veces el "mismo" problema en
+  /// una sesión. NULL = sin variantes.
+  baseKey         String?
   createdAt       DateTime         @default(now())
   options         ExerciseOption[]
   attempts        Attempt[]
@@ -116,7 +166,18 @@ model ExerciseOption {
   exerciseId  String
   exercise    Exercise   @relation(fields: [exerciseId], references: [id])
   label       String
+  /// Traducción al inglés de la alternativa. Nullable: la mayoría son
+  /// números o expresiones que no cambian entre idiomas — el cliente cae de
+  /// vuelta a `label` si falta (mismo patrón que Exercise.promptEn).
+  labelEn     String?
   isCorrect   Boolean
+  /// Mensaje propio de esta alternativa, que el niño ve DESPUÉS de elegirla
+  /// (nunca se envía con la pregunta: delataría cuáles son incorrectas).
+  /// Nullable: la mayoría del banco no lo tiene — el cliente cae de vuelta
+  /// al mensaje genérico del tipo de error (ERROR_FEEDBACK) o de acierto.
+  /// Lo escribe prisma/seed/traducciones/applyOptionFeedback.ts.
+  feedback    String?
+  feedbackEn  String?
   errorTypeId String?
   errorType   ErrorType? @relation(fields: [errorTypeId], references: [id])
   attempts    Attempt[]
@@ -128,12 +189,18 @@ model Session {
   id                String             @id @default(cuid())
   childProfileId    String
   childProfile      ChildProfile       @relation(fields: [childProfileId], references: [id])
+  /// Habilidad del mapa que se está practicando en esta sesión (mapa de
+  /// habilidades estilo Duolingo). NULL = sesión de todo el curso (solo
+  /// ocurre en sesiones creadas antes de esta funcionalidad).
+  mathSkillId       String?
+  mathSkill         MathSkill?         @relation(fields: [mathSkillId], references: [id])
   startedAt         DateTime           @default(now())
   endedAt           DateTime?
   attempts          Attempt[]
   pauseEvents       PauseEvent[]
   adaptiveDecisions AdaptiveDecision[]
   starEvents        StarEvent[]
+  checkIns          WellbeingCheckIn[]
 }
 
 /// Un intento de respuesta a un ejercicio dentro de una sesión.
@@ -152,6 +219,14 @@ model Attempt {
   errorType        ErrorType?      @relation(fields: [errorTypeId], references: [id])
   responseTimeMs   Int?
   attemptNumber    Int             @default(1)
+  /// true si esta fila es de una ronda "detecta el error" (el niño
+  /// diagnostica una respuesta ajena ya errada) y no de resolver el
+  /// ejercicio — se excluye del historial que ve el motor adaptativo
+  /// (evaluateAdaptiveRules) y de las estadísticas de precisión del panel
+  /// familiar: es una habilidad distinta (diagnóstico) de la que esas dos
+  /// cosas miden (resolver problemas). `selectedOptionId`/`errorTypeId`
+  /// quedan NULL en estas filas — no hubo una alternativa numérica elegida.
+  isSpotError      Boolean         @default(false)
   /// Cantidad de pistas usadas en este intento — insumo directo del motor
   /// adaptativo (regla "uso repetido de pistas").
   hintsUsed        Int             @default(0)
@@ -179,6 +254,30 @@ model PauseEvent {
   offeredAt  DateTime @default(now())
   accepted   Boolean  @default(true)
   durationMs Int?
+  /// Ejercicio concreto de la pausa (clave del catálogo del cliente, p. ej.
+  /// "globo" o "saltos-estrella"). Nullable: pausas rechazadas o anteriores
+  /// a este campo. Sirve para no repetir el mismo ejercicio en una sesión.
+  exerciseKey String?
+}
+
+/// Autorreporte breve y OPCIONAL del niño al empezar una práctica, con 5
+/// caritas: cómo se siente hoy y cómo se siente con las matemáticas. Nunca
+/// es un diagnóstico ni se interpreta clínicamente; no se muestra a otros
+/// niños ni afecta el motor adaptativo. Se guarda para, a futuro, cruzarlo
+/// con el rendimiento de la misma sesión (p. ej. una baja de precisión).
+model WellbeingCheckIn {
+  id             String       @id @default(cuid())
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id])
+  sessionId      String?
+  session        Session?     @relation(fields: [sessionId], references: [id])
+  /// Estado de ánimo, 1 = muy triste … 5 = muy contento/a. NULL = no respondió.
+  mood           Int?
+  /// Cómo se siente con las matemáticas, 1 = muy nervioso/a … 5 = muy
+  /// tranquilo/a. Es el inverso de la ansiedad matemática autorreportada
+  /// (ansiedad = 6 − mathFeeling). NULL = no respondió.
+  mathFeeling    Int?
+  createdAt      DateTime     @default(now())
 }
 
 /// Registro auditable de cada cambio de dificultad. `ruleCode` identifica
@@ -197,7 +296,8 @@ model AdaptiveDecision {
 /// Una estrella otorgada — siempre con un motivo trazable, nunca aleatorio
 /// ni comprable con dinero real (reglas de gamificación del proyecto).
 /// `reason` es un código cerrado: "correct_answer" | "pause_taken" |
-/// "session_complete".
+/// "session_complete" | "streak_bonus" (bono aditivo por racha de aciertos
+/// seguidos — nunca se resta al cortarse la racha).
 model StarEvent {
   id             String       @id @default(cuid())
   childProfileId String

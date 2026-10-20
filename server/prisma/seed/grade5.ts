@@ -1,0 +1,378 @@
+import { block, type ErrorIds, type SeedExercise, type SkillBlock } from "./lib.js";
+
+// Banco de 5° básico. Cada OA fue verificado en la lista oficial de
+// Matemática 5° Básico (Currículum Nacional, MINEDUC) el 2026-09-28:
+// https://www.curriculumnacional.cl/614/w3-propertyvalue-49370.html
+// (el dominio curriculumnacional.mineduc.cl redirige a ese sitio).
+// Números: coma decimal y punto de miles en español.
+
+/** Miles con punto (español de Chile): 1250 → "1.250". */
+function es(n: number): string {
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+type W = [label: string, code: string];
+
+/** Arma un ejercicio: la correcta va primera; wrongs = [etiqueta, código de error]. */
+function q(
+  level: number,
+  prompt: [string, string],
+  note: [string, string],
+  correct: string,
+  wrongs: W[],
+  codes: ErrorIds,
+): SeedExercise {
+  return {
+    prompt: prompt[0],
+    promptEn: prompt[1],
+    procedureNote: note[0],
+    procedureNoteEn: note[1],
+    difficultyLevel: level,
+    visual: null,
+    options: [
+      { label: correct, isCorrect: true },
+      ...wrongs.map(([label, code]) => ({ label, isCorrect: false, errorTypeId: codes[code] })),
+    ],
+  };
+}
+
+export function grade5(errorTypeByCode: ErrorIds): SkillBlock[] {
+  const c = errorTypeByCode;
+  const blocks: SkillBlock[] = [];
+
+  // ===== Números y operaciones — MA05 OA01: números naturales grandes =====
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "Números naturales grandes: valor posicional, comparación y aproximación",
+      nameEn: "Large whole numbers: place value, comparing and rounding",
+      oaCode: "MA05 OA01",
+    },
+    [
+      q(1, ["¿Qué dígito ocupa la posición de las centenas de mil en el número 3.482.915?", "Which digit is in the hundred thousands place in the number 3,482,915?"],
+        ["Cuenta las posiciones desde la derecha: unidades, decenas, centenas, unidades de mil, decenas de mil y luego centenas de mil.", "Count the places from the right: ones, tens, hundreds, thousands, ten thousands, and then hundred thousands."],
+        "4", [["3", "E1_OP"], ["8", "E2_RES"], ["2", "E2_RES"]], c),
+      q(1, ["¿Cuál es el valor del dígito 7 en el número 5.708.246?", "What is the value of the digit 7 in the number 5,708,246?"],
+        ["Fíjate en qué posición está el 7 y cuántas cifras lo siguen hasta el final del número.", "Look at which place the 7 is in and how many digits follow it to the end of the number."],
+        es(700000), [[es(70000), "E2_RES"], [es(7000), "E2_RES"], ["7", "E1_OP"]], c),
+      q(1, ["¿Cómo se escribe con cifras «cuarenta y cinco mil doce»?", "How do you write \"forty-five thousand twelve\" with digits?"],
+        ["Escribe 45 en la parte de los miles y luego el 12 en las últimas cifras. Si falta un lugar, completa con cero.", "Write 45 in the thousands part and then 12 in the last digits. If a place is missing, fill it with zero."],
+        es(45012), [[es(45120), "E2_RES"], [es(450012), "E2_RES"], [es(4512), "E2_RES"]], c),
+      q(2, ["¿Qué número es 6.000.000 + 300.000 + 20.000 + 500 + 7?", "What number is 6,000,000 + 300,000 + 20,000 + 500 + 7?"],
+        ["Ubica cada sumando en su posición. Las posiciones que no aparecen (las decenas y las unidades de mil) llevan cero.", "Place each addend in its position. The places that do not appear (tens and thousands) get a zero."],
+        es(6320507), [[es(6325007), "E2_RES"], [es(6320057), "E2_RES"], [es(6032507), "E2_RES"]], c),
+      q(2, ["¿Cuál de estos números es el mayor?", "Which of these numbers is the greatest?"],
+        ["Primero compara cuántas cifras tiene cada número. Si tienen las mismas, compara de izquierda a derecha.", "First compare how many digits each number has. If they have the same, compare from left to right."],
+        es(4205000), [[es(987650), "E1_OP"], [es(4025000), "E2_CAL"], [es(4200500), "E2_CAL"]], c),
+      q(2, ["Aproxima 43.950 al millar más cercano.", "Round 43,950 to the nearest thousand."],
+        ["Mira la cifra de las centenas: si es 5 o más, el millar sube; si es menos que 5, se queda igual.", "Look at the hundreds digit: if it is 5 or more, the thousand goes up; if it is less than 5, it stays the same."],
+        es(44000), [[es(43000), "E2_RES"], [es(40000), "E1_OP"], [es(43900), "E2_RES"]], c),
+      q(2, ["¿Qué lista está ordenada de menor a mayor?", "Which list is ordered from least to greatest?"],
+        ["Compara primero la cantidad de cifras: el número con menos cifras es el menor. Entre los que tienen igual cantidad, compara de izquierda a derecha.", "First compare the number of digits: the number with fewer digits is the least. Among those with the same number of digits, compare from left to right."],
+        `${es(35480)}, ${es(305048)}, ${es(305480)}`,
+        [[`${es(305048)}, ${es(305480)}, ${es(35480)}`, "E1_OP"], [`${es(305480)}, ${es(305048)}, ${es(35480)}`, "E2_CAL"], [`${es(35480)}, ${es(305480)}, ${es(305048)}`, "E2_CAL"]], c),
+      q(2, ["Un contador marca 2.849.999. ¿Qué número marcará cuando avance una unidad más?", "A counter shows 2,849,999. What number will it show after it goes up by one?"],
+        ["Al sumar 1 a un 9, se forma una decena y se «lleva» hacia la izquierda. Sigue la cadena de nueves hasta la primera cifra que no es 9.", "When you add 1 to a 9, a ten is formed and it is \"carried\" to the left. Follow the chain of nines to the first digit that is not a 9."],
+        es(2850000), [[es(2850999), "E2_RES"], [es(2940000), "E2_RES"], [es(2849100), "E2_CAL"]], c),
+      q(3, ["¿Cuántos grupos completos de 100.000 caben en 1.250.000?", "How many complete groups of 100,000 fit in 1,250,000?"],
+        ["Piensa en las centenas de mil: 1.250.000 es un millón más una parte. ¿Cuántas centenas de mil hay en un millón y cuántas más en el resto?", "Think about hundred thousands: 1,250,000 is a million plus a part. How many hundred thousands are in a million, and how many more are in the rest?"],
+        "12", [["125", "E2_RES"], [es(1250), "E2_RES"], ["1", "E1_OP"]], c),
+      q(3, ["Un número tiene 3 millones, 0 centenas de mil, 4 decenas de mil, 0 unidades de mil, 7 centenas, 0 decenas y 5 unidades. ¿Cuál es?", "A number has 3 millions, 0 hundred thousands, 4 ten thousands, 0 thousands, 7 hundreds, 0 tens and 5 ones. Which is it?"],
+        ["Escribe una cifra por cada posición, de mayor a menor, sin saltarte ninguna. Los ceros también cuentan.", "Write one digit for each place, from greatest to least, without skipping any. The zeros count too."],
+        es(3040705), [[es(3400705), "E2_RES"], [es(304705), "E2_RES"], [es(3040750), "E2_RES"]], c),
+      q(3, ["Aproxima 1.478.520 a la centena de mil más cercana.", "Round 1,478,520 to the nearest hundred thousand."],
+        ["Identifica la cifra de las centenas de mil y mira la cifra que va justo a su derecha para decidir si sube o se queda.", "Find the hundred thousands digit and look at the digit right next to it on its right to decide whether it goes up or stays."],
+        es(1500000), [[es(1400000), "E2_RES"], [es(1480000), "E2_RES"], [es(1000000), "E1_OP"]], c),
+    ],
+  ));
+
+  // ===== Números y operaciones — MA05 OA04: división 3 cifras ÷ 1 cifra =====
+  const divExact = (dividend: number, divisor: number, level: number): SeedExercise => {
+    const quo = dividend / divisor;
+    const s = String(quo);
+    return q(level,
+      [`¿Cuánto es ${dividend} ÷ ${divisor}?`, `What is ${dividend} ÷ ${divisor}?`],
+      [`Reparte por partes: piensa cuántas veces cabe ${divisor} en las centenas y decenas del dividendo, y baja la cifra que sigue.`, `Divide step by step: think about how many times ${divisor} fits into the hundreds and tens of the dividend, and bring down the next digit.`],
+      String(quo),
+      [[`${s[0]}0${s[1]}`, "E2_RES"], [String(quo + 1), "E2_CAL"], [String(dividend * divisor), "E1_OP"]], c);
+  };
+  const divRem = (dividend: number, divisor: number, level: number): SeedExercise => {
+    const quo = Math.floor(dividend / divisor);
+    const r = dividend % divisor;
+    return q(level,
+      [`¿Cuánto es ${dividend} ÷ ${divisor}? Escribe el cociente y el resto.`, `What is ${dividend} ÷ ${divisor}? Give the quotient and the remainder.`],
+      [`Divide hasta que lo que sobre sea menor que ${divisor}. Comprueba: cociente × ${divisor} + resto debe dar el dividendo.`, `Divide until what is left over is less than ${divisor}. Check: quotient × ${divisor} + remainder must equal the dividend.`],
+      `${quo} resto ${r}`,
+      [[`${quo + 1} resto ${r}`, "E2_CAL"], [`${quo} resto ${r + divisor}`, "E2_RES"], [`${r} resto ${quo}`, "E1_OP"]], c);
+  };
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "División con dividendo de tres cifras y divisor de una cifra",
+      nameEn: "Division with a three-digit dividend and a one-digit divisor",
+      oaCode: "MA05 OA04",
+    },
+    [
+      divExact(156, 3, 1),
+      divExact(248, 4, 1),
+      divExact(435, 5, 1),
+      divExact(372, 6, 1),
+      divRem(275, 4, 2),
+      divRem(359, 6, 2),
+      divRem(500, 7, 2),
+      q(2, ["¿Cuál es el resto de 408 ÷ 5?", "What is the remainder of 408 ÷ 5?"],
+        ["Busca el múltiplo de 5 más cercano que no se pase de 408 y calcula cuánto falta para llegar a 408.", "Find the multiple of 5 closest to 408 that does not go over it, and work out how much is needed to reach 408."],
+        "3", [["81", "E3_PREG"], ["5", "E2_RES"], ["13", "E2_CAL"]], c),
+      q(3, ["Hay 245 alfajores para poner en cajas de 6. ¿Cuántas cajas se pueden llenar completas?", "There are 245 alfajores (sandwich cookies) to pack in boxes of 6. How many boxes can be filled completely?"],
+        ["Las cajas completas son las que se llenan del todo. Divide y decide qué hacer con lo que sobra.", "Complete boxes are the ones filled all the way. Divide and decide what to do with what is left over."],
+        "40", [["41", "E3_PREG"], ["5", "E3_PREG"], [es(1470), "E1_OP"]], c),
+      q(3, ["Se reparten 350 lápices en partes iguales entre 8 cursos. ¿Cuántos lápices sobran?", "350 pencils are shared equally among 8 classes. How many pencils are left over?"],
+        ["Reparte en partes iguales y mira qué queda sin repartir. Lo que sobra siempre es menor que la cantidad de cursos.", "Share equally and look at what is left unshared. What is left over is always less than the number of classes."],
+        "6", [["43", "E3_PREG"], ["7", "E2_CAL"], ["8", "E2_RES"]], c),
+      q(3, ["Deben viajar 130 personas en vans de 8 asientos. ¿Cuántas vans se necesitan como mínimo para que nadie quede sin asiento?", "130 people must travel in vans with 8 seats. What is the minimum number of vans needed so that everyone has a seat?"],
+        ["Divide y mira el resto: las personas que sobran también necesitan una van.", "Divide and look at the remainder: the people left over also need a van."],
+        "17", [["16", "E2_RES"], ["2", "E3_PREG"], ["18", "E2_CAL"]], c),
+    ],
+  ));
+
+  // ===== Números y operaciones — MA05 OA07: fracciones propias, equivalencia y comparación =====
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Números y operaciones",
+      axisEn: "Numbers and Operations",
+      name: "Fracciones propias: equivalencia y comparación",
+      nameEn: "Proper fractions: equivalent fractions and comparing",
+      oaCode: "MA05 OA07",
+    },
+    [
+      q(1, ["¿Cuál de estas fracciones es equivalente a 1/2?", "Which of these fractions is equivalent to 1/2?"],
+        ["Dos fracciones son equivalentes si al multiplicar (o dividir) numerador y denominador por el mismo número obtienes la otra.", "Two fractions are equivalent if multiplying (or dividing) the numerator and denominator by the same number gives you the other one."],
+        "2/4", [["1/4", "E1_OP"], ["2/3", "E2_RES"], ["3/5", "E2_RES"]], c),
+      q(1, ["¿Cuál de estas fracciones es equivalente a 3/4?", "Which of these fractions is equivalent to 3/4?"],
+        ["Multiplica numerador y denominador por el mismo número. Si solo cambias uno de los dos, cambia el valor de la fracción.", "Multiply the numerator and denominator by the same number. If you change only one of them, the value of the fraction changes."],
+        "6/8", [["4/5", "E2_RES"], ["3/8", "E2_RES"], ["6/4", "E2_RES"]], c),
+      q(1, ["Una barra de chocolate se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la barra se comió?", "A chocolate bar is divided into 8 equal parts and 3 are eaten. What fraction of the bar was eaten?"],
+        ["El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.", "The denominator says how many equal parts the whole was divided into; the numerator says how many parts you are interested in."],
+        "3/8", [["8/3", "E1_OP"], ["5/8", "E3_PREG"], ["3/5", "E2_RES"]], c),
+      q(1, ["¿Cuál es mayor: 3/8 o 3/5?", "Which is greater: 3/8 or 3/5?"],
+        ["Imagina dos pizzas iguales: una partida en 8 trozos y otra en 5. ¿En cuál son más grandes los trozos?", "Imagine two equal pizzas: one cut into 8 pieces and the other into 5. In which are the pieces bigger?"],
+        "3/5", [["3/8", "E1_OP"], ["Son iguales", "E3_DATO"], ["No se puede saber", "E3_PREG"]], c),
+      q(2, ["¿Qué número falta para que 2/5 = ?/20?", "What number is missing so that 2/5 = ?/20?"],
+        ["Mira por cuánto se multiplicó el denominador para pasar de 5 a 20 y haz lo mismo con el numerador.", "See what the denominator was multiplied by to go from 5 to 20 and do the same with the numerator."],
+        "8", [["17", "E2_RES"], ["10", "E2_CAL"], ["4", "E1_OP"]], c),
+      q(2, ["¿Qué lista ordena las fracciones de menor a mayor?", "Which list orders the fractions from least to greatest?"],
+        ["Todas son de un mismo entero. Piensa en cuántos trozos se hacen: mientras más trozos, más pequeño es cada uno.", "They are all parts of the same whole. Think about how many pieces are made: the more pieces, the smaller each one is."],
+        "1/8, 1/4, 1/2", [["1/2, 1/4, 1/8", "E1_OP"], ["1/4, 1/8, 1/2", "E2_CAL"], ["1/8, 1/2, 1/4", "E2_CAL"]], c),
+      q(2, ["¿Cuál es mayor: 5/6 o 3/4?", "Which is greater: 5/6 or 3/4?"],
+        ["Busca un denominador común (un múltiplo de 6 y de 4) y compara los numeradores.", "Find a common denominator (a multiple of both 6 and 4) and compare the numerators."],
+        "5/6", [["3/4", "E1_OP"], ["Son iguales", "E2_RES"], ["No se pueden comparar", "E3_PREG"]], c),
+      q(2, ["¿Qué lista ordena de menor a mayor las fracciones 2/3, 1/6 y 5/12?", "Which list orders the fractions 2/3, 1/6 and 5/12 from least to greatest?"],
+        ["Escribe las tres con denominador 12 y compara solo los numeradores.", "Write all three with denominator 12 and compare only the numerators."],
+        "1/6, 5/12, 2/3", [["2/3, 5/12, 1/6", "E1_OP"], ["1/6, 2/3, 5/12", "E2_CAL"], ["5/12, 1/6, 2/3", "E2_CAL"]], c),
+      q(3, ["Ana comió 3/8 de una pizza y Beto comió 1/2 de otra pizza igual. ¿Quién comió más?", "Ana ate 3/8 of a pizza and Beto ate 1/2 of another identical pizza. Who ate more?"],
+        ["Como las pizzas son iguales, puedes comparar las fracciones. Escribe 1/2 con denominador 8 para verlas en la misma unidad.", "Since the pizzas are identical, you can compare the fractions. Write 1/2 with denominator 8 to see them in the same unit."],
+        "Beto", [["Ana", "E1_OP"], ["Comieron lo mismo", "E2_RES"], ["No se puede saber", "E3_DATO"]], c),
+      q(3, ["Una cinta se divide en 12 partes iguales y se pintan 9. ¿Qué fracción equivalente, con denominador 4, representa lo pintado?", "A ribbon is divided into 12 equal parts and 9 are painted. Which equivalent fraction, with denominator 4, represents the painted part?"],
+        ["Para pasar de denominador 12 a denominador 4, divide numerador y denominador por el mismo número.", "To go from denominator 12 to denominator 4, divide the numerator and the denominator by the same number."],
+        "3/4", [["9/4", "E2_RES"], ["1/4", "E3_PREG"], ["4/3", "E1_OP"]], c),
+      q(3, ["Luisa tiene 2/3 de una barra de chocolate y Mateo tiene 4/6 de otra barra igual. ¿Qué afirmación es correcta?", "Luisa has 2/3 of a chocolate bar and Mateo has 4/6 of another identical bar. Which statement is correct?"],
+        ["Multiplica el numerador y el denominador de una de las fracciones por el mismo número y observa qué obtienes.", "Multiply the numerator and the denominator of one of the fractions by the same number and see what you get."],
+        "Tienen la misma cantidad",
+        [["Mateo tiene más, porque 4 es mayor que 2", "E1_OP"], ["Luisa tiene más, porque 3 es menor que 6", "E2_RES"], ["No se pueden comparar, porque tienen distinto denominador", "E3_PREG"]], c),
+    ],
+  ));
+
+  // ===== Patrones y álgebra — MA05 OA15: ecuaciones e inecuaciones de un paso =====
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Patrones y álgebra",
+      axisEn: "Patterns and Algebra",
+      name: "Ecuaciones e inecuaciones de un paso",
+      nameEn: "One-step equations and inequalities",
+      oaCode: "MA05 OA15",
+    },
+    [
+      q(1, ["¿Qué valor de x cumple x + 8 = 15?", "Which value of x satisfies x + 8 = 15?"],
+        ["Piensa: ¿qué número, sumado a 8, llega hasta 15? Usa la operación contraria a la suma.", "Think: which number, added to 8, reaches 15? Use the operation opposite to addition."],
+        "7", [["23", "E1_OP"], ["8", "E3_DATO"], ["6", "E2_CAL"]], c),
+      q(1, ["¿Qué valor de x cumple x − 9 = 14?", "Which value of x satisfies x − 9 = 14?"],
+        ["Si al restar 9 llegas a 14, ¿de qué número partiste? Usa la operación contraria a la resta.", "If subtracting 9 gets you to 14, what number did you start from? Use the operation opposite to subtraction."],
+        "23", [["5", "E1_OP"], ["14", "E3_DATO"], ["22", "E2_CAL"]], c),
+      q(1, ["¿Qué valor de x cumple 12 + x = 30?", "Which value of x satisfies 12 + x = 30?"],
+        ["Pregúntate cuánto falta para llegar desde 12 hasta 30. Es una resta.", "Ask yourself how much is needed to go from 12 to 30. It is a subtraction."],
+        "18", [["42", "E1_OP"], ["12", "E3_DATO"], ["17", "E2_CAL"]], c),
+      q(1, ["¿Qué valor de x cumple x − 25 = 40?", "Which value of x satisfies x − 25 = 40?"],
+        ["Deshaz la resta: al número que queda (40) devuélvele lo que se quitó (25).", "Undo the subtraction: give back to the remaining number (40) what was taken away (25)."],
+        "65", [["15", "E1_OP"], ["40", "E3_DATO"], ["64", "E2_CAL"]], c),
+      q(2, ["Si a + 145 = 320, ¿cuánto vale a?", "If a + 145 = 320, what is the value of a?"],
+        ["Usa la operación contraria: a la suma total réstale el sumando que ya conoces. Cuida la reagrupación en las decenas.", "Use the opposite operation: from the total subtract the addend you already know. Be careful with regrouping in the tens."],
+        "175", [["465", "E1_OP"], ["185", "E2_RES"], ["174", "E2_CAL"]], c),
+      q(2, ["Si b − 68 = 132, ¿cuánto vale b?", "If b − 68 = 132, what is the value of b?"],
+        ["Deshaz la resta con una suma: al resultado súmale lo que se quitó.", "Undo the subtraction with an addition: add to the result what was taken away."],
+        "200", [["64", "E1_OP"], ["190", "E2_RES"], ["199", "E2_CAL"]], c),
+      q(2, ["¿Cuál de estos valores cumple n + 6 > 10?", "Which of these values satisfies n + 6 > 10?"],
+        ["El signo > significa «mayor que», no «igual a». Prueba cada valor y fíjate en si el resultado pasa de 10.", "The sign > means \"greater than\", not \"equal to\". Try each value and check whether the result goes past 10."],
+        "5", [["4", "E2_RES"], ["3", "E2_CAL"], ["2", "E1_OP"]], c),
+      q(2, ["¿Cuál de estos valores cumple x − 4 < 6?", "Which of these values satisfies x − 4 < 6?"],
+        ["El signo < significa «menor que». Prueba cada valor: primero resta 4 y luego compara con 6.", "The sign < means \"less than\". Try each value: first subtract 4 and then compare with 6."],
+        "9", [["10", "E2_RES"], ["12", "E1_OP"], ["15", "E1_OP"]], c),
+      q(3, ["Tomás tenía algunas figuritas. Le regalaron 26 y ahora tiene 71. ¿Cuántas figuritas tenía al inicio?", "Tomás had some stickers. He was given 26 and now has 71. How many stickers did he have at the start?"],
+        ["Escribe la situación como ecuación: lo que tenía + 26 = 71. Luego busca el número que falta.", "Write the situation as an equation: what he had + 26 = 71. Then find the missing number."],
+        "45", [["97", "E1_OP"], ["26", "E3_DATO"], ["44", "E2_CAL"]], c),
+      q(3, ["Sofía gastó $1.200 en el kiosco y le quedaron $3.500. ¿Cuánto dinero tenía antes de comprar?", "Sofía spent 1,200 pesos at the snack stand and had 3,500 pesos left. How much money did she have before buying?"],
+        ["Escribe: dinero inicial − 1.200 = 3.500. Para hallar el dinero inicial, deshaz la resta.", "Write: starting money − 1,200 = 3,500. To find the starting money, undo the subtraction."],
+        `$${es(4700)}`, [[`$${es(2300)}`, "E1_OP"], [`$${es(3500)}`, "E3_PREG"], [`$${es(4600)}`, "E2_CAL"]], c),
+      q(3, ["En un curso hay 32 estudiantes. Si 19 son niñas y el resto son niños, ¿qué ecuación permite hallar la cantidad de niños (n)?", "A class has 32 students. If 19 are girls and the rest are boys, which equation lets you find the number of boys (n)?"],
+        ["Las niñas más los niños deben dar el total del curso. Escribe esa idea con los datos del problema.", "The girls plus the boys must give the total of the class. Write that idea using the numbers in the problem."],
+        "19 + n = 32", [["n − 19 = 32", "E1_OP"], ["n + 32 = 19", "E3_DATO"], ["19 − n = 32", "E1_OP"]], c),
+    ],
+  ));
+
+  // ===== Geometría — MA05 OA16: puntos en el primer cuadrante del plano cartesiano =====
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Geometría",
+      axisEn: "Geometry",
+      name: "Plano cartesiano: coordenadas en el primer cuadrante",
+      nameEn: "Coordinate plane: coordinates in the first quadrant",
+      oaCode: "MA05 OA16",
+    },
+    [
+      q(1, ["Un punto está 3 unidades a la derecha del origen y 5 unidades hacia arriba. ¿Cuáles son sus coordenadas?", "A point is 3 units to the right of the origin and 5 units up. What are its coordinates?"],
+        ["Las coordenadas se escriben (horizontal, vertical): primero cuánto avanzas hacia los lados y después cuánto subes.", "Coordinates are written (horizontal, vertical): first how far you move sideways and then how far you go up."],
+        "(3, 5)", [["(5, 3)", "E2_RES"], ["(3, 0)", "E3_DATO"], ["(0, 5)", "E3_DATO"]], c),
+      q(1, ["En el punto (6, 2), ¿qué número indica el movimiento horizontal, sobre el eje x?", "In the point (6, 2), which number tells the horizontal movement, along the x-axis?"],
+        ["En un par ordenado, el primer número es el de x (horizontal) y el segundo es el de y (vertical).", "In an ordered pair, the first number is x (horizontal) and the second is y (vertical)."],
+        "6", [["2", "E2_RES"], ["8", "E1_OP"], ["4", "E2_CAL"]], c),
+      q(1, ["¿Cuál de estos puntos está sobre el eje horizontal (eje x)?", "Which of these points is on the horizontal axis (the x-axis)?"],
+        ["Un punto sobre el eje horizontal no ha subido nada. ¿Qué valor tiene entonces la coordenada vertical?", "A point on the horizontal axis has not gone up at all. What value does the vertical coordinate have then?"],
+        "(4, 0)", [["(0, 4)", "E2_RES"], ["(4, 4)", "E1_OP"], ["(2, 3)", "E3_DATO"]], c),
+      q(1, ["¿Cuáles son las coordenadas del origen del plano cartesiano?", "What are the coordinates of the origin of the coordinate plane?"],
+        ["El origen es el punto donde se cruzan los dos ejes, el lugar desde donde empiezas a contar.", "The origin is the point where the two axes cross, the place from which you start counting."],
+        "(0, 0)", [["(1, 1)", "E1_OP"], ["(0, 1)", "E2_RES"], ["(1, 0)", "E2_RES"]], c),
+      q(2, ["Parte en el punto (2, 3), avanza 4 unidades a la derecha y 1 unidad hacia arriba. ¿En qué punto queda?", "Start at the point (2, 3), move 4 units to the right and 1 unit up. Which point do you end at?"],
+        ["Moverte a la derecha cambia solo la primera coordenada; moverte hacia arriba cambia solo la segunda.", "Moving to the right changes only the first coordinate; moving up changes only the second."],
+        "(6, 4)", [["(4, 6)", "E2_RES"], ["(6, 3)", "E3_DATO"], ["(5, 4)", "E2_CAL"]], c),
+      q(2, ["Los puntos A(5, 2) y B(5, 7) se marcan en el plano. ¿Qué afirmación es correcta?", "The points A(5, 2) and B(5, 7) are marked on the plane. Which statement is correct?"],
+        ["Compara las coordenadas de los dos puntos: ¿cuál de las dos se repite y cuál cambia?", "Compare the coordinates of the two points: which of the two repeats and which one changes?"],
+        "Están en la misma línea vertical", [["Están en la misma línea horizontal", "E1_OP"], ["Los dos están sobre el eje x", "E3_DATO"], ["Los dos están sobre el eje y", "E2_RES"]], c),
+      q(2, ["Tres vértices de un rectángulo son (1, 1), (5, 1) y (5, 4). ¿Cuál es el cuarto vértice?", "Three vertices of a rectangle are (1, 1), (5, 1) and (5, 4). What is the fourth vertex?"],
+        ["En un rectángulo, los lados opuestos son paralelos a los ejes: el cuarto punto repite una coordenada de cada vértice vecino.", "In a rectangle with sides parallel to the axes, the fourth point repeats one coordinate from each neighboring vertex."],
+        "(1, 4)", [["(4, 1)", "E2_RES"], ["(5, 5)", "E3_DATO"], ["(1, 5)", "E2_CAL"]], c),
+      q(2, ["En un mapa de la plaza, la fuente está en (4, 6) y el kiosco en (4, 2). ¿Cómo hay que moverse de la fuente al kiosco?", "On a map of the town square, the fountain is at (4, 6) and the snack stand at (4, 2). How do you move from the fountain to the snack stand?"],
+        ["Compara las coordenadas: ¿cuál cambia? Ese cambio te dice si vas hacia los lados o hacia arriba/abajo, y cuántas unidades.", "Compare the coordinates: which one changes? That change tells you whether you go sideways or up/down, and how many units."],
+        "4 unidades hacia abajo", [["4 unidades a la izquierda", "E1_OP"], ["2 unidades hacia abajo", "E3_DATO"], ["4 unidades hacia arriba", "E2_RES"]], c),
+      q(3, ["Un tesoro está en (7, 3). Camila parte del origen y avanza 7 unidades a la derecha. ¿Cuántas unidades debe subir para llegar al tesoro?", "A treasure is at (7, 3). Camila starts at the origin and moves 7 units to the right. How many units must she go up to reach the treasure?"],
+        ["Ya cumplió el movimiento horizontal. Mira la otra coordenada del tesoro para saber cuánto falta subir.", "She has already done the horizontal movement. Look at the treasure's other coordinate to see how far she still has to go up."],
+        "3", [["7", "E3_DATO"], ["10", "E1_OP"], ["4", "E2_CAL"]], c),
+      q(3, ["Un barco parte en (2, 2), avanza 3 unidades a la derecha, sube 4 unidades y luego retrocede 1 unidad hacia la izquierda. ¿En qué punto queda?", "A boat starts at (2, 2), moves 3 units to the right, goes up 4 units and then moves back 1 unit to the left. Which point does it end at?"],
+        ["Ve paso a paso, anotando cada nuevo punto. Retroceder a la izquierda hace disminuir la primera coordenada.", "Go step by step, writing down each new point. Moving back to the left makes the first coordinate smaller."],
+        "(4, 6)", [["(5, 6)", "E3_DATO"], ["(6, 4)", "E2_RES"], ["(3, 6)", "E2_CAL"]], c),
+      q(3, ["Tres vértices de un triángulo rectángulo son (0, 0), (6, 0) y (6, 4). ¿Cuánto mide el lado vertical, en unidades?", "Three vertices of a right triangle are (0, 0), (6, 0) and (6, 4). How long is the vertical side, in units?"],
+        ["El lado vertical une dos puntos con la misma coordenada x. Mira cuánto cambia la coordenada y entre ellos.", "The vertical side joins two points with the same x-coordinate. See how much the y-coordinate changes between them."],
+        "4", [["6", "E3_DATO"], ["10", "E1_OP"], ["2", "E2_CAL"]], c),
+    ],
+  ));
+
+  // ===== Medición — MA05 OA21: rectángulos, perímetro y área =====
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Medición",
+      axisEn: "Measurement",
+      name: "Perímetro y área de rectángulos",
+      nameEn: "Perimeter and area of rectangles",
+      oaCode: "MA05 OA21",
+    },
+    [
+      q(1, ["Un rectángulo mide 8 cm de largo y 5 cm de ancho. ¿Cuál es su área?", "A rectangle is 8 cm long and 5 cm wide. What is its area?"],
+        ["El área cuenta cuántos cuadrados de 1 cm de lado caben adentro: multiplica el largo por el ancho.", "Area counts how many 1 cm squares fit inside: multiply the length by the width."],
+        "40 cm²", [["26 cm²", "E1_OP"], ["13 cm²", "E1_OP"], ["40 cm", "E2_RES"]], c),
+      q(1, ["Un rectángulo mide 9 cm de largo y 4 cm de ancho. ¿Cuál es su perímetro?", "A rectangle is 9 cm long and 4 cm wide. What is its perimeter?"],
+        ["El perímetro es el largo del borde completo: recorre los cuatro lados y súmalos todos.", "The perimeter is the length of the whole border: go around the four sides and add them all."],
+        "26 cm", [["36 cm", "E1_OP"], ["13 cm", "E3_DATO"], ["22 cm", "E2_CAL"]], c),
+      q(1, ["Un cuadrado tiene 6 m de lado. ¿Cuál es su área?", "A square has sides of 6 m. What is its area?"],
+        ["En un cuadrado, el largo y el ancho miden lo mismo. El área se mide en metros cuadrados.", "In a square, the length and the width are equal. Area is measured in square meters."],
+        "36 m²", [["24 m²", "E1_OP"], ["12 m²", "E2_RES"], ["36 m", "E2_RES"]], c),
+      q(1, ["Un cuadrado tiene 7 cm de lado. ¿Cuál es su perímetro?", "A square has sides of 7 cm. What is its perimeter?"],
+        ["Un cuadrado tiene cuatro lados iguales. Piensa cuántas veces debes sumar la medida del lado.", "A square has four equal sides. Think about how many times you must add the side length."],
+        "28 cm", [["49 cm", "E1_OP"], ["14 cm", "E2_RES"], ["21 cm", "E2_CAL"]], c),
+      q(2, ["Un rectángulo tiene un área de 48 cm² y un largo de 8 cm. ¿Cuánto mide su ancho?", "A rectangle has an area of 48 cm² and a length of 8 cm. How wide is it?"],
+        ["El área es largo × ancho. Pregúntate: ¿por cuánto hay que multiplicar 8 para llegar a 48?", "Area is length × width. Ask yourself: what must 8 be multiplied by to reach 48?"],
+        "6 cm", [["40 cm", "E1_OP"], ["56 cm", "E1_OP"], ["384 cm", "E1_OP"]], c),
+      q(2, ["Un rectángulo tiene un perímetro de 30 cm y un largo de 9 cm. ¿Cuánto mide su ancho?", "A rectangle has a perimeter of 30 cm and a length of 9 cm. How wide is it?"],
+        ["Un rectángulo tiene dos largos y dos anchos. Primero mira cuánto suman un largo y un ancho, que es la mitad del perímetro.", "A rectangle has two lengths and two widths. First see how much one length and one width add up to, which is half the perimeter."],
+        "6 cm", [["21 cm", "E2_RES"], ["12 cm", "E2_RES"], ["15 cm", "E2_RES"]], c),
+      q(2, ["¿Cuál de estos rectángulos tiene un área de 24 cm²?", "Which of these rectangles has an area of 24 cm²?"],
+        ["Calcula el área de cada opción multiplicando sus dos medidas. No confundas con sumarlas.", "Work out the area of each option by multiplying its two measures. Do not confuse it with adding them."],
+        "6 cm por 4 cm", [["8 cm por 4 cm", "E1_OP"], ["7 cm por 3 cm", "E2_CAL"], ["5 cm por 4 cm", "E2_CAL"]], c),
+      q(2, ["¿Cuál es el área de un rectángulo de 15 cm de largo y 12 cm de ancho?", "What is the area of a rectangle 15 cm long and 12 cm wide?"],
+        ["Multiplica largo por ancho. Puedes descomponer: 15 × 10 y 15 × 2, y luego sumar.", "Multiply length by width. You can break it apart: 15 × 10 and 15 × 2, and then add."],
+        "180 cm²", [["54 cm²", "E1_OP"], ["27 cm²", "E1_OP"], ["170 cm²", "E2_CAL"]], c),
+      q(3, ["Un jardín rectangular de 12 m de largo y 5 m de ancho se cierra con una malla por todo su borde. ¿Cuántos metros de malla se necesitan?", "A rectangular garden 12 m long and 5 m wide has a wire fence all around its edge. How many meters of fence are needed?"],
+        ["La malla rodea el jardín, así que necesitas la medida del borde completo: recorre los cuatro lados.", "The fence goes around the garden, so you need the length of the whole edge: go around the four sides."],
+        "34 m", [["60 m", "E1_OP"], ["17 m", "E3_DATO"], ["29 m", "E2_CAL"]], c),
+      q(3, ["Todos estos rectángulos tienen un perímetro de 20 cm. ¿Cuál de ellos tiene el mayor área?", "All these rectangles have a perimeter of 20 cm. Which one has the greatest area?"],
+        ["Calcula el área de cada uno. Fíjate en cómo cambia el área cuando las medidas se parecen más entre sí.", "Work out the area of each one. Notice how the area changes as the measures get closer to each other."],
+        "5 cm por 5 cm", [["8 cm por 2 cm", "E1_OP"], ["6 cm por 4 cm", "E2_CAL"], ["9 cm por 1 cm", "E2_RES"]], c),
+      q(3, ["Un piso rectangular mide 6 m por 5 m. Cada m² de cerámica cuesta $8.000. ¿Cuánto cuesta cubrir todo el piso?", "A rectangular floor measures 6 m by 5 m. Each m² of tile costs 8,000 pesos. How much does it cost to cover the whole floor?"],
+        ["Primero calcula cuántos m² tiene el piso (es un área) y después multiplica por el precio de cada m².", "First work out how many m² the floor has (it is an area) and then multiply by the price of each m²."],
+        `$${es(240000)}`, [[`$${es(176000)}`, "E1_OP"], [`$${es(88000)}`, "E3_DATO"], [`$${es(48000)}`, "E2_CAL"]], c),
+    ],
+  ));
+
+  // ===== Datos y probabilidades — MA05 OA23: promedio =====
+  blocks.push(block(
+    {
+      grade: 5,
+      axis: "Datos y probabilidades",
+      axisEn: "Data and Probability",
+      name: "Promedio de un conjunto de datos",
+      nameEn: "Average (mean) of a data set",
+      oaCode: "MA05 OA23",
+    },
+    [
+      q(1, ["¿Cuál es el promedio de 4, 6 y 8?", "What is the average of 4, 6 and 8?"],
+        ["El promedio se calcula sumando todos los datos y dividiendo por la cantidad de datos.", "The average is found by adding all the values and dividing by how many values there are."],
+        "6", [["18", "E2_RES"], ["8", "E3_PREG"], ["5", "E2_CAL"]], c),
+      q(1, ["¿Cuál es el promedio de 10, 20 y 30?", "What is the average of 10, 20 and 30?"],
+        ["Suma los tres datos y reparte el total en partes iguales entre tres.", "Add the three values and split the total equally among three."],
+        "20", [["60", "E2_RES"], ["30", "E3_PREG"], ["15", "E2_CAL"]], c),
+      q(1, ["¿Cuál es el promedio de 5 y 9?", "What is the average of 5 and 9?"],
+        ["Con dos datos, suma ambos y divide por 2: es el número justo a la mitad entre los dos.", "With two values, add them both and divide by 2: it is the number right in the middle between them."],
+        "7", [["14", "E2_RES"], ["4", "E1_OP"], ["6", "E2_CAL"]], c),
+      q(2, ["Los goles de un equipo en 5 partidos fueron 2, 0, 3, 1 y 4. ¿Cuál es el promedio de goles por partido?", "A team's goals in 5 matches were 2, 0, 3, 1 and 4. What is the average number of goals per match?"],
+        ["Suma todos los goles, incluido el partido de 0 goles, y divide por la cantidad de partidos.", "Add all the goals, including the match with 0 goals, and divide by the number of matches."],
+        "2", [["10", "E2_RES"], ["4", "E3_PREG"], ["2,5", "E3_DATO"]], c),
+      q(2, ["¿Cuál es el promedio de 2, 7, 6, 9 y 6?", "What is the average of 2, 7, 6, 9 and 6?"],
+        ["Suma los cinco datos. Después divide el total por 5, porque hay cinco datos (un dato repetido se cuenta cada vez que aparece).", "Add the five values. Then divide the total by 5, because there are five values (a repeated value is counted every time it appears)."],
+        "6", [["30", "E2_RES"], ["7", "E2_CAL"], ["5", "E3_DATO"]], c),
+      q(2, ["Las notas de Camila fueron 5,5; 6,5 y 4,5. ¿Cuál es su promedio?", "Camila's grades (on a 1 to 7 scale) were 5.5, 6.5 and 4.5. What is her average?"],
+        ["Suma las tres notas con cuidado con la coma decimal y divide por 3.", "Add the three grades carefully with the decimal point and divide by 3."],
+        "5,5", [["16,5", "E2_RES"], ["6,5", "E3_PREG"], ["5,0", "E2_CAL"]], c),
+      q(2, ["El promedio de 4 números es 10. Tres de ellos son 8, 12 y 9. ¿Cuál es el cuarto número?", "The average of 4 numbers is 10. Three of them are 8, 12 and 9. What is the fourth number?"],
+        ["Si el promedio es 10 con 4 datos, ¿cuánto deben sumar los 4 datos? Luego resta lo que ya sumaron los tres conocidos.", "If the average is 10 with 4 values, how much must the 4 values add up to? Then subtract what the three known ones already add up to."],
+        "11", [["10", "E3_PREG"], ["40", "E2_RES"], ["9", "E2_CAL"]], c),
+      q(2, ["La temperatura máxima en 6 días fue 18, 21, 19, 22, 20 y 20 grados. ¿Cuál fue la temperatura promedio?", "The maximum temperature over 6 days was 18, 21, 19, 22, 20 and 20 degrees. What was the average temperature?"],
+        ["Suma las seis temperaturas y divide el total por 6.", "Add the six temperatures and divide the total by 6."],
+        "20", [["120", "E2_RES"], ["22", "E3_PREG"], ["19", "E2_CAL"]], c),
+      q(3, ["Sofía leyó 20, 25 y 15 páginas durante 3 días. ¿Cuántas páginas debe leer el cuarto día para que el promedio de los 4 días sea 22?", "Sofía read 20, 25 and 15 pages over 3 days. How many pages must she read on the fourth day so that the average over the 4 days is 22?"],
+        ["Calcula cuántas páginas en total necesitas para tener promedio 22 en 4 días, y resta lo que ya leyó.", "Work out how many pages in total you need to have an average of 22 over 4 days, and subtract what she has already read."],
+        "28", [["22", "E3_PREG"], ["88", "E2_RES"], ["26", "E2_CAL"]], c),
+      q(3, ["El promedio de edad de 3 amigos es 11 años. ¿Cuántos años suman las edades de los tres?", "The average age of 3 friends is 11 years. How many years do the ages of the three add up to?"],
+        ["El promedio es el total repartido en partes iguales. Para volver al total, haz la operación contraria a repartir.", "The average is the total shared equally. To go back to the total, do the operation opposite to sharing."],
+        "33", [["11", "E3_DATO"], ["14", "E1_OP"], ["36", "E2_CAL"]], c),
+      q(3, ["Las notas de Diego en 4 pruebas fueron 5,0; 7,0; 4,0 y 6,0. ¿Cuál es su promedio final?", "Diego's grades (on a 1 to 7 scale) on 4 tests were 5.0, 7.0, 4.0 and 6.0. What is his final average?"],
+        ["Suma las cuatro notas y divide por 4. Recuerda contar todas las pruebas, también la última.", "Add the four grades and divide by 4. Remember to count all the tests, including the last one."],
+        "5,5", [["22,0", "E2_RES"], ["6,0", "E2_CAL"], ["5,0", "E2_CAL"]], c),
+    ],
+  ));
+
+  return blocks;
+}

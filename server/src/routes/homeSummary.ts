@@ -2,8 +2,24 @@ import { Router } from "express";
 import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
+import { toMascotNames } from "../domain/mascotNames.js";
 
 export const homeSummaryRouter = Router({ mergeParams: true });
+
+// Estrellas por rango — decisión de diseño del juego (mismo criterio que
+// SKILL_COMPLETE_THRESHOLD en skillPath.ts o FAST_RESPONSE_THRESHOLD_MS en
+// adaptiveEngine.ts: no es un umbral pedagógico validado). "Rango", no
+// "Nivel": el nivel de dificultad (1-3) ya se llama así en la práctica —
+// mismo nombre para dos cosas distintas confundiría a las familias.
+export const RANK_STEP = 10;
+
+/// Rango del niño a partir de las estrellas totales — nunca baja, nunca se
+/// compara entre niños. Función pura para poder probarla sin BD.
+export function rankFromStars(totalStars: number) {
+  const rank = 1 + Math.floor(totalStars / RANK_STEP);
+  const starsIntoRank = totalStars % RANK_STEP;
+  return { rank, starsIntoRank, starsToNextRank: RANK_STEP - starsIntoRank };
+}
 
 function dayKey(d: Date): string {
   return d.toISOString().slice(0, 10);
@@ -62,8 +78,14 @@ homeSummaryRouter.get("/", requireAuth, async (req, res) => {
 
   res.status(200).json({
     companion: child.companion,
+    mascotName: child.mascotName,
+    // Nombre que el niño le puso a cada mascota — la pantalla de editar la
+    // mascota lo recupera al volver a elegir una.
+    mascotNames: toMascotNames(child.mascotNames),
+    interests: child.interests,
     totalStars,
     starsToday,
     streak: computeStreak(sessions.map((s) => s.startedAt)),
+    ...rankFromStars(totalStars),
   });
 });

@@ -2,6 +2,8 @@ import { useEffect, useMemo } from "react";
 import type { BreathingExercise } from "../lib/pauses.js";
 import { randomBreathing } from "../lib/pauses.js";
 import type { Lang } from "../lib/i18n.js";
+import { BrickCompanionAvatar } from "./BrickCompanionAvatar.js";
+import type { Companion } from "../lib/companions.js";
 
 const STAR_PATH =
   "M50,5 L60.58,35.44 L92.80,36.09 L67.12,55.56 L76.45,86.41 L50,68 L23.55,86.41 L32.88,55.56 L7.20,36.09 L39.42,35.44 Z";
@@ -63,21 +65,28 @@ function WaveBreath({ totalSec }: { totalSec: number }) {
 
 interface Props {
   lang: Lang;
-  onDone: () => void;
+  companion: Companion;
+  /** Recibe la clave del ejercicio hecho, para no repetirlo en la sesión. */
+  onDone: (exerciseKey: string) => void;
+  /** Claves ya usadas en esta sesión — se elige otro ejercicio. */
+  exclude?: readonly string[];
 }
 
-export function BreathingPause({ lang, onDone }: Props) {
-  const exercise: BreathingExercise = useMemo(() => randomBreathing(), []);
+export function BreathingPause({ lang, companion, onDone, exclude = [] }: Props) {
+  // Solo al montar: la pausa en curso no cambia aunque el padre re-renderice.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const exercise: BreathingExercise = useMemo(() => randomBreathing(exclude), []);
   const totalSec = useMemo(() => exercise.phases.reduce((s, p) => s + p, 0), [exercise]);
   const copy = exercise[lang] ?? exercise.es;
 
   useEffect(() => {
-    const timer = setTimeout(onDone, totalSec * 1000);
+    const timer = setTimeout(() => onDone(exercise.key), totalSec * 1000);
     return () => clearTimeout(timer);
-  }, [onDone, totalSec]);
+  }, [onDone, totalSec, exercise.key]);
 
   return (
     <div className="pause-body">
+      <BrickCompanionAvatar companion={companion} mood="idle" />
       <h2>
         {exercise.icon} {copy.title}
       </h2>

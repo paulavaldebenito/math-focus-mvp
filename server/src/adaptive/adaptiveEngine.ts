@@ -16,19 +16,12 @@
  *   5. Tres aciertos sin ayuda → subir nivel.
  */
 
-export type ErrorTypeCode =
-  | "conceptual"
-  | "procedimiento"
-  | "calculo"
-  | "comprension_enunciado"
-  | "omision"
-  | "respuesta_rapida"
-  | "abandono"
-  | "solicitud_ayuda_repetida";
-
 export interface AttemptRecord {
   isCorrect: boolean;
-  errorTypeCode: ErrorTypeCode | null;
+  /** Nivel del ErrorType del intento (modelo matefriendly): 1=conceptual,
+   * 2=procedimental, 3=lectura/comprensión. NULL si no aplica (acierto, o
+   * un patrón de comportamiento sin nivel). */
+  errorLevel: 1 | 2 | 3 | null;
   responseTimeMs: number | null;
   hintsUsed: number;
 }
@@ -68,11 +61,11 @@ export function evaluateAdaptiveRules(history: AttemptRecord[]): AdaptiveAction 
     };
   }
 
-  // Regla 2 — 2 errores conceptuales consecutivos.
+  // Regla 2 — 2 errores de nivel 1 (conceptual) consecutivos.
   const last2 = lastN(history, 2);
   if (
     last2.length === 2 &&
-    last2.every((a) => !a.isCorrect && a.errorTypeCode === "conceptual")
+    last2.every((a) => !a.isCorrect && a.errorLevel === 1)
   ) {
     return {
       type: "LOWER_LEVEL",
