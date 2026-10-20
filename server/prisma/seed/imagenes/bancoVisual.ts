@@ -1,5 +1,5 @@
 /**
- * Vincula el banco visual completo (banco_visual.json, 2.116 ejercicios)
+ * Vincula el banco visual completo (banco_visual.json, 2.123 ejercicios)
  * con la BD — EXCLUSIVAMENTE por exerciseId, verificando que el enunciado
  * en español coincida (baseKey no es único; nunca se asigna por parecido).
  * Reemplaza en `Exercise.image` la ilustración anterior de esos ejercicios,

@@ -1456,5 +1456,704 @@
    "old": "A pie is divided into 4 equal slices. Ema eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?",
    "new": "A pie is divided into 4 equal slices. Sofía eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?"
   }
+ },
+ {
+  "exerciseId": "cmuli7isg00q46krhb23ijzah",
+  "grade": 3,
+  "prompt": {
+   "old": "Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?",
+   "new": "Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a wall are painted. What fraction of the wall is painted?",
+   "new": "3 of the 4 equal parts of a wall are painted. What fraction of the wall is painted?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what is being asked: the painted part. Put the painted parts on top and the total equal parts on the bottom.",
+   "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wps041j4crhbt2yycs8",
+  "grade": 3,
+  "prompt": {
+   "old": "Se pintan 3 de las 4 partes iguales del piso de una cancha. ¿Qué fracción de la cancha está pintada?",
+   "new": "Se pintan 3 de las 4 partes iguales del piso de una cancha. ¿Qué fracción de la cancha está pintada?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a court floor are painted. What fraction of the court is painted?",
+   "new": "3 of the 4 equal parts of a court floor are painted. What fraction of the court is painted?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the painted part. The top is what is painted and the bottom is the total number of equal parts.",
+   "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wng03yw4crhtgj2ty2v",
+  "grade": 3,
+  "prompt": {
+   "old": "Se pintan 3 de las 4 partes iguales de un mural de dinosaurios. ¿Qué fracción del mural está pintada?",
+   "new": "Se pintan 3 de las 4 partes iguales de un mural de dinosaurios. ¿Qué fracción del mural está pintada?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a dinosaur mural are painted. What fraction of the mural is painted?",
+   "new": "3 of the 4 equal parts of a dinosaur mural are painted. What fraction of the mural is painted?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what is being asked: the painted part. The painted parts go on top and the total number of equal parts goes on the bottom.",
+   "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wmo03y24crhjsb51fve",
+  "grade": 3,
+  "prompt": {
+   "old": "Se pintan 3 de las 4 partes iguales del casco de una nave de cartón. ¿Qué fracción del casco está pintada?",
+   "new": "Se pintan 3 de las 4 partes iguales del casco de una nave de cartón. ¿Qué fracción del casco está pintada?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of the hull of a cardboard spaceship are painted. What fraction of the hull is painted?",
+   "new": "3 of the 4 equal parts of the hull of a cardboard spaceship are painted. What fraction of the hull is painted?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the painted part. On top goes the painted part and on the bottom the total number of equal parts.",
+   "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
+  "grade": 3,
+  "prompt": {
+   "old": "Se pintan 3 de las 4 partes iguales de un mural de la hinchada. ¿Qué fracción del mural está pintada?",
+   "new": "Se pintan 3 de las 4 partes iguales de un mural de la hinchada. ¿Qué fracción del mural está pintada?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a fans' mural are painted. What fraction of the mural is painted?",
+   "new": "3 of the 4 equal parts of a fans' mural are painted. What fraction of the mural is painted?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the painted part. On top goes the painted part and on the bottom the total number of equal parts.",
+   "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
+  "grade": 3,
+  "prompt": {
+   "old": "Se pintan 3 de las 4 partes iguales de un mural con instrumentos musicales. ¿Qué fracción del mural está pintada?",
+   "new": "Se pintan 3 de las 4 partes iguales de un mural con instrumentos musicales. ¿Qué fracción del mural está pintada?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a mural with musical instruments are painted. What fraction of the mural is painted?",
+   "new": "3 of the 4 equal parts of a mural with musical instruments are painted. What fraction of the mural is painted?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the painted part. The painted parts go on top and the total number of equal parts goes below.",
+   "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wl203we4crhh3az5clo",
+  "grade": 3,
+  "prompt": {
+   "old": "Un corral se divide en 4 partes iguales y las ovejas pastan en 3 de esas partes. ¿Qué fracción del corral ocupan las ovejas?",
+   "new": "Un corral se divide en 4 partes iguales y las ovejas pastan en 3 de esas partes. ¿Qué fracción del corral ocupan las ovejas?"
+  },
+  "promptEn": {
+   "old": "A pen is divided into 4 equal parts and the sheep graze in 3 of those parts. What fraction of the pen do the sheep use?",
+   "new": "A pen is divided into 4 equal parts and the sheep graze in 3 of those parts. What fraction of the pen do the sheep use?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what is being asked: the part the sheep use. The top goes what they use and the bottom the total number of equal parts.",
+   "new": "What is the question asking about? The part the sheep use. The number of parts they use goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wo503zq4crhx8fhese4",
+  "grade": 3,
+  "prompt": {
+   "old": "Se cubren con crema 3 de las 4 partes iguales de una torta. ¿Qué fracción de la torta está cubierta con crema?",
+   "new": "Se cubren con crema 3 de las 4 partes iguales de una torta. ¿Qué fracción de la torta está cubierta con crema?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a cake are covered with cream. What fraction of the cake is covered with cream?",
+   "new": "3 of the 4 equal parts of a cake are covered with cream. What fraction of the cake is covered with cream?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the part with cream. On top goes what is covered and on the bottom the total number of equal parts.",
+   "new": "What is the question asking about? The part with cream. The number of parts with cream goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
+  "grade": 3,
+  "prompt": {
+   "old": "Se plantan flores en 3 de las 4 partes iguales de un jardín. ¿Qué fracción del jardín tiene flores?",
+   "new": "Se plantan flores en 3 de las 4 partes iguales de un jardín. ¿Qué fracción del jardín tiene flores?"
+  },
+  "promptEn": {
+   "old": "Flowers are planted in 3 of the 4 equal parts of a garden. What fraction of the garden has flowers?",
+   "new": "Flowers are planted in 3 of the 4 equal parts of a garden. What fraction of the garden has flowers?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the part with flowers. On top goes what is planted and on the bottom the total number of equal parts.",
+   "new": "What is the question asking about? The part with flowers. The number of parts with flowers goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
+  "grade": 3,
+  "prompt": {
+   "old": "Un tren tiene 4 vagones iguales y 3 son rojos. ¿Qué fracción del tren es roja?",
+   "new": "Un tren tiene 4 vagones iguales y 3 son rojos. ¿Qué fracción del tren es roja?"
+  },
+  "promptEn": {
+   "old": "A train has 4 equal cars and 3 of them are red. What fraction of the train is red?",
+   "new": "A train has 4 equal cars and 3 of them are red. What fraction of the train is red?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what they want: the part of the train that is red. The red part goes on top and the total of equal cars on the bottom.",
+   "new": "What is the question asking about? The part of the train that is red. The number of red cars goes on top, and the total number of cars goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
+  "grade": 3,
+  "prompt": {
+   "old": "Se completan 3 de las 4 partes iguales de una barra de progreso. ¿Qué fracción de la barra está completa?",
+   "new": "Se completan 3 de las 4 partes iguales de una barra de progreso. ¿Qué fracción de la barra está completa?"
+  },
+  "promptEn": {
+   "old": "3 of the 4 equal parts of a progress bar are complete. What fraction of the bar is complete?",
+   "new": "3 of the 4 equal parts of a progress bar are complete. What fraction of the bar is complete?"
+  },
+  "procedureNoteEn": {
+   "old": "Ask yourself what is being asked: the complete part. Put the complete parts on top and the total equal parts on the bottom.",
+   "new": "What is the question asking about? The completed part. The number of completed parts goes on top, and the total number of equal parts goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmuli7is100pp6krh8k51jbw9",
+  "grade": 3,
+  "prompt": {
+   "old": "Una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
+   "new": "Una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?"
+  },
+  "promptEn": {
+   "old": "A pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?",
+   "new": "A pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
+  },
+  "procedureNoteEn": {
+   "old": "The bottom number says how many equal parts the whole was cut into, and the top one how many parts you took.",
+   "new": "The bottom number tells you how many equal parts the whole was cut into, and the top number tells you how many parts you took."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
+  "grade": 3,
+  "prompt": {
+   "old": "Una galleta redonda decorada como un planeta se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la galleta te comiste?",
+   "new": "Una galleta redonda decorada como un planeta se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la galleta te comiste?"
+  },
+  "promptEn": {
+   "old": "A round cookie decorated like a planet is cut into 4 equal parts and you eat 1. What fraction of the cookie did you eat?",
+   "new": "A round cookie decorated like a planet is cut into 4 equal parts and you eat 1. What fraction of the cookie did you eat?"
+  },
+  "procedureNoteEn": {
+   "old": "The bottom number says how many equal parts the whole was cut into, and the top one how many parts you took.",
+   "new": "The bottom number tells you how many equal parts the whole was cut into, and the top number tells you how many parts you took."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wkb03vk4crh4pgj6xpt",
+  "grade": 3,
+  "prompt": {
+   "old": "Después del partido, una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
+   "new": "Después del partido, una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?"
+  },
+  "promptEn": {
+   "old": "After the match, a pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?",
+   "new": "After the game, a pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
+  },
+  "procedureNoteEn": {
+   "old": "The bottom number says how many equal parts the whole was cut into, and the top one how many parts you took.",
+   "new": "The bottom number tells you how many equal parts the whole was cut into, and the top number tells you how many parts you took."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wox040k4crhhdw8hwq1",
+  "grade": 3,
+  "prompt": {
+   "old": "Un huerto se divide en 4 partes iguales y plantas lechugas en 1 de ellas. ¿Qué fracción del huerto tiene lechugas?",
+   "new": "Un huerto se divide en 4 partes iguales y plantas lechugas en 1 de ellas. ¿Qué fracción del huerto tiene lechugas?"
+  },
+  "promptEn": {
+   "old": "A garden is divided into 4 equal parts and you plant lettuces in 1 of them. What fraction of the garden has lettuces?",
+   "new": "A garden is divided into 4 equal parts and you plant lettuce in 1 of them. What fraction of the garden has lettuce?"
+  },
+  "procedureNote": {
+   "old": "El número de abajo dice en cuántas partes iguales se dividió el entero, y el de arriba cuántas partes tomaste.",
+   "new": "El número de abajo dice en cuántas partes iguales se dividió el huerto, y el de arriba cuántas partes tienen lechugas."
+  },
+  "procedureNoteEn": {
+   "old": "The bottom number says how many equal parts the whole was divided into, and the top number how many parts you took.",
+   "new": "The bottom number tells you how many equal parts the garden was divided into, and the top number tells you how many parts have lettuce."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wm003xd4crhplnbocpo",
+  "grade": 3,
+  "prompt": {
+   "old": "Un mapa se divide en 4 zonas iguales y ya exploraste 1. ¿Qué fracción del mapa exploraste?",
+   "new": "Un mapa se divide en 4 zonas iguales y ya exploraste 1. ¿Qué fracción del mapa exploraste?"
+  },
+  "promptEn": {
+   "old": "A map is divided into 4 equal zones and you have already explored 1. What fraction of the map have you explored?",
+   "new": "A map is divided into 4 equal zones and you have already explored 1. What fraction of the map have you explored?"
+  },
+  "procedureNoteEn": {
+   "old": "The bottom number says how many equal parts the map was divided into, and the top one how many you explored.",
+   "new": "The bottom number tells you how many equal parts the map was divided into, and the top number tells you how many you explored."
+  }
+ },
+ {
+  "exerciseId": "cmuli7isk00q96krh17rqb6ci",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+   "new": "Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?"
+  },
+  "promptEn": {
+   "old": "A rope is cut into 3 equal parts and 2 are used. What fraction of the rope was used?",
+   "new": "A rope is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
+  },
+  "procedureNoteEn": {
+   "old": "Put what was used on top and the total equal parts the rope was cut into on the bottom.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the rope was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
+  "grade": 3,
+  "prompt": {
+   "old": "Un saco de alimento para perros alcanza para 3 comidas iguales y ya se usaron 2. ¿Qué fracción del saco se usó?",
+   "new": "Un saco de alimento para perros alcanza para 3 comidas iguales y ya se usaron 2. ¿Qué fracción del saco se usó?"
+  },
+  "promptEn": {
+   "old": "A sack of dog food is enough for 3 equal meals and 2 have already been used. What fraction of the sack was used?",
+   "new": "A sack of dog food is enough for 3 equal meals and 2 have already been used. What fraction of the sack was used?"
+  },
+  "procedureNoteEn": {
+   "old": "The top goes what was used and the bottom the total number of equal parts the sack is divided into.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the sack is divided into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
+  "grade": 3,
+  "prompt": {
+   "old": "Un queque se divide en 3 partes iguales y se comen 2. ¿Qué fracción del queque se comió?",
+   "new": "Un queque se divide en 3 partes iguales y se comen 2. ¿Qué fracción del queque se comió?"
+  },
+  "promptEn": {
+   "old": "A cake is divided into 3 equal parts and 2 are eaten. What fraction of the cake was eaten?",
+   "new": "A cake is divided into 3 equal parts and 2 are eaten. What fraction of the cake was eaten?"
+  },
+  "procedureNoteEn": {
+   "old": "On top goes what was eaten and on the bottom the total number of equal parts the cake was divided into.",
+   "new": "The number of parts eaten goes on top, and the total number of equal parts the cake was divided into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta de gimnasia se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
+   "new": "Una cinta de gimnasia se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?"
+  },
+  "promptEn": {
+   "old": "A gymnastics ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?",
+   "new": "A gymnastics ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
+  },
+  "procedureNoteEn": {
+   "old": "The top is what was used and the bottom is the total number of equal parts the ribbon was cut into.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the ribbon was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wnk03z14crhgeh910n2",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cuerda para marcar una excavación se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+   "new": "Una cuerda para marcar una excavación se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?"
+  },
+  "promptEn": {
+   "old": "A rope for marking a dig site is cut into 3 equal parts and 2 are used. What fraction of the rope was used?",
+   "new": "A rope for marking a dig site is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
+  },
+  "procedureNoteEn": {
+   "old": "The part used goes on top and the total number of equal parts the rope was cut into goes on the bottom.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the rope was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wmt03y74crh45agw2ho",
+  "grade": 3,
+  "prompt": {
+   "old": "Un cable se corta en 3 partes iguales y se usan 2 para armar un satélite de juguete. ¿Qué fracción del cable se usó?",
+   "new": "Un cable se corta en 3 partes iguales y se usan 2 para armar un satélite de juguete. ¿Qué fracción del cable se usó?"
+  },
+  "promptEn": {
+   "old": "A cable is cut into 3 equal parts and 2 are used to build a toy satellite. What fraction of the cable was used?",
+   "new": "A cable is cut into 3 equal parts and 2 are used to build a toy satellite. What fraction of the cable was used?"
+  },
+  "procedureNoteEn": {
+   "old": "On top goes what was used and on the bottom the total number of equal parts the cable was cut into.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the cable was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta para marcar la cancha se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
+   "new": "Una cinta para marcar la cancha se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?"
+  },
+  "promptEn": {
+   "old": "A ribbon for marking the field is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?",
+   "new": "A ribbon for marking the field is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
+  },
+  "procedureNoteEn": {
+   "old": "On top goes what was used and on the bottom the total number of equal parts the ribbon was cut into.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the ribbon was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cinta del pandero se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
+   "new": "Una cinta del pandero se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?"
+  },
+  "promptEn": {
+   "old": "A tambourine ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?",
+   "new": "A tambourine ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
+  },
+  "procedureNoteEn": {
+   "old": "On top goes what was used and below goes the total number of equal parts the ribbon was cut into.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the ribbon was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wp9040z4crh84shmq9d",
+  "grade": 3,
+  "prompt": {
+   "old": "Una cuerda para amarrar un bote se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+   "new": "Una cuerda para amarrar un bote se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?"
+  },
+  "promptEn": {
+   "old": "A rope for tying up a boat is cut into 3 equal parts and 2 are used. What fraction of the rope was used?",
+   "new": "A rope for tying up a boat is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
+  },
+  "procedureNoteEn": {
+   "old": "On top goes what was used and on the bottom the total number of equal parts the rope was cut into.",
+   "new": "The number of parts used goes on top, and the total number of equal parts the rope was cut into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wqk042d4crhccfb95la",
+  "grade": 3,
+  "prompt": {
+   "old": "Un camino de tierra se divide en 3 tramos iguales y un tractor recorre 2. ¿Qué fracción del camino recorrió?",
+   "new": "Un camino de tierra se divide en 3 tramos iguales y un tractor recorre 2. ¿Qué fracción del camino recorrió?"
+  },
+  "promptEn": {
+   "old": "A dirt road is divided into 3 equal sections and a tractor travels 2 of them. What fraction of the road did it travel?",
+   "new": "A dirt road is divided into 3 equal sections and a tractor travels 2 of them. What fraction of the road did it travel?"
+  },
+  "procedureNoteEn": {
+   "old": "On top goes what it traveled and on the bottom the total number of equal sections the road was divided into.",
+   "new": "The number of sections it traveled goes on top, and the total number of equal sections the road was divided into goes on the bottom."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wpi04194crhzt2qjnw8",
+  "grade": 3,
+  "prompt": {
+   "old": "Un bidón de agua para regar se divide en 3 partes iguales. Vicente usa 1 parte y Ana usa 1 parte. ¿Qué fracción del bidón usaron entre los dos?",
+   "new": "Un bidón de agua para regar se divide en 3 partes iguales. Vicente usa 1 parte y Ana usa 1 parte. ¿Qué fracción del bidón usaron entre los dos?"
+  },
+  "promptEn": {
+   "old": "A watering jug is divided into 3 equal parts. Vicente uses 1 part and Ana uses 1 part. What fraction of the jug did they use together?",
+   "new": "A watering jug is divided into 3 equal parts. Vicente uses 1 part and Ana uses 1 part. What fraction of the jug did they use together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que usaron y no cambies en cuántas partes se dividió el bidón.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que usaron y no cambies en cuántas partes se dividió el bidón."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they used and do not change how many parts the jug was divided into.",
+   "new": "All the parts are the same size. Put together the parts they used and don't change how many parts the jug was divided into."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wlc03wo4crhg7gwxdpj",
+  "grade": 3,
+  "prompt": {
+   "old": "Un bebedero de agua para aves se divide en 3 partes iguales. Un jilguero toma 1 parte y un gorrión toma 1 parte. ¿Qué fracción del bebedero tomaron entre los dos?",
+   "new": "Un bebedero de agua para aves se divide en 3 partes iguales. Un jilguero toma 1 parte y un gorrión toma 1 parte. ¿Qué fracción del bebedero tomaron entre los dos?"
+  },
+  "promptEn": {
+   "old": "A water feeder for birds is divided into 3 equal parts. A finch takes 1 part and a sparrow takes 1 part. What fraction of the feeder did they take together?",
+   "new": "A bird waterer is divided into 3 equal parts. A finch drinks 1 part and a sparrow drinks 1 part. What fraction of the waterer did they drink together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió el bebedero.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió el bebedero."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they took and do not change how many parts the feeder is divided into.",
+   "new": "All the parts are the same size. Put together the parts they drank and don't change the number of parts the waterer is divided into."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wq0041t4crhtx35usy5",
+  "grade": 3,
+  "prompt": {
+   "old": "Un bidón de agua para el entrenamiento se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción del bidón tomaron entre los dos?",
+   "new": "Un bidón de agua para el entrenamiento se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción del bidón tomaron entre los dos?"
+  },
+  "promptEn": {
+   "old": "A training water jug is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the jug did they drink together?",
+   "new": "A training water jug is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the jug did they drink together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió el bidón.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió el bidón."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they drank and do not change how many parts the jug was divided into.",
+   "new": "All the parts are the same size. Put together the parts they drank and don't change how many parts the jug was divided into."
+  }
+ },
+ {
+  "exerciseId": "cmuli7it100qt6krhus8cyqvy",
+  "grade": 3,
+  "prompt": {
+   "old": "Una jarra se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la jarra tomaron entre los dos?",
+   "new": "Una jarra se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la jarra tomaron entre los dos?"
+  },
+  "promptEn": {
+   "old": "A jug is divided into 3 equal parts. Vicente takes 1 part and Ana takes 1 part. What fraction of the jug did they take together?",
+   "new": "A jug is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the jug did they drink together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió la jarra.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió la jarra."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they took and do not change how many parts the jug was divided into.",
+   "new": "All the parts are the same size. Put together the parts they drank and don't change the number of parts the jug was divided into."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wn603ym4crhxpy7jjan",
+  "grade": 3,
+  "prompt": {
+   "old": "El tanque de agua de una estación de juguete se divide en 3 partes iguales. Vicente llena 1 parte y Ana llena 1 parte. ¿Qué fracción del tanque llenaron entre los dos?",
+   "new": "El tanque de agua de una estación de juguete se divide en 3 partes iguales. Vicente llena 1 parte y Ana llena 1 parte. ¿Qué fracción del tanque llenaron entre los dos?"
+  },
+  "promptEn": {
+   "old": "The water tank of a toy space station is divided into 3 equal parts. Vicente fills 1 part and Ana fills 1 part. What fraction of the tank did they fill together?",
+   "new": "The water tank of a toy space station is divided into 3 equal parts. Vicente fills 1 part and Ana fills 1 part. What fraction of the tank did they fill together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que llenaron y no cambies en cuántas partes se dividió el tanque.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que llenaron y no cambies en cuántas partes se dividió el tanque."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they filled and do not change how many parts the tank was divided into.",
+   "new": "All the parts are the same size. Put together the parts they filled and don't change how many parts the tank was divided into."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wkt03w44crhjcisvrt7",
+  "grade": 3,
+  "prompt": {
+   "old": "Una botella de agua del equipo se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la botella tomaron entre los dos?",
+   "new": "Una botella de agua del equipo se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la botella tomaron entre los dos?"
+  },
+  "promptEn": {
+   "old": "A team water bottle is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the bottle did they drink together?",
+   "new": "A team water bottle is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the bottle did they drink together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió la botella.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que tomaron y no cambies en cuántas partes se dividió la botella."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they drank and do not change how many parts the bottle was divided into.",
+   "new": "All the parts are the same size. Put together the parts they drank and don't change how many parts the bottle was divided into."
+  }
+ },
+ {
+  "exerciseId": "cmulu2woo040a4crha5abnoe9",
+  "grade": 3,
+  "prompt": {
+   "old": "Una torta se divide en 3 partes iguales. Vicente come 1 parte y Ana come 1 parte. ¿Qué fracción de la torta comieron entre los dos?",
+   "new": "Una torta se divide en 3 partes iguales. Vicente come 1 parte y Ana come 1 parte. ¿Qué fracción de la torta comieron entre los dos?"
+  },
+  "promptEn": {
+   "old": "A cake is divided into 3 equal parts. Vicente eats 1 part and Ana eats 1 part. What fraction of the cake did they eat between the two?",
+   "new": "A cake is divided into 3 equal parts. Vicente eats 1 part and Ana eats 1 part. What fraction of the cake did they eat together?"
+  },
+  "procedureNote": {
+   "old": "Las partes siguen siendo del mismo tamaño. Junta las partes que comieron y no cambies en cuántas partes se dividió la torta.",
+   "new": "Todas las partes son del mismo tamaño. Junta las partes que comieron y no cambies en cuántas partes se dividió la torta."
+  },
+  "procedureNoteEn": {
+   "old": "The parts are still the same size. Put together the parts they ate and do not change how many parts the cake was divided into.",
+   "new": "All the parts are the same size. Put together the parts they ate and don't change how many parts the cake was divided into."
+  }
+ },
+ {
+  "exerciseId": "cmuli7ist00qj6krhr1419an5",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos figuras iguales se colorean: Marta pinta 2 de 3 partes iguales de la suya y Luis pinta 1 de 3 partes iguales de la otra. ¿Quién coloreó más?",
+   "new": "Dos figuras iguales se dividen en 3 partes iguales. Marta pinta 2 partes de la suya y Luis pinta 1 parte de la otra. ¿Quién pintó más?"
+  },
+  "promptEn": {
+   "old": "Two identical shapes are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?",
+   "new": "Two identical shapes are each divided into 3 equal parts. Marta colors 2 parts of hers and Luis colors 1 part of his. Who colored more?"
+  },
+  "procedureNoteEn": {
+   "old": "Both shapes are divided into parts of the same size. Compare how many parts each one painted.",
+   "new": "Both shapes are divided into parts of the same size. Compare how many parts each one colored."
+  }
+ },
+ {
+  "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos planetas de cartón iguales se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+   "new": "Dos planetas de cartón iguales se dividen en 3 partes iguales. Marta pinta 2 partes del suyo y Luis pinta 1 parte del otro. ¿Quién pintó más?"
+  },
+  "promptEn": {
+   "old": "Two identical cardboard planets are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?",
+   "new": "Two identical cardboard planets are each divided into 3 equal parts. Marta colors 2 parts of hers and Luis colors 1 part of his. Who colored more?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos camisetas de papel iguales se colorean: Marta pinta 2 de 3 franjas iguales de la suya y Luis pinta 1 de 3 franjas iguales de la otra. ¿Quién coloreó más?",
+   "new": "Dos camisetas de papel iguales tienen 3 franjas iguales cada una. Marta pinta 2 franjas de la suya y Luis pinta 1 franja de la otra. ¿Quién pintó más?"
+  },
+  "promptEn": {
+   "old": "Two identical paper jerseys are colored in: Marta colors 2 of 3 equal stripes of hers and Luis colors 1 of 3 equal stripes of the other. Who colored more?",
+   "new": "Two identical paper jerseys each have 3 equal stripes. Marta colors 2 stripes on hers and Luis colors 1 stripe on his. Who colored more?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos afiches iguales del concierto se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+   "new": "Dos afiches iguales del concierto se dividen en 3 partes iguales. Marta pinta 2 partes del suyo y Luis pinta 1 parte del otro. ¿Quién pintó más?"
+  },
+  "promptEn": {
+   "old": "Two identical concert posters are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?",
+   "new": "Two identical concert posters are each divided into 3 equal parts. Marta colors 2 parts of hers and Luis colors 1 part of his. Who colored more?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wpf04144crhozj6o79w",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos jardines iguales se siembran: Marta siembra 2 de 3 partes iguales del suyo y Luis siembra 1 de 3 partes iguales del otro. ¿Quién sembró más?",
+   "new": "Dos jardines iguales se dividen en 3 partes iguales. Marta siembra 2 partes del suyo y Luis siembra 1 parte del otro. ¿Quién sembró más?"
+  },
+  "promptEn": {
+   "old": "Two identical gardens are planted: Marta plants 2 of 3 equal parts of hers and Luis plants 1 of 3 equal parts of the other. Who planted more?",
+   "new": "Two identical gardens are each divided into 3 equal parts. Marta plants 2 parts of hers and Luis plants 1 part of his. Who planted more?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
+  "grade": 3,
+  "prompt": {
+   "old": "Dos pistas de autitos iguales: Marta recorre 2 de los 3 tramos iguales de la suya y Luis recorre 1 de los 3 tramos iguales de la otra. ¿Quién avanzó más?",
+   "new": "Dos pistas de autitos iguales tienen 3 tramos iguales cada una. Marta recorre 2 tramos de la suya y Luis recorre 1 tramo de la otra. ¿Quién avanzó más?"
+  },
+  "promptEn": {
+   "old": "Two identical toy car tracks: Marta travels 2 of the 3 equal sections of hers and Luis travels 1 of the 3 equal sections of the other. Who went farther?",
+   "new": "Two identical toy car tracks each have 3 equal sections. Marta travels 2 sections on hers and Luis travels 1 section on his. Who went farther?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2wm903xn4crhewpkqe38",
+  "grade": 3,
+  "prompt": {
+   "old": "Un mapa tiene 4 zonas iguales. Un jugador ya completó 1 zona y le regala el control de otras 2 a un amigo. ¿Qué fracción del mapa le queda a él?",
+   "new": "Un mapa tiene 4 zonas iguales. Tomás completa 1 zona y su amiga completa otras 2. ¿Qué fracción del mapa falta por completar?"
+  },
+  "promptEn": {
+   "old": "A map has 4 equal zones. A player has already completed 1 zone and lets a friend play 2 more zones. What fraction of the map is left for him to play?",
+   "new": "A map has 4 equal zones. Tomás completes 1 zone and his friend completes 2 more. What fraction of the map is still left to complete?"
+  },
+  "procedureNote": {
+   "old": "Primero averigua cuántas zonas le quedan después de completar y regalar. Luego escribe esa cantidad sobre el total de zonas.",
+   "new": "Primero averigua cuántas zonas faltan después de las que completaron. Luego escribe esa cantidad sobre el total de zonas."
+  },
+  "procedureNoteEn": {
+   "old": "First find how many zones are left after completing one and letting a friend play two. Then write that amount over the total number of zones.",
+   "new": "First find how many zones are left after the ones they completed. Then write that number over the total number of zones."
+  }
+ },
+ {
+  "exerciseId": "cmuli7iso00qe6krhc6rks550",
+  "grade": 3,
+  "prompt": {
+   "old": "¿Cuál de estas fracciones es la mayor?",
+   "new": "¿Cuál de estas fracciones es la mayor?"
+  },
+  "promptEn": {
+   "old": "Which of these fractions is the biggest?",
+   "new": "Which of these fractions is the greatest?"
+  },
+  "procedureNote": {
+   "old": "Imagina cada fracción en un pastel entero: ¿en cuántas partes iguales se corta y cuántas partes tomas? Compara cuánto pastel es en cada caso.",
+   "new": "Mira las barras: todas son del mismo tamaño y están divididas en 4 partes iguales. ¿Cuál tiene más partes pintadas?"
+  },
+  "procedureNoteEn": {
+   "old": "Picture each fraction on a whole cake: how many equal parts is it cut into and how many parts do you take? Compare how much cake it is in each case.",
+   "new": "Look at the bars: they are all the same size and divided into 4 equal parts. Which one has the most parts shaded?"
+  },
+  "options": [
+   {
+    "optionId": "cmuli7iso00qf6krh2yaxmoke",
+    "label": {
+     "old": "3/4",
+     "new": "4/4"
+    }
+   },
+   {
+    "optionId": "cmuli7iso00qh6krhyb6lmehp",
+    "label": {
+     "old": "1/2",
+     "new": "2/4"
+    }
+   },
+   {
+    "optionId": "cmuli7iso00qi6krhecblk7jj",
+    "label": {
+     "old": "1/3",
+     "new": "3/4"
+    }
+   }
+  ]
  }
 ]

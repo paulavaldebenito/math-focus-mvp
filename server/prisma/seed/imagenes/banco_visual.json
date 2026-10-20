@@ -22226,13 +22226,12 @@
         "en": "A pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
       },
       "kind": "existing",
-      "src": "/exercise-images/3b__cmuli7is100pp6krh8k51jbw9__existing.png",
-      "svgSrc": null,
-      "width": 1536,
-      "height": 1024,
+      "src": "/exercise-images/3b__cmuli7is100pp6krh8k51jbw9__comida.png",
+      "width": 608,
+      "height": 600,
       "alt": {
-        "es": "Una pizza dividida en cuatro porciones; una porción separada representa la consumida.",
-        "en": "A pizza divided into four slices; one separate slice represents the eaten portion."
+        "es": "Una pizza dividida en 4 partes iguales; 1 parte está marcada con línea punteada porque ya no está. Una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
+        "en": "A pizza divided into 4 equal parts; 1 part has a dashed outline because it is gone. A pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
       },
       "letters": []
     },
@@ -22244,26 +22243,14 @@
         "en": "A chocolate bar is divided into 3 equal parts. What fraction of the bar is one of those parts?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7is700pu6krh5z4wydmg__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7is700pu6krh5z4wydmg__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7is700pu6krh5z4wydmg__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A chocolate bar is divided into 3 equal parts. What fraction of the bar is one of those parts?"
+        "es": "Una barra dividida en 3 partes iguales; 1 parte está pintada de azul. Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?",
+        "en": "A bar divided into 3 equal parts; 1 part is shaded blue. A chocolate bar is divided into 3 equal parts. What fraction of the bar is one of those parts?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7isb00pz6krh3wvwmc2h",
@@ -22273,26 +22260,14 @@
         "en": "In the fraction 3/4, what does the number 4 tell you?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7isb00pz6krh3wvwmc2h__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7isb00pz6krh3wvwmc2h__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7isb00pz6krh3wvwmc2h__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. En la fracción 3/4, ¿qué indica el número 4?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the fraction 3/4, what does the number 4 tell you?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. En la fracción 3/4, ¿qué indica el número 4?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. In the fraction 3/4, what does the number 4 tell you?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7isg00q46krhb23ijzah",
@@ -22302,26 +22277,14 @@
         "en": "3 of the 4 equal parts of a wall are painted. What fraction of the wall is painted?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7isg00q46krhb23ijzah__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7isg00q46krhb23ijzah__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7isg00q46krhb23ijzah__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a wall are painted. What fraction of the wall is painted?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of a wall are painted. What fraction of the wall is painted?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7isk00q96krh17rqb6ci",
@@ -22331,26 +22294,14 @@
         "en": "A rope is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7isk00q96krh17rqb6ci__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7isk00q96krh17rqb6ci__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7isk00q96krh17rqb6ci__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A rope is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A rope is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7iso00qe6krhc6rks550",
@@ -22360,50 +22311,14 @@
         "en": "Which of these fractions is the biggest?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7iso00qe6krhc6rks550__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7iso00qe6krhc6rks550__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7iso00qe6krhc6rks550__barras.png",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuál de estas fracciones es la mayor?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Which of these fractions is the biggest?"
+        "es": "Cuatro barras del mismo largo, cada una dividida en 4 partes iguales: 1/4, 2/4, 3/4 y 4/4, con sus partes pintadas de azul. ¿Cuál de estas fracciones es la mayor?",
+        "en": "Four bars of the same length, each divided into 4 equal parts: 1/4, 2/4, 3/4 and 4/4, with their parts shaded blue. Which of these fractions is the biggest?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "C",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "D",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7ist00qj6krhr1419an5",
@@ -22413,34 +22328,14 @@
         "en": "Two identical shapes are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7ist00qj6krhr1419an5__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7ist00qj6krhr1419an5__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7ist00qj6krhr1419an5__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Dos figuras iguales se colorean: Marta pinta 2 de 3 partes iguales de la suya y Luis pinta 1 de 3 partes iguales de la otra. ¿Quién coloreó más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Two identical shapes are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?"
+        "es": "Dos barras del mismo largo, cada una dividida en 3 partes iguales: la de Marta tiene 2 partes pintadas y la de Luis tiene 1. Dos figuras iguales se colorean: Marta pinta 2 de 3 partes iguales de la suya y Luis pinta 1 de 3 partes iguales de la otra. ¿Quién coloreó más?",
+        "en": "Two bars of the same length, each divided into 3 equal parts: Marta's has 2 parts shaded and Luis's has 1. Two identical shapes are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
@@ -22450,34 +22345,14 @@
         "en": "A chocolate tablet has 4 equal bars. Ema eats 1 bar and gives away 2. What fraction of the tablet is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7isw00qo6krhqyr0uja2__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7isw00qo6krhqyr0uja2__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7isw00qo6krhqyr0uja2__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una tableta de chocolate tiene 4 barras iguales. Ema come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A chocolate tablet has 4 equal bars. Ema eats 1 bar and gives away 2. What fraction of the tablet is left?"
+        "es": "Una barra dividida en 4 partes iguales: 1 parte con línea punteada, 2 partes rosadas y 1 parte sin color. Una tableta de chocolate tiene 4 barras iguales. Ema come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
+        "en": "A bar divided into 4 equal parts: 1 part with a dashed outline, 2 pink parts and 1 uncolored part. A chocolate tablet has 4 equal bars. Ema eats 1 bar and gives away 2. What fraction of the tablet is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7it100qt6krhus8cyqvy",
@@ -22487,34 +22362,14 @@
         "en": "A jug is divided into 3 equal parts. Vicente takes 1 part and Ana takes 1 part. What fraction of the jug did they take together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmuli7it100qt6krhus8cyqvy__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmuli7it100qt6krhus8cyqvy__fractions.svg",
+      "src": "/exercise-images/3b__cmuli7it100qt6krhus8cyqvy__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 360,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una jarra se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la jarra tomaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A jug is divided into 3 equal parts. Vicente takes 1 part and Ana takes 1 part. What fraction of the jug did they take together?"
+        "es": "Una barra dividida en 3 partes iguales: 1 parte azul de Vicente, 1 parte rosada de Ana y 1 parte sin color. Una jarra se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la jarra tomaron entre los dos?",
+        "en": "A bar divided into 3 equal parts: 1 blue part for Vicente, 1 pink part for Ana and 1 uncolored part. A jug is divided into 3 equal parts. Vicente takes 1 part and Ana takes 1 part. What fraction of the jug did they take together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7it700qy6krhqpa91j90",
@@ -22558,26 +22413,14 @@
         "en": "3 of the 4 equal parts of a fans' mural are painted. What fraction of the mural is painted?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wkg03vp4crhd0958o3d__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wkg03vp4crhd0958o3d__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wkg03vp4crhd0958o3d__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se pintan 3 de las 4 partes iguales de un mural de la hinchada. ¿Qué fracción del mural está pintada?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a fans' mural are painted. What fraction of the mural is painted?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se pintan 3 de las 4 partes iguales de un mural de la hinchada. ¿Qué fracción del mural está pintada?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of a fans' mural are painted. What fraction of the mural is painted?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
@@ -22587,26 +22430,14 @@
         "en": "A ribbon for marking the pitch is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wkk03vu4crhtgcgz1pz__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wkk03vu4crhtgcgz1pz__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wkk03vu4crhtgcgz1pz__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una cinta para marcar la cancha se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A ribbon for marking the pitch is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Una cinta para marcar la cancha se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A ribbon for marking the pitch is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
@@ -22616,34 +22447,14 @@
         "en": "Two identical paper jerseys are colored in: Marta colors 2 of 3 equal stripes of hers and Luis colors 1 of 3 equal stripes of the other. Who colored more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wkp03vz4crh9eg2ywne__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wkp03vz4crh9eg2ywne__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wkp03vz4crh9eg2ywne__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Dos camisetas de papel iguales se colorean: Marta pinta 2 de 3 franjas iguales de la suya y Luis pinta 1 de 3 franjas iguales de la otra. ¿Quién coloreó más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Two identical paper jerseys are colored in: Marta colors 2 of 3 equal stripes of hers and Luis colors 1 of 3 equal stripes of the other. Who colored more?"
+        "es": "Dos barras del mismo largo, cada una dividida en 3 partes iguales: la de Marta tiene 2 partes pintadas y la de Luis tiene 1. Dos camisetas de papel iguales se colorean: Marta pinta 2 de 3 franjas iguales de la suya y Luis pinta 1 de 3 franjas iguales de la otra. ¿Quién coloreó más?",
+        "en": "Two bars of the same length, each divided into 3 equal parts: Marta's has 2 parts shaded and Luis's has 1. Two identical paper jerseys are colored in: Marta colors 2 of 3 equal stripes of hers and Luis colors 1 of 3 equal stripes of the other. Who colored more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wkt03w44crhjcisvrt7",
@@ -22653,34 +22464,14 @@
         "en": "A team water bottle is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the bottle did they drink together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wkt03w44crhjcisvrt7__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wkt03w44crhjcisvrt7__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wkt03w44crhjcisvrt7__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 360,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una botella de agua del equipo se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la botella tomaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A team water bottle is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the bottle did they drink together?"
+        "es": "Una barra dividida en 3 partes iguales: 1 parte azul de Vicente, 1 parte rosada de Ana y 1 parte sin color. Una botella de agua del equipo se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la botella tomaron entre los dos?",
+        "en": "A bar divided into 3 equal parts: 1 blue part for Vicente, 1 pink part for Ana and 1 uncolored part. A team water bottle is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the bottle did they drink together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wkz03w94crhqgkt0hjb",
@@ -22707,26 +22498,14 @@
         "en": "A pen is divided into 4 equal parts and the sheep graze in 3 of those parts. What fraction of the pen do the sheep use?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wl203we4crhh3az5clo__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wl203we4crhh3az5clo__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wl203we4crhh3az5clo__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un corral se divide en 4 partes iguales y las ovejas pastan en 3 de esas partes. ¿Qué fracción del corral ocupan las ovejas?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A pen is divided into 4 equal parts and the sheep graze in 3 of those parts. What fraction of the pen do the sheep use?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Un corral se divide en 4 partes iguales y las ovejas pastan en 3 de esas partes. ¿Qué fracción del corral ocupan las ovejas?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. A pen is divided into 4 equal parts and the sheep graze in 3 of those parts. What fraction of the pen do the sheep use?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
@@ -22736,26 +22515,14 @@
         "en": "A sack of dog food is enough for 3 equal meals and 2 have already been used. What fraction of the sack was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wl703wj4crhem3sbtpt__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wl703wj4crhem3sbtpt__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wl703wj4crhem3sbtpt__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un saco de alimento para perros alcanza para 3 comidas iguales y ya se usaron 2. ¿Qué fracción del saco se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A sack of dog food is enough for 3 equal meals and 2 have already been used. What fraction of the sack was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Un saco de alimento para perros alcanza para 3 comidas iguales y ya se usaron 2. ¿Qué fracción del saco se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A sack of dog food is enough for 3 equal meals and 2 have already been used. What fraction of the sack was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wlc03wo4crhg7gwxdpj",
@@ -22765,34 +22532,14 @@
         "en": "A water feeder for birds is divided into 3 equal parts. A finch takes 1 part and a sparrow takes 1 part. What fraction of the feeder did they take together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wlc03wo4crhg7gwxdpj__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wlc03wo4crhg7gwxdpj__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wlc03wo4crhg7gwxdpj__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bebedero de agua para aves se divide en 3 partes iguales. Un jilguero toma 1 parte y un gorrión toma 1 parte. ¿Qué fracción del bebedero tomaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A water feeder for birds is divided into 3 equal parts. A finch takes 1 part and a sparrow takes 1 part. What fraction of the feeder did they take together?"
+        "es": "Una barra dividida en 3 partes iguales: 1 parte azul, 1 parte rosada y 1 parte sin color. Un bebedero de agua para aves se divide en 3 partes iguales. Un jilguero toma 1 parte y un gorrión toma 1 parte. ¿Qué fracción del bebedero tomaron entre los dos?",
+        "en": "A bar divided into 3 equal parts: 1 blue part, 1 pink part and 1 uncolored part. A water feeder for birds is divided into 3 equal parts. A finch takes 1 part and a sparrow takes 1 part. What fraction of the feeder did they take together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
@@ -22802,26 +22549,14 @@
         "en": "3 of the 4 equal parts of a mural with musical instruments are painted. What fraction of the mural is painted?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wli03wt4crhaxj2y9gt__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wli03wt4crhaxj2y9gt__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wli03wt4crhaxj2y9gt__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se pintan 3 de las 4 partes iguales de un mural con instrumentos musicales. ¿Qué fracción del mural está pintada?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a mural with musical instruments are painted. What fraction of the mural is painted?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se pintan 3 de las 4 partes iguales de un mural con instrumentos musicales. ¿Qué fracción del mural está pintada?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of a mural with musical instruments are painted. What fraction of the mural is painted?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
@@ -22831,26 +22566,14 @@
         "en": "A tambourine ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wlm03wy4crhb13rkpid__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wlm03wy4crhb13rkpid__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wlm03wy4crhb13rkpid__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una cinta del pandero se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A tambourine ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Una cinta del pandero se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A tambourine ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
@@ -22860,34 +22583,14 @@
         "en": "Two identical concert posters are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wlr03x34crhhivpvzpt__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wlr03x34crhhivpvzpt__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wlr03x34crhhivpvzpt__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Dos afiches iguales del concierto se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Two identical concert posters are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?"
+        "es": "Dos barras del mismo largo, cada una dividida en 3 partes iguales: la de Marta tiene 2 partes pintadas y la de Luis tiene 1. Dos afiches iguales del concierto se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+        "en": "Two bars of the same length, each divided into 3 equal parts: Marta's has 2 parts shaded and Luis's has 1. Two identical concert posters are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wlv03x84crhudbhlgxu",
@@ -22914,26 +22617,14 @@
         "en": "A map is divided into 4 equal zones and you have already explored 1. What fraction of the map have you explored?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wm003xd4crhplnbocpo__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wm003xd4crhplnbocpo__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wm003xd4crhplnbocpo__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un mapa se divide en 4 zonas iguales y ya exploraste 1. ¿Qué fracción del mapa exploraste?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A map is divided into 4 equal zones and you have already explored 1. What fraction of the map have you explored?"
+        "es": "Una barra dividida en 4 partes iguales; 1 parte está pintada de azul. Un mapa se divide en 4 zonas iguales y ya exploraste 1. ¿Qué fracción del mapa exploraste?",
+        "en": "A bar divided into 4 equal parts; 1 part is shaded blue. A map is divided into 4 equal zones and you have already explored 1. What fraction of the map have you explored?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
@@ -22943,26 +22634,14 @@
         "en": "3 of the 4 equal parts of a progress bar are complete. What fraction of the bar is complete?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wm503xi4crh92cf4ck9__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wm503xi4crh92cf4ck9__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wm503xi4crh92cf4ck9__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se completan 3 de las 4 partes iguales de una barra de progreso. ¿Qué fracción de la barra está completa?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a progress bar are complete. What fraction of the bar is complete?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se completan 3 de las 4 partes iguales de una barra de progreso. ¿Qué fracción de la barra está completa?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of a progress bar are complete. What fraction of the bar is complete?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wm903xn4crhewpkqe38",
@@ -22972,34 +22651,14 @@
         "en": "A map has 4 equal zones. A player has already completed 1 zone and hands control of 2 more to a friend. What fraction of the map is left for him?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wm903xn4crhewpkqe38__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wm903xn4crhewpkqe38__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wm903xn4crhewpkqe38__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un mapa tiene 4 zonas iguales. Un jugador ya completó 1 zona y le regala el control de otras 2 a un amigo. ¿Qué fracción del mapa le queda a él?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A map has 4 equal zones. A player has already completed 1 zone and hands control of 2 more to a friend. What fraction of the map is left for him?"
+        "es": "Una barra dividida en 4 partes iguales: 1 parte con línea punteada, 2 partes rosadas y 1 parte sin color. Un mapa tiene 4 zonas iguales. Un jugador ya completó 1 zona y le regala el control de otras 2 a un amigo. ¿Qué fracción del mapa le queda a él?",
+        "en": "A bar divided into 4 equal parts: 1 part with a dashed outline, 2 pink parts and 1 uncolored part. A map has 4 equal zones. A player has already completed 1 zone and hands control of 2 more to a friend. What fraction of the map is left for him?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
@@ -23026,26 +22685,14 @@
         "en": "The control panel of a cardboard spaceship is divided into 3 equal parts. What fraction of the panel is one of those parts?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wmk03xx4crh9sugrj3m__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wmk03xx4crh9sugrj3m__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wmk03xx4crh9sugrj3m__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. El panel de control de una nave de cartón se divide en 3 partes iguales. ¿Qué fracción del panel es una de esas partes?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. The control panel of a cardboard spaceship is divided into 3 equal parts. What fraction of the panel is one of those parts?"
+        "es": "Una barra dividida en 3 partes iguales; 1 parte está pintada de azul. El panel de control de una nave de cartón se divide en 3 partes iguales. ¿Qué fracción del panel es una de esas partes?",
+        "en": "A bar divided into 3 equal parts; 1 part is shaded blue. The control panel of a cardboard spaceship is divided into 3 equal parts. What fraction of the panel is one of those parts?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wmo03y24crhjsb51fve",
@@ -23055,26 +22702,14 @@
         "en": "3 of the 4 equal parts of the hull of a cardboard spaceship are painted. What fraction of the hull is painted?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wmo03y24crhjsb51fve__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wmo03y24crhjsb51fve__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wmo03y24crhjsb51fve__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se pintan 3 de las 4 partes iguales del casco de una nave de cartón. ¿Qué fracción del casco está pintada?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of the hull of a cardboard spaceship are painted. What fraction of the hull is painted?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se pintan 3 de las 4 partes iguales del casco de una nave de cartón. ¿Qué fracción del casco está pintada?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of the hull of a cardboard spaceship are painted. What fraction of the hull is painted?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wmt03y74crh45agw2ho",
@@ -23084,26 +22719,14 @@
         "en": "A cable is cut into 3 equal parts and 2 are used to build a toy satellite. What fraction of the cable was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wmt03y74crh45agw2ho__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wmt03y74crh45agw2ho__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wmt03y74crh45agw2ho__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un cable se corta en 3 partes iguales y se usan 2 para armar un satélite de juguete. ¿Qué fracción del cable se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cable is cut into 3 equal parts and 2 are used to build a toy satellite. What fraction of the cable was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Un cable se corta en 3 partes iguales y se usan 2 para armar un satélite de juguete. ¿Qué fracción del cable se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A cable is cut into 3 equal parts and 2 are used to build a toy satellite. What fraction of the cable was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
@@ -23113,34 +22736,14 @@
         "en": "Two identical cardboard planets are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wmx03yc4crhaz9nut0m__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wmx03yc4crhaz9nut0m__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wmx03yc4crhaz9nut0m__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Dos planetas de cartón iguales se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Two identical cardboard planets are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?"
+        "es": "Dos barras del mismo largo, cada una dividida en 3 partes iguales: la de Marta tiene 2 partes pintadas y la de Luis tiene 1. Dos planetas de cartón iguales se colorean: Marta pinta 2 de 3 partes iguales del suyo y Luis pinta 1 de 3 partes iguales del otro. ¿Quién coloreó más?",
+        "en": "Two bars of the same length, each divided into 3 equal parts: Marta's has 2 parts shaded and Luis's has 1. Two identical cardboard planets are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
@@ -23150,34 +22753,14 @@
         "en": "A box has 4 equal space cereal bars. Ema eats 1 bar and gives away 2. What fraction of the bars is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wn103yh4crh5x5eog9y__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wn103yh4crh5x5eog9y__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wn103yh4crh5x5eog9y__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una caja trae 4 barras de cereal espacial iguales. Ema come 1 barra y regala 2. ¿Qué fracción de las barras le queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A box has 4 equal space cereal bars. Ema eats 1 bar and gives away 2. What fraction of the bars is left?"
+        "es": "Una barra dividida en 4 partes iguales: 1 parte con línea punteada, 2 partes rosadas y 1 parte sin color. Una caja trae 4 barras de cereal espacial iguales. Ema come 1 barra y regala 2. ¿Qué fracción de las barras le queda?",
+        "en": "A bar divided into 4 equal parts: 1 part with a dashed outline, 2 pink parts and 1 uncolored part. A box has 4 equal space cereal bars. Ema eats 1 bar and gives away 2. What fraction of the bars is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wn603ym4crhxpy7jjan",
@@ -23187,34 +22770,14 @@
         "en": "The water tank of a toy space station is divided into 3 equal parts. Vicente fills 1 part and Ana fills 1 part. What fraction of the tank did they fill together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wn603ym4crhxpy7jjan__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wn603ym4crhxpy7jjan__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wn603ym4crhxpy7jjan__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 360,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. El tanque de agua de una estación de juguete se divide en 3 partes iguales. Vicente llena 1 parte y Ana llena 1 parte. ¿Qué fracción del tanque llenaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. The water tank of a toy space station is divided into 3 equal parts. Vicente fills 1 part and Ana fills 1 part. What fraction of the tank did they fill together?"
+        "es": "Una barra dividida en 3 partes iguales: 1 parte azul de Vicente, 1 parte rosada de Ana y 1 parte sin color. El tanque de agua de una estación de juguete se divide en 3 partes iguales. Vicente llena 1 parte y Ana llena 1 parte. ¿Qué fracción del tanque llenaron entre los dos?",
+        "en": "A bar divided into 3 equal parts: 1 blue part for Vicente, 1 pink part for Ana and 1 uncolored part. The water tank of a toy space station is divided into 3 equal parts. Vicente fills 1 part and Ana fills 1 part. What fraction of the tank did they fill together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wna03yr4crhk74yawbg",
@@ -23241,26 +22804,14 @@
         "en": "3 of the 4 equal parts of a dinosaur mural are painted. What fraction of the mural is painted?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wng03yw4crhtgj2ty2v__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wng03yw4crhtgj2ty2v__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wng03yw4crhtgj2ty2v__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se pintan 3 de las 4 partes iguales de un mural de dinosaurios. ¿Qué fracción del mural está pintada?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a dinosaur mural are painted. What fraction of the mural is painted?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se pintan 3 de las 4 partes iguales de un mural de dinosaurios. ¿Qué fracción del mural está pintada?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of a dinosaur mural are painted. What fraction of the mural is painted?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wnk03z14crhgeh910n2",
@@ -23270,26 +22821,14 @@
         "en": "A rope for marking a dig site is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wnk03z14crhgeh910n2__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wnk03z14crhgeh910n2__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wnk03z14crhgeh910n2__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una cuerda para marcar una excavación se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A rope for marking a dig site is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Una cuerda para marcar una excavación se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A rope for marking a dig site is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wnp03z64crhgw1uui5b",
@@ -23384,26 +22923,14 @@
         "en": "A cake is divided into 3 equal parts and 2 are eaten. What fraction of the cake was eaten?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2woa03zv4crh5alzzhnj__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2woa03zv4crh5alzzhnj__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2woa03zv4crh5alzzhnj__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un queque se divide en 3 partes iguales y se comen 2. ¿Qué fracción del queque se comió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cake is divided into 3 equal parts and 2 are eaten. What fraction of the cake was eaten?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Un queque se divide en 3 partes iguales y se comen 2. ¿Qué fracción del queque se comió?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A cake is divided into 3 equal parts and 2 are eaten. What fraction of the cake was eaten?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wof04004crhhgs81usk",
@@ -23481,26 +23008,14 @@
         "en": "A garden is divided into 4 equal parts and you plant lettuces in 1 of them. What fraction of the garden has lettuces?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wox040k4crhhdw8hwq1__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wox040k4crhhdw8hwq1__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wox040k4crhhdw8hwq1__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un huerto se divide en 4 partes iguales y plantas lechugas en 1 de ellas. ¿Qué fracción del huerto tiene lechugas?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A garden is divided into 4 equal parts and you plant lettuces in 1 of them. What fraction of the garden has lettuces?"
+        "es": "Una barra dividida en 4 partes iguales; 1 parte está pintada de azul. Un huerto se divide en 4 partes iguales y plantas lechugas en 1 de ellas. ¿Qué fracción del huerto tiene lechugas?",
+        "en": "A bar divided into 4 equal parts; 1 part is shaded blue. A garden is divided into 4 equal parts and you plant lettuces in 1 of them. What fraction of the garden has lettuces?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wp1040p4crhnjg3l0iw",
@@ -23510,26 +23025,14 @@
         "en": "A garden is divided into 3 equal parts. What fraction of the garden is one of those parts?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wp1040p4crhnjg3l0iw__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wp1040p4crhnjg3l0iw__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wp1040p4crhnjg3l0iw__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un jardín se divide en 3 partes iguales. ¿Qué fracción del jardín es una de esas partes?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A garden is divided into 3 equal parts. What fraction of the garden is one of those parts?"
+        "es": "Una barra dividida en 3 partes iguales; 1 parte está pintada de azul. Un jardín se divide en 3 partes iguales. ¿Qué fracción del jardín es una de esas partes?",
+        "en": "A bar divided into 3 equal parts; 1 part is shaded blue. A garden is divided into 3 equal parts. What fraction of the garden is one of those parts?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
@@ -23539,26 +23042,14 @@
         "en": "Flowers are planted in 3 of the 4 equal parts of a garden. What fraction of the garden has flowers?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wp5040u4crhcqz9x4eo__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wp5040u4crhcqz9x4eo__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wp5040u4crhcqz9x4eo__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se plantan flores en 3 de las 4 partes iguales de un jardín. ¿Qué fracción del jardín tiene flores?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Flowers are planted in 3 of the 4 equal parts of a garden. What fraction of the garden has flowers?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se plantan flores en 3 de las 4 partes iguales de un jardín. ¿Qué fracción del jardín tiene flores?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. Flowers are planted in 3 of the 4 equal parts of a garden. What fraction of the garden has flowers?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wp9040z4crh84shmq9d",
@@ -23568,26 +23059,14 @@
         "en": "A rope for tying up a boat is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wp9040z4crh84shmq9d__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wp9040z4crh84shmq9d__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wp9040z4crh84shmq9d__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una cuerda para amarrar un bote se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A rope for tying up a boat is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Una cuerda para amarrar un bote se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A rope for tying up a boat is cut into 3 equal parts and 2 are used. What fraction of the rope was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wpf04144crhozj6o79w",
@@ -23597,34 +23076,14 @@
         "en": "Two identical gardens are sown: Marta sows 2 of 3 equal parts of hers and Luis sows 1 of 3 equal parts of the other. Who sowed more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wpf04144crhozj6o79w__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wpf04144crhozj6o79w__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wpf04144crhozj6o79w__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Dos jardines iguales se siembran: Marta siembra 2 de 3 partes iguales del suyo y Luis siembra 1 de 3 partes iguales del otro. ¿Quién sembró más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Two identical gardens are sown: Marta sows 2 of 3 equal parts of hers and Luis sows 1 of 3 equal parts of the other. Who sowed more?"
+        "es": "Dos barras del mismo largo, cada una dividida en 3 partes iguales: la de Marta tiene 2 partes pintadas y la de Luis tiene 1. Dos jardines iguales se siembran: Marta siembra 2 de 3 partes iguales del suyo y Luis siembra 1 de 3 partes iguales del otro. ¿Quién sembró más?",
+        "en": "Two bars of the same length, each divided into 3 equal parts: Marta's has 2 parts shaded and Luis's has 1. Two identical gardens are sown: Marta sows 2 of 3 equal parts of hers and Luis sows 1 of 3 equal parts of the other. Who sowed more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wpi04194crhzt2qjnw8",
@@ -23634,34 +23093,14 @@
         "en": "A watering jug is divided into 3 equal parts. Vicente uses 1 part and Ana uses 1 part. What fraction of the jug did they use together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wpi04194crhzt2qjnw8__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wpi04194crhzt2qjnw8__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wpi04194crhzt2qjnw8__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 360,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bidón de agua para regar se divide en 3 partes iguales. Vicente usa 1 parte y Ana usa 1 parte. ¿Qué fracción del bidón usaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A watering jug is divided into 3 equal parts. Vicente uses 1 part and Ana uses 1 part. What fraction of the jug did they use together?"
+        "es": "Una barra dividida en 3 partes iguales: 1 parte azul de Vicente, 1 parte rosada de Ana y 1 parte sin color. Un bidón de agua para regar se divide en 3 partes iguales. Vicente usa 1 parte y Ana usa 1 parte. ¿Qué fracción del bidón usaron entre los dos?",
+        "en": "A bar divided into 3 equal parts: 1 blue part for Vicente, 1 pink part for Ana and 1 uncolored part. A watering jug is divided into 3 equal parts. Vicente uses 1 part and Ana uses 1 part. What fraction of the jug did they use together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wpn041e4crh8m7hlhls",
@@ -23688,26 +23127,14 @@
         "en": "3 of the 4 equal parts of a court floor are painted. What fraction of the court is painted?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wps041j4crhbt2yycs8__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wps041j4crhbt2yycs8__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wps041j4crhbt2yycs8__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se pintan 3 de las 4 partes iguales del piso de una cancha. ¿Qué fracción de la cancha está pintada?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a court floor are painted. What fraction of the court is painted?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Se pintan 3 de las 4 partes iguales del piso de una cancha. ¿Qué fracción de la cancha está pintada?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. 3 of the 4 equal parts of a court floor are painted. What fraction of the court is painted?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
@@ -23717,26 +23144,14 @@
         "en": "A gymnastics ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wpw041o4crhcgh2dq59__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wpw041o4crhcgh2dq59__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wpw041o4crhcgh2dq59__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una cinta de gimnasia se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A gymnastics ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Una cinta de gimnasia se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A gymnastics ribbon is cut into 3 equal parts and 2 are used. What fraction of the ribbon was used?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wq0041t4crhtx35usy5",
@@ -23746,34 +23161,14 @@
         "en": "A training water jug is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the jug did they drink together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wq0041t4crhtx35usy5__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wq0041t4crhtx35usy5__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wq0041t4crhtx35usy5__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 360,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bidón de agua para el entrenamiento se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción del bidón tomaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A training water jug is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the jug did they drink together?"
+        "es": "Una barra dividida en 3 partes iguales: 1 parte azul de Vicente, 1 parte rosada de Ana y 1 parte sin color. Un bidón de agua para el entrenamiento se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción del bidón tomaron entre los dos?",
+        "en": "A bar divided into 3 equal parts: 1 blue part for Vicente, 1 pink part for Ana and 1 uncolored part. A training water jug is divided into 3 equal parts. Vicente drinks 1 part and Ana drinks 1 part. What fraction of the jug did they drink together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wq4041y4crhyvxaqmqa",
@@ -23800,26 +23195,14 @@
         "en": "A road is divided into 4 equal parts and a car travels 1 of them. What fraction of the road did it travel?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wq904234crhdtvmc97s__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wq904234crhdtvmc97s__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wq904234crhdtvmc97s__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un camino se divide en 4 partes iguales y un auto recorre 1. ¿Qué fracción del camino recorrió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A road is divided into 4 equal parts and a car travels 1 of them. What fraction of the road did it travel?"
+        "es": "Una barra dividida en 4 partes iguales; 1 parte está pintada de azul. Un camino se divide en 4 partes iguales y un auto recorre 1. ¿Qué fracción del camino recorrió?",
+        "en": "A bar divided into 4 equal parts; 1 part is shaded blue. A road is divided into 4 equal parts and a car travels 1 of them. What fraction of the road did it travel?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
@@ -23829,26 +23212,14 @@
         "en": "A train has 4 equal cars and 3 of them are red. What fraction of the train is red?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wqe04284crh5gg1e6yj__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wqe04284crh5gg1e6yj__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wqe04284crh5gg1e6yj__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un tren tiene 4 vagones iguales y 3 son rojos. ¿Qué fracción del tren es roja?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A train has 4 equal cars and 3 of them are red. What fraction of the train is red?"
+        "es": "Una barra dividida en 4 partes iguales; 3 partes están pintadas de azul. Un tren tiene 4 vagones iguales y 3 son rojos. ¿Qué fracción del tren es roja?",
+        "en": "A bar divided into 4 equal parts; 3 parts are shaded blue. A train has 4 equal cars and 3 of them are red. What fraction of the train is red?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wqk042d4crhccfb95la",
@@ -23858,26 +23229,14 @@
         "en": "A dirt road is divided into 3 equal sections and a tractor travels 2 of them. What fraction of the road did it travel?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wqk042d4crhccfb95la__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wqk042d4crhccfb95la__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wqk042d4crhccfb95la__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un camino de tierra se divide en 3 tramos iguales y un tractor recorre 2. ¿Qué fracción del camino recorrió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A dirt road is divided into 3 equal sections and a tractor travels 2 of them. What fraction of the road did it travel?"
+        "es": "Una barra dividida en 3 partes iguales; 2 partes están pintadas de azul. Un camino de tierra se divide en 3 tramos iguales y un tractor recorre 2. ¿Qué fracción del camino recorrió?",
+        "en": "A bar divided into 3 equal parts; 2 parts are shaded blue. A dirt road is divided into 3 equal sections and a tractor travels 2 of them. What fraction of the road did it travel?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
@@ -23887,34 +23246,14 @@
         "en": "Two identical toy car tracks: Marta travels 2 of the 3 equal sections of hers and Luis travels 1 of the 3 equal sections of the other. Who went farther?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wqn042i4crhlokjxq1s__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wqn042i4crhlokjxq1s__fractions.svg",
+      "src": "/exercise-images/3b__cmulu2wqn042i4crhlokjxq1s__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Dos pistas de autitos iguales: Marta recorre 2 de los 3 tramos iguales de la suya y Luis recorre 1 de los 3 tramos iguales de la otra. ¿Quién avanzó más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Two identical toy car tracks: Marta travels 2 of the 3 equal sections of hers and Luis travels 1 of the 3 equal sections of the other. Who went farther?"
+        "es": "Dos barras del mismo largo, cada una dividida en 3 partes iguales: la de Marta tiene 2 partes pintadas y la de Luis tiene 1. Dos pistas de autitos iguales: Marta recorre 2 de los 3 tramos iguales de la suya y Luis recorre 1 de los 3 tramos iguales de la otra. ¿Quién avanzó más?",
+        "en": "Two bars of the same length, each divided into 3 equal parts: Marta's has 2 parts shaded and Luis's has 1. Two identical toy car tracks: Marta travels 2 of the 3 equal sections of hers and Luis travels 1 of the 3 equal sections of the other. Who went farther?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wqs042n4crh073hwczj",
@@ -45294,6 +44633,125 @@
         "A",
         "B"
       ]
+    },
+    {
+      "exerciseId": "cmvha42j70008ybrhsyt3evem",
+      "grade": 3,
+      "prompt": {
+        "es": "Una hoja de papel se dobla en 2 partes iguales y se pinta 1. ¿Qué fracción de la hoja está pintada?",
+        "en": "A sheet of paper is folded into 2 equal parts and 1 part is colored. What fraction of the sheet is colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha42j70008ybrhsyt3evem__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Una hoja de papel se dobla en 2 partes iguales y se pinta 1. ¿Qué fracción de la hoja está pintada?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A sheet of paper is folded into 2 equal parts and 1 part is colored. What fraction of the sheet is colored?"
+      }
+    },
+    {
+      "exerciseId": "cmvha42mj000dybrhfdxxby0b",
+      "grade": 3,
+      "prompt": {
+        "es": "Una cancha se divide en 2 partes iguales y tu equipo defiende 1. ¿Qué fracción de la cancha defiende tu equipo?",
+        "en": "A field is divided into 2 equal parts and your team defends 1 of them. What fraction of the field does your team defend?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha42mj000dybrhfdxxby0b__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Una cancha se divide en 2 partes iguales y tu equipo defiende 1. ¿Qué fracción de la cancha defiende tu equipo?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A field is divided into 2 equal parts and your team defends 1 of them. What fraction of the field does your team defend?"
+      }
+    },
+    {
+      "exerciseId": "cmvha42qf000iybrhjodmp9r2",
+      "grade": 3,
+      "prompt": {
+        "es": "Un nivel del juego tiene 2 partes iguales y ya completaste 1. ¿Qué fracción del nivel completaste?",
+        "en": "A game level has 2 equal parts and you have already completed 1. What fraction of the level have you completed?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha42qf000iybrhjodmp9r2__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Un nivel del juego tiene 2 partes iguales y ya completaste 1. ¿Qué fracción del nivel completaste?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A game level has 2 equal parts and you have already completed 1. What fraction of the level have you completed?"
+      }
+    },
+    {
+      "exerciseId": "cmvha42ry000nybrhzahswxqh",
+      "grade": 3,
+      "prompt": {
+        "es": "Una bandera para la nave se divide en 2 partes iguales y se pinta 1. ¿Qué fracción de la bandera está pintada?",
+        "en": "A flag for the spaceship is divided into 2 equal parts and 1 part is painted. What fraction of the flag is painted?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha42ry000nybrhzahswxqh__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Una bandera para la nave se divide en 2 partes iguales y se pinta 1. ¿Qué fracción de la bandera está pintada?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A flag for the spaceship is divided into 2 equal parts and 1 part is painted. What fraction of the flag is painted?"
+      }
+    },
+    {
+      "exerciseId": "cmvha42vm000sybrhmeakqy35",
+      "grade": 3,
+      "prompt": {
+        "es": "Un sándwich se corta en 2 partes iguales y te comes 1. ¿Qué fracción del sándwich te comiste?",
+        "en": "A sandwich is cut into 2 equal parts and you eat 1. What fraction of the sandwich did you eat?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha42vm000sybrhmeakqy35__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Un sándwich se corta en 2 partes iguales y te comes 1. ¿Qué fracción del sándwich te comiste?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A sandwich is cut into 2 equal parts and you eat 1. What fraction of the sandwich did you eat?"
+      }
+    },
+    {
+      "exerciseId": "cmvha42ys000xybrhcvyzis0e",
+      "grade": 3,
+      "prompt": {
+        "es": "Un huerto se divide en 2 partes iguales y se plantan tomates en 1. ¿Qué fracción del huerto tiene tomates?",
+        "en": "A garden is divided into 2 equal parts and tomatoes are planted in 1 of them. What fraction of the garden has tomatoes?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha42ys000xybrhcvyzis0e__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Un huerto se divide en 2 partes iguales y se plantan tomates en 1. ¿Qué fracción del huerto tiene tomates?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A garden is divided into 2 equal parts and tomatoes are planted in 1 of them. What fraction of the garden has tomatoes?"
+      }
+    },
+    {
+      "exerciseId": "cmvha43270012ybrhj00zl82b",
+      "grade": 3,
+      "prompt": {
+        "es": "Un estacionamiento se divide en 2 partes iguales y los buses ocupan 1. ¿Qué fracción del estacionamiento ocupan los buses?",
+        "en": "A parking lot is divided into 2 equal parts and buses take up 1 of them. What fraction of the parking lot do the buses take up?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/3b__cmvha43270012ybrhj00zl82b__barras.png",
+      "width": 1000,
+      "height": 270,
+      "letters": [],
+      "alt": {
+        "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Un estacionamiento se divide en 2 partes iguales y los buses ocupan 1. ¿Qué fracción del estacionamiento ocupan los buses?",
+        "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A parking lot is divided into 2 equal parts and buses take up 1 of them. What fraction of the parking lot do the buses take up?"
+      }
     }
   ]
 }

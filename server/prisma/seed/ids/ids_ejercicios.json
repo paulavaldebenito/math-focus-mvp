@@ -15702,6 +15702,18 @@
  {
   "grade": 3,
   "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una hoja de papel se dobla en 2 partes iguales y se pinta 1. ¿Qué fracción de la hoja está pintada?",
+  "id": "cmvha42j70008ybrhsyt3evem",
+  "options": {
+   "1/2": "cmvha42ja0009ybrhcgib3g9o",
+   "2/1": "cmvha42ja000aybrhtlgc8mze",
+   "1/3": "cmvha42ja000bybrhfcah8cwu",
+   "2/2": "cmvha42ja000cybrhbxv5wtfl"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
   "prompt": "Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?",
   "id": "cmuli7is700pu6krh5z4wydmg",
   "options": {
@@ -15817,6 +15829,18 @@
    "3/4": "cmulu2wkc03vm4crhmzl54p9f",
    "4/1": "cmulu2wkc03vn4crhf7dm4tek",
    "1/2": "cmulu2wkc03vo4crhi54esqki"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una cancha se divide en 2 partes iguales y tu equipo defiende 1. ¿Qué fracción de la cancha defiende tu equipo?",
+  "id": "cmvha42mj000dybrhfdxxby0b",
+  "options": {
+   "1/2": "cmvha42mk000eybrhqjqerc3q",
+   "2/1": "cmvha42mk000fybrhxgk0vey8",
+   "1/3": "cmvha42mk000gybrhohw78bpu",
+   "2/2": "cmvha42mk000hybrhqa0pslxt"
   }
  },
  {
@@ -15978,6 +16002,18 @@
  {
   "grade": 3,
   "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un nivel del juego tiene 2 partes iguales y ya completaste 1. ¿Qué fracción del nivel completaste?",
+  "id": "cmvha42qf000iybrhjodmp9r2",
+  "options": {
+   "1/2": "cmvha42qg000jybrhwganlej6",
+   "2/1": "cmvha42qg000kybrhzwn8it5m",
+   "1/3": "cmvha42qg000lybrhx5ngv8i8",
+   "2/2": "cmvha42qg000mybrhayvees5r"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
   "prompt": "Se completan 3 de las 4 partes iguales de una barra de progreso. ¿Qué fracción de la barra está completa?",
   "id": "cmulu2wm503xi4crh92cf4ck9",
   "options": {
@@ -16009,6 +16045,18 @@
    "3/4": "cmulu2wmg03xu4crhzg93k7l3",
    "4/1": "cmulu2wmg03xv4crhjy4s577v",
    "1/2": "cmulu2wmg03xw4crhi9pmzdfb"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una bandera para la nave se divide en 2 partes iguales y se pinta 1. ¿Qué fracción de la bandera está pintada?",
+  "id": "cmvha42ry000nybrhzahswxqh",
+  "options": {
+   "1/2": "cmvha42rz000oybrhrugbmyb3",
+   "2/1": "cmvha42rz000pybrh4u780qqa",
+   "1/3": "cmvha42rz000qybrh5ua19m7f",
+   "2/2": "cmvha42rz000rybrh4d28wjxm"
   }
  },
  {
@@ -16158,6 +16206,18 @@
  {
   "grade": 3,
   "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un sándwich se corta en 2 partes iguales y te comes 1. ¿Qué fracción del sándwich te comiste?",
+  "id": "cmvha42vm000sybrhmeakqy35",
+  "options": {
+   "1/2": "cmvha42vo000tybrhpib294e1",
+   "2/1": "cmvha42vo000uybrhgu63p5lf",
+   "1/3": "cmvha42vo000vybrha744kzvh",
+   "2/2": "cmvha42vo000wybrh75queydn"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
   "prompt": "Una tarta se divide en 3 partes iguales. ¿Qué fracción de la tarta es una de esas partes?",
   "id": "cmulu2wo103zl4crhqot2gbnc",
   "options": {
@@ -16249,6 +16309,18 @@
    "3/4": "cmulu2wox040m4crhl5c9wwvl",
    "4/1": "cmulu2wox040n4crhh8x6pbps",
    "1/2": "cmulu2wox040o4crhruwpg5sj"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un huerto se divide en 2 partes iguales y se plantan tomates en 1. ¿Qué fracción del huerto tiene tomates?",
+  "id": "cmvha42ys000xybrhcvyzis0e",
+  "options": {
+   "1/2": "cmvha42yt000yybrhqttvjxjc",
+   "2/1": "cmvha42yt000zybrh5eylbgdy",
+   "1/3": "cmvha42yt0010ybrhvhi0f2oc",
+   "2/2": "cmvha42yt0011ybrh4a6dhgfc"
   }
  },
  {
@@ -16381,6 +16453,18 @@
    "3/4": "cmulu2wqa04254crhnsa7iiti",
    "4/1": "cmulu2wqa04264crhrpqwxg5e",
    "1/2": "cmulu2wqa04274crhmkgsob1n"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un estacionamiento se divide en 2 partes iguales y los buses ocupan 1. ¿Qué fracción del estacionamiento ocupan los buses?",
+  "id": "cmvha43270012ybrhj00zl82b",
+  "options": {
+   "1/2": "cmvha43280013ybrhrx5ay5sd",
+   "2/1": "cmvha43280014ybrhxnc4cil0",
+   "1/3": "cmvha43280015ybrh1h8ulojc",
+   "2/2": "cmvha43280016ybrhj72sm1co"
   }
  },
  {

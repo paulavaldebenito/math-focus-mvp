@@ -712,6 +712,13 @@ const g3: ThemedVariant[] = [
       "The bottom number says how many equal parts the whole was cut into, and the top one how many parts you took.",
     ],
     [
+      "Una hoja de papel se dobla en 2 partes iguales y se pinta 1. ¿Qué fracción de la hoja está pintada?",
+      "Una bandera para la nave se divide en 2 partes iguales y se pinta 1. ¿Qué fracción de la bandera está pintada?",
+      "A flag for the spaceship is divided into 2 equal parts and 1 part is painted. What fraction of the flag is painted?",
+      "La bandera quedó en 2 partes iguales. Arriba va la parte pintada y abajo el total de partes.",
+      "The flag is in 2 equal parts. The painted part goes on top, and the total number of parts goes on the bottom.",
+    ],
+    [
       "Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?",
       "El panel de control de una nave de cartón se divide en 3 partes iguales. ¿Qué fracción del panel es una de esas partes?",
       "The control panel of a cardboard spaceship is divided into 3 equal parts. What fraction of the panel is one of those parts?",

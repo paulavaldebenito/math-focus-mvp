@@ -4433,8 +4433,11 @@
    "grade": 3,
    "prompt": "Un cable se corta en 3 partes iguales y se usan 2 para armar un satélite de juguete. ¿Qué fracción del cable se usó?",
    "procedureNoteEn": {
-    "old": "On top goes what was used and on the bottom the total of equal parts the cable was cut into.",
-    "new": "On top goes what was used and on the bottom the total number of equal parts the cable was cut into."
+    "old": [
+     "On top goes what was used and on the bottom the total of equal parts the cable was cut into.",
+     "On top goes what was used and on the bottom the total number of equal parts the cable was cut into."
+    ],
+    "new": "The number of parts used goes on top, and the total number of equal parts the cable was cut into goes on the bottom."
    }
   },
   {
@@ -4442,8 +4445,11 @@
    "grade": 3,
    "prompt": "Una cuerda para amarrar un bote se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
    "procedureNoteEn": {
-    "old": "On top goes what was used and on the bottom the total of equal parts the rope was cut into.",
-    "new": "On top goes what was used and on the bottom the total number of equal parts the rope was cut into."
+    "old": [
+     "On top goes what was used and on the bottom the total of equal parts the rope was cut into.",
+     "On top goes what was used and on the bottom the total number of equal parts the rope was cut into."
+    ],
+    "new": "The number of parts used goes on top, and the total number of equal parts the rope was cut into goes on the bottom."
    }
   },
   {
@@ -4451,30 +4457,20 @@
    "grade": 3,
    "prompt": "Se pintan 3 de las 4 partes iguales del piso de una cancha. ¿Qué fracción de la cancha está pintada?",
    "procedureNoteEn": {
-    "old": "Ask yourself what they want: the painted part. The top is what is painted and the bottom is the total of equal parts.",
-    "new": "Ask yourself what they want: the painted part. The top is what is painted and the bottom is the total number of equal parts."
+    "old": [
+     "Ask yourself what they want: the painted part. The top is what is painted and the bottom is the total of equal parts.",
+     "Ask yourself what they want: the painted part. The top is what is painted and the bottom is the total number of equal parts."
+    ],
+    "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
    }
   },
   {
    "exerciseId": "cmulu2wpf04144crhozj6o79w",
    "grade": 3,
-   "prompt": "Dos jardines iguales se siembran: Marta siembra 2 de 3 partes iguales del suyo y Luis siembra 1 de 3 partes iguales del otro. ¿Quién sembró más?",
-   "promptEn": {
-    "old": "Two identical gardens are sown: Marta sows 2 of 3 equal parts of hers and Luis sows 1 of 3 equal parts of the other. Who sowed more?",
-    "new": "Two identical gardens are planted: Marta plants 2 of 3 equal parts of hers and Luis plants 1 of 3 equal parts of the other. Who planted more?"
-   },
+   "prompt": "Dos jardines iguales se dividen en 3 partes iguales. Marta siembra 2 partes del suyo y Luis siembra 1 parte del otro. ¿Quién sembró más?",
    "procedureNoteEn": {
     "old": "Both gardens are divided into parts of the same size. Compare how many parts each one sowed.",
     "new": "Both gardens are divided into parts of the same size. Compare how many parts each one planted."
-   }
-  },
-  {
-   "exerciseId": "cmuli7ist00qj6krhr1419an5",
-   "grade": 3,
-   "prompt": "Dos figuras iguales se colorean: Marta pinta 2 de 3 partes iguales de la suya y Luis pinta 1 de 3 partes iguales de la otra. ¿Quién coloreó más?",
-   "promptEn": {
-    "old": "Two identical shapes are coloured: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who coloured more?",
-    "new": "Two identical shapes are colored: Marta paints 2 of 3 equal parts of hers and Luis paints 1 of 3 equal parts of the other. Who colored more?"
    }
   },
   {
@@ -4482,8 +4478,11 @@
    "grade": 3,
    "prompt": "Se pintan 3 de las 4 partes iguales de un mural con instrumentos musicales. ¿Qué fracción del mural está pintada?",
    "procedureNoteEn": {
-    "old": "Ask yourself what they want: the painted part. The painted parts go on top and the total of equal parts goes below.",
-    "new": "Ask yourself what they want: the painted part. The painted parts go on top and the total number of equal parts goes below."
+    "old": [
+     "Ask yourself what they want: the painted part. The painted parts go on top and the total of equal parts goes below.",
+     "Ask yourself what they want: the painted part. The painted parts go on top and the total number of equal parts goes below."
+    ],
+    "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
    }
   },
   {
@@ -4491,8 +4490,11 @@
    "grade": 3,
    "prompt": "Una cinta del pandero se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
    "procedureNoteEn": {
-    "old": "On top goes what was used and below goes the total of equal parts the ribbon was cut into.",
-    "new": "On top goes what was used and below goes the total number of equal parts the ribbon was cut into."
+    "old": [
+     "On top goes what was used and below goes the total of equal parts the ribbon was cut into.",
+     "On top goes what was used and below goes the total number of equal parts the ribbon was cut into."
+    ],
+    "new": "The number of parts used goes on top, and the total number of equal parts the ribbon was cut into goes on the bottom."
    }
   },
   {
@@ -4500,21 +4502,30 @@
    "grade": 3,
    "prompt": "Una cinta de gimnasia se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cinta se usó?",
    "procedureNoteEn": {
-    "old": "The top is what was used and the bottom is the total of equal parts the ribbon was cut into.",
-    "new": "The top is what was used and the bottom is the total number of equal parts the ribbon was cut into."
+    "old": [
+     "The top is what was used and the bottom is the total of equal parts the ribbon was cut into.",
+     "The top is what was used and the bottom is the total number of equal parts the ribbon was cut into."
+    ],
+    "new": "The number of parts used goes on top, and the total number of equal parts the ribbon was cut into goes on the bottom."
    }
   },
   {
    "exerciseId": "cmulu2wm903xn4crhewpkqe38",
    "grade": 3,
-   "prompt": "Un mapa tiene 4 zonas iguales. Un jugador ya completó 1 zona y le regala el control de otras 2 a un amigo. ¿Qué fracción del mapa le queda a él?",
+   "prompt": "Un mapa tiene 4 zonas iguales. Tomás completa 1 zona y su amiga completa otras 2. ¿Qué fracción del mapa falta por completar?",
    "promptEn": {
-    "old": "A map has 4 equal zones. A player has already completed 1 zone and hands control of 2 more to a friend. What fraction of the map is left for him?",
-    "new": "A map has 4 equal zones. A player has already completed 1 zone and lets a friend play 2 more zones. What fraction of the map is left for him to play?"
+    "old": [
+     "A map has 4 equal zones. A player has already completed 1 zone and hands control of 2 more to a friend. What fraction of the map is left for him?",
+     "A map has 4 equal zones. A player has already completed 1 zone and lets a friend play 2 more zones. What fraction of the map is left for him to play?"
+    ],
+    "new": "A map has 4 equal zones. Tomás completes 1 zone and his friend completes 2 more. What fraction of the map is still left to complete?"
    },
    "procedureNoteEn": {
-    "old": "First find how many zones are left after completing one and handing over two. Then write that amount over the total number of zones.",
-    "new": "First find how many zones are left after completing one and letting a friend play two. Then write that amount over the total number of zones."
+    "old": [
+     "First find how many zones are left after completing one and handing over two. Then write that amount over the total number of zones.",
+     "First find how many zones are left after completing one and letting a friend play two. Then write that amount over the total number of zones."
+    ],
+    "new": "First find how many zones are left after the ones they completed. Then write that number over the total number of zones."
    }
   },
   {
@@ -4551,8 +4562,11 @@
    "grade": 3,
    "prompt": "Se pintan 3 de las 4 partes iguales del casco de una nave de cartón. ¿Qué fracción del casco está pintada?",
    "procedureNoteEn": {
-    "old": "Ask yourself what they want: the painted part. On top goes the painted part and on the bottom the total of equal parts.",
-    "new": "Ask yourself what they want: the painted part. On top goes the painted part and on the bottom the total number of equal parts."
+    "old": [
+     "Ask yourself what they want: the painted part. On top goes the painted part and on the bottom the total of equal parts.",
+     "Ask yourself what they want: the painted part. On top goes the painted part and on the bottom the total number of equal parts."
+    ],
+    "new": "What is the question asking about? The painted part. The number of painted parts goes on top, and the total number of equal parts goes on the bottom."
    }
   },
   {
@@ -4560,8 +4574,11 @@
    "grade": 3,
    "prompt": "Se plantan flores en 3 de las 4 partes iguales de un jardín. ¿Qué fracción del jardín tiene flores?",
    "procedureNoteEn": {
-    "old": "Ask yourself what they want: the part with flowers. On top goes what is planted and on the bottom the total of equal parts.",
-    "new": "Ask yourself what they want: the part with flowers. On top goes what is planted and on the bottom the total number of equal parts."
+    "old": [
+     "Ask yourself what they want: the part with flowers. On top goes what is planted and on the bottom the total of equal parts.",
+     "Ask yourself what they want: the part with flowers. On top goes what is planted and on the bottom the total number of equal parts."
+    ],
+    "new": "What is the question asking about? The part with flowers. The number of parts with flowers goes on top, and the total number of equal parts goes on the bottom."
    }
   },
   {

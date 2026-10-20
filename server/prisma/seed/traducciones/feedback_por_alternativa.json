@@ -495,5 +495,1636 @@
   "label": "Leo, 2/4",
   "feedback": "Vuelve a leer el problema: ¿quién recorrió 2 tramos y quién recorrió 1?",
   "feedbackEn": "Read the problem again: who traveled 2 sections, and who traveled 1?"
+ },
+ {
+  "exerciseId": "cmulu2wl203we4crhh3az5clo",
+  "optionId": "cmulu2wl303wf4crh322f8syg",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wl203we4crhh3az5clo",
+  "optionId": "cmulu2wl303wg4crhiz7yajfn",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wl203we4crhh3az5clo",
+  "optionId": "cmulu2wl303wh4crhljwifort",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wl203we4crhh3az5clo",
+  "optionId": "cmulu2wl303wi4crhd2l757cq",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
+  "optionId": "cmulu2wkh03vq4crhe9rtamr8",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
+  "optionId": "cmulu2wkh03vr4crh78wmm5pp",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
+  "optionId": "cmulu2wkh03vs4crhmv9v9jer",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
+  "optionId": "cmulu2wkh03vt4crh0pqbme51",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
+  "optionId": "cmulu2wp6040v4crhveirfp5i",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
+  "optionId": "cmulu2wp6040w4crhuxslqyi7",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
+  "optionId": "cmulu2wp6040x4crhusw4sgiu",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wp5040u4crhcqz9x4eo",
+  "optionId": "cmulu2wp6040y4crh6de7s7wo",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmuli7isg00q46krhb23ijzah",
+  "optionId": "cmuli7ish00q56krh9huzzfrn",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmuli7isg00q46krhb23ijzah",
+  "optionId": "cmuli7ish00q66krhqxxkve7y",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7isg00q46krhb23ijzah",
+  "optionId": "cmuli7ish00q76krhw1ty5v1s",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7isg00q46krhb23ijzah",
+  "optionId": "cmuli7ish00q86krhfafec8ap",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
+  "optionId": "cmulu2wm503xj4crhwz6fr6ly",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
+  "optionId": "cmulu2wm503xk4crhkz743goi",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
+  "optionId": "cmulu2wm503xl4crhwm6mkr3d",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wm503xi4crh92cf4ck9",
+  "optionId": "cmulu2wm503xm4crh6uwngmyz",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
+  "optionId": "cmulu2wqg04294crh8zibiruy",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
+  "optionId": "cmulu2wqg042a4crh5tlbu3am",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
+  "optionId": "cmulu2wqg042b4crht75dlkk9",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wqe04284crh5gg1e6yj",
+  "optionId": "cmulu2wqg042c4crh1olu1fyz",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wo503zq4crhx8fhese4",
+  "optionId": "cmulu2wo603zr4crhlxtplqjj",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wo503zq4crhx8fhese4",
+  "optionId": "cmulu2wo603zs4crhuu48nqid",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wo503zq4crhx8fhese4",
+  "optionId": "cmulu2wo603zt4crhctejw6og",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wo503zq4crhx8fhese4",
+  "optionId": "cmulu2wo603zu4crhc1x9g66l",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
+  "optionId": "cmulu2wlj03wu4crh0sn2nbb4",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
+  "optionId": "cmulu2wlj03wv4crh45nkbs5c",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
+  "optionId": "cmulu2wlj03ww4crh90guynrs",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wli03wt4crhaxj2y9gt",
+  "optionId": "cmulu2wlj03wx4crhmecew01r",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wmo03y24crhjsb51fve",
+  "optionId": "cmulu2wmp03y34crhkz2sum5z",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wmo03y24crhjsb51fve",
+  "optionId": "cmulu2wmp03y44crhys56pohi",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wmo03y24crhjsb51fve",
+  "optionId": "cmulu2wmp03y54crhoiezqudz",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wmo03y24crhjsb51fve",
+  "optionId": "cmulu2wmp03y64crhk8gqqidx",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wps041j4crhbt2yycs8",
+  "optionId": "cmulu2wps041k4crh8yvo2019",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wps041j4crhbt2yycs8",
+  "optionId": "cmulu2wps041l4crhnd2wifjx",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wps041j4crhbt2yycs8",
+  "optionId": "cmulu2wps041m4crh018pod9m",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wps041j4crhbt2yycs8",
+  "optionId": "cmulu2wps041n4crh9oiqf1uc",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wng03yw4crhtgj2ty2v",
+  "optionId": "cmulu2wnh03yx4crhzfgrwd8t",
+  "label": "3/4",
+  "feedback": "Correcto: son 3 de las 4 partes iguales, o sea 3/4.",
+  "feedbackEn": "That's right: it's 3 of the 4 equal parts, so 3/4."
+ },
+ {
+  "exerciseId": "cmulu2wng03yw4crhtgj2ty2v",
+  "optionId": "cmulu2wnh03yy4crhuxpi1uh8",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wng03yw4crhtgj2ty2v",
+  "optionId": "cmulu2wnh03yz4crhe5xos55c",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wng03yw4crhtgj2ty2v",
+  "optionId": "cmulu2wnh03z04crhyjornko7",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
+  "optionId": "cmulu2wmg03xt4crhvfswrkcp",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
+  "optionId": "cmulu2wmg03xu4crhzg93k7l3",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
+  "optionId": "cmulu2wmg03xv4crhjy4s577v",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wmf03xs4crhfea3e47r",
+  "optionId": "cmulu2wmg03xw4crhi9pmzdfb",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmulu2wkb03vk4crh4pgj6xpt",
+  "optionId": "cmulu2wkc03vl4crhxyi5ybr8",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wkb03vk4crh4pgj6xpt",
+  "optionId": "cmulu2wkc03vm4crhmzl54p9f",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wkb03vk4crh4pgj6xpt",
+  "optionId": "cmulu2wkc03vn4crhf7dm4tek",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wkb03vk4crh4pgj6xpt",
+  "optionId": "cmulu2wkc03vo4crhi54esqki",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmulu2wq904234crhdtvmc97s",
+  "optionId": "cmulu2wqa04244crhci4pg8vx",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wq904234crhdtvmc97s",
+  "optionId": "cmulu2wqa04254crhnsa7iiti",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wq904234crhdtvmc97s",
+  "optionId": "cmulu2wqa04264crhrpqwxg5e",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wq904234crhdtvmc97s",
+  "optionId": "cmulu2wqa04274crhmkgsob1n",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmuli7is100pp6krh8k51jbw9",
+  "optionId": "cmuli7is100pq6krh3n7p6yy5",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmuli7is100pp6krh8k51jbw9",
+  "optionId": "cmuli7is100pr6krh6pq88ybu",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7is100pp6krh8k51jbw9",
+  "optionId": "cmuli7is100ps6krheapc88tw",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7is100pp6krh8k51jbw9",
+  "optionId": "cmuli7is100pt6krhstjkkckx",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmulu2wny03zg4crhjmjd6ubp",
+  "optionId": "cmulu2wny03zh4crhswyzoclr",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wny03zg4crhjmjd6ubp",
+  "optionId": "cmulu2wny03zi4crhc114y80n",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wny03zg4crhjmjd6ubp",
+  "optionId": "cmulu2wny03zj4crh9lsv0bsw",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wny03zg4crhjmjd6ubp",
+  "optionId": "cmulu2wny03zk4crhyyqs13uu",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmulu2wm003xd4crhplnbocpo",
+  "optionId": "cmulu2wm103xe4crh2wen3q4a",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wm003xd4crhplnbocpo",
+  "optionId": "cmulu2wm103xf4crhgcz2rft8",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wm003xd4crhplnbocpo",
+  "optionId": "cmulu2wm103xg4crhbyh4esb4",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wm003xd4crhplnbocpo",
+  "optionId": "cmulu2wm103xh4crhkr38530w",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmulu2wox040k4crhhdw8hwq1",
+  "optionId": "cmulu2wox040l4crhtiq3hm07",
+  "label": "1/4",
+  "feedback": "Correcto: es 1 de las 4 partes iguales, o sea 1/4.",
+  "feedbackEn": "That's right: it's 1 of the 4 equal parts, so 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wox040k4crhhdw8hwq1",
+  "optionId": "cmulu2wox040m4crhl5c9wwvl",
+  "label": "3/4",
+  "feedback": "3/4 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "3/4 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wox040k4crhhdw8hwq1",
+  "optionId": "cmulu2wox040n4crhh8x6pbps",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wox040k4crhhdw8hwq1",
+  "optionId": "cmulu2wox040o4crhruwpg5sj",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 4 partes iguales, no en 2. Cuenta las partes otra vez.",
+  "feedbackEn": "The whole is divided into 4 equal parts, not 2. Count the parts again."
+ },
+ {
+  "exerciseId": "cmuli7isk00q96krh17rqb6ci",
+  "optionId": "cmuli7isl00qa6krh94srd6ec",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmuli7isk00q96krh17rqb6ci",
+  "optionId": "cmuli7isl00qb6krh88w4pfju",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7isk00q96krh17rqb6ci",
+  "optionId": "cmuli7isl00qc6krhs0r1kywd",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7isk00q96krh17rqb6ci",
+  "optionId": "cmuli7isl00qd6krhshts82l6",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wp9040z4crh84shmq9d",
+  "optionId": "cmulu2wp904104crhlc1dt719",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wp9040z4crh84shmq9d",
+  "optionId": "cmulu2wp904114crhdb9zrcs2",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wp9040z4crh84shmq9d",
+  "optionId": "cmulu2wp904124crhizisbmni",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wp9040z4crh84shmq9d",
+  "optionId": "cmulu2wp904134crhljpti28w",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
+  "optionId": "cmulu2wln03wz4crh3e0lttkw",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
+  "optionId": "cmulu2wln03x04crhprw91qa0",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
+  "optionId": "cmulu2wln03x14crhahbjfz27",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wlm03wy4crhb13rkpid",
+  "optionId": "cmulu2wln03x24crh9g1qkc4c",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wnk03z14crhgeh910n2",
+  "optionId": "cmulu2wnl03z24crhoigbdrlp",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wnk03z14crhgeh910n2",
+  "optionId": "cmulu2wnl03z34crhcgkljrgd",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wnk03z14crhgeh910n2",
+  "optionId": "cmulu2wnl03z44crhe84auo3e",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wnk03z14crhgeh910n2",
+  "optionId": "cmulu2wnl03z54crhhewrzyy2",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
+  "optionId": "cmulu2wpx041p4crhgaldxnkg",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
+  "optionId": "cmulu2wpx041q4crhktf73vg1",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
+  "optionId": "cmulu2wpx041r4crhwwb2oiix",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wpw041o4crhcgh2dq59",
+  "optionId": "cmulu2wpx041s4crh6u5ksxfa",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
+  "optionId": "cmulu2wl803wk4crhhxedk5rv",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
+  "optionId": "cmulu2wl803wl4crhu4j9qgo4",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
+  "optionId": "cmulu2wl803wm4crh0321d1gy",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wl703wj4crhem3sbtpt",
+  "optionId": "cmulu2wl803wn4crhd5j8kd1w",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
+  "optionId": "cmulu2wob03zw4crhzghqyev9",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
+  "optionId": "cmulu2wob03zx4crhhiofuirc",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
+  "optionId": "cmulu2wob03zy4crheiwas0pm",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
+  "optionId": "cmulu2wob03zz4crhkjmihltx",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wmt03y74crh45agw2ho",
+  "optionId": "cmulu2wmu03y84crh84w826dg",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wmt03y74crh45agw2ho",
+  "optionId": "cmulu2wmu03y94crhvl56nm3j",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wmt03y74crh45agw2ho",
+  "optionId": "cmulu2wmu03ya4crhz4yyhmv5",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wmt03y74crh45agw2ho",
+  "optionId": "cmulu2wmu03yb4crhfvupx5v4",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
+  "optionId": "cmulu2wkk03vv4crhy3pebqju",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
+  "optionId": "cmulu2wkk03vw4crhmarsfmze",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
+  "optionId": "cmulu2wkk03vx4crhviw9nq09",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wkk03vu4crhtgcgz1pz",
+  "optionId": "cmulu2wkk03vy4crh05gdjbs0",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wqk042d4crhccfb95la",
+  "optionId": "cmulu2wqk042e4crhrmgsjqr9",
+  "label": "2/3",
+  "feedback": "Correcto: son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: it's 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wqk042d4crhccfb95la",
+  "optionId": "cmulu2wqk042f4crhkxnzs2qi",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wqk042d4crhccfb95la",
+  "optionId": "cmulu2wqk042g4crh3qkilx8z",
+  "label": "1/3",
+  "feedback": "1/3 es la parte que sobra. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/3 is the part that's left over. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2wqk042d4crhccfb95la",
+  "optionId": "cmulu2wqk042h4crhsfqfti6v",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2wpi04194crhzt2qjnw8",
+  "optionId": "cmulu2wpj041a4crhs3kxbizh",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wpi04194crhzt2qjnw8",
+  "optionId": "cmulu2wpj041b4crhqjjwmgse",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmulu2wpi04194crhzt2qjnw8",
+  "optionId": "cmulu2wpj041c4crhdvt9kk2j",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmulu2wpi04194crhzt2qjnw8",
+  "optionId": "cmulu2wpj041d4crhjrj6u0mj",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmulu2wlc03wo4crhg7gwxdpj",
+  "optionId": "cmulu2wld03wp4crhqnwo7oo7",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wlc03wo4crhg7gwxdpj",
+  "optionId": "cmulu2wld03wq4crh5177drg4",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmulu2wlc03wo4crhg7gwxdpj",
+  "optionId": "cmulu2wld03wr4crhprvl1cml",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmulu2wlc03wo4crhg7gwxdpj",
+  "optionId": "cmulu2wld03ws4crhlacgg61l",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmulu2wq0041t4crhtx35usy5",
+  "optionId": "cmulu2wq1041u4crh3u96jh28",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wq0041t4crhtx35usy5",
+  "optionId": "cmulu2wq1041v4crh40osin85",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmulu2wq0041t4crhtx35usy5",
+  "optionId": "cmulu2wq1041w4crh4mtwy4cc",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmulu2wq0041t4crhtx35usy5",
+  "optionId": "cmulu2wq1041x4crhzc0g1qp9",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmuli7it100qt6krhus8cyqvy",
+  "optionId": "cmuli7it200qu6krhga3mxyau",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmuli7it100qt6krhus8cyqvy",
+  "optionId": "cmuli7it200qv6krhso8joe6q",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmuli7it100qt6krhus8cyqvy",
+  "optionId": "cmuli7it200qw6krhlkwuotgy",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmuli7it100qt6krhus8cyqvy",
+  "optionId": "cmuli7it200qx6krhqwntcpzi",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmulu2wn603ym4crhxpy7jjan",
+  "optionId": "cmulu2wn703yn4crh23i6yrub",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wn603ym4crhxpy7jjan",
+  "optionId": "cmulu2wn703yo4crhqfrhbwij",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmulu2wn603ym4crhxpy7jjan",
+  "optionId": "cmulu2wn703yp4crh55ug5t79",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmulu2wn603ym4crhxpy7jjan",
+  "optionId": "cmulu2wn703yq4crhitt2ha45",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmulu2wkt03w44crhjcisvrt7",
+  "optionId": "cmulu2wku03w54crh6uy3iobw",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2wkt03w44crhjcisvrt7",
+  "optionId": "cmulu2wku03w64crhl4f63eiz",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmulu2wkt03w44crhjcisvrt7",
+  "optionId": "cmulu2wku03w74crhdoe0i538",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmulu2wkt03w44crhjcisvrt7",
+  "optionId": "cmulu2wku03w84crh5arow2pz",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmulu2woo040a4crha5abnoe9",
+  "optionId": "cmulu2woo040b4crhdic2el4t",
+  "label": "2/3",
+  "feedback": "Correcto: 1 parte más 1 parte son 2 de las 3 partes iguales, o sea 2/3.",
+  "feedbackEn": "That's right: 1 part plus 1 part is 2 of the 3 equal parts, so 2/3."
+ },
+ {
+  "exerciseId": "cmulu2woo040a4crha5abnoe9",
+  "optionId": "cmulu2woo040c4crho77mfpvv",
+  "label": "1/3",
+  "feedback": "1/3 es la parte de uno solo. La pregunta pide la de los dos juntos.",
+  "feedbackEn": "1/3 is just one of them. The question asks about both of them together."
+ },
+ {
+  "exerciseId": "cmulu2woo040a4crha5abnoe9",
+  "optionId": "cmulu2woo040d4crhqy2upj6d",
+  "label": "2/6",
+  "feedback": "Al juntar las partes, el entero sigue dividido en 3 partes iguales: el número de abajo no cambia.",
+  "feedbackEn": "When you put the parts together, the whole is still divided into 3 equal parts: the bottom number doesn't change."
+ },
+ {
+  "exerciseId": "cmulu2woo040a4crha5abnoe9",
+  "optionId": "cmulu2woo040e4crhy2m66gce",
+  "label": "3/3",
+  "feedback": "3/3 sería el entero completo. Cuenta las partes de los dos: ¿son 3?",
+  "feedbackEn": "3/3 would be the whole thing. Count the parts for both of them: is it 3?"
+ },
+ {
+  "exerciseId": "cmulu2wnp03z64crhgw1uui5b",
+  "optionId": "cmulu2wnq03za4crhew9hfaoo",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
+  "optionId": "cmulu2wqo042j4crhmkxdy633",
+  "label": "Marta",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Marta tiene 2 partes y Luis 1.",
+  "feedbackEn": "That's right: the parts are the same size, and Marta has 2 parts while Luis has 1."
+ },
+ {
+  "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
+  "optionId": "cmulu2wqo042k4crhm9pk0swe",
+  "label": "Luis",
+  "feedback": "Mira cuántas partes tiene cada uno. ¿Quién tiene más partes?",
+  "feedbackEn": "Look at how many parts each one has. Who has more parts?"
+ },
+ {
+  "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
+  "optionId": "cmulu2wqo042m4crhqdaxg6u5",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmulu2wqn042i4crhlokjxq1s",
+  "optionId": "cmulu2wqo042l4crhy11qzy76",
+  "label": "Los dos igual",
+  "feedback": "Las partes son del mismo tamaño, pero no tienen la misma cantidad de partes. Cuenta las de cada uno.",
+  "feedbackEn": "The parts are the same size, but they don't have the same number of parts. Count each one's parts."
+ },
+ {
+  "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
+  "optionId": "cmulu2wkq03w04crhjb6icswm",
+  "label": "Marta",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Marta tiene 2 partes y Luis 1.",
+  "feedbackEn": "That's right: the parts are the same size, and Marta has 2 parts while Luis has 1."
+ },
+ {
+  "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
+  "optionId": "cmulu2wkq03w14crh43afk0yv",
+  "label": "Luis",
+  "feedback": "Mira cuántas partes tiene cada uno. ¿Quién tiene más partes?",
+  "feedbackEn": "Look at how many parts each one has. Who has more parts?"
+ },
+ {
+  "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
+  "optionId": "cmulu2wkq03w34crhr4k86as0",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmulu2wkp03vz4crh9eg2ywne",
+  "optionId": "cmulu2wkq03w24crhxps49xcw",
+  "label": "Los dos igual",
+  "feedback": "Las partes son del mismo tamaño, pero no tienen la misma cantidad de partes. Cuenta las de cada uno.",
+  "feedbackEn": "The parts are the same size, but they don't have the same number of parts. Count each one's parts."
+ },
+ {
+  "exerciseId": "cmuli7ist00qj6krhr1419an5",
+  "optionId": "cmuli7isu00qk6krhtmih27u1",
+  "label": "Marta",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Marta tiene 2 partes y Luis 1.",
+  "feedbackEn": "That's right: the parts are the same size, and Marta has 2 parts while Luis has 1."
+ },
+ {
+  "exerciseId": "cmuli7ist00qj6krhr1419an5",
+  "optionId": "cmuli7isu00ql6krh8br3tmmc",
+  "label": "Luis",
+  "feedback": "Mira cuántas partes tiene cada uno. ¿Quién tiene más partes?",
+  "feedbackEn": "Look at how many parts each one has. Who has more parts?"
+ },
+ {
+  "exerciseId": "cmuli7ist00qj6krhr1419an5",
+  "optionId": "cmuli7isu00qn6krhogt3s4n7",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmuli7ist00qj6krhr1419an5",
+  "optionId": "cmuli7isu00qm6krhqftl9buf",
+  "label": "Los dos igual",
+  "feedback": "Las partes son del mismo tamaño, pero no tienen la misma cantidad de partes. Cuenta las de cada uno.",
+  "feedbackEn": "The parts are the same size, but they don't have the same number of parts. Count each one's parts."
+ },
+ {
+  "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
+  "optionId": "cmulu2wls03x44crhspw6089x",
+  "label": "Marta",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Marta tiene 2 partes y Luis 1.",
+  "feedbackEn": "That's right: the parts are the same size, and Marta has 2 parts while Luis has 1."
+ },
+ {
+  "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
+  "optionId": "cmulu2wls03x54crh4iop1si8",
+  "label": "Luis",
+  "feedback": "Mira cuántas partes tiene cada uno. ¿Quién tiene más partes?",
+  "feedbackEn": "Look at how many parts each one has. Who has more parts?"
+ },
+ {
+  "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
+  "optionId": "cmulu2wls03x74crhyunuwnc5",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmulu2wlr03x34crhhivpvzpt",
+  "optionId": "cmulu2wls03x64crhdsaqfec7",
+  "label": "Los dos igual",
+  "feedback": "Las partes son del mismo tamaño, pero no tienen la misma cantidad de partes. Cuenta las de cada uno.",
+  "feedbackEn": "The parts are the same size, but they don't have the same number of parts. Count each one's parts."
+ },
+ {
+  "exerciseId": "cmulu2wpf04144crhozj6o79w",
+  "optionId": "cmulu2wpg04154crhs0s42jwe",
+  "label": "Marta",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Marta tiene 2 partes y Luis 1.",
+  "feedbackEn": "That's right: the parts are the same size, and Marta has 2 parts while Luis has 1."
+ },
+ {
+  "exerciseId": "cmulu2wpf04144crhozj6o79w",
+  "optionId": "cmulu2wpg04164crhqlnockpp",
+  "label": "Luis",
+  "feedback": "Mira cuántas partes tiene cada uno. ¿Quién tiene más partes?",
+  "feedbackEn": "Look at how many parts each one has. Who has more parts?"
+ },
+ {
+  "exerciseId": "cmulu2wpf04144crhozj6o79w",
+  "optionId": "cmulu2wpg04184crh39wqau9g",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmulu2wpf04144crhozj6o79w",
+  "optionId": "cmulu2wpg04174crh3pxdyrhp",
+  "label": "Los dos igual",
+  "feedback": "Las partes son del mismo tamaño, pero no tienen la misma cantidad de partes. Cuenta las de cada uno.",
+  "feedbackEn": "The parts are the same size, but they don't have the same number of parts. Count each one's parts."
+ },
+ {
+  "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
+  "optionId": "cmulu2wmy03yd4crhhtfhqa6f",
+  "label": "Marta",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Marta tiene 2 partes y Luis 1.",
+  "feedbackEn": "That's right: the parts are the same size, and Marta has 2 parts while Luis has 1."
+ },
+ {
+  "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
+  "optionId": "cmulu2wmy03ye4crhbrfw8xv5",
+  "label": "Luis",
+  "feedback": "Mira cuántas partes tiene cada uno. ¿Quién tiene más partes?",
+  "feedbackEn": "Look at how many parts each one has. Who has more parts?"
+ },
+ {
+  "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
+  "optionId": "cmulu2wmy03yg4crhsrkisfwo",
+  "label": "2/3",
+  "feedback": "Vuelve a leer la pregunta: pide un nombre, no una fracción.",
+  "feedbackEn": "Read the question again: it asks for a name, not a fraction."
+ },
+ {
+  "exerciseId": "cmulu2wmx03yc4crhaz9nut0m",
+  "optionId": "cmulu2wmy03yf4crh0w2eurfd",
+  "label": "Los dos igual",
+  "feedback": "Las partes son del mismo tamaño, pero no tienen la misma cantidad de partes. Cuenta las de cada uno.",
+  "feedbackEn": "The parts are the same size, but they don't have the same number of parts. Count each one's parts."
+ },
+ {
+  "exerciseId": "cmulu2wok04054crhobn34ss1",
+  "optionId": "cmulu2wol04064crh3le0w88n",
+  "label": "1/4",
+  "feedback": "Correcto: de 4 partes se van 1 y 2, así que queda 1 de las 4, o sea 1/4.",
+  "feedbackEn": "That's right: out of 4 parts, 1 and then 2 are gone, so 1 of the 4 is left: 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wok04054crhobn34ss1",
+  "optionId": "cmulu2wol04074crh3xk0k04s",
+  "label": "3/4",
+  "feedback": "3/4 es lo que ya no está. La pregunta pide lo que queda.",
+  "feedbackEn": "3/4 is what's gone. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmulu2wok04054crhobn34ss1",
+  "optionId": "cmulu2wol04084crh5mxx2jsj",
+  "label": "2/4",
+  "feedback": "2/4 es solo una de las cantidades del problema. Quita las dos cantidades del total y mira cuántas partes quedan.",
+  "feedbackEn": "2/4 is just one of the amounts in the problem. Take both amounts away from the total and see how many parts are left."
+ },
+ {
+  "exerciseId": "cmulu2wok04054crhobn34ss1",
+  "optionId": "cmulu2wol04094crhnu8xu3x0",
+  "label": "1/3",
+  "feedback": "El número de abajo sigue siendo el total de partes iguales del entero, aunque algunas ya no estén.",
+  "feedbackEn": "The bottom number is still the total number of equal parts in the whole, even if some are gone."
+ },
+ {
+  "exerciseId": "cmulu2wm903xn4crhewpkqe38",
+  "optionId": "cmulu2wma03xo4crha3rh8kbq",
+  "label": "1/4",
+  "feedback": "Correcto: de 4 partes se van 1 y 2, así que queda 1 de las 4, o sea 1/4.",
+  "feedbackEn": "That's right: out of 4 parts, 1 and then 2 are gone, so 1 of the 4 is left: 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wm903xn4crhewpkqe38",
+  "optionId": "cmulu2wma03xp4crhgxa0f5q0",
+  "label": "3/4",
+  "feedback": "3/4 es lo que ya no está. La pregunta pide lo que queda.",
+  "feedbackEn": "3/4 is what's gone. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmulu2wm903xn4crhewpkqe38",
+  "optionId": "cmulu2wma03xq4crhehbfalhv",
+  "label": "2/4",
+  "feedback": "2/4 es solo una de las cantidades del problema. Quita las dos cantidades del total y mira cuántas partes quedan.",
+  "feedbackEn": "2/4 is just one of the amounts in the problem. Take both amounts away from the total and see how many parts are left."
+ },
+ {
+  "exerciseId": "cmulu2wm903xn4crhewpkqe38",
+  "optionId": "cmulu2wma03xr4crhjc2debg6",
+  "label": "1/3",
+  "feedback": "El número de abajo sigue siendo el total de partes iguales del entero, aunque algunas ya no estén.",
+  "feedbackEn": "The bottom number is still the total number of equal parts in the whole, even if some are gone."
+ },
+ {
+  "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
+  "optionId": "cmulu2wn103yi4crhe5bky8gp",
+  "label": "1/4",
+  "feedback": "Correcto: de 4 partes se van 1 y 2, así que queda 1 de las 4, o sea 1/4.",
+  "feedbackEn": "That's right: out of 4 parts, 1 and then 2 are gone, so 1 of the 4 is left: 1/4."
+ },
+ {
+  "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
+  "optionId": "cmulu2wn103yj4crhii20ljn5",
+  "label": "3/4",
+  "feedback": "3/4 es lo que ya no está. La pregunta pide lo que queda.",
+  "feedbackEn": "3/4 is what's gone. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
+  "optionId": "cmulu2wn103yk4crhvcb01ic5",
+  "label": "2/4",
+  "feedback": "2/4 es solo una de las cantidades del problema. Quita las dos cantidades del total y mira cuántas partes quedan.",
+  "feedbackEn": "2/4 is just one of the amounts in the problem. Take both amounts away from the total and see how many parts are left."
+ },
+ {
+  "exerciseId": "cmulu2wn103yh4crh5x5eog9y",
+  "optionId": "cmulu2wn103yl4crhwwzl1a1c",
+  "label": "1/3",
+  "feedback": "El número de abajo sigue siendo el total de partes iguales del entero, aunque algunas ya no estén.",
+  "feedbackEn": "The bottom number is still the total number of equal parts in the whole, even if some are gone."
+ },
+ {
+  "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
+  "optionId": "cmuli7isx00qp6krhf823ql5p",
+  "label": "1/4",
+  "feedback": "Correcto: de 4 partes se van 1 y 2, así que queda 1 de las 4, o sea 1/4.",
+  "feedbackEn": "That's right: out of 4 parts, 1 and then 2 are gone, so 1 of the 4 is left: 1/4."
+ },
+ {
+  "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
+  "optionId": "cmuli7isx00qq6krh3qmbxri9",
+  "label": "3/4",
+  "feedback": "3/4 es lo que ya no está. La pregunta pide lo que queda.",
+  "feedbackEn": "3/4 is what's gone. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
+  "optionId": "cmuli7isx00qr6krhdnjhqfam",
+  "label": "2/4",
+  "feedback": "2/4 es solo una de las cantidades del problema. Quita las dos cantidades del total y mira cuántas partes quedan.",
+  "feedbackEn": "2/4 is just one of the amounts in the problem. Take both amounts away from the total and see how many parts are left."
+ },
+ {
+  "exerciseId": "cmuli7isw00qo6krhqyr0uja2",
+  "optionId": "cmuli7isx00qs6krhopq3vxlg",
+  "label": "1/3",
+  "feedback": "El número de abajo sigue siendo el total de partes iguales del entero, aunque algunas ya no estén.",
+  "feedbackEn": "The bottom number is still the total number of equal parts in the whole, even if some are gone."
+ },
+ {
+  "exerciseId": "cmulu2wo103zl4crhqot2gbnc",
+  "optionId": "cmulu2wo203zm4crh5typtntm",
+  "label": "1/3",
+  "feedback": "Correcto: una de las 3 partes iguales es 1/3.",
+  "feedbackEn": "That's right: one of the 3 equal parts is 1/3."
+ },
+ {
+  "exerciseId": "cmulu2wo103zl4crhqot2gbnc",
+  "optionId": "cmulu2wo203zn4crhizi791j3",
+  "label": "3/1",
+  "feedback": "Revisa el orden: arriba va la parte que tomas y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part you take goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wo103zl4crhqot2gbnc",
+  "optionId": "cmulu2wo203zo4crhqtknbagp",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 3 partes iguales, no en 2. ¿Qué número va abajo?",
+  "feedbackEn": "The whole is divided into 3 equal parts, not 2. Which number goes on the bottom?"
+ },
+ {
+  "exerciseId": "cmulu2wo103zl4crhqot2gbnc",
+  "optionId": "cmulu2wo203zp4crh8rhz5d3r",
+  "label": "2/3",
+  "feedback": "La pregunta es por una sola de las partes. ¿Cuántas partes tomas?",
+  "feedbackEn": "The question is about just one of the parts. How many parts do you take?"
+ },
+ {
+  "exerciseId": "cmuli7is700pu6krh5z4wydmg",
+  "optionId": "cmuli7is800pv6krhg02z2jr4",
+  "label": "1/3",
+  "feedback": "Correcto: una de las 3 partes iguales es 1/3.",
+  "feedbackEn": "That's right: one of the 3 equal parts is 1/3."
+ },
+ {
+  "exerciseId": "cmuli7is700pu6krh5z4wydmg",
+  "optionId": "cmuli7is800pw6krh4kr8559i",
+  "label": "3/1",
+  "feedback": "Revisa el orden: arriba va la parte que tomas y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part you take goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7is700pu6krh5z4wydmg",
+  "optionId": "cmuli7is800px6krhzpexv3zm",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 3 partes iguales, no en 2. ¿Qué número va abajo?",
+  "feedbackEn": "The whole is divided into 3 equal parts, not 2. Which number goes on the bottom?"
+ },
+ {
+  "exerciseId": "cmuli7is700pu6krh5z4wydmg",
+  "optionId": "cmuli7is800py6krhdrwtt6b7",
+  "label": "2/3",
+  "feedback": "La pregunta es por una sola de las partes. ¿Cuántas partes tomas?",
+  "feedbackEn": "The question is about just one of the parts. How many parts do you take?"
+ },
+ {
+  "exerciseId": "cmulu2wmk03xx4crh9sugrj3m",
+  "optionId": "cmulu2wml03xy4crhqxnnwdni",
+  "label": "1/3",
+  "feedback": "Correcto: una de las 3 partes iguales es 1/3.",
+  "feedbackEn": "That's right: one of the 3 equal parts is 1/3."
+ },
+ {
+  "exerciseId": "cmulu2wmk03xx4crh9sugrj3m",
+  "optionId": "cmulu2wml03xz4crhqpmseiub",
+  "label": "3/1",
+  "feedback": "Revisa el orden: arriba va la parte que tomas y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part you take goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wmk03xx4crh9sugrj3m",
+  "optionId": "cmulu2wml03y04crh7usvg08e",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 3 partes iguales, no en 2. ¿Qué número va abajo?",
+  "feedbackEn": "The whole is divided into 3 equal parts, not 2. Which number goes on the bottom?"
+ },
+ {
+  "exerciseId": "cmulu2wmk03xx4crh9sugrj3m",
+  "optionId": "cmulu2wml03y14crh9ulln11c",
+  "label": "2/3",
+  "feedback": "La pregunta es por una sola de las partes. ¿Cuántas partes tomas?",
+  "feedbackEn": "The question is about just one of the parts. How many parts do you take?"
+ },
+ {
+  "exerciseId": "cmulu2wp1040p4crhnjg3l0iw",
+  "optionId": "cmulu2wp2040q4crhs483tph2",
+  "label": "1/3",
+  "feedback": "Correcto: una de las 3 partes iguales es 1/3.",
+  "feedbackEn": "That's right: one of the 3 equal parts is 1/3."
+ },
+ {
+  "exerciseId": "cmulu2wp1040p4crhnjg3l0iw",
+  "optionId": "cmulu2wp2040r4crhllmkqa9p",
+  "label": "3/1",
+  "feedback": "Revisa el orden: arriba va la parte que tomas y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part you take goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2wp1040p4crhnjg3l0iw",
+  "optionId": "cmulu2wp2040s4crhfnbhnpxl",
+  "label": "1/2",
+  "feedback": "El entero se dividió en 3 partes iguales, no en 2. ¿Qué número va abajo?",
+  "feedbackEn": "The whole is divided into 3 equal parts, not 2. Which number goes on the bottom?"
+ },
+ {
+  "exerciseId": "cmulu2wp1040p4crhnjg3l0iw",
+  "optionId": "cmulu2wp2040t4crhdq58nv25",
+  "label": "2/3",
+  "feedback": "La pregunta es por una sola de las partes. ¿Cuántas partes tomas?",
+  "feedbackEn": "The question is about just one of the parts. How many parts do you take?"
+ },
+ {
+  "exerciseId": "cmuli7iso00qe6krhc6rks550",
+  "optionId": "cmuli7iso00qf6krh2yaxmoke",
+  "label": "4/4",
+  "feedback": "Correcto: 4/4 son las 4 partes, la barra completa. Con el mismo denominador, es mayor la que tiene más partes.",
+  "feedbackEn": "That's right: 4/4 is all 4 parts, the whole bar. When the denominators are the same, the one with more parts is greater."
+ },
+ {
+  "exerciseId": "cmuli7iso00qe6krhc6rks550",
+  "optionId": "cmuli7iso00qg6krhjs5nu8df",
+  "label": "1/4",
+  "feedback": "1/4 es la que tiene menos partes pintadas. La pregunta pide la mayor.",
+  "feedbackEn": "1/4 has the fewest parts shaded. The question asks for the greatest."
+ },
+ {
+  "exerciseId": "cmuli7iso00qe6krhc6rks550",
+  "optionId": "cmuli7iso00qh6krhyb6lmehp",
+  "label": "2/4",
+  "feedback": "Todas tienen 4 partes iguales, así que compara los numeradores: ¿cuál tiene más partes pintadas?",
+  "feedbackEn": "They all have 4 equal parts, so compare the numerators: which one has the most parts shaded?"
+ },
+ {
+  "exerciseId": "cmuli7iso00qe6krhc6rks550",
+  "optionId": "cmuli7iso00qi6krhecblk7jj",
+  "label": "3/4",
+  "feedback": "3/4 es casi toda la barra, pero falta una parte. ¿Hay una barra con más partes pintadas?",
+  "feedbackEn": "3/4 is almost the whole bar, but one part is missing. Is there a bar with more parts shaded?"
+ },
+ {
+  "exerciseId": "cmuli7isb00pz6krh3wvwmc2h",
+  "optionId": "cmuli7isc00q06krhwl4ilcol",
+  "label": "En cuántas partes iguales se dividió el entero",
+  "feedback": "Correcto: el 4 es el denominador y dice en cuántas partes iguales se dividió el entero.",
+  "feedbackEn": "That's right: 4 is the denominator, and it tells you how many equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmuli7isb00pz6krh3wvwmc2h",
+  "optionId": "cmuli7isc00q16krh7wulre6z",
+  "label": "Cuántas partes se toman",
+  "feedback": "Eso lo dice el número de arriba, el numerador. Piensa qué dice el número de abajo.",
+  "feedbackEn": "That's what the top number, the numerator, tells you. Think about what the bottom number tells you."
+ },
+ {
+  "exerciseId": "cmuli7isb00pz6krh3wvwmc2h",
+  "optionId": "cmuli7isc00q36krhv96lexrq",
+  "label": "Cuántos enteros hay",
+  "feedback": "Aquí hay un solo entero. Piensa en qué se hizo con ese entero.",
+  "feedbackEn": "There's only one whole here. Think about what was done to that whole."
+ },
+ {
+  "exerciseId": "cmuli7isb00pz6krh3wvwmc2h",
+  "optionId": "cmuli7isc00q26krhcllmyph0",
+  "label": "Cuántas partes sobran",
+  "feedback": "El 4 no cuenta las partes que sobran. Piensa en cómo se dividió el entero.",
+  "feedbackEn": "The 4 doesn't count the parts that are left over. Think about how the whole was divided."
+ },
+ {
+  "exerciseId": "cmvha42j70008ybrhsyt3evem",
+  "optionId": "cmvha42ja0009ybrhcgib3g9o",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha42j70008ybrhsyt3evem",
+  "optionId": "cmvha42ja000aybrhtlgc8mze",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha42j70008ybrhsyt3evem",
+  "optionId": "cmvha42ja000bybrhfcah8cwu",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha42j70008ybrhsyt3evem",
+  "optionId": "cmvha42ja000cybrhbxv5wtfl",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmvha42mj000dybrhfdxxby0b",
+  "optionId": "cmvha42mk000eybrhqjqerc3q",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha42mj000dybrhfdxxby0b",
+  "optionId": "cmvha42mk000fybrhxgk0vey8",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha42mj000dybrhfdxxby0b",
+  "optionId": "cmvha42mk000gybrhohw78bpu",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha42mj000dybrhfdxxby0b",
+  "optionId": "cmvha42mk000hybrhqa0pslxt",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmvha42qf000iybrhjodmp9r2",
+  "optionId": "cmvha42qg000jybrhwganlej6",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha42qf000iybrhjodmp9r2",
+  "optionId": "cmvha42qg000kybrhzwn8it5m",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha42qf000iybrhjodmp9r2",
+  "optionId": "cmvha42qg000lybrhx5ngv8i8",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha42qf000iybrhjodmp9r2",
+  "optionId": "cmvha42qg000mybrhayvees5r",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmvha42ry000nybrhzahswxqh",
+  "optionId": "cmvha42rz000oybrhrugbmyb3",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha42ry000nybrhzahswxqh",
+  "optionId": "cmvha42rz000pybrh4u780qqa",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha42ry000nybrhzahswxqh",
+  "optionId": "cmvha42rz000qybrh5ua19m7f",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha42ry000nybrhzahswxqh",
+  "optionId": "cmvha42rz000rybrh4d28wjxm",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmvha42vm000sybrhmeakqy35",
+  "optionId": "cmvha42vo000tybrhpib294e1",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha42vm000sybrhmeakqy35",
+  "optionId": "cmvha42vo000uybrhgu63p5lf",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha42vm000sybrhmeakqy35",
+  "optionId": "cmvha42vo000vybrha744kzvh",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha42vm000sybrhmeakqy35",
+  "optionId": "cmvha42vo000wybrh75queydn",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmvha42ys000xybrhcvyzis0e",
+  "optionId": "cmvha42yt000yybrhqttvjxjc",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha42ys000xybrhcvyzis0e",
+  "optionId": "cmvha42yt000zybrh5eylbgdy",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha42ys000xybrhcvyzis0e",
+  "optionId": "cmvha42yt0010ybrhvhi0f2oc",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha42ys000xybrhcvyzis0e",
+  "optionId": "cmvha42yt0011ybrh4a6dhgfc",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmvha43270012ybrhj00zl82b",
+  "optionId": "cmvha43280013ybrhrx5ay5sd",
+  "label": "1/2",
+  "feedback": "Correcto: es 1 de las 2 partes iguales, o sea 1/2, la mitad.",
+  "feedbackEn": "That's right: it's 1 of the 2 equal parts, so 1/2, or half."
+ },
+ {
+  "exerciseId": "cmvha43270012ybrhj00zl82b",
+  "optionId": "cmvha43280014ybrhxnc4cil0",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte por la que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the part the question asks about goes on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvha43270012ybrhj00zl82b",
+  "optionId": "cmvha43280015ybrh1h8ulojc",
+  "label": "1/3",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales. Cuéntalas en el dibujo.",
+  "feedbackEn": "You don't add to get the bottom number: it's the total number of equal parts. Count them in the picture."
+ },
+ {
+  "exerciseId": "cmvha43270012ybrhj00zl82b",
+  "optionId": "cmvha43280016ybrhj72sm1co",
+  "label": "2/2",
+  "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
+  "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
  }
 ]

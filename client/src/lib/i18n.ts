@@ -320,15 +320,15 @@ export const FEEDBACK_RETRY_VARIANTS: Record<Lang, string[]> = {
 export const ERROR_FEEDBACK: Record<Lang, Record<string, string>> = {
   es: {
     E1_OP: "Antes de calcular, piensa bien qué necesitas hacer con estos números para responder la pregunta.",
-    E2_RES: "Revisa tu procedimiento paso a paso: la idea va bien encaminada, pero algo se saltó o se hizo en el orden equivocado.",
-    E2_CAL: "Ibas por buen camino — hubo un error de cálculo. Vuelve a sumar con calma.",
+    E2_RES: "Revisa tu procedimiento paso a paso: puede que se haya saltado un paso o que el orden no sea el correcto.",
+    E2_CAL: "Parece que hubo un error de cálculo. Revisa la cuenta paso a paso, con calma.",
     E3_PREG: "Vuelve a leer la pregunta: ¿qué es exactamente lo que te están preguntando?",
     E3_DATO: "Revisa los números del enunciado: puede que hayas usado uno equivocado.",
   },
   en: {
     E1_OP: "Before calculating, think carefully about what you need to do with these numbers to answer the question.",
-    E2_RES: "Check your steps one by one: your idea is on the right track, but something got skipped or done out of order.",
-    E2_CAL: "You were on the right track — there was a small calculation mistake. Work it out again, slowly.",
+    E2_RES: "Check your steps one by one: a step may have been skipped or done in the wrong order.",
+    E2_CAL: "It looks like there was a calculation mistake. Check your work step by step.",
     E3_PREG: "Reread the question: what exactly is it asking for?",
     E3_DATO: "Check the numbers in the problem — you may have used the wrong one.",
   },

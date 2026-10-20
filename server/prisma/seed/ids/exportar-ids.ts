@@ -1,8 +1,10 @@
 /**
- * Genera ids_ejercicios.json desde una BD ya sembrada e integrada: para
- * cada ejercicio de las fuentes, su id y el de cada alternativa en esa BD.
- * Ver ids.ts. Sale con código 1 si un ejercicio de las fuentes no se
- * encuentra o se encuentra más de una vez.
+ * Actualiza ids_ejercicios.json desde una BD ya sembrada e integrada. Los
+ * ejercicios que YA están en el archivo conservan sus ids (nunca se
+ * reasignan: todo el banco apunta a ellos); solo se agregan los ejercicios
+ * nuevos de las fuentes, con el id que recibieron en esa BD. Ver ids.ts.
+ * Sale con código 1 si un ejercicio nuevo no se encuentra o se encuentra
+ * más de una vez.
  *
  *   npm run bank:ids          (desde server/)
  */
@@ -11,8 +13,9 @@ import { writeFileSync } from "node:fs";
 import { prisma } from "../../../src/db/prisma.js";
 import { buildBlocks } from "../blocks.js";
 import { loadPromptEdits } from "../traducciones/applyPromptEdits.js";
-import { type FixedIds } from "./ids.js";
+import { type FixedIds, idKey, loadFixedIds } from "./ids.js";
 
+const existing = loadFixedIds();
 const errorTypeByCode = Object.fromEntries((await prisma.errorType.findMany()).map((e) => [e.code, e.id]));
 const { blocks } = buildBlocks(errorTypeByCode);
 // Texto anterior → nuevo de los enunciados editados (en la BD está el nuevo).
@@ -27,7 +30,13 @@ for (const b of blocks) {
     continue;
   }
   for (const ex of b.exercises) {
-    const edit = edited.get(ex.prompt);
+    const known = existing.get(idKey(b.skill.grade, b.skill.name, ex.prompt));
+    if (known) {
+      out.push(known);
+      continue;
+    }
+    const e = edited.get(ex.prompt);
+    const edit = e && e.grade === b.skill.grade ? e : undefined;
     const found = await prisma.exercise.findMany({
       where: edit ? { id: edit.exerciseId, mathSkillId: skill.id } : { mathSkillId: skill.id, prompt: ex.prompt },
       include: { options: true },
@@ -53,5 +62,5 @@ if (problems.length > 0) {
   process.exitCode = 1;
 } else {
   writeFileSync(new URL("./ids_ejercicios.json", import.meta.url), JSON.stringify(out, null, 1) + "\n");
-  console.log(`OK: ${out.length} ejercicios con id fijo.`);
+  console.log(`OK: ${out.length} ejercicios con id fijo (${out.length - existing.size} nuevos).`);
 }
