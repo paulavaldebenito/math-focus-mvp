@@ -22561,26 +22561,14 @@
         "en": "After the match, a pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wkb03vk4crh4pgj6xpt__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wkb03vk4crh4pgj6xpt__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2wkb03vk4crh4pgj6xpt__comida.png",
+      "width": 608,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Después del partido, una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. After the match, a pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
+        "es": "Una pizza dividida en 4 partes iguales; 1 parte está marcada con línea punteada porque ya no está. Después del partido, una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
+        "en": "A pizza divided into 4 equal parts; 1 part has a dashed outline because it is gone. After the match, a pizza is cut into 4 equal parts and you eat 1. What fraction of the pizza did you eat?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wkg03vp4crhd0958o3d",
@@ -23081,26 +23069,14 @@
         "en": "A round cookie decorated like a planet is cut into 4 equal parts and you eat 1. What fraction of the cookie did you eat?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wmf03xs4crhfea3e47r__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wmf03xs4crhfea3e47r__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2wmf03xs4crhfea3e47r__comida.png",
+      "width": 610,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una galleta redonda decorada como un planeta se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la galleta te comiste?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A round cookie decorated like a planet is cut into 4 equal parts and you eat 1. What fraction of the cookie did you eat?"
+        "es": "Una galleta redonda decorada como un planeta, dividida en 4 partes iguales; 1 parte está marcada con línea punteada porque ya no está. Una galleta redonda decorada como un planeta se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la galleta te comiste?",
+        "en": "A round cookie decorated like a planet, divided into 4 equal parts; 1 part has a dashed outline because it is gone. A round cookie decorated like a planet is cut into 4 equal parts and you eat 1. What fraction of the cookie did you eat?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wmk03xx4crh9sugrj3m",
@@ -23457,26 +23433,14 @@
         "en": "A homemade pizza is shared into 4 equal slices and you eat 1. What fraction of the pizza did you eat?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wny03zg4crhjmjd6ubp__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wny03zg4crhjmjd6ubp__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2wny03zg4crhjmjd6ubp__comida.png",
+      "width": 608,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una pizza casera se reparte en 4 porciones iguales y tú comes 1. ¿Qué fracción de la pizza comiste?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A homemade pizza is shared into 4 equal slices and you eat 1. What fraction of the pizza did you eat?"
+        "es": "Una pizza dividida en 4 partes iguales; 1 parte está marcada con línea punteada porque ya no está. Una pizza casera se reparte en 4 porciones iguales y tú comes 1. ¿Qué fracción de la pizza comiste?",
+        "en": "A pizza divided into 4 equal parts; 1 part has a dashed outline because it is gone. A homemade pizza is shared into 4 equal slices and you eat 1. What fraction of the pizza did you eat?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wo103zl4crhqot2gbnc",
@@ -23486,26 +23450,14 @@
         "en": "A pie is divided into 3 equal parts. What fraction of the pie is one of those parts?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wo103zl4crhqot2gbnc__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wo103zl4crhqot2gbnc__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2wo103zl4crhqot2gbnc__comida.png",
+      "width": 589,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una tarta se divide en 3 partes iguales. ¿Qué fracción de la tarta es una de esas partes?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A pie is divided into 3 equal parts. What fraction of the pie is one of those parts?"
+        "es": "Una tarta dividida en 3 partes iguales; 1 parte tiene relleno morado. Una tarta se divide en 3 partes iguales. ¿Qué fracción de la tarta es una de esas partes?",
+        "en": "A pie divided into 3 equal parts; 1 part has purple filling. A pie is divided into 3 equal parts. What fraction of the pie is one of those parts?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wo503zq4crhx8fhese4",
@@ -23515,26 +23467,14 @@
         "en": "3 of the 4 equal parts of a cake are covered with cream. What fraction of the cake is covered with cream?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wo503zq4crhx8fhese4__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wo503zq4crhx8fhese4__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2wo503zq4crhx8fhese4__comida.png",
+      "width": 589,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se cubren con crema 3 de las 4 partes iguales de una torta. ¿Qué fracción de la torta está cubierta con crema?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3 of the 4 equal parts of a cake are covered with cream. What fraction of the cake is covered with cream?"
+        "es": "Una torta dividida en 4 partes iguales; 3 partes tienen crema y 1 no. Se cubren con crema 3 de las 4 partes iguales de una torta. ¿Qué fracción de la torta está cubierta con crema?",
+        "en": "A cake divided into 4 equal parts; 3 parts have cream and 1 does not. 3 of the 4 equal parts of a cake are covered with cream. What fraction of the cake is covered with cream?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/4",
-            "en": "3/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2woa03zv4crh5alzzhnj",
@@ -23610,34 +23550,14 @@
         "en": "A pie is divided into 4 equal slices. Ema eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2wok04054crhobn34ss1__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2wok04054crhobn34ss1__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2wok04054crhobn34ss1__comida.png",
+      "width": 598,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una tarta se divide en 4 porciones iguales. Ema come 1 porción y regala 2 porciones. ¿Qué fracción de la tarta le queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A pie is divided into 4 equal slices. Ema eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?"
+        "es": "Una tarta dividida en 4 partes iguales: 1 parte con línea punteada, 2 partes azules y 1 parte sin relleno. Una tarta se divide en 4 porciones iguales. Ema come 1 porción y regala 2 porciones. ¿Qué fracción de la tarta le queda?",
+        "en": "A pie divided into 4 equal parts: 1 part with a dashed outline, 2 blue parts and 1 plain part. A pie is divided into 4 equal slices. Ema eats 1 slice and gives away 2 slices. What fraction of the pie does she have left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2woo040a4crha5abnoe9",
@@ -23647,34 +23567,14 @@
         "en": "A cake is divided into 3 equal parts. Vicente eats 1 part and Ana eats 1 part. What fraction of the cake did they eat between the two?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/3b__cmulu2woo040a4crha5abnoe9__fractions.png",
-      "svgSrc": "/exercise-images/3b__cmulu2woo040a4crha5abnoe9__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/3b__cmulu2woo040a4crha5abnoe9__comida.png",
+      "width": 556,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una torta se divide en 3 partes iguales. Vicente come 1 parte y Ana come 1 parte. ¿Qué fracción de la torta comieron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cake is divided into 3 equal parts. Vicente eats 1 part and Ana eats 1 part. What fraction of the cake did they eat between the two?"
+        "es": "Una torta dividida en 3 partes iguales: una con el nombre de Vicente, otra con el nombre de Ana y una sin nombre. Una torta se divide en 3 partes iguales. Vicente come 1 parte y Ana come 1 parte. ¿Qué fracción de la torta comieron entre los dos?",
+        "en": "A cake divided into 3 equal parts: one labeled Vicente, one labeled Ana and one with no name. A cake is divided into 3 equal parts. Vicente eats 1 part and Ana eats 1 part. What fraction of the cake did they eat between the two?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2wot040f4crh34hf04h3",
@@ -30279,26 +30179,14 @@
         "en": "After the match, a pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmulu2xsp053g4crh1giclebz__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xsp053g4crh1giclebz__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xsp053g4crh1giclebz__comida.png",
+      "width": 595,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Después del partido, una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. After the match, a pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
+        "es": "Una pizza dividida en 8 partes iguales; 3 partes están marcadas con línea punteada porque ya no están. Después del partido, una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
+        "en": "A pizza divided into 8 equal parts; 3 parts have a dashed outline because they are gone. After the match, a pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xst053l4crhep34h5f2",
@@ -35769,26 +35657,14 @@
         "en": "After the match, a pizza is divided into 8 equal parts and 3 are eaten. What fraction of the pizza was eaten?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/5b__cmulu2yr6060x4crhjgamlb9e__fractions.png",
-      "svgSrc": "/exercise-images/5b__cmulu2yr6060x4crhjgamlb9e__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/5b__cmulu2yr6060x4crhjgamlb9e__comida.png",
+      "width": 597,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Después del partido, una pizza se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la pizza se comió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. After the match, a pizza is divided into 8 equal parts and 3 are eaten. What fraction of the pizza was eaten?"
+        "es": "Una pizza dividida en 8 partes iguales; 3 partes están marcadas con línea punteada porque ya no están. Después del partido, una pizza se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la pizza se comió?",
+        "en": "A pizza divided into 8 equal parts; 3 parts have a dashed outline because they are gone. After the match, a pizza is divided into 8 equal parts and 3 are eaten. What fraction of the pizza was eaten?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2yra06124crhf6hr9tyz",
@@ -36223,26 +36099,14 @@
         "en": "A pie is divided into 8 equal parts and 3 are eaten. What fraction of the pie was eaten?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/5b__cmulu2ysv062v4crh5p5whalg__fractions.png",
-      "svgSrc": "/exercise-images/5b__cmulu2ysv062v4crh5p5whalg__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/5b__cmulu2ysv062v4crh5p5whalg__comida.png",
+      "width": 606,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una tarta se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la tarta se comió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A pie is divided into 8 equal parts and 3 are eaten. What fraction of the pie was eaten?"
+        "es": "Una tarta dividida en 8 partes iguales; 3 partes están vacías. Una tarta se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la tarta se comió?",
+        "en": "A pie divided into 8 equal parts; 3 parts are empty. A pie is divided into 8 equal parts and 3 are eaten. What fraction of the pie was eaten?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2yt106304crhy3gbqv5z",
@@ -36252,34 +36116,14 @@
         "en": "Ana ate 3/8 of a pie and Beto ate 1/2 of another identical pie. Who ate more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/5b__cmulu2yt106304crhy3gbqv5z__fractions.png",
-      "svgSrc": "/exercise-images/5b__cmulu2yt106304crhy3gbqv5z__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/5b__cmulu2yt106304crhy3gbqv5z__comida.png",
+      "width": 955,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana comió 3/8 de una tarta y Beto comió 1/2 de otra tarta igual. ¿Quién comió más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana ate 3/8 of a pie and Beto ate 1/2 of another identical pie. Who ate more?"
+        "es": "Dos tartas del mismo tamaño: una dividida en 8 partes iguales con 3 pintadas (3/8) y otra dividida en 2 partes iguales con 1 pintada (1/2). Ana comió 3/8 de una tarta y Beto comió 1/2 de otra tarta igual. ¿Quién comió más?",
+        "en": "Two pies of the same size: one divided into 8 equal parts with 3 shaded (3/8), and one divided into 2 equal parts with 1 shaded (1/2). Ana ate 3/8 of a pie and Beto ate 1/2 of another identical pie. Who ate more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2yt606354crhj74jeeec",
@@ -36289,26 +36133,14 @@
         "en": "A cake is divided into 12 equal parts and 9 are covered with cream. What equivalent fraction, with denominator 4, represents the part covered with cream?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/5b__cmulu2yt606354crhj74jeeec__fractions.png",
-      "svgSrc": "/exercise-images/5b__cmulu2yt606354crhj74jeeec__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/5b__cmulu2yt606354crhj74jeeec__comida.png",
+      "width": 593,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una torta se divide en 12 partes iguales y se cubren con crema 9. ¿Qué fracción equivalente, con denominador 4, representa lo cubierto con crema?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cake is divided into 12 equal parts and 9 are covered with cream. What equivalent fraction, with denominator 4, represents the part covered with cream?"
+        "es": "Una torta dividida en 12 partes iguales; 9 partes tienen crema rosada. Una torta se divide en 12 partes iguales y se cubren con crema 9. ¿Qué fracción equivalente, con denominador 4, representa lo cubierto con crema?",
+        "en": "A cake divided into 12 equal parts; 9 parts have pink cream. A cake is divided into 12 equal parts and 9 are covered with cream. What equivalent fraction, with denominator 4, represents the part covered with cream?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/12",
-            "en": "9/12"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2yta063a4crhpgje0uds",
@@ -41775,34 +41607,14 @@
         "en": "3/8 of a pie is eaten in the morning and 2/8 of the same pie in the afternoon. What fraction of the pie was eaten?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zuh074d4crhc0qpk19x__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zuh074d4crhc0qpk19x__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/6b__cmulu2zuh074d4crhc0qpk19x__comida.png",
+      "width": 602,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Se come 3/8 de una tarta en la mañana y 2/8 de la misma tarta en la tarde. ¿Qué fracción de la tarta se comió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. 3/8 of a pie is eaten in the morning and 2/8 of the same pie in the afternoon. What fraction of the pie was eaten?"
+        "es": "Una tarta dividida en 8 partes iguales: 3 partes azules, 2 partes rosadas y 3 partes sin color. Se come 3/8 de una tarta en la mañana y 2/8 de la misma tarta en la tarde. ¿Qué fracción de la tarta se comió?",
+        "en": "A pie divided into 8 equal parts: 3 blue parts, 2 pink parts and 3 uncolored parts. 3/8 of a pie is eaten in the morning and 2/8 of the same pie in the afternoon. What fraction of the pie was eaten?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/8",
-            "en": "2/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zul074i4crhom41mrjl",
@@ -41812,34 +41624,14 @@
         "en": "There was 7/9 of a cake and 2/9 of the cake was eaten. What fraction of the cake is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zul074i4crhom41mrjl__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zul074i4crhom41mrjl__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/6b__cmulu2zul074i4crhom41mrjl__comida.png",
+      "width": 600,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Había 7/9 de una torta y se comieron 2/9 de la torta. ¿Qué fracción de la torta queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. There was 7/9 of a cake and 2/9 of the cake was eaten. What fraction of the cake is left?"
+        "es": "Una torta dividida en 9 partes iguales: 2 partes con línea punteada, 2 partes rayadas de rosado y 5 partes sin marcar. Había 7/9 de una torta y se comieron 2/9 de la torta. ¿Qué fracción de la torta queda?",
+        "en": "A cake divided into 9 equal parts: 2 parts with a dashed outline, 2 parts striped in pink and 5 unmarked parts. There was 7/9 of a cake and 2/9 of the cake was eaten. What fraction of the cake is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "7/9",
-            "en": "7/9"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/9",
-            "en": "2/9"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zuq074n4crhbr05swkq",
@@ -42034,34 +41826,14 @@
         "en": "Ana ate 1/4 of a pie and Beto ate 1/3 of the same pie. What part of the pie did they eat between the two?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zvc075c4crhlaaszzkx__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zvc075c4crhlaaszzkx__fractions.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/6b__cmulu2zvc075c4crhlaaszzkx__comida.png",
+      "width": 721,
+      "height": 600,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana comió 1/4 de una tarta y Beto comió 1/3 de la misma tarta. ¿Qué parte de la tarta comieron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana ate 1/4 of a pie and Beto ate 1/3 of the same pie. What part of the pie did they eat between the two?"
+        "es": "Dos tartas del mismo tamaño: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). Ana comió 1/4 de una tarta y Beto comió 1/3 de la misma tarta. ¿Qué parte de la tarta comieron entre los dos?",
+        "en": "Two pies of the same size: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). Ana ate 1/4 of a pie and Beto ate 1/3 of the same pie. What part of the pie did they eat between the two?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zvg075h4crhr3taz8w9",
