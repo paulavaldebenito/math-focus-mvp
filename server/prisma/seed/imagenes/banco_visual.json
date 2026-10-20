@@ -29060,13 +29060,12 @@
         "en": "A pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
       },
       "kind": "existing",
-      "src": "/exercise-images/4b__cmuli7j2m010m6krhl5nhaw0u__existing.png",
-      "svgSrc": null,
-      "width": 1536,
-      "height": 1024,
+      "src": "/exercise-images/4b__cmuli7j2m010m6krhl5nhaw0u__comida.png",
+      "width": 595,
+      "height": 600,
       "alt": {
-        "es": "Una pizza dividida en ocho porciones; tres porciones separadas representan las consumidas.",
-        "en": "A pizza divided into eight slices; three separate slices represent the eaten portions."
+        "es": "Una pizza dividida en 8 partes iguales; 3 partes están marcadas con línea punteada porque ya no están. Una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
+        "en": "A pizza divided into 8 equal parts; 3 parts have a dashed outline because they are gone. A pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
       },
       "letters": []
     },
@@ -29078,13 +29077,12 @@
         "en": "In a group of 10 children, 3 wear glasses. What fraction of the group wears glasses?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmuli7j2q010r6krhjsmki8q4__subset.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j2q010r6krhjsmki8q4__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmuli7j2q010r6krhjsmki8q4__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños, 3 usan lentes. ¿Qué fracción del grupo usa lentes?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children, 3 wear glasses. What fraction of the group wears glasses?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños, 3 usan lentes. ¿Qué fracción del grupo usa lentes?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children, 3 wear glasses. What fraction of the group wears glasses?"
       },
       "letters": []
     },
@@ -29096,50 +29094,14 @@
         "en": "Which of these fractions is the greatest?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmuli7j2w010w6krh021h31xq__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j2w010w6krh021h31xq__fractions.svg",
+      "src": "/exercise-images/4b__cmuli7j2w010w6krh021h31xq__barras.png",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuál de estas fracciones es la mayor?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Which of these fractions is the greatest?"
+        "es": "Cuatro barras del mismo largo: 1/2, 1/4, 1/5 y 1/8, cada una con una parte pintada. ¿Cuál de estas fracciones es la mayor?",
+        "en": "Four bars of the same length: 1/2, 1/4, 1/5 and 1/8, each with one part shaded. Which of these fractions is the greatest?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "C",
-          "label": {
-            "es": "1/5",
-            "en": "1/5"
-          }
-        },
-        {
-          "key": "D",
-          "label": {
-            "es": "1/8",
-            "en": "1/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7j3201116krh0izz2nky",
@@ -29149,42 +29111,14 @@
         "en": "Order from least to greatest: 1/2, 1/8, 1/4."
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmuli7j3201116krh0izz2nky__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j3201116krh0izz2nky__fractions.svg",
+      "src": "/exercise-images/4b__cmuli7j3201116krh0izz2nky__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 500,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ordena de menor a mayor: 1/2, 1/8, 1/4.",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Order from least to greatest: 1/2, 1/8, 1/4."
+        "es": "Tres barras del mismo largo: 1/2, 1/8 y 1/4, cada una con una parte pintada. Ordena de menor a mayor: 1/2, 1/8, 1/4.",
+        "en": "Three bars of the same length: 1/2, 1/8 and 1/4, each with one part shaded. Order from least to greatest: 1/2, 1/8, 1/4."
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/8",
-            "en": "1/8"
-          }
-        },
-        {
-          "key": "C",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7j3601166krhn97dqym1",
@@ -29212,26 +29146,14 @@
         "en": "Which of these fractions is equal to 1/2?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmuli7j39011b6krhz937ihxf__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j39011b6krhz937ihxf__fractions.svg",
+      "src": "/exercise-images/4b__cmuli7j39011b6krhz937ihxf__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 230,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuál de estas fracciones es igual a 1/2?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Which of these fractions is equal to 1/2?"
+        "es": "Una barra dividida en 2 partes iguales con 1 pintada: 1/2. ¿Cuál de estas fracciones es igual a 1/2?",
+        "en": "A bar divided into 2 equal parts with 1 shaded: 1/2. Which of these fractions is equal to 1/2?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7j3e011g6krhy0ou8lwp",
@@ -29241,19 +29163,14 @@
         "en": "Martina has 12 pencils: 5 red, 4 blue and 3 green. What fraction of the pencils is blue?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmuli7j3e011g6krhy0ou8lwp__rows.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j3e011g6krhy0ou8lwp__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmuli7j3e011g6krhy0ou8lwp__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 lápices: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los lápices es azul?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 pencils: 5 red, 4 blue and 3 green. What fraction of the pencils is blue?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 lápices: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los lápices es azul?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 pencils: 5 red, 4 blue and 3 green. What fraction of the pencils is blue?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7j3j011l6krhvtna4q8y",
@@ -29263,13 +29180,12 @@
         "en": "In a 100 m race, Lucas has already run 25 m. What fraction of the course has he run?"
       },
       "kind": "grid",
-      "src": "/exercise-images/4b__cmuli7j3j011l6krhvtna4q8y__grid.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j3j011l6krhvtna4q8y__grid.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmuli7j3j011l6krhvtna4q8y__barras.png",
+      "width": 580,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una carrera de 100 m, Lucas ya corrió 25 m. ¿Qué fracción del recorrido ha corrido?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a 100 m race, Lucas has already run 25 m. What fraction of the course has he run?"
+        "es": "Una cuadrícula de 100 cuadrados iguales; 25 están pintados de azul. En una carrera de 100 m, Lucas ya corrió 25 m. ¿Qué fracción del recorrido ha corrido?",
+        "en": "A grid of 100 equal squares; 25 are shaded blue. In a 100 m race, Lucas has already run 25 m. What fraction of the course has he run?"
       },
       "letters": []
     },
@@ -29281,34 +29197,14 @@
         "en": "Ana ate 2/6 of a cake and Pedro ate 3/6 of the same cake. Who ate more?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmuli7j3o011q6krh86szkaem__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j3o011q6krh86szkaem__fractions.svg",
+      "src": "/exercise-images/4b__cmuli7j3o011q6krh86szkaem__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 360,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana comió 2/6 de un queque y Pedro comió 3/6 del mismo queque. ¿Quién comió más?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana ate 2/6 of a cake and Pedro ate 3/6 of the same cake. Who ate more?"
+        "es": "Un queque dividido en 6 partes iguales: 2 partes azules de Ana, 3 partes rosadas de Pedro y 1 parte sin color. Ana comió 2/6 de un queque y Pedro comió 3/6 del mismo queque. ¿Quién comió más?",
+        "en": "A cake divided into 6 equal parts: 2 blue parts for Ana, 3 pink parts for Pedro and 1 uncolored part. Ana ate 2/6 of a cake and Pedro ate 3/6 of the same cake. Who ate more?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/6",
-            "en": "2/6"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "3/6",
-            "en": "3/6"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xsp053g4crh1giclebz",
@@ -29335,13 +29231,12 @@
         "en": "In a group of 10 children playing football, 3 wear a cap. What fraction of the group wears a cap?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xst053l4crhep34h5f2__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xst053l4crhep34h5f2__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xst053l4crhep34h5f2__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños que juegan a la pelota, 3 usan gorro. ¿Qué fracción del grupo usa gorro?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children playing football, 3 wear a cap. What fraction of the group wears a cap?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños que juegan a la pelota, 3 usan gorro. ¿Qué fracción del grupo usa gorro?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children playing football, 3 wear a cap. What fraction of the group wears a cap?"
       },
       "letters": []
     },
@@ -29353,19 +29248,14 @@
         "en": "Martina has 12 jerseys: 5 red, 4 blue and 3 green. What fraction of the jerseys is blue?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xsy053q4crh44czuthv__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xsy053q4crh44czuthv__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xsy053q4crh44czuthv__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 camisetas: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las camisetas es azul?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 jerseys: 5 red, 4 blue and 3 green. What fraction of the jerseys is blue?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 camisetas: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las camisetas es azul?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 jerseys: 5 red, 4 blue and 3 green. What fraction of the jerseys is blue?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xt2053v4crh0my9dexo",
@@ -29375,13 +29265,12 @@
         "en": "In a 100 m speed drill along the edge of the pitch, Lucas has already run 25 m. What fraction of the course has he run?"
       },
       "kind": "grid",
-      "src": "/exercise-images/4b__cmulu2xt2053v4crh0my9dexo__grid.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xt2053v4crh0my9dexo__grid.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xt2053v4crh0my9dexo__barras.png",
+      "width": 580,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una práctica de velocidad de 100 m por el borde de la cancha, Lucas ya corrió 25 m. ¿Qué fracción del recorrido ha corrido?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a 100 m speed drill along the edge of the pitch, Lucas has already run 25 m. What fraction of the course has he run?"
+        "es": "Una cuadrícula de 100 cuadrados iguales; 25 están pintados de azul. En una práctica de velocidad de 100 m por el borde de la cancha, Lucas ya corrió 25 m. ¿Qué fracción del recorrido ha corrido?",
+        "en": "A grid of 100 equal squares; 25 are shaded blue. In a 100 m speed drill along the edge of the pitch, Lucas has already run 25 m. What fraction of the course has he run?"
       },
       "letters": []
     },
@@ -29410,13 +29299,12 @@
         "en": "In a shelter there are 10 animals and 3 are cats. What fraction of the animals are cats?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xta05454crhyu5ry65v__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xta05454crhyu5ry65v__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xta05454crhyu5ry65v__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un refugio hay 10 animales y 3 son gatos. ¿Qué fracción de los animales son gatos?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a shelter there are 10 animals and 3 are cats. What fraction of the animals are cats?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un refugio hay 10 animales y 3 son gatos. ¿Qué fracción de los animales son gatos?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a shelter there are 10 animals and 3 are cats. What fraction of the animals are cats?"
       },
       "letters": []
     },
@@ -29428,18 +29316,39 @@
         "en": "An aviary has 12 birds: 5 canaries, 4 parrots and 3 pigeons. What fraction of the birds are parrots?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xtf054a4crh7dvld71e__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xtf054a4crh7dvld71e__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xtf054a4crh7dvld71e__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Una pajarera tiene 12 aves: 5 canarios, 4 loros y 3 palomas. ¿Qué fracción de las aves son loros?",
-        "en": "Groups of counters representing the quantities in the prompt. An aviary has 12 birds: 5 canaries, 4 parrots and 3 pigeons. What fraction of the birds are parrots?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Una pajarera tiene 12 aves: 5 canarios, 4 loros y 3 palomas. ¿Qué fracción de las aves son loros?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. An aviary has 12 birds: 5 canaries, 4 parrots and 3 pigeons. What fraction of the birds are parrots?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
+      "letters": [],
+      "emojiRows": [
+        {
+          "emoji": "🐤",
+          "count": 5,
+          "label": {
+            "es": "canarios",
+            "en": "canaries"
+          }
+        },
+        {
+          "emoji": "🦜",
+          "count": 4,
+          "label": {
+            "es": "loros",
+            "en": "parrots"
+          }
+        },
+        {
+          "emoji": "🕊️",
+          "count": 3,
+          "label": {
+            "es": "palomas",
+            "en": "pigeons"
+          }
+        }
       ]
     },
     {
@@ -29450,13 +29359,12 @@
         "en": "In a group of 10 children, 3 play the guitar. What fraction of the group plays the guitar?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xtk054f4crh7pa2zosr__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xtk054f4crh7pa2zosr__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xtk054f4crh7pa2zosr__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños, 3 tocan la guitarra. ¿Qué fracción del grupo toca la guitarra?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children, 3 play the guitar. What fraction of the group plays the guitar?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños, 3 tocan la guitarra. ¿Qué fracción del grupo toca la guitarra?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children, 3 play the guitar. What fraction of the group plays the guitar?"
       },
       "letters": []
     },
@@ -29468,19 +29376,14 @@
         "en": "In the band there are 12 instruments: 5 drums, 4 flutes and 3 trumpets. What fraction of the instruments are flutes?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xto054k4crhas0wrx87__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xto054k4crhas0wrx87__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xto054k4crhas0wrx87__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. En la banda hay 12 instrumentos: 5 tambores, 4 flautas y 3 trompetas. ¿Qué fracción de los instrumentos son flautas?",
-        "en": "Groups of counters representing the quantities in the prompt. In the band there are 12 instruments: 5 drums, 4 flutes and 3 trumpets. What fraction of the instruments are flutes?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. En la banda hay 12 instrumentos: 5 tambores, 4 flautas y 3 trompetas. ¿Qué fracción de los instrumentos son flautas?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. In the band there are 12 instruments: 5 drums, 4 flutes and 3 trumpets. What fraction of the instruments are flutes?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xtt054p4crhi5pephsl",
@@ -29527,26 +29430,14 @@
         "en": "A map is divided into 8 equal zones and a player has already explored 3. What fraction of the map has he explored?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmulu2xtw054u4crhjwgd8mch__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xtw054u4crhjwgd8mch__fractions.svg",
+      "src": "/exercise-images/4b__cmulu2xtw054u4crhjwgd8mch__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un mapa se divide en 8 zonas iguales y un jugador ya exploró 3. ¿Qué fracción del mapa exploró?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A map is divided into 8 equal zones and a player has already explored 3. What fraction of the map has he explored?"
+        "es": "Una barra dividida en 8 partes iguales; 3 partes están pintadas de azul. Un mapa se divide en 8 zonas iguales y un jugador ya exploró 3. ¿Qué fracción del mapa exploró?",
+        "en": "A bar divided into 8 equal parts; 3 parts are shaded blue. A map is divided into 8 equal zones and a player has already explored 3. What fraction of the map has he explored?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xu1054z4crhqiywtqmp",
@@ -29556,13 +29447,12 @@
         "en": "In a tournament of 10 players, 3 use the same character. What fraction of the players use that character?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xu1054z4crhqiywtqmp__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xu1054z4crhqiywtqmp__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xu1054z4crhqiywtqmp__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un torneo de 10 jugadores, 3 usan el mismo personaje. ¿Qué fracción de los jugadores usa ese personaje?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a tournament of 10 players, 3 use the same character. What fraction of the players use that character?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un torneo de 10 jugadores, 3 usan el mismo personaje. ¿Qué fracción de los jugadores usa ese personaje?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a tournament of 10 players, 3 use the same character. What fraction of the players use that character?"
       },
       "letters": []
     },
@@ -29574,19 +29464,14 @@
         "en": "Martina has 12 game coins: 5 gold, 4 silver and 3 bronze. What fraction of the coins is silver?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xu405544crhlwy3yb2y__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xu405544crhlwy3yb2y__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xu405544crhlwy3yb2y__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 monedas de un juego: 5 doradas, 4 plateadas y 3 de bronce. ¿Qué fracción de las monedas es plateada?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 game coins: 5 gold, 4 silver and 3 bronze. What fraction of the coins is silver?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 monedas de un juego: 5 doradas, 4 plateadas y 3 de bronce. ¿Qué fracción de las monedas es plateada?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 game coins: 5 gold, 4 silver and 3 bronze. What fraction of the coins is silver?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xu905594crhy66lbk88",
@@ -29596,26 +29481,14 @@
         "en": "A cardboard planet is divided into 8 equal parts and Camila paints 3. What fraction of the planet did she paint?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmulu2xu905594crhy66lbk88__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xu905594crhy66lbk88__fractions.svg",
+      "src": "/exercise-images/4b__cmulu2xu905594crhy66lbk88__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un planeta de cartón está dividido en 8 partes iguales y Camila pinta 3. ¿Qué fracción del planeta pintó?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cardboard planet is divided into 8 equal parts and Camila paints 3. What fraction of the planet did she paint?"
+        "es": "Una barra dividida en 8 partes iguales; 3 partes están pintadas de azul. Un planeta de cartón está dividido en 8 partes iguales y Camila pinta 3. ¿Qué fracción del planeta pintó?",
+        "en": "A bar divided into 8 equal parts; 3 parts are shaded blue. A cardboard planet is divided into 8 equal parts and Camila paints 3. What fraction of the planet did she paint?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xue055e4crhejyelfr0",
@@ -29625,13 +29498,12 @@
         "en": "In a group of 10 children, 3 bring their own telescope. What fraction of the group brings a telescope?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xue055e4crhejyelfr0__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xue055e4crhejyelfr0__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xue055e4crhejyelfr0__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños, 3 traen su propio telescopio. ¿Qué fracción del grupo trae telescopio?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children, 3 bring their own telescope. What fraction of the group brings a telescope?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños, 3 traen su propio telescopio. ¿Qué fracción del grupo trae telescopio?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children, 3 bring their own telescope. What fraction of the group brings a telescope?"
       },
       "letters": []
     },
@@ -29643,19 +29515,14 @@
         "en": "Martina has 12 toy spaceships: 5 red, 4 blue and 3 green. What fraction of the spaceships is blue?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xuj055j4crhbmhhtw9k__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xuj055j4crhbmhhtw9k__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xuj055j4crhbmhhtw9k__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 naves de juguete: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las naves es azul?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 toy spaceships: 5 red, 4 blue and 3 green. What fraction of the spaceships is blue?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 naves de juguete: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las naves es azul?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 toy spaceships: 5 red, 4 blue and 3 green. What fraction of the spaceships is blue?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xuo055o4crh1aexbst8",
@@ -29665,13 +29532,12 @@
         "en": "In a game mission, an explorer robot must travel 100 m and has already traveled 25 m. What fraction of the route has it covered?"
       },
       "kind": "grid",
-      "src": "/exercise-images/4b__cmulu2xuo055o4crh1aexbst8__grid.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xuo055o4crh1aexbst8__grid.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xuo055o4crh1aexbst8__barras.png",
+      "width": 580,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una misión de un juego, un robot explorador debe recorrer 100 m y ya recorrió 25 m. ¿Qué fracción del recorrido ha avanzado?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a game mission, an explorer robot must travel 100 m and has already traveled 25 m. What fraction of the route has it covered?"
+        "es": "Una cuadrícula de 100 cuadrados iguales; 25 están pintados de azul. En una misión de un juego, un robot explorador debe recorrer 100 m y ya recorrió 25 m. ¿Qué fracción del recorrido ha avanzado?",
+        "en": "A grid of 100 equal squares; 25 are shaded blue. In a game mission, an explorer robot must travel 100 m and has already traveled 25 m. What fraction of the route has it covered?"
       },
       "letters": []
     },
@@ -29720,13 +29586,12 @@
         "en": "In a group of 10 children, 3 are wearing a dinosaur costume. What fraction of the group is wearing a costume?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xux055y4crhunnug7o2__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xux055y4crhunnug7o2__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xux055y4crhunnug7o2__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños, 3 llevan un disfraz de dinosaurio. ¿Qué fracción del grupo lleva disfraz?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children, 3 are wearing a dinosaur costume. What fraction of the group is wearing a costume?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños, 3 llevan un disfraz de dinosaurio. ¿Qué fracción del grupo lleva disfraz?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children, 3 are wearing a dinosaur costume. What fraction of the group is wearing a costume?"
       },
       "letters": []
     },
@@ -29738,19 +29603,14 @@
         "en": "Martina has 12 toy dinosaurs: 5 red, 4 blue and 3 green. What fraction of the dinosaurs is blue?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xv105634crh6oyk9xa0__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xv105634crh6oyk9xa0__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xv105634crh6oyk9xa0__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 dinosaurios de juguete: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los dinosaurios es azul?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 toy dinosaurs: 5 red, 4 blue and 3 green. What fraction of the dinosaurs is blue?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 dinosaurios de juguete: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los dinosaurios es azul?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 toy dinosaurs: 5 red, 4 blue and 3 green. What fraction of the dinosaurs is blue?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xv605684crhknnilf5g",
@@ -29760,26 +29620,14 @@
         "en": "A cake is divided into 8 equal parts and Camila eats 3. What fraction of the cake did she eat?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmulu2xv605684crhknnilf5g__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xv605684crhknnilf5g__fractions.svg",
+      "src": "/exercise-images/4b__cmulu2xv605684crhknnilf5g__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un queque está dividido en 8 partes iguales y Camila come 3. ¿Qué fracción del queque comió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cake is divided into 8 equal parts and Camila eats 3. What fraction of the cake did she eat?"
+        "es": "Una barra dividida en 8 partes iguales; 3 partes están pintadas de azul. Un queque está dividido en 8 partes iguales y Camila come 3. ¿Qué fracción del queque comió?",
+        "en": "A bar divided into 8 equal parts; 3 parts are shaded blue. A cake is divided into 8 equal parts and Camila eats 3. What fraction of the cake did she eat?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xv9056d4crhwvesedkz",
@@ -29789,13 +29637,12 @@
         "en": "In a group of 10 children, 3 prefer making cookies. What fraction of the group prefers making cookies?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xv9056d4crhwvesedkz__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xv9056d4crhwvesedkz__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xv9056d4crhwvesedkz__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños, 3 prefieren hacer galletas. ¿Qué fracción del grupo prefiere hacer galletas?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children, 3 prefer making cookies. What fraction of the group prefers making cookies?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños, 3 prefieren hacer galletas. ¿Qué fracción del grupo prefiere hacer galletas?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children, 3 prefer making cookies. What fraction of the group prefers making cookies?"
       },
       "letters": []
     },
@@ -29807,19 +29654,14 @@
         "en": "Martina has 12 cupcakes: 5 chocolate, 4 vanilla and 3 strawberry. What fraction of the cupcakes is vanilla?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xvf056i4crh8s0ab0lg__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xvf056i4crh8s0ab0lg__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xvf056i4crh8s0ab0lg__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 cupcakes: 5 de chocolate, 4 de vainilla y 3 de frutilla. ¿Qué fracción de los cupcakes es de vainilla?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 cupcakes: 5 chocolate, 4 vanilla and 3 strawberry. What fraction of the cupcakes is vanilla?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 cupcakes: 5 de chocolate, 4 de vainilla y 3 de frutilla. ¿Qué fracción de los cupcakes es de vainilla?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 cupcakes: 5 chocolate, 4 vanilla and 3 strawberry. What fraction of the cupcakes is vanilla?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xvj056n4crhqbzpxmq2",
@@ -29846,26 +29688,14 @@
         "en": "A garden is divided into 8 equal parts and Camila sows 3. What fraction of the garden did she sow?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmulu2xvo056s4crh8dpsm0tq__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xvo056s4crh8dpsm0tq__fractions.svg",
+      "src": "/exercise-images/4b__cmulu2xvo056s4crh8dpsm0tq__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un huerto está dividido en 8 partes iguales y Camila siembra 3. ¿Qué fracción del huerto sembró?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A garden is divided into 8 equal parts and Camila sows 3. What fraction of the garden did she sow?"
+        "es": "Una barra dividida en 8 partes iguales; 3 partes están pintadas de azul. Un huerto está dividido en 8 partes iguales y Camila siembra 3. ¿Qué fracción del huerto sembró?",
+        "en": "A bar divided into 8 equal parts; 3 parts are shaded blue. A garden is divided into 8 equal parts and Camila sows 3. What fraction of the garden did she sow?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xvs056x4crhbg838nql",
@@ -29875,13 +29705,12 @@
         "en": "In a group of 10 children on a trip, 3 carry binoculars. What fraction of the group carries binoculars?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xvs056x4crhbg838nql__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xvs056x4crhbg838nql__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xvs056x4crhbg838nql__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños que van de excursión, 3 llevan binoculares. ¿Qué fracción del grupo lleva binoculares?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children on a trip, 3 carry binoculars. What fraction of the group carries binoculars?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños que van de excursión, 3 llevan binoculares. ¿Qué fracción del grupo lleva binoculares?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children on a trip, 3 carry binoculars. What fraction of the group carries binoculars?"
       },
       "letters": []
     },
@@ -29893,19 +29722,14 @@
         "en": "Martina has 12 flowers in a bouquet: 5 red, 4 yellow and 3 white. What fraction of the flowers is yellow?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xvv05724crh05o2dhwt__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xvv05724crh05o2dhwt__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xvv05724crh05o2dhwt__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 flores en un ramo: 5 rojas, 4 amarillas y 3 blancas. ¿Qué fracción de las flores es amarilla?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 flowers in a bouquet: 5 red, 4 yellow and 3 white. What fraction of the flowers is yellow?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 flores en un ramo: 5 rojas, 4 amarillas y 3 blancas. ¿Qué fracción de las flores es amarilla?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 flowers in a bouquet: 5 red, 4 yellow and 3 white. What fraction of the flowers is yellow?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xw005774crh3q9sai8q",
@@ -29915,13 +29739,12 @@
         "en": "On a 100 m trail, Lucas has already walked 25 m. What fraction of the trail has he walked?"
       },
       "kind": "grid",
-      "src": "/exercise-images/4b__cmulu2xw005774crh3q9sai8q__grid.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xw005774crh3q9sai8q__grid.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xw005774crh3q9sai8q__barras.png",
+      "width": 580,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un sendero de 100 m, Lucas ya caminó 25 m. ¿Qué fracción del recorrido ha caminado?",
-        "en": "Precise visual support constructed from the data given in the prompt. On a 100 m trail, Lucas has already walked 25 m. What fraction of the trail has he walked?"
+        "es": "Una cuadrícula de 100 cuadrados iguales; 25 están pintados de azul. En un sendero de 100 m, Lucas ya caminó 25 m. ¿Qué fracción del recorrido ha caminado?",
+        "en": "A grid of 100 equal squares; 25 are shaded blue. On a 100 m trail, Lucas has already walked 25 m. What fraction of the trail has he walked?"
       },
       "letters": []
     },
@@ -29933,13 +29756,12 @@
         "en": "In a group of 10 children in the swimming workshop, 3 wear a blue cap. What fraction of the group wears a blue cap?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xw3057c4crhzwd8x0dr__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xw3057c4crhzwd8x0dr__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xw3057c4crhzwd8x0dr__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños del taller de natación, 3 usan gorro azul. ¿Qué fracción del grupo usa gorro azul?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children in the swimming workshop, 3 wear a blue cap. What fraction of the group wears a blue cap?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños del taller de natación, 3 usan gorro azul. ¿Qué fracción del grupo usa gorro azul?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children in the swimming workshop, 3 wear a blue cap. What fraction of the group wears a blue cap?"
       },
       "letters": []
     },
@@ -29951,18 +29773,39 @@
         "en": "Martina has 12 balls: 5 volleyballs, 4 basketballs and 3 table tennis balls. What fraction of the balls are basketballs?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xw8057h4crhaxts6u1v__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xw8057h4crhaxts6u1v__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xw8057h4crhaxts6u1v__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 pelotas: 5 de vóleibol, 4 de básquetbol y 3 de tenis de mesa. ¿Qué fracción de las pelotas es de básquetbol?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 balls: 5 volleyballs, 4 basketballs and 3 table tennis balls. What fraction of the balls are basketballs?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 pelotas: 5 de vóleibol, 4 de básquetbol y 3 de tenis de mesa. ¿Qué fracción de las pelotas es de básquetbol?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 balls: 5 volleyballs, 4 basketballs and 3 table tennis balls. What fraction of the balls are basketballs?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
+      "letters": [],
+      "emojiRows": [
+        {
+          "emoji": "🏐",
+          "count": 5,
+          "label": {
+            "es": "vóleibol",
+            "en": "volleyballs"
+          }
+        },
+        {
+          "emoji": "🏀",
+          "count": 4,
+          "label": {
+            "es": "básquetbol",
+            "en": "basketballs"
+          }
+        },
+        {
+          "emoji": "🏓",
+          "count": 3,
+          "label": {
+            "es": "tenis de mesa",
+            "en": "table tennis balls"
+          }
+        }
       ]
     },
     {
@@ -29973,13 +29816,12 @@
         "en": "In a 100 m swimming event, Lucas has already swum 25 m. What fraction of the course has he swum?"
       },
       "kind": "grid",
-      "src": "/exercise-images/4b__cmulu2xwc057m4crhgeepp5zb__grid.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xwc057m4crhgeepp5zb__grid.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xwc057m4crhgeepp5zb__barras.png",
+      "width": 580,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una prueba de natación de 100 m, Lucas ya nadó 25 m. ¿Qué fracción del recorrido ha nadado?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a 100 m swimming event, Lucas has already swum 25 m. What fraction of the course has he swum?"
+        "es": "Una cuadrícula de 100 cuadrados iguales; 25 están pintados de azul. En una prueba de natación de 100 m, Lucas ya nadó 25 m. ¿Qué fracción del recorrido ha nadado?",
+        "en": "A grid of 100 equal squares; 25 are shaded blue. In a 100 m swimming event, Lucas has already swum 25 m. What fraction of the course has he swum?"
       },
       "letters": []
     },
@@ -30028,26 +29870,14 @@
         "en": "A route is divided into 8 equal sections and Camila has already traveled 3 of them. What fraction of the route did she travel?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/4b__cmulu2xwl057w4crhe34nm0np__fractions.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xwl057w4crhe34nm0np__fractions.svg",
+      "src": "/exercise-images/4b__cmulu2xwl057w4crhe34nm0np__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una ruta está dividida en 8 tramos iguales y Camila ya viajó por 3. ¿Qué fracción de la ruta recorrió?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A route is divided into 8 equal sections and Camila has already traveled 3 of them. What fraction of the route did she travel?"
+        "es": "Una barra dividida en 8 partes iguales; 3 partes están pintadas de azul. Una ruta está dividida en 8 tramos iguales y Camila ya viajó por 3. ¿Qué fracción de la ruta recorrió?",
+        "en": "A bar divided into 8 equal parts; 3 parts are shaded blue. A route is divided into 8 equal sections and Camila has already traveled 3 of them. What fraction of the route did she travel?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xwp05814crhrpbwv2nn",
@@ -30057,13 +29887,12 @@
         "en": "In a group of 10 children, 3 go to school by bicycle. What fraction of the group goes by bicycle?"
       },
       "kind": "subset",
-      "src": "/exercise-images/4b__cmulu2xwp05814crhrpbwv2nn__subset.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xwp05814crhrpbwv2nn__subset.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xwp05814crhrpbwv2nn__barras.png",
+      "width": 1044,
+      "height": 188,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un grupo de 10 niños, 3 van al colegio en bicicleta. ¿Qué fracción del grupo va en bicicleta?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a group of 10 children, 3 go to school by bicycle. What fraction of the group goes by bicycle?"
+        "es": "Un grupo de 10 círculos: 3 azules y 7 sin color. En un grupo de 10 niños, 3 van al colegio en bicicleta. ¿Qué fracción del grupo va en bicicleta?",
+        "en": "A group of 10 circles: 3 blue and 7 uncolored. In a group of 10 children, 3 go to school by bicycle. What fraction of the group goes by bicycle?"
       },
       "letters": []
     },
@@ -30075,19 +29904,14 @@
         "en": "Martina has 12 toy cars: 5 red, 4 blue and 3 green. What fraction of the cars is blue?"
       },
       "kind": "rows",
-      "src": "/exercise-images/4b__cmulu2xwu05864crhxk70r9hi__rows.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xwu05864crhxk70r9hi__rows.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xwu05864crhxk70r9hi__barras.png",
+      "width": 1162,
+      "height": 180,
       "alt": {
-        "es": "Grupos de fichas que representan los datos del enunciado. Martina tiene 12 autitos: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los autitos es azul?",
-        "en": "Groups of counters representing the quantities in the prompt. Martina has 12 toy cars: 5 red, 4 blue and 3 green. What fraction of the cars is blue?"
+        "es": "12 círculos en tres grupos: 5 rojos, 4 azules y 3 verdes. Martina tiene 12 autitos: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los autitos es azul?",
+        "en": "12 circles in three groups: 5 red, 4 blue and 3 green. Martina has 12 toy cars: 5 red, 4 blue and 3 green. What fraction of the cars is blue?"
       },
-      "letters": [
-        "A",
-        "B",
-        "C"
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2xwx058b4crhn5buudnc",
@@ -30097,13 +29921,12 @@
         "en": "In a 100 m bicycle race, Lucas has already pedaled 25 m. What fraction of the course has he pedaled?"
       },
       "kind": "grid",
-      "src": "/exercise-images/4b__cmulu2xwx058b4crhn5buudnc__grid.png",
-      "svgSrc": "/exercise-images/4b__cmulu2xwx058b4crhn5buudnc__grid.svg",
-      "width": 1000,
-      "height": 650,
+      "src": "/exercise-images/4b__cmulu2xwx058b4crhn5buudnc__barras.png",
+      "width": 580,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una carrera de bicicletas de 100 m, Lucas ya pedaleó 25 m. ¿Qué fracción del recorrido ha pedaleado?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a 100 m bicycle race, Lucas has already pedaled 25 m. What fraction of the course has he pedaled?"
+        "es": "Una cuadrícula de 100 cuadrados iguales; 25 están pintados de azul. En una carrera de bicicletas de 100 m, Lucas ya pedaleó 25 m. ¿Qué fracción del recorrido ha pedaleado?",
+        "en": "A grid of 100 equal squares; 25 are shaded blue. In a 100 m bicycle race, Lucas has already pedaled 25 m. What fraction of the course has he pedaled?"
       },
       "letters": []
     },
@@ -44752,6 +44575,23 @@
         "es": "Una barra dividida en 2 partes iguales; 1 parte está pintada de azul. Un estacionamiento se divide en 2 partes iguales y los buses ocupan 1. ¿Qué fracción del estacionamiento ocupan los buses?",
         "en": "A bar divided into 2 equal parts; 1 part is shaded blue. A parking lot is divided into 2 equal parts and buses take up 1 of them. What fraction of the parking lot do the buses take up?"
       }
+    },
+    {
+      "exerciseId": "cmvhazyh600089lrhlaqe4cey",
+      "grade": 4,
+      "prompt": {
+        "es": "En una fiesta hay 12 globos y 1/3 de ellos son rojos. ¿Cuántos globos rojos hay?",
+        "en": "There are 12 balloons at a party, and 1/3 of them are red. How many balloons are red?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvhazyh600089lrhlaqe4cey__barras.png",
+      "width": 1162,
+      "height": 180,
+      "alt": {
+        "es": "12 globos en 3 grupos iguales de 4; un grupo está pintado de azul. En una fiesta hay 12 globos y 1/3 de ellos son rojos. ¿Cuántos globos rojos hay?",
+        "en": "12 balloons in 3 equal groups of 4; one group is shaded blue. There are 12 balloons at a party, and 1/3 of them are red. How many balloons are red?"
+      },
+      "letters": []
     }
   ]
 }

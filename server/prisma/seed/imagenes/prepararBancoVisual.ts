@@ -48,6 +48,10 @@ export interface BancoVisualEntry {
   values?: number[];
   /** Solo pictogramas: cuánto vale cada dibujo (1, 2, 5, 10…). */
   scale?: number;
+  /** Filas de emojis elegidas a mano (p. ej. fracción de un grupo en 4.°:
+   * 🐤×5, 🦜×4, 🕊️×3), con su nombre en ambos idiomas. Si está, se muestra
+   * en vez de la imagen, igual que los pictogramas de emojis de 1.° y 2.°. */
+  emojiRows?: Array<{ emoji: string; count: number; label: { es: string; en: string } }>;
 }
 
 export interface BancoVisualFile {

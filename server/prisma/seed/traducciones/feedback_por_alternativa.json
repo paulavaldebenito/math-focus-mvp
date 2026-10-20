@@ -2126,5 +2126,1153 @@
   "label": "2/2",
   "feedback": "2/2 sería el entero completo. La pregunta pide solo una de las partes.",
   "feedbackEn": "2/2 would be the whole thing. The question asks about just one of the parts."
+ },
+ {
+  "exerciseId": "cmulu2xsp053g4crh1giclebz",
+  "optionId": "cmulu2xsq053h4crhno09lmtq",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2xsp053g4crh1giclebz",
+  "optionId": "cmulu2xsq053i4crhi0r6iriz",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2xsp053g4crh1giclebz",
+  "optionId": "cmulu2xsq053j4crhyynrddnn",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xsp053g4crh1giclebz",
+  "optionId": "cmulu2xsq053k4crh74blz3qt",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7j2m010m6krhl5nhaw0u",
+  "optionId": "cmuli7j2n010n6krhnkkrkfki",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmuli7j2m010m6krhl5nhaw0u",
+  "optionId": "cmuli7j2n010o6krhg1xpd4tg",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmuli7j2m010m6krhl5nhaw0u",
+  "optionId": "cmuli7j2n010p6krhutay3rw3",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7j2m010m6krhl5nhaw0u",
+  "optionId": "cmuli7j2n010q6krhs9p7x46s",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xv605684crhknnilf5g",
+  "optionId": "cmulu2xv605694crh18g7lbbq",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2xv605684crhknnilf5g",
+  "optionId": "cmulu2xv6056a4crhtww7rykp",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2xv605684crhknnilf5g",
+  "optionId": "cmulu2xv6056b4crh6ja89tiq",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xv605684crhknnilf5g",
+  "optionId": "cmulu2xv6056c4crhdlhke24x",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xwl057w4crhe34nm0np",
+  "optionId": "cmulu2xwm057x4crh56xzbysf",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2xwl057w4crhe34nm0np",
+  "optionId": "cmulu2xwm057y4crhtio08u6f",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2xwl057w4crhe34nm0np",
+  "optionId": "cmulu2xwm057z4crhc2i9kbqo",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xwl057w4crhe34nm0np",
+  "optionId": "cmulu2xwm05804crh730lgutr",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xvo056s4crh8dpsm0tq",
+  "optionId": "cmulu2xvp056t4crh0jzxsw02",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2xvo056s4crh8dpsm0tq",
+  "optionId": "cmulu2xvp056u4crhgnx9udla",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2xvo056s4crh8dpsm0tq",
+  "optionId": "cmulu2xvp056v4crhtbyqf09c",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xvo056s4crh8dpsm0tq",
+  "optionId": "cmulu2xvp056w4crhxj6rvov3",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xtw054u4crhjwgd8mch",
+  "optionId": "cmulu2xtx054v4crhdhn677vi",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2xtw054u4crhjwgd8mch",
+  "optionId": "cmulu2xtx054w4crho8s81ol3",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2xtw054u4crhjwgd8mch",
+  "optionId": "cmulu2xtx054x4crhilxz6dtz",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xtw054u4crhjwgd8mch",
+  "optionId": "cmulu2xtx054y4crhqiolvmxj",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xu905594crhy66lbk88",
+  "optionId": "cmulu2xu9055a4crh1djyq1sp",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2xu905594crhy66lbk88",
+  "optionId": "cmulu2xua055b4crhcfg5xcju",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el todo.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2xu905594crhy66lbk88",
+  "optionId": "cmulu2xua055c4crhj3dq7jtj",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xu905594crhy66lbk88",
+  "optionId": "cmulu2xua055d4crh6mj75cn1",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7j3o011q6krh86szkaem",
+  "optionId": "cmuli7j3p011r6krhddoa8jqm",
+  "label": "Pedro",
+  "feedback": "Correcto: el queque está cortado en 6 partes iguales, y Pedro comió 3 y Ana 2.",
+  "feedbackEn": "That's right: the cake is cut into 6 equal parts, and Pedro ate 3 while Ana ate 2."
+ },
+ {
+  "exerciseId": "cmuli7j3o011q6krh86szkaem",
+  "optionId": "cmuli7j3p011s6krh221t0iju",
+  "label": "Ana",
+  "feedback": "Mira el numerador: dice cuántas de las 6 partes comió cada uno. ¿Quién comió más partes?",
+  "feedbackEn": "Look at the numerator: it tells how many of the 6 parts each person ate. Who ate more parts?"
+ },
+ {
+  "exerciseId": "cmuli7j3o011q6krh86szkaem",
+  "optionId": "cmuli7j3p011t6krhh2rocshu",
+  "label": "Comieron lo mismo",
+  "feedback": "Las partes son del mismo tamaño, pero 2/6 y 3/6 no tienen el mismo numerador. Compara cuántas partes comió cada uno.",
+  "feedbackEn": "The parts are the same size, but 2/6 and 3/6 don't have the same numerator. Compare how many parts each person ate."
+ },
+ {
+  "exerciseId": "cmuli7j3o011q6krh86szkaem",
+  "optionId": "cmuli7j3p011u6krhiww9x392",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: los dos comieron del mismo queque, cortado en 6 partes iguales. Compara cuántas partes comió cada uno.",
+  "feedbackEn": "Yes, we can tell: they both ate from the same cake, cut into 6 equal parts. Compare how many parts each person ate."
+ },
+ {
+  "exerciseId": "cmulu2xst053l4crhep34h5f2",
+  "optionId": "cmulu2xsu053m4crhv095oe3i",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xst053l4crhep34h5f2",
+  "optionId": "cmulu2xsu053n4crhe9cpfkjt",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xst053l4crhep34h5f2",
+  "optionId": "cmulu2xsu053o4crhaf58vihl",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xst053l4crhep34h5f2",
+  "optionId": "cmulu2xsu053p4crhpd5b9ejq",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xue055e4crhejyelfr0",
+  "optionId": "cmulu2xuf055f4crhr66231lr",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xue055e4crhejyelfr0",
+  "optionId": "cmulu2xuf055g4crhyms5gn36",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xue055e4crhejyelfr0",
+  "optionId": "cmulu2xuf055h4crhg4jdjnjm",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xue055e4crhejyelfr0",
+  "optionId": "cmulu2xuf055i4crhnp4uqrwf",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7j2q010r6krhjsmki8q4",
+  "optionId": "cmuli7j2r010s6krhyjmb549d",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmuli7j2q010r6krhjsmki8q4",
+  "optionId": "cmuli7j2r010t6krh63rbkq0j",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmuli7j2q010r6krhjsmki8q4",
+  "optionId": "cmuli7j2r010u6krh18aifb5l",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7j2q010r6krhjsmki8q4",
+  "optionId": "cmuli7j2r010v6krhuua6dvqw",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xta05454crhyu5ry65v",
+  "optionId": "cmulu2xtb05464crhk10admi8",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xta05454crhyu5ry65v",
+  "optionId": "cmulu2xtb05474crhcxqyg1rt",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xta05454crhyu5ry65v",
+  "optionId": "cmulu2xtb05484crh7erx41hd",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xta05454crhyu5ry65v",
+  "optionId": "cmulu2xtb05494crho7ditcxm",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xu1054z4crhqiywtqmp",
+  "optionId": "cmulu2xu205504crhl3oxfry1",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xu1054z4crhqiywtqmp",
+  "optionId": "cmulu2xu205514crhrp1xmgq4",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xu1054z4crhqiywtqmp",
+  "optionId": "cmulu2xu205524crhae51ok9x",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xu1054z4crhqiywtqmp",
+  "optionId": "cmulu2xu205534crhsvng7mfv",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xtk054f4crh7pa2zosr",
+  "optionId": "cmulu2xtl054g4crh296b9nqk",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xtk054f4crh7pa2zosr",
+  "optionId": "cmulu2xtl054h4crhf949f7hm",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xtk054f4crh7pa2zosr",
+  "optionId": "cmulu2xtl054i4crhpj2euyn5",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xtk054f4crh7pa2zosr",
+  "optionId": "cmulu2xtl054j4crhr2sanctj",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xux055y4crhunnug7o2",
+  "optionId": "cmulu2xuy055z4crhzu1gq35z",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xux055y4crhunnug7o2",
+  "optionId": "cmulu2xuy05604crhdcdv1w9z",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xux055y4crhunnug7o2",
+  "optionId": "cmulu2xuy05614crhzylvnaok",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xux055y4crhunnug7o2",
+  "optionId": "cmulu2xuy05624crhdfu174va",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xv9056d4crhwvesedkz",
+  "optionId": "cmulu2xva056e4crhvzczhxqc",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xv9056d4crhwvesedkz",
+  "optionId": "cmulu2xva056f4crha7hveqdk",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xv9056d4crhwvesedkz",
+  "optionId": "cmulu2xva056g4crhekmaz47q",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xv9056d4crhwvesedkz",
+  "optionId": "cmulu2xva056h4crh095x0o12",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xvs056x4crhbg838nql",
+  "optionId": "cmulu2xvs056y4crhihtta6oq",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xvs056x4crhbg838nql",
+  "optionId": "cmulu2xvs056z4crhb06neb35",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xvs056x4crhbg838nql",
+  "optionId": "cmulu2xvs05704crhvkhylypp",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xvs056x4crhbg838nql",
+  "optionId": "cmulu2xvs05714crhh4t4kihx",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xw3057c4crhzwd8x0dr",
+  "optionId": "cmulu2xw4057d4crhq93jwolk",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xw3057c4crhzwd8x0dr",
+  "optionId": "cmulu2xw4057e4crhv4m0dhew",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xw3057c4crhzwd8x0dr",
+  "optionId": "cmulu2xw4057f4crhtdvopcma",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xw3057c4crhzwd8x0dr",
+  "optionId": "cmulu2xw4057g4crhs2v9lagz",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xwp05814crhrpbwv2nn",
+  "optionId": "cmulu2xwq05824crhdf2fhrzw",
+  "label": "3/10",
+  "feedback": "Correcto: son 3 de un grupo de 10, o sea 3/10.",
+  "feedbackEn": "That's right: it's 3 out of a group of 10, so 3/10."
+ },
+ {
+  "exerciseId": "cmulu2xwp05814crhrpbwv2nn",
+  "optionId": "cmulu2xwq05834crhcvk1b5mq",
+  "label": "3/7",
+  "feedback": "El denominador es el grupo completo, no solo los que no cumplen. ¿Cuántos hay en total?",
+  "feedbackEn": "The denominator is the whole group, not just the ones that don't match. How many are there in total?"
+ },
+ {
+  "exerciseId": "cmulu2xwp05814crhrpbwv2nn",
+  "optionId": "cmulu2xwq05844crhulchvdhh",
+  "label": "7/10",
+  "feedback": "7/10 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "7/10 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xwp05814crhrpbwv2nn",
+  "optionId": "cmulu2xwq05854crhd9jz4kgq",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba van los que cumplen lo que te preguntan y abajo el total del grupo.",
+  "feedbackEn": "Check the order: the ones that match the question go on top, and the total in the group goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xsy053q4crh44czuthv",
+  "optionId": "cmulu2xsz053r4crhwe3wnq5f",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xsy053q4crh44czuthv",
+  "optionId": "cmulu2xsz053s4crhp13cs7xk",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xsy053q4crh44czuthv",
+  "optionId": "cmulu2xsz053t4crhvhx82vxx",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xsy053q4crh44czuthv",
+  "optionId": "cmulu2xsz053u4crhp9xpl48d",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xw8057h4crhaxts6u1v",
+  "optionId": "cmulu2xw9057i4crhbimnj609",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xw8057h4crhaxts6u1v",
+  "optionId": "cmulu2xw9057j4crhi7x0901g",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xw8057h4crhaxts6u1v",
+  "optionId": "cmulu2xw9057k4crhlbg516qp",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xw8057h4crhaxts6u1v",
+  "optionId": "cmulu2xw9057l4crhwjmf7vr1",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xwu05864crhxk70r9hi",
+  "optionId": "cmulu2xwv05874crh1ydqdm05",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xwu05864crhxk70r9hi",
+  "optionId": "cmulu2xwv05884crhjw8n5top",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xwu05864crhxk70r9hi",
+  "optionId": "cmulu2xwv05894crhp24du69s",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xwu05864crhxk70r9hi",
+  "optionId": "cmulu2xwv058a4crhw4wpm923",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xtf054a4crh7dvld71e",
+  "optionId": "cmulu2xth054b4crhv4vwr18q",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xtf054a4crh7dvld71e",
+  "optionId": "cmulu2xth054c4crhr443g2nh",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xtf054a4crh7dvld71e",
+  "optionId": "cmulu2xth054d4crhdff81rze",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xtf054a4crh7dvld71e",
+  "optionId": "cmulu2xth054e4crh1ahp13fi",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmuli7j3e011g6krhy0ou8lwp",
+  "optionId": "cmuli7j3f011h6krhkxkt2lhq",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmuli7j3e011g6krhy0ou8lwp",
+  "optionId": "cmuli7j3f011i6krhok92at91",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmuli7j3e011g6krhy0ou8lwp",
+  "optionId": "cmuli7j3f011j6krhnkmzhtkz",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7j3e011g6krhy0ou8lwp",
+  "optionId": "cmuli7j3f011k6krh1xq9xffx",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xv105634crh6oyk9xa0",
+  "optionId": "cmulu2xv105644crhci6zk9in",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xv105634crh6oyk9xa0",
+  "optionId": "cmulu2xv105654crha53aym1j",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xv105634crh6oyk9xa0",
+  "optionId": "cmulu2xv105664crh3krzi2mf",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xv105634crh6oyk9xa0",
+  "optionId": "cmulu2xv105674crh1l9unyyl",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xvf056i4crh8s0ab0lg",
+  "optionId": "cmulu2xvg056j4crhs7ys1mml",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xvf056i4crh8s0ab0lg",
+  "optionId": "cmulu2xvg056k4crhe2lqr7a3",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xvf056i4crh8s0ab0lg",
+  "optionId": "cmulu2xvg056l4crhep4c4pk2",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xvf056i4crh8s0ab0lg",
+  "optionId": "cmulu2xvg056m4crh03d89mdu",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xu405544crhlwy3yb2y",
+  "optionId": "cmulu2xu505554crhxup0gwdr",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xu405544crhlwy3yb2y",
+  "optionId": "cmulu2xu505564crh6xy14ai1",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xu405544crhlwy3yb2y",
+  "optionId": "cmulu2xu505574crh9phihhwv",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xu405544crhlwy3yb2y",
+  "optionId": "cmulu2xu505584crhg1gkgv8b",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xuj055j4crhbmhhtw9k",
+  "optionId": "cmulu2xuk055k4crh0kqo37nz",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xuj055j4crhbmhhtw9k",
+  "optionId": "cmulu2xuk055l4crhr0h79h5i",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xuj055j4crhbmhhtw9k",
+  "optionId": "cmulu2xuk055m4crhyxsjejg0",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xuj055j4crhbmhhtw9k",
+  "optionId": "cmulu2xuk055n4crhfiju9wjb",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xvv05724crh05o2dhwt",
+  "optionId": "cmulu2xvw05734crh8l4yp32h",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xvv05724crh05o2dhwt",
+  "optionId": "cmulu2xvw05744crhd7rbsx5l",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xvv05724crh05o2dhwt",
+  "optionId": "cmulu2xvw05754crhoj4hgnuh",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xvv05724crh05o2dhwt",
+  "optionId": "cmulu2xvw05764crh07ztlt5t",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmulu2xto054k4crhas0wrx87",
+  "optionId": "cmulu2xtp054l4crhe2x115ir",
+  "label": "4/12",
+  "feedback": "Correcto: son 4 de los 12 en total, o sea 4/12.",
+  "feedbackEn": "That's right: it's 4 out of the 12 in total, so 4/12."
+ },
+ {
+  "exerciseId": "cmulu2xto054k4crhas0wrx87",
+  "optionId": "cmulu2xtp054m4crhxb7hk2ra",
+  "label": "4/8",
+  "feedback": "El todo son los 12, no solo los otros 8. Compara con el total.",
+  "feedbackEn": "The whole is all 12, not just the other 8. Compare with the total."
+ },
+ {
+  "exerciseId": "cmulu2xto054k4crhas0wrx87",
+  "optionId": "cmulu2xtp054n4crhjj3v8klb",
+  "label": "8/12",
+  "feedback": "8/12 son los demás. Vuelve a leer la pregunta: ¿por cuáles te preguntan?",
+  "feedbackEn": "8/12 is the others. Read the question again: which ones is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2xto054k4crhas0wrx87",
+  "optionId": "cmulu2xtp054o4crhcifcjwsh",
+  "label": "4/3",
+  "feedback": "Revisa los datos: el denominador es el total, no la cantidad de otro grupo.",
+  "feedbackEn": "Check the numbers: the denominator is the total, not the amount in another group."
+ },
+ {
+  "exerciseId": "cmuli7j3j011l6krhvtna4q8y",
+  "optionId": "cmuli7j3k011m6krh4k13s7gl",
+  "label": "25/100",
+  "feedback": "Correcto: lleva 25 de los 100 m, o sea 25/100.",
+  "feedbackEn": "That's right: it's 25 of the 100 m, so 25/100."
+ },
+ {
+  "exerciseId": "cmuli7j3j011l6krhvtna4q8y",
+  "optionId": "cmuli7j3k011n6krhq7xdlhc9",
+  "label": "25/75",
+  "feedback": "El denominador es el largo total del recorrido, no lo que falta.",
+  "feedbackEn": "The denominator is the total length, not what's still left."
+ },
+ {
+  "exerciseId": "cmuli7j3j011l6krhvtna4q8y",
+  "optionId": "cmuli7j3k011o6krhp0se3bpf",
+  "label": "75/100",
+  "feedback": "75/100 es lo que falta. La pregunta pide lo que ya se recorrió.",
+  "feedbackEn": "75/100 is what's still left. The question asks about what has already been covered."
+ },
+ {
+  "exerciseId": "cmuli7j3j011l6krhvtna4q8y",
+  "optionId": "cmuli7j3k011p6krhuuujrr5o",
+  "label": "100/25",
+  "feedback": "Revisa el orden: arriba va lo recorrido y abajo el largo total.",
+  "feedbackEn": "Check the order: the distance covered goes on top, and the total length goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xwx058b4crhn5buudnc",
+  "optionId": "cmulu2xwy058c4crh0bpeiyad",
+  "label": "25/100",
+  "feedback": "Correcto: lleva 25 de los 100 m, o sea 25/100.",
+  "feedbackEn": "That's right: it's 25 of the 100 m, so 25/100."
+ },
+ {
+  "exerciseId": "cmulu2xwx058b4crhn5buudnc",
+  "optionId": "cmulu2xwy058d4crhppukn9ly",
+  "label": "25/75",
+  "feedback": "El denominador es el largo total del recorrido, no lo que falta.",
+  "feedbackEn": "The denominator is the total length, not what's still left."
+ },
+ {
+  "exerciseId": "cmulu2xwx058b4crhn5buudnc",
+  "optionId": "cmulu2xwy058e4crhphnyu9wg",
+  "label": "75/100",
+  "feedback": "75/100 es lo que falta. La pregunta pide lo que ya se recorrió.",
+  "feedbackEn": "75/100 is what's still left. The question asks about what has already been covered."
+ },
+ {
+  "exerciseId": "cmulu2xwx058b4crhn5buudnc",
+  "optionId": "cmulu2xwy058f4crh1egckdv1",
+  "label": "100/25",
+  "feedback": "Revisa el orden: arriba va lo recorrido y abajo el largo total.",
+  "feedbackEn": "Check the order: the distance covered goes on top, and the total length goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xt2053v4crh0my9dexo",
+  "optionId": "cmulu2xt3053w4crhmvtbo169",
+  "label": "25/100",
+  "feedback": "Correcto: lleva 25 de los 100 m, o sea 25/100.",
+  "feedbackEn": "That's right: it's 25 of the 100 m, so 25/100."
+ },
+ {
+  "exerciseId": "cmulu2xt2053v4crh0my9dexo",
+  "optionId": "cmulu2xt3053x4crht2djceqy",
+  "label": "25/75",
+  "feedback": "El denominador es el largo total del recorrido, no lo que falta.",
+  "feedbackEn": "The denominator is the total length, not what's still left."
+ },
+ {
+  "exerciseId": "cmulu2xt2053v4crh0my9dexo",
+  "optionId": "cmulu2xt3053y4crhxkgnwtbo",
+  "label": "75/100",
+  "feedback": "75/100 es lo que falta. La pregunta pide lo que ya se recorrió.",
+  "feedbackEn": "75/100 is what's still left. The question asks about what has already been covered."
+ },
+ {
+  "exerciseId": "cmulu2xt2053v4crh0my9dexo",
+  "optionId": "cmulu2xt3053z4crhyfw9ni7l",
+  "label": "100/25",
+  "feedback": "Revisa el orden: arriba va lo recorrido y abajo el largo total.",
+  "feedbackEn": "Check the order: the distance covered goes on top, and the total length goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xwc057m4crhgeepp5zb",
+  "optionId": "cmulu2xwd057n4crhs02d9ix2",
+  "label": "25/100",
+  "feedback": "Correcto: lleva 25 de los 100 m, o sea 25/100.",
+  "feedbackEn": "That's right: it's 25 of the 100 m, so 25/100."
+ },
+ {
+  "exerciseId": "cmulu2xwc057m4crhgeepp5zb",
+  "optionId": "cmulu2xwd057o4crh02gs1hkz",
+  "label": "25/75",
+  "feedback": "El denominador es el largo total del recorrido, no lo que falta.",
+  "feedbackEn": "The denominator is the total length, not what's still left."
+ },
+ {
+  "exerciseId": "cmulu2xwc057m4crhgeepp5zb",
+  "optionId": "cmulu2xwd057p4crhaa74t59u",
+  "label": "75/100",
+  "feedback": "75/100 es lo que falta. La pregunta pide lo que ya se recorrió.",
+  "feedbackEn": "75/100 is what's still left. The question asks about what has already been covered."
+ },
+ {
+  "exerciseId": "cmulu2xwc057m4crhgeepp5zb",
+  "optionId": "cmulu2xwd057q4crh12xn9e3l",
+  "label": "100/25",
+  "feedback": "Revisa el orden: arriba va lo recorrido y abajo el largo total.",
+  "feedbackEn": "Check the order: the distance covered goes on top, and the total length goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xuo055o4crh1aexbst8",
+  "optionId": "cmulu2xup055p4crhlsuf11g3",
+  "label": "25/100",
+  "feedback": "Correcto: lleva 25 de los 100 m, o sea 25/100.",
+  "feedbackEn": "That's right: it's 25 of the 100 m, so 25/100."
+ },
+ {
+  "exerciseId": "cmulu2xuo055o4crh1aexbst8",
+  "optionId": "cmulu2xup055q4crhegd7r1a2",
+  "label": "25/75",
+  "feedback": "El denominador es el largo total del recorrido, no lo que falta.",
+  "feedbackEn": "The denominator is the total length, not what's still left."
+ },
+ {
+  "exerciseId": "cmulu2xuo055o4crh1aexbst8",
+  "optionId": "cmulu2xup055r4crh68uxs395",
+  "label": "75/100",
+  "feedback": "75/100 es lo que falta. La pregunta pide lo que ya se recorrió.",
+  "feedbackEn": "75/100 is what's still left. The question asks about what has already been covered."
+ },
+ {
+  "exerciseId": "cmulu2xuo055o4crh1aexbst8",
+  "optionId": "cmulu2xup055s4crh3ep6s6el",
+  "label": "100/25",
+  "feedback": "Revisa el orden: arriba va lo recorrido y abajo el largo total.",
+  "feedbackEn": "Check the order: the distance covered goes on top, and the total length goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2xw005774crh3q9sai8q",
+  "optionId": "cmulu2xw105784crhar5oxz1c",
+  "label": "25/100",
+  "feedback": "Correcto: lleva 25 de los 100 m, o sea 25/100.",
+  "feedbackEn": "That's right: it's 25 of the 100 m, so 25/100."
+ },
+ {
+  "exerciseId": "cmulu2xw005774crh3q9sai8q",
+  "optionId": "cmulu2xw105794crhp2ttjmcz",
+  "label": "25/75",
+  "feedback": "El denominador es el largo total del recorrido, no lo que falta.",
+  "feedbackEn": "The denominator is the total length, not what's still left."
+ },
+ {
+  "exerciseId": "cmulu2xw005774crh3q9sai8q",
+  "optionId": "cmulu2xw1057a4crhrzllyx93",
+  "label": "75/100",
+  "feedback": "75/100 es lo que falta. La pregunta pide lo que ya se recorrió.",
+  "feedbackEn": "75/100 is what's still left. The question asks about what has already been covered."
+ },
+ {
+  "exerciseId": "cmulu2xw005774crh3q9sai8q",
+  "optionId": "cmulu2xw1057b4crhwko2mnqk",
+  "label": "100/25",
+  "feedback": "Revisa el orden: arriba va lo recorrido y abajo el largo total.",
+  "feedbackEn": "Check the order: the distance covered goes on top, and the total length goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7j3601166krhn97dqym1",
+  "optionId": "cmuli7j3701176krhzwokwi59",
+  "label": "3/5",
+  "feedback": "Correcto: son 3 saltos de los 5 iguales que hay entre 0 y 1, o sea 3/5.",
+  "feedbackEn": "That's right: it's 3 of the 5 equal jumps between 0 and 1, so 3/5."
+ },
+ {
+  "exerciseId": "cmuli7j3601166krhn97dqym1",
+  "optionId": "cmuli7j3701186krhhy7vz0xo",
+  "label": "3/6",
+  "feedback": "Cuenta saltos, no marcas: entre 0 y 1 hay 5 saltos iguales.",
+  "feedbackEn": "Count jumps, not tick marks: there are 5 equal jumps between 0 and 1."
+ },
+ {
+  "exerciseId": "cmuli7j3601166krhn97dqym1",
+  "optionId": "cmuli7j3701196krhq2l2naun",
+  "label": "5/3",
+  "feedback": "Revisa el orden: arriba van los saltos hasta el punto y abajo el total de saltos entre 0 y 1.",
+  "feedbackEn": "Check the order: the jumps up to the point go on top, and the total number of jumps between 0 and 1 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7j3601166krhn97dqym1",
+  "optionId": "cmuli7j37011a6krh9ccw38ie",
+  "label": "2/5",
+  "feedback": "Cuenta otra vez los saltos desde el 0 hasta el punto.",
+  "feedbackEn": "Count the jumps from 0 to the point again."
+ },
+ {
+  "exerciseId": "cmuli7j39011b6krhz937ihxf",
+  "optionId": "cmuli7j3a011c6krh1r2ladyg",
+  "label": "4/8",
+  "feedback": "Correcto: 4 es la mitad de 8, así que 4/8 es igual a 1/2.",
+  "feedbackEn": "That's right: 4 is half of 8, so 4/8 is equal to 1/2."
+ },
+ {
+  "exerciseId": "cmuli7j39011b6krhz937ihxf",
+  "optionId": "cmuli7j3a011d6krhrwzzhxbf",
+  "label": "1/4",
+  "feedback": "1/4 es menos que la mitad. Busca una fracción en la que las partes que tomas sean la mitad del total.",
+  "feedbackEn": "1/4 is less than half. Look for a fraction where the parts you take are half of the total."
+ },
+ {
+  "exerciseId": "cmuli7j39011b6krhz937ihxf",
+  "optionId": "cmuli7j3a011e6krh4e0gfpmt",
+  "label": "4/4",
+  "feedback": "4/4 es el entero completo, no la mitad.",
+  "feedbackEn": "4/4 is the whole thing, not half."
+ },
+ {
+  "exerciseId": "cmuli7j39011b6krhz937ihxf",
+  "optionId": "cmuli7j3a011f6krhdzpx01jv",
+  "label": "2/8",
+  "feedback": "¿2 es la mitad de 8? Revisa cuántas partes serían la mitad.",
+  "feedbackEn": "Is 2 half of 8? Check how many parts would be half."
+ },
+ {
+  "exerciseId": "cmuli7j3201116krh0izz2nky",
+  "optionId": "cmuli7j3301126krhxxot6oi4",
+  "label": "1/8, 1/4, 1/2",
+  "feedback": "Correcto: con el mismo numerador, más partes significa partes más chicas: 1/8 < 1/4 < 1/2.",
+  "feedbackEn": "That's right: with the same numerator, more parts means smaller parts: 1/8 < 1/4 < 1/2."
+ },
+ {
+  "exerciseId": "cmuli7j3201116krh0izz2nky",
+  "optionId": "cmuli7j3301136krhtu9yl7j3",
+  "label": "1/2, 1/4, 1/8",
+  "feedback": "Ese orden va de mayor a menor. La pregunta pide de menor a mayor.",
+  "feedbackEn": "That order goes from greatest to least. The question asks for least to greatest."
+ },
+ {
+  "exerciseId": "cmuli7j3201116krh0izz2nky",
+  "optionId": "cmuli7j3301146krh90dizhrd",
+  "label": "1/4, 1/8, 1/2",
+  "feedback": "Compara 1/4 y 1/8: ¿qué parte es más chica, la de una barra cortada en 4 o la de una cortada en 8?",
+  "feedbackEn": "Compare 1/4 and 1/8: which part is smaller, one from a bar cut into 4 or one from a bar cut into 8?"
+ },
+ {
+  "exerciseId": "cmuli7j3201116krh0izz2nky",
+  "optionId": "cmuli7j3301156krha196a47x",
+  "label": "1/8, 1/2, 1/4",
+  "feedback": "Revisa 1/2 y 1/4: la mitad es más grande que un cuarto.",
+  "feedbackEn": "Check 1/2 and 1/4: a half is bigger than a fourth."
+ },
+ {
+  "exerciseId": "cmuli7j2w010w6krh021h31xq",
+  "optionId": "cmuli7j2w010x6krhn7lqdaw6",
+  "label": "1/2",
+  "feedback": "Correcto: todas tienen numerador 1, y 1/2 divide el todo en menos partes, así que su parte es la más grande.",
+  "feedbackEn": "That's right: they all have a numerator of 1, and 1/2 divides the whole into the fewest parts, so its part is the biggest."
+ },
+ {
+  "exerciseId": "cmuli7j2w010w6krh021h31xq",
+  "optionId": "cmuli7j2w010y6krhge5sb2a4",
+  "label": "1/8",
+  "feedback": "Un denominador más grande no hace más grande la fracción: si el todo se divide en 8, cada parte es más chica.",
+  "feedbackEn": "A bigger denominator doesn't make the fraction bigger: if the whole is divided into 8, each part is smaller."
+ },
+ {
+  "exerciseId": "cmuli7j2w010w6krh021h31xq",
+  "optionId": "cmuli7j2w010z6krhnk7ghnnl",
+  "label": "1/4",
+  "feedback": "1/4 es más chica que 1/2: con 4 partes, cada una es más chica que con 2.",
+  "feedbackEn": "1/4 is smaller than 1/2: with 4 parts, each one is smaller than with 2."
+ },
+ {
+  "exerciseId": "cmuli7j2w010w6krh021h31xq",
+  "optionId": "cmuli7j2w01106krh8uxrkw74",
+  "label": "1/5",
+  "feedback": "Con 5 partes, cada una es más chica. Busca la fracción que divide el todo en menos partes.",
+  "feedbackEn": "With 5 parts, each one is smaller. Look for the fraction that divides the whole into the fewest parts."
+ },
+ {
+  "exerciseId": "cmvhazyh600089lrhlaqe4cey",
+  "optionId": "cmvhazyh900099lrh7369gfz6",
+  "label": "4",
+  "feedback": "Correcto: 12 globos repartidos en 3 grupos iguales son 4 por grupo, y 1/3 es uno de esos grupos.",
+  "feedbackEn": "That's right: 12 balloons split into 3 equal groups is 4 per group, and 1/3 is one of those groups."
+ },
+ {
+  "exerciseId": "cmvhazyh600089lrhlaqe4cey",
+  "optionId": "cmvhazyh9000a9lrh1jmfu8zc",
+  "label": "3",
+  "feedback": "El 3 dice en cuántos grupos iguales se reparten los globos, no cuántos son rojos.",
+  "feedbackEn": "The 3 tells you how many equal groups the balloons are split into, not how many are red."
+ },
+ {
+  "exerciseId": "cmvhazyh600089lrhlaqe4cey",
+  "optionId": "cmvhazyh9000b9lrhdm5lvddk",
+  "label": "8",
+  "feedback": "8 son los globos que no son rojos. La pregunta pide los rojos.",
+  "feedbackEn": "8 is the number of balloons that aren't red. The question asks about the red ones."
+ },
+ {
+  "exerciseId": "cmvhazyh600089lrhlaqe4cey",
+  "optionId": "cmvhazyh9000c9lrhbl4au0dh",
+  "label": "36",
+  "feedback": "1/3 de los globos es una parte del total, así que tiene que ser menos que 12. Reparte los 12 en 3 grupos iguales.",
+  "feedbackEn": "1/3 of the balloons is part of the total, so it has to be less than 12. Split the 12 into 3 equal groups."
  }
 ]

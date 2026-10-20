@@ -2155,5 +2155,421 @@
     }
    }
   ]
+ },
+ {
+  "exerciseId": "cmulu2xsp053g4crh1giclebz",
+  "grade": 4,
+  "prompt": {
+   "old": "Después del partido, una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
+   "new": "Después del partido, una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?"
+  },
+  "promptEn": {
+   "old": "After the match, a pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?",
+   "new": "After the game, a pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j2m010m6krhl5nhaw0u",
+  "grade": 4,
+  "prompt": {
+   "old": "Una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
+   "new": "Una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?"
+  },
+  "promptEn": {
+   "old": "A pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?",
+   "new": "A pizza is cut into 8 equal parts and Camila eats 3. What fraction of the pizza did she eat?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator tells into how many equal parts the whole was divided; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xv605684crhknnilf5g",
+  "grade": 4,
+  "prompt": {
+   "old": "Un queque está dividido en 8 partes iguales y Camila come 3. ¿Qué fracción del queque comió?",
+   "new": "Un queque está dividido en 8 partes iguales y Camila come 3. ¿Qué fracción del queque comió?"
+  },
+  "promptEn": {
+   "old": "A cake is divided into 8 equal parts and Camila eats 3. What fraction of the cake did she eat?",
+   "new": "A cake is divided into 8 equal parts and Camila eats 3. What fraction of the cake did she eat?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator tells how many equal parts the whole was divided into; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xwl057w4crhe34nm0np",
+  "grade": 4,
+  "prompt": {
+   "old": "Una ruta está dividida en 8 tramos iguales y Camila ya viajó por 3. ¿Qué fracción de la ruta recorrió?",
+   "new": "Una ruta está dividida en 8 tramos iguales y Camila ya viajó por 3. ¿Qué fracción de la ruta recorrió?"
+  },
+  "promptEn": {
+   "old": "A route is divided into 8 equal sections and Camila has already traveled 3 of them. What fraction of the route did she travel?",
+   "new": "A route is divided into 8 equal sections and Camila has already traveled 3 of them. What fraction of the route did she travel?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator tells how many equal parts the route was divided into; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the route is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xvo056s4crh8dpsm0tq",
+  "grade": 4,
+  "prompt": {
+   "old": "Un huerto está dividido en 8 partes iguales y Camila siembra 3. ¿Qué fracción del huerto sembró?",
+   "new": "Un huerto está dividido en 8 partes iguales y Camila siembra 3. ¿Qué fracción del huerto sembró?"
+  },
+  "promptEn": {
+   "old": "A garden is divided into 8 equal parts and Camila plants 3. What fraction of the garden did she plant?",
+   "new": "A garden is divided into 8 equal parts and Camila plants 3. What fraction of the garden did she plant?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xtw054u4crhjwgd8mch",
+  "grade": 4,
+  "prompt": {
+   "old": "Un mapa se divide en 8 zonas iguales y un jugador ya exploró 3. ¿Qué fracción del mapa exploró?",
+   "new": "Un mapa se divide en 8 zonas iguales y un jugador ya exploró 3. ¿Qué fracción del mapa exploró?"
+  },
+  "promptEn": {
+   "old": "A map is divided into 8 equal zones and a player has already explored 3. What fraction of the map has he explored?",
+   "new": "A map is divided into 8 equal zones and a player has already explored 3. What fraction of the map has the player explored?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator tells into how many equal parts the whole was divided; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xu905594crhy66lbk88",
+  "grade": 4,
+  "prompt": {
+   "old": "Un planeta de cartón está dividido en 8 partes iguales y Camila pinta 3. ¿Qué fracción del planeta pintó?",
+   "new": "Un planeta de cartón está dividido en 8 partes iguales y Camila pinta 3. ¿Qué fracción del planeta pintó?"
+  },
+  "promptEn": {
+   "old": "A cardboard planet is divided into 8 equal parts and Camila paints 3. What fraction of the planet did she paint?",
+   "new": "A cardboard planet is divided into 8 equal parts and Camila paints 3. What fraction of the planet did she paint?"
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator, how many parts you take.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many parts you take."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xst053l4crhep34h5f2",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños que juegan a la pelota, 3 usan gorro. ¿Qué fracción del grupo usa gorro?",
+   "new": "En un grupo de 10 niños que juegan a la pelota, 3 usan gorro. ¿Qué fracción del grupo usa gorro?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children playing soccer, 3 wear a cap. What fraction of the group wears a cap?",
+   "new": "In a group of 10 children playing soccer, 3 wear a cap. What fraction of the group wears a cap?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many children there are in total and on top how many meet what is asked.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xue055e4crhejyelfr0",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños, 3 traen su propio telescopio. ¿Qué fracción del grupo trae telescopio?",
+   "new": "En un grupo de 10 niños, 3 traen su propio telescopio. ¿Qué fracción del grupo trae telescopio?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children, 3 bring their own telescope. What fraction of the group brings a telescope?",
+   "new": "In a group of 10 children, 3 bring their own telescope. What fraction of the group brings a telescope?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many children there are in total and on top how many meet what is asked.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j2q010r6krhjsmki8q4",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños, 3 usan lentes. ¿Qué fracción del grupo usa lentes?",
+   "new": "En un grupo de 10 niños, 3 usan lentes. ¿Qué fracción del grupo usa lentes?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children, 3 wear glasses. What fraction of the group wears glasses?",
+   "new": "In a group of 10 children, 3 wear glasses. What fraction of the group wears glasses?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Write the total number of children below and how many match on top.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xta05454crhyu5ry65v",
+  "grade": 4,
+  "prompt": {
+   "old": "En un refugio hay 10 animales y 3 son gatos. ¿Qué fracción de los animales son gatos?",
+   "new": "En un refugio hay 10 animales y 3 son gatos. ¿Qué fracción de los animales son gatos?"
+  },
+  "promptEn": {
+   "old": "In a shelter there are 10 animals and 3 are cats. What fraction of the animals are cats?",
+   "new": "In a shelter there are 10 animals and 3 are cats. What fraction of the animals are cats?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many animals there are in total and on top how many are cats.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xu1054z4crhqiywtqmp",
+  "grade": 4,
+  "prompt": {
+   "old": "En un torneo de 10 jugadores, 3 usan el mismo personaje. ¿Qué fracción de los jugadores usa ese personaje?",
+   "new": "En un torneo de 10 jugadores, 3 usan el mismo personaje. ¿Qué fracción de los jugadores usa ese personaje?"
+  },
+  "promptEn": {
+   "old": "In a tournament of 10 players, 3 use the same character. What fraction of the players use that character?",
+   "new": "In a tournament of 10 players, 3 use the same character. What fraction of the players use that character?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Write the total number of players below and how many match on top.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xtk054f4crh7pa2zosr",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños, 3 tocan la guitarra. ¿Qué fracción del grupo toca la guitarra?",
+   "new": "En un grupo de 10 niños, 3 tocan la guitarra. ¿Qué fracción del grupo toca la guitarra?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children, 3 play the guitar. What fraction of the group plays the guitar?",
+   "new": "In a group of 10 children, 3 play the guitar. What fraction of the group plays the guitar?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many children there are in total and on top how many meet the condition.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xux055y4crhunnug7o2",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños, 3 llevan un disfraz de dinosaurio. ¿Qué fracción del grupo lleva disfraz?",
+   "new": "En un grupo de 10 niños, 3 llevan un disfraz de dinosaurio. ¿Qué fracción del grupo lleva disfraz?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children, 3 are wearing a dinosaur costume. What fraction of the group is wearing a costume?",
+   "new": "In a group of 10 children, 3 are wearing a dinosaur costume. What fraction of the group is wearing a costume?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put the total number of children on the bottom and the number who match on top.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xv9056d4crhwvesedkz",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños, 3 prefieren hacer galletas. ¿Qué fracción del grupo prefiere hacer galletas?",
+   "new": "En un grupo de 10 niños, 3 prefieren hacer galletas. ¿Qué fracción del grupo prefiere hacer galletas?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children, 3 prefer making cookies. What fraction of the group prefers making cookies?",
+   "new": "In a group of 10 children, 3 prefer making cookies. What fraction of the group prefers making cookies?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many children there are in total and on top how many meet what they ask.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xvs056x4crhbg838nql",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños que van de excursión, 3 llevan binoculares. ¿Qué fracción del grupo lleva binoculares?",
+   "new": "En un grupo de 10 niños que van de excursión, 3 llevan binoculares. ¿Qué fracción del grupo lleva binoculares?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children on a trip, 3 carry binoculars. What fraction of the group carries binoculars?",
+   "new": "In a group of 10 children on a trip, 3 carry binoculars. What fraction of the group carries binoculars?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many children there are in total and on top how many meet the condition.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xw3057c4crhzwd8x0dr",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños del taller de natación, 3 usan gorro azul. ¿Qué fracción del grupo usa gorro azul?",
+   "new": "En un grupo de 10 niños del taller de natación, 3 usan gorro azul. ¿Qué fracción del grupo usa gorro azul?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children in swimming class, 3 wear a blue cap. What fraction of the group wears a blue cap?",
+   "new": "In a group of 10 children in swimming class, 3 wear a blue cap. What fraction of the group wears a blue cap?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put at the bottom how many children there are in total and at the top how many match what is asked.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmulu2xwp05814crhrpbwv2nn",
+  "grade": 4,
+  "prompt": {
+   "old": "En un grupo de 10 niños, 3 van al colegio en bicicleta. ¿Qué fracción del grupo va en bicicleta?",
+   "new": "En un grupo de 10 niños, 3 van al colegio en bicicleta. ¿Qué fracción del grupo va en bicicleta?"
+  },
+  "promptEn": {
+   "old": "In a group of 10 children, 3 go to school by bicycle. What fraction of the group goes by bicycle?",
+   "new": "In a group of 10 children, 3 go to school by bicycle. What fraction of the group goes by bicycle?"
+  },
+  "procedureNoteEn": {
+   "old": "The whole is the entire group. Put on the bottom how many children there are in all and on top how many fit what they ask.",
+   "new": "The whole is the entire group. The total number goes on the bottom, and the number that matches the question goes on top."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j3e011g6krhy0ou8lwp",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 lápices: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los lápices es azul?",
+   "new": "Martina tiene 12 lápices: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los lápices es azul?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 pencils: 5 red, 4 blue and 3 green. What fraction of the pencils is blue?",
+   "new": "Martina has 12 pencils: 5 red, 4 blue and 3 green. What fraction of the pencils are blue?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xvf056i4crh8s0ab0lg",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 cupcakes: 5 de chocolate, 4 de vainilla y 3 de frutilla. ¿Qué fracción de los cupcakes es de vainilla?",
+   "new": "Martina tiene 12 cupcakes: 5 de chocolate, 4 de vainilla y 3 de frutilla. ¿Qué fracción de los cupcakes es de vainilla?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 cupcakes: 5 chocolate, 4 vanilla and 3 strawberry. What fraction of the cupcakes is vanilla?",
+   "new": "Martina has 12 cupcakes: 5 chocolate, 4 vanilla and 3 strawberry. What fraction of the cupcakes are vanilla?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xv105634crh6oyk9xa0",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 dinosaurios de juguete: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los dinosaurios es azul?",
+   "new": "Martina tiene 12 dinosaurios de juguete: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los dinosaurios es azul?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 toy dinosaurs: 5 red, 4 blue and 3 green. What fraction of the dinosaurs is blue?",
+   "new": "Martina has 12 toy dinosaurs: 5 red, 4 blue and 3 green. What fraction of the dinosaurs are blue?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xuj055j4crhbmhhtw9k",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 naves de juguete: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las naves es azul?",
+   "new": "Martina tiene 12 naves de juguete: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las naves es azul?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 toy spaceships: 5 red, 4 blue and 3 green. What fraction of the spaceships is blue?",
+   "new": "Martina has 12 toy spaceships: 5 red, 4 blue and 3 green. What fraction of the spaceships are blue?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xsy053q4crh44czuthv",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 camisetas: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las camisetas es azul?",
+   "new": "Martina tiene 12 camisetas: 5 rojas, 4 azules y 3 verdes. ¿Qué fracción de las camisetas es azul?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 jerseys: 5 red, 4 blue and 3 green. What fraction of the jerseys is blue?",
+   "new": "Martina has 12 jerseys: 5 red, 4 blue and 3 green. What fraction of the jerseys are blue?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xvv05724crh05o2dhwt",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 flores en un ramo: 5 rojas, 4 amarillas y 3 blancas. ¿Qué fracción de las flores es amarilla?",
+   "new": "Martina tiene 12 flores en un ramo: 5 rojas, 4 amarillas y 3 blancas. ¿Qué fracción de las flores es amarilla?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 flowers in a bouquet: 5 red, 4 yellow and 3 white. What fraction of the flowers is yellow?",
+   "new": "Martina has 12 flowers in a bouquet: 5 red, 4 yellow and 3 white. What fraction of the flowers are yellow?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xwu05864crhxk70r9hi",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 autitos: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los autitos es azul?",
+   "new": "Martina tiene 12 autitos: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los autitos es azul?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 toy cars: 5 red, 4 blue and 3 green. What fraction of the cars is blue?",
+   "new": "Martina has 12 toy cars: 5 red, 4 blue and 3 green. What fraction of the cars are blue?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2xu405544crhlwy3yb2y",
+  "grade": 4,
+  "prompt": {
+   "old": "Martina tiene 12 monedas de un juego: 5 doradas, 4 plateadas y 3 de bronce. ¿Qué fracción de las monedas es plateada?",
+   "new": "Martina tiene 12 monedas de un juego: 5 doradas, 4 plateadas y 3 de bronce. ¿Qué fracción de las monedas es plateada?"
+  },
+  "promptEn": {
+   "old": "Martina has 12 game coins: 5 gold, 4 silver and 3 bronze. What fraction of the coins is silver?",
+   "new": "Martina has 12 game coins: 5 gold, 4 silver and 3 bronze. What fraction of the coins are silver?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j3601166krhn97dqym1",
+  "grade": 4,
+  "prompt": {
+   "old": "Una recta numérica va de 0 a 1 y está dividida en 5 partes iguales. ¿Qué fracción marca el punto que está en el tercer salto desde el 0?",
+   "new": "Una recta numérica va de 0 a 1 y está dividida en 5 partes iguales. ¿Qué fracción marca el punto que está en el tercer salto desde el 0?"
+  },
+  "promptEn": {
+   "old": "A number line goes from 0 to 1 and is divided into 5 equal parts. What fraction does the point at the third jump from 0 mark?",
+   "new": "A number line from 0 to 1 is divided into 5 equal parts. What fraction is marked by the point at the third jump from 0?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j2w010w6krh021h31xq",
+  "grade": 4,
+  "prompt": {
+   "old": "¿Cuál de estas fracciones es la mayor?",
+   "new": "¿Cuál de estas fracciones es la mayor?"
+  },
+  "promptEn": {
+   "old": "Which of these fractions is the greatest?",
+   "new": "Which of these fractions is the greatest?"
+  },
+  "procedureNote": {
+   "old": "Todas tienen 1 parte, pero el todo se corta en distinta cantidad de partes. Mientras más partes, más chicas son.",
+   "new": "Todas tienen numerador 1, pero el todo se corta en distinta cantidad de partes. Mientras más partes, más chica es cada una."
+  },
+  "procedureNoteEn": {
+   "old": "All have 1 part, but the whole is cut into a different number of parts. The more parts, the smaller each one is.",
+   "new": "They all have a numerator of 1, but the whole is cut into a different number of parts. The more parts there are, the smaller each one is."
+  }
  }
 ]

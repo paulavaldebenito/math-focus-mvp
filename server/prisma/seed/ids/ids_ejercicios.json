@@ -20538,6 +20538,18 @@
  {
   "grade": 4,
   "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En una fiesta hay 12 globos y 1/3 de ellos son rojos. ¿Cuántos globos rojos hay?",
+  "id": "cmvhazyh600089lrhlaqe4cey",
+  "options": {
+   "3": "cmvhazyh9000a9lrh1jmfu8zc",
+   "4": "cmvhazyh900099lrh7369gfz6",
+   "8": "cmvhazyh9000b9lrhdm5lvddk",
+   "36": "cmvhazyh9000c9lrhbl4au0dh"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
   "prompt": "Ordena de menor a mayor: 1/2, 1/8, 1/4.",
   "id": "cmuli7j3201116krh0izz2nky",
   "options": {

@@ -1,5 +1,5 @@
 /**
- * Vincula el banco visual completo (banco_visual.json, 2.123 ejercicios)
+ * Vincula el banco visual completo (banco_visual.json, 2.124 ejercicios)
  * con la BD — EXCLUSIVAMENTE por exerciseId, verificando que el enunciado
  * en español coincida (baseKey no es único; nunca se asigna por parecido).
  * Reemplaza en `Exercise.image` la ilustración anterior de esos ejercicios,
@@ -392,7 +392,7 @@ export async function linkBancoVisual(prisma: PrismaClient): Promise<BancoVisual
     }
     // Para leer datos del enunciado (filas, nombres), el texto original.
     const source: ExerciseForLegend = edit ? { ...ex, prompt: edit.prompt.old, promptEn: edit.promptEn.old } : ex;
-    const rows = emojiPictograph(entry, source);
+    const rows = entry.emojiRows ?? emojiPictograph(entry, source);
     if (rows) {
       const pictograph: EmojiPictographImage = { kind: "pictograph", source: "emoji_pictograph", rows, alt: pictographAlt(rows) };
       if (JSON.stringify(ex.image) !== JSON.stringify(pictograph)) {
