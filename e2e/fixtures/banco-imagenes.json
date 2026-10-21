@@ -531,36 +531,26 @@
    "visual": null,
    "image": {
     "alt": {
-     "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Which of these fractions is equivalent to 1/2?",
-     "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuál de estas fracciones es equivalente a 1/2?"
+     "en": "A bar divided into 2 equal parts with 1 shaded: 1/2. Which of these fractions is equivalent to 1/2?",
+     "es": "Una barra dividida en 2 partes iguales con 1 pintada: 1/2. ¿Cuál de estas fracciones es equivalente a 1/2?"
     },
     "src": {
-     "en": "/exercise-images/5b__cmuli7jbj01a46krh1fhdakwj__fractions.png",
-     "es": "/exercise-images/5b__cmuli7jbj01a46krh1fhdakwj__fractions.png"
+     "en": "/exercise-images/5b__cmuli7jbj01a46krh1fhdakwj__barras.png",
+     "es": "/exercise-images/5b__cmuli7jbj01a46krh1fhdakwj__barras.png"
     },
     "kind": "fractions",
     "size": {
      "en": {
       "width": 1000,
-      "height": 650
+      "height": 230
      },
      "es": {
       "width": 1000,
-      "height": 650
+      "height": 230
      }
     },
     "legend": {
-     "type": "named",
-     "items": [
-      {
-       "key": "A",
-       "label": {
-        "en": "1/2",
-        "es": "1/2"
-       }
-      }
-     ],
-     "source": "rowLabels"
+     "type": "none"
     },
     "source": "banco_visual"
    },

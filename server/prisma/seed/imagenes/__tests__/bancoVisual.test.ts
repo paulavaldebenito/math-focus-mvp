@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { buildLegend, emojiPictograph, loadBancoVisual, namesFromPrompt, publicLegend, toImage, type ExerciseForLegend } from "../bancoVisual.js";
@@ -201,5 +201,35 @@ describe("emojiPictograph — pictogramas de 1.° y 2.° con emojis", () => {
     expect(emojiPictograph(pic({ scale: 5 }), ex)).toBeNull();
     expect(emojiPictograph(pic({ values: [4, 3] }), ex)).toBeNull();
     expect(emojiPictograph(pic({}), exercise({ prompt: "5 niños prefieren gatos y 7 perros." }))).toBeNull();
+  });
+});
+
+describe("fixtures de los E2E (e2e/fixtures/banco-imagenes.json)", () => {
+  // Los E2E sirven ejercicios fijos con la ruta de su imagen: si una imagen
+  // se reemplaza y se borra la anterior, el E2E falla recién en CI. Este
+  // test lo detecta antes, en local.
+  const fixtures = JSON.parse(readFileSync(new URL("../../../../../e2e/fixtures/banco-imagenes.json", import.meta.url), "utf8"));
+  const { entries } = loadBancoVisual();
+  const srcById = new Map(entries.map((e) => [e.exerciseId, e.src]));
+  const publicDir = fileURLToPath(new URL("../../../../../client/public", import.meta.url));
+  const payloads: Array<{ id: string; image: { source?: string; src?: Record<string, string> } }> = [];
+  const walk = (v: unknown): void => {
+    if (v && typeof v === "object") {
+      const o = v as Record<string, unknown>;
+      if (typeof o.id === "string" && o.image) payloads.push(o as never);
+      else Object.values(o).forEach(walk);
+    }
+  };
+  walk(fixtures);
+
+  it("cada imagen de los fixtures existe y es la vigente del banco visual", () => {
+    expect(payloads.length).toBeGreaterThan(0);
+    for (const p of payloads) {
+      if (p.image.source !== "banco_visual") continue;
+      for (const src of Object.values(p.image.src ?? {})) {
+        expect(existsSync(publicDir + src), `${p.id}: ${src}`).toBe(true);
+        expect(src, p.id).toBe(srcById.get(p.id));
+      }
+    }
   });
 });
