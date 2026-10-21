@@ -3274,5 +3274,873 @@
   "label": "36",
   "feedback": "1/3 de los globos es una parte del total, así que tiene que ser menos que 12. Reparte los 12 en 3 grupos iguales.",
   "feedbackEn": "1/3 of the balloons is part of the total, so it has to be less than 12. Split the 12 into 3 equal groups."
+ },
+ {
+  "exerciseId": "cmulu2yte063f4crh3to5xagx",
+  "optionId": "cmulu2ytf063g4crh8r2loe79",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2yte063f4crh3to5xagx",
+  "optionId": "cmulu2ytf063h4crhqg8trekq",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yte063f4crh3to5xagx",
+  "optionId": "cmulu2ytf063i4crhauxg3gcm",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yte063f4crh3to5xagx",
+  "optionId": "cmulu2ytf063j4crhnyo0l5hb",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2yri061c4crhht3wxt1v",
+  "optionId": "cmulu2yrj061d4crhaprne1iq",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2yri061c4crhht3wxt1v",
+  "optionId": "cmulu2yrj061e4crhbxg0xcel",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yri061c4crhht3wxt1v",
+  "optionId": "cmulu2yrj061f4crhkrews6yv",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yri061c4crhht3wxt1v",
+  "optionId": "cmulu2yrj061g4crhyc3cge90",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2ysv062v4crh5p5whalg",
+  "optionId": "cmulu2ysw062w4crhbwblqvm9",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2ysv062v4crh5p5whalg",
+  "optionId": "cmulu2ysw062x4crhb36lc4wj",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ysv062v4crh5p5whalg",
+  "optionId": "cmulu2ysw062y4crhmlrlkif1",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ysv062v4crh5p5whalg",
+  "optionId": "cmulu2ysw062z4crh136iugj5",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2ys906264crhzflgs0qd",
+  "optionId": "cmulu2ysa06274crh4olt51mb",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2ys906264crhzflgs0qd",
+  "optionId": "cmulu2ysa06284crh77azpvhl",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ys906264crhzflgs0qd",
+  "optionId": "cmulu2ysa06294crh7lwqkbwv",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ys906264crhzflgs0qd",
+  "optionId": "cmulu2ysa062a4crhw35jb05z",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2yu406494crhcy55jn9c",
+  "optionId": "cmulu2yu5064a4crhtb0zm2pg",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2yu406494crhcy55jn9c",
+  "optionId": "cmulu2yu5064b4crhm9jevg2a",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yu406494crhcy55jn9c",
+  "optionId": "cmulu2yu5064c4crhsd7547no",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yu406494crhcy55jn9c",
+  "optionId": "cmulu2yu5064d4crhsi97qfhs",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2yr6060x4crhjgamlb9e",
+  "optionId": "cmulu2yr7060y4crhub7obvtl",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2yr6060x4crhjgamlb9e",
+  "optionId": "cmulu2yr7060z4crhjm5xzrh5",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yr6060x4crhjgamlb9e",
+  "optionId": "cmulu2yr706104crhidb0vuua",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yr6060x4crhjgamlb9e",
+  "optionId": "cmulu2yr706114crhou5i5seu",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2yru061r4crhj5ioe6vv",
+  "optionId": "cmulu2yrv061s4crh6q1ntgxm",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2yru061r4crhj5ioe6vv",
+  "optionId": "cmulu2yrv061t4crhncdmslrg",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yru061r4crhj5ioe6vv",
+  "optionId": "cmulu2yrv061u4crhvspw6w2l",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yru061r4crhj5ioe6vv",
+  "optionId": "cmulu2yrv061v4crho7hef0ux",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmuli7jbu01ae6krhcd5crh10",
+  "optionId": "cmuli7jbv01af6krhf2drapki",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmuli7jbu01ae6krhcd5crh10",
+  "optionId": "cmuli7jbv01ag6krhasc3b4ud",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmuli7jbu01ae6krhcd5crh10",
+  "optionId": "cmuli7jbv01ah6krh0y6ijs2b",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7jbu01ae6krhcd5crh10",
+  "optionId": "cmuli7jbv01ai6krhlss0yhhd",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmulu2ytr063u4crhem7lswqc",
+  "optionId": "cmulu2ytr063v4crhr5g801jj",
+  "label": "3/8",
+  "feedback": "Correcto: son 3 de las 8 partes iguales, o sea 3/8.",
+  "feedbackEn": "That's right: it's 3 of the 8 equal parts, so 3/8."
+ },
+ {
+  "exerciseId": "cmulu2ytr063u4crhem7lswqc",
+  "optionId": "cmulu2ytr063w4crh9eb5de2o",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba van las partes por las que te preguntan y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts the question asks about go on top, and the total number of equal parts goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ytr063u4crhem7lswqc",
+  "optionId": "cmulu2ytr063x4crh07lg7sln",
+  "label": "5/8",
+  "feedback": "5/8 es el resto. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "5/8 is the rest. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ytr063u4crhem7lswqc",
+  "optionId": "cmulu2ytr063y4crh9nzrw06z",
+  "label": "3/5",
+  "feedback": "El denominador no es lo que sobra: es el total de partes iguales en que se dividió el entero.",
+  "feedbackEn": "The denominator isn't what's left over: it's the total number of equal parts the whole is divided into."
+ },
+ {
+  "exerciseId": "cmuli7jcq01b36krhw8l1p34m",
+  "optionId": "cmuli7jcr01b46krh3s4lep9w",
+  "label": "1/6, 5/12, 2/3",
+  "feedback": "Correcto: con denominador 12 quedan 2/12, 5/12 y 8/12, así que el orden es 1/6, 5/12, 2/3.",
+  "feedbackEn": "That's right: with a denominator of 12 they are 2/12, 5/12 and 8/12, so the order is 1/6, 5/12, 2/3."
+ },
+ {
+  "exerciseId": "cmuli7jcq01b36krhw8l1p34m",
+  "optionId": "cmuli7jcr01b56krhtx5p2nox",
+  "label": "2/3, 5/12, 1/6",
+  "feedback": "Ese orden va de mayor a menor. La pregunta pide de menor a mayor.",
+  "feedbackEn": "That order goes from greatest to least. The question asks for least to greatest."
+ },
+ {
+  "exerciseId": "cmuli7jcq01b36krhw8l1p34m",
+  "optionId": "cmuli7jcr01b66krhwsizcgtg",
+  "label": "1/6, 2/3, 5/12",
+  "feedback": "Revisa 2/3: escrito con denominador 12, ¿es más o menos que 5/12?",
+  "feedbackEn": "Check 2/3: written with a denominator of 12, is it more or less than 5/12?"
+ },
+ {
+  "exerciseId": "cmuli7jcq01b36krhw8l1p34m",
+  "optionId": "cmuli7jcr01b76krha871jgg9",
+  "label": "5/12, 1/6, 2/3",
+  "feedback": "Revisa 1/6: escrito con denominador 12, ¿es más o menos que 5/12?",
+  "feedbackEn": "Check 1/6: written with a denominator of 12, is it more or less than 5/12?"
+ },
+ {
+  "exerciseId": "cmulu2yt106304crhy3gbqv5z",
+  "optionId": "cmulu2yt106314crhoq9rqxfq",
+  "label": "Beto",
+  "feedback": "Correcto: 1/2 es lo mismo que 4/8, y 4/8 es más que 3/8.",
+  "feedbackEn": "That's right: 1/2 is the same as 4/8, and 4/8 is more than 3/8."
+ },
+ {
+  "exerciseId": "cmulu2yt106304crhy3gbqv5z",
+  "optionId": "cmulu2yt106324crhxug98jv9",
+  "label": "Ana",
+  "feedback": "Que 8 sea mayor que 2 no quiere decir que Ana comió más: si la tarta tiene más partes, cada parte es más chica. Compara usando octavos.",
+  "feedbackEn": "8 being greater than 2 doesn't mean Ana ate more: when a pie has more parts, each part is smaller. Compare using eighths."
+ },
+ {
+  "exerciseId": "cmulu2yt106304crhy3gbqv5z",
+  "optionId": "cmulu2yt106344crhym1brmjl",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: las dos tartas son iguales, así que basta comparar 3/8 y 1/2.",
+  "feedbackEn": "Yes, we can tell: the two pies are identical, so you just need to compare 3/8 and 1/2."
+ },
+ {
+  "exerciseId": "cmulu2yt106304crhy3gbqv5z",
+  "optionId": "cmulu2yt106334crhvwg5ga9b",
+  "label": "Comieron lo mismo",
+  "feedback": "Escribe 1/2 en octavos: ¿cuántos octavos son? Después compáralo con 3/8.",
+  "feedbackEn": "Write 1/2 in eighths: how many eighths is it? Then compare it with 3/8."
+ },
+ {
+  "exerciseId": "cmuli7jd401bi6krhut58y5hl",
+  "optionId": "cmuli7jd401bj6krhzyt07isd",
+  "label": "Tienen la misma cantidad",
+  "feedback": "Correcto: si multiplicas el numerador y el denominador de 2/3 por 2, obtienes 4/6. Son fracciones equivalentes.",
+  "feedbackEn": "That's right: if you multiply the numerator and denominator of 2/3 by 2, you get 4/6. They are equivalent fractions."
+ },
+ {
+  "exerciseId": "cmuli7jd401bi6krhut58y5hl",
+  "optionId": "cmuli7jd401bk6krha6m6kuie",
+  "label": "Mateo tiene más, porque 4 es mayor que 2",
+  "feedback": "Los numeradores solos no bastan para comparar: los sextos son más chicos que los tercios. Prueba escribir 2/3 en sextos.",
+  "feedbackEn": "The numerators alone aren't enough to compare: sixths are smaller than thirds. Try writing 2/3 in sixths."
+ },
+ {
+  "exerciseId": "cmuli7jd401bi6krhut58y5hl",
+  "optionId": "cmuli7jd401bm6krhb3wr3ox8",
+  "label": "No se pueden comparar, porque tienen distinto denominador",
+  "feedback": "Sí se pueden comparar fracciones con distinto denominador: escribe una de ellas con el denominador de la otra.",
+  "feedbackEn": "Fractions with different denominators can be compared: write one of them with the other one's denominator."
+ },
+ {
+  "exerciseId": "cmuli7jd401bi6krhut58y5hl",
+  "optionId": "cmuli7jd401bl6krh5650hrk5",
+  "label": "Luisa tiene más, porque 3 es menor que 6",
+  "feedback": "Es cierto que los tercios son más grandes que los sextos, pero Mateo tiene más partes. Escribe las dos fracciones con el mismo denominador para compararlas.",
+  "feedbackEn": "It's true that thirds are bigger than sixths, but Mateo has more parts. Write both fractions with the same denominator to compare them."
+ },
+ {
+  "exerciseId": "cmulu2ysm062l4crh2brmmqv0",
+  "optionId": "cmulu2ysn062m4crhag6swwd2",
+  "label": "Tienen la misma cantidad",
+  "feedback": "Correcto: si multiplicas el numerador y el denominador de 2/3 por 2, obtienes 4/6. Son fracciones equivalentes.",
+  "feedbackEn": "That's right: if you multiply the numerator and denominator of 2/3 by 2, you get 4/6. They are equivalent fractions."
+ },
+ {
+  "exerciseId": "cmulu2ysm062l4crh2brmmqv0",
+  "optionId": "cmulu2ysn062o4crhq9c4r3d7",
+  "label": "Luisa tiene más, porque 3 es menor que 6",
+  "feedback": "Es cierto que los tercios son más grandes que los sextos, pero Mateo tiene más partes. Escribe las dos fracciones con el mismo denominador para compararlas.",
+  "feedbackEn": "It's true that thirds are bigger than sixths, but Mateo has more parts. Write both fractions with the same denominator to compare them."
+ },
+ {
+  "exerciseId": "cmulu2ysm062l4crh2brmmqv0",
+  "optionId": "cmulu2ysn062p4crh268anepg",
+  "label": "No se pueden comparar, porque tienen distinto denominador",
+  "feedback": "Sí se pueden comparar fracciones con distinto denominador: escribe una de ellas con el denominador de la otra.",
+  "feedbackEn": "Fractions with different denominators can be compared: write one of them with the other one's denominator."
+ },
+ {
+  "exerciseId": "cmulu2ysm062l4crh2brmmqv0",
+  "optionId": "cmulu2ysn062n4crhz8vmkswf",
+  "label": "Mateo tiene más, porque 4 es mayor que 2",
+  "feedback": "Los numeradores solos no bastan para comparar: los sextos son más chicos que los tercios. Prueba escribir 2/3 en sextos.",
+  "feedbackEn": "The numerators alone aren't enough to compare: sixths are smaller than thirds. Try writing 2/3 in sixths."
+ },
+ {
+  "exerciseId": "cmulu2yud064j4crhohb4zosu",
+  "optionId": "cmulu2yud064m4crhwken5vml",
+  "label": "Luisa tiene más, porque 3 es menor que 6",
+  "feedback": "Es cierto que los tercios son más grandes que los sextos, pero Mateo tiene más partes. Escribe las dos fracciones con el mismo denominador para compararlas.",
+  "feedbackEn": "It's true that thirds are bigger than sixths, but Mateo has more parts. Write both fractions with the same denominator to compare them."
+ },
+ {
+  "exerciseId": "cmulu2yud064j4crhohb4zosu",
+  "optionId": "cmulu2yud064n4crhvc2bvccc",
+  "label": "No se pueden comparar, porque tienen distinto denominador",
+  "feedback": "Sí se pueden comparar fracciones con distinto denominador: escribe una de ellas con el denominador de la otra.",
+  "feedbackEn": "Fractions with different denominators can be compared: write one of them with the other one's denominator."
+ },
+ {
+  "exerciseId": "cmulu2yud064j4crhohb4zosu",
+  "optionId": "cmulu2yud064k4crhm8wbsis9",
+  "label": "Tienen la misma cantidad",
+  "feedback": "Correcto: si multiplicas el numerador y el denominador de 2/3 por 2, obtienes 4/6. Son fracciones equivalentes.",
+  "feedbackEn": "That's right: if you multiply the numerator and denominator of 2/3 by 2, you get 4/6. They are equivalent fractions."
+ },
+ {
+  "exerciseId": "cmulu2yud064j4crhohb4zosu",
+  "optionId": "cmulu2yud064l4crhcdz3frgc",
+  "label": "Mateo tiene más, porque 4 es mayor que 2",
+  "feedback": "Los numeradores solos no bastan para comparar: los sextos son más chicos que los tercios. Prueba escribir 2/3 en sextos.",
+  "feedbackEn": "The numerators alone aren't enough to compare: sixths are smaller than thirds. Try writing 2/3 in sixths."
+ },
+ {
+  "exerciseId": "cmulu2yu106444crh0k5gihiv",
+  "optionId": "cmulu2yu106454crhzfyvakzr",
+  "label": "Tienen la misma cantidad",
+  "feedback": "Correcto: si multiplicas el numerador y el denominador de 2/3 por 2, obtienes 4/6. Son fracciones equivalentes.",
+  "feedbackEn": "That's right: if you multiply the numerator and denominator of 2/3 by 2, you get 4/6. They are equivalent fractions."
+ },
+ {
+  "exerciseId": "cmulu2yu106444crh0k5gihiv",
+  "optionId": "cmulu2yu106484crhciycc9b1",
+  "label": "No se pueden comparar, porque tienen distinto denominador",
+  "feedback": "Sí se pueden comparar fracciones con distinto denominador: escribe una de ellas con el denominador de la otra.",
+  "feedbackEn": "Fractions with different denominators can be compared: write one of them with the other one's denominator."
+ },
+ {
+  "exerciseId": "cmulu2yu106444crh0k5gihiv",
+  "optionId": "cmulu2yu106464crhhm7deic9",
+  "label": "Mateo tiene más, porque 4 es mayor que 2",
+  "feedback": "Los numeradores solos no bastan para comparar: los sextos son más chicos que los tercios. Prueba escribir 2/3 en sextos.",
+  "feedbackEn": "The numerators alone aren't enough to compare: sixths are smaller than thirds. Try writing 2/3 in sixths."
+ },
+ {
+  "exerciseId": "cmulu2yu106444crh0k5gihiv",
+  "optionId": "cmulu2yu106474crhse91sgsv",
+  "label": "Luisa tiene más, porque 3 es menor que 6",
+  "feedback": "Es cierto que los tercios son más grandes que los sextos, pero Mateo tiene más partes. Escribe las dos fracciones con el mismo denominador para compararlas.",
+  "feedbackEn": "It's true that thirds are bigger than sixths, but Mateo has more parts. Write both fractions with the same denominator to compare them."
+ },
+ {
+  "exerciseId": "cmuli7jcz01bd6krhj0otefjp",
+  "optionId": "cmuli7jcz01be6krhi761yi22",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmuli7jcz01bd6krhj0otefjp",
+  "optionId": "cmuli7jcz01bf6krhhlnz5mfb",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmuli7jcz01bd6krhj0otefjp",
+  "optionId": "cmuli7jcz01bg6krhqu1siksf",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmuli7jcz01bd6krhj0otefjp",
+  "optionId": "cmuli7jcz01bh6krhp9f0px4u",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ytu063z4crhrmfadnwy",
+  "optionId": "cmulu2ytv06404crhcebkgowz",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2ytu063z4crhrmfadnwy",
+  "optionId": "cmulu2ytv06414crhmiqog3ua",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2ytu063z4crhrmfadnwy",
+  "optionId": "cmulu2ytv06424crhxg1fpsg7",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ytu063z4crhrmfadnwy",
+  "optionId": "cmulu2ytv06434crhtl5p18xk",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ysh062g4crh2c78mlr6",
+  "optionId": "cmulu2ysh062h4crhndowmnna",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2ysh062g4crh2c78mlr6",
+  "optionId": "cmulu2ysh062i4crhvs8ivpg5",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2ysh062g4crh2c78mlr6",
+  "optionId": "cmulu2ysh062j4crho37e2fjr",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ysh062g4crh2c78mlr6",
+  "optionId": "cmulu2ysh062k4crhrwix0r3n",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yu9064e4crhko4900hf",
+  "optionId": "cmulu2yua064f4crhrlbniq8u",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2yu9064e4crhko4900hf",
+  "optionId": "cmulu2yua064g4crha8htl8dx",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2yu9064e4crhko4900hf",
+  "optionId": "cmulu2yua064h4crh5jyhbvfq",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yu9064e4crhko4900hf",
+  "optionId": "cmulu2yua064i4crhqfy6h3lg",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ysq062q4crhljy561uf",
+  "optionId": "cmulu2ysr062r4crhbv2jv2dk",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2ysq062q4crhljy561uf",
+  "optionId": "cmulu2ysr062s4crh4x1rnuoz",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2ysq062q4crhljy561uf",
+  "optionId": "cmulu2ysr062t4crh5av4ffo4",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ysq062q4crhljy561uf",
+  "optionId": "cmulu2ysr062u4crhemvdb3nj",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yre06174crhsz5zx4wi",
+  "optionId": "cmulu2yrf06184crh3hvw8z1f",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2yre06174crhsz5zx4wi",
+  "optionId": "cmulu2yrf06194crh72hewe3a",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2yre06174crhsz5zx4wi",
+  "optionId": "cmulu2yrf061a4crhfol354w0",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yre06174crhsz5zx4wi",
+  "optionId": "cmulu2yrf061b4crhf0xe8gqq",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yrr061m4crh77q5wt6r",
+  "optionId": "cmulu2yrr061n4crh2grvynaf",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2yrr061m4crh77q5wt6r",
+  "optionId": "cmulu2yrr061o4crh8x5x6e7g",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2yrr061m4crh77q5wt6r",
+  "optionId": "cmulu2yrr061p4crhko3mfonn",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yrr061m4crh77q5wt6r",
+  "optionId": "cmulu2yrr061q4crhhyb75qvd",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2yt606354crhj74jeeec",
+  "optionId": "cmulu2yt706364crhse1s9r0y",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2yt606354crhj74jeeec",
+  "optionId": "cmulu2yt706374crhh6tnjzxb",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2yt606354crhj74jeeec",
+  "optionId": "cmulu2yt706384crh16cn6uui",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2yt606354crhj74jeeec",
+  "optionId": "cmulu2yt706394crh0zdmztrp",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ytl063p4crhvxffnkhy",
+  "optionId": "cmulu2ytm063q4crhu4m06dms",
+  "label": "3/4",
+  "feedback": "Correcto: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, así que 9/12 es igual a 3/4.",
+  "feedbackEn": "That's right: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, so 9/12 is equal to 3/4."
+ },
+ {
+  "exerciseId": "cmulu2ytl063p4crhvxffnkhy",
+  "optionId": "cmulu2ytm063r4crh2qs1rum1",
+  "label": "9/4",
+  "feedback": "Si cambias el denominador, también tienes que cambiar el numerador: divide los dos por el mismo número.",
+  "feedbackEn": "If you change the denominator, you have to change the numerator too: divide both by the same number."
+ },
+ {
+  "exerciseId": "cmulu2ytl063p4crhvxffnkhy",
+  "optionId": "cmulu2ytm063s4crhpm6petbf",
+  "label": "1/4",
+  "feedback": "1/4 es la otra parte. Vuelve a leer la pregunta: ¿por cuál parte te preguntan?",
+  "feedbackEn": "1/4 is the other part. Read the question again: which part is it asking about?"
+ },
+ {
+  "exerciseId": "cmulu2ytl063p4crhvxffnkhy",
+  "optionId": "cmulu2ytm063t4crh9mnhgl8t",
+  "label": "4/3",
+  "feedback": "Revisa el orden: la pregunta pide denominador 4, así que el 4 va abajo.",
+  "feedbackEn": "Check the order: the question asks for a denominator of 4, so the 4 goes on the bottom."
+ },
+ {
+  "exerciseId": "cmulu2ys1061w4crhl695ci1f",
+  "optionId": "cmulu2ys2061x4crh947f8w9i",
+  "label": "5/6",
+  "feedback": "Correcto: con denominador 12, 5/6 = 10/12 y 3/4 = 9/12, así que 5/6 es mayor.",
+  "feedbackEn": "That's right: with a denominator of 12, 5/6 = 10/12 and 3/4 = 9/12, so 5/6 is greater."
+ },
+ {
+  "exerciseId": "cmulu2ys1061w4crhl695ci1f",
+  "optionId": "cmulu2ys2061y4crhic9ded0p",
+  "label": "3/4",
+  "feedback": "Escribe las dos fracciones con el mismo denominador, por ejemplo 12, y compara los numeradores.",
+  "feedbackEn": "Write both fractions with the same denominator, for example 12, and compare the numerators."
+ },
+ {
+  "exerciseId": "cmulu2ys1061w4crhl695ci1f",
+  "optionId": "cmulu2ys2061z4crhprvlggr2",
+  "label": "Son iguales",
+  "feedback": "Escríbelas con el mismo denominador: ¿quedan con el mismo numerador?",
+  "feedbackEn": "Write them with the same denominator: do they end up with the same numerator?"
+ },
+ {
+  "exerciseId": "cmulu2ys1061w4crhl695ci1f",
+  "optionId": "cmulu2ys206204crhxa0qp5lp",
+  "label": "No se pueden comparar",
+  "feedback": "Sí se pueden comparar fracciones con distinto denominador: busca un denominador común.",
+  "feedbackEn": "Fractions with different denominators can be compared: find a common denominator."
+ },
+ {
+  "exerciseId": "cmuli7jcn01ay6krhbr7oz8t9",
+  "optionId": "cmuli7jcn01az6krhy8apvahz",
+  "label": "5/6",
+  "feedback": "Correcto: con denominador 12, 5/6 = 10/12 y 3/4 = 9/12, así que 5/6 es mayor.",
+  "feedbackEn": "That's right: with a denominator of 12, 5/6 = 10/12 and 3/4 = 9/12, so 5/6 is greater."
+ },
+ {
+  "exerciseId": "cmuli7jcn01ay6krhbr7oz8t9",
+  "optionId": "cmuli7jcn01b06krh04vw9b72",
+  "label": "3/4",
+  "feedback": "Escribe las dos fracciones con el mismo denominador, por ejemplo 12, y compara los numeradores.",
+  "feedbackEn": "Write both fractions with the same denominator, for example 12, and compare the numerators."
+ },
+ {
+  "exerciseId": "cmuli7jcn01ay6krhbr7oz8t9",
+  "optionId": "cmuli7jcn01b16krhu17vq5ea",
+  "label": "Son iguales",
+  "feedback": "Escríbelas con el mismo denominador: ¿quedan con el mismo numerador?",
+  "feedbackEn": "Write them with the same denominator: do they end up with the same numerator?"
+ },
+ {
+  "exerciseId": "cmuli7jcn01ay6krhbr7oz8t9",
+  "optionId": "cmuli7jcn01b26krhtnc20qeu",
+  "label": "No se pueden comparar",
+  "feedback": "Sí se pueden comparar fracciones con distinto denominador: busca un denominador común.",
+  "feedbackEn": "Fractions with different denominators can be compared: find a common denominator."
+ },
+ {
+  "exerciseId": "cmuli7jbj01a46krh1fhdakwj",
+  "optionId": "cmuli7jbj01a56krhb8sf1lvq",
+  "label": "2/4",
+  "feedback": "Correcto: 1 × 2 = 2 y 2 × 2 = 4, así que 2/4 es equivalente a 1/2.",
+  "feedbackEn": "That's right: 1 × 2 = 2 and 2 × 2 = 4, so 2/4 is equivalent to 1/2."
+ },
+ {
+  "exerciseId": "cmuli7jbj01a46krh1fhdakwj",
+  "optionId": "cmuli7jbj01a66krhsdy5si1p",
+  "label": "1/4",
+  "feedback": "En 1/4 solo cambió el denominador. Para que sea equivalente, multiplica los dos por el mismo número.",
+  "feedbackEn": "In 1/4 only the denominator changed. To get an equivalent fraction, multiply both by the same number."
+ },
+ {
+  "exerciseId": "cmuli7jbj01a46krh1fhdakwj",
+  "optionId": "cmuli7jbj01a76krhldxlugo3",
+  "label": "2/3",
+  "feedback": "En 2/3 el numerador y el denominador no se multiplicaron por el mismo número.",
+  "feedbackEn": "In 2/3, the numerator and the denominator weren't multiplied by the same number."
+ },
+ {
+  "exerciseId": "cmuli7jbj01a46krh1fhdakwj",
+  "optionId": "cmuli7jbj01a86krho2sr69z5",
+  "label": "3/5",
+  "feedback": "3/5 es más que la mitad: 3 es más que la mitad de 5.",
+  "feedbackEn": "3/5 is more than half: 3 is more than half of 5."
+ },
+ {
+  "exerciseId": "cmuli7jbm01a96krhwkanmaql",
+  "optionId": "cmuli7jbn01aa6krh4jyo620i",
+  "label": "6/8",
+  "feedback": "Correcto: 3 × 2 = 6 y 4 × 2 = 8, así que 6/8 es equivalente a 3/4.",
+  "feedbackEn": "That's right: 3 × 2 = 6 and 4 × 2 = 8, so 6/8 is equivalent to 3/4."
+ },
+ {
+  "exerciseId": "cmuli7jbm01a96krhwkanmaql",
+  "optionId": "cmuli7jbn01ab6krhypqnk31o",
+  "label": "4/5",
+  "feedback": "Sumar 1 arriba y abajo no da una fracción equivalente: hay que multiplicar o dividir los dos por el mismo número.",
+  "feedbackEn": "Adding 1 to the top and bottom doesn't give an equivalent fraction: you have to multiply or divide both by the same number."
+ },
+ {
+  "exerciseId": "cmuli7jbm01a96krhwkanmaql",
+  "optionId": "cmuli7jbn01ac6krhsyi96w7d",
+  "label": "3/8",
+  "feedback": "En 3/8 solo cambió el denominador, y la fracción se achicó.",
+  "feedbackEn": "In 3/8 only the denominator changed, so the fraction got smaller."
+ },
+ {
+  "exerciseId": "cmuli7jbm01a96krhwkanmaql",
+  "optionId": "cmuli7jbn01ad6krhv8hoyyvr",
+  "label": "6/4",
+  "feedback": "En 6/4 solo cambió el numerador. Multiplica los dos por el mismo número.",
+  "feedbackEn": "In 6/4 only the numerator changed. Multiply both by the same number."
+ },
+ {
+  "exerciseId": "cmuli7jcg01at6krhvp0yoxkt",
+  "optionId": "cmuli7jch01au6krhidfkhk6t",
+  "label": "1/8, 1/4, 1/2",
+  "feedback": "Correcto: con numerador 1, más partes significa partes más chicas: 1/8 < 1/4 < 1/2.",
+  "feedbackEn": "That's right: with a numerator of 1, more parts means smaller parts: 1/8 < 1/4 < 1/2."
+ },
+ {
+  "exerciseId": "cmuli7jcg01at6krhvp0yoxkt",
+  "optionId": "cmuli7jch01av6krhjyb2t4re",
+  "label": "1/2, 1/4, 1/8",
+  "feedback": "Ese orden va de mayor a menor. La pregunta pide de menor a mayor.",
+  "feedbackEn": "That order goes from greatest to least. The question asks for least to greatest."
+ },
+ {
+  "exerciseId": "cmuli7jcg01at6krhvp0yoxkt",
+  "optionId": "cmuli7jch01aw6krhc4mgl2gb",
+  "label": "1/4, 1/8, 1/2",
+  "feedback": "Compara 1/4 y 1/8: ¿qué parte es más chica, la de una barra cortada en 4 o la de una cortada en 8?",
+  "feedbackEn": "Compare 1/4 and 1/8: which part is smaller, one from a bar cut into 4 or one from a bar cut into 8?"
+ },
+ {
+  "exerciseId": "cmuli7jcg01at6krhvp0yoxkt",
+  "optionId": "cmuli7jch01ax6krhj9amlj4z",
+  "label": "1/8, 1/2, 1/4",
+  "feedback": "Revisa 1/2 y 1/4: la mitad es más grande que un cuarto.",
+  "feedbackEn": "Check 1/2 and 1/4: a half is bigger than a fourth."
+ },
+ {
+  "exerciseId": "cmuli7jc601ao6krhpchwmfpk",
+  "optionId": "cmuli7jc901ap6krhih6fzofu",
+  "label": "8",
+  "feedback": "Correcto: 5 × 4 = 20, así que el numerador también se multiplica por 4: 2 × 4 = 8.",
+  "feedbackEn": "That's right: 5 × 4 = 20, so the numerator is also multiplied by 4: 2 × 4 = 8."
+ },
+ {
+  "exerciseId": "cmuli7jc601ao6krhpchwmfpk",
+  "optionId": "cmuli7jc901aq6krhkupl8t8v",
+  "label": "17",
+  "feedback": "Para pasar de 5 a 20 se multiplica, no se suma. Haz lo mismo con el numerador.",
+  "feedbackEn": "To go from 5 to 20 you multiply, you don't add. Do the same to the numerator."
+ },
+ {
+  "exerciseId": "cmuli7jc601ao6krhpchwmfpk",
+  "optionId": "cmuli7jc901ar6krh1vdyly5r",
+  "label": "10",
+  "feedback": "Revisa la cuenta: ¿por cuánto se multiplicó el 5 para llegar a 20? Multiplica el 2 por ese mismo número.",
+  "feedbackEn": "Check your work: what was 5 multiplied by to get 20? Multiply 2 by that same number."
+ },
+ {
+  "exerciseId": "cmuli7jc601ao6krhpchwmfpk",
+  "optionId": "cmuli7jc901as6krheuhakzq4",
+  "label": "4",
+  "feedback": "5 × 2 no es 20. ¿Por cuánto hay que multiplicar el 5 para llegar a 20?",
+  "feedbackEn": "5 × 2 isn't 20. What do you need to multiply 5 by to get 20?"
+ },
+ {
+  "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+  "optionId": "cmuli7jc301ak6krhiu73c17j",
+  "label": "3/5",
+  "feedback": "Correcto: tienen el mismo numerador, y los quintos son más grandes que los octavos, así que 3/5 es mayor.",
+  "feedbackEn": "That's right: they have the same numerator, and fifths are bigger than eighths, so 3/5 is greater."
+ },
+ {
+  "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+  "optionId": "cmuli7jc301al6krhrt3drh3q",
+  "label": "3/8",
+  "feedback": "Un denominador más grande no hace más grande la fracción: los octavos son más chicos que los quintos.",
+  "feedbackEn": "A bigger denominator doesn't make the fraction bigger: eighths are smaller than fifths."
+ },
+ {
+  "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+  "optionId": "cmuli7jc301am6krhs3tso5zg",
+  "label": "Son iguales",
+  "feedback": "Tienen el mismo numerador, pero las partes no son del mismo tamaño.",
+  "feedbackEn": "They have the same numerator, but the parts aren't the same size."
+ },
+ {
+  "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+  "optionId": "cmuli7jc301an6krhbhnp34h1",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede: con el mismo numerador, compara el tamaño de las partes.",
+  "feedbackEn": "Yes, we can tell: with the same numerator, compare the size of the parts."
  }
 ]

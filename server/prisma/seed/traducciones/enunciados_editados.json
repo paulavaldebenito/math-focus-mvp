@@ -2571,5 +2571,233 @@
    "old": "All have 1 part, but the whole is cut into a different number of parts. The more parts, the smaller each one is.",
    "new": "They all have a numerator of 1, but the whole is cut into a different number of parts. The more parts there are, the smaller each one is."
   }
+ },
+ {
+  "exerciseId": "cmulu2yte063f4crh3to5xagx",
+  "grade": 5,
+  "prompt": {
+   "old": "Un huerto se divide en 8 partes iguales y se cosechan 3. ¿Qué fracción del huerto se cosechó?",
+   "new": "Un huerto se divide en 8 partes iguales y se cosechan 3. ¿Qué fracción del huerto se cosechó?"
+  },
+  "promptEn": {
+   "old": "A garden is divided into 8 equal parts and 3 are harvested. What fraction of the garden was harvested?",
+   "new": "A garden is divided into 8 equal parts and 3 are harvested. What fraction of the garden was harvested?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator, how many parts you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yri061c4crhht3wxt1v",
+  "grade": 5,
+  "prompt": {
+   "old": "Un saco de alimento para caballos se divide en 8 raciones iguales y se usan 3. ¿Qué fracción del saco se usó?",
+   "new": "Un saco de alimento para caballos se divide en 8 raciones iguales y se usan 3. ¿Qué fracción del saco se usó?"
+  },
+  "promptEn": {
+   "old": "A sack of horse feed is divided into 8 equal portions and 3 are used. What fraction of the sack was used?",
+   "new": "A sack of horse feed is divided into 8 equal portions and 3 are used. What fraction of the sack was used?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el saco; el numerador, cuántas raciones te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the sack was divided into; the numerator, how many portions you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2ysv062v4crh5p5whalg",
+  "grade": 5,
+  "prompt": {
+   "old": "Una tarta se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la tarta se comió?",
+   "new": "Una tarta se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la tarta se comió?"
+  },
+  "promptEn": {
+   "old": "A pie is divided into 8 equal parts and 3 are eaten. What fraction of the pie was eaten?",
+   "new": "A pie is divided into 8 equal parts and 3 are eaten. What fraction of the pie was eaten?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator tells how many equal parts the whole was divided into; the numerator, how many parts you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2ys906264crhzflgs0qd",
+  "grade": 5,
+  "prompt": {
+   "old": "Un afiche del sistema solar se divide en 8 partes iguales y se pintan 3. ¿Qué fracción del afiche se pintó?",
+   "new": "Un afiche del sistema solar se divide en 8 partes iguales y se pintan 3. ¿Qué fracción del afiche se pintó?"
+  },
+  "promptEn": {
+   "old": "A solar system poster is divided into 8 equal parts and 3 are painted. What fraction of the poster was painted?",
+   "new": "A solar system poster is divided into 8 equal parts and 3 are painted. What fraction of the poster was painted?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator, how many parts you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yu406494crhcy55jn9c",
+  "grade": 5,
+  "prompt": {
+   "old": "Una ruta se divide en 8 tramos iguales y se recorren 3. ¿Qué fracción de la ruta se recorrió?",
+   "new": "Una ruta se divide en 8 tramos iguales y se recorren 3. ¿Qué fracción de la ruta se recorrió?"
+  },
+  "promptEn": {
+   "old": "A route is divided into 8 equal sections and 3 of them are traveled. What fraction of the route was traveled?",
+   "new": "A route is divided into 8 equal sections and 3 of them are traveled. What fraction of the route was traveled?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió la ruta; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator tells how many equal parts the route was divided into; the numerator, how many parts you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yr6060x4crhjgamlb9e",
+  "grade": 5,
+  "prompt": {
+   "old": "Después del partido, una pizza se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la pizza se comió?",
+   "new": "Después del partido, una pizza se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la pizza se comió?"
+  },
+  "promptEn": {
+   "old": "After the match, a pizza is divided into 8 equal parts and 3 are eaten. What fraction of the pizza was eaten?",
+   "new": "After the game, a pizza is divided into 8 equal parts and 3 are eaten. What fraction of the pizza was eaten?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator, how many parts you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yru061r4crhj5ioe6vv",
+  "grade": 5,
+  "prompt": {
+   "old": "Un mapa se divide en 8 zonas iguales y ya se exploraron 3. ¿Qué fracción del mapa se exploró?",
+   "new": "Un mapa se divide en 8 zonas iguales y ya se exploraron 3. ¿Qué fracción del mapa se exploró?"
+  },
+  "promptEn": {
+   "old": "A map is divided into 8 equal zones and 3 have already been explored. What fraction of the map has been explored?",
+   "new": "A map is divided into 8 equal zones and 3 have already been explored. What fraction of the map has been explored?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator says how many parts you are interested in.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jbu01ae6krhcd5crh10",
+  "grade": 5,
+  "prompt": {
+   "old": "Una barra de chocolate se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la barra se comió?",
+   "new": "Una barra de chocolate se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la barra se comió?"
+  },
+  "promptEn": {
+   "old": "A chocolate bar is divided into 8 equal parts and 3 are eaten. What fraction of the bar was eaten?",
+   "new": "A chocolate bar is divided into 8 equal parts and 3 are eaten. What fraction of the bar was eaten?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the whole was divided into; the numerator says how many parts you are interested in.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2ytr063u4crhem7lswqc",
+  "grade": 5,
+  "prompt": {
+   "old": "Una ruta de ciclismo se divide en 8 tramos iguales y se recorren 3. ¿Qué fracción de la ruta se recorrió?",
+   "new": "Una ruta de ciclismo se divide en 8 tramos iguales y se recorren 3. ¿Qué fracción de la ruta se recorrió?"
+  },
+  "promptEn": {
+   "old": "A cycling route is divided into 8 equal stretches and 3 are ridden. What fraction of the route was ridden?",
+   "new": "A cycling route is divided into 8 equal stretches and 3 have been ridden. What fraction of the route has been ridden?"
+  },
+  "procedureNote": {
+   "old": "El denominador dice en cuántas partes iguales se dividió la ruta; el numerador, cuántas partes te interesan.",
+   "new": "El denominador dice en cuántas partes iguales se dividió el entero; el numerador, cuántas de esas partes te pregunta el problema."
+  },
+  "procedureNoteEn": {
+   "old": "The denominator says how many equal parts the route was divided into; the numerator, how many parts you care about.",
+   "new": "The denominator tells you how many equal parts the whole is divided into, and the numerator tells you how many of those parts the question is about."
+  }
+ },
+ {
+  "exerciseId": "cmulu2yt106304crhy3gbqv5z",
+  "grade": 5,
+  "prompt": {
+   "old": "Ana comió 3/8 de una tarta y Beto comió 1/2 de otra tarta igual. ¿Quién comió más?",
+   "new": "Ana comió 3/8 de una tarta y Beto comió 1/2 de otra tarta igual. ¿Quién comió más?"
+  },
+  "promptEn": {
+   "old": "Ana ate 3/8 of a pie and Beto ate 1/2 of another identical pie. Who ate more?",
+   "new": "Ana ate 3/8 of a pie and Beto ate 1/2 of another identical pie. Who ate more?"
+  },
+  "procedureNoteEn": {
+   "old": "Since the pies are identical, you can compare the fractions. Write 1/2 with denominator 8 to see them in the same unit.",
+   "new": "Since the pies are identical, you can compare the fractions. Write 1/2 with a denominator of 8 so both are in the same unit."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jcg01at6krhvp0yoxkt",
+  "grade": 5,
+  "prompt": {
+   "old": "¿Qué lista ordena las fracciones de menor a mayor?",
+   "new": "¿Qué lista ordena de menor a mayor las fracciones 1/2, 1/4 y 1/8?"
+  },
+  "promptEn": {
+   "old": "Which list orders the fractions from least to greatest?",
+   "new": "Which list orders the fractions 1/2, 1/4 and 1/8 from least to greatest?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jc201aj6krhso1rzfyt",
+  "grade": 5,
+  "prompt": {
+   "old": "¿Cuál es mayor: 3/8 o 3/5?",
+   "new": "¿Cuál es mayor: 3/8 o 3/5?"
+  },
+  "promptEn": {
+   "old": "Which is greater: 3/8 or 3/5?",
+   "new": "Which is greater: 3/8 or 3/5?"
+  },
+  "procedureNote": {
+   "old": "Imagina dos pizzas iguales: una partida en 8 trozos y otra en 5. ¿En cuál son más grandes los trozos?",
+   "new": "Imagina dos barras iguales: una cortada en 8 partes y otra en 5. ¿En cuál son más grandes las partes?"
+  },
+  "procedureNoteEn": {
+   "old": "Imagine two equal pizzas: one cut into 8 pieces and the other into 5. In which are the pieces bigger?",
+   "new": "Picture two identical bars: one cut into 8 parts and the other into 5. In which one are the parts bigger?"
+  }
  }
 ]
