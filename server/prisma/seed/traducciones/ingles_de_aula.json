@@ -7377,7 +7377,7 @@
   {
    "exerciseId": "cmulu2zpo06zs4crhiynqem8f",
    "grade": 6,
-   "prompt": "Una pastelería hornea 80 galletas y el 50% son de chocolate. ¿Cuántas galletas de chocolate son?",
+   "prompt": "Una pastelería hornea 80 galletas y el 50% son de chocolate. ¿Cuántas galletas son de chocolate?",
    "procedureNoteEn": {
     "old": "50% is half. Share the number of cookies into 2 equal parts.",
     "new": "50% is half. Split the number of cookies into 2 equal parts."
@@ -7404,10 +7404,13 @@
   {
    "exerciseId": "cmulu2zm906w14crhdwin5ipy",
    "grade": 6,
-   "prompt": "El mapa de una cancha se dibuja en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados de amarillo. ¿Qué porcentaje de la cuadrícula está pintado?",
+   "prompt": "El dibujo de una cancha se hace en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados de amarillo. ¿Qué porcentaje de la cuadrícula está pintado?",
    "promptEn": {
-    "old": "The map of a pitch is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?",
-    "new": "The map of a field is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?"
+    "old": [
+     "The map of a pitch is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?",
+     "The map of a field is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?"
+    ],
+    "new": "A drawing of a soccer field is made on a grid of 100 squares, and 35 squares are painted yellow. What percentage of the grid is painted?"
    }
   },
   {
@@ -7500,10 +7503,13 @@
   {
    "exerciseId": "cmulu2zqj070r4crht3dkjw7k",
    "grade": 6,
-   "prompt": "Una caleta descarga 350 kilos de pescado y el 10% se dona a un comedor. ¿Cuántos kilos se donan?",
+   "prompt": "En una caleta se descargan 350 kilos de pescado y el 10% se dona a un comedor. ¿Cuántos kilos se donan?",
    "promptEn": {
-    "old": "A cove unloads 350 kilos of fish and 10% is donated to a soup kitchen. How many kilos are donated?",
-    "new": "A cove unloads 350 kilograms of fish and 10% is donated to a soup kitchen. How many kilograms are donated?"
+    "old": [
+     "A cove unloads 350 kilos of fish and 10% is donated to a soup kitchen. How many kilos are donated?",
+     "A cove unloads 350 kilograms of fish and 10% is donated to a soup kitchen. How many kilograms are donated?"
+    ],
+    "new": "At a fishing cove, 350 kilograms of fish are unloaded and 10% is donated to a soup kitchen. How many kilograms are donated?"
    },
    "procedureNoteEn": {
     "old": "10% is a tenth. Think of sharing the number into 10 equal parts.",
@@ -8919,8 +8925,11 @@
    "grade": 6,
    "prompt": "Una polera con un dinosaurio dibujado cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
    "promptEn": {
-    "old": "A T-shirt with a dinosaur on it costs $8,000 and has a 25% discount. How much must be paid for the T-shirt?",
-    "new": "A T-shirt with a dinosaur on it costs 8,000 pesos and has a 25% discount. How much must be paid for the T-shirt?"
+    "old": [
+     "A T-shirt with a dinosaur on it costs $8,000 and has a 25% discount. How much must be paid for the T-shirt?",
+     "A T-shirt with a dinosaur on it costs 8,000 pesos and has a 25% discount. How much must be paid for the T-shirt?"
+    ],
+    "new": "A T-shirt with a dinosaur on it costs 8,000 pesos and has a 25% discount. How much do you have to pay for the T-shirt?"
    }
   },
   {

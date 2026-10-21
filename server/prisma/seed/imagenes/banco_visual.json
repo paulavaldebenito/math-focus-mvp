@@ -38044,13 +38044,12 @@
         "en": "In a grid of 100 squares, 35 squares are painted. What percentage of the grid is painted?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmuli7jkw01jb6krhdweqj845__grid.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jkw01jb6krhdweqj845__grid.svg",
+      "src": "/exercise-images/6b__cmuli7jkw01jb6krhdweqj845__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una cuadrícula de 100 cuadritos hay 35 cuadritos pintados. ¿Qué porcentaje de la cuadrícula está pintado?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a grid of 100 squares, 35 squares are painted. What percentage of the grid is painted?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados. En una cuadrícula de 100 cuadritos hay 35 cuadritos pintados. ¿Qué porcentaje de la cuadrícula está pintado?",
+        "en": "A grid of 100 squares with 35 shaded. In a grid of 100 squares, 35 squares are painted. What percentage of the grid is painted?"
       },
       "letters": []
     },
@@ -38062,26 +38061,14 @@
         "en": "What percentage does the fraction 1/2 represent?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jl001jg6krh5kegrq6k__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jl001jg6krh5kegrq6k__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jl001jg6krh5kegrq6k__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Qué porcentaje representa la fracción 1/2?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. What percentage does the fraction 1/2 represent?"
+        "es": "Una barra dividida en 2 partes iguales, con 1 pintada. ¿Qué porcentaje representa la fracción 1/2?",
+        "en": "A bar divided into 2 equal parts, with 1 shaded. What percentage does the fraction 1/2 represent?"
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jl301jl6krh5twuqfj4",
@@ -38091,13 +38078,12 @@
         "en": "What is 50% of 80?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmuli7jl301jl6krh5twuqfj4__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jl301jl6krh5twuqfj4__percent_partition.svg",
+      "src": "/exercise-images/6b__cmuli7jl301jl6krh5twuqfj4__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál es el 50% de 80?",
-        "en": "Precise visual support constructed from the data given in the prompt. What is 50% of 80?"
+        "es": "Cuadrícula de 100 cuadritos con 50 pintados: 50%. ¿Cuál es el 50% de 80?",
+        "en": "A grid of 100 squares with 50 shaded: 50%. What is 50% of 80?"
       },
       "letters": []
     },
@@ -38109,26 +38095,14 @@
         "en": "Write the fraction 3/5 as a percentage."
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jl801jq6krhhr9qurrc__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jl801jq6krhhr9qurrc__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jl801jq6krhhr9qurrc__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Expresa la fracción 3/5 como porcentaje.",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Write the fraction 3/5 as a percentage."
+        "es": "Una barra dividida en 5 partes iguales, con 3 pintadas. Expresa la fracción 3/5 como porcentaje.",
+        "en": "A bar divided into 5 equal parts, with 3 shaded. Write the fraction 3/5 as a percentage."
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/5",
-            "en": "3/5"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jlc01jv6krhutoyuohm",
@@ -38138,13 +38112,12 @@
         "en": "What is 25% of 60?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmuli7jlc01jv6krhutoyuohm__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jlc01jv6krhutoyuohm__percent_partition.svg",
+      "src": "/exercise-images/6b__cmuli7jlc01jv6krhutoyuohm__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál es el 25% de 60?",
-        "en": "Precise visual support constructed from the data given in the prompt. What is 25% of 60?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. ¿Cuál es el 25% de 60?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. What is 25% of 60?"
       },
       "letters": []
     },
@@ -38156,52 +38129,14 @@
         "en": "What is 10% of 350?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmuli7jli01k06krhl6i51jzx__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jli01k06krhl6i51jzx__percent_partition.svg",
+      "src": "/exercise-images/6b__cmuli7jli01k06krhl6i51jzx__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál es el 10% de 350?",
-        "en": "Precise visual support constructed from the data given in the prompt. What is 10% of 350?"
+        "es": "Cuadrícula de 100 cuadritos con 10 pintados: 10%. ¿Cuál es el 10% de 350?",
+        "en": "A grid of 100 squares with 10 shaded: 10%. What is 10% of 350?"
       },
       "letters": []
-    },
-    {
-      "exerciseId": "cmuli7jlm01k56krh6m1fhiar",
-      "grade": 6,
-      "prompt": {
-        "es": "¿Cuál de estos valores es el mayor?",
-        "en": "Which of these values is the greatest?"
-      },
-      "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jlm01k56krh6m1fhiar__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jlm01k56krh6m1fhiar__fractions.svg",
-      "width": 1000,
-      "height": 650,
-      "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuál de estos valores es el mayor?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Which of these values is the greatest?"
-      },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/5",
-            "en": "3/5"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "7/10",
-            "en": "7/10"
-          }
-        }
-      ]
     },
     {
       "exerciseId": "cmuli7jlr01ka6krhzlyq5mpg",
@@ -38211,13 +38146,12 @@
         "en": "A T-shirt costs $8,000 and has a 25% discount. How much do you have to pay for the T-shirt?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmuli7jlr01ka6krhzlyq5mpg__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jlr01ka6krhzlyq5mpg__percent_partition.svg",
+      "src": "/exercise-images/6b__cmuli7jlr01ka6krhzlyq5mpg__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una polera cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
-        "en": "Precise visual support constructed from the data given in the prompt. A T-shirt costs $8,000 and has a 25% discount. How much do you have to pay for the T-shirt?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Una polera cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A T-shirt costs $8,000 and has a 25% discount. How much do you have to pay for the T-shirt?"
       },
       "letters": []
     },
@@ -38229,13 +38163,12 @@
         "en": "In a class of 40 students, 18 are girls. What percentage of the class are girls?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmuli7jlv01kf6krhvnjrmo1r__grid.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jlv01kf6krhvnjrmo1r__grid.svg",
+      "src": "/exercise-images/6b__cmuli7jlv01kf6krhvnjrmo1r__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un curso de 40 estudiantes, 18 son niñas. ¿Qué porcentaje del curso son niñas?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a class of 40 students, 18 are girls. What percentage of the class are girls?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un curso de 40 estudiantes, 18 son niñas. ¿Qué porcentaje del curso son niñas?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a class of 40 students, 18 are girls. What percentage of the class are girls?"
       },
       "letters": []
     },
@@ -38247,13 +38180,12 @@
         "en": "Camila had $12,000. She spent 35% on a gift. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmuli7jm001kk6krh1b67odum__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jm001kk6krh1b67odum__percent_partition.svg",
+      "src": "/exercise-images/6b__cmuli7jm001kk6krh1b67odum__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en un regalo. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on a gift. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en un regalo. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on a gift. How much money does she have left?"
       },
       "letters": []
     },
@@ -38265,13 +38197,12 @@
         "en": "The map of a pitch is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zm906w14crhdwin5ipy__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zm906w14crhdwin5ipy__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zm906w14crhdwin5ipy__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. El mapa de una cancha se dibuja en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados de amarillo. ¿Qué porcentaje de la cuadrícula está pintado?",
-        "en": "Precise visual support constructed from the data given in the prompt. The map of a pitch is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados. El dibujo de una cancha se hace en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados de amarillo. ¿Qué porcentaje de la cuadrícula está pintado?",
+        "en": "A grid of 100 squares with 35 shaded. A drawing of a soccer field is made on a grid of 100 squares, and 35 squares are painted yellow. What percentage of the grid is painted?"
       },
       "letters": []
     },
@@ -38283,13 +38214,12 @@
         "en": "A team made 60 passes in a match and 25% were long passes. How many long passes did it make?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zme06w64crhyn6o93nv__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zme06w64crhyn6o93nv__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zme06w64crhyn6o93nv__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un equipo dio 60 pases en un partido y el 25% fueron pases largos. ¿Cuántos pases largos dio?",
-        "en": "Precise visual support constructed from the data given in the prompt. A team made 60 passes in a match and 25% were long passes. How many long passes did it make?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Un equipo dio 60 pases en un partido y el 25% fueron pases largos. ¿Cuántos pases largos dio?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A team made 60 passes in a game and 25% were long passes. How many long passes did the team make?"
       },
       "letters": []
     },
@@ -38301,13 +38231,12 @@
         "en": "A club has 350 members and 10% are junior members. How many junior members are there?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zmi06wb4crhjotpdweu__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zmi06wb4crhjotpdweu__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zmi06wb4crhjotpdweu__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un club tiene 350 socios y el 10% son socios juveniles. ¿Cuántos socios juveniles hay?",
-        "en": "Precise visual support constructed from the data given in the prompt. A club has 350 members and 10% are junior members. How many junior members are there?"
+        "es": "Cuadrícula de 100 cuadritos con 10 pintados: 10%. Un club tiene 350 socios y el 10% son socios juveniles. ¿Cuántos socios juveniles hay?",
+        "en": "A grid of 100 squares with 10 shaded: 10%. A club has 350 members and 10% are junior members. How many junior members are there?"
       },
       "letters": []
     },
@@ -38319,26 +38248,14 @@
         "en": "A team won 3/5 of its matches. Write that fraction as a percentage."
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zmn06wg4crhyg2g6vsl__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zmn06wg4crhyg2g6vsl__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zmn06wg4crhyg2g6vsl__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 270,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un equipo ganó 3/5 de sus partidos. Expresa esa fracción como porcentaje.",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A team won 3/5 of its matches. Write that fraction as a percentage."
+        "es": "Una barra dividida en 5 partes iguales, con 3 pintadas. Un equipo ganó 3/5 de sus partidos. Expresa esa fracción como porcentaje.",
+        "en": "A bar divided into 5 equal parts, with 3 shaded. A team won 3/5 of its matches. Write that fraction as a percentage."
       },
-      "letters": [
-        "A"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/5",
-            "en": "3/5"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zmr06wl4crhrtg21x3r",
@@ -38348,13 +38265,12 @@
         "en": "A football jersey costs $8,000 and has a 25% discount. How much do you have to pay for the jersey?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zmr06wl4crhrtg21x3r__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zmr06wl4crhrtg21x3r__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zmr06wl4crhrtg21x3r__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una camiseta de fútbol cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la camiseta?",
-        "en": "Precise visual support constructed from the data given in the prompt. A football jersey costs $8,000 and has a 25% discount. How much do you have to pay for the jersey?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Una camiseta de fútbol cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la camiseta?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A football jersey costs $8,000 and has a 25% discount. How much do you have to pay for the jersey?"
       },
       "letters": []
     },
@@ -38366,13 +38282,12 @@
         "en": "In a class of 40 students, 18 play football at recess. What percentage of the class plays football at recess?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zmx06wq4crh53kn52x6__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zmx06wq4crh53kn52x6__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zmx06wq4crh53kn52x6__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un curso de 40 estudiantes, 18 juegan fútbol en los recreos. ¿Qué porcentaje del curso juega fútbol en los recreos?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a class of 40 students, 18 play football at recess. What percentage of the class plays football at recess?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un curso de 40 estudiantes, 18 juegan fútbol en los recreos. ¿Qué porcentaje del curso juega fútbol en los recreos?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a class of 40 students, 18 play football at recess. What percentage of the class plays football at recess?"
       },
       "letters": []
     },
@@ -38384,13 +38299,12 @@
         "en": "Camila had $12,000. She spent 35% on a pair of football boots. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zn106wv4crhbtnpdgp2__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zn106wv4crhbtnpdgp2__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zn106wv4crhbtnpdgp2__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en unos botines de fútbol. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on a pair of football boots. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en unos botines de fútbol. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on a pair of football boots. How much money does she have left?"
       },
       "letters": []
     },
@@ -38402,13 +38316,12 @@
         "en": "A shelter has 80 animals and 50% are dogs. How many dogs are there?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zn606x04crhj958ilap__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zn606x04crhj958ilap__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zn606x04crhj958ilap__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un refugio tiene 80 animales y el 50% son perros. ¿Cuántos perros hay?",
-        "en": "Precise visual support constructed from the data given in the prompt. A shelter has 80 animals and 50% are dogs. How many dogs are there?"
+        "es": "Cuadrícula de 100 cuadritos con 50 pintados: 50%. Un refugio tiene 80 animales y el 50% son perros. ¿Cuántos perros hay?",
+        "en": "A grid of 100 squares with 50 shaded: 50%. A shelter has 80 animals and 50% are dogs. How many dogs are there?"
       },
       "letters": []
     },
@@ -38420,13 +38333,12 @@
         "en": "On a farm there are 60 birds and 25% are geese. How many geese are there?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zna06x54crh6uy7m5sg__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zna06x54crh6uy7m5sg__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zna06x54crh6uy7m5sg__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una granja hay 60 aves y el 25% son gansos. ¿Cuántos gansos hay?",
-        "en": "Precise visual support constructed from the data given in the prompt. On a farm there are 60 birds and 25% are geese. How many geese are there?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. En una granja hay 60 aves y el 25% son gansos. ¿Cuántos gansos hay?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. On a farm there are 60 birds and 25% are geese. How many geese are there?"
       },
       "letters": []
     },
@@ -38438,13 +38350,12 @@
         "en": "On a lake there are 350 birds and 10% are swans. How many swans are there?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zne06xa4crhf4xvsteo__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zne06xa4crhf4xvsteo__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zne06xa4crhf4xvsteo__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una laguna hay 350 aves y el 10% son cisnes. ¿Cuántos cisnes hay?",
-        "en": "Precise visual support constructed from the data given in the prompt. On a lake there are 350 birds and 10% are swans. How many swans are there?"
+        "es": "Cuadrícula de 100 cuadritos con 10 pintados: 10%. En una laguna hay 350 aves y el 10% son cisnes. ¿Cuántos cisnes hay?",
+        "en": "A grid of 100 squares with 10 shaded: 10%. On a lake there are 350 birds and 10% are swans. How many swans are there?"
       },
       "letters": []
     },
@@ -38456,13 +38367,12 @@
         "en": "In a shelter there are 40 animals and 18 are cats. What percentage of the animals are cats?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2znj06xf4crha6fidck3__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2znj06xf4crha6fidck3__grid.svg",
+      "src": "/exercise-images/6b__cmulu2znj06xf4crha6fidck3__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un refugio hay 40 animales y 18 son gatos. ¿Qué porcentaje de los animales son gatos?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a shelter there are 40 animals and 18 are cats. What percentage of the animals are cats?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un refugio hay 40 animales y 18 son gatos. ¿Qué porcentaje de los animales son gatos?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a shelter there are 40 animals and 18 are cats. What percentage of the animals are cats?"
       },
       "letters": []
     },
@@ -38474,13 +38384,12 @@
         "en": "A recorder costs $8,000 and has a 25% discount. How much do you have to pay for the recorder?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2znm06xk4crhijdi6bfo__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2znm06xk4crhijdi6bfo__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2znm06xk4crhijdi6bfo__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una flauta dulce cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la flauta?",
-        "en": "Precise visual support constructed from the data given in the prompt. A recorder costs $8,000 and has a 25% discount. How much do you have to pay for the recorder?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Una flauta dulce cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la flauta?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A recorder costs $8,000 and has a 25% discount. How much do you have to pay for the recorder?"
       },
       "letters": []
     },
@@ -38492,13 +38401,12 @@
         "en": "In a class of 40 students, 18 take part in the choir. What percentage of the class takes part in the choir?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2znr06xp4crh5w7otkkh__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2znr06xp4crh5w7otkkh__grid.svg",
+      "src": "/exercise-images/6b__cmulu2znr06xp4crh5w7otkkh__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un curso de 40 estudiantes, 18 participan en el coro. ¿Qué porcentaje del curso participa en el coro?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a class of 40 students, 18 take part in the choir. What percentage of the class takes part in the choir?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un curso de 40 estudiantes, 18 participan en el coro. ¿Qué porcentaje del curso participa en el coro?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a class of 40 students, 18 take part in the choir. What percentage of the class takes part in the choir?"
       },
       "letters": []
     },
@@ -38510,13 +38418,12 @@
         "en": "Camila had $12,000. She spent 35% on concert tickets. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2znw06xu4crhb0d8kdp2__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2znw06xu4crhb0d8kdp2__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2znw06xu4crhb0d8kdp2__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en entradas para un concierto. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on concert tickets. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en entradas para un concierto. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on concert tickets. How much money does she have left?"
       },
       "letters": []
     },
@@ -38528,13 +38435,12 @@
         "en": "A character has 60 energy points and uses 25% on a special attack. How many points does it use?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zo106xz4crhzp8ez1fr__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zo106xz4crhzp8ez1fr__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zo106xz4crhzp8ez1fr__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un personaje tiene 60 puntos de energía y usa el 25% en un ataque especial. ¿Cuántos puntos usa?",
-        "en": "Precise visual support constructed from the data given in the prompt. A character has 60 energy points and uses 25% on a special attack. How many points does it use?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Un personaje tiene 60 puntos de energía y usa el 25% en un ataque especial. ¿Cuántos puntos usa?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A character has 60 energy points and uses 25% on a special attack. How many points does it use?"
       },
       "letters": []
     },
@@ -38546,13 +38452,12 @@
         "en": "A game costs $8,000 and has a 25% discount in the store. How much do you have to pay for the game?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zo506y44crh3bi81vh4__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zo506y44crh3bi81vh4__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zo506y44crh3bi81vh4__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un juego cuesta $8.000 y tiene 25% de descuento en la tienda. ¿Cuánto hay que pagar por el juego?",
-        "en": "Precise visual support constructed from the data given in the prompt. A game costs $8,000 and has a 25% discount in the store. How much do you have to pay for the game?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Un juego cuesta $8.000 y tiene 25% de descuento en la tienda. ¿Cuánto hay que pagar por el juego?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A game costs $8,000 and has a 25% discount in the store. How much do you have to pay for the game?"
       },
       "letters": []
     },
@@ -38564,13 +38469,12 @@
         "en": "Camila had 12,000 game coins. She spent 35% on a new item. How many coins does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zoa06y94crhmm92xrhy__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zoa06y94crhmm92xrhy__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zoa06y94crhmm92xrhy__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía 12.000 monedas del juego. Gastó el 35% en un objeto nuevo. ¿Cuántas monedas le quedan?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had 12,000 game coins. She spent 35% on a new item. How many coins does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía 12.000 monedas del juego. Gastó el 35% en un objeto nuevo. ¿Cuántas monedas le quedan?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had 12,000 game coins. She spent 35% on a new item. How many coins does she have left?"
       },
       "letters": []
     },
@@ -38582,13 +38486,12 @@
         "en": "On a gridded sky map of 100 squares, 35 squares have stars drawn on them. What percentage of the map has stars?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zoe06ye4crhx3acnh0n__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zoe06ye4crhx3acnh0n__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zoe06ye4crhx3acnh0n__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un mapa del cielo cuadriculado de 100 cuadritos hay 35 cuadritos con estrellas dibujadas. ¿Qué porcentaje del mapa tiene estrellas?",
-        "en": "Precise visual support constructed from the data given in the prompt. On a gridded sky map of 100 squares, 35 squares have stars drawn on them. What percentage of the map has stars?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados. En un mapa del cielo cuadriculado de 100 cuadritos hay 35 cuadritos con estrellas dibujadas. ¿Qué porcentaje del mapa tiene estrellas?",
+        "en": "A grid of 100 squares with 35 shaded. On a gridded sky map of 100 squares, 35 squares have stars drawn on them. What percentage of the map has stars?"
       },
       "letters": []
     },
@@ -38600,13 +38503,12 @@
         "en": "A toy telescope costs $8,000 and has a 25% discount. How much do you have to pay for the telescope?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zoh06yj4crhzo2cte7l__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zoh06yj4crhzo2cte7l__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zoh06yj4crhzo2cte7l__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un telescopio de juguete cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por el telescopio?",
-        "en": "Precise visual support constructed from the data given in the prompt. A toy telescope costs $8,000 and has a 25% discount. How much do you have to pay for the telescope?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Un telescopio de juguete cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por el telescopio?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A toy telescope costs $8,000 and has a 25% discount. How much do you have to pay for the telescope?"
       },
       "letters": []
     },
@@ -38618,13 +38520,12 @@
         "en": "In a class of 40 students, 18 want to be astronauts. What percentage of the class wants to be an astronaut?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zom06yo4crhvska9lzb__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zom06yo4crhvska9lzb__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zom06yo4crhvska9lzb__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un curso de 40 estudiantes, 18 quieren ser astronautas. ¿Qué porcentaje del curso quiere ser astronauta?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a class of 40 students, 18 want to be astronauts. What percentage of the class wants to be an astronaut?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un curso de 40 estudiantes, 18 quieren ser astronautas. ¿Qué porcentaje del curso quiere ser astronauta?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a class of 40 students, 18 want to be astronauts. What percentage of the class wants to be an astronaut?"
       },
       "letters": []
     },
@@ -38636,13 +38537,12 @@
         "en": "Camila had $12,000. She spent 35% on a telescope. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zoq06yt4crh9ueb3uqu__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zoq06yt4crh9ueb3uqu__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zoq06yt4crh9ueb3uqu__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en un telescopio. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on a telescope. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en un telescopio. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on a telescope. How much money does she have left?"
       },
       "letters": []
     },
@@ -38654,13 +38554,12 @@
         "en": "A dinosaur mural is made on a grid of 100 squares and 35 squares are painted. What percentage of the mural is painted?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zox06yy4crhdqsmt9hb__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zox06yy4crhdqsmt9hb__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zox06yy4crhdqsmt9hb__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 580,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un mural de dinosaurios se hace en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados. ¿Qué porcentaje del mural está pintado?",
-        "en": "Precise visual support constructed from the data given in the prompt. A dinosaur mural is made on a grid of 100 squares and 35 squares are painted. What percentage of the mural is painted?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados. Un mural de dinosaurios se hace en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados. ¿Qué porcentaje del mural está pintado?",
+        "en": "A grid of 100 squares with 35 shaded. A dinosaur mural is made on a grid of 100 squares and 35 squares are painted. What percentage of the mural is painted?"
       },
       "letters": []
     },
@@ -38672,13 +38571,12 @@
         "en": "A museum has 80 fossils and 50% are on display. How many fossils are on display?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zp106z34crhvecfyfr0__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zp106z34crhvecfyfr0__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zp106z34crhvecfyfr0__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un museo tiene 80 fósiles y el 50% está en exhibición. ¿Cuántos fósiles están en exhibición?",
-        "en": "Precise visual support constructed from the data given in the prompt. A museum has 80 fossils and 50% are on display. How many fossils are on display?"
+        "es": "Cuadrícula de 100 cuadritos con 50 pintados: 50%. Un museo tiene 80 fósiles y el 50% está en exhibición. ¿Cuántos fósiles están en exhibición?",
+        "en": "A grid of 100 squares with 50 shaded: 50%. A museum has 80 fossils and 50% are on display. How many fossils are on display?"
       },
       "letters": []
     },
@@ -38690,13 +38588,12 @@
         "en": "A paleontologist has 60 bones and 25% are small bones. How many small bones are there?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zp606z84crhbg1dusd6__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zp606z84crhbg1dusd6__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zp606z84crhbg1dusd6__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un paleontólogo tiene 60 huesos y el 25% son huesos chicos. ¿Cuántos huesos chicos hay?",
-        "en": "Precise visual support constructed from the data given in the prompt. A paleontologist has 60 bones and 25% are small bones. How many small bones are there?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Un paleontólogo tiene 60 huesos y el 25% son huesos chicos. ¿Cuántos huesos chicos hay?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A paleontologist has 60 bones and 25% are small bones. How many small bones are there?"
       },
       "letters": []
     },
@@ -38708,13 +38605,12 @@
         "en": "A dinosaur museum received 350 visitors and 10% arrived on a school bus. How many visitors arrived on a school bus?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zpa06zd4crht1nfiuf7__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zpa06zd4crht1nfiuf7__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zpa06zd4crht1nfiuf7__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un museo de dinosaurios recibió 350 visitantes y el 10% llegó en bus escolar. ¿Cuántos visitantes llegaron en bus escolar?",
-        "en": "Precise visual support constructed from the data given in the prompt. A dinosaur museum received 350 visitors and 10% arrived on a school bus. How many visitors arrived on a school bus?"
+        "es": "Cuadrícula de 100 cuadritos con 10 pintados: 10%. Un museo de dinosaurios recibió 350 visitantes y el 10% llegó en bus escolar. ¿Cuántos visitantes llegaron en bus escolar?",
+        "en": "A grid of 100 squares with 10 shaded: 10%. A dinosaur museum received 350 visitors and 10% arrived on a school bus. How many visitors arrived on a school bus?"
       },
       "letters": []
     },
@@ -38726,13 +38622,12 @@
         "en": "A T-shirt with a dinosaur on it costs $8,000 and has a 25% discount. How much must be paid for the T-shirt?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zpf06zi4crhd7p3cp0g__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zpf06zi4crhd7p3cp0g__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zpf06zi4crhd7p3cp0g__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una polera con un dinosaurio dibujado cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
-        "en": "Precise visual support constructed from the data given in the prompt. A T-shirt with a dinosaur on it costs $8,000 and has a 25% discount. How much must be paid for the T-shirt?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Una polera con un dinosaurio dibujado cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A T-shirt with a dinosaur on it costs 8,000 pesos and has a 25% discount. How much do you have to pay for the T-shirt?"
       },
       "letters": []
     },
@@ -38744,13 +38639,12 @@
         "en": "Camila had $12,000. She spent 35% on a dinosaur book. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zpj06zn4crh95fm4c3l__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zpj06zn4crh95fm4c3l__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zpj06zn4crh95fm4c3l__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en un libro de dinosaurios. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on a dinosaur book. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en un libro de dinosaurios. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on a dinosaur book. How much money does she have left?"
       },
       "letters": []
     },
@@ -38762,13 +38656,12 @@
         "en": "A pastry shop bakes 80 cookies and 50% are chocolate. How many chocolate cookies is that?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zpo06zs4crhiynqem8f__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zpo06zs4crhiynqem8f__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zpo06zs4crhiynqem8f__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una pastelería hornea 80 galletas y el 50% son de chocolate. ¿Cuántas galletas de chocolate son?",
-        "en": "Precise visual support constructed from the data given in the prompt. A pastry shop bakes 80 cookies and 50% are chocolate. How many chocolate cookies is that?"
+        "es": "Cuadrícula de 100 cuadritos con 50 pintados: 50%. Una pastelería hornea 80 galletas y el 50% son de chocolate. ¿Cuántas galletas son de chocolate?",
+        "en": "A grid of 100 squares with 50 shaded: 50%. A bakery bakes 80 cookies and 50% are chocolate. How many cookies are chocolate?"
       },
       "letters": []
     },
@@ -38780,13 +38673,12 @@
         "en": "In a box there are 60 cookies and 25% have chocolate chips. How many cookies have chips?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zps06zx4crh5bz502le__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zps06zx4crh5bz502le__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zps06zx4crh5bz502le__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una caja hay 60 galletas y el 25% tiene chispas de chocolate. ¿Cuántas galletas tienen chispas?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a box there are 60 cookies and 25% have chocolate chips. How many cookies have chips?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. En una caja hay 60 galletas y el 25% tiene chispas de chocolate. ¿Cuántas galletas tienen chispas?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. In a box there are 60 cookies and 25% have chocolate chips. How many cookies have chips?"
       },
       "letters": []
     },
@@ -38798,13 +38690,12 @@
         "en": "For a fair, 350 cupcakes were made and 10% are lemon. How many cupcakes are lemon?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zpy07024crhkb3j1rom__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zpy07024crhkb3j1rom__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zpy07024crhkb3j1rom__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Para una feria se prepararon 350 cupcakes y el 10% son de limón. ¿Cuántos cupcakes son de limón?",
-        "en": "Precise visual support constructed from the data given in the prompt. For a fair, 350 cupcakes were made and 10% are lemon. How many cupcakes are lemon?"
+        "es": "Cuadrícula de 100 cuadritos con 10 pintados: 10%. Para una feria se prepararon 350 cupcakes y el 10% son de limón. ¿Cuántos cupcakes son de limón?",
+        "en": "A grid of 100 squares with 10 shaded: 10%. For a fair, 350 cupcakes were made and 10% are lemon. How many cupcakes are lemon?"
       },
       "letters": []
     },
@@ -38816,13 +38707,12 @@
         "en": "A cake costs $8,000 and has a 25% discount. How much do you have to pay for the cake?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zq207074crh6jqkkthi__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zq207074crh6jqkkthi__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zq207074crh6jqkkthi__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una torta cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la torta?",
-        "en": "Precise visual support constructed from the data given in the prompt. A cake costs $8,000 and has a 25% discount. How much do you have to pay for the cake?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Una torta cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la torta?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A cake costs $8,000 and has a 25% discount. How much do you have to pay for the cake?"
       },
       "letters": []
     },
@@ -38834,13 +38724,12 @@
         "en": "Camila had $12,000. She spent 35% on ingredients to make pastries. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zq6070c4crh8ney5ai8__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zq6070c4crh8ney5ai8__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zq6070c4crh8ney5ai8__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en ingredientes para hacer pasteles. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on ingredients to make pastries. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en ingredientes para hacer pasteles. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on ingredients to make pastries. How much money does she have left?"
       },
       "letters": []
     },
@@ -38852,13 +38741,12 @@
         "en": "In a garden there are 80 plants and 50% are lettuces. How many lettuces are there?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zqb070h4crh1teevmbe__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zqb070h4crh1teevmbe__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zqb070h4crh1teevmbe__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un huerto hay 80 plantas y el 50% son lechugas. ¿Cuántas lechugas hay?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a garden there are 80 plants and 50% are lettuces. How many lettuces are there?"
+        "es": "Cuadrícula de 100 cuadritos con 50 pintados: 50%. En un huerto hay 80 plantas y el 50% son lechugas. ¿Cuántas lechugas hay?",
+        "en": "A grid of 100 squares with 50 shaded: 50%. In a garden there are 80 plants and 50% are lettuces. How many lettuces are there?"
       },
       "letters": []
     },
@@ -38870,13 +38758,12 @@
         "en": "In a square there are 60 trees and 25% turn their leaves red in autumn. How many trees turn red?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zqe070m4crh2y6s8jv4__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zqe070m4crh2y6s8jv4__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zqe070m4crh2y6s8jv4__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una plaza hay 60 árboles y el 25% cambia sus hojas a color rojo en otoño. ¿Cuántos árboles cambian a color rojo?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a square there are 60 trees and 25% turn their leaves red in autumn. How many trees turn red?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. En una plaza hay 60 árboles y el 25% cambia sus hojas a color rojo en otoño. ¿Cuántos árboles cambian a color rojo?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. In a square there are 60 trees and 25% turn their leaves red in autumn. How many trees turn red?"
       },
       "letters": []
     },
@@ -38888,13 +38775,12 @@
         "en": "A cove unloads 350 kilos of fish and 10% is donated to a soup kitchen. How many kilos are donated?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zqj070r4crht3dkjw7k__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zqj070r4crht3dkjw7k__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zqj070r4crht3dkjw7k__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una caleta descarga 350 kilos de pescado y el 10% se dona a un comedor. ¿Cuántos kilos se donan?",
-        "en": "Precise visual support constructed from the data given in the prompt. A cove unloads 350 kilos of fish and 10% is donated to a soup kitchen. How many kilos are donated?"
+        "es": "Cuadrícula de 100 cuadritos con 10 pintados: 10%. En una caleta se descargan 350 kilos de pescado y el 10% se dona a un comedor. ¿Cuántos kilos se donan?",
+        "en": "A grid of 100 squares with 10 shaded: 10%. At a fishing cove, 350 kilograms of fish are unloaded and 10% is donated to a soup kitchen. How many kilograms are donated?"
       },
       "letters": []
     },
@@ -38906,13 +38792,12 @@
         "en": "In a class of 40 students, 18 took part in a beach clean-up. What percentage of the class took part?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zqn070w4crh3ndlno92__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zqn070w4crh3ndlno92__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zqn070w4crh3ndlno92__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un curso de 40 estudiantes, 18 participaron en una limpieza de playa. ¿Qué porcentaje del curso participó?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a class of 40 students, 18 took part in a beach clean-up. What percentage of the class took part?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un curso de 40 estudiantes, 18 participaron en una limpieza de playa. ¿Qué porcentaje del curso participó?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a class of 40 students, 18 took part in a beach clean-up. What percentage of the class took part?"
       },
       "letters": []
     },
@@ -38924,13 +38809,12 @@
         "en": "A sports T-shirt costs $8,000 and has a 25% discount. How much do you have to pay for the T-shirt?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zqs07114crhxg0335f6__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zqs07114crhxg0335f6__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zqs07114crhxg0335f6__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Una polera deportiva cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
-        "en": "Precise visual support constructed from the data given in the prompt. A sports T-shirt costs $8,000 and has a 25% discount. How much do you have to pay for the T-shirt?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Una polera deportiva cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A sports T-shirt costs $8,000 and has a 25% discount. How much do you have to pay for the T-shirt?"
       },
       "letters": []
     },
@@ -38942,13 +38826,12 @@
         "en": "In a sports workshop of 40 students, 18 are girls. What percentage of the workshop are girls?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zqz07164crhlc85baz7__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zqz07164crhlc85baz7__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zqz07164crhlc85baz7__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un taller deportivo de 40 estudiantes, 18 son niñas. ¿Qué porcentaje del taller son niñas?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a sports workshop of 40 students, 18 are girls. What percentage of the workshop are girls?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un taller deportivo de 40 estudiantes, 18 son niñas. ¿Qué porcentaje del taller son niñas?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a sports workshop of 40 students, 18 are girls. What percentage of the workshop are girls?"
       },
       "letters": []
     },
@@ -38960,13 +38843,12 @@
         "en": "Camila had $12,000. She spent 35% on sports shoes. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zr4071b4crhmk30i8x6__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zr4071b4crhmk30i8x6__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zr4071b4crhmk30i8x6__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en unas zapatillas deportivas. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on sports shoes. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en unas zapatillas deportivas. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on sports shoes. How much money does she have left?"
       },
       "letters": []
     },
@@ -38978,13 +38860,12 @@
         "en": "A bicycle helmet costs $8,000 and has a 25% discount. How much do you have to pay for the helmet?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zr8071g4crh6msj4545__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zr8071g4crh6msj4545__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zr8071g4crh6msj4545__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un casco de bicicleta cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por el casco?",
-        "en": "Precise visual support constructed from the data given in the prompt. A bicycle helmet costs $8,000 and has a 25% discount. How much do you have to pay for the helmet?"
+        "es": "Cuadrícula de 100 cuadritos con 25 pintados: 25%. Un casco de bicicleta cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por el casco?",
+        "en": "A grid of 100 squares with 25 shaded: 25%. A bicycle helmet costs $8,000 and has a 25% discount. How much do you have to pay for the helmet?"
       },
       "letters": []
     },
@@ -38996,13 +38877,12 @@
         "en": "In a class of 40 students, 18 come to school by bicycle. What percentage of the class comes by bicycle?"
       },
       "kind": "grid",
-      "src": "/exercise-images/6b__cmulu2zre071l4crhdeecx953__grid.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zre071l4crhdeecx953__grid.svg",
+      "src": "/exercise-images/6b__cmulu2zre071l4crhdeecx953__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 304,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En un curso de 40 estudiantes, 18 vienen al colegio en bicicleta. ¿Qué porcentaje del curso viene en bicicleta?",
-        "en": "Precise visual support constructed from the data given in the prompt. In a class of 40 students, 18 come to school by bicycle. What percentage of the class comes by bicycle?"
+        "es": "Cuadrícula de 40 cuadritos, en 4 filas de 10, con 18 pintados. En un curso de 40 estudiantes, 18 vienen al colegio en bicicleta. ¿Qué porcentaje del curso viene en bicicleta?",
+        "en": "A grid of 40 squares, in 4 rows of 10, with 18 shaded. In a class of 40 students, 18 come to school by bicycle. What percentage of the class comes by bicycle?"
       },
       "letters": []
     },
@@ -39014,13 +38894,12 @@
         "en": "Camila had $12,000. She spent 35% on bus fares. How much money does she have left?"
       },
       "kind": "percent_partition",
-      "src": "/exercise-images/6b__cmulu2zri071q4crh4bch3ygc__percent_partition.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zri071q4crh4bch3ygc__percent_partition.svg",
+      "src": "/exercise-images/6b__cmulu2zri071q4crh4bch3ygc__cuadricula.png",
       "width": 1000,
-      "height": 650,
+      "height": 670,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Camila tenía $12.000. Gastó el 35% en pasajes de bus. ¿Cuánto dinero le queda?",
-        "en": "Precise visual support constructed from the data given in the prompt. Camila had $12,000. She spent 35% on bus fares. How much money does she have left?"
+        "es": "Cuadrícula de 100 cuadritos con 35 pintados: 35%. Camila tenía $12.000. Gastó el 35% en pasajes de bus. ¿Cuánto dinero le queda?",
+        "en": "A grid of 100 squares with 35 shaded: 35%. Camila had $12,000. She spent 35% on bus fares. How much money does she have left?"
       },
       "letters": []
     },

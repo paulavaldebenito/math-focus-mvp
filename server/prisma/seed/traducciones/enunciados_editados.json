@@ -3003,5 +3003,107 @@
    "old": "In a garden, 3/8 was planted with carrots and 2/8 with lettuces. What fraction of the garden was planted in total?",
    "new": "In a garden, 3/8 was planted with carrots and 2/8 with lettuce. What fraction of the garden was planted in total?"
   }
+ },
+ {
+  "exerciseId": "cmulu2zpo06zs4crhiynqem8f",
+  "grade": 6,
+  "prompt": {
+   "old": "Una pastelería hornea 80 galletas y el 50% son de chocolate. ¿Cuántas galletas de chocolate son?",
+   "new": "Una pastelería hornea 80 galletas y el 50% son de chocolate. ¿Cuántas galletas son de chocolate?"
+  },
+  "promptEn": {
+   "old": "A pastry shop bakes 80 cookies and 50% are chocolate. How many chocolate cookies is that?",
+   "new": "A bakery bakes 80 cookies and 50% are chocolate. How many cookies are chocolate?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zm906w14crhdwin5ipy",
+  "grade": 6,
+  "prompt": {
+   "old": "El mapa de una cancha se dibuja en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados de amarillo. ¿Qué porcentaje de la cuadrícula está pintado?",
+   "new": "El dibujo de una cancha se hace en una cuadrícula de 100 cuadritos y hay 35 cuadritos pintados de amarillo. ¿Qué porcentaje de la cuadrícula está pintado?"
+  },
+  "promptEn": {
+   "old": "The map of a field is drawn on a grid of 100 squares and 35 squares are painted yellow. What percentage of the grid is painted?",
+   "new": "A drawing of a soccer field is made on a grid of 100 squares, and 35 squares are painted yellow. What percentage of the grid is painted?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zme06w64crhyn6o93nv",
+  "grade": 6,
+  "prompt": {
+   "old": "Un equipo dio 60 pases en un partido y el 25% fueron pases largos. ¿Cuántos pases largos dio?",
+   "new": "Un equipo dio 60 pases en un partido y el 25% fueron pases largos. ¿Cuántos pases largos dio?"
+  },
+  "promptEn": {
+   "old": "A team made 60 passes in a match and 25% were long passes. How many long passes did it make?",
+   "new": "A team made 60 passes in a game and 25% were long passes. How many long passes did the team make?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zqj070r4crht3dkjw7k",
+  "grade": 6,
+  "prompt": {
+   "old": "Una caleta descarga 350 kilos de pescado y el 10% se dona a un comedor. ¿Cuántos kilos se donan?",
+   "new": "En una caleta se descargan 350 kilos de pescado y el 10% se dona a un comedor. ¿Cuántos kilos se donan?"
+  },
+  "promptEn": {
+   "old": "A cove unloads 350 kilograms of fish and 10% is donated to a soup kitchen. How many kilograms are donated?",
+   "new": "At a fishing cove, 350 kilograms of fish are unloaded and 10% is donated to a soup kitchen. How many kilograms are donated?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zpf06zi4crhd7p3cp0g",
+  "grade": 6,
+  "prompt": {
+   "old": "Una polera con un dinosaurio dibujado cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
+   "new": "Una polera con un dinosaurio dibujado cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?"
+  },
+  "promptEn": {
+   "old": "A T-shirt with a dinosaur on it costs 8,000 pesos and has a 25% discount. How much must be paid for the T-shirt?",
+   "new": "A T-shirt with a dinosaur on it costs 8,000 pesos and has a 25% discount. How much do you have to pay for the T-shirt?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zoa06y94crhmm92xrhy",
+  "grade": 6,
+  "prompt": {
+   "old": "Camila tenía 12.000 monedas del juego. Gastó el 35% en un objeto nuevo. ¿Cuántas monedas le quedan?",
+   "new": "Camila tenía 12.000 monedas del juego. Gastó el 35% en un objeto nuevo. ¿Cuántas monedas le quedan?"
+  },
+  "promptEn": {
+   "old": "Camila had 12,000 game coins. She spent 35% on a new item. How many coins does she have left?",
+   "new": "Camila had 12,000 game coins. She spent 35% on a new item. How many coins does she have left?"
+  },
+  "options": [
+   {
+    "optionId": "cmulu2zob06ya4crhfum1nmxn",
+    "label": {
+     "old": "$7.800",
+     "new": "7.800 monedas"
+    }
+   },
+   {
+    "optionId": "cmulu2zob06yb4crhtubhz7ld",
+    "label": {
+     "old": "$4.200",
+     "new": "4.200 monedas"
+    }
+   },
+   {
+    "optionId": "cmulu2zob06yc4crha8yl4efq",
+    "label": {
+     "old": "$11.965",
+     "new": "11.965 monedas"
+    }
+   },
+   {
+    "optionId": "cmulu2zob06yd4crh07i2c679",
+    "label": {
+     "old": "$420",
+     "new": "420 monedas"
+    }
+   }
+  ]
  }
 ]

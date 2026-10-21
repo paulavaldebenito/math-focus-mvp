@@ -13560,26 +13560,26 @@
   "options": [
    {
     "id": "cmulu2zob06ya4crhfum1nmxn",
-    "label": "$7.800",
-    "labelEn": "7,800 pesos",
+    "label": "7.800 monedas",
+    "labelEn": "7,800 coins",
     "isCorrect": true
    },
    {
     "id": "cmulu2zob06yb4crhtubhz7ld",
-    "label": "$4.200",
-    "labelEn": "4,200 pesos",
+    "label": "4.200 monedas",
+    "labelEn": "4,200 coins",
     "isCorrect": false
    },
    {
     "id": "cmulu2zob06yc4crha8yl4efq",
-    "label": "$11.965",
-    "labelEn": "11,965 pesos",
+    "label": "11.965 monedas",
+    "labelEn": "11,965 coins",
     "isCorrect": false
    },
    {
     "id": "cmulu2zob06yd4crh07i2c679",
-    "label": "$420",
-    "labelEn": "420 pesos",
+    "label": "420 monedas",
+    "labelEn": "420 coins",
     "isCorrect": false
    }
   ]
