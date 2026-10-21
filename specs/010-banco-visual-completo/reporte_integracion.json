@@ -1,6 +1,6 @@
 {
- "entries": 2124,
- "linked": 1782,
+ "entries": 2123,
+ "linked": 1781,
  "emojiPreferred": 334,
  "emojiPictographs": 64,
  "absent": [
@@ -47,16 +47,14 @@
  ],
  "promptMismatch": [],
  "legends": {
-  "generic": 502,
-  "none": 1093,
+  "generic": 501,
+  "none": 1096,
   "named:optionBindings": 19,
-  "named:prompt": 101,
-  "named:rowLabels": 3
+  "named:prompt": 101
  },
  "genericReasons": {
   "grupos_sin_nombre": 340,
-  "nombres_no_verificables": 161,
-  "rowLabels_revela_respuesta": 1
+  "nombres_no_verificables": 161
  },
  "byGrade": {
   "1": 331,
@@ -64,17 +62,17 @@
   "3": 350,
   "4": 288,
   "5": 199,
-  "6": 326
+  "6": 325
  },
- "rutasVerificadas": 4043,
- "rutasTotales": 4043,
- "conImagen": 1782,
+ "rutasVerificadas": 3990,
+ "rutasTotales": 3990,
+ "conImagen": 1781,
  "porCurso": {
   "1": 331,
   "2": 288,
   "3": 350,
   "4": 288,
   "5": 199,
-  "6": 326
+  "6": 325
  }
 }
