@@ -2799,5 +2799,209 @@
    "old": "Imagine two equal pizzas: one cut into 8 pieces and the other into 5. In which are the pieces bigger?",
    "new": "Picture two identical bars: one cut into 8 parts and the other into 5. In which one are the parts bigger?"
   }
+ },
+ {
+  "exerciseId": "cmuli7jmp01la6krhtssgy07l",
+  "grade": 6,
+  "prompt": {
+   "old": "¿Cuánto es 2/3 + 1/6?",
+   "new": "¿Cuánto es 2/3 + 1/6?"
+  },
+  "promptEn": {
+   "old": "What is 2/3 + 1/6?",
+   "new": "What is 2/3 + 1/6?"
+  },
+  "procedureNote": {
+   "old": "Busca un denominador común: 3 cabe en 6. Convierte 2/3 a sextos y luego suma.",
+   "new": "Busca un denominador común: 6 es múltiplo de 3. Convierte 2/3 a sextos y luego suma."
+  },
+  "procedureNoteEn": {
+   "old": "Find a common denominator: 3 fits into 6. Convert 2/3 to sixths and then add.",
+   "new": "Find a common denominator: 6 is a multiple of 3. Convert 2/3 to sixths and then add."
+  }
+ },
+ {
+  "exerciseId": "cmulu2zvy07614crh9lgz0t4m",
+  "grade": 6,
+  "prompt": {
+   "old": "En un huerto, 2/3 está sembrado con hortalizas y 1/6 con flores. ¿Qué parte del huerto está sembrada en total?",
+   "new": "En un huerto, 2/3 está sembrado con hortalizas y 1/6 con flores. ¿Qué parte del huerto está sembrada en total?"
+  },
+  "promptEn": {
+   "old": "In a garden, 2/3 is planted with vegetables and 1/6 with flowers. What part of the garden is planted in total?",
+   "new": "In a garden, 2/3 is planted with vegetables and 1/6 with flowers. What part of the garden is planted in total?"
+  },
+  "procedureNote": {
+   "old": "Busca un denominador común: 3 cabe en 6. Convierte 2/3 a sextos y luego suma.",
+   "new": "Busca un denominador común: 6 es múltiplo de 3. Convierte 2/3 a sextos y luego suma."
+  },
+  "procedureNoteEn": {
+   "old": "Find a common denominator: 3 fits in 6. Turn 2/3 into sixths and then add.",
+   "new": "Find a common denominator: 6 is a multiple of 3. Convert 2/3 to sixths and then add."
+  }
+ },
+ {
+  "exerciseId": "cmulu2zuy074x4crhqrj18l51",
+  "grade": 6,
+  "prompt": {
+   "old": "Una receta usa 2/3 de taza de leche y luego 1/6 de taza más. ¿Cuánta leche se usa en total?",
+   "new": "Una receta usa 2/3 de taza de leche y luego 1/6 de taza más. ¿Cuánta leche se usa en total?"
+  },
+  "promptEn": {
+   "old": "A recipe uses 2/3 of a cup of milk and then 1/6 of a cup more. How much milk is used in total?",
+   "new": "A recipe uses 2/3 of a cup of milk and then 1/6 of a cup more. How much milk is used in total?"
+  },
+  "procedureNote": {
+   "old": "Busca un denominador común: 3 cabe en 6. Convierte 2/3 a sextos y luego suma.",
+   "new": "Busca un denominador común: 6 es múltiplo de 3. Convierte 2/3 a sextos y luego suma."
+  },
+  "procedureNoteEn": {
+   "old": "Find a common denominator: 3 fits into 6. Turn 2/3 into sixths and then add.",
+   "new": "Find a common denominator: 6 is a multiple of 3. Convert 2/3 to sixths and then add."
+  }
+ },
+ {
+  "exerciseId": "cmulu2zvc075c4crhlaaszzkx",
+  "grade": 6,
+  "prompt": {
+   "old": "Ana comió 1/4 de una tarta y Beto comió 1/3 de la misma tarta. ¿Qué parte de la tarta comieron entre los dos?",
+   "new": "Ana comió 1/4 de una tarta y Beto comió 1/3 de la misma tarta. ¿Qué parte de la tarta comieron entre los dos?"
+  },
+  "promptEn": {
+   "old": "Ana ate 1/4 of a pie and Beto ate 1/3 of the same pie. What part of the pie did they eat between the two?",
+   "new": "Ana ate 1/4 of a pie and Beto ate 1/3 of the same pie. What part of the pie did they eat together?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zxa077f4crhugcgmdxu",
+  "grade": 6,
+  "prompt": {
+   "old": "Ana recorrió 1/4 de una ruta en bicicleta y Beto recorrió 1/3 de la misma ruta. ¿Qué parte de la ruta recorrieron entre los dos?",
+   "new": "Ana recorrió 1/4 de una ruta en bicicleta y Beto recorrió 1/3 de la misma ruta. ¿Qué parte de la ruta recorrieron entre los dos?"
+  },
+  "promptEn": {
+   "old": "Ana rode 1/4 of a route by bicycle and Beto rode 1/3 of the same route. What part of the route did they ride between the two of them?",
+   "new": "Ana rode 1/4 of a route by bicycle and Beto rode 1/3 of the same route. What part of the route did they ride together?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zt5072u4crh53bt53mg",
+  "grade": 6,
+  "prompt": {
+   "old": "Un bebedero tenía 9/10 L de agua y los pájaros tomaron 1/2 L. ¿Cuánta agua queda?",
+   "new": "Un bebedero tenía 9/10 L de agua y los pájaros tomaron 1/2 L. ¿Cuánta agua queda?"
+  },
+  "promptEn": {
+   "old": "A feeder had 9/10 L of water and the birds drank 1/2 L. How much water is left?",
+   "new": "A bird waterer had 9/10 L of water and the birds drank 1/2 L. How much water is left?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2ztq073j4crhvtb16q1u",
+  "grade": 6,
+  "prompt": {
+   "old": "Una barra de energía tenía 9/10 de su carga y se usó 1/2 en un salto largo. ¿Cuánta carga queda?",
+   "new": "En un juego, un frasco de poción tenía 9/10 L y se usó 1/2 L en un hechizo. ¿Cuánta poción queda?"
+  },
+  "promptEn": {
+   "old": "An energy bar had 9/10 of its charge and 1/2 was used on a long jump. How much charge is left?",
+   "new": "In a game, a potion bottle had 9/10 L, and 1/2 L was used for a spell. How much potion is left?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zsc07204crhxn9gfwl7",
+  "grade": 6,
+  "prompt": {
+   "old": "Un equipo entrenó 1 1/2 horas el lunes y 2 1/4 horas el martes. ¿Cuántas horas entrenó en total?",
+   "new": "Un equipo entrenó 1 1/2 horas el lunes y 2 1/4 horas el martes. ¿Cuántas horas entrenó en total?"
+  },
+  "promptEn": {
+   "old": "A team practiced 1 1/2 hours on Monday and 2 1/4 hours on Tuesday. How many hours did it practice in total?",
+   "new": "A team practiced 1 1/2 hours on Monday and 2 1/4 hours on Tuesday. How many hours did the team practice in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zvu075w4crhpkn9c0e5",
+  "grade": 6,
+  "prompt": {
+   "old": "Una caleta vende 1/2 de la pesca en la mañana y 1/4 en la tarde. ¿Qué parte de la pesca vendió en total?",
+   "new": "Una caleta vendió 1/2 de la pesca en la mañana y 1/4 en la tarde. ¿Qué parte de la pesca vendió en total?"
+  },
+  "promptEn": {
+   "old": "A cove sells 1/2 of the catch in the morning and 1/4 in the afternoon. What part of the catch did it sell in total?",
+   "new": "A fishing village sold 1/2 of its catch in the morning and 1/4 in the afternoon. What part of the catch did it sell in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zt9072z4crh6j9unqdc",
+  "grade": 6,
+  "prompt": {
+   "old": "Sofía paseó a su perro 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
+   "new": "Sofía paseó a su perro 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?"
+  },
+  "promptEn": {
+   "old": "Sofia walked her dog 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?",
+   "new": "Sofía walked her dog 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
+  "grade": 6,
+  "prompt": {
+   "old": "Por la mañana se usó 1/4 L de leche y por la tarde 2/4 L. ¿Cuánta leche se usó en total?",
+   "new": "Por la mañana se usó 1/4 L de leche y por la tarde 2/4 L. ¿Cuánta leche se usó en total?"
+  },
+  "promptEn": {
+   "old": "In the morning 1/4 L of milk was used and in the afternoon 2/4 L. How much milk was used in total?",
+   "new": "In the morning 1/4 L of milk was used and in the afternoon 2/4 L. How much milk was used in total?"
+  },
+  "procedureNoteEn": {
+   "old": "You are joining amounts of quarter-liters. Add the quarters and do not change the size of the parts.",
+   "new": "You are putting together amounts in quarter liters. Add the quarters and don't change the size of the parts."
+  }
+ },
+ {
+  "exerciseId": "cmulu2zsv072k4crhqzu74dnq",
+  "grade": 6,
+  "prompt": {
+   "old": "Por la mañana se usó 1/4 L de agua del bebedero de los pájaros y por la tarde 2/4 L. ¿Cuánta agua se usó en total?",
+   "new": "Por la mañana se usó 1/4 L de agua del bebedero de los pájaros y por la tarde 2/4 L. ¿Cuánta agua se usó en total?"
+  },
+  "promptEn": {
+   "old": "In the morning 1/4 L of water was used from the birds' feeder and in the afternoon 2/4 L. How much water was used in total?",
+   "new": "In the morning 1/4 L of water was used from the birds' water dish and in the afternoon 2/4 L. How much water was used in total?"
+  }
+ },
+ {
+  "exerciseId": "cmulu2zth07394crhw6g9z7m1",
+  "grade": 6,
+  "prompt": {
+   "old": "En un nivel se usó 1/4 de una poción y en otro nivel 2/4 de otra poción igual. ¿Cuánta poción se usó en total?",
+   "new": "En un juego, se usó 1/4 L de poción en un nivel y 2/4 L en otro. ¿Cuánta poción se usó en total?"
+  },
+  "promptEn": {
+   "old": "In one level 1/4 of a potion was used and in another level 2/4 of an identical potion. How much potion was used in total?",
+   "new": "In a game, 1/4 L of potion was used in one level and 2/4 L in another. How much potion was used in total?"
+  },
+  "procedureNote": {
+   "old": "Estás juntando cantidades de cuartos de poción. Suma los cuartos y no cambies el tamaño de las partes.",
+   "new": "Estás juntando cantidades de cuartos de litro. Suma los cuartos y no cambies el tamaño de las partes."
+  },
+  "procedureNoteEn": {
+   "old": "You are putting together quarters of a potion. Add the quarters and do not change the size of the parts.",
+   "new": "You are putting together amounts in quarter liters. Add the quarters and don't change the size of the parts."
+  }
+ },
+ {
+  "exerciseId": "cmulu2zvl075m4crh3emwzxga",
+  "grade": 6,
+  "prompt": {
+   "old": "En un huerto, 3/8 se sembró con zanahorias y 2/8 con lechugas. ¿Qué fracción del huerto se sembró en total?",
+   "new": "En un huerto, 3/8 se sembró con zanahorias y 2/8 con lechugas. ¿Qué fracción del huerto se sembró en total?"
+  },
+  "promptEn": {
+   "old": "In a garden, 3/8 was planted with carrots and 2/8 with lettuces. What fraction of the garden was planted in total?",
+   "new": "In a garden, 3/8 was planted with carrots and 2/8 with lettuce. What fraction of the garden was planted in total?"
+  }
  }
 ]

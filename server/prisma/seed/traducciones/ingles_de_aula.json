@@ -7595,17 +7595,23 @@
    "grade": 6,
    "prompt": "En un huerto, 3/8 se sembró con zanahorias y 2/8 con lechugas. ¿Qué fracción del huerto se sembró en total?",
    "promptEn": {
-    "old": "In a garden, 3/8 was sown with carrots and 2/8 with lettuces. What fraction of the garden was sown in total?",
-    "new": "In a garden, 3/8 was planted with carrots and 2/8 with lettuces. What fraction of the garden was planted in total?"
+    "old": [
+     "In a garden, 3/8 was sown with carrots and 2/8 with lettuces. What fraction of the garden was sown in total?",
+     "In a garden, 3/8 was planted with carrots and 2/8 with lettuces. What fraction of the garden was planted in total?"
+    ],
+    "new": "In a garden, 3/8 was planted with carrots and 2/8 with lettuce. What fraction of the garden was planted in total?"
    }
   },
   {
    "exerciseId": "cmulu2zth07394crhw6g9z7m1",
    "grade": 6,
-   "prompt": "En un nivel se usó 1/4 de una poción y en otro nivel 2/4 de otra poción igual. ¿Cuánta poción se usó en total?",
+   "prompt": "En un juego, se usó 1/4 L de poción en un nivel y 2/4 L en otro. ¿Cuánta poción se usó en total?",
    "procedureNoteEn": {
-    "old": "You are joining amounts of quarter-potions. Add the quarters and do not change the size of the parts.",
-    "new": "You are putting together quarters of a potion. Add the quarters and do not change the size of the parts."
+    "old": [
+     "You are joining amounts of quarter-potions. Add the quarters and do not change the size of the parts.",
+     "You are putting together quarters of a potion. Add the quarters and do not change the size of the parts."
+    ],
+    "new": "You are putting together amounts in quarter liters. Add the quarters and don't change the size of the parts."
    }
   },
   {

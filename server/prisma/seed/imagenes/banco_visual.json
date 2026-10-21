@@ -39032,34 +39032,14 @@
         "en": "How much is 3/8 + 2/8?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jm601kq6krhxzi4wmsf__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jm601kq6krhxzi4wmsf__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jm601kq6krhxzi4wmsf__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuánto es 3/8 + 2/8?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. How much is 3/8 + 2/8?"
+        "es": "Dos barras del mismo largo divididas en 8 partes iguales: una con 3 pintadas y otra con 2. ¿Cuánto es 3/8 + 2/8?",
+        "en": "Two bars of the same length divided into 8 equal parts: one with 3 shaded and one with 2. How much is 3/8 + 2/8?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/8",
-            "en": "2/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jmb01kv6krh2m1dqy06",
@@ -39069,34 +39049,14 @@
         "en": "How much is 7/9 − 2/9?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jmb01kv6krh2m1dqy06__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jmb01kv6krh2m1dqy06__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jmb01kv6krh2m1dqy06__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuánto es 7/9 − 2/9?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. How much is 7/9 − 2/9?"
+        "es": "Dos barras del mismo largo divididas en 9 partes iguales: una con 7 pintadas y otra con 2. ¿Cuánto es 7/9 − 2/9?",
+        "en": "Two bars of the same length divided into 9 equal parts: one with 7 shaded and one with 2. How much is 7/9 − 2/9?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "7/9",
-            "en": "7/9"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/9",
-            "en": "2/9"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
@@ -39106,34 +39066,14 @@
         "en": "In the morning 1/4 L of milk was used and in the afternoon 2/4 L. How much milk was used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jmf01l06krh0wpfrljf__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jmf01l06krh0wpfrljf__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jmf01l06krh0wpfrljf__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Por la mañana se usó 1/4 L de leche y por la tarde 2/4 L. ¿Cuánta leche se usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the morning 1/4 L of milk was used and in the afternoon 2/4 L. How much milk was used in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Por la mañana se usó 1/4 L de leche y por la tarde 2/4 L. ¿Cuánta leche se usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In the morning 1/4 L of milk was used and in the afternoon 2/4 L. How much milk was used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jml01l56krh0upwgnss",
@@ -39143,34 +39083,14 @@
         "en": "How much is 1/2 + 1/4?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jml01l56krh0upwgnss__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jml01l56krh0upwgnss__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jml01l56krh0upwgnss__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuánto es 1/2 + 1/4?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. How much is 1/2 + 1/4?"
+        "es": "Dos barras del mismo largo: 1/2 y 1/4, con sus partes pintadas. ¿Cuánto es 1/2 + 1/4?",
+        "en": "Two bars of the same length: 1/2 and 1/4, with their parts shaded. How much is 1/2 + 1/4?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jmp01la6krhtssgy07l",
@@ -39180,34 +39100,14 @@
         "en": "How much is 2/3 + 1/6?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jmp01la6krhtssgy07l__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jmp01la6krhtssgy07l__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jmp01la6krhtssgy07l__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuánto es 2/3 + 1/6?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. How much is 2/3 + 1/6?"
+        "es": "Dos barras del mismo largo: 2/3 y 1/6, con sus partes pintadas. ¿Cuánto es 2/3 + 1/6?",
+        "en": "Two bars of the same length: 2/3 and 1/6, with their parts shaded. How much is 2/3 + 1/6?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/6",
-            "en": "1/6"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jmu01lf6krhw5z9qmq7",
@@ -39217,34 +39117,14 @@
         "en": "How much is 5/6 − 1/3?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jmu01lf6krhw5z9qmq7__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jmu01lf6krhw5z9qmq7__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jmu01lf6krhw5z9qmq7__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuánto es 5/6 − 1/3?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. How much is 5/6 − 1/3?"
+        "es": "Dos barras del mismo largo: 5/6 y 1/3, con sus partes pintadas. ¿Cuánto es 5/6 − 1/3?",
+        "en": "Two bars of the same length: 5/6 and 1/3, with their parts shaded. How much is 5/6 − 1/3?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "5/6",
-            "en": "5/6"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jmy01lk6krhu2rxrmtw",
@@ -39254,34 +39134,14 @@
         "en": "How much is 1 1/2 + 2 1/4?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jmy01lk6krhu2rxrmtw__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jmy01lk6krhu2rxrmtw__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jmy01lk6krhu2rxrmtw__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. ¿Cuánto es 1 1/2 + 2 1/4?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. How much is 1 1/2 + 2 1/4?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 1/4: dos barras enteras y un cuarto de otra pintados. ¿Cuánto es 1 1/2 + 2 1/4?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 1/4: two whole bars and a fourth of another shaded. How much is 1 1/2 + 2 1/4?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "9/4",
-            "en": "9/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jn201lp6krhcrh6eomm",
@@ -39308,34 +39168,14 @@
         "en": "A pitcher had 9/10 L of juice and 1/2 L was drunk. How much juice is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jn801lu6krhkcd21jp3__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jn801lu6krhkcd21jp3__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jn801lu6krhkcd21jp3__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un jarro tenía 9/10 L de jugo y se tomaron 1/2 L. ¿Cuánto jugo queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A pitcher had 9/10 L of juice and 1/2 L was drunk. How much juice is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Un jarro tenía 9/10 L de jugo y se tomaron 1/2 L. ¿Cuánto jugo queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A pitcher had 9/10 L of juice and 1/2 L was drunk. How much juice is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jnb01lz6krhbvkav95b",
@@ -39345,34 +39185,14 @@
         "en": "Sofía walked 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmuli7jnb01lz6krhbvkav95b__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmuli7jnb01lz6krhbvkav95b__fractions.svg",
+      "src": "/exercise-images/6b__cmuli7jnb01lz6krhbvkav95b__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía caminó 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía walked 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía caminó 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía walked 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zs8071v4crhopaq1ebo",
@@ -39382,34 +39202,14 @@
         "en": "In the first half a player drank 1/4 L of water and in the second half he drank 2/4 L. How much water did he drink in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zs8071v4crhopaq1ebo__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zs8071v4crhopaq1ebo__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zs8071v4crhopaq1ebo__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. En el primer tiempo un jugador tomó 1/4 L de agua y en el segundo tiempo tomó 2/4 L. ¿Cuánta agua tomó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the first half a player drank 1/4 L of water and in the second half he drank 2/4 L. How much water did he drink in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. En el primer tiempo un jugador tomó 1/4 L de agua y en el segundo tiempo tomó 2/4 L. ¿Cuánta agua tomó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In the first half a player drank 1/4 L of water and in the second half he drank 2/4 L. How much water did he drink in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zsc07204crhxn9gfwl7",
@@ -39419,34 +39219,14 @@
         "en": "A team practiced 1 1/2 hours on Monday and 2 1/4 hours on Tuesday. How many hours did it practice in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zsc07204crhxn9gfwl7__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zsc07204crhxn9gfwl7__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zsc07204crhxn9gfwl7__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un equipo entrenó 1 1/2 horas el lunes y 2 1/4 horas el martes. ¿Cuántas horas entrenó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A team practiced 1 1/2 hours on Monday and 2 1/4 hours on Tuesday. How many hours did it practice in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 1/4: dos barras enteras y un cuarto de otra pintados. Un equipo entrenó 1 1/2 horas el lunes y 2 1/4 horas el martes. ¿Cuántas horas entrenó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 1/4: two whole bars and a fourth of another shaded. A team practiced 1 1/2 hours on Monday and 2 1/4 hours on Tuesday. How many hours did it practice in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "9/4",
-            "en": "9/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zsh07254crhm99e0t9y",
@@ -39473,34 +39253,14 @@
         "en": "A bottle had 9/10 L of drink and 1/2 L was drunk at halftime. How much drink is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zsm072a4crhz7sczsab__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zsm072a4crhz7sczsab__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zsm072a4crhz7sczsab__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una botella tenía 9/10 L de bebida y en el entretiempo se tomaron 1/2 L. ¿Cuánta bebida queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A bottle had 9/10 L of drink and 1/2 L was drunk at halftime. How much drink is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Una botella tenía 9/10 L de bebida y en el entretiempo se tomaron 1/2 L. ¿Cuánta bebida queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A bottle had 9/10 L of drink and 1/2 L was drunk at halftime. How much drink is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zsr072f4crhke7y2h72",
@@ -39510,34 +39270,14 @@
         "en": "Sofía ran 1 1/2 km in Saturday's practice and 2 3/4 km in Sunday's. How many km did she run in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zsr072f4crhke7y2h72__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zsr072f4crhke7y2h72__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zsr072f4crhke7y2h72__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía corrió 1 1/2 km en la práctica del sábado y 2 3/4 km en la del domingo. ¿Cuántos km corrió en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía ran 1 1/2 km in Saturday's practice and 2 3/4 km in Sunday's. How many km did she run in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía corrió 1 1/2 km en la práctica del sábado y 2 3/4 km en la del domingo. ¿Cuántos km corrió en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía ran 1 1/2 km in Saturday's practice and 2 3/4 km in Sunday's. How many km did she run in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zsv072k4crhqzu74dnq",
@@ -39547,34 +39287,14 @@
         "en": "In the morning 1/4 L of water was used from the birds' feeder and in the afternoon 2/4 L. How much water was used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zsv072k4crhqzu74dnq__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zsv072k4crhqzu74dnq__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zsv072k4crhqzu74dnq__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Por la mañana se usó 1/4 L de agua del bebedero de los pájaros y por la tarde 2/4 L. ¿Cuánta agua se usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the morning 1/4 L of water was used from the birds' feeder and in the afternoon 2/4 L. How much water was used in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Por la mañana se usó 1/4 L de agua del bebedero de los pájaros y por la tarde 2/4 L. ¿Cuánta agua se usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In the morning 1/4 L of water was used from the birds' feeder and in the afternoon 2/4 L. How much water was used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zsy072p4crhgzxsyhz0",
@@ -39584,34 +39304,14 @@
         "en": "In a shelter, one cat ate 1/4 of a bag of food and another cat ate 1/3 of the same bag. What part of the bag did they eat together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zsy072p4crhgzxsyhz0__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zsy072p4crhgzxsyhz0__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zsy072p4crhgzxsyhz0__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. En un refugio, un gato comió 1/4 de una bolsa de alimento y otro gato comió 1/3 de la misma bolsa. ¿Qué parte de la bolsa comieron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In a shelter, one cat ate 1/4 of a bag of food and another cat ate 1/3 of the same bag. What part of the bag did they eat together?"
+        "es": "Dos barras del mismo largo: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). En un refugio, un gato comió 1/4 de una bolsa de alimento y otro gato comió 1/3 de la misma bolsa. ¿Qué parte de la bolsa comieron entre los dos?",
+        "en": "Two bars of the same length: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). In a shelter, one cat ate 1/4 of a bag of food and another cat ate 1/3 of the same bag. What part of the bag did they eat together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zt5072u4crh53bt53mg",
@@ -39621,34 +39321,14 @@
         "en": "A feeder had 9/10 L of water and the birds drank 1/2 L. How much water is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zt5072u4crh53bt53mg__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zt5072u4crh53bt53mg__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zt5072u4crh53bt53mg__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bebedero tenía 9/10 L de agua y los pájaros tomaron 1/2 L. ¿Cuánta agua queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A feeder had 9/10 L of water and the birds drank 1/2 L. How much water is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Un bebedero tenía 9/10 L de agua y los pájaros tomaron 1/2 L. ¿Cuánta agua queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A feeder had 9/10 L of water and the birds drank 1/2 L. How much water is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zt9072z4crh6j9unqdc",
@@ -39658,34 +39338,14 @@
         "en": "Sofia walked her dog 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zt9072z4crh6j9unqdc__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zt9072z4crh6j9unqdc__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zt9072z4crh6j9unqdc__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía paseó a su perro 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofia walked her dog 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía paseó a su perro 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofia walked her dog 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she walk in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zte07344crhqlzcqhzg",
@@ -39695,34 +39355,14 @@
         "en": "Ana played 1/4 of a piece of music and Beto played 1/3 of the same piece. What part of the piece did they play together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zte07344crhqlzcqhzg__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zte07344crhqlzcqhzg__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zte07344crhqlzcqhzg__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana tocó 1/4 de una partitura y Beto tocó 1/3 de la misma partitura. ¿Qué parte de la partitura tocaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana played 1/4 of a piece of music and Beto played 1/3 of the same piece. What part of the piece did they play together?"
+        "es": "Dos barras del mismo largo: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). Ana tocó 1/4 de una partitura y Beto tocó 1/3 de la misma partitura. ¿Qué parte de la partitura tocaron entre los dos?",
+        "en": "Two bars of the same length: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). Ana played 1/4 of a piece of music and Beto played 1/3 of the same piece. What part of the piece did they play together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zth07394crhw6g9z7m1",
@@ -39732,34 +39372,14 @@
         "en": "In one level 1/4 of a potion was used and in another level 2/4 of an identical potion. How much potion was used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zth07394crhw6g9z7m1__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zth07394crhw6g9z7m1__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zth07394crhw6g9z7m1__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. En un nivel se usó 1/4 de una poción y en otro nivel 2/4 de otra poción igual. ¿Cuánta poción se usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In one level 1/4 of a potion was used and in another level 2/4 of an identical potion. How much potion was used in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. En un nivel se usó 1/4 de una poción y en otro nivel 2/4 de otra poción igual. ¿Cuánta poción se usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In one level 1/4 of a potion was used and in another level 2/4 of an identical potion. How much potion was used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2ztm073e4crhkt3mkfc9",
@@ -39769,34 +39389,14 @@
         "en": "One player completed 1/4 of a map and another completed 1/3 of the same map. What part of the map did they complete together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2ztm073e4crhkt3mkfc9__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2ztm073e4crhkt3mkfc9__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2ztm073e4crhkt3mkfc9__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un jugador completó 1/4 de un mapa y otro completó 1/3 del mismo mapa. ¿Qué parte del mapa completaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. One player completed 1/4 of a map and another completed 1/3 of the same map. What part of the map did they complete together?"
+        "es": "Dos barras del mismo largo: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). Un jugador completó 1/4 de un mapa y otro completó 1/3 del mismo mapa. ¿Qué parte del mapa completaron entre los dos?",
+        "en": "Two bars of the same length: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). One player completed 1/4 of a map and another completed 1/3 of the same map. What part of the map did they complete together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2ztq073j4crhvtb16q1u",
@@ -39806,34 +39406,14 @@
         "en": "An energy bar had 9/10 of its charge and 1/2 was used on a long jump. How much charge is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2ztq073j4crhvtb16q1u__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2ztq073j4crhvtb16q1u__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2ztq073j4crhvtb16q1u__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una barra de energía tenía 9/10 de su carga y se usó 1/2 en un salto largo. ¿Cuánta carga queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. An energy bar had 9/10 of its charge and 1/2 was used on a long jump. How much charge is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Una barra de energía tenía 9/10 de su carga y se usó 1/2 en un salto largo. ¿Cuánta carga queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. An energy bar had 9/10 of its charge and 1/2 was used on a long jump. How much charge is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2ztv073o4crh5dz9nmvv",
@@ -39843,34 +39423,14 @@
         "en": "For a space mural, 1/4 L of paint was used in the morning and 2/4 L in the afternoon. How much paint was used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2ztv073o4crh5dz9nmvv__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2ztv073o4crh5dz9nmvv__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2ztv073o4crh5dz9nmvv__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Para un mural del espacio se usó por la mañana 1/4 L de pintura y por la tarde 2/4 L. ¿Cuánta pintura se usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. For a space mural, 1/4 L of paint was used in the morning and 2/4 L in the afternoon. How much paint was used in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Para un mural del espacio se usó por la mañana 1/4 L de pintura y por la tarde 2/4 L. ¿Cuánta pintura se usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. For a space mural, 1/4 L of paint was used in the morning and 2/4 L in the afternoon. How much paint was used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2ztz073t4crh9xd2i94k",
@@ -39880,34 +39440,14 @@
         "en": "Ana painted 1/4 of a space mural and Beto painted 1/3 of the same mural. What part of the mural did they paint together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2ztz073t4crh9xd2i94k__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2ztz073t4crh9xd2i94k__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2ztz073t4crh9xd2i94k__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana pintó 1/4 de un mural del espacio y Beto pintó 1/3 del mismo mural. ¿Qué parte del mural pintaron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana painted 1/4 of a space mural and Beto painted 1/3 of the same mural. What part of the mural did they paint together?"
+        "es": "Dos barras del mismo largo: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). Ana pintó 1/4 de un mural del espacio y Beto pintó 1/3 del mismo mural. ¿Qué parte del mural pintaron entre los dos?",
+        "en": "Two bars of the same length: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). Ana painted 1/4 of a space mural and Beto painted 1/3 of the same mural. What part of the mural did they paint together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zu5073y4crhndo1uali",
@@ -39917,34 +39457,14 @@
         "en": "The water tank of a toy rocket had 9/10 L and 1/2 L was used. How much water is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zu5073y4crhndo1uali__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zu5073y4crhndo1uali__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zu5073y4crhndo1uali__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. El tanque de agua de un cohete de juguete tenía 9/10 L y se usaron 1/2 L. ¿Cuánta agua queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. The water tank of a toy rocket had 9/10 L and 1/2 L was used. How much water is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. El tanque de agua de un cohete de juguete tenía 9/10 L y se usaron 1/2 L. ¿Cuánta agua queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. The water tank of a toy rocket had 9/10 L and 1/2 L was used. How much water is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zu907434crhmqfqb8js",
@@ -39954,34 +39474,14 @@
         "en": "Sofía walked 1 1/2 km on Saturday to reach a stargazing spot and 2 3/4 km on Sunday. How many km did she walk in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zu907434crhmqfqb8js__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zu907434crhmqfqb8js__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zu907434crhmqfqb8js__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía caminó 1 1/2 km el sábado para llegar a un mirador de estrellas y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía walked 1 1/2 km on Saturday to reach a stargazing spot and 2 3/4 km on Sunday. How many km did she walk in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía caminó 1 1/2 km el sábado para llegar a un mirador de estrellas y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía walked 1 1/2 km on Saturday to reach a stargazing spot and 2 3/4 km on Sunday. How many km did she walk in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zuc07484crhxfppgkjb",
@@ -39991,34 +39491,14 @@
         "en": "Sofía walked 1 1/2 km on Saturday and 2 3/4 km on Sunday along the dinosaur trail in a park. How many km did she walk in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zuc07484crhxfppgkjb__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zuc07484crhxfppgkjb__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zuc07484crhxfppgkjb__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía caminó 1 1/2 km el sábado y 2 3/4 km el domingo por el sendero de los dinosaurios de un parque. ¿Cuántos km caminó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía walked 1 1/2 km on Saturday and 2 3/4 km on Sunday along the dinosaur trail in a park. How many km did she walk in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía caminó 1 1/2 km el sábado y 2 3/4 km el domingo por el sendero de los dinosaurios de un parque. ¿Cuántos km caminó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía walked 1 1/2 km on Saturday and 2 3/4 km on Sunday along the dinosaur trail in a park. How many km did she walk in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zuh074d4crhc0qpk19x",
@@ -40062,34 +39542,14 @@
         "en": "To make pancakes 1/4 L of milk was used and for dessert 2/4 L. How much milk was used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zuq074n4crhbr05swkq__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zuq074n4crhbr05swkq__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zuq074n4crhbr05swkq__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Para hacer panqueques se usó 1/4 L de leche y para el postre 2/4 L. ¿Cuánta leche se usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. To make pancakes 1/4 L of milk was used and for dessert 2/4 L. How much milk was used in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Para hacer panqueques se usó 1/4 L de leche y para el postre 2/4 L. ¿Cuánta leche se usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. To make pancakes 1/4 L of milk was used and for dessert 2/4 L. How much milk was used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zuu074s4crha31jvqps",
@@ -40099,34 +39559,14 @@
         "en": "A recipe uses 1/2 cup of flour and then 1/4 cup more is added. How much flour is there in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zuu074s4crha31jvqps__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zuu074s4crha31jvqps__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zuu074s4crha31jvqps__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una receta lleva 1/2 taza de harina y luego se agrega 1/4 de taza más. ¿Cuánta harina hay en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A recipe uses 1/2 cup of flour and then 1/4 cup more is added. How much flour is there in total?"
+        "es": "Dos barras del mismo largo: 1/2 y 1/4, con sus partes pintadas. Una receta lleva 1/2 taza de harina y luego se agrega 1/4 de taza más. ¿Cuánta harina hay en total?",
+        "en": "Two bars of the same length: 1/2 and 1/4, with their parts shaded. A recipe uses 1/2 cup of flour and then 1/4 cup more is added. How much flour is there in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zuy074x4crhqrj18l51",
@@ -40136,34 +39576,14 @@
         "en": "A recipe uses 2/3 of a cup of milk and then 1/6 of a cup more. How much milk is used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zuy074x4crhqrj18l51__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zuy074x4crhqrj18l51__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zuy074x4crhqrj18l51__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una receta usa 2/3 de taza de leche y luego 1/6 de taza más. ¿Cuánta leche se usa en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A recipe uses 2/3 of a cup of milk and then 1/6 of a cup more. How much milk is used in total?"
+        "es": "Dos barras del mismo largo: 2/3 y 1/6, con sus partes pintadas. Una receta usa 2/3 de taza de leche y luego 1/6 de taza más. ¿Cuánta leche se usa en total?",
+        "en": "Two bars of the same length: 2/3 and 1/6, with their parts shaded. A recipe uses 2/3 of a cup of milk and then 1/6 of a cup more. How much milk is used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/6",
-            "en": "1/6"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zv407524crhoxpjzgnn",
@@ -40173,34 +39593,14 @@
         "en": "There was 5/6 of a cup of milk and 1/3 of a cup was used in a recipe. How much milk is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zv407524crhoxpjzgnn__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zv407524crhoxpjzgnn__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zv407524crhoxpjzgnn__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Había 5/6 de taza de leche y se usó 1/3 de taza en una receta. ¿Cuánta leche queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. There was 5/6 of a cup of milk and 1/3 of a cup was used in a recipe. How much milk is left?"
+        "es": "Dos barras del mismo largo: 5/6 y 1/3, con sus partes pintadas. Había 5/6 de taza de leche y se usó 1/3 de taza en una receta. ¿Cuánta leche queda?",
+        "en": "Two bars of the same length: 5/6 and 1/3, with their parts shaded. There was 5/6 of a cup of milk and 1/3 of a cup was used in a recipe. How much milk is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "5/6",
-            "en": "5/6"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zv807574crhwl5aqygt",
@@ -40210,34 +39610,14 @@
         "en": "One recipe uses 1 1/2 cups of flour and another recipe uses 2 1/4 cups. How many cups of flour are used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zv807574crhwl5aqygt__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zv807574crhwl5aqygt__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zv807574crhwl5aqygt__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una receta usa 1 1/2 tazas de harina y otra receta usa 2 1/4 tazas. ¿Cuántas tazas de harina se usan en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. One recipe uses 1 1/2 cups of flour and another recipe uses 2 1/4 cups. How many cups of flour are used in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 1/4: dos barras enteras y un cuarto de otra pintados. Una receta usa 1 1/2 tazas de harina y otra receta usa 2 1/4 tazas. ¿Cuántas tazas de harina se usan en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 1/4: two whole bars and a fourth of another shaded. One recipe uses 1 1/2 cups of flour and another recipe uses 2 1/4 cups. How many cups of flour are used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "9/4",
-            "en": "9/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zvc075c4crhlaaszzkx",
@@ -40264,34 +39644,14 @@
         "en": "A pitcher had 9/10 L of milk and 1/2 L was used in a recipe. How much milk is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zvg075h4crhr3taz8w9__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zvg075h4crhr3taz8w9__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zvg075h4crhr3taz8w9__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una jarra tenía 9/10 L de leche y en una receta se usó 1/2 L. ¿Cuánta leche queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A pitcher had 9/10 L of milk and 1/2 L was used in a recipe. How much milk is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Una jarra tenía 9/10 L de leche y en una receta se usó 1/2 L. ¿Cuánta leche queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A pitcher had 9/10 L of milk and 1/2 L was used in a recipe. How much milk is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zvl075m4crh3emwzxga",
@@ -40301,34 +39661,14 @@
         "en": "In a garden, 3/8 was sown with carrots and 2/8 with lettuces. What fraction of the garden was sown in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zvl075m4crh3emwzxga__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zvl075m4crh3emwzxga__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zvl075m4crh3emwzxga__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. En un huerto, 3/8 se sembró con zanahorias y 2/8 con lechugas. ¿Qué fracción del huerto se sembró en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In a garden, 3/8 was sown with carrots and 2/8 with lettuces. What fraction of the garden was sown in total?"
+        "es": "Dos barras del mismo largo divididas en 8 partes iguales: una con 3 pintadas y otra con 2. En un huerto, 3/8 se sembró con zanahorias y 2/8 con lechugas. ¿Qué fracción del huerto se sembró en total?",
+        "en": "Two bars of the same length divided into 8 equal parts: one with 3 shaded and one with 2. In a garden, 3/8 was sown with carrots and 2/8 with lettuces. What fraction of the garden was sown in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/8",
-            "en": "3/8"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/8",
-            "en": "2/8"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zvp075r4crh6a2urtzw",
@@ -40338,34 +39678,14 @@
         "en": "In the morning 1/4 L of water was used for watering and in the afternoon 2/4 L. How much water was used in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zvp075r4crh6a2urtzw__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zvp075r4crh6a2urtzw__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zvp075r4crh6a2urtzw__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Por la mañana se usó 1/4 L de agua para regar y por la tarde 2/4 L. ¿Cuánta agua se usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the morning 1/4 L of water was used for watering and in the afternoon 2/4 L. How much water was used in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Por la mañana se usó 1/4 L de agua para regar y por la tarde 2/4 L. ¿Cuánta agua se usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In the morning 1/4 L of water was used for watering and in the afternoon 2/4 L. How much water was used in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zvu075w4crhpkn9c0e5",
@@ -40375,34 +39695,14 @@
         "en": "A cove sells 1/2 of the catch in the morning and 1/4 in the afternoon. What part of the catch did it sell in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zvu075w4crhpkn9c0e5__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zvu075w4crhpkn9c0e5__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zvu075w4crhpkn9c0e5__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Una caleta vende 1/2 de la pesca en la mañana y 1/4 en la tarde. ¿Qué parte de la pesca vendió en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A cove sells 1/2 of the catch in the morning and 1/4 in the afternoon. What part of the catch did it sell in total?"
+        "es": "Dos barras del mismo largo: 1/2 y 1/4, con sus partes pintadas. Una caleta vende 1/2 de la pesca en la mañana y 1/4 en la tarde. ¿Qué parte de la pesca vendió en total?",
+        "en": "Two bars of the same length: 1/2 and 1/4, with their parts shaded. A cove sells 1/2 of the catch in the morning and 1/4 in the afternoon. What part of the catch did it sell in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zvy07614crh9lgz0t4m",
@@ -40412,34 +39712,14 @@
         "en": "In a garden, 2/3 is sown with vegetables and 1/6 with flowers. What part of the garden is sown in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zvy07614crh9lgz0t4m__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zvy07614crh9lgz0t4m__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zvy07614crh9lgz0t4m__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. En un huerto, 2/3 está sembrado con hortalizas y 1/6 con flores. ¿Qué parte del huerto está sembrada en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In a garden, 2/3 is sown with vegetables and 1/6 with flowers. What part of the garden is sown in total?"
+        "es": "Dos barras del mismo largo: 2/3 y 1/6, con sus partes pintadas. En un huerto, 2/3 está sembrado con hortalizas y 1/6 con flores. ¿Qué parte del huerto está sembrada en total?",
+        "en": "Two bars of the same length: 2/3 and 1/6, with their parts shaded. In a garden, 2/3 is sown with vegetables and 1/6 with flowers. What part of the garden is sown in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "2/3",
-            "en": "2/3"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/6",
-            "en": "1/6"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zw407664crheei1pshf",
@@ -40449,34 +39729,14 @@
         "en": "A water jug for the garden is filled up to 5/6 and 1/3 of the jug is used. What part of the jug is still filled with water?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zw407664crheei1pshf__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zw407664crheei1pshf__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zw407664crheei1pshf__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bidón de agua para el huerto está lleno hasta 5/6 y se usa 1/3 del bidón. ¿Qué parte del bidón queda con agua?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A water jug for the garden is filled up to 5/6 and 1/3 of the jug is used. What part of the jug is still filled with water?"
+        "es": "Dos barras del mismo largo: 5/6 y 1/3, con sus partes pintadas. Un bidón de agua para el huerto está lleno hasta 5/6 y se usa 1/3 del bidón. ¿Qué parte del bidón queda con agua?",
+        "en": "Two bars of the same length: 5/6 and 1/3, with their parts shaded. A water jug for the garden is filled up to 5/6 and 1/3 of the jug is used. What part of the jug is still filled with water?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "5/6",
-            "en": "5/6"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zw8076b4crhd2zq2b21",
@@ -40486,34 +39746,14 @@
         "en": "A trail has one stretch of 1 1/2 km and another stretch of 2 1/4 km. How many kilometres long is the trail in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zw8076b4crhd2zq2b21__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zw8076b4crhd2zq2b21__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zw8076b4crhd2zq2b21__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un sendero tiene un tramo de 1 1/2 km y otro tramo de 2 1/4 km. ¿Cuántos kilómetros mide el sendero en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A trail has one stretch of 1 1/2 km and another stretch of 2 1/4 km. How many kilometres long is the trail in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 1/4: dos barras enteras y un cuarto de otra pintados. Un sendero tiene un tramo de 1 1/2 km y otro tramo de 2 1/4 km. ¿Cuántos kilómetros mide el sendero en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 1/4: two whole bars and a fourth of another shaded. A trail has one stretch of 1 1/2 km and another stretch of 2 1/4 km. How many kilometres long is the trail in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "9/4",
-            "en": "9/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zwd076g4crhcg4rrlfw",
@@ -40523,34 +39763,14 @@
         "en": "Ana sowed 1/4 of a garden and Beto sowed 1/3 of the same garden. What part of the garden did they sow together?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zwd076g4crhcg4rrlfw__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zwd076g4crhcg4rrlfw__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zwd076g4crhcg4rrlfw__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana sembró 1/4 de un huerto y Beto sembró 1/3 del mismo huerto. ¿Qué parte del huerto sembraron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana sowed 1/4 of a garden and Beto sowed 1/3 of the same garden. What part of the garden did they sow together?"
+        "es": "Dos barras del mismo largo: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). Ana sembró 1/4 de un huerto y Beto sembró 1/3 del mismo huerto. ¿Qué parte del huerto sembraron entre los dos?",
+        "en": "Two bars of the same length: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). Ana sowed 1/4 of a garden and Beto sowed 1/3 of the same garden. What part of the garden did they sow together?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zwh076l4crhpal46huk",
@@ -40560,34 +39780,14 @@
         "en": "A watering can had 9/10 L of water and 1/2 L was used for the flowers. How much water is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zwh076l4crhpal46huk__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zwh076l4crhpal46huk__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zwh076l4crhpal46huk__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un regador tenía 9/10 L de agua y se usó 1/2 L para las flores. ¿Cuánta agua queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A watering can had 9/10 L of water and 1/2 L was used for the flowers. How much water is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Un regador tenía 9/10 L de agua y se usó 1/2 L para las flores. ¿Cuánta agua queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A watering can had 9/10 L of water and 1/2 L was used for the flowers. How much water is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zwl076q4crhxs5yl6ml",
@@ -40597,34 +39797,14 @@
         "en": "Sofía walked 1 1/2 km along the beach on Saturday and 2 3/4 km on a trail on Sunday. How many km did she walk in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zwl076q4crhxs5yl6ml__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zwl076q4crhxs5yl6ml__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zwl076q4crhxs5yl6ml__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía caminó 1 1/2 km por la playa el sábado y 2 3/4 km por un sendero el domingo. ¿Cuántos km caminó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía walked 1 1/2 km along the beach on Saturday and 2 3/4 km on a trail on Sunday. How many km did she walk in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía caminó 1 1/2 km por la playa el sábado y 2 3/4 km por un sendero el domingo. ¿Cuántos km caminó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía walked 1 1/2 km along the beach on Saturday and 2 3/4 km on a trail on Sunday. How many km did she walk in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zwr076v4crhztrfc0vz",
@@ -40634,34 +39814,14 @@
         "en": "In the morning a swimmer drank 1/4 L of water and in the afternoon 2/4 L. How much water did she drink in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zwr076v4crhztrfc0vz__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zwr076v4crhztrfc0vz__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zwr076v4crhztrfc0vz__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Por la mañana una nadadora tomó 1/4 L de agua y por la tarde 2/4 L. ¿Cuánta agua tomó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the morning a swimmer drank 1/4 L of water and in the afternoon 2/4 L. How much water did she drink in total?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Por la mañana una nadadora tomó 1/4 L de agua y por la tarde 2/4 L. ¿Cuánta agua tomó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In the morning a swimmer drank 1/4 L of water and in the afternoon 2/4 L. How much water did she drink in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zwu07704crhc3csc53k",
@@ -40671,34 +39831,14 @@
         "en": "A jug had 9/10 L of water and the team drank 1/2 L. How much water is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zwu07704crhc3csc53k__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zwu07704crhc3csc53k__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zwu07704crhc3csc53k__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bidón tenía 9/10 L de agua y el equipo se tomó 1/2 L. ¿Cuánta agua queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A jug had 9/10 L of water and the team drank 1/2 L. How much water is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Un bidón tenía 9/10 L de agua y el equipo se tomó 1/2 L. ¿Cuánta agua queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A jug had 9/10 L of water and the team drank 1/2 L. How much water is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zwz07754crhpboawhc0",
@@ -40708,34 +39848,14 @@
         "en": "Sofía jogged 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she jog in total?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zwz07754crhpboawhc0__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zwz07754crhpboawhc0__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zwz07754crhpboawhc0__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía trotó 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km trotó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía jogged 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she jog in total?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía trotó 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km trotó en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía jogged 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she jog in total?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zx5077a4crhaynz29i2",
@@ -40745,34 +39865,14 @@
         "en": "In the morning a tractor used 1/4 L of oil and in the afternoon 2/4 L. How much oil did it use in all?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zx5077a4crhaynz29i2__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zx5077a4crhaynz29i2__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zx5077a4crhaynz29i2__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Por la mañana un tractor usó 1/4 L de aceite y por la tarde 2/4 L. ¿Cuánto aceite usó en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. In the morning a tractor used 1/4 L of oil and in the afternoon 2/4 L. How much oil did it use in all?"
+        "es": "Dos barras del mismo largo divididas en 4 partes iguales: una con 1 pintada y otra con 2. Por la mañana un tractor usó 1/4 L de aceite y por la tarde 2/4 L. ¿Cuánto aceite usó en total?",
+        "en": "Two bars of the same length divided into 4 equal parts: one with 1 shaded and one with 2. In the morning a tractor used 1/4 L of oil and in the afternoon 2/4 L. How much oil did it use in all?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "2/4",
-            "en": "2/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zxa077f4crhugcgmdxu",
@@ -40782,34 +39882,14 @@
         "en": "Ana rode 1/4 of a route by bicycle and Beto rode 1/3 of the same route. What part of the route did they ride between the two of them?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zxa077f4crhugcgmdxu__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zxa077f4crhugcgmdxu__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zxa077f4crhugcgmdxu__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Ana recorrió 1/4 de una ruta en bicicleta y Beto recorrió 1/3 de la misma ruta. ¿Qué parte de la ruta recorrieron entre los dos?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Ana rode 1/4 of a route by bicycle and Beto rode 1/3 of the same route. What part of the route did they ride between the two of them?"
+        "es": "Dos barras del mismo largo: una dividida en 4 partes iguales con 1 pintada (1/4) y otra dividida en 3 partes iguales con 1 pintada (1/3). Ana recorrió 1/4 de una ruta en bicicleta y Beto recorrió 1/3 de la misma ruta. ¿Qué parte de la ruta recorrieron entre los dos?",
+        "en": "Two bars of the same length: one divided into 4 equal parts with 1 shaded (1/4), and one divided into 3 equal parts with 1 shaded (1/3). Ana rode 1/4 of a route by bicycle and Beto rode 1/3 of the same route. What part of the route did they ride between the two of them?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "1/4",
-            "en": "1/4"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/3",
-            "en": "1/3"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zxe077k4crhex636s4f",
@@ -40819,34 +39899,14 @@
         "en": "A can had 9/10 L of oil for a tractor and 1/2 L was used. How much oil is left?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zxe077k4crhex636s4f__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zxe077k4crhex636s4f__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zxe077k4crhex636s4f__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 450,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Un bidón tenía 9/10 L de aceite para un tractor y se usaron 1/2 L. ¿Cuánto aceite queda?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. A can had 9/10 L of oil for a tractor and 1/2 L was used. How much oil is left?"
+        "es": "Dos barras del mismo largo: 9/10 y 1/2, con sus partes pintadas. Un bidón tenía 9/10 L de aceite para un tractor y se usaron 1/2 L. ¿Cuánto aceite queda?",
+        "en": "Two bars of the same length: 9/10 and 1/2, with their parts shaded. A can had 9/10 L of oil for a tractor and 1/2 L was used. How much oil is left?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "9/10",
-            "en": "9/10"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "1/2",
-            "en": "1/2"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmulu2zxj077p4crhebnpznx3",
@@ -40856,34 +39916,14 @@
         "en": "Sofía rode her bicycle 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she ride in all?"
       },
       "kind": "fractions",
-      "src": "/exercise-images/6b__cmulu2zxj077p4crhebnpznx3__fractions.png",
-      "svgSrc": "/exercise-images/6b__cmulu2zxj077p4crhebnpznx3__fractions.svg",
+      "src": "/exercise-images/6b__cmulu2zxj077p4crhebnpznx3__barras.png",
       "width": 1000,
-      "height": 650,
+      "height": 390,
       "alt": {
-        "es": "Barras del mismo tamaño divididas en partes iguales; se destacan las fracciones dadas. Sofía anduvo en bicicleta 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km anduvo en total?",
-        "en": "Equal-sized bars divided into equal parts; the given fractions are highlighted. Sofía rode her bicycle 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she ride in all?"
+        "es": "1 1/2: una barra entera y media barra pintadas. 2 3/4: dos barras enteras y tres cuartos de otra pintados. Sofía anduvo en bicicleta 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km anduvo en total?",
+        "en": "1 1/2: one whole bar and half of another shaded. 2 3/4: two whole bars and three fourths of another shaded. Sofía rode her bicycle 1 1/2 km on Saturday and 2 3/4 km on Sunday. How many km did she ride in all?"
       },
-      "letters": [
-        "A",
-        "B"
-      ],
-      "rowLabels": [
-        {
-          "key": "A",
-          "label": {
-            "es": "3/2",
-            "en": "3/2"
-          }
-        },
-        {
-          "key": "B",
-          "label": {
-            "es": "11/4",
-            "en": "11/4"
-          }
-        }
-      ]
+      "letters": []
     },
     {
       "exerciseId": "cmuli7jns01mf6krhyrmizjhz",

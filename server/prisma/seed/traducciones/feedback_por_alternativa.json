@@ -4142,5 +4142,1433 @@
   "label": "No se puede saber",
   "feedback": "Sí se puede: con el mismo numerador, compara el tamaño de las partes.",
   "feedbackEn": "Yes, we can tell: with the same numerator, compare the size of the parts."
+ },
+ {
+  "exerciseId": "cmuli7jmp01la6krhtssgy07l",
+  "optionId": "cmuli7jmq01lb6krhp30zs09l",
+  "label": "5/6",
+  "feedback": "Correcto: 2/3 = 4/6, y 4/6 + 1/6 = 5/6.",
+  "feedbackEn": "That's right: 2/3 = 4/6, and 4/6 + 1/6 = 5/6."
+ },
+ {
+  "exerciseId": "cmuli7jmp01la6krhtssgy07l",
+  "optionId": "cmuli7jmq01lc6krhwv0ib1m1",
+  "label": "3/9",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmuli7jmp01la6krhtssgy07l",
+  "optionId": "cmuli7jmq01ld6krhu1uwq99q",
+  "label": "3/6",
+  "feedback": "Antes de sumar, convierte 2/3 a sextos: el numerador también cambia.",
+  "feedbackEn": "Before adding, convert 2/3 to sixths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmuli7jmp01la6krhtssgy07l",
+  "optionId": "cmuli7jmq01le6krhw1s7ef2q",
+  "label": "1/2",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zvy07614crh9lgz0t4m",
+  "optionId": "cmulu2zvz07624crhm40i5qep",
+  "label": "5/6",
+  "feedback": "Correcto: 2/3 = 4/6, y 4/6 + 1/6 = 5/6.",
+  "feedbackEn": "That's right: 2/3 = 4/6, and 4/6 + 1/6 = 5/6."
+ },
+ {
+  "exerciseId": "cmulu2zvy07614crh9lgz0t4m",
+  "optionId": "cmulu2zvz07634crhqb6j8zi2",
+  "label": "3/9",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zvy07614crh9lgz0t4m",
+  "optionId": "cmulu2zvz07644crhowamsznt",
+  "label": "3/6",
+  "feedback": "Antes de sumar, convierte 2/3 a sextos: el numerador también cambia.",
+  "feedbackEn": "Before adding, convert 2/3 to sixths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zvy07614crh9lgz0t4m",
+  "optionId": "cmulu2zvz07654crhpp4ao2t4",
+  "label": "1/2",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zuy074x4crhqrj18l51",
+  "optionId": "cmulu2zuz074y4crhkvbmspii",
+  "label": "5/6",
+  "feedback": "Correcto: 2/3 = 4/6, y 4/6 + 1/6 = 5/6.",
+  "feedbackEn": "That's right: 2/3 = 4/6, and 4/6 + 1/6 = 5/6."
+ },
+ {
+  "exerciseId": "cmulu2zuy074x4crhqrj18l51",
+  "optionId": "cmulu2zuz074z4crhhh238xxw",
+  "label": "3/9",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zuy074x4crhqrj18l51",
+  "optionId": "cmulu2zuz07504crhg4kixe3l",
+  "label": "3/6",
+  "feedback": "Antes de sumar, convierte 2/3 a sextos: el numerador también cambia.",
+  "feedbackEn": "Before adding, convert 2/3 to sixths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zuy074x4crhqrj18l51",
+  "optionId": "cmulu2zuz07514crhd2evzddk",
+  "label": "1/2",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2ztm073e4crhkt3mkfc9",
+  "optionId": "cmulu2ztn073f4crh9m8l62my",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2ztm073e4crhkt3mkfc9",
+  "optionId": "cmulu2ztn073g4crhs64rztl2",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2ztm073e4crhkt3mkfc9",
+  "optionId": "cmulu2ztn073h4crh2jyxf2sh",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2ztm073e4crhkt3mkfc9",
+  "optionId": "cmulu2ztn073i4crh7ls1k1hr",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2zte07344crhqlzcqhzg",
+  "optionId": "cmulu2zte07354crhmu2rua4u",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2zte07344crhqlzcqhzg",
+  "optionId": "cmulu2zte07364crh52fn62vh",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zte07344crhqlzcqhzg",
+  "optionId": "cmulu2zte07374crhoy5r9s5f",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2zte07344crhqlzcqhzg",
+  "optionId": "cmulu2zte07384crhww8jzx8v",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2zsy072p4crhgzxsyhz0",
+  "optionId": "cmulu2zsz072q4crhd08qfu37",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2zsy072p4crhgzxsyhz0",
+  "optionId": "cmulu2zsz072r4crhtsaelvsc",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zsy072p4crhgzxsyhz0",
+  "optionId": "cmulu2zsz072s4crhrc3ueepv",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2zsy072p4crhgzxsyhz0",
+  "optionId": "cmulu2zsz072t4crhaqmty3ly",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2ztz073t4crh9xd2i94k",
+  "optionId": "cmulu2ztz073u4crhiuhnv4g2",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2ztz073t4crh9xd2i94k",
+  "optionId": "cmulu2ztz073v4crhmfrjoqny",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2ztz073t4crh9xd2i94k",
+  "optionId": "cmulu2ztz073w4crhyk20ejmi",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2ztz073t4crh9xd2i94k",
+  "optionId": "cmulu2ztz073x4crhto2g0asi",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2zwd076g4crhcg4rrlfw",
+  "optionId": "cmulu2zwe076h4crhv8aei6az",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2zwd076g4crhcg4rrlfw",
+  "optionId": "cmulu2zwe076i4crh4bd5a17f",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zwd076g4crhcg4rrlfw",
+  "optionId": "cmulu2zwe076j4crhqo1n2ppt",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2zwd076g4crhcg4rrlfw",
+  "optionId": "cmulu2zwe076k4crhu5qsa8e8",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2zxa077f4crhugcgmdxu",
+  "optionId": "cmulu2zxb077g4crh30d4yt5j",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2zxa077f4crhugcgmdxu",
+  "optionId": "cmulu2zxb077h4crhlo2qyzww",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zxa077f4crhugcgmdxu",
+  "optionId": "cmulu2zxb077i4crh2omviqkm",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2zxa077f4crhugcgmdxu",
+  "optionId": "cmulu2zxb077j4crhvxj79tau",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2zvc075c4crhlaaszzkx",
+  "optionId": "cmulu2zvd075d4crhbmynlnnf",
+  "label": "7/12",
+  "feedback": "Correcto: 1/4 es lo mismo que 3/12 y 1/3 es lo mismo que 4/12, y 3/12 + 4/12 = 7/12.",
+  "feedbackEn": "That's right: 1/4 is the same as 3/12 and 1/3 is the same as 4/12, and 3/12 + 4/12 = 7/12."
+ },
+ {
+  "exerciseId": "cmulu2zvc075c4crhlaaszzkx",
+  "optionId": "cmulu2zvd075e4crhe9cn4506",
+  "label": "2/7",
+  "feedback": "Los denominadores no se suman. Primero escribe las dos fracciones con el mismo denominador.",
+  "feedbackEn": "We don't add the denominators. First write both fractions with the same denominator."
+ },
+ {
+  "exerciseId": "cmulu2zvc075c4crhlaaszzkx",
+  "optionId": "cmulu2zvd075f4crhcusyl90j",
+  "label": "2/12",
+  "feedback": "El denominador común, 12, está bien. Ahora convierte también los numeradores: ¿cuántos doceavos son 1/4? ¿Y 1/3?",
+  "feedbackEn": "12 is the right common denominator. Now convert the numerators too: how many twelfths is 1/4? And 1/3?"
+ },
+ {
+  "exerciseId": "cmulu2zvc075c4crhlaaszzkx",
+  "optionId": "cmulu2zvd075g4crhvhzfwe8v",
+  "label": "1/12",
+  "feedback": "Juntar las dos partes es sumar. Revisa qué operación hiciste con las dos fracciones.",
+  "feedbackEn": "Putting the two parts together means adding. Check which operation you did with the two fractions."
+ },
+ {
+  "exerciseId": "cmulu2zu5073y4crhndo1uali",
+  "optionId": "cmulu2zu5073z4crhuk6qbf9v",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zu5073y4crhndo1uali",
+  "optionId": "cmulu2zu507404crhayjz351q",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zu5073y4crhndo1uali",
+  "optionId": "cmulu2zu507414crhy3xn1fyl",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zu5073y4crhndo1uali",
+  "optionId": "cmulu2zu507424crhuicvyhah",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zvg075h4crhr3taz8w9",
+  "optionId": "cmulu2zvg075i4crhqz5y4pcl",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zvg075h4crhr3taz8w9",
+  "optionId": "cmulu2zvg075j4crhakn270uk",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zvg075h4crhr3taz8w9",
+  "optionId": "cmulu2zvg075k4crh0t1e0a4e",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zvg075h4crhr3taz8w9",
+  "optionId": "cmulu2zvg075l4crhlmcb78pq",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zxe077k4crhex636s4f",
+  "optionId": "cmulu2zxe077l4crh7edx3neg",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zxe077k4crhex636s4f",
+  "optionId": "cmulu2zxe077m4crhmzfhlu1v",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zxe077k4crhex636s4f",
+  "optionId": "cmulu2zxe077n4crh0qt8053v",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zxe077k4crhex636s4f",
+  "optionId": "cmulu2zxe077o4crhiyd3pf5g",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmuli7jn801lu6krhkcd21jp3",
+  "optionId": "cmuli7jn801lv6krh35mcsit5",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmuli7jn801lu6krhkcd21jp3",
+  "optionId": "cmuli7jn801lw6krh7qyxz0gi",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmuli7jn801lu6krhkcd21jp3",
+  "optionId": "cmuli7jn801lx6krhajyewmuv",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmuli7jn801lu6krhkcd21jp3",
+  "optionId": "cmuli7jn801ly6krh6rxcjvpf",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zwh076l4crhpal46huk",
+  "optionId": "cmulu2zwi076m4crhb3o8753d",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zwh076l4crhpal46huk",
+  "optionId": "cmulu2zwi076n4crhyq5nipqx",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zwh076l4crhpal46huk",
+  "optionId": "cmulu2zwi076o4crh8o7lhtg9",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zwh076l4crhpal46huk",
+  "optionId": "cmulu2zwi076p4crhdj8gtrrl",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zsm072a4crhz7sczsab",
+  "optionId": "cmulu2zsn072b4crhp481cf9m",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zsm072a4crhz7sczsab",
+  "optionId": "cmulu2zsn072c4crhq5ysio5s",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zsm072a4crhz7sczsab",
+  "optionId": "cmulu2zsn072d4crhl9gmugns",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zsm072a4crhz7sczsab",
+  "optionId": "cmulu2zsn072e4crhkfuo83gu",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2ztq073j4crhvtb16q1u",
+  "optionId": "cmulu2ztr073k4crhbjmldu1v",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2ztq073j4crhvtb16q1u",
+  "optionId": "cmulu2ztr073l4crhs1a3snul",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2ztq073j4crhvtb16q1u",
+  "optionId": "cmulu2ztr073m4crh5fr9cnhj",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2ztq073j4crhvtb16q1u",
+  "optionId": "cmulu2ztr073n4crh6jca5eag",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zt5072u4crh53bt53mg",
+  "optionId": "cmulu2zt6072v4crh28ojc461",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zt5072u4crh53bt53mg",
+  "optionId": "cmulu2zt6072w4crhmmj4achc",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zt5072u4crh53bt53mg",
+  "optionId": "cmulu2zt6072x4crhzgm3xukj",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zt5072u4crh53bt53mg",
+  "optionId": "cmulu2zt6072y4crh7si4k6jz",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zwu07704crhc3csc53k",
+  "optionId": "cmulu2zwv07714crhhe9r5th8",
+  "label": "2/5 L",
+  "feedback": "Correcto: 1/2 = 5/10, y 9/10 − 5/10 = 4/10, que simplificado es 2/5.",
+  "feedbackEn": "That's right: 1/2 = 5/10, and 9/10 − 5/10 = 4/10, which simplifies to 2/5."
+ },
+ {
+  "exerciseId": "cmulu2zwu07704crhc3csc53k",
+  "optionId": "cmulu2zwv07724crh44zwprn6",
+  "label": "8/8 L",
+  "feedback": "Los denominadores no se restan: escribe 1/2 en décimos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/2 in tenths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zwu07704crhc3csc53k",
+  "optionId": "cmulu2zwv07734crh36k8rbbl",
+  "label": "8/10 L",
+  "feedback": "Antes de restar, convierte 1/2 a décimos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/2 to tenths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zwu07704crhc3csc53k",
+  "optionId": "cmulu2zwv07744crhbj520oam",
+  "label": "7/5 L",
+  "feedback": "Lo que se usa se quita, así que hay que restar. Revisa qué operación hiciste.",
+  "feedbackEn": "What is used gets taken away, so you need to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zv807574crhwl5aqygt",
+  "optionId": "cmulu2zv907584crhyvdfab0n",
+  "label": "3 3/4",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 1/4 = 2/4 + 1/4 = 3/4. En total, 3 3/4.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 1/4 = 2/4 + 1/4 = 3/4. In total, 3 3/4."
+ },
+ {
+  "exerciseId": "cmulu2zv807574crhwl5aqygt",
+  "optionId": "cmulu2zv907594crhelsjwspl",
+  "label": "3 2/6",
+  "feedback": "Para sumar 1/2 y 1/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 1/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zv807574crhwl5aqygt",
+  "optionId": "cmulu2zv9075a4crh7q1u283p",
+  "label": "3/4",
+  "feedback": "Faltan los enteros: suma también 1 + 2.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 too."
+ },
+ {
+  "exerciseId": "cmulu2zv807574crhwl5aqygt",
+  "optionId": "cmulu2zv9075b4crhjhfw7d23",
+  "label": "3 1/2",
+  "feedback": "Revisa las fracciones: 1/2 + 1/4 no es 1/2. Escribe 1/2 en cuartos y suma.",
+  "feedbackEn": "Check the fractions: 1/2 + 1/4 isn't 1/2. Write 1/2 in fourths and add."
+ },
+ {
+  "exerciseId": "cmulu2zw8076b4crhd2zq2b21",
+  "optionId": "cmulu2zw9076c4crhnt8qaca0",
+  "label": "3 3/4",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 1/4 = 2/4 + 1/4 = 3/4. En total, 3 3/4.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 1/4 = 2/4 + 1/4 = 3/4. In total, 3 3/4."
+ },
+ {
+  "exerciseId": "cmulu2zw8076b4crhd2zq2b21",
+  "optionId": "cmulu2zw9076d4crhdstaywml",
+  "label": "3 2/6",
+  "feedback": "Para sumar 1/2 y 1/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 1/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zw8076b4crhd2zq2b21",
+  "optionId": "cmulu2zw9076e4crhrp8zir1z",
+  "label": "3/4",
+  "feedback": "Faltan los enteros: suma también 1 + 2.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 too."
+ },
+ {
+  "exerciseId": "cmulu2zw8076b4crhd2zq2b21",
+  "optionId": "cmulu2zw9076f4crhcea8x3r5",
+  "label": "3 1/2",
+  "feedback": "Revisa las fracciones: 1/2 + 1/4 no es 1/2. Escribe 1/2 en cuartos y suma.",
+  "feedbackEn": "Check the fractions: 1/2 + 1/4 isn't 1/2. Write 1/2 in fourths and add."
+ },
+ {
+  "exerciseId": "cmulu2zsc07204crhxn9gfwl7",
+  "optionId": "cmulu2zsc07214crhad0bpr5b",
+  "label": "3 3/4",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 1/4 = 2/4 + 1/4 = 3/4. En total, 3 3/4.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 1/4 = 2/4 + 1/4 = 3/4. In total, 3 3/4."
+ },
+ {
+  "exerciseId": "cmulu2zsc07204crhxn9gfwl7",
+  "optionId": "cmulu2zsc07224crh8lthqdjx",
+  "label": "3 2/6",
+  "feedback": "Para sumar 1/2 y 1/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 1/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zsc07204crhxn9gfwl7",
+  "optionId": "cmulu2zsc07234crhsgxpzwoi",
+  "label": "3/4",
+  "feedback": "Faltan los enteros: suma también 1 + 2.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 too."
+ },
+ {
+  "exerciseId": "cmulu2zsc07204crhxn9gfwl7",
+  "optionId": "cmulu2zsc07244crhaxxlmszd",
+  "label": "3 1/2",
+  "feedback": "Revisa las fracciones: 1/2 + 1/4 no es 1/2. Escribe 1/2 en cuartos y suma.",
+  "feedbackEn": "Check the fractions: 1/2 + 1/4 isn't 1/2. Write 1/2 in fourths and add."
+ },
+ {
+  "exerciseId": "cmuli7jmy01lk6krhu2rxrmtw",
+  "optionId": "cmuli7jmz01ll6krhyud2vhke",
+  "label": "3 3/4",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 1/4 = 2/4 + 1/4 = 3/4. En total, 3 3/4.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 1/4 = 2/4 + 1/4 = 3/4. In total, 3 3/4."
+ },
+ {
+  "exerciseId": "cmuli7jmy01lk6krhu2rxrmtw",
+  "optionId": "cmuli7jmz01lm6krho8fabdqb",
+  "label": "3 2/6",
+  "feedback": "Para sumar 1/2 y 1/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 1/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmuli7jmy01lk6krhu2rxrmtw",
+  "optionId": "cmuli7jmz01ln6krhecp3dfkr",
+  "label": "3/4",
+  "feedback": "Faltan los enteros: suma también 1 + 2.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 too."
+ },
+ {
+  "exerciseId": "cmuli7jmy01lk6krhu2rxrmtw",
+  "optionId": "cmuli7jmz01lo6krh1bc9d6ww",
+  "label": "3 1/2",
+  "feedback": "Revisa las fracciones: 1/2 + 1/4 no es 1/2. Escribe 1/2 en cuartos y suma.",
+  "feedbackEn": "Check the fractions: 1/2 + 1/4 isn't 1/2. Write 1/2 in fourths and add."
+ },
+ {
+  "exerciseId": "cmuli7jmb01kv6krh2m1dqy06",
+  "optionId": "cmuli7jmc01kw6krh40y9rans",
+  "label": "5/9",
+  "feedback": "Correcto: 7 novenos menos 2 novenos son 5 novenos: 5/9.",
+  "feedbackEn": "That's right: 7 ninths minus 2 ninths is 5 ninths: 5/9."
+ },
+ {
+  "exerciseId": "cmuli7jmb01kv6krh2m1dqy06",
+  "optionId": "cmuli7jmc01kx6krhm8xozhqr",
+  "label": "9/9",
+  "feedback": "Te piden restar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmuli7jmb01kv6krh2m1dqy06",
+  "optionId": "cmuli7jmc01ky6krhwdcb161p",
+  "label": "5/18",
+  "feedback": "El denominador no cambia: siguen siendo novenos.",
+  "feedbackEn": "The denominator doesn't change: they're still ninths."
+ },
+ {
+  "exerciseId": "cmuli7jmb01kv6krh2m1dqy06",
+  "optionId": "cmuli7jmc01kz6krhrrtghnd8",
+  "label": "2/9",
+  "feedback": "2/9 es la cantidad que se resta, no el resultado.",
+  "feedbackEn": "2/9 is the amount being subtracted, not the result."
+ },
+ {
+  "exerciseId": "cmulu2zul074i4crhom41mrjl",
+  "optionId": "cmulu2zum074j4crhgrsixibg",
+  "label": "5/9",
+  "feedback": "Correcto: 7 novenos menos 2 novenos son 5 novenos: 5/9.",
+  "feedbackEn": "That's right: 7 ninths minus 2 ninths is 5 ninths: 5/9."
+ },
+ {
+  "exerciseId": "cmulu2zul074i4crhom41mrjl",
+  "optionId": "cmulu2zum074k4crh23ib1g35",
+  "label": "9/9",
+  "feedback": "Te piden restar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zul074i4crhom41mrjl",
+  "optionId": "cmulu2zum074l4crh0bowe49p",
+  "label": "5/18",
+  "feedback": "El denominador no cambia: siguen siendo novenos.",
+  "feedbackEn": "The denominator doesn't change: they're still ninths."
+ },
+ {
+  "exerciseId": "cmulu2zul074i4crhom41mrjl",
+  "optionId": "cmulu2zum074m4crhn7dup43y",
+  "label": "2/9",
+  "feedback": "2/9 es la cantidad que se resta, no el resultado.",
+  "feedbackEn": "2/9 is the amount being subtracted, not the result."
+ },
+ {
+  "exerciseId": "cmulu2zvu075w4crhpkn9c0e5",
+  "optionId": "cmulu2zvv075x4crhnyl7cg3d",
+  "label": "3/4",
+  "feedback": "Correcto: 1/2 = 2/4, y 2/4 + 1/4 = 3/4.",
+  "feedbackEn": "That's right: 1/2 = 2/4, and 2/4 + 1/4 = 3/4."
+ },
+ {
+  "exerciseId": "cmulu2zvu075w4crhpkn9c0e5",
+  "optionId": "cmulu2zvv075y4crhf09jlwrh",
+  "label": "2/6",
+  "feedback": "Los denominadores no se suman: escribe 1/2 en cuartos y suma solo los numeradores.",
+  "feedbackEn": "We don't add the denominators: write 1/2 in fourths and add only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zvu075w4crhpkn9c0e5",
+  "optionId": "cmulu2zvv075z4crhhbagu9py",
+  "label": "2/4",
+  "feedback": "Antes de sumar, convierte 1/2 a cuartos: el numerador también cambia.",
+  "feedbackEn": "Before adding, convert 1/2 to fourths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zvu075w4crhpkn9c0e5",
+  "optionId": "cmulu2zvv07604crheollf5sc",
+  "label": "1/4",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zuu074s4crha31jvqps",
+  "optionId": "cmulu2zuv074t4crh60i5b6dm",
+  "label": "3/4",
+  "feedback": "Correcto: 1/2 = 2/4, y 2/4 + 1/4 = 3/4.",
+  "feedbackEn": "That's right: 1/2 = 2/4, and 2/4 + 1/4 = 3/4."
+ },
+ {
+  "exerciseId": "cmulu2zuu074s4crha31jvqps",
+  "optionId": "cmulu2zuv074u4crhm3fyx54c",
+  "label": "2/6",
+  "feedback": "Los denominadores no se suman: escribe 1/2 en cuartos y suma solo los numeradores.",
+  "feedbackEn": "We don't add the denominators: write 1/2 in fourths and add only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zuu074s4crha31jvqps",
+  "optionId": "cmulu2zuv074v4crhqevrnxyp",
+  "label": "2/4",
+  "feedback": "Antes de sumar, convierte 1/2 a cuartos: el numerador también cambia.",
+  "feedbackEn": "Before adding, convert 1/2 to fourths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zuu074s4crha31jvqps",
+  "optionId": "cmulu2zuv074w4crh6qhjiwz0",
+  "label": "1/4",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmuli7jml01l56krh0upwgnss",
+  "optionId": "cmuli7jmm01l66krhyvaf9k4e",
+  "label": "3/4",
+  "feedback": "Correcto: 1/2 = 2/4, y 2/4 + 1/4 = 3/4.",
+  "feedbackEn": "That's right: 1/2 = 2/4, and 2/4 + 1/4 = 3/4."
+ },
+ {
+  "exerciseId": "cmuli7jml01l56krh0upwgnss",
+  "optionId": "cmuli7jmm01l76krhc3kd47cc",
+  "label": "2/6",
+  "feedback": "Los denominadores no se suman: escribe 1/2 en cuartos y suma solo los numeradores.",
+  "feedbackEn": "We don't add the denominators: write 1/2 in fourths and add only the numerators."
+ },
+ {
+  "exerciseId": "cmuli7jml01l56krh0upwgnss",
+  "optionId": "cmuli7jmm01l86krhj8pjmpcx",
+  "label": "2/4",
+  "feedback": "Antes de sumar, convierte 1/2 a cuartos: el numerador también cambia.",
+  "feedbackEn": "Before adding, convert 1/2 to fourths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmuli7jml01l56krh0upwgnss",
+  "optionId": "cmuli7jmm01l96krhff5e31dl",
+  "label": "1/4",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zxj077p4crhebnpznx3",
+  "optionId": "cmulu2zxk077q4crh5p4j2y2a",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zxj077p4crhebnpznx3",
+  "optionId": "cmulu2zxk077r4crhrykeehay",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zxj077p4crhebnpznx3",
+  "optionId": "cmulu2zxk077s4crh79wgcb6v",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zxj077p4crhebnpznx3",
+  "optionId": "cmulu2zxk077t4crh42ure5c0",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmulu2zsr072f4crhke7y2h72",
+  "optionId": "cmulu2zss072g4crh19eawscs",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zsr072f4crhke7y2h72",
+  "optionId": "cmulu2zss072h4crhixjv8crv",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zsr072f4crhke7y2h72",
+  "optionId": "cmulu2zss072i4crh8ueids25",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zsr072f4crhke7y2h72",
+  "optionId": "cmulu2zss072j4crhp1s3sutv",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmulu2zt9072z4crh6j9unqdc",
+  "optionId": "cmulu2zta07304crh5fvr2czl",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zt9072z4crh6j9unqdc",
+  "optionId": "cmulu2zta07314crhjbbxoduz",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zt9072z4crh6j9unqdc",
+  "optionId": "cmulu2zta07324crhquwp4f0b",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zt9072z4crh6j9unqdc",
+  "optionId": "cmulu2zta07334crh4curhu0d",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmulu2zu907434crhmqfqb8js",
+  "optionId": "cmulu2zu907444crhw0crq3be",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zu907434crhmqfqb8js",
+  "optionId": "cmulu2zu907454crhiihrb3gw",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zu907434crhmqfqb8js",
+  "optionId": "cmulu2zu907464crhvhh2pygh",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zu907434crhmqfqb8js",
+  "optionId": "cmulu2zu907474crh0o7tp3iw",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmulu2zwz07754crhpboawhc0",
+  "optionId": "cmulu2zx007764crh0zoetzey",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zwz07754crhpboawhc0",
+  "optionId": "cmulu2zx007774crhybsv950q",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zwz07754crhpboawhc0",
+  "optionId": "cmulu2zx007784crhiqbbsnvw",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zwz07754crhpboawhc0",
+  "optionId": "cmulu2zx007794crhjn1uyimh",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmuli7jnb01lz6krhbvkav95b",
+  "optionId": "cmuli7jnc01m06krhkrae1ds8",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmuli7jnb01lz6krhbvkav95b",
+  "optionId": "cmuli7jnc01m16krhh5q7s4hm",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmuli7jnb01lz6krhbvkav95b",
+  "optionId": "cmuli7jnc01m26krhh8kqldxv",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmuli7jnb01lz6krhbvkav95b",
+  "optionId": "cmuli7jnc01m36krhkyepm3kb",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmulu2zuc07484crhxfppgkjb",
+  "optionId": "cmulu2zud07494crhs3hfd8em",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zuc07484crhxfppgkjb",
+  "optionId": "cmulu2zud074a4crht2pz4p3f",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zuc07484crhxfppgkjb",
+  "optionId": "cmulu2zud074b4crht7uprvei",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zuc07484crhxfppgkjb",
+  "optionId": "cmulu2zud074c4crhb5d61xna",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmulu2zwl076q4crhxs5yl6ml",
+  "optionId": "cmulu2zwm076r4crhliqw1uiz",
+  "label": "4 1/4 km",
+  "feedback": "Correcto: 1 + 2 = 3 enteros, y 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. En total, 4 1/4 km.",
+  "feedbackEn": "That's right: 1 + 2 = 3 wholes, and 1/2 + 3/4 = 2/4 + 3/4 = 5/4 = 1 1/4. In total, 4 1/4 km."
+ },
+ {
+  "exerciseId": "cmulu2zwl076q4crhxs5yl6ml",
+  "optionId": "cmulu2zwm076s4crh72ihlo50",
+  "label": "3 1/4 km",
+  "feedback": "Las fracciones suman más de un entero: ese entero se agrega a los otros 3.",
+  "feedbackEn": "The fractions add up to more than one whole: that whole gets added to the other 3."
+ },
+ {
+  "exerciseId": "cmulu2zwl076q4crhxs5yl6ml",
+  "optionId": "cmulu2zwm076t4crh7xwdsd8g",
+  "label": "3 4/6 km",
+  "feedback": "Para sumar 1/2 y 3/4 no se suman los denominadores: escribe 1/2 en cuartos.",
+  "feedbackEn": "To add 1/2 and 3/4, we don't add the denominators: write 1/2 in fourths."
+ },
+ {
+  "exerciseId": "cmulu2zwl076q4crhxs5yl6ml",
+  "optionId": "cmulu2zwm076u4crhij8gabn2",
+  "label": "1 1/4 km",
+  "feedback": "Faltan los enteros: suma también 1 + 2 km.",
+  "feedbackEn": "The wholes are missing: add 1 + 2 km too."
+ },
+ {
+  "exerciseId": "cmuli7jmu01lf6krhw5z9qmq7",
+  "optionId": "cmuli7jmv01lg6krh84jeblev",
+  "label": "1/2",
+  "feedback": "Correcto: 1/3 = 2/6, y 5/6 − 2/6 = 3/6, que simplificado es 1/2.",
+  "feedbackEn": "That's right: 1/3 = 2/6, and 5/6 − 2/6 = 3/6, which simplifies to 1/2."
+ },
+ {
+  "exerciseId": "cmuli7jmu01lf6krhw5z9qmq7",
+  "optionId": "cmuli7jmv01lh6krh2b2y0poy",
+  "label": "4/3",
+  "feedback": "Los denominadores no se restan: escribe 1/3 en sextos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/3 in sixths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmuli7jmu01lf6krhw5z9qmq7",
+  "optionId": "cmuli7jmv01li6krhrvt0pvd9",
+  "label": "4/6",
+  "feedback": "Antes de restar, convierte 1/3 a sextos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/3 to sixths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmuli7jmu01lf6krhw5z9qmq7",
+  "optionId": "cmuli7jmv01lj6krhpjsegk7r",
+  "label": "7/6",
+  "feedback": "Te piden restar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zw407664crheei1pshf",
+  "optionId": "cmulu2zw507674crhzu5xfy62",
+  "label": "1/2",
+  "feedback": "Correcto: 1/3 = 2/6, y 5/6 − 2/6 = 3/6, que simplificado es 1/2.",
+  "feedbackEn": "That's right: 1/3 = 2/6, and 5/6 − 2/6 = 3/6, which simplifies to 1/2."
+ },
+ {
+  "exerciseId": "cmulu2zw407664crheei1pshf",
+  "optionId": "cmulu2zw507684crhax637flx",
+  "label": "4/3",
+  "feedback": "Los denominadores no se restan: escribe 1/3 en sextos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/3 in sixths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zw407664crheei1pshf",
+  "optionId": "cmulu2zw507694crh8qd6okhd",
+  "label": "4/6",
+  "feedback": "Antes de restar, convierte 1/3 a sextos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/3 to sixths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zw407664crheei1pshf",
+  "optionId": "cmulu2zw5076a4crh6aenndsb",
+  "label": "7/6",
+  "feedback": "Te piden restar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zv407524crhoxpjzgnn",
+  "optionId": "cmulu2zv407534crhg5m5sqsf",
+  "label": "1/2",
+  "feedback": "Correcto: 1/3 = 2/6, y 5/6 − 2/6 = 3/6, que simplificado es 1/2.",
+  "feedbackEn": "That's right: 1/3 = 2/6, and 5/6 − 2/6 = 3/6, which simplifies to 1/2."
+ },
+ {
+  "exerciseId": "cmulu2zv407524crhoxpjzgnn",
+  "optionId": "cmulu2zv407544crhp7fxpbxv",
+  "label": "4/3",
+  "feedback": "Los denominadores no se restan: escribe 1/3 en sextos y resta solo los numeradores.",
+  "feedbackEn": "We don't subtract the denominators: write 1/3 in sixths and subtract only the numerators."
+ },
+ {
+  "exerciseId": "cmulu2zv407524crhoxpjzgnn",
+  "optionId": "cmulu2zv407554crhapo4bdj1",
+  "label": "4/6",
+  "feedback": "Antes de restar, convierte 1/3 a sextos: el numerador también cambia.",
+  "feedbackEn": "Before subtracting, convert 1/3 to sixths: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmulu2zv407524crhoxpjzgnn",
+  "optionId": "cmulu2zv407564crh58yj8bls",
+  "label": "7/6",
+  "feedback": "Te piden restar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to subtract. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2ztv073o4crh5dz9nmvv",
+  "optionId": "cmulu2ztv073p4crhbb4o1ec9",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2ztv073o4crh5dz9nmvv",
+  "optionId": "cmulu2ztv073q4crhwcoyz2i9",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2ztv073o4crh5dz9nmvv",
+  "optionId": "cmulu2ztw073r4crhxwyudh5c",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2ztv073o4crh5dz9nmvv",
+  "optionId": "cmulu2ztw073s4crhpr1wa87p",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zvp075r4crh6a2urtzw",
+  "optionId": "cmulu2zvq075s4crhoprrkx43",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zvp075r4crh6a2urtzw",
+  "optionId": "cmulu2zvq075t4crh948wnp6q",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zvp075r4crh6a2urtzw",
+  "optionId": "cmulu2zvq075u4crhrm7ezty4",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zvp075r4crh6a2urtzw",
+  "optionId": "cmulu2zvq075v4crh1o54wnra",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zwr076v4crhztrfc0vz",
+  "optionId": "cmulu2zwr076w4crha7x66eyi",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zwr076v4crhztrfc0vz",
+  "optionId": "cmulu2zwr076x4crhd1jjwqez",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zwr076v4crhztrfc0vz",
+  "optionId": "cmulu2zwr076y4crhxy7vank4",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zwr076v4crhztrfc0vz",
+  "optionId": "cmulu2zwr076z4crh6y4fehjj",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
+  "optionId": "cmuli7jmf01l16krhdbmk67so",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
+  "optionId": "cmuli7jmf01l26krh12c9hj6h",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
+  "optionId": "cmuli7jmf01l36krhohxpnsen",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
+  "optionId": "cmuli7jmf01l46krhdelra4rm",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zth07394crhw6g9z7m1",
+  "optionId": "cmulu2zti073a4crhrcoisp83",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zth07394crhw6g9z7m1",
+  "optionId": "cmulu2zti073b4crhktq1ozht",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zth07394crhw6g9z7m1",
+  "optionId": "cmulu2zti073c4crhnrsw7upe",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zth07394crhw6g9z7m1",
+  "optionId": "cmulu2zti073d4crhjxusarki",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zsv072k4crhqzu74dnq",
+  "optionId": "cmulu2zsv072l4crho3tew662",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zsv072k4crhqzu74dnq",
+  "optionId": "cmulu2zsv072m4crh3fc8gmo9",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zsv072k4crhqzu74dnq",
+  "optionId": "cmulu2zsv072n4crhwtfe8ytb",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zsv072k4crhqzu74dnq",
+  "optionId": "cmulu2zsv072o4crhknhmvsr8",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zuq074n4crhbr05swkq",
+  "optionId": "cmulu2zur074o4crh1hb3xa1t",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zuq074n4crhbr05swkq",
+  "optionId": "cmulu2zur074p4crhdkck6klz",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zuq074n4crhbr05swkq",
+  "optionId": "cmulu2zur074q4crhsbitzr8u",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zuq074n4crhbr05swkq",
+  "optionId": "cmulu2zur074r4crhvtckqmml",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zs8071v4crhopaq1ebo",
+  "optionId": "cmulu2zs9071w4crhktgx644t",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zs8071v4crhopaq1ebo",
+  "optionId": "cmulu2zs9071x4crhm21olwss",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zs8071v4crhopaq1ebo",
+  "optionId": "cmulu2zs9071y4crh9e4ay2xt",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zs8071v4crhopaq1ebo",
+  "optionId": "cmulu2zs9071z4crhdu55d6b1",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zx5077a4crhaynz29i2",
+  "optionId": "cmulu2zx6077b4crh624qxdaj",
+  "label": "3/4 L",
+  "feedback": "Correcto: 1 cuarto más 2 cuartos son 3 cuartos: 3/4 L.",
+  "feedbackEn": "That's right: 1 fourth plus 2 fourths is 3 fourths: 3/4 L."
+ },
+ {
+  "exerciseId": "cmulu2zx5077a4crhaynz29i2",
+  "optionId": "cmulu2zx6077c4crhn7fs7ec9",
+  "label": "3/8 L",
+  "feedback": "El denominador no cambia: siguen siendo cuartos.",
+  "feedbackEn": "The denominator doesn't change: they're still fourths."
+ },
+ {
+  "exerciseId": "cmulu2zx5077a4crhaynz29i2",
+  "optionId": "cmulu2zx6077d4crh9rb7ecpm",
+  "label": "1/4 L",
+  "feedback": "Te piden juntar las dos cantidades. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to put the two amounts together. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zx5077a4crhaynz29i2",
+  "optionId": "cmulu2zx6077e4crh55ekj49w",
+  "label": "2/4 L",
+  "feedback": "2/4 L es solo una de las cantidades. Súmale la otra.",
+  "feedbackEn": "2/4 L is just one of the amounts. Add the other one to it."
+ },
+ {
+  "exerciseId": "cmulu2zvl075m4crh3emwzxga",
+  "optionId": "cmulu2zvm075n4crhtdtkuei8",
+  "label": "5/8",
+  "feedback": "Correcto: 3 octavos más 2 octavos son 5 octavos: 5/8.",
+  "feedbackEn": "That's right: 3 eighths plus 2 eighths is 5 eighths: 5/8."
+ },
+ {
+  "exerciseId": "cmulu2zvl075m4crh3emwzxga",
+  "optionId": "cmulu2zvm075o4crhdaj6qnnt",
+  "label": "5/16",
+  "feedback": "El denominador no cambia: siguen siendo octavos.",
+  "feedbackEn": "The denominator doesn't change: they're still eighths."
+ },
+ {
+  "exerciseId": "cmulu2zvl075m4crh3emwzxga",
+  "optionId": "cmulu2zvm075p4crhfkchc30f",
+  "label": "1/8",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zvl075m4crh3emwzxga",
+  "optionId": "cmulu2zvm075q4crh1s5zg3re",
+  "label": "6/8",
+  "feedback": "Revisa la suma de los numeradores: 3 + 2.",
+  "feedbackEn": "Check the sum of the numerators: 3 + 2."
+ },
+ {
+  "exerciseId": "cmuli7jm601kq6krhxzi4wmsf",
+  "optionId": "cmuli7jm601kr6krhv0qzuhe4",
+  "label": "5/8",
+  "feedback": "Correcto: 3 octavos más 2 octavos son 5 octavos: 5/8.",
+  "feedbackEn": "That's right: 3 eighths plus 2 eighths is 5 eighths: 5/8."
+ },
+ {
+  "exerciseId": "cmuli7jm601kq6krhxzi4wmsf",
+  "optionId": "cmuli7jm601ks6krhf6xjpztq",
+  "label": "5/16",
+  "feedback": "El denominador no cambia: siguen siendo octavos.",
+  "feedbackEn": "The denominator doesn't change: they're still eighths."
+ },
+ {
+  "exerciseId": "cmuli7jm601kq6krhxzi4wmsf",
+  "optionId": "cmuli7jm601kt6krhwffjjv5h",
+  "label": "1/8",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmuli7jm601kq6krhxzi4wmsf",
+  "optionId": "cmuli7jm601ku6krhjy47lb1h",
+  "label": "6/8",
+  "feedback": "Revisa la suma de los numeradores: 3 + 2.",
+  "feedbackEn": "Check the sum of the numerators: 3 + 2."
+ },
+ {
+  "exerciseId": "cmulu2zuh074d4crhc0qpk19x",
+  "optionId": "cmulu2zui074e4crhw2qjj0m6",
+  "label": "5/8",
+  "feedback": "Correcto: 3 octavos más 2 octavos son 5 octavos: 5/8.",
+  "feedbackEn": "That's right: 3 eighths plus 2 eighths is 5 eighths: 5/8."
+ },
+ {
+  "exerciseId": "cmulu2zuh074d4crhc0qpk19x",
+  "optionId": "cmulu2zui074f4crhibx0ffoi",
+  "label": "5/16",
+  "feedback": "El denominador no cambia: siguen siendo octavos.",
+  "feedbackEn": "The denominator doesn't change: they're still eighths."
+ },
+ {
+  "exerciseId": "cmulu2zuh074d4crhc0qpk19x",
+  "optionId": "cmulu2zui074g4crh8103zu11",
+  "label": "1/8",
+  "feedback": "Te piden sumar. Revisa qué operación hiciste.",
+  "feedbackEn": "The question asks you to add. Check which operation you did."
+ },
+ {
+  "exerciseId": "cmulu2zuh074d4crhc0qpk19x",
+  "optionId": "cmulu2zui074h4crh7ljmunc9",
+  "label": "6/8",
+  "feedback": "Revisa la suma de los numeradores: 3 + 2.",
+  "feedbackEn": "Check the sum of the numerators: 3 + 2."
  }
 ]

@@ -48,10 +48,10 @@
  "promptMismatch": [],
  "legends": {
   "generic": 502,
-  "none": 1045,
+  "none": 1093,
   "named:optionBindings": 19,
   "named:prompt": 101,
-  "named:rowLabels": 51
+  "named:rowLabels": 3
  },
  "genericReasons": {
   "grupos_sin_nombre": 340,
@@ -66,8 +66,8 @@
   "5": 199,
   "6": 326
  },
- "rutasVerificadas": 4091,
- "rutasTotales": 4091,
+ "rutasVerificadas": 4043,
+ "rutasTotales": 4043,
  "conImagen": 1782,
  "porCurso": {
   "1": 331,
