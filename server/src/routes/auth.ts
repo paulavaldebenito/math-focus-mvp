@@ -3,6 +3,7 @@ import { prisma } from "../db/prisma.js";
 import { hashPassword, verifyPassword } from "../auth/password.js";
 import { loginSchema, registerSchema } from "../auth/schemas.js";
 import { requireAuth } from "../auth/session.js";
+import { adultPublic } from "../auth/reviewer.js";
 
 export const authRouter = Router();
 
@@ -53,7 +54,7 @@ authRouter.post("/login", async (req, res) => {
       return;
     }
     req.session.adultUserId = adult.id;
-    res.status(200).json({ id: adult.id, email: adult.email });
+    res.status(200).json(adultPublic(adult));
   });
 });
 
@@ -69,5 +70,5 @@ authRouter.get("/me", requireAuth, async (req, res) => {
     res.status(401).json({ error: "not_authenticated" });
     return;
   }
-  res.status(200).json({ id: adult.id, email: adult.email });
+  res.status(200).json(adultPublic(adult));
 });

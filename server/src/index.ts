@@ -19,6 +19,7 @@ import { homeSummaryRouter } from "./routes/homeSummary.js";
 import { skillPathRouter } from "./routes/skillPath.js";
 import { sessionMiddleware } from "./auth/session.js";
 import { checkInsRouter } from "./routes/checkIns.js";
+import { reviewRouter } from "./routes/review.js";
 
 export const app = express();
 
@@ -51,6 +52,7 @@ app.use("/api/sessions/:sessionId/check-in", checkInsRouter);
 app.use("/api/sessions/:sessionId/complete", sessionCompleteRouter);
 app.use("/api/children/:childId/home", homeSummaryRouter);
 app.use("/api/children/:childId/skill-path", skillPathRouter);
+app.use("/api/review", reviewRouter);
 
 // Cualquier ruta no definida arriba — JSON consistente en vez del HTML por
 // defecto de Express (el cliente espera poder parsear `.json()` siempre).

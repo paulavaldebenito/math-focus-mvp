@@ -1,6 +1,8 @@
 export interface AdultUser {
   id: string;
   email: string;
+  /** true si la cuenta está en REVIEWER_EMAILS del servidor (modo revisión). */
+  isReviewer?: boolean;
 }
 
 export interface Consent {
@@ -256,4 +258,49 @@ export interface SkillToReview {
   attempts: number;
   accuracy: number;
   tip: { es: string; en: string } | null;
+}
+
+// ---- Modo revisión (specs/011-modo-revision) — solo cuentas revisoras ----
+
+export interface ReviewSkill {
+  id: string;
+  name: string;
+  nameEn: string | null;
+  axis: string;
+  axisEn: string | null;
+  oaCode: string | null;
+  exerciseCount: number;
+  openComments: number;
+}
+
+export interface ReviewExerciseSummary {
+  id: string;
+  prompt: string;
+  theme: string | null;
+  /** Problema base: sus variantes temáticas comparten la misma clave. */
+  groupKey: string;
+  difficultyLevel: number;
+  openComments: number;
+}
+
+export interface ReviewComment {
+  id: string;
+  text: string;
+  createdAt: string;
+  resolvedAt: string | null;
+  author: string;
+}
+
+export interface ReviewExercise extends ExercisePublic {
+  theme: string | null;
+  skill: { id: string; grade: number; name: string; nameEn: string | null; oaCode: string | null };
+  comments: ReviewComment[];
+}
+
+export interface ReviewAnswerResult extends AttemptResult {
+  correctOptionId: string | null;
+}
+
+export interface ReviewPendingComment extends ReviewComment {
+  exercise: { id: string; prompt: string; theme: string | null; skill: { id: string; grade: number; name: string } };
 }

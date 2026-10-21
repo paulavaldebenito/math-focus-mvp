@@ -12,6 +12,7 @@ import { SkillPathScreen } from "./screens/SkillPathScreen.js";
 import { PracticeScreen } from "./screens/PracticeScreen.js";
 import { FamilyDashboardScreen } from "./screens/FamilyDashboardScreen.js";
 import { HomeScreen } from "./screens/HomeScreen.js";
+import { ReviewScreen } from "./screens/ReviewScreen.js";
 import * as endpoints from "./api/endpoints.js";
 import type { ChildProfile } from "./api/types.js";
 import { LangProvider } from "./context/LangContext.js";
@@ -244,6 +245,7 @@ function AppShell() {
   const { adult, loading } = useAuth();
   const [child, setChild] = useState<ChildProfile | null>(null);
   const [isNewChild, setIsNewChild] = useState(false);
+  const [reviewing, setReviewing] = useState(false);
 
   if (loading) {
     return (
@@ -257,18 +259,33 @@ function AppShell() {
     return <AuthScreen />;
   }
 
-  if (!child) {
-    return (
-      <Onboarding
-        onChildReady={(c, fresh) => {
-          setChild(c);
-          setIsNewChild(fresh);
-        }}
-      />
-    );
-  }
+  // Modo revisión: solo cuentas revisoras (REVIEWER_EMAILS en el servidor).
+  // Se puede entrar antes de crear un niño; al salir se vuelve al flujo
+  // normal tal como estaba (ChildFlow no se desmonta mientras se revisa).
+  const reviewEntry = adult.isReviewer && !reviewing && (
+    <button className="review-entry" type="button" onClick={() => setReviewing(true)}>
+      {t(lang, "reviewEntry")}
+    </button>
+  );
 
-  return <ChildFlow child={child} isNewChild={isNewChild} />;
+  return (
+    <>
+      {reviewEntry}
+      {reviewing && <ReviewScreen onExit={() => setReviewing(false)} />}
+      <div hidden={reviewing}>
+        {!child ? (
+          <Onboarding
+            onChildReady={(c, fresh) => {
+              setChild(c);
+              setIsNewChild(fresh);
+            }}
+          />
+        ) : (
+          <ChildFlow child={child} isNewChild={isNewChild} />
+        )}
+      </div>
+    </>
+  );
 }
 
 export default function App() {

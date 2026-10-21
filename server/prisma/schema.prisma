@@ -21,6 +21,7 @@ model AdultUser {
   updatedAt    DateTime       @updatedAt
   consents     Consent[]
   children     ChildProfile[]
+  reviewComments ReviewComment[]
 }
 
 /// Consentimiento explícito de un adulto. Es obligatorio y precede a la
@@ -156,6 +157,7 @@ model Exercise {
   createdAt       DateTime         @default(now())
   options         ExerciseOption[]
   attempts        Attempt[]
+  reviewComments  ReviewComment[]
 }
 
 /// Alternativa de un ejercicio. Si es incorrecta, puede señalar qué patrón
@@ -318,4 +320,21 @@ model ProgressSnapshot {
   exercisesCompleted Int
   accuracyRate       Float
   createdAt          DateTime     @default(now())
+}
+
+/// Nota de una revisora sobre un ejercicio, escrita desde el modo revisión
+/// (solo cuentas en REVIEWER_EMAILS). Es para corregir el banco después:
+/// nunca la ve un niño ni afecta su progreso. `resolvedAt` lo marca quien
+/// corrige el banco cuando la nota ya se atendió.
+model ReviewComment {
+  id          String    @id @default(cuid())
+  exerciseId  String
+  exercise    Exercise  @relation(fields: [exerciseId], references: [id])
+  adultUserId String
+  adultUser   AdultUser @relation(fields: [adultUserId], references: [id])
+  text        String
+  createdAt   DateTime  @default(now())
+  resolvedAt  DateTime?
+
+  @@index([exerciseId])
 }

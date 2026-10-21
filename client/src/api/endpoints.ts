@@ -9,6 +9,12 @@ import type {
   InitialAssessmentResult,
   NextExercisePublic,
   ProgressResponse,
+  ReviewAnswerResult,
+  ReviewComment,
+  ReviewExercise,
+  ReviewExerciseSummary,
+  ReviewPendingComment,
+  ReviewSkill,
   SkillPathResult,
   StartSessionResponse,
 } from "./types.js";
@@ -135,4 +141,35 @@ export function completeSession(sessionId: string) {
 
 export function getHomeSummary(childId: string) {
   return api.get<HomeSummary>(`/api/children/${childId}/home`);
+}
+
+// ---- Modo revisión ----
+
+export function reviewSkills(grade: number) {
+  return api.get<{ grade: number; skills: ReviewSkill[] }>(`/api/review/skills?grade=${grade}`);
+}
+
+export function reviewSkillExercises(skillId: string) {
+  return api.get<{ skill: ReviewExercise["skill"]; exercises: ReviewExerciseSummary[] }>(`/api/review/skills/${skillId}/exercises`);
+}
+
+export function reviewExercise(exerciseId: string) {
+  return api.get<ReviewExercise>(`/api/review/exercises/${exerciseId}`);
+}
+
+export function reviewAnswer(exerciseId: string, selectedOptionId: string) {
+  return api.post<ReviewAnswerResult>(`/api/review/exercises/${exerciseId}/answer`, { selectedOptionId });
+}
+
+export function reviewAddComment(exerciseId: string, text: string) {
+  return api.post<ReviewComment>(`/api/review/exercises/${exerciseId}/comments`, { text });
+}
+
+export function reviewDeleteComment(commentId: string) {
+  return api.delete<void>(`/api/review/comments/${commentId}`);
+}
+
+export async function reviewPendingComments(): Promise<ReviewPendingComment[]> {
+  const { comments } = await api.get<{ comments: ReviewPendingComment[] }>("/api/review/comments");
+  return comments;
 }

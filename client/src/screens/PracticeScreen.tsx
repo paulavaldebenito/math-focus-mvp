@@ -9,6 +9,7 @@ import { MoodCheckIn } from "../components/MoodCheckIn.js";
 import { BrickCompanionAvatar, type CompanionMood } from "../components/BrickCompanionAvatar.js";
 import { Confetti } from "../components/Confetti.js";
 import { MascotMoment } from "../components/MascotMoment.js";
+import { wrongFeedbackText } from "../lib/feedback.js";
 import { companionByKey, companionName, type Companion } from "../lib/companions.js";
 import { interestByKey } from "../lib/interests.js";
 import { cancelSpeech, speak, speechSupported } from "../lib/speech.js";
@@ -25,9 +26,7 @@ import {
 } from "../lib/sound.js";
 import {
   DIAGNOSIS_CHIPS,
-  ERROR_FEEDBACK,
   FEEDBACK_CORRECT_VARIANTS,
-  FEEDBACK_RETRY_VARIANTS,
   localize,
   t,
   useLang,
@@ -68,22 +67,6 @@ type Phase =
   | "done"
   | "error";
 
-/**
- * Mensaje de feedback al equivocarse: prioriza el mensaje propio de la
- * alternativa elegida (si el ejercicio lo tiene) y luego la explicación
- * concreta del tipo de error clasificado (ver ERROR_FEEDBACK) por sobre el aviso genérico
- * de "responde muy rápido" y, en último caso, una variante genérica cálida.
- * Se resuelve una sola vez por intento (no en cada render) para que no
- * cambie de texto mientras la tarjeta de feedback sigue en pantalla.
- */
-function wrongFeedbackText(lang: Lang, result: AttemptResult): string {
-  if (result.feedback) return localize(lang, result.feedback, result.feedbackEn);
-  const specific = result.errorCode ? ERROR_FEEDBACK[lang][result.errorCode] : undefined;
-  if (specific) return specific;
-  if (result.action.ruleCode === "FAST_THEN_WRONG") return t(lang, "feedbackReview");
-  const variants = FEEDBACK_RETRY_VARIANTS[lang];
-  return variants[Math.floor(Math.random() * variants.length)]!;
-}
 
 /**
  * Feedback de una ronda "detecta el error": a diferencia de wrongFeedbackText
