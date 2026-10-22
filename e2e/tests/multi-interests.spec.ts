@@ -13,9 +13,11 @@ if (process.env.PW_CHANNEL) test.use({ channel: process.env.PW_CHANNEL });
 // Vocabulario propio de las variantes de fútbol, cocina y espacio (ver
 // server/prisma/seed/themes/{futbol,cocina,espacio}.ts) — los 3 intereses
 // que elige el niño en este test. Si aparece alguna palabra, la pregunta es
-// temática y no del banco neutro.
+// temática y no del banco neutro. Ampliada (specs/014): con la lista
+// original, 1 de cada 3 preguntas temáticas de 4° no se reconocía y el test
+// fallaba al azar aunque sí llegaran preguntas temáticas.
 const THEMED_WORDS =
-  /cancha|\bgol(es)?\b|\barco\b|equipo|partido|jugador|penal|campeonato|balón|camiseta|receta|cupcake|torta|hornear|horno|pastelería|panadería|alfajor|queque|harina|glaseado|bandeja|molde|galleta|repostería|marraqueta|empanada|tartaleta|dona|nave|cohete|astronauta|planeta|estación espacial|cápsula|misión espacial|galaxia|cuenta regresiva/i;
+  /cancha|\bgol(es)?\b|\barco\b|equipo|partido|jugador|penal|campeonato|balón|camiseta|receta|cupcake|torta|hornear|horno|pastelería|panadería|alfajor|queque|harina|glaseado|bandeja|molde|galleta|repostería|marraqueta|empanada|tartaleta|dona|nave|cohete|astronauta|planeta|estación espacial|cápsula|misión espacial|galaxia|cuenta regresiva|fútbol|\bclub\b|socios|banderín|pelota|deportiv|entrenamiento|torneo|\bmasa\b|cocin|ingrediente|pastel|observatorio|misi[oó]n|espacial|telescopio|robot explorador|estrella|órbita|satélite/i;
 
 test("elegir hasta 3 intereses, la 4ª tarjeta se deshabilita, y llegan preguntas temáticas en la práctica", async ({
   page,
