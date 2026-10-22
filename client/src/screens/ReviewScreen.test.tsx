@@ -48,6 +48,20 @@ beforeEach(() => {
 });
 
 describe("ReviewScreen", () => {
+  it("si se cambia de curso rápido, una respuesta atrasada del curso anterior no pisa la lista", async () => {
+    let resolveFirst: (v: unknown) => void = () => {};
+    mocks.reviewSkills.mockReset();
+    mocks.reviewSkills.mockImplementationOnce(() => new Promise((r) => (resolveFirst = r)));
+    mocks.reviewSkills.mockResolvedValueOnce({ grade: 6, skills: [{ ...skill, id: "s6", name: "Porcentajes de 6°" }] });
+    const user = userEvent.setup();
+    render(<ReviewScreen onExit={vi.fn()} />);
+    await user.click(screen.getByRole("tab", { name: "6° básico" }));
+    expect(await screen.findByRole("button", { name: /Porcentajes de 6°/ })).toBeInTheDocument();
+    resolveFirst({ grade: 1, skills: [{ ...skill, id: "s1", name: "Habilidad de 1°" }] });
+    await new Promise((r) => setTimeout(r, 0));
+    expect(screen.queryByRole("button", { name: /Habilidad de 1°/ })).not.toBeInTheDocument();
+  });
+
   it("cambia de curso y abre las preguntas de una habilidad", async () => {
     const user = userEvent.setup();
     render(<ReviewScreen onExit={vi.fn()} />);

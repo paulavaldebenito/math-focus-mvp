@@ -16,6 +16,7 @@ const mocks = vi.hoisted(() => ({
   getNextExercise: vi.fn(),
   submitAttempt: vi.fn(),
   submitSpotErrorAttempt: vi.fn(),
+  submitFindStepAttempt: vi.fn(),
   submitPauseEvent: vi.fn(),
   submitCheckIn: vi.fn(),
   getHomeSummary: vi.fn(),
@@ -733,5 +734,54 @@ describe("PracticeScreen — ilustración SVG y alternativas bilingües", () => 
     expect(screen.getByRole("button", { name: "blue" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "12" })).toBeInTheDocument();
     expect(screen.queryByRole("button", { name: "azul" })).not.toBeInTheDocument();
+  });
+
+  // ---- Desarrollo paso a paso (specs/015) ----
+  const steps = [
+    { es: "Denominador común: 1/2 = 2/4.", en: "Common denominator: 1/2 = 2/4." },
+    { es: "2/4 + 1/4 = 3/4. Respuesta: 3/4.", en: "2/4 + 1/4 = 3/4. Answer: 3/4." },
+  ];
+  const noChange = { type: "NO_CHANGE", ruleCode: "NO_RULE_TRIGGERED", reason: "x" };
+
+  it("al equivocarse muestra el desarrollo con el paso donde se desvió marcado", async () => {
+    mocks.startSession.mockResolvedValue({ sessionId: "s1", currentLevel: 2 });
+    mocks.getNextExercise.mockResolvedValueOnce({ id: "f1", prompt: "¿Cuánto es 1/2 + 1/4?", options: [{ id: "o1", label: "3/4" }, { id: "o2", label: "2/6" }], procedureNote: "Busca un denominador común." });
+    mocks.submitAttempt.mockResolvedValue({
+      isCorrect: false, action: noChange, level: 2, errorCode: "E2_RES", bonusStarAwarded: false,
+      feedback: "Los denominadores no se suman.", feedbackEn: null,
+      solution: steps, wrongStep: { step: 0, es: "Se suman arriba y abajo: 1 + 1 = 2 y 2 + 4 = 6. Respuesta: 2/6.", en: "x" },
+    });
+    const user = userEvent.setup();
+    render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
+    await skipPrePause(user);
+    await user.click(await screen.findByRole("button", { name: "2/6" }));
+
+    expect(await screen.findByText("Así se resuelve, paso a paso")).toBeInTheDocument();
+    expect(screen.getByText(/Se suman arriba y abajo: 1 \+ 1 = 2 y 2 \+ 4 = 6/)).toBeInTheDocument();
+    expect(screen.getByText(/Denominador común: 1\/2 = 2\/4/)).toBeInTheDocument();
+    expect(screen.getByText(/2\/4 \+ 1\/4 = 3\/4/)).toBeInTheDocument();
+  });
+
+  it("«encuentra el paso equivocado»: el niño toca la línea, se marca la correcta y se ve cómo debía ser", async () => {
+    mocks.startSession.mockResolvedValue({ sessionId: "s1", currentLevel: 2 });
+    mocks.getNextExercise.mockResolvedValueOnce({
+      id: "f2", mode: "find_step", prompt: "¿Cuánto es 1/2 + 1/4?", wrongOptionId: "w1", characterAnswerLabel: "1/4", characterAnswerLabelEn: null,
+      lines: [steps[0], { es: "Se resta en vez de sumar: 2/4 − 1/4 = 1/4. Respuesta: 1/4.", en: "x" }],
+    });
+    mocks.submitFindStepAttempt.mockResolvedValue({ isCorrect: true, correctLine: 1, correctStep: steps[1], solution: steps, action: noChange, level: 2, errorCode: null, bonusStarAwarded: false });
+    const user = userEvent.setup();
+    render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
+    await skipPrePause(user);
+
+    expect(await screen.findByText("Mira cómo lo resolvió tu amigo:")).toBeInTheDocument();
+    expect(screen.getByText("¿En qué paso se equivocó? Tócalo.")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Necesito una pista" })).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /Paso 2/ }));
+
+    expect(mocks.submitFindStepAttempt).toHaveBeenCalledWith("s1", { exerciseId: "f2", wrongOptionId: "w1", chosenLine: 1 });
+    expect(await screen.findByText("¡Lo encontraste! Ese era el paso equivocado.")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Paso 2/ })).toHaveClass("correct");
+    expect(screen.getByText(/Así era/).parentElement).toHaveTextContent("2/4 + 1/4 = 3/4");
+    expect(screen.getByText(/Aquí se equivocó tu amigo/)).toBeInTheDocument();
   });
 });

@@ -157,6 +157,11 @@ reviewRouter.post("/exercises/:exerciseId/answer", async (req, res) => {
     feedback: option.feedback,
     feedbackEn: option.feedbackEn,
     correctOptionId: options.find((o) => o.isCorrect)?.id ?? null,
+    // Desarrollo (specs/015): el del niño y, para revisar el contenido, el
+    // paso equivocado previsto de cada alternativa incorrecta.
+    solution: (await prisma.exercise.findUnique({ where: { id: req.params.exerciseId }, select: { solution: true } }))?.solution ?? null,
+    wrongStep: option.isCorrect ? null : option.wrongStep,
+    allWrongSteps: options.filter((o) => !o.isCorrect && o.wrongStep).map((o) => ({ label: o.label, labelEn: o.labelEn, wrongStep: o.wrongStep })),
     action: { type: "NO_CHANGE", ruleCode: "NO_RULE_TRIGGERED", reason: "Modo revisión." },
     level: 0,
     bonusStarAwarded: false,

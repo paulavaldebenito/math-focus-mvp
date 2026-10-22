@@ -109,3 +109,57 @@ export function buildSpotErrorRound(ex: SpotErrorExercise, rng: () => number = M
     explanationOptions: shuffleWithRng([realCode, ...distractorCodes], rng),
   };
 }
+
+// ---------- "Encuentra el paso equivocado" (specs/015) ----------
+
+export interface Bilingual {
+  es: string;
+  en: string;
+}
+export interface WrongStep extends Bilingual {
+  step: number;
+}
+export interface FindStepExercise extends SpotErrorExercise {
+  solution: unknown;
+  options: Array<SpotErrorOption & { wrongStep: unknown }>;
+}
+export interface FindStepRound {
+  wrongOptionId: string;
+  /** Desarrollo del personaje: pasos correctos hasta el error y el paso equivocado (el último). */
+  lines: Bilingual[];
+  characterAnswerLabel: string;
+  characterAnswerLabelEn: string | null;
+}
+
+const asSteps = (x: unknown): Bilingual[] | null => (Array.isArray(x) && x.every((s) => s && typeof s.es === "string") ? (x as Bilingual[]) : null);
+const asWrong = (x: unknown): WrongStep | null => (x && typeof (x as WrongStep).step === "number" ? (x as WrongStep) : null);
+
+/// Alternativas que sirven para la ronda: incorrectas, con su paso equivocado
+/// y con al menos un paso correcto antes (si el error está en el primer paso,
+/// no hay nada que revisar antes de encontrarlo).
+function findStepCandidates(ex: FindStepExercise) {
+  const steps = asSteps(ex.solution);
+  if (!steps || SELECTION_AMONG_OPTIONS_PATTERN.test(ex.prompt)) return [];
+  return ex.options.filter((o) => {
+    const w = asWrong(o.wrongStep);
+    return !o.isCorrect && w !== null && w.step >= 1 && w.step < steps.length;
+  });
+}
+
+export function isFindStepEligible(ex: FindStepExercise): boolean {
+  return findStepCandidates(ex).length > 0;
+}
+
+export function buildFindStepRound(ex: FindStepExercise, rng: () => number = Math.random): FindStepRound | null {
+  const candidates = findStepCandidates(ex);
+  const steps = asSteps(ex.solution);
+  if (candidates.length === 0 || !steps) return null;
+  const option = candidates[Math.floor(rng() * candidates.length)]!;
+  const w = asWrong(option.wrongStep)!;
+  return {
+    wrongOptionId: option.id,
+    lines: [...steps.slice(0, w.step), { es: w.es, en: w.en }],
+    characterAnswerLabel: option.label,
+    characterAnswerLabelEn: option.labelEn ?? null,
+  };
+}

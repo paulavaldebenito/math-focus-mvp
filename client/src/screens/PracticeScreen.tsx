@@ -10,6 +10,7 @@ import { BrickCompanionAvatar, type CompanionMood } from "../components/BrickCom
 import { Confetti } from "../components/Confetti.js";
 import { MascotMoment } from "../components/MascotMoment.js";
 import { SessionReflection } from "../components/SessionReflection.js";
+import { WorkedSolution } from "../components/WorkedSolution.js";
 import type { ReflectionQuestion } from "../api/types.js";
 import { wrongFeedbackText } from "../lib/feedback.js";
 import { companionByKey, companionName, type Companion } from "../lib/companions.js";
@@ -315,6 +316,31 @@ export function PracticeScreen({
       }
     } catch {
       retryActionRef.current = () => void handleSpotErrorAnswer(chosenCode);
+      setPhase("error");
+    }
+  }
+
+  async function handleFindStepAnswer(line: number) {
+    if (!exercise || exercise.mode !== "find_step" || !sessionId) return;
+    setSelectedOptionId(String(line));
+    setMascotMoment(null);
+    try {
+      const res = await endpoints.submitFindStepAttempt(sessionId, { exerciseId: exercise.id, wrongOptionId: exercise.wrongOptionId, chosenLine: line });
+      setResult(res);
+      setLevel(res.level);
+      setPhase("feedback");
+      // Sin el feedback de la alternativa: está escrito para quien la eligió
+      // ("revisa qué operación hiciste") y aquí el error es del amigo.
+      setFeedbackVariant(t(lang, res.isCorrect ? "findStepCorrect" : "findStepWrong"));
+      if (res.isCorrect) {
+        applyCorrectEffects(res);
+      } else {
+        setStreak(0);
+        playRetry();
+        setMood("encourage");
+      }
+    } catch {
+      retryActionRef.current = () => void handleFindStepAnswer(line);
       setPhase("error");
     }
   }
@@ -649,9 +675,10 @@ export function PracticeScreen({
           <span className="fc-bl" aria-hidden="true" />
           <span className="fc-br" aria-hidden="true" />
 
-          <ExerciseIllustration image={exercise.image} visual={exercise.visual} interest={interest} options={exercise.mode === "spot_error" ? undefined : exercise.options} />
+          <ExerciseIllustration image={exercise.image} visual={exercise.visual} interest={interest} options={"options" in exercise ? exercise.options : undefined} />
 
           {exercise.mode === "spot_error" && <p className="spot-error-lead">{t(lang, "spotErrorLead")}</p>}
+          {exercise.mode === "find_step" && <p className="spot-error-lead">{t(lang, "findStepLead")}</p>}
 
           <h1>{localize(lang, exercise.prompt, exercise.promptEn)}</h1>
 
@@ -663,6 +690,7 @@ export function PracticeScreen({
               <p className="hint-text">{t(lang, "spotErrorAsk")}</p>
             </>
           )}
+          {exercise.mode === "find_step" && <p className="hint-text">{t(lang, "findStepAsk")}</p>}
 
           {phase === "question" && speechSupported && (
             <button
@@ -675,7 +703,30 @@ export function PracticeScreen({
           )}
 
           <div className="form">
-            {exercise.mode === "spot_error"
+            {exercise.mode === "find_step"
+              ? exercise.lines.map((line, i) => {
+                  let cls = "option-btn find-step-line";
+                  if (phase === "feedback" && result?.correctLine === i) cls += " correct";
+                  else if (phase === "feedback" && String(i) === selectedOptionId) cls += " incorrect";
+                  return (
+                    <button
+                      key={i}
+                      className={cls}
+                      type="button"
+                      disabled={phase === "feedback"}
+                      onClick={() => {
+                        playClick();
+                        void handleFindStepAnswer(i);
+                      }}
+                    >
+                      <span className="find-step-n">
+                        {t(lang, "findStepStep")} {i + 1}
+                      </span>{" "}
+                      {localize(lang, line.es, line.en)}
+                    </button>
+                  );
+                })
+              : exercise.mode === "spot_error"
               ? exercise.explanationOptions.map((code) => {
                   let cls = "option-btn";
                   if (phase === "feedback" && code === selectedOptionId) {
@@ -724,7 +775,7 @@ export function PracticeScreen({
             </p>
           )}
 
-          {phase === "question" && !showHint && (
+          {phase === "question" && !showHint && exercise.mode !== "find_step" && (
             <button
               className="btn-secondary"
               type="button"
@@ -737,7 +788,7 @@ export function PracticeScreen({
               {t(lang, "needHint")}
             </button>
           )}
-          {phase === "question" && showHint && exercise.procedureNote && (
+          {phase === "question" && showHint && "procedureNote" in exercise && exercise.procedureNote && (
             <p className="hint-text">
               {t(lang, "hintLabel")}: {localize(lang, exercise.procedureNote, exercise.procedureNoteEn)}
             </p>
@@ -759,11 +810,29 @@ export function PracticeScreen({
           {phase === "feedback" &&
             result &&
             (!result.isCorrect || exercise.mode === "spot_error") &&
-            exercise.procedureNote && (
+            "procedureNote" in exercise &&
+            exercise.procedureNote &&
+            !result.solution && (
               <p className="hint-text strategy-note">
                 {t(lang, "strategyLabel")}: {localize(lang, exercise.procedureNote, exercise.procedureNoteEn)}
               </p>
             )}
+          {/* Desarrollo paso a paso (specs/015): tras un error, abierto y con el
+              paso donde se desvió marcado; tras un acierto, desplegable. En
+              "encuentra el paso equivocado" se marca el paso del amigo. */}
+          {phase === "feedback" && result?.solution && (
+            <WorkedSolution
+              lang={lang}
+              steps={result.solution}
+              wrongStep={
+                exercise.mode === "find_step" && result.correctLine !== undefined
+                  ? { step: result.correctLine, ...exercise.lines[result.correctLine]! }
+                  : result.wrongStep
+              }
+              open={!result.isCorrect || exercise.mode === "find_step"}
+              whose={exercise.mode === "find_step" ? "friend" : "you"}
+            />
+          )}
           {phase === "feedback" && result?.isCorrect && streak >= 2 && (
             <span className="streak-badge">
               🔥 {streak} {t(lang, "comboStreakLabel")}

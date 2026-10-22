@@ -11,6 +11,7 @@ import {
   childSessionsRouter,
   sessionAttemptsRouter,
   spotErrorAttemptsRouter,
+  findStepAttemptsRouter,
   nextExerciseRouter,
   pauseEventsRouter,
   sessionCompleteRouter,
@@ -49,6 +50,7 @@ app.use("/api/children/:childId/sessions", childSessionsRouter);
 app.use("/api/children/:childId/next-exercise", nextExerciseRouter);
 app.use("/api/sessions/:sessionId/attempts", sessionAttemptsRouter);
 app.use("/api/sessions/:sessionId/spot-error-attempts", spotErrorAttemptsRouter);
+app.use("/api/sessions/:sessionId/find-step-attempts", findStepAttemptsRouter);
 app.use("/api/sessions/:sessionId/pause-events", pauseEventsRouter);
 app.use("/api/sessions/:sessionId/check-in", checkInsRouter);
 app.use("/api/sessions/:sessionId/reflection", reflectionRouter);

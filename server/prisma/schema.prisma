@@ -162,6 +162,11 @@ model Exercise {
   /// otra historia). Sirve para no entregar dos veces el "mismo" problema en
   /// una sesión. NULL = sin variantes.
   baseKey         String?
+  /// Desarrollo paso a paso de la solución correcta: [{ es, en }] (specs/015).
+  /// Sin la historia, para que sirva a todas las variantes del problema. Se
+  /// envía SOLO después de responder (antes delataría la respuesta). Lo
+  /// escribe prisma/seed/traducciones/applyWorkedSteps.ts. NULL = sin desarrollo.
+  solution        Json?
   createdAt       DateTime         @default(now())
   options         ExerciseOption[]
   attempts        Attempt[]
@@ -188,6 +193,11 @@ model ExerciseOption {
   /// Lo escribe prisma/seed/traducciones/applyOptionFeedback.ts.
   feedback    String?
   feedbackEn  String?
+  /// Para una alternativa incorrecta: en qué paso de `Exercise.solution` se
+  /// desvía y cómo queda ese paso hecho con el error, { step, es, en }
+  /// (specs/015). Sirve para mostrarle al niño dónde se equivocó y para la
+  /// ronda "encuentra el paso equivocado". NULL = sin desarrollo.
+  wrongStep   Json?
   errorTypeId String?
   errorType   ErrorType? @relation(fields: [errorTypeId], references: [id])
   attempts    Attempt[]

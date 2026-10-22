@@ -168,7 +168,36 @@ export interface SpotErrorExercisePublic {
   procedureNoteEn?: string | null;
 }
 
-export type NextExercisePublic = ExercisePublic | SpotErrorExercisePublic;
+/** Paso del desarrollo, en ambos idiomas (specs/015). */
+export interface WorkedStep {
+  es: string;
+  en: string;
+}
+/** Paso donde una alternativa incorrecta se desvía, y cómo queda hecho con el error. */
+export interface WrongStep extends WorkedStep {
+  step: number;
+}
+
+/**
+ * Ronda "encuentra el paso equivocado" (specs/015): el desarrollo de un
+ * personaje, con los pasos correctos hasta el error y el paso equivocado; el
+ * niño toca la línea donde se equivocó.
+ */
+export interface FindStepExercisePublic {
+  mode: "find_step";
+  id: string;
+  prompt: string;
+  promptEn?: string | null;
+  difficultyLevel?: number;
+  visual?: ExerciseVisualDescriptor | null;
+  image?: ExerciseImagePublic | EmojiPictographPublic | null;
+  lines: WorkedStep[];
+  characterAnswerLabel: string;
+  characterAnswerLabelEn: string | null;
+  wrongOptionId: string;
+}
+
+export type NextExercisePublic = ExercisePublic | SpotErrorExercisePublic | FindStepExercisePublic;
 
 export interface InitialAssessmentResponse {
   exercises: ExercisePublic[];
@@ -276,6 +305,13 @@ export interface AttemptResult {
   /** Solo en respuestas de una ronda "detecta el error": el código real,
    * revelado recién después de diagnosticar (haya acertado o no). */
   correctCode?: string;
+  /** Desarrollo paso a paso (specs/015), recién después de responder. */
+  solution?: WorkedStep[] | null;
+  /** Si se equivocó: el paso donde su alternativa se desvía. */
+  wrongStep?: WrongStep | null;
+  /** Solo en "encuentra el paso equivocado": la línea correcta y cómo debía ser. */
+  correctLine?: number;
+  correctStep?: WorkedStep | null;
 }
 
 export interface ProgressResponse {
@@ -366,6 +402,8 @@ export interface ReviewExercise extends ExercisePublic {
 
 export interface ReviewAnswerResult extends AttemptResult {
   correctOptionId: string | null;
+  /** Para revisar el contenido: el paso equivocado previsto de cada alternativa incorrecta. */
+  allWrongSteps?: Array<{ label: string; labelEn: string | null; wrongStep: WrongStep }>;
 }
 
 export interface ReviewPendingComment extends ReviewComment {

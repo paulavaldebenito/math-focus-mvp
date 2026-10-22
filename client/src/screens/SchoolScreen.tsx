@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import * as endpoints from "../api/endpoints.js";
 import type { DirectorDashboardData, SchoolMembership, StudentFileData, TeacherDashboardData } from "../api/types.js";
 import { SCHOOL } from "../components/school/copy.js";
@@ -35,6 +35,16 @@ export function SchoolScreen({ onExit, onBecameStaff }: Props) {
   const [joinErr, setJoinErr] = useState(false);
   const [newClass, setNewClass] = useState<{ name: string; grade: number }>({ name: "", grade: 1 });
 
+  // Cada apertura de panel/ficha invalida a las anteriores: si el usuario
+  // abre otra antes de que llegue la respuesta, la vieja no la pisa.
+  const request = useRef(0);
+  const guard = <T,>(fn: (data: T) => void) => {
+    const id = ++request.current;
+    return (data: T) => {
+      if (id === request.current) fn(data);
+    };
+  };
+
   const reload = useCallback(() => {
     endpoints
       .mySchools()
@@ -47,21 +57,21 @@ export function SchoolScreen({ onExit, onBecameStaff }: Props) {
     setView({ kind: "class", classroomId, data: null });
     endpoints
       .teacherDashboard(classroomId)
-      .then((data) => setView({ kind: "class", classroomId, data }))
+      .then(guard((data: TeacherDashboardData) => setView({ kind: "class", classroomId, data })))
       .catch(() => setError(true));
   };
   const openStudent = (classroomId: string, childId: string) => {
     setView({ kind: "student", classroomId, data: null });
     endpoints
       .studentFile(classroomId, childId)
-      .then((data) => setView({ kind: "student", classroomId, data }))
+      .then(guard((data: StudentFileData) => setView({ kind: "student", classroomId, data })))
       .catch(() => setError(true));
   };
   const openDirector = (schoolId: string) => {
     setView({ kind: "director", schoolId, data: null });
     endpoints
       .directorDashboard(schoolId)
-      .then((data) => setView({ kind: "director", schoolId, data }))
+      .then(guard((data: DirectorDashboardData) => setView({ kind: "director", schoolId, data })))
       .catch(() => setError(true));
   };
 

@@ -1,0 +1,1722 @@
+[
+ {
+  "key": "b7f6b5522795",
+  "oa": "MA03 OA11",
+  "prompt": "Una barra de chocolate se divide en 3 partes iguales. ¿Qué fracción de la barra es una de esas partes?",
+  "steps": [
+   {
+    "es": "El entero se divide en 3 partes iguales: el número de abajo es 3.",
+    "en": "The whole is split into 3 equal parts: the bottom number is 3."
+   },
+   {
+    "es": "Se toma 1 de esas partes: el número de arriba es 1. Respuesta: 1/3.",
+    "en": "We take 1 of those parts: the top number is 1. Answer: 1/3."
+   }
+  ],
+  "wrong": {
+   "1/2": {
+    "step": 0,
+    "es": "El entero se divide en 2 partes, así que abajo va 2. Respuesta: 1/2.",
+    "en": "The whole is split into 2 parts, so 2 goes on the bottom. Answer: 1/2."
+   },
+   "3/1": {
+    "step": 1,
+    "es": "Arriba va el total de partes (3) y abajo la que se toma (1). Respuesta: 3/1.",
+    "en": "The total number of parts (3) goes on top and the part we take (1) on the bottom. Answer: 3/1."
+   },
+   "2/3": {
+    "step": 1,
+    "es": "Se toman 2 partes: arriba va 2. Respuesta: 2/3.",
+    "en": "We take 2 parts: 2 goes on top. Answer: 2/3."
+   }
+  }
+ },
+ {
+  "key": "b5e5e9c8a3b9",
+  "oa": "MA03 OA11",
+  "prompt": "Una jarra se divide en 3 partes iguales. Vicente toma 1 parte y Ana toma 1 parte. ¿Qué fracción de la jarra tomaron entre los dos?",
+  "steps": [
+   {
+    "es": "El entero está dividido en 3 partes iguales: abajo va 3.",
+    "en": "The whole is split into 3 equal parts: 3 goes on the bottom."
+   },
+   {
+    "es": "Uno toma 1 parte y el otro 1 parte: 1 + 1 = 2 partes.",
+    "en": "One takes 1 part and the other takes 1 part: 1 + 1 = 2 parts."
+   },
+   {
+    "es": "Son 2 de las 3 partes. Respuesta: 2/3.",
+    "en": "That's 2 of the 3 parts. Answer: 2/3."
+   }
+  ],
+  "wrong": {
+   "3/3": {
+    "step": 1,
+    "es": "Se toman todas las partes: 3 partes. Respuesta: 3/3.",
+    "en": "All the parts are taken: 3 parts. Answer: 3/3."
+   },
+   "1/3": {
+    "step": 1,
+    "es": "Se cuenta solo la parte de uno: 1 parte. Respuesta: 1/3.",
+    "en": "Only one person’s part is counted: 1 part. Answer: 1/3."
+   },
+   "2/6": {
+    "step": 2,
+    "es": "Se suman también los números de abajo: 3 + 3 = 6. Respuesta: 2/6.",
+    "en": "The bottom numbers are added too: 3 + 3 = 6. Answer: 2/6."
+   }
+  }
+ },
+ {
+  "key": "f261502aad38",
+  "oa": "MA03 OA11",
+  "prompt": "Una hoja de papel se dobla en 2 partes iguales y se pinta 1. ¿Qué fracción de la hoja está pintada?",
+  "steps": [
+   {
+    "es": "El entero se divide en 2 partes iguales: abajo va 2.",
+    "en": "The whole is split into 2 equal parts: 2 goes on the bottom."
+   },
+   {
+    "es": "Se pinta 1 parte: arriba va 1. Respuesta: 1/2.",
+    "en": "1 part is colored: 1 goes on top. Answer: 1/2."
+   }
+  ],
+  "wrong": {
+   "1/3": {
+    "step": 0,
+    "es": "Se suman las partes: 2 + 1 = 3, así que abajo va 3. Respuesta: 1/3.",
+    "en": "The parts are added: 2 + 1 = 3, so 3 goes on the bottom. Answer: 1/3."
+   },
+   "2/1": {
+    "step": 1,
+    "es": "Arriba va el total de partes (2) y abajo la pintada (1). Respuesta: 2/1.",
+    "en": "The total number of parts (2) goes on top and the colored one (1) on the bottom. Answer: 2/1."
+   },
+   "2/2": {
+    "step": 1,
+    "es": "Se cuentan todas las partes: arriba va 2. Respuesta: 2/2.",
+    "en": "All the parts are counted: 2 goes on top. Answer: 2/2."
+   }
+  }
+ },
+ {
+  "key": "df3d27b318e2",
+  "oa": "MA03 OA11",
+  "prompt": "Una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
+  "steps": [
+   {
+    "es": "El entero se divide en 4 partes iguales: abajo va 4.",
+    "en": "The whole is split into 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Se toma 1 parte: arriba va 1. Respuesta: 1/4.",
+    "en": "1 part is taken: 1 goes on top. Answer: 1/4."
+   }
+  ],
+  "wrong": {
+   "3/4": {
+    "step": 1,
+    "es": "Se cuentan las partes que quedan: 4 − 1 = 3. Respuesta: 3/4.",
+    "en": "The parts left are counted: 4 − 1 = 3. Answer: 3/4."
+   },
+   "4/1": {
+    "step": 1,
+    "es": "Arriba va el total de partes (4) y abajo la que se toma (1). Respuesta: 4/1.",
+    "en": "The total number of parts (4) goes on top and the part taken (1) on the bottom. Answer: 4/1."
+   },
+   "1/2": {
+    "step": 0,
+    "es": "El entero se divide en 2 partes, así que abajo va 2. Respuesta: 1/2.",
+    "en": "The whole is split into 2 parts, so 2 goes on the bottom. Answer: 1/2."
+   }
+  }
+ },
+ {
+  "key": "887a7921c779",
+  "oa": "MA03 OA11",
+  "prompt": "Una cuerda se corta en 3 partes iguales y se usan 2. ¿Qué fracción de la cuerda se usó?",
+  "steps": [
+   {
+    "es": "El entero se divide en 3 partes iguales: abajo va 3.",
+    "en": "The whole is split into 3 equal parts: 3 goes on the bottom."
+   },
+   {
+    "es": "Se usan 2 partes: arriba va 2. Respuesta: 2/3.",
+    "en": "2 parts are used: 2 goes on top. Answer: 2/3."
+   }
+  ],
+  "wrong": {
+   "1/3": {
+    "step": 1,
+    "es": "Se cuenta la parte que sobra: 3 − 2 = 1. Respuesta: 1/3.",
+    "en": "The part left over is counted: 3 − 2 = 1. Answer: 1/3."
+   },
+   "3/2": {
+    "step": 1,
+    "es": "Arriba va el total de partes (3) y abajo las usadas (2). Respuesta: 3/2.",
+    "en": "The total number of parts (3) goes on top and the used ones (2) on the bottom. Answer: 3/2."
+   },
+   "2/5": {
+    "step": 0,
+    "es": "Se suman los números: 3 + 2 = 5, así que abajo va 5. Respuesta: 2/5.",
+    "en": "The numbers are added: 3 + 2 = 5, so 5 goes on the bottom. Answer: 2/5."
+   }
+  }
+ },
+ {
+  "key": "c73c5cd4fb00",
+  "oa": "MA03 OA11",
+  "prompt": "Una tableta de chocolate tiene 4 barras iguales. Sofía come 1 barra y regala 2. ¿Qué fracción de la tableta le queda?",
+  "steps": [
+   {
+    "es": "El entero tiene 4 partes iguales: abajo va 4.",
+    "en": "The whole has 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Se van 1 + 2 = 3 partes.",
+    "en": "1 + 2 = 3 parts are gone."
+   },
+   {
+    "es": "Quedan 4 − 3 = 1 parte. Respuesta: 1/4.",
+    "en": "4 − 3 = 1 part is left. Answer: 1/4."
+   }
+  ],
+  "wrong": {
+   "1/3": {
+    "step": 2,
+    "es": "Queda 1 parte, y abajo se pone lo que se fue (3). Respuesta: 1/3.",
+    "en": "1 part is left, and what’s gone (3) is put on the bottom. Answer: 1/3."
+   },
+   "3/4": {
+    "step": 2,
+    "es": "Se cuentan las partes que se fueron: 3. Respuesta: 3/4.",
+    "en": "The parts that are gone are counted: 3. Answer: 3/4."
+   },
+   "2/4": {
+    "step": 1,
+    "es": "Solo se quitan las 2 partes regaladas: quedan 2. Respuesta: 2/4.",
+    "en": "Only the 2 parts given away are taken off: 2 are left. Answer: 2/4."
+   }
+  }
+ },
+ {
+  "key": "555c17d9624d",
+  "oa": "MA03 OA11",
+  "prompt": "Una cinta se corta en 4 partes iguales. Ema usa 2 partes y Leo usa 1 parte. ¿Quién usó más cinta y qué fracción de la cinta usó?",
+  "steps": [
+   {
+    "es": "La cinta tiene 4 partes iguales: abajo va 4.",
+    "en": "The ribbon has 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Ema usó 2 partes y Leo usó 1: Ema usó más.",
+    "en": "Ema used 2 parts and Leo used 1: Ema used more."
+   },
+   {
+    "es": "Ema usó 2 de las 4 partes. Respuesta: Ema, 2/4.",
+    "en": "Ema used 2 of the 4 parts. Answer: Ema, 2/4."
+   }
+  ],
+  "wrong": {
+   "Leo, 2/4": {
+    "step": 1,
+    "es": "Se cambian los datos: Leo usó 2 partes, así que usó más. Respuesta: Leo, 2/4.",
+    "en": "The data gets mixed up: Leo used 2 parts, so he used more. Answer: Leo, 2/4."
+   },
+   "Leo, 1/4": {
+    "step": 1,
+    "es": "Se elige a quien usó menos: Leo, con 1 parte. Respuesta: Leo, 1/4.",
+    "en": "The one who used less is chosen: Leo, with 1 part. Answer: Leo, 1/4."
+   },
+   "Ema, 4/2": {
+    "step": 2,
+    "es": "Arriba va el total de partes (4) y abajo las de Ema (2). Respuesta: Ema, 4/2.",
+    "en": "The total number of parts (4) goes on top and Ema’s (2) on the bottom. Answer: Ema, 4/2."
+   }
+  }
+ },
+ {
+  "key": "babc1bfa5929",
+  "oa": "MA03 OA11",
+  "prompt": "Se pintan 3 de las 4 partes iguales de una pared. ¿Qué fracción de la pared está pintada?",
+  "steps": [
+   {
+    "es": "El entero tiene 4 partes iguales: abajo va 4.",
+    "en": "The whole has 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Se pintan 3 partes: arriba va 3. Respuesta: 3/4.",
+    "en": "3 parts are painted: 3 goes on top. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 1,
+    "es": "Se cuenta la parte sin pintar: 4 − 3 = 1. Respuesta: 1/4.",
+    "en": "The unpainted part is counted: 4 − 3 = 1. Answer: 1/4."
+   },
+   "4/3": {
+    "step": 1,
+    "es": "Arriba va el total de partes (4) y abajo las pintadas (3). Respuesta: 4/3.",
+    "en": "The total number of parts (4) goes on top and the painted ones (3) on the bottom. Answer: 4/3."
+   },
+   "3/7": {
+    "step": 0,
+    "es": "Se suman los números: 3 + 4 = 7, así que abajo va 7. Respuesta: 3/7.",
+    "en": "The numbers are added: 3 + 4 = 7, so 7 goes on the bottom. Answer: 3/7."
+   }
+  }
+ },
+ {
+  "key": "cmuli7iso00qe6krhc6rks550",
+  "oa": "MA03 OA11",
+  "prompt": "¿Cuál de estas fracciones es la mayor?",
+  "steps": [
+   {
+    "es": "Todas las fracciones tienen 4 partes iguales: se comparan los números de arriba.",
+    "en": "All the fractions have 4 equal parts: compare the top numbers."
+   },
+   {
+    "es": "El número de arriba más grande es 4. Respuesta: 4/4.",
+    "en": "The biggest top number is 4. Answer: 4/4."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 1,
+    "es": "Se elige el número de arriba más chico: 1. Respuesta: 1/4.",
+    "en": "The smallest top number is chosen: 1. Answer: 1/4."
+   },
+   "3/4": {
+    "step": 1,
+    "es": "Se elige 3 sin revisar si hay uno mayor. Respuesta: 3/4.",
+    "en": "3 is chosen without checking for a bigger one. Answer: 3/4."
+   },
+   "2/4": {
+    "step": 1,
+    "es": "Se elige 2 sin comparar todos los números de arriba. Respuesta: 2/4.",
+    "en": "2 is chosen without comparing all the top numbers. Answer: 2/4."
+   }
+  }
+ },
+ {
+  "key": "cmuli7isb00pz6krh3wvwmc2h",
+  "oa": "MA03 OA11",
+  "prompt": "En la fracción 3/4, ¿qué indica el número 4?",
+  "steps": [
+   {
+    "es": "En 3/4 el número de abajo es el denominador.",
+    "en": "In 3/4 the bottom number is the denominator."
+   },
+   {
+    "es": "El denominador dice en cuántas partes iguales se dividió el entero. Respuesta: en cuántas partes iguales se dividió el entero.",
+    "en": "The denominator tells how many equal parts the whole was split into. Answer: how many equal parts the whole was split into."
+   }
+  ],
+  "wrong": {
+   "Cuántos enteros hay": {
+    "step": 1,
+    "es": "Se piensa que el 4 cuenta enteros. Respuesta: cuántos enteros hay.",
+    "en": "The 4 is thought to count wholes. Answer: how many wholes there are."
+   },
+   "Cuántas partes se toman": {
+    "step": 0,
+    "es": "Se confunde con el número de arriba, el que cuenta las partes que se toman. Respuesta: cuántas partes se toman.",
+    "en": "It’s mixed up with the top number, which counts the parts taken. Answer: how many parts are taken."
+   },
+   "Cuántas partes sobran": {
+    "step": 1,
+    "es": "Se piensa que el 4 cuenta lo que sobra. Respuesta: cuántas partes sobran.",
+    "en": "The 4 is thought to count what’s left over. Answer: how many parts are left over."
+   }
+  }
+ },
+ {
+  "key": "26bd9ed20673",
+  "oa": "MA03 OA11",
+  "prompt": "Dos figuras iguales se dividen en 3 partes iguales. Marta pinta 2 partes de la suya y Luis pinta 1 parte de la otra. ¿Quién pintó más?",
+  "steps": [
+   {
+    "es": "Las dos figuras son iguales y tienen 3 partes iguales: todas las partes son del mismo tamaño.",
+    "en": "Both shapes are the same and have 3 equal parts: all the parts are the same size."
+   },
+   {
+    "es": "Marta pintó 2 partes y Luis 1 parte.",
+    "en": "Marta colored 2 parts and Luis 1 part."
+   },
+   {
+    "es": "2 es más que 1. Respuesta: Marta.",
+    "en": "2 is more than 1. Answer: Marta."
+   }
+  ],
+  "wrong": {
+   "2/3": {
+    "step": 2,
+    "es": "Se escribe la fracción de Marta en vez del nombre. Respuesta: 2/3.",
+    "en": "Marta’s fraction is written instead of the name. Answer: 2/3."
+   },
+   "Luis": {
+    "step": 2,
+    "es": "Se elige a quien pintó menos partes. Respuesta: Luis.",
+    "en": "The one who colored fewer parts is chosen. Answer: Luis."
+   },
+   "Los dos igual": {
+    "step": 1,
+    "es": "Como las partes son del mismo tamaño, se piensa que pintaron lo mismo. Respuesta: los dos igual.",
+    "en": "Since the parts are the same size, it’s assumed they colored the same amount. Answer: both the same."
+   }
+  }
+ },
+ {
+  "key": "94a05b708c08",
+  "oa": "MA04 OA08",
+  "prompt": "En una carrera de 100 m, Lucas ya corrió 25 m. ¿Qué fracción del recorrido ha corrido?",
+  "steps": [
+   {
+    "es": "El todo es el recorrido completo: 100 m. Abajo va 100.",
+    "en": "The whole is the full distance: 100 m. 100 goes on the bottom."
+   },
+   {
+    "es": "Lo recorrido es 25 m: arriba va 25. Respuesta: 25/100.",
+    "en": "The distance covered is 25 m: 25 goes on top. Answer: 25/100."
+   }
+  ],
+  "wrong": {
+   "100/25": {
+    "step": 1,
+    "es": "Arriba va el total (100) y abajo lo recorrido (25). Respuesta: 100/25.",
+    "en": "The total (100) goes on top and the distance covered (25) on the bottom. Answer: 100/25."
+   },
+   "25/75": {
+    "step": 0,
+    "es": "Abajo va lo que falta: 100 − 25 = 75. Respuesta: 25/75.",
+    "en": "What’s left goes on the bottom: 100 − 25 = 75. Answer: 25/75."
+   },
+   "75/100": {
+    "step": 1,
+    "es": "Arriba va lo que falta: 100 − 25 = 75. Respuesta: 75/100.",
+    "en": "What’s left goes on top: 100 − 25 = 75. Answer: 75/100."
+   }
+  }
+ },
+ {
+  "key": "cmvhazyh600089lrhlaqe4cey",
+  "oa": "MA04 OA08",
+  "prompt": "En una fiesta hay 12 globos y 1/3 de ellos son rojos. ¿Cuántos globos rojos hay?",
+  "steps": [
+   {
+    "es": "1/3 significa repartir el total en 3 grupos iguales.",
+    "en": "1/3 means sharing the total into 3 equal groups."
+   },
+   {
+    "es": "12 ÷ 3 = 4 en cada grupo.",
+    "en": "12 ÷ 3 = 4 in each group."
+   },
+   {
+    "es": "1/3 es un grupo: 4. Respuesta: 4.",
+    "en": "1/3 is one group: 4. Answer: 4."
+   }
+  ],
+  "wrong": {
+   "36": {
+    "step": 1,
+    "es": "Se multiplica en vez de repartir: 12 × 3 = 36. Respuesta: 36.",
+    "en": "It’s multiplied instead of shared: 12 × 3 = 36. Answer: 36."
+   },
+   "3": {
+    "step": 0,
+    "es": "Se toma el 3 de la fracción como la respuesta. Respuesta: 3.",
+    "en": "The 3 from the fraction is taken as the answer. Answer: 3."
+   },
+   "8": {
+    "step": 2,
+    "es": "Se cuentan los otros 2 grupos: 4 + 4 = 8. Respuesta: 8.",
+    "en": "The other 2 groups are counted: 4 + 4 = 8. Answer: 8."
+   }
+  }
+ },
+ {
+  "key": "cmuli7j2w010w6krh021h31xq",
+  "oa": "MA04 OA08",
+  "prompt": "¿Cuál de estas fracciones es la mayor?",
+  "steps": [
+   {
+    "es": "Todas tienen numerador 1: se compara el tamaño de cada parte.",
+    "en": "They all have numerator 1: compare the size of each part."
+   },
+   {
+    "es": "Con menos partes, cada parte es más grande: 1/2 > 1/4 > 1/5 > 1/8. Respuesta: 1/2.",
+    "en": "With fewer parts, each part is bigger: 1/2 > 1/4 > 1/5 > 1/8. Answer: 1/2."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 1,
+    "es": "Se elige 1/4 pensando que 4 partes dan una parte más grande. Respuesta: 1/4.",
+    "en": "1/4 is chosen thinking 4 parts give a bigger part. Answer: 1/4."
+   },
+   "1/8": {
+    "step": 1,
+    "es": "Se elige el denominador más grande: 8. Respuesta: 1/8.",
+    "en": "The biggest denominator is chosen: 8. Answer: 1/8."
+   },
+   "1/5": {
+    "step": 1,
+    "es": "Se elige 1/5 pensando que más partes dan una parte más grande. Respuesta: 1/5.",
+    "en": "1/5 is chosen thinking more parts give a bigger part. Answer: 1/5."
+   }
+  }
+ },
+ {
+  "key": "cmuli7j39011b6krhz937ihxf",
+  "oa": "MA04 OA08",
+  "prompt": "¿Cuál de estas fracciones es igual a 1/2?",
+  "steps": [
+   {
+    "es": "Una fracción es igual a 1/2 si el número de arriba es la mitad del de abajo.",
+    "en": "A fraction equals 1/2 if the top number is half of the bottom one."
+   },
+   {
+    "es": "La mitad de 8 es 4. Respuesta: 4/8.",
+    "en": "Half of 8 is 4. Answer: 4/8."
+   }
+  ],
+  "wrong": {
+   "4/4": {
+    "step": 0,
+    "es": "Se busca el mismo número arriba y abajo. Respuesta: 4/4.",
+    "en": "The same number is looked for on top and bottom. Answer: 4/4."
+   },
+   "1/4": {
+    "step": 0,
+    "es": "Se deja el 1 arriba y solo se cambia el número de abajo. Respuesta: 1/4.",
+    "en": "The 1 stays on top and only the bottom number changes. Answer: 1/4."
+   },
+   "2/8": {
+    "step": 1,
+    "es": "Se toma 2 como la mitad de 8. Respuesta: 2/8.",
+    "en": "2 is taken as half of 8. Answer: 2/8."
+   }
+  }
+ },
+ {
+  "key": "72604022c0e7",
+  "oa": "MA04 OA08",
+  "prompt": "En un grupo de 10 niños, 3 usan lentes. ¿Qué fracción del grupo usa lentes?",
+  "steps": [
+   {
+    "es": "El todo es el grupo completo: 10. Abajo va 10.",
+    "en": "The whole is the full group: 10. 10 goes on the bottom."
+   },
+   {
+    "es": "Los que cumplen lo preguntado son 3: arriba va 3. Respuesta: 3/10.",
+    "en": "Those who match the question are 3: 3 goes on top. Answer: 3/10."
+   }
+  ],
+  "wrong": {
+   "10/3": {
+    "step": 1,
+    "es": "Arriba va el total (10) y abajo los que cumplen (3). Respuesta: 10/3.",
+    "en": "The total (10) goes on top and those who match (3) on the bottom. Answer: 10/3."
+   },
+   "3/7": {
+    "step": 0,
+    "es": "Abajo van los que no cumplen: 10 − 3 = 7. Respuesta: 3/7.",
+    "en": "Those who don’t match go on the bottom: 10 − 3 = 7. Answer: 3/7."
+   },
+   "7/10": {
+    "step": 1,
+    "es": "Arriba van los demás: 10 − 3 = 7. Respuesta: 7/10.",
+    "en": "The others go on top: 10 − 3 = 7. Answer: 7/10."
+   }
+  }
+ },
+ {
+  "key": "32bd03ef1252",
+  "oa": "MA04 OA08",
+  "prompt": "Martina tiene 12 lápices: 5 rojos, 4 azules y 3 verdes. ¿Qué fracción de los lápices es azul?",
+  "steps": [
+   {
+    "es": "El todo son todos: 5 + 4 + 3 = 12. Abajo va 12.",
+    "en": "The whole is all of them: 5 + 4 + 3 = 12. 12 goes on the bottom."
+   },
+   {
+    "es": "Los preguntados son 4: arriba va 4. Respuesta: 4/12.",
+    "en": "The ones asked about are 4: 4 goes on top. Answer: 4/12."
+   }
+  ],
+  "wrong": {
+   "8/12": {
+    "step": 1,
+    "es": "Arriba van los demás: 5 + 3 = 8. Respuesta: 8/12.",
+    "en": "The others go on top: 5 + 3 = 8. Answer: 8/12."
+   },
+   "4/8": {
+    "step": 0,
+    "es": "Abajo van solo los otros: 5 + 3 = 8. Respuesta: 4/8.",
+    "en": "Only the others go on the bottom: 5 + 3 = 8. Answer: 4/8."
+   },
+   "4/3": {
+    "step": 0,
+    "es": "Abajo va la cantidad de otro grupo: 3. Respuesta: 4/3.",
+    "en": "Another group’s amount goes on the bottom: 3. Answer: 4/3."
+   }
+  }
+ },
+ {
+  "key": "e44e70b97703",
+  "oa": "MA04 OA08",
+  "prompt": "Una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
+  "steps": [
+   {
+    "es": "El entero tiene 8 partes iguales: abajo va 8.",
+    "en": "The whole has 8 equal parts: 8 goes on the bottom."
+   },
+   {
+    "es": "Se toman 3 partes: arriba va 3. Respuesta: 3/8.",
+    "en": "3 parts are taken: 3 goes on top. Answer: 3/8."
+   }
+  ],
+  "wrong": {
+   "5/8": {
+    "step": 1,
+    "es": "Se cuentan las partes que quedan: 8 − 3 = 5. Respuesta: 5/8.",
+    "en": "The parts left are counted: 8 − 3 = 5. Answer: 5/8."
+   },
+   "3/5": {
+    "step": 0,
+    "es": "Abajo va lo que queda: 8 − 3 = 5. Respuesta: 3/5.",
+    "en": "What’s left goes on the bottom: 8 − 3 = 5. Answer: 3/5."
+   },
+   "8/3": {
+    "step": 1,
+    "es": "Arriba va el total (8) y abajo las tomadas (3). Respuesta: 8/3.",
+    "en": "The total (8) goes on top and the parts taken (3) on the bottom. Answer: 8/3."
+   }
+  }
+ },
+ {
+  "key": "91bf4fa93900",
+  "oa": "MA04 OA08",
+  "prompt": "Ana comió 2/6 de un queque y Pedro comió 3/6 del mismo queque. ¿Quién comió más?",
+  "steps": [
+   {
+    "es": "Las dos fracciones son del mismo entero, con 6 partes iguales.",
+    "en": "Both fractions are of the same whole, with 6 equal parts."
+   },
+   {
+    "es": "Se comparan los numeradores: 3 es más que 2. Respuesta: Pedro.",
+    "en": "Compare the numerators: 3 is more than 2. Answer: Pedro."
+   }
+  ],
+  "wrong": {
+   "No se puede saber": {
+    "step": 0,
+    "es": "Se piensa que faltan datos para comparar. Respuesta: no se puede saber.",
+    "en": "It’s assumed there isn’t enough data to compare. Answer: you can’t tell."
+   },
+   "Comieron lo mismo": {
+    "step": 1,
+    "es": "Como tienen el mismo denominador, se piensa que es lo mismo. Respuesta: comieron lo mismo.",
+    "en": "Since they have the same denominator, it’s assumed they’re equal. Answer: they ate the same."
+   },
+   "Ana": {
+    "step": 1,
+    "es": "Se elige el numerador más chico: 2. Respuesta: Ana.",
+    "en": "The smaller numerator is chosen: 2. Answer: Ana."
+   }
+  }
+ },
+ {
+  "key": "cmuli7j3201116krh0izz2nky",
+  "oa": "MA04 OA08",
+  "prompt": "Ordena de menor a mayor: 1/2, 1/8, 1/4.",
+  "steps": [
+   {
+    "es": "Todas tienen numerador 1: con más partes, cada parte es más chica.",
+    "en": "They all have numerator 1: with more parts, each part is smaller."
+   },
+   {
+    "es": "La más chica es 1/8, luego 1/4 y la más grande 1/2. Respuesta: 1/8, 1/4, 1/2.",
+    "en": "The smallest is 1/8, then 1/4, and the biggest 1/2. Answer: 1/8, 1/4, 1/2."
+   }
+  ],
+  "wrong": {
+   "1/2, 1/4, 1/8": {
+    "step": 1,
+    "es": "Se ordenan de mayor a menor. Respuesta: 1/2, 1/4, 1/8.",
+    "en": "They’re ordered from greatest to least. Answer: 1/2, 1/4, 1/8."
+   },
+   "1/8, 1/2, 1/4": {
+    "step": 1,
+    "es": "Se pone 1/2 antes que 1/4, como si la mitad fuera más chica. Respuesta: 1/8, 1/2, 1/4.",
+    "en": "1/2 is put before 1/4, as if half were smaller. Answer: 1/8, 1/2, 1/4."
+   },
+   "1/4, 1/8, 1/2": {
+    "step": 1,
+    "es": "Se pone 1/4 antes que 1/8, como si un cuarto fuera más chico. Respuesta: 1/4, 1/8, 1/2.",
+    "en": "1/4 is put before 1/8, as if a quarter were smaller. Answer: 1/4, 1/8, 1/2."
+   }
+  }
+ },
+ {
+  "key": "cmuli7j3601166krhn97dqym1",
+  "oa": "MA04 OA08",
+  "prompt": "Una recta numérica va de 0 a 1 y está dividida en 5 partes iguales. ¿Qué fracción marca el punto que está en el tercer salto desde el 0?",
+  "steps": [
+   {
+    "es": "Entre 0 y 1 hay 5 saltos iguales: abajo va 5.",
+    "en": "Between 0 and 1 there are 5 equal jumps: 5 goes on the bottom."
+   },
+   {
+    "es": "El punto está a 3 saltos del 0: arriba va 3. Respuesta: 3/5.",
+    "en": "The point is 3 jumps from 0: 3 goes on top. Answer: 3/5."
+   }
+  ],
+  "wrong": {
+   "2/5": {
+    "step": 1,
+    "es": "Se cuentan 2 saltos hasta el punto. Respuesta: 2/5.",
+    "en": "2 jumps are counted to the point. Answer: 2/5."
+   },
+   "3/6": {
+    "step": 0,
+    "es": "Se cuentan las marcas (6) en vez de los saltos (5). Respuesta: 3/6.",
+    "en": "The marks (6) are counted instead of the jumps (5). Answer: 3/6."
+   },
+   "5/3": {
+    "step": 1,
+    "es": "Arriba va el total de saltos (5) y abajo los saltos hasta el punto (3). Respuesta: 5/3.",
+    "en": "The total number of jumps (5) goes on top and the jumps to the point (3) on the bottom. Answer: 5/3."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jbj01a46krh1fhdakwj",
+  "oa": "MA05 OA07",
+  "prompt": "¿Cuál de estas fracciones es equivalente a 1/2?",
+  "steps": [
+   {
+    "es": "Para una fracción equivalente, se multiplican arriba y abajo por el mismo número.",
+    "en": "For an equivalent fraction, multiply the top and bottom by the same number."
+   },
+   {
+    "es": "1/2 × 2/2 = 2/4. Respuesta: 2/4.",
+    "en": "1/2 × 2/2 = 2/4. Answer: 2/4."
+   }
+  ],
+  "wrong": {
+   "2/3": {
+    "step": 1,
+    "es": "Se suma 1 arriba y 1 abajo: 1 + 1 = 2 y 2 + 1 = 3. Respuesta: 2/3.",
+    "en": "1 is added on top and 1 on the bottom: 1 + 1 = 2 and 2 + 1 = 3. Answer: 2/3."
+   },
+   "1/4": {
+    "step": 1,
+    "es": "Se multiplica solo el de abajo: 2 × 2 = 4, y el de arriba queda en 1. Respuesta: 1/4.",
+    "en": "Only the bottom is multiplied: 2 × 2 = 4, and the top stays 1. Answer: 1/4."
+   },
+   "3/5": {
+    "step": 1,
+    "es": "Se suma 2 arriba y 3 abajo. Respuesta: 3/5.",
+    "en": "2 is added on top and 3 on the bottom. Answer: 3/5."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jc201aj6krhso1rzfyt",
+  "oa": "MA05 OA07",
+  "prompt": "¿Cuál es mayor: 3/8 o 3/5?",
+  "steps": [
+   {
+    "es": "Tienen el mismo numerador: 3 partes cada una.",
+    "en": "They have the same numerator: 3 parts each."
+   },
+   {
+    "es": "Los quintos son más grandes que los octavos (con menos partes, cada una es más grande). Respuesta: 3/5.",
+    "en": "Fifths are bigger than eighths (with fewer parts, each one is bigger). Answer: 3/5."
+   }
+  ],
+  "wrong": {
+   "Son iguales": {
+    "step": 1,
+    "es": "Como tienen el mismo numerador, se piensa que son iguales. Respuesta: son iguales.",
+    "en": "Since they have the same numerator, it’s assumed they’re equal. Answer: they’re equal."
+   },
+   "3/8": {
+    "step": 1,
+    "es": "Se elige el denominador más grande: 8. Respuesta: 3/8.",
+    "en": "The bigger denominator is chosen: 8. Answer: 3/8."
+   },
+   "No se puede saber": {
+    "step": 0,
+    "es": "Se piensa que con distinto denominador no se puede comparar. Respuesta: no se puede saber.",
+    "en": "It’s assumed different denominators can’t be compared. Answer: you can’t tell."
+   }
+  }
+ },
+ {
+  "key": "82cb6e020d5b",
+  "oa": "MA05 OA07",
+  "prompt": "¿Cuál es mayor: 5/6 o 3/4?",
+  "steps": [
+   {
+    "es": "Denominador común de 6 y 4: 12.",
+    "en": "Common denominator of 6 and 4: 12."
+   },
+   {
+    "es": "5/6 = 10/12 y 3/4 = 9/12.",
+    "en": "5/6 = 10/12 and 3/4 = 9/12."
+   },
+   {
+    "es": "10/12 es mayor que 9/12. Respuesta: 5/6.",
+    "en": "10/12 is greater than 9/12. Answer: 5/6."
+   }
+  ],
+  "wrong": {
+   "No se pueden comparar": {
+    "step": 0,
+    "es": "Se piensa que con distinto denominador no se puede comparar. Respuesta: no se pueden comparar.",
+    "en": "It’s assumed different denominators can’t be compared. Answer: they can’t be compared."
+   },
+   "3/4": {
+    "step": 0,
+    "es": "Se piensa que con el denominador más chico la fracción es mayor: 4 es menor que 6. Respuesta: 3/4.",
+    "en": "It’s assumed the smaller denominator makes the bigger fraction: 4 is less than 6. Answer: 3/4."
+   },
+   "Son iguales": {
+    "step": 0,
+    "es": "A las dos les falta 1 parte para el entero, así que se piensa que son iguales. Respuesta: son iguales.",
+    "en": "Each is 1 part away from a whole, so they’re assumed to be equal. Answer: they’re equal."
+   }
+  }
+ },
+ {
+  "key": "c6e75af6b71a",
+  "oa": "MA05 OA07",
+  "prompt": "Una barra de chocolate se divide en 8 partes iguales y se comen 3. ¿Qué fracción de la barra se comió?",
+  "steps": [
+   {
+    "es": "El entero tiene 8 partes iguales: abajo va 8.",
+    "en": "The whole has 8 equal parts: 8 goes on the bottom."
+   },
+   {
+    "es": "Se toman 3 partes: arriba va 3. Respuesta: 3/8.",
+    "en": "3 parts are taken: 3 goes on top. Answer: 3/8."
+   }
+  ],
+  "wrong": {
+   "5/8": {
+    "step": 1,
+    "es": "Se cuentan las partes que quedan: 8 − 3 = 5. Respuesta: 5/8.",
+    "en": "The parts left are counted: 8 − 3 = 5. Answer: 5/8."
+   },
+   "8/3": {
+    "step": 1,
+    "es": "Arriba va el total (8) y abajo las tomadas (3). Respuesta: 8/3.",
+    "en": "The total (8) goes on top and the parts taken (3) on the bottom. Answer: 8/3."
+   },
+   "3/5": {
+    "step": 0,
+    "es": "Abajo va lo que queda: 8 − 3 = 5. Respuesta: 3/5.",
+    "en": "What’s left goes on the bottom: 8 − 3 = 5. Answer: 3/5."
+   }
+  }
+ },
+ {
+  "key": "46e5657d57f9",
+  "oa": "MA05 OA07",
+  "prompt": "Luisa tiene 2/3 de una barra de chocolate y Mateo tiene 4/6 de otra barra igual. ¿Qué afirmación es correcta?",
+  "steps": [
+   {
+    "es": "Para comparar, se escriben con el mismo denominador: 2/3 × 2/2 = 4/6.",
+    "en": "To compare, write them with the same denominator: 2/3 × 2/2 = 4/6."
+   },
+   {
+    "es": "4/6 y 4/6 son iguales. Respuesta: tienen la misma cantidad.",
+    "en": "4/6 and 4/6 are equal. Answer: they have the same amount."
+   }
+  ],
+  "wrong": {
+   "No se pueden comparar, porque tienen distinto denominador": {
+    "step": 0,
+    "es": "Se piensa que con distinto denominador no se puede comparar. Respuesta: no se pueden comparar.",
+    "en": "It’s assumed different denominators can’t be compared. Answer: they can’t be compared."
+   },
+   "Mateo tiene más, porque 4 es mayor que 2": {
+    "step": 0,
+    "es": "Se comparan solo los numeradores: 4 es más que 2. Respuesta: Mateo tiene más.",
+    "en": "Only the numerators are compared: 4 is more than 2. Answer: Mateo has more."
+   },
+   "Luisa tiene más, porque 3 es menor que 6": {
+    "step": 0,
+    "es": "Se comparan solo los denominadores: los tercios son más grandes. Respuesta: Luisa tiene más.",
+    "en": "Only the denominators are compared: thirds are bigger. Answer: Luisa has more."
+   }
+  }
+ },
+ {
+  "key": "70c753d5a61b",
+  "oa": "MA05 OA07",
+  "prompt": "Una cinta se divide en 12 partes iguales y se pintan 9. ¿Qué fracción equivalente, con denominador 4, representa lo pintado?",
+  "steps": [
+   {
+    "es": "Lo pintado es 9/12.",
+    "en": "The painted part is 9/12."
+   },
+   {
+    "es": "Para llegar a denominador 4: 12 ÷ 3 = 4, y también 9 ÷ 3 = 3. Respuesta: 3/4.",
+    "en": "To get denominator 4: 12 ÷ 3 = 4, and also 9 ÷ 3 = 3. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 0,
+    "es": "Se toma lo que no está pintado: 12 − 9 = 3, que es 3/12 = 1/4. Respuesta: 1/4.",
+    "en": "The unpainted part is taken: 12 − 9 = 3, which is 3/12 = 1/4. Answer: 1/4."
+   },
+   "9/4": {
+    "step": 1,
+    "es": "Se cambia solo el de abajo: 12 ÷ 3 = 4, y arriba queda 9. Respuesta: 9/4.",
+    "en": "Only the bottom changes: 12 ÷ 3 = 4, and the top stays 9. Answer: 9/4."
+   },
+   "4/3": {
+    "step": 1,
+    "es": "Se simplifica bien, pero el 4 queda arriba y el 3 abajo. Respuesta: 4/3.",
+    "en": "It’s simplified correctly, but the 4 ends up on top and the 3 on the bottom. Answer: 4/3."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jc601ao6krhpchwmfpk",
+  "oa": "MA05 OA07",
+  "prompt": "¿Qué número falta para que 2/5 = ?/20?",
+  "steps": [
+   {
+    "es": "Para pasar de 5 a 20 se multiplica por 4: 5 × 4 = 20.",
+    "en": "To go from 5 to 20, multiply by 4: 5 × 4 = 20."
+   },
+   {
+    "es": "Arriba se hace lo mismo: 2 × 4 = 8. Respuesta: 8.",
+    "en": "Do the same on top: 2 × 4 = 8. Answer: 8."
+   }
+  ],
+  "wrong": {
+   "17": {
+    "step": 0,
+    "es": "Se suma: de 5 a 20 hay 15, y 2 + 15 = 17. Respuesta: 17.",
+    "en": "It’s added: from 5 to 20 is 15, and 2 + 15 = 17. Answer: 17."
+   },
+   "4": {
+    "step": 0,
+    "es": "Se multiplica por 2, como si 5 × 2 fuera 20: 2 × 2 = 4. Respuesta: 4.",
+    "en": "It’s multiplied by 2, as if 5 × 2 were 20: 2 × 2 = 4. Answer: 4."
+   },
+   "10": {
+    "step": 1,
+    "es": "Se multiplica el 2 por 5 en vez de por 4: 2 × 5 = 10. Respuesta: 10.",
+    "en": "The 2 is multiplied by 5 instead of 4: 2 × 5 = 10. Answer: 10."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jbm01a96krhwkanmaql",
+  "oa": "MA05 OA07",
+  "prompt": "¿Cuál de estas fracciones es equivalente a 3/4?",
+  "steps": [
+   {
+    "es": "Para una fracción equivalente, se multiplican arriba y abajo por el mismo número.",
+    "en": "For an equivalent fraction, multiply the top and bottom by the same number."
+   },
+   {
+    "es": "3/4 × 2/2 = 6/8. Respuesta: 6/8.",
+    "en": "3/4 × 2/2 = 6/8. Answer: 6/8."
+   }
+  ],
+  "wrong": {
+   "3/8": {
+    "step": 1,
+    "es": "Se multiplica solo el de abajo: 4 × 2 = 8, y arriba queda 3. Respuesta: 3/8.",
+    "en": "Only the bottom is multiplied: 4 × 2 = 8, and the top stays 3. Answer: 3/8."
+   },
+   "4/5": {
+    "step": 1,
+    "es": "Se suma 1 arriba y 1 abajo: 3 + 1 = 4 y 4 + 1 = 5. Respuesta: 4/5.",
+    "en": "1 is added on top and 1 on the bottom: 3 + 1 = 4 and 4 + 1 = 5. Answer: 4/5."
+   },
+   "6/4": {
+    "step": 1,
+    "es": "Se multiplica solo el de arriba: 3 × 2 = 6, y abajo queda 4. Respuesta: 6/4.",
+    "en": "Only the top is multiplied: 3 × 2 = 6, and the bottom stays 4. Answer: 6/4."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jcq01b36krhw8l1p34m",
+  "oa": "MA05 OA07",
+  "prompt": "¿Qué lista ordena de menor a mayor las fracciones 2/3, 1/6 y 5/12?",
+  "steps": [
+   {
+    "es": "Se escriben todas con denominador 12: 2/3 = 8/12, 1/6 = 2/12 y 5/12.",
+    "en": "Write them all with denominator 12: 2/3 = 8/12, 1/6 = 2/12 and 5/12."
+   },
+   {
+    "es": "De menor a mayor: 2/12, 5/12, 8/12. Respuesta: 1/6, 5/12, 2/3.",
+    "en": "From least to greatest: 2/12, 5/12, 8/12. Answer: 1/6, 5/12, 2/3."
+   }
+  ],
+  "wrong": {
+   "5/12, 1/6, 2/3": {
+    "step": 0,
+    "es": "Se convierte mal 1/6, como si fuera más que 5/12. Respuesta: 5/12, 1/6, 2/3.",
+    "en": "1/6 is converted wrong, as if it were more than 5/12. Answer: 5/12, 1/6, 2/3."
+   },
+   "2/3, 5/12, 1/6": {
+    "step": 1,
+    "es": "Se ordenan de mayor a menor. Respuesta: 2/3, 5/12, 1/6.",
+    "en": "They’re ordered from greatest to least. Answer: 2/3, 5/12, 1/6."
+   },
+   "1/6, 2/3, 5/12": {
+    "step": 0,
+    "es": "Se convierte mal 2/3, como si fuera menos que 5/12. Respuesta: 1/6, 2/3, 5/12.",
+    "en": "2/3 is converted wrong, as if it were less than 5/12. Answer: 1/6, 2/3, 5/12."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jcg01at6krhvp0yoxkt",
+  "oa": "MA05 OA07",
+  "prompt": "¿Qué lista ordena de menor a mayor las fracciones 1/2, 1/4 y 1/8?",
+  "steps": [
+   {
+    "es": "Todas tienen numerador 1: con más partes, cada parte es más chica.",
+    "en": "They all have numerator 1: with more parts, each part is smaller."
+   },
+   {
+    "es": "La más chica es 1/8, luego 1/4 y la más grande 1/2. Respuesta: 1/8, 1/4, 1/2.",
+    "en": "The smallest is 1/8, then 1/4, and the biggest 1/2. Answer: 1/8, 1/4, 1/2."
+   }
+  ],
+  "wrong": {
+   "1/8, 1/2, 1/4": {
+    "step": 1,
+    "es": "Se pone 1/2 antes que 1/4, como si la mitad fuera más chica. Respuesta: 1/8, 1/2, 1/4.",
+    "en": "1/2 is put before 1/4, as if half were smaller. Answer: 1/8, 1/2, 1/4."
+   },
+   "1/2, 1/4, 1/8": {
+    "step": 1,
+    "es": "Se ordenan de mayor a menor. Respuesta: 1/2, 1/4, 1/8.",
+    "en": "They’re ordered from greatest to least. Answer: 1/2, 1/4, 1/8."
+   },
+   "1/4, 1/8, 1/2": {
+    "step": 1,
+    "es": "Se pone 1/4 antes que 1/8, como si un cuarto fuera más chico. Respuesta: 1/4, 1/8, 1/2.",
+    "en": "1/4 is put before 1/8, as if a quarter were smaller. Answer: 1/4, 1/8, 1/2."
+   }
+  }
+ },
+ {
+  "key": "8816ef739ba2",
+  "oa": "MA05 OA07",
+  "prompt": "Ana comió 3/8 de una barra de chocolate y Beto comió 1/2 de otra barra igual. ¿Quién comió más?",
+  "steps": [
+   {
+    "es": "Se escribe 1/2 en octavos: 1/2 = 4/8.",
+    "en": "Write 1/2 in eighths: 1/2 = 4/8."
+   },
+   {
+    "es": "4/8 es más que 3/8. Respuesta: Beto.",
+    "en": "4/8 is more than 3/8. Answer: Beto."
+   }
+  ],
+  "wrong": {
+   "Ana": {
+    "step": 0,
+    "es": "Se comparan los denominadores: 8 es más que 2. Respuesta: Ana.",
+    "en": "The denominators are compared: 8 is more than 2. Answer: Ana."
+   },
+   "Comieron lo mismo": {
+    "step": 0,
+    "es": "Se escribe 1/2 como 3/8. Respuesta: comieron lo mismo.",
+    "en": "1/2 is written as 3/8. Answer: they ate the same."
+   },
+   "No se puede saber": {
+    "step": 0,
+    "es": "Se piensa que con distinto denominador no se puede comparar. Respuesta: no se puede saber.",
+    "en": "It’s assumed different denominators can’t be compared. Answer: you can’t tell."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jlm01k56krh6m1fhiar",
+  "oa": "MA06 OA04",
+  "prompt": "¿Cuál de estos valores es el mayor?",
+  "steps": [
+   {
+    "es": "Se escriben todos como porcentaje: 7/10 = 70%, 3/5 = 60%, 0,65 = 65% y 68%.",
+    "en": "Write them all as percentages: 7/10 = 70%, 3/5 = 60%, 0.65 = 65% and 68%."
+   },
+   {
+    "es": "El mayor es 70%. Respuesta: 7/10.",
+    "en": "The greatest is 70%. Answer: 7/10."
+   }
+  ],
+  "wrong": {
+   "68%": {
+    "step": 0,
+    "es": "Se compara sin convertir: 68 parece el número más grande. Respuesta: 68%.",
+    "en": "They’re compared without converting: 68 looks like the biggest number. Answer: 68%."
+   },
+   "0,65": {
+    "step": 0,
+    "es": "Se lee 0,65 como 65 y 7/10 como 7, sin pasarlos a porcentaje: 65 parece más. Respuesta: 0,65.",
+    "en": "0.65 is read as 65 and 7/10 as 7, without changing them to percentages: 65 seems bigger. Answer: 0.65."
+   },
+   "3/5": {
+    "step": 0,
+    "es": "Se lee 3/5 como «3 de 5, casi todo», sin pasarlo a porcentaje. Respuesta: 3/5.",
+    "en": "3/5 is read as “3 of 5, almost all of it”, without changing it to a percentage. Answer: 3/5."
+   }
+  }
+ },
+ {
+  "key": "c56f75e837a2",
+  "oa": "MA06 OA04",
+  "prompt": "Camila tenía $12.000. Gastó el 35% en un regalo. ¿Cuánto dinero le queda?",
+  "steps": [
+   {
+    "es": "10% de 12.000 = 1.200, y 5% = 600.",
+    "en": "10% of 12,000 = 1,200, and 5% = 600."
+   },
+   {
+    "es": "35% = 1.200 + 1.200 + 1.200 + 600 = 4.200: eso es lo que se gastó.",
+    "en": "35% = 1,200 + 1,200 + 1,200 + 600 = 4,200: that’s what was spent."
+   },
+   {
+    "es": "Queda 12.000 − 4.200 = 7.800. Respuesta: 7.800.",
+    "en": "What’s left is 12,000 − 4,200 = 7,800. Answer: 7,800."
+   }
+  ],
+  "wrong": {
+   "$11.965": {
+    "step": 0,
+    "es": "Se restan 35 directamente: 12.000 − 35 = 11.965. Respuesta: 11.965.",
+    "en": "35 is subtracted directly: 12,000 − 35 = 11,965. Answer: 11,965."
+   },
+   "$4.200": {
+    "step": 2,
+    "es": "Se da como respuesta lo gastado: 4.200. Respuesta: 4.200.",
+    "en": "The amount spent is given as the answer: 4,200. Answer: 4,200."
+   },
+   "$420": {
+    "step": 0,
+    "es": "Se calcula el 10% dividiendo por 100: 12.000 ÷ 100 = 120, y el 35% queda en 420. Respuesta: 420.",
+    "en": "10% is found by dividing by 100: 12,000 ÷ 100 = 120, and 35% comes out as 420. Answer: 420."
+   }
+  }
+ },
+ {
+  "key": "176eccc3d7e1",
+  "oa": "MA06 OA04",
+  "prompt": "¿Cuál es el 25% de 60?",
+  "steps": [
+   {
+    "es": "25% es la cuarta parte.",
+    "en": "25% is a quarter."
+   },
+   {
+    "es": "60 ÷ 4 = 15. Respuesta: 15.",
+    "en": "60 ÷ 4 = 15. Answer: 15."
+   }
+  ],
+  "wrong": {
+   "240": {
+    "step": 1,
+    "es": "Se multiplica por 4: 60 × 4 = 240. Respuesta: 240.",
+    "en": "It’s multiplied by 4: 60 × 4 = 240. Answer: 240."
+   },
+   "35": {
+    "step": 0,
+    "es": "Se restan 25 directamente: 60 − 25 = 35. Respuesta: 35.",
+    "en": "25 is subtracted directly: 60 − 25 = 35. Answer: 35."
+   },
+   "25": {
+    "step": 0,
+    "es": "Se toma el porcentaje como la cantidad. Respuesta: 25.",
+    "en": "The percentage is taken as the amount. Answer: 25."
+   }
+  }
+ },
+ {
+  "key": "cmuli7jl001jg6krh5kegrq6k",
+  "oa": "MA06 OA04",
+  "prompt": "¿Qué porcentaje representa la fracción 1/2?",
+  "steps": [
+   {
+    "es": "Se busca una fracción igual a 1/2 con denominador 100: 1/2 = 50/100.",
+    "en": "Find a fraction equal to 1/2 with denominator 100: 1/2 = 50/100."
+   },
+   {
+    "es": "50/100 = 50%. Respuesta: 50%.",
+    "en": "50/100 = 50%. Answer: 50%."
+   }
+  ],
+  "wrong": {
+   "25%": {
+    "step": 0,
+    "es": "Se piensa la mitad de 50 en vez de la mitad de 100: 25. Respuesta: 25%.",
+    "en": "Half of 50 is used instead of half of 100: 25. Answer: 25%."
+   },
+   "2%": {
+    "step": 0,
+    "es": "Se toma el denominador como el porcentaje. Respuesta: 2%.",
+    "en": "The denominator is taken as the percentage. Answer: 2%."
+   },
+   "12%": {
+    "step": 0,
+    "es": "Se juntan los dígitos 1 y 2. Respuesta: 12%.",
+    "en": "The digits 1 and 2 are put together. Answer: 12%."
+   }
+  }
+ },
+ {
+  "key": "332bb9277a2d",
+  "oa": "MA06 OA04",
+  "prompt": "Una polera cuesta $8.000 y tiene 25% de descuento. ¿Cuánto hay que pagar por la polera?",
+  "steps": [
+   {
+    "es": "25% es la cuarta parte: 8.000 ÷ 4 = 2.000 de descuento.",
+    "en": "25% is a quarter: 8,000 ÷ 4 = 2,000 off."
+   },
+   {
+    "es": "Se paga 8.000 − 2.000 = 6.000. Respuesta: 6.000.",
+    "en": "You pay 8,000 − 2,000 = 6,000. Answer: 6,000."
+   }
+  ],
+  "wrong": {
+   "$7.975": {
+    "step": 0,
+    "es": "Se restan 25 directamente: 8.000 − 25 = 7.975. Respuesta: 7.975.",
+    "en": "25 is subtracted directly: 8,000 − 25 = 7,975. Answer: 7,975."
+   },
+   "$2.000": {
+    "step": 1,
+    "es": "Se da como respuesta el descuento: 2.000. Respuesta: 2.000.",
+    "en": "The discount is given as the answer: 2,000. Answer: 2,000."
+   },
+   "$10.000": {
+    "step": 1,
+    "es": "Se suma el descuento: 8.000 + 2.000 = 10.000. Respuesta: 10.000.",
+    "en": "The discount is added: 8,000 + 2,000 = 10,000. Answer: 10,000."
+   }
+  }
+ },
+ {
+  "key": "cce8d3892104",
+  "oa": "MA06 OA04",
+  "prompt": "¿Cuál es el 50% de 80?",
+  "steps": [
+   {
+    "es": "50% es la mitad.",
+    "en": "50% is half."
+   },
+   {
+    "es": "80 ÷ 2 = 40. Respuesta: 40.",
+    "en": "80 ÷ 2 = 40. Answer: 40."
+   }
+  ],
+  "wrong": {
+   "160": {
+    "step": 1,
+    "es": "Se multiplica por 2: 80 × 2 = 160. Respuesta: 160.",
+    "en": "It’s multiplied by 2: 80 × 2 = 160. Answer: 160."
+   },
+   "30": {
+    "step": 0,
+    "es": "Se restan 50 directamente: 80 − 50 = 30. Respuesta: 30.",
+    "en": "50 is subtracted directly: 80 − 50 = 30. Answer: 30."
+   },
+   "4": {
+    "step": 1,
+    "es": "Se divide por 20 en vez de por 2: 80 ÷ 20 = 4. Respuesta: 4.",
+    "en": "It’s divided by 20 instead of 2: 80 ÷ 20 = 4. Answer: 4."
+   }
+  }
+ },
+ {
+  "key": "e83c566047da",
+  "oa": "MA06 OA04",
+  "prompt": "En un curso de 40 estudiantes, 18 son niñas. ¿Qué porcentaje del curso son niñas?",
+  "steps": [
+   {
+    "es": "La fracción es 18/40.",
+    "en": "The fraction is 18/40."
+   },
+   {
+    "es": "Se simplifica: 18/40 = 9/20.",
+    "en": "Simplify: 18/40 = 9/20."
+   },
+   {
+    "es": "Se lleva a centésimos: 9/20 = 45/100 = 45%. Respuesta: 45%.",
+    "en": "Change to hundredths: 9/20 = 45/100 = 45%. Answer: 45%."
+   }
+  ],
+  "wrong": {
+   "22%": {
+    "step": 0,
+    "es": "Se restan: 40 − 18 = 22. Respuesta: 22%.",
+    "en": "They’re subtracted: 40 − 18 = 22. Answer: 22%."
+   },
+   "18%": {
+    "step": 0,
+    "es": "Se toma la cantidad como porcentaje, como si el total fuera 100. Respuesta: 18%.",
+    "en": "The amount is taken as the percentage, as if the total were 100. Answer: 18%."
+   },
+   "55%": {
+    "step": 2,
+    "es": "Se calcula la otra parte: 100% − 45% = 55%. Respuesta: 55%.",
+    "en": "The other part is calculated: 100% − 45% = 55%. Answer: 55%."
+   }
+  }
+ },
+ {
+  "key": "327a239a0be1",
+  "oa": "MA06 OA04",
+  "prompt": "¿Cuál es el 10% de 350?",
+  "steps": [
+   {
+    "es": "10% es la décima parte.",
+    "en": "10% is a tenth."
+   },
+   {
+    "es": "350 ÷ 10 = 35. Respuesta: 35.",
+    "en": "350 ÷ 10 = 35. Answer: 35."
+   }
+  ],
+  "wrong": {
+   "340": {
+    "step": 0,
+    "es": "Se restan 10 directamente: 350 − 10 = 340. Respuesta: 340.",
+    "en": "10 is subtracted directly: 350 − 10 = 340. Answer: 340."
+   },
+   "3,5": {
+    "step": 1,
+    "es": "Se divide por 100: 350 ÷ 100 = 3,5. Respuesta: 3,5.",
+    "en": "It’s divided by 100: 350 ÷ 100 = 3.5. Answer: 3.5."
+   },
+   "3.500": {
+    "step": 1,
+    "es": "Se multiplica por 10: 350 × 10 = 3.500. Respuesta: 3.500.",
+    "en": "It’s multiplied by 10: 350 × 10 = 3,500. Answer: 3,500."
+   }
+  }
+ },
+ {
+  "key": "3c5a7baa0227",
+  "oa": "MA06 OA04",
+  "prompt": "Expresa la fracción 3/5 como porcentaje.",
+  "steps": [
+   {
+    "es": "Se busca una fracción igual a 3/5 con denominador 100: 5 × 20 = 100.",
+    "en": "Find a fraction equal to 3/5 with denominator 100: 5 × 20 = 100."
+   },
+   {
+    "es": "Arriba también: 3 × 20 = 60, así que 3/5 = 60/100 = 60%. Respuesta: 60%.",
+    "en": "On top too: 3 × 20 = 60, so 3/5 = 60/100 = 60%. Answer: 60%."
+   }
+  ],
+  "wrong": {
+   "53%": {
+    "step": 0,
+    "es": "Se juntan los dígitos 5 y 3. Respuesta: 53%.",
+    "en": "The digits 5 and 3 are put together. Answer: 53%."
+   },
+   "35%": {
+    "step": 0,
+    "es": "Se juntan los dígitos 3 y 5. Respuesta: 35%.",
+    "en": "The digits 3 and 5 are put together. Answer: 35%."
+   },
+   "6%": {
+    "step": 1,
+    "es": "Se llega a 6/10 y se escribe 6%, como si fueran centésimos. Respuesta: 6%.",
+    "en": "It gets to 6/10 and writes 6%, as if they were hundredths. Answer: 6%."
+   }
+  }
+ },
+ {
+  "key": "60264638f28b",
+  "oa": "MA06 OA04",
+  "prompt": "En una cuadrícula de 100 cuadritos hay 35 cuadritos pintados. ¿Qué porcentaje de la cuadrícula está pintado?",
+  "steps": [
+   {
+    "es": "Hay 35 cuadritos pintados de 100: 35/100.",
+    "en": "There are 35 painted squares out of 100: 35/100."
+   },
+   {
+    "es": "35/100 = 35%. Respuesta: 35%.",
+    "en": "35/100 = 35%. Answer: 35%."
+   }
+  ],
+  "wrong": {
+   "65%": {
+    "step": 0,
+    "es": "Se cuentan los cuadritos sin pintar: 100 − 35 = 65. Respuesta: 65%.",
+    "en": "The unpainted squares are counted: 100 − 35 = 65. Answer: 65%."
+   },
+   "135%": {
+    "step": 0,
+    "es": "Se suman: 100 + 35 = 135. Respuesta: 135%.",
+    "en": "They’re added: 100 + 35 = 135. Answer: 135%."
+   },
+   "3,5%": {
+    "step": 1,
+    "es": "Se divide 35 por 10. Respuesta: 3,5%.",
+    "en": "35 is divided by 10. Answer: 3.5%."
+   }
+  }
+ },
+ {
+  "key": "a85bdc3504fe",
+  "oa": "MA06 OA06",
+  "prompt": "¿Cuánto es 1 1/2 + 2 1/4?",
+  "steps": [
+   {
+    "es": "Enteros: 1 + 2 = 3.",
+    "en": "Wholes: 1 + 2 = 3."
+   },
+   {
+    "es": "Fracciones: 1/2 = 2/4, y 2/4 + 1/4 = 3/4.",
+    "en": "Fractions: 1/2 = 2/4, and 2/4 + 1/4 = 3/4."
+   },
+   {
+    "es": "Se juntan: 3 + 3/4 = 3 3/4. Respuesta: 3 3/4.",
+    "en": "Put them together: 3 + 3/4 = 3 3/4. Answer: 3 3/4."
+   }
+  ],
+  "wrong": {
+   "3/4": {
+    "step": 0,
+    "es": "Se suman solo las fracciones y se olvidan los enteros. Respuesta: 3/4.",
+    "en": "Only the fractions are added and the wholes are forgotten. Answer: 3/4."
+   },
+   "3 2/6": {
+    "step": 1,
+    "es": "Fracciones: 1 + 1 = 2 arriba y 2 + 4 = 6 abajo, así que 2/6. Respuesta: 3 2/6.",
+    "en": "Fractions: 1 + 1 = 2 on top and 2 + 4 = 6 on the bottom, so 2/6. Answer: 3 2/6."
+   },
+   "3 1/2": {
+    "step": 1,
+    "es": "Fracciones: se deja solo 1/2 y se olvida el 1/4. Respuesta: 3 1/2.",
+    "en": "Fractions: only 1/2 is kept and the 1/4 is forgotten. Answer: 3 1/2."
+   }
+  }
+ },
+ {
+  "key": "4bfc37468e31",
+  "oa": "MA06 OA06",
+  "prompt": "¿Cuánto es 7/9 − 2/9?",
+  "steps": [
+   {
+    "es": "Tienen el mismo denominador: siguen siendo novenos.",
+    "en": "They have the same denominator: they’re still ninths."
+   },
+   {
+    "es": "Se restan los numeradores: 7 − 2 = 5. Respuesta: 5/9.",
+    "en": "Subtract the numerators: 7 − 2 = 5. Answer: 5/9."
+   }
+  ],
+  "wrong": {
+   "9/9": {
+    "step": 1,
+    "es": "Se suman los numeradores: 7 + 2 = 9. Respuesta: 9/9.",
+    "en": "The numerators are added: 7 + 2 = 9. Answer: 9/9."
+   },
+   "2/9": {
+    "step": 1,
+    "es": "Se escribe lo que se resta en vez del resultado. Respuesta: 2/9.",
+    "en": "What’s being subtracted is written instead of the result. Answer: 2/9."
+   },
+   "5/18": {
+    "step": 0,
+    "es": "Se suman los denominadores: 9 + 9 = 18. Respuesta: 5/18.",
+    "en": "The denominators are added: 9 + 9 = 18. Answer: 5/18."
+   }
+  }
+ },
+ {
+  "key": "c7922c3fceef",
+  "oa": "MA06 OA06",
+  "prompt": "¿Cuánto es 2/3 + 1/6?",
+  "steps": [
+   {
+    "es": "Denominador común: 6 es múltiplo de 3. 2/3 = 4/6.",
+    "en": "Common denominator: 6 is a multiple of 3. 2/3 = 4/6."
+   },
+   {
+    "es": "4/6 + 1/6 = 5/6. Respuesta: 5/6.",
+    "en": "4/6 + 1/6 = 5/6. Answer: 5/6."
+   }
+  ],
+  "wrong": {
+   "3/6": {
+    "step": 0,
+    "es": "Se cambia solo el denominador: 2/3 = 2/6, y 2/6 + 1/6 = 3/6. Respuesta: 3/6.",
+    "en": "Only the denominator changes: 2/3 = 2/6, and 2/6 + 1/6 = 3/6. Answer: 3/6."
+   },
+   "1/2": {
+    "step": 1,
+    "es": "Se resta en vez de sumar: 4/6 − 1/6 = 3/6 = 1/2. Respuesta: 1/2.",
+    "en": "It’s subtracted instead of added: 4/6 − 1/6 = 3/6 = 1/2. Answer: 1/2."
+   },
+   "3/9": {
+    "step": 0,
+    "es": "Se suman arriba y abajo: 2 + 1 = 3 y 3 + 6 = 9. Respuesta: 3/9.",
+    "en": "Top and bottom are added: 2 + 1 = 3 and 3 + 6 = 9. Answer: 3/9."
+   }
+  }
+ },
+ {
+  "key": "d0162e311af2",
+  "oa": "MA06 OA06",
+  "prompt": "Un jarro tenía 9/10 L de jugo y se tomaron 1/2 L. ¿Cuánto jugo queda?",
+  "steps": [
+   {
+    "es": "Denominador común: 1/2 = 5/10.",
+    "en": "Common denominator: 1/2 = 5/10."
+   },
+   {
+    "es": "9/10 − 5/10 = 4/10.",
+    "en": "9/10 − 5/10 = 4/10."
+   },
+   {
+    "es": "Se simplifica: 4/10 = 2/5. Respuesta: 2/5 L.",
+    "en": "Simplify: 4/10 = 2/5. Answer: 2/5 L."
+   }
+  ],
+  "wrong": {
+   "8/8 L": {
+    "step": 0,
+    "es": "Se restan arriba y abajo: 9 − 1 = 8 y 10 − 2 = 8. Respuesta: 8/8.",
+    "en": "Top and bottom are subtracted: 9 − 1 = 8 and 10 − 2 = 8. Answer: 8/8."
+   },
+   "8/10 L": {
+    "step": 0,
+    "es": "Se cambia solo el denominador: 1/2 = 1/10, y 9/10 − 1/10 = 8/10. Respuesta: 8/10.",
+    "en": "Only the denominator changes: 1/2 = 1/10, and 9/10 − 1/10 = 8/10. Answer: 8/10."
+   },
+   "7/5 L": {
+    "step": 1,
+    "es": "Se suma en vez de restar: 9/10 + 5/10 = 14/10 = 7/5. Respuesta: 7/5.",
+    "en": "It’s added instead of subtracted: 9/10 + 5/10 = 14/10 = 7/5. Answer: 7/5."
+   }
+  }
+ },
+ {
+  "key": "86a74d42ffd9",
+  "oa": "MA06 OA06",
+  "prompt": "Ana comió 1/4 de una barra de chocolate y Beto comió 1/3 de otra barra igual. ¿Qué parte de una barra comieron entre los dos?",
+  "steps": [
+   {
+    "es": "Denominador común de 4 y 3: 12.",
+    "en": "Common denominator of 4 and 3: 12."
+   },
+   {
+    "es": "1/4 = 3/12 y 1/3 = 4/12.",
+    "en": "1/4 = 3/12 and 1/3 = 4/12."
+   },
+   {
+    "es": "3/12 + 4/12 = 7/12. Respuesta: 7/12.",
+    "en": "3/12 + 4/12 = 7/12. Answer: 7/12."
+   }
+  ],
+  "wrong": {
+   "1/12": {
+    "step": 2,
+    "es": "Se resta en vez de sumar: 4/12 − 3/12 = 1/12. Respuesta: 1/12.",
+    "en": "It’s subtracted instead of added: 4/12 − 3/12 = 1/12. Answer: 1/12."
+   },
+   "2/7": {
+    "step": 0,
+    "es": "Se suman arriba y abajo: 1 + 1 = 2 y 4 + 3 = 7. Respuesta: 2/7.",
+    "en": "Top and bottom are added: 1 + 1 = 2 and 4 + 3 = 7. Answer: 2/7."
+   },
+   "2/12": {
+    "step": 1,
+    "es": "Se cambia solo el denominador: 1/4 = 1/12 y 1/3 = 1/12, y 1/12 + 1/12 = 2/12. Respuesta: 2/12.",
+    "en": "Only the denominator changes: 1/4 = 1/12 and 1/3 = 1/12, and 1/12 + 1/12 = 2/12. Answer: 2/12."
+   }
+  }
+ },
+ {
+  "key": "3bbce46fc8a2",
+  "oa": "MA06 OA06",
+  "prompt": "Por la mañana se usó 1/4 L de leche y por la tarde 2/4 L. ¿Cuánta leche se usó en total?",
+  "steps": [
+   {
+    "es": "Tienen el mismo denominador: siguen siendo cuartos.",
+    "en": "They have the same denominator: they’re still fourths."
+   },
+   {
+    "es": "Se suman los numeradores: 1 + 2 = 3. Respuesta: 3/4 L.",
+    "en": "Add the numerators: 1 + 2 = 3. Answer: 3/4 L."
+   }
+  ],
+  "wrong": {
+   "1/4 L": {
+    "step": 1,
+    "es": "Se restan los numeradores: 2 − 1 = 1. Respuesta: 1/4.",
+    "en": "The numerators are subtracted: 2 − 1 = 1. Answer: 1/4."
+   },
+   "3/8 L": {
+    "step": 0,
+    "es": "Se suman también los denominadores: 4 + 4 = 8. Respuesta: 3/8.",
+    "en": "The denominators are added too: 4 + 4 = 8. Answer: 3/8."
+   },
+   "2/4 L": {
+    "step": 1,
+    "es": "Se toma solo una de las cantidades: 2/4. Respuesta: 2/4.",
+    "en": "Only one of the amounts is taken: 2/4. Answer: 2/4."
+   }
+  }
+ },
+ {
+  "key": "f76a96a6d165",
+  "oa": "MA06 OA06",
+  "prompt": "¿Cuánto es 3/8 + 2/8?",
+  "steps": [
+   {
+    "es": "Tienen el mismo denominador: siguen siendo octavos.",
+    "en": "They have the same denominator: they’re still eighths."
+   },
+   {
+    "es": "Se suman los numeradores: 3 + 2 = 5. Respuesta: 5/8.",
+    "en": "Add the numerators: 3 + 2 = 5. Answer: 5/8."
+   }
+  ],
+  "wrong": {
+   "1/8": {
+    "step": 1,
+    "es": "Se restan los numeradores: 3 − 2 = 1. Respuesta: 1/8.",
+    "en": "The numerators are subtracted: 3 − 2 = 1. Answer: 1/8."
+   },
+   "5/16": {
+    "step": 0,
+    "es": "Se suman también los denominadores: 8 + 8 = 16. Respuesta: 5/16.",
+    "en": "The denominators are added too: 8 + 8 = 16. Answer: 5/16."
+   },
+   "6/8": {
+    "step": 1,
+    "es": "Se suman mal los numeradores: 3 + 2 = 6. Respuesta: 6/8.",
+    "en": "The numerators are added wrong: 3 + 2 = 6. Answer: 6/8."
+   }
+  }
+ },
+ {
+  "key": "799e9dce59b7",
+  "oa": "MA06 OA06",
+  "prompt": "¿Cuánto es 5/6 − 1/3?",
+  "steps": [
+   {
+    "es": "Denominador común: 1/3 = 2/6.",
+    "en": "Common denominator: 1/3 = 2/6."
+   },
+   {
+    "es": "5/6 − 2/6 = 3/6.",
+    "en": "5/6 − 2/6 = 3/6."
+   },
+   {
+    "es": "Se simplifica: 3/6 = 1/2. Respuesta: 1/2.",
+    "en": "Simplify: 3/6 = 1/2. Answer: 1/2."
+   }
+  ],
+  "wrong": {
+   "4/6": {
+    "step": 0,
+    "es": "Se cambia solo el denominador: 1/3 = 1/6, y 5/6 − 1/6 = 4/6. Respuesta: 4/6.",
+    "en": "Only the denominator changes: 1/3 = 1/6, and 5/6 − 1/6 = 4/6. Answer: 4/6."
+   },
+   "4/3": {
+    "step": 0,
+    "es": "Se restan arriba y abajo: 5 − 1 = 4 y 6 − 3 = 3. Respuesta: 4/3.",
+    "en": "Top and bottom are subtracted: 5 − 1 = 4 and 6 − 3 = 3. Answer: 4/3."
+   },
+   "7/6": {
+    "step": 1,
+    "es": "Se suma en vez de restar: 5/6 + 2/6 = 7/6. Respuesta: 7/6.",
+    "en": "It’s added instead of subtracted: 5/6 + 2/6 = 7/6. Answer: 7/6."
+   }
+  }
+ },
+ {
+  "key": "0e3b47386e0b",
+  "oa": "MA06 OA06",
+  "prompt": "¿Cuánto es 1/2 + 1/4?",
+  "steps": [
+   {
+    "es": "Denominador común: 1/2 = 2/4.",
+    "en": "Common denominator: 1/2 = 2/4."
+   },
+   {
+    "es": "2/4 + 1/4 = 3/4. Respuesta: 3/4.",
+    "en": "2/4 + 1/4 = 3/4. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "2/4": {
+    "step": 0,
+    "es": "Se cambia solo el denominador: 1/2 = 1/4, y 1/4 + 1/4 = 2/4. Respuesta: 2/4.",
+    "en": "Only the denominator changes: 1/2 = 1/4, and 1/4 + 1/4 = 2/4. Answer: 2/4."
+   },
+   "1/4": {
+    "step": 1,
+    "es": "Se resta en vez de sumar: 2/4 − 1/4 = 1/4. Respuesta: 1/4.",
+    "en": "It’s subtracted instead of added: 2/4 − 1/4 = 1/4. Answer: 1/4."
+   },
+   "2/6": {
+    "step": 0,
+    "es": "Se suman arriba y abajo: 1 + 1 = 2 y 2 + 4 = 6. Respuesta: 2/6.",
+    "en": "Top and bottom are added: 1 + 1 = 2 and 2 + 4 = 6. Answer: 2/6."
+   }
+  }
+ },
+ {
+  "key": "563dcf6da41b",
+  "oa": "MA06 OA06",
+  "prompt": "Sofía caminó 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
+  "steps": [
+   {
+    "es": "Enteros: 1 + 2 = 3.",
+    "en": "Wholes: 1 + 2 = 3."
+   },
+   {
+    "es": "Fracciones: 1/2 = 2/4, y 2/4 + 3/4 = 5/4.",
+    "en": "Fractions: 1/2 = 2/4, and 2/4 + 3/4 = 5/4."
+   },
+   {
+    "es": "5/4 es más de un entero: 5/4 = 1 1/4.",
+    "en": "5/4 is more than a whole: 5/4 = 1 1/4."
+   },
+   {
+    "es": "Total: 3 + 1 1/4 = 4 1/4. Respuesta: 4 1/4 km.",
+    "en": "Total: 3 + 1 1/4 = 4 1/4. Answer: 4 1/4 km."
+   }
+  ],
+  "wrong": {
+   "3 4/6 km": {
+    "step": 1,
+    "es": "Fracciones: 1 + 3 = 4 arriba y 2 + 4 = 6 abajo, así que 4/6. Respuesta: 3 4/6.",
+    "en": "Fractions: 1 + 3 = 4 on top and 2 + 4 = 6 on the bottom, so 4/6. Answer: 3 4/6."
+   },
+   "1 1/4 km": {
+    "step": 0,
+    "es": "Se suman solo las fracciones y se olvidan los enteros: 1 1/4. Respuesta: 1 1/4.",
+    "en": "Only the fractions are added and the wholes are forgotten: 1 1/4. Answer: 1 1/4."
+   },
+   "3 1/4 km": {
+    "step": 3,
+    "es": "Se escribe 3 + 1/4 y se pierde el entero que salió de las fracciones. Respuesta: 3 1/4.",
+    "en": "It’s written as 3 + 1/4 and the whole from the fractions gets lost. Answer: 3 1/4."
+   }
+  }
+ }
+]

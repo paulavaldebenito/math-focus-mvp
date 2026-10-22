@@ -8,6 +8,7 @@ import type {
   ReviewSkill,
 } from "../api/types.js";
 import { ExerciseIllustration } from "../components/ExerciseIllustration.js";
+import { WorkedSolution } from "../components/WorkedSolution.js";
 import { interestByKey } from "../lib/interests.js";
 import { speak, speechSupported } from "../lib/speech.js";
 import { FEEDBACK_CORRECT_VARIANTS, localize, t, useLang } from "../lib/i18n.js";
@@ -41,11 +42,17 @@ export function ReviewScreen({ onExit }: Props) {
 
   useEffect(() => {
     if (view.kind !== "skills") return;
+    // Si se cambia de curso antes de que llegue la respuesta anterior, esa
+    // respuesta ya no sirve: sin esto, una lista vieja pisaba a la nueva.
+    let current = true;
     setSkills(null);
     endpoints
       .reviewSkills(grade)
-      .then((r) => setSkills(r.skills))
-      .catch(() => setError(true));
+      .then((r) => current && setSkills(r.skills))
+      .catch(() => current && setError(true));
+    return () => {
+      current = false;
+    };
   }, [grade, view.kind]);
 
   async function openSkill(skill: SkillRef, exerciseId?: string) {
@@ -355,11 +362,12 @@ function ReviewExerciseView({
             <span>{feedbackText}</span>
           </div>
         )}
-        {result && !result.isCorrect && exercise.procedureNote && (
+        {result && !result.isCorrect && exercise.procedureNote && !result.solution && (
           <p className="hint-text strategy-note">
             {t(lang, "strategyLabel")}: {localize(lang, exercise.procedureNote, exercise.procedureNoteEn)}
           </p>
         )}
+        {result?.solution && <WorkedSolution lang={lang} steps={result.solution} wrongStep={result.wrongStep} open={!result.isCorrect} />}
       </div>
 
       {/* Solo para la revisora: lo que el niño no ve. */}
@@ -369,6 +377,22 @@ function ReviewExerciseView({
             <p>
               <b>{t(lang, "reviewCorrectWas")}:</b> {localize(lang, correctOption.label, correctOption.labelEn)}
             </p>
+          )}
+          {result.allWrongSteps && result.allWrongSteps.length > 0 && (
+            <div>
+              <p>
+                <b>{t(lang, "reviewWrongSteps")}</b>
+              </p>
+              <ul className="review-comments">
+                {result.allWrongSteps.map((w) => (
+                  <li key={w.label}>
+                    <span>
+                      <b>{localize(lang, w.label, w.labelEn)}</b> · {t(lang, "findStepStep")} {w.wrongStep.step + 1}: {localize(lang, w.wrongStep.es, w.wrongStep.en)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
           <div className="review-nav">
             <button className="btn-secondary" type="button" onClick={reset}>

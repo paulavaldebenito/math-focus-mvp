@@ -19,6 +19,7 @@ import { linkImages, type ExerciseImage } from "./seed/imagenes/linkImages.js";
 import { applyOptionTranslations, loadOptionTranslations } from "./seed/traducciones/applyOptionTranslations.js";
 import { applyClassroomEnglish } from "./seed/traducciones/applyClassroomEnglish.js";
 import { applyOptionFeedback } from "./seed/traducciones/applyOptionFeedback.js";
+import { applyWorkedSteps } from "./seed/traducciones/applyWorkedSteps.js";
 import { linkBancoVisual, loadBancoVisual } from "./seed/imagenes/bancoVisual.js";
 import { applyPromptEdits } from "./seed/traducciones/applyPromptEdits.js";
 import { mkdirSync, writeFileSync } from "node:fs";
@@ -69,6 +70,11 @@ export async function integrateImageBank(): Promise<string[]> {
   const fb = await applyOptionFeedback(prisma);
   console.log(`Feedback por alternativa: ${fb.written} escritos en esta corrida (${fb.already} ya estaban al día).`);
   problems.push(...fb.problems);
+
+  // Desarrollo paso a paso y paso equivocado de cada alternativa (specs/015).
+  const ws = await applyWorkedSteps(prisma);
+  console.log(`Desarrollo paso a paso: ${ws.exercises} ejercicios, ${ws.written} escrituras en esta corrida.`);
+  problems.push(...ws.problems);
 
   // Verificación final: cada labelEn del JSON quedó en la BD.
   const expected = loadOptionTranslations().flatMap((e) => e.options.filter((o) => o.labelEn !== null));

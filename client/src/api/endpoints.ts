@@ -103,6 +103,10 @@ export function submitSpotErrorAttempt(sessionId: string, input: SubmitSpotError
   return api.post<AttemptResult>(`/api/sessions/${sessionId}/spot-error-attempts`, input);
 }
 
+export function submitFindStepAttempt(sessionId: string, input: { exerciseId: string; wrongOptionId: string; chosenLine: number }) {
+  return api.post<AttemptResult>(`/api/sessions/${sessionId}/find-step-attempts`, input);
+}
+
 export interface PauseEventInput {
   kind: "respiracion" | "movimiento";
   accepted: boolean;

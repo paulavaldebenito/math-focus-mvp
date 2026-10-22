@@ -9,7 +9,7 @@ import { getCurrentLevelForChild } from "../adaptive/levelLookup.js";
 import { evaluateAdaptiveRules, applyLevelChange, type AttemptRecord } from "../adaptive/adaptiveEngine.js";
 import { shuffle } from "../lib/shuffle.js";
 import { allowedThemeWhere, notAttemptedWhere, pickExercise } from "../exercises/select.js";
-import { buildSpotErrorRound, isSpotErrorEligible, wantsSpotErrorRound } from "../exercises/spotError.js";
+import { buildFindStepRound, buildSpotErrorRound, isFindStepEligible, isSpotErrorEligible, wantsSpotErrorRound } from "../exercises/spotError.js";
 import { extraQuestionFor } from "../domain/feelings.js";
 
 // Cada cuántos aciertos seguidos (sin cortar racha) se otorga una estrella
@@ -19,6 +19,7 @@ const STREAK_BONUS_EVERY = 3;
 export const childSessionsRouter = Router({ mergeParams: true });
 export const sessionAttemptsRouter = Router({ mergeParams: true });
 export const spotErrorAttemptsRouter = Router({ mergeParams: true });
+export const findStepAttemptsRouter = Router({ mergeParams: true });
 
 const startSessionSchema = z.object({
   // Nodo del mapa de habilidades que se está practicando. Opcional por
@@ -99,6 +100,10 @@ sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
   const ownOption = option && option.exerciseId === exerciseId ? option : null;
   const feedback = ownOption?.feedback ?? null;
   const feedbackEn = ownOption?.feedbackEn ?? null;
+  // Desarrollo paso a paso (specs/015): recién ahora, después de responder.
+  // Si se equivocó, también el paso donde su alternativa se desvía.
+  const solution = (await prisma.exercise.findUnique({ where: { id: exerciseId }, select: { solution: true } }))?.solution ?? null;
+  const wrongStep = !isCorrect ? (ownOption?.wrongStep ?? null) : null;
 
   await prisma.attempt.create({
     data: {
@@ -179,7 +184,7 @@ sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
     });
   }
 
-  res.status(201).json({ isCorrect, action, level: newLevel, errorCode, feedback, feedbackEn, bonusStarAwarded });
+  res.status(201).json({ isCorrect, action, level: newLevel, errorCode, feedback, feedbackEn, bonusStarAwarded, solution, wrongStep });
 });
 
 const spotErrorAttemptSchema = z.object({
@@ -259,6 +264,56 @@ spotErrorAttemptsRouter.post("/", requireAuth, async (req, res) => {
   });
 });
 
+const findStepAttemptSchema = z.object({
+  exerciseId: z.string().min(1),
+  // La alternativa (errada) cuyo desarrollo se mostró — la eligió el servidor.
+  wrongOptionId: z.string().min(1),
+  // Índice de la línea que el niño tocó como "aquí se equivocó".
+  chosenLine: z.number().int().min(0),
+});
+
+// Ronda "encuentra el paso equivocado" (specs/015): como "detecta el error",
+// no ajusta el nivel ni la racha; da una estrella si encuentra el paso, y
+// siempre devuelve el paso correcto y el desarrollo completo para aprender.
+findStepAttemptsRouter.post("/", requireAuth, async (req, res) => {
+  const practiceSession = await getOwnedSession(String(req.params.sessionId), req.session.adultUserId!);
+  if (!practiceSession) {
+    res.status(404).json({ error: "session_not_found" });
+    return;
+  }
+  const parsed = findStepAttemptSchema.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: "invalid_payload", details: parsed.error.flatten() });
+    return;
+  }
+  const { exerciseId, wrongOptionId, chosenLine } = parsed.data;
+  const option = await prisma.exerciseOption.findUnique({ where: { id: wrongOptionId }, include: { exercise: { select: { solution: true } } } });
+  const wrong = option?.wrongStep as { step: number; es: string; en: string } | null | undefined;
+  const steps = option?.exercise.solution as Array<{ es: string; en: string }> | null | undefined;
+  if (!option || option.exerciseId !== exerciseId || option.isCorrect || !wrong || !Array.isArray(steps)) {
+    res.status(400).json({ error: "invalid_find_step_round" });
+    return;
+  }
+  const isCorrect = chosenLine === wrong.step;
+  await prisma.attempt.create({ data: { sessionId: practiceSession.id, exerciseId, isCorrect, isSpotError: true } });
+  if (isCorrect) {
+    await prisma.starEvent.create({ data: { childProfileId: practiceSession.childProfileId, sessionId: practiceSession.id, reason: "spot_error_correct" } });
+  }
+  const level = await getCurrentLevelForChild(practiceSession.childProfileId);
+  res.status(201).json({
+    isCorrect,
+    correctLine: wrong.step,
+    correctStep: steps[wrong.step] ?? null,
+    solution: steps,
+    feedback: option.feedback,
+    feedbackEn: option.feedbackEn,
+    level,
+    action: { type: "NO_CHANGE", ruleCode: "NO_RULE_TRIGGERED", reason: "Ronda de encontrar el paso equivocado." },
+    errorCode: null,
+    bonusStarAwarded: false,
+  });
+});
+
 export const nextExerciseRouter = Router({ mergeParams: true });
 
 nextExerciseRouter.get("/", requireAuth, async (req, res) => {
@@ -322,6 +377,7 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
             isCorrect: true,
             errorTypeId: true,
             errorType: { select: { code: true } },
+            wrongStep: true,
           },
         },
       },
@@ -335,7 +391,29 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
   // reutiliza el mismo ErrorType de las alternativas normales. Solo entra
   // si, además de tocarle el turno, hay al menos un ejercicio del pool que
   // sirva para esto — si no, sigue como pregunta normal (ver spotError.ts).
-  const spotErrorPool = wantsSpotErrorRound(alreadyAttempted.length) ? pool.filter(isSpotErrorEligible) : [];
+  const spotTurn = wantsSpotErrorRound(alreadyAttempted.length);
+  // "Encuentra el paso equivocado" (specs/015) tiene prioridad cuando el
+  // ejercicio trae su desarrollo: es la versión más rica de la misma ronda.
+  const findStepPool = spotTurn ? pool.filter(isFindStepEligible) : [];
+  if (findStepPool.length > 0) {
+    const ex = pickExercise(findStepPool)!;
+    const round = buildFindStepRound(ex)!;
+    res.status(200).json({
+      id: ex.id,
+      mode: "find_step",
+      prompt: ex.prompt,
+      promptEn: ex.promptEn,
+      difficultyLevel: ex.difficultyLevel,
+      visual: ex.visual,
+      image: ex.image,
+      lines: round.lines,
+      characterAnswerLabel: round.characterAnswerLabel,
+      characterAnswerLabelEn: round.characterAnswerLabelEn,
+      wrongOptionId: round.wrongOptionId,
+    });
+    return;
+  }
+  const spotErrorPool = spotTurn ? pool.filter(isSpotErrorEligible) : [];
 
   const chosen = spotErrorPool.length > 0 ? pickExercise(spotErrorPool) : pickExercise(pool);
   if (!chosen) {
