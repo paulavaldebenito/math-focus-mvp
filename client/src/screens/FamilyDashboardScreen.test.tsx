@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { FamilyDashboardScreen } from "./FamilyDashboardScreen.js";
 
-const mocks = vi.hoisted(() => ({ getProgress: vi.fn() }));
+const mocks = vi.hoisted(() => ({ getProgress: vi.fn(), playHomeGame: vi.fn() }));
 vi.mock("../api/endpoints.js", () => mocks);
 
 describe("FamilyDashboardScreen", () => {
@@ -129,7 +129,7 @@ describe("FamilyDashboardScreen", () => {
 
     render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
 
-    expect(await screen.findByText("Cómo se ha sentido y cómo le ha ido")).toBeInTheDocument();
+    expect(await screen.findByText("🙂 Ánimo al empezar el día y aciertos")).toBeInTheDocument();
     expect(screen.getByText(/nervioso\/a con las matemáticas acertó un 42 %; .* tranquilo\/a, un 92 %/)).toBeInTheDocument();
     // Ánimo triste: 1 solo día — no alcanza para comparar, no se muestra.
     expect(screen.queryByText(/se sintió triste acertó/)).not.toBeInTheDocument();
@@ -158,28 +158,92 @@ describe("FamilyDashboardScreen", () => {
     });
     render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
     expect(await screen.findByText(/Todavía no hay registros/)).toBeInTheDocument();
-    expect(screen.getByText(/no hay contenidos con dificultad marcada/)).toBeInTheDocument();
   });
 
-  it("muestra los contenidos a repasar con su porcentaje y una sugerencia para la casa, en el idioma elegido", async () => {
+  const game = {
+    emoji: "🥪",
+    name: { es: "El sándwich en partes", en: "The sandwich in parts" },
+    minutes: 10,
+    materials: { es: "Hojas de papel", en: "Sheets of paper" },
+    steps: { es: ["Doblen una hoja en 2 partes.", "Pinten 1/2 y 1/4.", "Corten el sándwich."], en: ["Fold a sheet in 2.", "Color 1/2 and 1/4.", "Cut the sandwich."] },
+  };
+  const topic = (over: Record<string, unknown> = {}) => ({
+    skillId: "s1",
+    grade: 3,
+    name: "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+    nameEn: "Common fractions",
+    attempts: 8,
+    accuracy: 0.25,
+    trend: null,
+    lastPracticed: "2026-10-21",
+    lastEmotion: "nervios",
+    needsHelp: ["aciertos", "emocion"],
+    game,
+    timesPlayed: 0,
+    ...over,
+  });
+  const feelings = (over: Record<string, unknown> = {}) => ({
+    answered: 3,
+    counts: { orgullo: 0, alegria: 1, calma: 0, aburrimiento: 0, rabia: 0, nervios: 2 },
+    recent: [{ date: "2026-10-21", emotion: "nervios", skill: { id: "s1", name: "Fracciones", nameEn: null } }],
+    weatherAvg: 2.4,
+    energyAvg: null,
+    hardestCounts: { entender: 0, cuentas: 2, concentrarme: 0, nada: 0 },
+    focus: ["nervios"],
+    guidance: [
+      {
+        emotion: "nervios",
+        emoji: "😰",
+        label: { es: "Nervios", en: "Nerves" },
+        meaning: { es: "Sintió inseguridad.", en: "They felt unsure." },
+        say: { es: ["«Aquí equivocarse está permitido.»"], en: ["“Mistakes are allowed here.”"] },
+        do: { es: ["Sesiones cortas y tranquilas."], en: ["Short, calm sessions."] },
+      },
+    ],
+    hardestGuidance: { key: "cuentas", emoji: "🧮", label: { es: "Hacer las cuentas", en: "Doing the math" }, tip: { es: "Cálculo mental jugando.", en: "Mental math games." } },
+    ...over,
+  });
+
+  it("muestra cómo se ha sentido al practicar, con qué decir y qué hacer, sin lenguaje clínico", async () => {
+    mocks.getProgress.mockResolvedValue({ ...base, feelings: feelings(), topics: [] });
+    render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
+    expect(await screen.findByText("💛 Cómo se ha sentido al practicar")).toBeInTheDocument();
+    expect(screen.getByText(/contó cómo se sintió en 3 prácticas/)).toBeInTheDocument();
+    expect(screen.getByText("💬 Qué decir")).toBeInTheDocument();
+    expect(screen.getByText("«Aquí equivocarse está permitido.»")).toBeInTheDocument();
+    expect(screen.getByText("Sesiones cortas y tranquilas.")).toBeInTheDocument();
+    expect(screen.getByText(/Lo que más le ha costado: 🧮 Hacer las cuentas/)).toBeInTheDocument();
+    expect(screen.getByText(/no un diagnóstico/)).toBeInTheDocument();
+    expect(screen.queryByText(/trastorno|ansiedad/i)).not.toBeInTheDocument();
+  });
+
+  it("propone un juego para la casa por tema débil y registra «¡Lo jugamos!»", async () => {
+    mocks.getProgress.mockResolvedValue({ ...base, feelings: feelings({ answered: 0, weatherAvg: null }), topics: [topic()] });
+    mocks.playHomeGame.mockResolvedValue({ timesPlayed: 1 });
+    const user = userEvent.setup();
+    render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
+
+    expect(await screen.findByText("🎲 Juegos para la casa")).toBeInTheDocument();
+    expect(screen.getByText("Le está costando: acertó un 25 % de 8 preguntas.")).toBeInTheDocument();
+    expect(screen.getByText(/La última vez que lo practicó sintió nervios/)).toBeInTheDocument();
+    expect(screen.getAllByText("El sándwich en partes")[0]).toBeInTheDocument();
+    await user.click(screen.getAllByRole("button", { name: "¡Lo jugamos! ✅" })[0]!);
+    expect(mocks.playHomeGame).toHaveBeenCalledWith("c1", "s1");
+    expect(await screen.findByText("Jugado 1 vez 🎉")).toBeInTheDocument();
+  });
+
+  it("muestra la evolución de cada tema con su tendencia y la emoción más reciente; sin temas débiles lo dice", async () => {
     mocks.getProgress.mockResolvedValue({
       ...base,
-      skillsToReview: [
-        {
-          skillId: "s1",
-          grade: 3,
-          name: "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
-          nameEn: "Common fractions",
-          attempts: 8,
-          accuracy: 0.25,
-          tip: { es: "Doblen hojas de papel en partes iguales.", en: "Fold sheets of paper into equal parts." },
-        },
-      ],
+      feelings: feelings({ answered: 0, weatherAvg: null }),
+      topics: [topic({ accuracy: 0.9, attempts: 20, trend: "up", needsHelp: [], lastEmotion: "orgullo" })],
     });
     render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
-    expect(await screen.findByText("Qué repasar y cómo hacerlo en casa")).toBeInTheDocument();
-    expect(screen.getByText("Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4")).toBeInTheDocument();
-    expect(screen.getByText("Acertó un 25 % en 8 preguntas")).toBeInTheDocument();
-    expect(screen.getByText("Doblen hojas de papel en partes iguales.")).toBeInTheDocument();
+    expect(await screen.findByText("📈 Cómo va en cada tema")).toBeInTheDocument();
+    expect(screen.getByText("90 % de aciertos en 20 preguntas")).toBeInTheDocument();
+    expect(screen.getByText("↗ Mejorando")).toBeInTheDocument();
+    expect(screen.getByTitle("Orgullo")).toHaveTextContent("🤩");
+    expect(screen.getByText(/ningún tema necesita refuerzo/)).toBeInTheDocument();
+    expect(screen.getByText(/Aún no hay respuestas/)).toBeInTheDocument();
   });
 });

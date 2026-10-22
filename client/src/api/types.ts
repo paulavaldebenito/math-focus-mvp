@@ -184,6 +184,67 @@ export interface StartSessionResponse {
   currentLevel: number;
   /** true en la primera práctica del día: toca preguntar el ánimo con caritas. */
   checkInDue?: boolean;
+  /** Pregunta lúdica del cierre de esta sesión (rota entre sesiones). */
+  reflectionQuestion?: ReflectionQuestion;
+}
+
+// ---- Reflexión al cerrar la práctica y panel familiar (specs/013) ----
+
+export type Emotion = "orgullo" | "alegria" | "calma" | "aburrimiento" | "rabia" | "nervios";
+export type Hardest = "entender" | "cuentas" | "concentrarme" | "nada";
+export type ReflectionQuestion = "weather" | "energy" | "hardest";
+
+export interface ReflectionInput {
+  emotion?: Emotion;
+  weather?: number;
+  energy?: number;
+  hardest?: Hardest;
+}
+
+type Bi = { es: string; en: string };
+
+export interface HomeGame {
+  emoji: string;
+  name: Bi;
+  minutes: number;
+  materials: Bi;
+  steps: { es: string[]; en: string[] };
+}
+
+export interface EmotionGuidance {
+  emotion: Emotion;
+  emoji: string;
+  label: Bi;
+  meaning: Bi;
+  say: { es: string[]; en: string[] };
+  do: { es: string[]; en: string[] };
+}
+
+export interface FeelingsSummary {
+  answered: number;
+  counts: Record<Emotion, number>;
+  recent: Array<{ date: string; emotion: Emotion; skill: { id: string; name: string; nameEn: string | null } | null }>;
+  weatherAvg: number | null;
+  energyAvg: number | null;
+  hardestCounts: Record<Hardest, number>;
+  focus: Emotion[];
+  guidance: EmotionGuidance[];
+  hardestGuidance: { key: Exclude<Hardest, "nada">; emoji: string; label: Bi; tip: Bi } | null;
+}
+
+export interface TopicProgress {
+  skillId: string;
+  grade: number;
+  name: string;
+  nameEn: string | null;
+  attempts: number;
+  accuracy: number;
+  trend: "up" | "down" | "steady" | null;
+  lastPracticed: string;
+  lastEmotion: Emotion | null;
+  needsHelp: Array<"aciertos" | "emocion">;
+  game: HomeGame | null;
+  timesPlayed: number;
 }
 
 export type AdaptiveAction =
@@ -228,6 +289,10 @@ export interface ProgressResponse {
   wellbeing?: WellbeingCross;
   /** Contenidos con menos aciertos, cada uno con una sugerencia para la casa. */
   skillsToReview?: SkillToReview[];
+  /** Emociones al cerrar las prácticas (14 días) con la guía para acompañar. */
+  feelings?: FeelingsSummary;
+  /** Evolución de cada tema practicado, con su juego para la casa. */
+  topics?: TopicProgress[];
 }
 
 export interface WellbeingDay {
@@ -257,7 +322,7 @@ export interface SkillToReview {
   nameEn: string | null;
   attempts: number;
   accuracy: number;
-  tip: { es: string; en: string } | null;
+  game: HomeGame | null;
 }
 
 // ---- Modo revisión (specs/011-modo-revision) — solo cuentas revisoras ----

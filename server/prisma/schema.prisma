@@ -71,6 +71,8 @@ model ChildProfile {
   progressSnapshots ProgressSnapshot[]
   starEvents        StarEvent[]
   checkIns          WellbeingCheckIn[]
+  reflections    SessionReflection[]
+  homeGamePlays  HomeGamePlay[]
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -114,6 +116,8 @@ model MathSkill {
   order     Int        @default(0)
   exercises Exercise[]
   sessions  Session[]
+  reflections SessionReflection[]
+  homeGamePlays HomeGamePlay[]
 }
 
 /// Ejercicio. `isFictitious` marca explícitamente los datos de prueba —
@@ -203,6 +207,7 @@ model Session {
   adaptiveDecisions AdaptiveDecision[]
   starEvents        StarEvent[]
   checkIns          WellbeingCheckIn[]
+  reflection        SessionReflection?
 }
 
 /// Un intento de respuesta a un ejercicio dentro de una sesión.
@@ -337,4 +342,43 @@ model ReviewComment {
   resolvedAt  DateTime?
 
   @@index([exerciseId])
+}
+
+/// Reflexión del niño al TERMINAR una práctica (specs/013): qué sintió
+/// (siempre se pregunta) y una pregunta lúdica que rota entre clima,
+/// energía y "lo más difícil". Todo opcional; una por sesión. Como la
+/// sesión es de una habilidad, la emoción queda ligada al tema. Es un
+/// autorreporte para acompañar en casa, nunca un diagnóstico.
+model SessionReflection {
+  id             String       @id @default(cuid())
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id])
+  sessionId      String       @unique
+  session        Session      @relation(fields: [sessionId], references: [id])
+  mathSkillId    String?
+  mathSkill      MathSkill?   @relation(fields: [mathSkillId], references: [id])
+  /// Catálogo cerrado (domain/feelings.ts): orgullo, alegria, calma,
+  /// aburrimiento, rabia, nervios. NULL = no respondió.
+  emotion        String?
+  /// Si la práctica fuera un clima: 1 = tormenta … 4 = sol.
+  weather        Int?
+  /// Energía que le puso: 1 = poquita … 3 = mucha.
+  energy         Int?
+  /// Lo más difícil: entender, cuentas, concentrarme, nada.
+  hardest        String?
+  createdAt      DateTime     @default(now())
+
+  @@index([childProfileId, createdAt])
+}
+
+/// La familia marcó "¡Lo jugamos!" en un juego para la casa del panel.
+model HomeGamePlay {
+  id             String       @id @default(cuid())
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id])
+  mathSkillId    String
+  mathSkill      MathSkill    @relation(fields: [mathSkillId], references: [id])
+  playedAt       DateTime     @default(now())
+
+  @@index([childProfileId])
 }

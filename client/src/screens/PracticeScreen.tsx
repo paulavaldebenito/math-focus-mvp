@@ -9,6 +9,8 @@ import { MoodCheckIn } from "../components/MoodCheckIn.js";
 import { BrickCompanionAvatar, type CompanionMood } from "../components/BrickCompanionAvatar.js";
 import { Confetti } from "../components/Confetti.js";
 import { MascotMoment } from "../components/MascotMoment.js";
+import { SessionReflection } from "../components/SessionReflection.js";
+import type { ReflectionQuestion } from "../api/types.js";
 import { wrongFeedbackText } from "../lib/feedback.js";
 import { companionByKey, companionName, type Companion } from "../lib/companions.js";
 import { interestByKey } from "../lib/interests.js";
@@ -96,6 +98,8 @@ export function PracticeScreen({
   // la siguiente pausa elige otro, nunca repite el mismo.
   const [usedPauseKeys, setUsedPauseKeys] = useState<string[]>([]);
   const checkInDueRef = useRef(false);
+  // Pregunta lúdica del cierre que tocó en esta sesión (rota entre sesiones).
+  const [reflectionQuestion, setReflectionQuestion] = useState<ReflectionQuestion>("weather");
   const [exercise, setExercise] = useState<NextExercisePublic | null>(null);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -159,8 +163,9 @@ export function PracticeScreen({
 
     endpoints
       .startSession(childId, mathSkillId)
-      .then(({ sessionId: id, currentLevel, checkInDue }) => {
+      .then(({ sessionId: id, currentLevel, checkInDue, reflectionQuestion: rq }) => {
         setSessionId(id);
+        if (rq) setReflectionQuestion(rq);
         // Las preguntas de ánimo van solo en la primera práctica del día.
         checkInDueRef.current = checkInDue === true;
         setLevel(currentLevel);
@@ -584,6 +589,9 @@ export function PracticeScreen({
         <p className="hint-text">
           {t(lang, "sessionDoneHabitatPrefix")} {companionName(companion, lang, mascotName)}.
         </p>
+        {sessionId && (
+          <SessionReflection lang={lang} question={reflectionQuestion} onSubmit={(input) => endpoints.submitReflection(sessionId, input)} />
+        )}
         <button
           className="btn-primary"
           type="button"

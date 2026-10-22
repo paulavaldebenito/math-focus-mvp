@@ -1,4 +1,7 @@
-import type { SkillToReview, WellbeingCross } from "../api/types.js";
+import { useState } from "react";
+import * as endpoints from "../api/endpoints.js";
+import type { Emotion, FeelingsSummary, HomeGame, TopicProgress, WellbeingCross } from "../api/types.js";
+import { EMOTION_CHOICES } from "../lib/emotions.js";
 import { localize, type Lang } from "../lib/i18n.js";
 import { MATH_FACES, MOOD_FACES } from "../lib/moodFaces.js";
 
@@ -21,7 +24,7 @@ const pct = (x: number) => `${Math.round(x * 100)} %`;
  */
 const COPY = {
   es: {
-    wellbeingTitle: "Cómo se ha sentido y cómo le ha ido",
+    wellbeingTitle: "🙂 Ánimo al empezar el día y aciertos",
     wellbeingEmpty:
       "Todavía no hay registros. En la primera práctica de cada día le preguntamos, con caritas y de forma opcional, cómo se siente y cómo se siente con las matemáticas.",
     fewDays: "Aún hay pocos días para comparar. Con más prácticas verás aquí si su ánimo y sus aciertos van de la mano.",
@@ -41,12 +44,9 @@ const COPY = {
     colAccuracy: "Aciertos",
     noExercises: "sin ejercicios",
     noAnswer: "—",
-    reviewTitle: "Qué repasar y cómo hacerlo en casa",
-    reviewNone: "Por ahora no hay contenidos con dificultad marcada. ¡Sigan así!",
-    reviewStat: (p: string, n: number) => `Acertó un ${p} en ${n} preguntas`,
   },
   en: {
-    wellbeingTitle: "How they've been feeling and doing",
+    wellbeingTitle: "🙂 Mood at the start of the day and results",
     wellbeingEmpty:
       "No entries yet. In the first practice of each day we ask, with faces and always optionally, how they feel and how they feel about math.",
     fewDays: "There aren't enough days to compare yet. With more practice you'll see here whether their mood and their results go hand in hand.",
@@ -65,9 +65,6 @@ const COPY = {
     colAccuracy: "Correct",
     noExercises: "no exercises",
     noAnswer: "—",
-    reviewTitle: "What to review and how to do it at home",
-    reviewNone: "For now there are no topics flagged as difficult. Keep it up!",
-    reviewStat: (p: string, n: number) => `Got ${p} right in ${n} questions`,
   },
 } as const;
 
@@ -154,22 +151,268 @@ export function WellbeingPanel({ wellbeing, lang }: { wellbeing: WellbeingCross;
   );
 }
 
-export function SkillsToReviewPanel({ skills, lang }: { skills: SkillToReview[]; lang: Lang }) {
-  const c = COPY[lang];
+// ---------- Emociones al cerrar la práctica (specs/013) ----------
+
+const FEEL = {
+  es: {
+    title: "💛 Cómo se ha sentido al practicar",
+    empty: "Aún no hay respuestas. Al terminar cada práctica le preguntamos, con emojis y de forma opcional, qué sintió.",
+    count: (n: number) => `En las últimas 2 semanas contó cómo se sintió en ${n} ${n === 1 ? "práctica" : "prácticas"}.`,
+    weather: "Clima de sus prácticas",
+    energy: "Energía que le puso",
+    hardest: "Lo que más le ha costado",
+    guidanceTitle: "Cómo acompañar",
+    say: "💬 Qué decir",
+    doIt: "🤝 Qué hacer",
+    recent: "Últimas prácticas",
+    caveat: "Es lo que contó tu hijo/a, no un diagnóstico: úsalo como punto de partida para conversar.",
+  },
+  en: {
+    title: "💛 How they’ve felt while practicing",
+    empty: "No answers yet. At the end of each practice we ask, with emojis and always optionally, how they felt.",
+    count: (n: number) => `In the last 2 weeks they shared how they felt in ${n} ${n === 1 ? "practice" : "practices"}.`,
+    weather: "Weather of their practices",
+    energy: "Energy they put in",
+    hardest: "What has been hardest",
+    guidanceTitle: "How to support them",
+    say: "💬 What to say",
+    doIt: "🤝 What to do",
+    recent: "Recent practices",
+    caveat: "This is what your child shared, not a diagnosis: use it as a starting point to talk.",
+  },
+} as const;
+
+const WEATHER = ["⛈️", "🌧️", "⛅", "☀️"];
+const ENERGY = ["🪫", "🔋", "⚡"];
+const emotionChoice = (e: Emotion) => EMOTION_CHOICES.find((c) => c.key === e)!;
+
+export function FeelingsPanel({ feelings, lang }: { feelings: FeelingsSummary; lang: Lang }) {
+  const c = FEEL[lang];
+  const max = Math.max(1, ...Object.values(feelings.counts));
   return (
-    <section className="dash-tips" aria-labelledby="dash-review-title">
-      <p id="dash-review-title" className="dash-errors-title">
-        {c.reviewTitle}
-      </p>
-      {skills.length === 0 ? (
-        <p className="hint-text">{c.reviewNone}</p>
+    <section className="dash-section" aria-labelledby="dash-feelings-title">
+      <h2 id="dash-feelings-title" className="dash-section-title">{c.title}</h2>
+      {feelings.answered === 0 && feelings.weatherAvg === null && feelings.energyAvg === null ? (
+        <p className="hint-text">{c.empty}</p>
       ) : (
-        <ul className="dash-tip-list">
-          {skills.map((s) => (
-            <li key={s.skillId} className="dash-tip-card">
-              <span className="dash-tip-area">{localize(lang, s.name, s.nameEn)}</span>
-              <span className="dash-review-stat">{c.reviewStat(pct(s.accuracy), s.attempts)}</span>
-              {s.tip && <span>{s.tip[lang]}</span>}
+        <>
+          <p>{c.count(feelings.answered)}</p>
+          <ul className="dash-emotions">
+            {EMOTION_CHOICES.map((e) => (
+              <li key={e.key} className={feelings.counts[e.key] ? "" : "dash-emotion-zero"}>
+                <span className="dash-emotion-emoji" aria-hidden="true">{e.emoji}</span>
+                <span className="dash-emotion-label">{e.label[lang]}</span>
+                <span className="dash-emotion-bar" aria-hidden="true">
+                  <span style={{ width: `${(feelings.counts[e.key] / max) * 100}%` }} />
+                </span>
+                <span className="dash-emotion-count">{feelings.counts[e.key]}</span>
+              </li>
+            ))}
+          </ul>
+          {(feelings.weatherAvg !== null || feelings.energyAvg !== null) && (
+            <div className="dash-chips">
+              {feelings.weatherAvg !== null && (
+                <span className="dash-chip">
+                  {c.weather}: <b aria-hidden="true">{WEATHER[Math.round(feelings.weatherAvg) - 1]}</b>
+                </span>
+              )}
+              {feelings.energyAvg !== null && (
+                <span className="dash-chip">
+                  {c.energy}: <b aria-hidden="true">{ENERGY[Math.round(feelings.energyAvg) - 1]}</b>
+                </span>
+              )}
+            </div>
+          )}
+          {feelings.guidance.length > 0 && (
+            <>
+              <h3 className="dash-subtitle">{c.guidanceTitle}</h3>
+              {feelings.guidance.map((g) => (
+                <article key={g.emotion} className={`dash-guide dash-guide-${g.emotion}`}>
+                  <p className="dash-guide-head">
+                    <span aria-hidden="true">{g.emoji}</span> <b>{g.label[lang]}</b> — {g.meaning[lang]}
+                  </p>
+                  <p className="dash-guide-label">{c.say}</p>
+                  <ul>{g.say[lang].map((x) => <li key={x}>{x}</li>)}</ul>
+                  <p className="dash-guide-label">{c.doIt}</p>
+                  <ul>{g.do[lang].map((x) => <li key={x}>{x}</li>)}</ul>
+                </article>
+              ))}
+            </>
+          )}
+          {feelings.hardestGuidance && (
+            <div className="dash-tip-card">
+              <span className="dash-tip-area">
+                {c.hardest}: {feelings.hardestGuidance.emoji} {feelings.hardestGuidance.label[lang]}
+              </span>
+              <span>{feelings.hardestGuidance.tip[lang]}</span>
+            </div>
+          )}
+          {feelings.recent.length > 0 && (
+            <>
+              <h3 className="dash-subtitle">{c.recent}</h3>
+              <ul className="dash-recent">
+                {feelings.recent.map((r, i) => (
+                  <li key={i}>
+                    <span aria-hidden="true">{emotionChoice(r.emotion).emoji}</span> {emotionChoice(r.emotion).label[lang]}
+                    {r.skill && <span className="hint-text"> · {localize(lang, r.skill.name, r.skill.nameEn)}</span>}
+                    <span className="hint-text"> · {formatDay(r.date, lang)}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          <p className="hint-text">{c.caveat}</p>
+        </>
+      )}
+    </section>
+  );
+}
+
+// ---------- Juegos para la casa y evolución por tema ----------
+
+const TOPIC = {
+  es: {
+    gamesTitle: "🎲 Juegos para la casa",
+    gamesIntro: "Para los temas que más le cuestan o que le hacen sentir rabia o nervios. Sin pantalla, de 5 a 15 minutos.",
+    gamesNone: "Por ahora ningún tema necesita refuerzo. ¡Sigan así! Más abajo, cada tema tiene su juego por si quieren jugar igual.",
+    reasonAccuracy: (p: string, n: number) => `Le está costando: acertó un ${p} de ${n} ${n === 1 ? "pregunta" : "preguntas"}.`,
+    reasonEmotion: (label: string) => `La última vez que lo practicó sintió ${label.toLowerCase()}.`,
+    minutes: (n: number) => `⏱ ${n} min`,
+    materials: "Necesitan",
+    play: "¡Lo jugamos! ✅",
+    played: (n: number) => `Jugado ${n} ${n === 1 ? "vez" : "veces"} 🎉`,
+    playErr: "No se pudo registrar. Intenta de nuevo.",
+    topicsTitle: "📈 Cómo va en cada tema",
+    topicsEmpty: "Cuando practique, aquí verás cómo le va en cada tema.",
+    trend: { up: "↗ Mejorando", down: "↘ Le está costando más", steady: "→ Estable" },
+    fewYet: "Aún pocas preguntas",
+    felt: "Se sintió",
+    seeGame: "Ver juego para la casa",
+    stat: (p: string, n: number) => `${p} de aciertos en ${n} ${n === 1 ? "pregunta" : "preguntas"}`,
+  },
+  en: {
+    gamesTitle: "🎲 Games for home",
+    gamesIntro: "For the topics they find hardest or that make them feel frustrated or nervous. No screens, 5 to 15 minutes.",
+    gamesNone: "For now no topic needs extra support. Keep it up! Below, each topic has its game in case you want to play anyway.",
+    reasonAccuracy: (p: string, n: number) => `It’s been tricky: they got ${p} of ${n} ${n === 1 ? "question" : "questions"} right.`,
+    reasonEmotion: (label: string) => `The last time they practiced it they felt ${label.toLowerCase()}.`,
+    minutes: (n: number) => `⏱ ${n} min`,
+    materials: "You need",
+    play: "We played it! ✅",
+    played: (n: number) => `Played ${n} ${n === 1 ? "time" : "times"} 🎉`,
+    playErr: "Couldn’t save it. Please try again.",
+    topicsTitle: "📈 How each topic is going",
+    topicsEmpty: "Once they practice, you’ll see here how each topic is going.",
+    trend: { up: "↗ Improving", down: "↘ Getting harder", steady: "→ Steady" },
+    fewYet: "Not many questions yet",
+    felt: "Felt",
+    seeGame: "See the home game",
+    stat: (p: string, n: number) => `${p} correct in ${n} ${n === 1 ? "question" : "questions"}`,
+  },
+} as const;
+
+/// Temas con juego destacado arriba (los que más necesitan apoyo).
+const MAX_FEATURED_GAMES = 3;
+
+function GameCard({ childId, topic, game, lang }: { childId: string; topic: TopicProgress; game: HomeGame; lang: Lang }) {
+  const c = TOPIC[lang];
+  const [times, setTimes] = useState(topic.timesPlayed);
+  const [err, setErr] = useState(false);
+  return (
+    <article className="dash-game">
+      <p className="dash-game-head">
+        <span className="dash-game-emoji" aria-hidden="true">{game.emoji}</span>
+        <span>
+          <b>{game.name[lang]}</b>
+          <span className="hint-text"> {c.minutes(game.minutes)}</span>
+        </span>
+      </p>
+      <p className="dash-game-materials">
+        <b>{c.materials}:</b> {game.materials[lang]}
+      </p>
+      <ol className="dash-game-steps">{game.steps[lang].map((s) => <li key={s}>{s}</li>)}</ol>
+      <div className="dash-game-foot">
+        <button
+          className="btn-secondary dash-game-play"
+          type="button"
+          onClick={() => {
+            setErr(false);
+            endpoints
+              .playHomeGame(childId, topic.skillId)
+              .then((r) => setTimes(r.timesPlayed))
+              .catch(() => setErr(true));
+          }}
+        >
+          {c.play}
+        </button>
+        {times > 0 && <span className="dash-game-played">{c.played(times)}</span>}
+      </div>
+      {err && <p className="error-text" role="alert">{c.playErr}</p>}
+    </article>
+  );
+}
+
+export function HomeGamesPanel({ childId, topics, lang }: { childId: string; topics: TopicProgress[]; lang: Lang }) {
+  const c = TOPIC[lang];
+  const featured = topics.filter((t) => t.needsHelp.length > 0 && t.game).slice(0, MAX_FEATURED_GAMES);
+  return (
+    <section className="dash-section" aria-labelledby="dash-games-title">
+      <h2 id="dash-games-title" className="dash-section-title">{c.gamesTitle}</h2>
+      {featured.length === 0 ? (
+        <p className="hint-text">{c.gamesNone}</p>
+      ) : (
+        <>
+          <p className="hint-text">{c.gamesIntro}</p>
+          {featured.map((t) => (
+            <div key={t.skillId} className="dash-game-topic">
+              <p className="dash-tip-area">{localize(lang, t.name, t.nameEn)}</p>
+              {t.needsHelp.includes("aciertos") && <p className="dash-review-stat">{c.reasonAccuracy(pct(t.accuracy), t.attempts)}</p>}
+              {t.needsHelp.includes("emocion") && t.lastEmotion && (
+                <p className="dash-review-stat">
+                  {emotionChoice(t.lastEmotion).emoji} {c.reasonEmotion(emotionChoice(t.lastEmotion).label[lang])}
+                </p>
+              )}
+              <GameCard childId={childId} topic={t} game={t.game!} lang={lang} />
+            </div>
+          ))}
+        </>
+      )}
+    </section>
+  );
+}
+
+export function TopicsPanel({ childId, topics, lang }: { childId: string; topics: TopicProgress[]; lang: Lang }) {
+  const c = TOPIC[lang];
+  return (
+    <section className="dash-section" aria-labelledby="dash-topics-title">
+      <h2 id="dash-topics-title" className="dash-section-title">{c.topicsTitle}</h2>
+      {topics.length === 0 ? (
+        <p className="hint-text">{c.topicsEmpty}</p>
+      ) : (
+        <ul className="dash-topics">
+          {topics.map((t) => (
+            <li key={t.skillId} className="dash-topic">
+              <p className="dash-topic-name">{localize(lang, t.name, t.nameEn)}</p>
+              <div className="dash-topic-bar" role="img" aria-label={c.stat(pct(t.accuracy), t.attempts)}>
+                <span style={{ width: `${Math.round(t.accuracy * 100)}%` }} />
+              </div>
+              <p className="dash-topic-meta">
+                <span>{c.stat(pct(t.accuracy), t.attempts)}</span>
+                <span className={`dash-trend dash-trend-${t.trend ?? "none"}`}>{t.trend ? c.trend[t.trend] : c.fewYet}</span>
+                {t.lastEmotion && (
+                  <span>
+                    {c.felt}: <span title={emotionChoice(t.lastEmotion).label[lang]}>{emotionChoice(t.lastEmotion).emoji}</span>
+                  </span>
+                )}
+              </p>
+              {t.game && (
+                <details className="dash-topic-game">
+                  <summary>
+                    {t.game.emoji} {c.seeGame}
+                  </summary>
+                  <GameCard childId={childId} topic={t} game={t.game} lang={lang} />
+                </details>
+              )}
             </li>
           ))}
         </ul>

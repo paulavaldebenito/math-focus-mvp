@@ -10,6 +10,7 @@ import { evaluateAdaptiveRules, applyLevelChange, type AttemptRecord } from "../
 import { shuffle } from "../lib/shuffle.js";
 import { allowedThemeWhere, notAttemptedWhere, pickExercise } from "../exercises/select.js";
 import { buildSpotErrorRound, isSpotErrorEligible, wantsSpotErrorRound } from "../exercises/spotError.js";
+import { extraQuestionFor } from "../domain/feelings.js";
 
 // Cada cuántos aciertos seguidos (sin cortar racha) se otorga una estrella
 // extra — decisión de diseño del juego, no un umbral pedagógico validado.
@@ -53,8 +54,11 @@ childSessionsRouter.post("/", requireAuth, async (req, res) => {
   const currentLevel = await getCurrentLevelForChild(child.id);
   // Las preguntas de ánimo van solo en la primera práctica del día.
   const checkInDue = await isCheckInDue(child.id);
+  // Pregunta lúdica del cierre (clima, energía o "lo más difícil"): rota
+  // según cuántas reflexiones lleva el niño, para que no sea siempre igual.
+  const reflectionQuestion = extraQuestionFor(await prisma.sessionReflection.count({ where: { childProfileId: child.id } }));
 
-  res.status(201).json({ sessionId: session.id, currentLevel, checkInDue });
+  res.status(201).json({ sessionId: session.id, currentLevel, checkInDue, reflectionQuestion });
 });
 
 const attemptSchema = z.object({

@@ -20,6 +20,7 @@ import { skillPathRouter } from "./routes/skillPath.js";
 import { sessionMiddleware } from "./auth/session.js";
 import { checkInsRouter } from "./routes/checkIns.js";
 import { reviewRouter } from "./routes/review.js";
+import { homeGamesRouter, reflectionRouter } from "./routes/reflection.js";
 
 export const app = express();
 
@@ -49,6 +50,8 @@ app.use("/api/sessions/:sessionId/attempts", sessionAttemptsRouter);
 app.use("/api/sessions/:sessionId/spot-error-attempts", spotErrorAttemptsRouter);
 app.use("/api/sessions/:sessionId/pause-events", pauseEventsRouter);
 app.use("/api/sessions/:sessionId/check-in", checkInsRouter);
+app.use("/api/sessions/:sessionId/reflection", reflectionRouter);
+app.use("/api/children/:childId/home-games", homeGamesRouter);
 app.use("/api/sessions/:sessionId/complete", sessionCompleteRouter);
 app.use("/api/children/:childId/home", homeSummaryRouter);
 app.use("/api/children/:childId/skill-path", skillPathRouter);

@@ -7,8 +7,8 @@ import { playClick, playConfirm, playSelect } from "../lib/sound.js";
 // Se guarda tal cual como `scope` del consentimiento — por eso se envía la
 // versión en el idioma que el adulto realmente leyó, no siempre el español.
 const CONSENT_TEXT = {
-  es: "Guardaremos el nombre y curso de tu hijo/a, y un registro de sus respuestas, pistas usadas y pausas — solo para adaptar la práctica y mostrarte su progreso. Al empezar cada práctica le preguntaremos, con caritas y siempre de forma opcional, cómo se siente y cómo se siente con las matemáticas, para entender mejor su progreso. No se guarda ningún diagnóstico médico. Puedes pedir la eliminación de estos datos cuando quieras.",
-  en: "We'll store your child's name and grade, along with a record of their answers, hints used, and pauses — only to adapt their practice and show you their progress. At the start of each practice session we'll ask them, with faces and always optionally, how they feel and how they feel about math, to better understand their progress. No medical diagnosis is ever stored. You can request deletion of this data at any time.",
+  es: "Guardaremos el nombre y curso de tu hijo/a, y un registro de sus respuestas, pistas usadas y pausas — solo para adaptar la práctica y mostrarte su progreso. Al empezar cada práctica le preguntaremos, con caritas y siempre de forma opcional, cómo se siente y cómo se siente con las matemáticas, y al terminar, qué sintió al practicar, para entender mejor su progreso y sugerirte cómo acompañarlo en casa. No se guarda ningún diagnóstico médico. Puedes pedir la eliminación de estos datos cuando quieras.",
+  en: "We'll store your child's name and grade, along with a record of their answers, hints used, and pauses — only to adapt their practice and show you their progress. At the start of each practice session we'll ask them, with faces and always optionally, how they feel and how they feel about math, and at the end, how they felt while practicing, to better understand their progress and suggest how to support them at home. No medical diagnosis is ever stored. You can request deletion of this data at any time.",
 };
 
 interface Props {

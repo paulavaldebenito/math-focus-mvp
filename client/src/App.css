@@ -1817,3 +1817,102 @@
 .review-nav > .btn-primary { width: auto; flex: 1 1 6rem; min-height: 2.75rem; padding: 0.5rem 0.9rem; }
 .review-screen > .btn-secondary { margin-top: 0.25rem; }
 .review-nav > .review-back { flex-basis: 100%; }
+
+/* ---- Reflexión al cerrar la práctica (specs/013) ---- */
+.reflection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 3px solid var(--star-bg);
+}
+.reflection h2 { margin: 0; font-size: 1.25rem; }
+.reflection-question { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 700; margin: 0.3rem 0 0; }
+.reflection-question p { margin: 0; }
+.reflection-listen { min-height: 2.75rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--ink-soft); padding: 0.2rem 0.8rem; font-size: 0.85rem; }
+.reflection-emotions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.reflection-extra { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+.reflection-extra-3 { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 26rem) { .reflection-extra-4 { grid-template-columns: repeat(4, 1fr); } }
+.reflection-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-height: 4.5rem;
+  padding: 0.5rem 0.25rem;
+  border: 3px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-app);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.reflection-choice:hover { border-color: var(--brand); }
+.reflection-choice.selected { border-color: var(--star-dark); background: var(--star-bg); transform: scale(1.06); }
+.reflection-emoji { font-size: 2rem; line-height: 1; }
+.reflection-actions { display: flex; gap: 0.5rem; }
+.reflection-actions > button { flex: 1; }
+.reflection-thanks {
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  background: var(--star-bg);
+  color: var(--ink);
+  font-weight: 700;
+  animation: option-pop 0.35s ease;
+}
+
+/* ---- Panel familiar: emociones, juegos y temas (specs/013) ---- */
+.dash-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.dash-section-title { font-size: 1.15rem; margin: 0; }
+.dash-subtitle { font-size: 1rem; margin: 0.4rem 0 0; }
+.dash-section p { margin: 0; }
+.dash-emotions { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+.dash-emotions li { display: grid; grid-template-columns: 1.8rem 6.5rem 1fr 1.5rem; align-items: center; gap: 0.4rem; }
+.dash-emotion-zero { opacity: 0.45; }
+.dash-emotion-emoji { font-size: 1.35rem; }
+.dash-emotion-bar { height: 0.7rem; border-radius: 999px; background: var(--ground); overflow: hidden; }
+.dash-emotion-bar > span { display: block; height: 100%; border-radius: 999px; background: var(--star); }
+.dash-emotion-count { text-align: right; font-weight: 700; }
+.dash-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.dash-chip { padding: 0.3rem 0.7rem; border-radius: 999px; background: var(--ground); font-size: 0.9rem; }
+.dash-chip b { font-size: 1.2rem; }
+.dash-guide { padding: 0.75rem 0.9rem; border-radius: 12px; background: var(--brand-bg); line-height: 1.45; }
+.dash-guide-aburrimiento, .dash-guide-rabia, .dash-guide-nervios { background: var(--retry-bg); }
+.dash-guide-head { margin-bottom: 0.3rem !important; }
+.dash-guide-label { font-weight: 700; margin-top: 0.35rem !important; }
+.dash-guide ul { margin: 0.15rem 0 0; padding-left: 1.2rem; }
+.dash-recent { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+.dash-game-topic { display: flex; flex-direction: column; gap: 0.35rem; }
+.dash-game { display: flex; flex-direction: column; gap: 0.45rem; padding: 0.85rem 0.95rem; border-radius: 14px; background: var(--success-bg); border: 2px dashed var(--success); line-height: 1.45; }
+.dash-game-head { display: flex; align-items: center; gap: 0.6rem; }
+.dash-game-emoji { font-size: 2rem; line-height: 1; }
+.dash-game-steps { margin: 0; padding-left: 1.3rem; }
+.dash-game-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+.dash-game-play { width: auto; padding: 0.55rem 1rem; }
+.dash-game-played { font-weight: 700; color: var(--success-dark); }
+.dash-topics { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.8rem; }
+.dash-topic { display: flex; flex-direction: column; gap: 0.3rem; }
+.dash-topic-name { font-weight: 700; }
+.dash-topic-bar { height: 0.75rem; border-radius: 999px; background: var(--ground); overflow: hidden; }
+.dash-topic-bar > span { display: block; height: 100%; border-radius: 999px; background: var(--brand); }
+.dash-topic-meta { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; font-size: 0.85rem; color: var(--ink-soft); }
+.dash-trend-up { color: var(--success-dark); font-weight: 700; }
+.dash-trend-down { color: var(--retry); font-weight: 700; }
+.dash-topic-game summary { cursor: pointer; color: var(--brand); font-weight: 700; min-height: 2.75rem; display: flex; align-items: center; }

@@ -3,7 +3,7 @@ import * as endpoints from "../api/endpoints.js";
 import type { ProgressResponse } from "../api/types.js";
 import { t, useLang, type Lang } from "../lib/i18n.js";
 import { playBack } from "../lib/sound.js";
-import { SkillsToReviewPanel, WellbeingPanel } from "../components/FamilyInsights.js";
+import { FeelingsPanel, HomeGamesPanel, TopicsPanel, WellbeingPanel } from "../components/FamilyInsights.js";
 
 const ERROR_LABELS: Record<Lang, Record<string, string>> = {
   es: {
@@ -151,7 +151,11 @@ export function FamilyDashboardScreen({ childId, onBack }: Props) {
         </div>
       </div>
 
-      {progress.skillsToReview && <SkillsToReviewPanel skills={progress.skillsToReview} lang={lang} />}
+      {progress.feelings && <FeelingsPanel feelings={progress.feelings} lang={lang} />}
+
+      {progress.topics && <HomeGamesPanel childId={childId} topics={progress.topics} lang={lang} />}
+
+      {progress.topics && <TopicsPanel childId={childId} topics={progress.topics} lang={lang} />}
 
       {progress.wellbeing && <WellbeingPanel wellbeing={progress.wellbeing} lang={lang} />}
 

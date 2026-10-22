@@ -9,6 +9,7 @@ import type {
   InitialAssessmentResult,
   NextExercisePublic,
   ProgressResponse,
+  ReflectionInput,
   ReviewAnswerResult,
   ReviewComment,
   ReviewExercise,
@@ -133,6 +134,14 @@ export function setInterests(childId: string, interests: string[]) {
 
 export function setMascotName(childId: string, mascotName: string) {
   return api.patch<{ id: string; mascotName: string }>(`/api/children/${childId}/mascot-name`, { mascotName });
+}
+
+export function submitReflection(sessionId: string, input: ReflectionInput) {
+  return api.post<{ id: string }>(`/api/sessions/${sessionId}/reflection`, input);
+}
+
+export function playHomeGame(childId: string, mathSkillId: string) {
+  return api.post<{ timesPlayed: number }>(`/api/children/${childId}/home-games`, { mathSkillId });
 }
 
 export function completeSession(sessionId: string) {

@@ -6,6 +6,15 @@ export const LANG_KEY = "mathfocus.lang";
 
 const STRINGS = {
   es: {
+    reflectionTitle: "Antes de irte, cuéntame…",
+    reflectionEmotionQuestion: "¿Qué sentiste hoy practicando?",
+    reflectionWeatherQuestion: "Si la práctica de hoy fuera un clima, ¿cuál sería?",
+    reflectionEnergyQuestion: "¿Cuánta energía le pusiste?",
+    reflectionHardestQuestion: "¿Qué fue lo más difícil?",
+    reflectionDone: "Listo",
+    reflectionSkip: "Saltar",
+    reflectionListen: "🔊 Escuchar",
+    reflectionThanks: "¡Gracias por contarme!",
     reviewEntry: "🔍 Revisar preguntas",
     reviewTitle: "Modo revisión",
     reviewIntro: "Elige un curso y una habilidad, y responde como lo haría un estudiante. Nada de esto cuenta para el progreso de ningún niño.",
@@ -167,6 +176,15 @@ const STRINGS = {
     starsEarnedThisSession: "estrellas ganadas hoy",
   },
   en: {
+    reflectionTitle: "Before you go, tell me…",
+    reflectionEmotionQuestion: "How did you feel while practicing today?",
+    reflectionWeatherQuestion: "If today’s practice were weather, what would it be?",
+    reflectionEnergyQuestion: "How much energy did you put in?",
+    reflectionHardestQuestion: "What was the hardest part?",
+    reflectionDone: "Done",
+    reflectionSkip: "Skip",
+    reflectionListen: "🔊 Listen",
+    reflectionThanks: "Thanks for telling me!",
     reviewEntry: "🔍 Review questions",
     reviewTitle: "Review mode",
     reviewIntro: "Pick a grade and a skill, and answer the way a student would. None of this counts toward any child's progress.",
