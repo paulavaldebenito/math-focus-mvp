@@ -27,5 +27,5 @@ etapa: tandas
 
 ## Próxima tanda
 
-Tanda 2 — 4° básico, MA04 OA08: fracciones con denominadores 5, 6, 8, 10 y 12; parte de un todo y de un grupo.
-(Tanda 1, 3° OA11, escrita el 2026-10-22; pendiente de revisión de la usuaria.)
+Tanda 5 — 3° básico, MA03 OA11 (semana 2): comparar fracciones del mismo todo; situaciones en que se usan.
+(Tandas 1 a 4 escritas el 2026-10-22; pendientes de revisión de la usuaria.)

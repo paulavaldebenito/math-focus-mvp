@@ -32,7 +32,21 @@ for (const b of blocks) {
   for (const ex of b.exercises) {
     const known = existing.get(idKey(b.skill.grade, b.skill.name, ex.prompt));
     if (known) {
-      out.push(known);
+      // Si la fuente cambió alternativas (revisión pedagógica), las que siguen conservan su id y las
+      // nuevas toman el que recibieron en esta BD (vacía: el ejercicio se creó con las alternativas nuevas).
+      const labels = ex.options.map((o) => o.label);
+      if (labels.every((l) => known.options[l]) && Object.keys(known.options).length === labels.length) {
+        out.push(known);
+        continue;
+      }
+      const db = await prisma.exercise.findUnique({ where: { id: known.id }, include: { options: true } });
+      const options: Record<string, string> = {};
+      for (const l of labels) {
+        const id = known.options[l] ?? db?.options.find((d) => d.label === l)?.id;
+        if (!id) problems.push(`${known.id}: alternativa "${l}" no está en la BD`);
+        else options[l] = id;
+      }
+      out.push({ ...known, options });
       continue;
     }
     const e = edited.get(ex.prompt);

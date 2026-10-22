@@ -16020,7 +16020,7 @@
    "Ema": "cmvjh3nk80031a6rhba1rbcst",
    "Leo": "cmvjh3nk80032a6rhyodiih11",
    "Los dos igual": "cmvjh3nk80033a6rhfw19udhk",
-   "3/4": "cmvjh3nk80034a6rhvsf6pwr1"
+   "No se puede saber": "cmvjk844x000sp9rh4jec7rwi"
   }
  },
  {
@@ -16114,7 +16114,7 @@
   "id": "cmvjh3nsu0044a6rhd047pxly",
   "options": {
    "Una pizza cortada en 4 partes iguales, y quedan 3": "cmvjh3nsz0045a6rhw4exiftp",
-   "Una pizza cortada en 3 partes iguales, y se comen 4": "cmvjh3nsz0046a6rh3l0u3wlo",
+   "Hay 4 pizzas y se comen 3 enteras": "cmvjk84gm000tp9rh2fq3cmk1",
    "Una pizza cortada en 4 partes de distinto tamaño, y quedan 3": "cmvjh3nsz0047a6rhcqqki3l6",
    "Una pizza cortada en 7 partes iguales, y quedan 3": "cmvjh3nsz0048a6rh4ckkfbxm"
   }
@@ -16164,7 +16164,7 @@
    "Nada: se comieron toda la pizza": "cmvjh3nxd004pa6rhzyeslhhw",
    "1/4": "cmvjh3nxd004qa6rhgawq1zzz",
    "4/8": "cmvjh3nxd004ra6rhwrzl1sgw",
-   "2/4": "cmvjh3nxd004sa6rh4aem6xh2"
+   "3/4": "cmvjk84ma000up9rhrb9s5znh"
   }
  },
  {
@@ -20982,6 +20982,366 @@
  {
   "grade": 4,
   "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Mira el rectángulo. ¿Qué fracción del rectángulo está pintada?",
+  "id": "cmvjiu59v0008aqrhwqfbp9aa",
+  "options": {
+   "2/5": "cmvjiu5a10009aqrh4tf1u0qf",
+   "3/5": "cmvjiu5a1000aaqrhcufymvmy",
+   "5/2": "cmvjiu5a1000baqrhalkgyck4",
+   "2/3": "cmvjiu5a1000caqrhyf20p93r"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Mira la tableta de chocolate. ¿Qué fracción de la tableta está pintada?",
+  "id": "cmvjiu5b0000daqrhtaidm7ng",
+  "options": {
+   "3/8": "cmvjiu5b5000eaqrhp09c9vlg",
+   "5/8": "cmvjiu5b5000faqrh7ic4i64d",
+   "8/3": "cmvjiu5b5000gaqrhf0sibb6w",
+   "3/5": "cmvjiu5b5000haqrhs4m6ll7l"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Mira la tira de papel. ¿Qué fracción de la tira está pintada?",
+  "id": "cmvjiu5c7000iaqrhf5yn6a9g",
+  "options": {
+   "7/10": "cmvjiu5cc000jaqrhbdn23a7o",
+   "3/10": "cmvjiu5cc000kaqrh9nz7300t",
+   "10/7": "cmvjiu5cc000laqrhay879t9f",
+   "7/3": "cmvjiu5cc000maqrhu8f6p8yr"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Mira el queque rectangular cortado en partes iguales. ¿Qué fracción del queque está pintada?",
+  "id": "cmvjk8kdr0013p9rh8lc8q0jv",
+  "options": {
+   "1/6": "cmvjk8kdx0014p9rhykaihwvp",
+   "5/6": "cmvjk8kdx0015p9rhf8dlce9z",
+   "6/1": "cmvjk8kdx0016p9rhg9kw4vhr",
+   "1/5": "cmvjk8kdx0017p9rhlwhe3j5o"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Mira los globos. ¿Qué fracción de los globos es azul?",
+  "id": "cmvjiu5ee000saqrhnhxgz9ni",
+  "options": {
+   "2/5": "cmvjiu5ei000taqrhm1w4vqtr",
+   "3/5": "cmvjiu5ei000uaqrhyyi0q6nu",
+   "5/2": "cmvjiu5ei000vaqrhje0vs16c",
+   "2/3": "cmvjiu5ei000waqrhqzl9ulg4"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En una caja hay 8 lápices y 5 son rojos. ¿Qué fracción de los lápices es roja?",
+  "id": "cmvjiu5fg000xaqrhz4xjjfei",
+  "options": {
+   "5/8": "cmvjiu5fl000yaqrhgfcj72l7",
+   "3/8": "cmvjiu5fl000zaqrhm2v7j6a0",
+   "8/5": "cmvjiu5fl0010aqrhq1khicdd",
+   "5/3": "cmvjiu5fl0011aqrhsc1dhgsp"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Cómo se lee la fracción 5/8?",
+  "id": "cmvjiu5gk0012aqrh2rwuzj4g",
+  "options": {
+   "cinco octavos": "cmvjiu5go0013aqrhu3kks7ci",
+   "ocho quintos": "cmvjiu5go0014aqrhhfo7z0lg",
+   "cinco ochos": "cmvjk8khy0018p9rhqlyiqy51",
+   "quinto octavo": "cmvjiu5go0016aqrhn1dwv6hd"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Cómo se escribe con números «tres décimos»?",
+  "id": "cmvjiu5hn0017aqrhztiu5fa8",
+  "options": {
+   "3/10": "cmvjiu5hs0018aqrhw4lkkkg0",
+   "10/3": "cmvjiu5hs0019aqrh8f0lrr7x",
+   "3/100": "cmvjiu5hs001aaqrhaikibf43",
+   "1/3": "cmvjiu5hs001baqrht0migrik"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Una pizza se corta en 6 partes iguales. ¿Cómo se llama cada parte?",
+  "id": "cmvjiu5iq001caqrho2vn8dym",
+  "options": {
+   "1/6, un sexto": "cmvjiu5iu001daqrhazrmn506",
+   "1/5, un quinto": "cmvjiu5iu001eaqrh6ermpgzo",
+   "6/6, seis sextos": "cmvjiu5iu001faqrhdf0l1pn0",
+   "1/3, un tercio": "cmvjiu5iu001gaqrh1w8zf6wz"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Cuántos doceavos forman un entero?",
+  "id": "cmvjiu5jt001haqrh2309pisu",
+  "options": {
+   "1": "cmvjiu5jx001jaqrhlo2y2227",
+   "10": "cmvjiu5jx001kaqrhrl9l8r3e",
+   "12": "cmvjiu5jx001iaqrhgm109hde",
+   "24": "cmvjiu5jx001laqrhzy7qmdql"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En la recta numérica, ¿qué fracción marca el punto rosado?",
+  "id": "cmvjiu5kw001maqrhlupgqzrw",
+  "options": {
+   "3/4": "cmvjiu5l1001naqrh68lif73l",
+   "3/5": "cmvjiu5l1001oaqrh3y32ih28",
+   "1/4": "cmvjiu5l1001paqrhyn2gd8cc",
+   "4/3": "cmvjiu5l1001qaqrh5psn3i4c"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En esta recta, ¿qué fracción marca el punto?",
+  "id": "cmvjiu5m3001raqrhb4nvpz7f",
+  "options": {
+   "5/8": "cmvjiu5m8001saqrhc8xkcd4d",
+   "5/9": "cmvjiu5m8001taqrhzld6rb9h",
+   "3/8": "cmvjiu5m8001uaqrh2vyn256l",
+   "8/5": "cmvjiu5m8001vaqrhevh6nzpe"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En un curso hay 10 estudiantes: 4 llegan en bicicleta y el resto camina. ¿Qué fracción del curso camina?",
+  "id": "cmvjiu5n8001waqrho38nq7zg",
+  "options": {
+   "6/10": "cmvjiu5nd001xaqrhec47lu94",
+   "4/10": "cmvjiu5nd001yaqrhri2c74u0",
+   "6/4": "cmvjiu5nd001zaqrhwze9m85m",
+   "10/6": "cmvjk8kq90019p9rhjh7uu476"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En una bolsa hay 12 dulces: 6 de frutilla, 2 de menta y 4 de limón. ¿Qué fracción de los dulces es de menta?",
+  "id": "cmvjiu5oc0021aqrhmmkn0st6",
+  "options": {
+   "2/12": "cmvjiu5og0022aqrh81jhulcq",
+   "2/10": "cmvjiu5og0023aqrhs0q6vdry",
+   "10/12": "cmvjiu5og0024aqrhszfyjakv",
+   "4/12": "cmvjiu5og0025aqrhr1zrjogl"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Cuál es mayor: 1/5 o 1/8 de una misma barra?",
+  "id": "cmvjiu5pg0026aqrh45x4r3ky",
+  "options": {
+   "1/5": "cmvjiu5pk0027aqrht5kxuqnw",
+   "1/8": "cmvjiu5pk0028aqrh7l7z5bpe",
+   "Son iguales": "cmvjiu5pk0029aqrhtgadgew7",
+   "No se puede saber": "cmvjiu5pk002aaqrhfgr7j2qm"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Cuál es menor: 7/10 o 3/10?",
+  "id": "cmvjiu5qk002baqrhac96yqrb",
+  "options": {
+   "3/10": "cmvjiu5qo002caqrh5t2dgn58",
+   "7/10": "cmvjiu5qo002daqrhn018h24g",
+   "Son iguales": "cmvjiu5qo002eaqrhfebap7g4",
+   "No se puede saber": "cmvjiu5qo002faqrhu5lewegw"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Cuál de estas cantidades es igual a 1/2 de una cinta?",
+  "id": "cmvjiu5rm002gaqrhr250d5r1",
+  "options": {
+   "5 de 10 partes iguales": "cmvjiu5rr002haqrhj1qfby36",
+   "1 de 10 partes iguales": "cmvjiu5rr002iaqrhxt32agb1",
+   "2 de 10 partes iguales": "cmvjiu5rr002jaqrhtrnhvzeu",
+   "5 de 5 partes iguales": "cmvjk8kvn001ap9rh2acrnltc"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Un pastel se corta en 12 partes iguales y se comen 5. ¿Qué fracción del pastel queda?",
+  "id": "cmvjiu5sp002laqrhzkwc5s26",
+  "options": {
+   "7/12": "cmvjiu5st002maqrhpb8x27r9",
+   "5/12": "cmvjiu5st002naqrh3abml4mm",
+   "12/7": "cmvjiu5st002oaqrhlx899lsq",
+   "7/5": "cmvjiu5st002paqrh2ympz49q"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En un grupo de 6 niños, 1/3 usa lentes. ¿Cuántos niños usan lentes?",
+  "id": "cmvjiu5tt002qaqrhb4jov8jd",
+  "options": {
+   "2": "cmvjiu5tx002raqrhll0pp4ch",
+   "3": "cmvjiu5tx002saqrh8swp3km4",
+   "4": "cmvjiu5tx002uaqrhdahwfsay",
+   "18": "cmvjiu5tx002taqrh88gk3y9u"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Ordena de mayor a menor: 1/10, 1/2, 1/5.",
+  "id": "cmvjiu5uw002vaqrh8unh6sgf",
+  "options": {
+   "1/2, 1/5, 1/10": "cmvjiu5v0002waqrhei976aje",
+   "1/10, 1/5, 1/2": "cmvjiu5v0002xaqrhz7dou2hs",
+   "1/2, 1/10, 1/5": "cmvjk8kzm001bp9rh3ohbd7tw",
+   "1/5, 1/2, 1/10": "cmvjiu5v0002zaqrh4u1ckbeh"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Lucía dice que 1/8 es mayor que 1/5 porque 8 es mayor que 5. ¿Tiene razón?",
+  "id": "cmvjiu5w00030aqrh5fbhzs09",
+  "options": {
+   "No: con más partes, cada parte es más chica": "cmvjiu5w50031aqrhash7dboz",
+   "Sí: 8 es mayor que 5": "cmvjiu5w50032aqrh49w2gvp6",
+   "Sí: los octavos son más grandes": "cmvjiu5w50033aqrhe1jpivsk",
+   "No: son iguales": "cmvjiu5w50034aqrhr9ztppf2"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En una carrera de 100 metros, Tomás lleva 35 metros. ¿Qué fracción del recorrido le falta?",
+  "id": "cmvjiu5x40035aqrh7u0lfz9q",
+  "options": {
+   "65/100": "cmvjiu5x90036aqrhc6ir08hs",
+   "35/100": "cmvjiu5x90037aqrhvp12gl5j",
+   "65/35": "cmvjiu5x90038aqrh0an33n39",
+   "100/65": "cmvjk8l2l001cp9rhnzigszxs"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En una caja hay 10 lápices: 3 rojos, 3 azules y el resto verdes. ¿Qué fracción de los lápices es verde?",
+  "id": "cmvjk8l3m001dp9rhrxb9ck58",
+  "options": {
+   "4/10": "cmvjk8l3s001ep9rhf31txn3z",
+   "6/10": "cmvjk8l3s001fp9rh7fr6htd2",
+   "4/6": "cmvjk8l3s001gp9rh06rgkxoo",
+   "3/10": "cmvjk8l3s001hp9rh379gkph1"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Ana pintó 4/8 de su barra y Beto pintó 2/4 de una barra igual. ¿Quién pintó más?",
+  "id": "cmvjiu5z9003faqrhsql5z9n1",
+  "options": {
+   "Pintaron lo mismo": "cmvjiu5ze003gaqrhdp1w644h",
+   "Ana, porque 4 es más que 2": "cmvjiu5ze003haqrhb3i0j84m",
+   "Beto, porque sus partes son más grandes": "cmvjiu5ze003iaqrhvfvxkgcv",
+   "No se puede saber": "cmvjiu5ze003jaqrh17kro6da"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "En una recta de 0 a 1 dividida en 10 saltos iguales, ¿cuántos saltos hay desde el 0 hasta 7/10?",
+  "id": "cmvjiu60d003kaqrh2x1qvzvg",
+  "options": {
+   "3": "cmvjiu60i003naqrhbb1mzzmq",
+   "7": "cmvjiu60i003laqrh4ktnm8my",
+   "8": "cmvjiu60i003oaqrhax13upiq",
+   "10": "cmvjiu60i003maqrhk6ufpj0u"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿En qué situación se usa la fracción 3/5?",
+  "id": "cmvjiu61g003paqrhvf0qn62l",
+  "options": {
+   "De 5 lápices, 3 son azules": "cmvjiu61k003qaqrhc1uuu2ae",
+   "De 3 lápices, 5 son azules": "cmvjiu61k003raqrht3jpm268",
+   "Hay 3 lápices azules y 5 rojos": "cmvjiu61k003saqrhww2fm2tr",
+   "De 5 lápices, 2 son azules": "cmvjiu61k003taqrhhp9npzin"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Un álbum tiene 12 láminas y Diego ya pegó 3/4 de ellas. ¿Cuántas láminas pegó?",
+  "id": "cmvjiu62u003uaqrh2ar154t7",
+  "options": {
+   "3": "cmvjiu62z003waqrhyhok7tc4",
+   "4": "cmvjiu62z003xaqrhgxg8gpdl",
+   "9": "cmvjiu62z003vaqrhd5mnhhmi",
+   "16": "cmvjiu62z003yaqrhuq4j8isw"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Martina dice: «5/5 y 8/8 son lo mismo». ¿Tiene razón?",
+  "id": "cmvjiu63z003zaqrh61ik9zk2",
+  "options": {
+   "Sí: los dos son un entero completo": "cmvjiu6430040aqrholtpxmyp",
+   "No: 8/8 es mayor": "cmvjiu6430041aqrhh2mpajdi",
+   "No: 5/5 es mayor": "cmvjiu6430042aqrhr2zg40mf",
+   "No se puede saber": "cmvjiu6430043aqrhazxmnk6f"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "Tres amigos pintaron cada uno una pared igual: Ana pintó 5/12, Beto 9/12 y Caro 7/12. ¿Quién pintó menos?",
+  "id": "cmvjiu6550044aqrhrcu3etr6",
+  "options": {
+   "Ana": "cmvjiu65a0045aqrhi15mm2lq",
+   "Beto": "cmvjiu65a0046aqrhwxymfy8n",
+   "Caro": "cmvjiu65a0047aqrhxygrioln",
+   "Todos igual": "cmvjiu65a0048aqrhbvhpmk7i"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
+  "prompt": "¿Entre qué números está 3/8 en la recta numérica?",
+  "id": "cmvjiu66b0049aqrhpu108muu",
+  "options": {
+   "Entre 0 y 1": "cmvjiu66h004aaqrh5pl8q4vm",
+   "Entre 3 y 8": "cmvjiu66h004baqrhhm9cmc20",
+   "Entre 1 y 2": "cmvjiu66h004caqrhh4rnrkus",
+   "Después del 8": "cmvjiu66h004daqrhb3on80vz"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Fracciones: parte de un todo, comparación y recta numérica",
   "prompt": "Después del partido, una pizza está cortada en 8 partes iguales y Camila come 3. ¿Qué fracción de la pizza comió?",
   "id": "cmulu2xsp053g4crh1giclebz",
   "options": {
@@ -24661,6 +25021,366 @@
    "Mateo tiene más, porque 4 es mayor que 2": "cmuli7jd401bk6krha6m6kuie",
    "Luisa tiene más, porque 3 es menor que 6": "cmuli7jd401bl6krh5650hrk5",
    "No se pueden comparar, porque tienen distinto denominador": "cmuli7jd401bm6krhb3wr3ox8"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "La barra de arriba muestra 1/2. ¿Qué fracción muestra la barra de abajo, que tiene pintada la misma cantidad?",
+  "id": "cmvjj4t2k0008icrh01mu9kcd",
+  "options": {
+   "2/4": "cmvjj4t2q0009icrhs1908oxx",
+   "1/4": "cmvjj4t2q000aicrhwheosie7",
+   "4/2": "cmvjj4t2q000bicrh5du5i34l",
+   "3/4": "cmvjj4t2q000cicrhjscvbbpc"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "La barra de arriba muestra 1/3. ¿Qué fracción muestra la barra de abajo, que tiene pintada la misma cantidad?",
+  "id": "cmvjj4t3v000dicrh2rha25jc",
+  "options": {
+   "2/6": "cmvjj4t40000eicrhecb4g4g5",
+   "1/6": "cmvjj4t40000ficrh4ghcctf4",
+   "6/2": "cmvjj4t40000gicrhfre9767x",
+   "3/6": "cmvjj4t40000hicrht2of5ine"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Para amplificar 2/3, se multiplican el numerador y el denominador por 2. ¿Qué fracción se obtiene?",
+  "id": "cmvjj4t55000iicrhhtmsumoc",
+  "options": {
+   "4/6": "cmvjj4t5c000jicrhpq9c21xk",
+   "4/3": "cmvjj4t5c000kicrhjgdmy79u",
+   "2/6": "cmvjj4t5c000licrh9lelofbq",
+   "4/5": "cmvjj4t5c000micrht9z3hj2i"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Para simplificar 6/9, se dividen el numerador y el denominador por 3. ¿Qué fracción se obtiene?",
+  "id": "cmvjj4t6e000nicrhvnee11ny",
+  "options": {
+   "2/3": "cmvjj4t6k000oicrh2wnvflgr",
+   "2/9": "cmvjj4t6k000picrh3n2g90cx",
+   "6/3": "cmvjj4t6k000qicrh7iyg5s5r",
+   "3/6": "cmvjj4t6k000ricrhik3zpt5i"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Cuál de estas fracciones es propia?",
+  "id": "cmvjj4t7p000sicrh93pkqdwk",
+  "options": {
+   "3/5": "cmvjj4t7v000ticrhhcqqun2e",
+   "5/3": "cmvjj4t7v000uicrhzua7yug3",
+   "4/4": "cmvjj4t7v000vicrhevy9b2m8",
+   "7/2": "cmvjj4t7v000wicrhn1cofj8y"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Mira el grupo de círculos. ¿Qué fracción del grupo está pintada?",
+  "id": "cmvjj4t90000xicrh7k771vn5",
+  "options": {
+   "3/8": "cmvjj4t96000yicrht6a4sk5h",
+   "5/8": "cmvjj4t96000zicrhdyi7uqa3",
+   "8/3": "cmvjj4t960010icrhgmp9kzed",
+   "3/5": "cmvjj4t960011icrhlxp2dnmk"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Cuál es mayor: 2/7 o 5/7?",
+  "id": "cmvjj4ta70012icrh8uc9es0e",
+  "options": {
+   "5/7": "cmvjj4tac0013icrhyqggzvk3",
+   "2/7": "cmvjj4tac0014icrh1xsj201f",
+   "Son iguales": "cmvjj4tac0015icrhjxpkx2no",
+   "No se puede saber": "cmvjj4tac0016icrhptgm1a14"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Completa para que las fracciones sean equivalentes: 1/4 = ?/8",
+  "id": "cmvjj4tbf0017icrhcl0fidue",
+  "options": {
+   "1": "cmvjj4tbj0019icrhz4cnhjmo",
+   "2": "cmvjj4tbj0018icrhvx5vzslw",
+   "4": "cmvjj4tbj001bicrhqxbi3200",
+   "5": "cmvjj4tbj001aicrh96zgvtkw"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Completa para que las fracciones sean equivalentes: 10/15 = 2/?",
+  "id": "cmvjj4tcn001cicrh0kfq79bz",
+  "options": {
+   "3": "cmvjj4tcv001dicrhyv0d28kd",
+   "5": "cmvjj4tcv001gicrhwj5p2qzl",
+   "7": "cmvjj4tcv001ficrh845l8coq",
+   "15": "cmvjj4tcv001eicrhzkbbymhu"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Qué fracción NO es equivalente a 1/2?",
+  "id": "cmvjj4te8001hicrh7ar4tn65",
+  "options": {
+   "3/5": "cmvjj4ted001iicrhl5dv8dwv",
+   "2/4": "cmvjj4ted001jicrhfj8uwfxo",
+   "4/8": "cmvjj4ted001kicrhkq8n40m4",
+   "5/10": "cmvjj4ted001licrh5lyhut5f"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Mira las tres barras. ¿Qué fracciones del dibujo son equivalentes?",
+  "id": "cmvjj4tff001micrh28mn4nbd",
+  "options": {
+   "1/4, 2/8 y 3/12": "cmvjj4tfk001nicrhn0799s2c",
+   "1/4 y 2/8, pero no 3/12": "cmvjj4tfk001oicrhnfqbx4k9",
+   "Ninguna: tienen distinto denominador": "cmvjj4tfk001picrh77ywv29v",
+   "Solo 3/12, porque tiene más partes": "cmvjj4tfk001qicrh3xzxazv0"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Escribe 3/4 como una fracción equivalente con denominador 12.",
+  "id": "cmvjj4tgl001ricrh3pzpjkw8",
+  "options": {
+   "9/12": "cmvjj4tgq001sicrhqhdhc74g",
+   "3/12": "cmvjj4tgq001ticrhwcrhpwx7",
+   "11/12": "cmvjj4tgq001uicrhcw9ew8vd",
+   "6/12": "cmvjj4tgq001vicrhhtfiyfq2"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Simplifica 8/12 lo más posible.",
+  "id": "cmvjj4thr001wicrh72bp6yuq",
+  "options": {
+   "2/3": "cmvjj4thv001xicrhondhi3sr",
+   "4/6": "cmvjj4thv001yicrhc9f5hd9z",
+   "4/12": "cmvjj4thv001zicrhfwoq9xhb",
+   "6/10": "cmvjj4thv0020icrhxjjkizcn"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Cuál es mayor: 2/3 o 3/5?",
+  "id": "cmvjj4tiy0021icrhogrnpcz0",
+  "options": {
+   "2/3": "cmvjj4tj20022icrhqva0dlb1",
+   "3/5": "cmvjj4tj20023icrhzvscwwse",
+   "Son iguales": "cmvjj4tj20024icrh17pmv2ow",
+   "No se puede saber": "cmvjj4tj20025icrhxumxrizn"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Cuál es menor: 3/4 o 5/8?",
+  "id": "cmvjj4tk40026icrhfiqpeod4",
+  "options": {
+   "5/8": "cmvjj4tk90027icrhzwmtia94",
+   "3/4": "cmvjj4tk90028icrh68b92c52",
+   "Son iguales": "cmvjj4tk90029icrhd38mda98",
+   "No se puede saber": "cmvjj4tk9002aicrhd57j6su0"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Sofía leyó 3/5 de un libro y Tomás leyó 6/10 de un libro igual. ¿Quién leyó más?",
+  "id": "cmvjj4tla002bicrh1mpp42hw",
+  "options": {
+   "Leyeron lo mismo": "cmvjj4tle002cicrhq0w7tb17",
+   "Tomás, porque 6 es mayor que 3": "cmvjj4tle002dicrhr4ysq9lw",
+   "Sofía, porque sus partes son más grandes": "cmvjj4tle002eicrhas9d9tm4",
+   "No se puede saber": "cmvjj4tle002ficrhugdjx1p1"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "En una huerta, 2/6 del terreno tiene tomates. ¿Qué fracción equivalente, con denominador 3, tiene tomates?",
+  "id": "cmvjj4tmh002gicrh41ng4puy",
+  "options": {
+   "1/3": "cmvjj4tmm002hicrh6fjs3iur",
+   "2/3": "cmvjj4tmm002iicrhmoh4flzm",
+   "1/6": "cmvjj4tmm002jicrhjlbqzzxi",
+   "4/12": "cmvjj4tmm002kicrhm67gklbt"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Qué grupo tiene solo fracciones equivalentes a 2/3?",
+  "id": "cmvjj4tnn002licrhv1xpfemj",
+  "options": {
+   "4/6, 6/9 y 8/12": "cmvjj4tnr002micrhcyze03p0",
+   "4/6, 6/8 y 8/10": "cmvjj4tnr002nicrh23o5olur",
+   "2/6, 2/9 y 2/12": "cmvjj4tnr002oicrh820zphwu",
+   "4/6, 6/9 y 8/9": "cmvjj4tnr002picrhrv8ufcvc"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Qué fracción marca el punto en la recta? Escríbela simplificada.",
+  "id": "cmvjj4tot002qicrhx9exns1d",
+  "options": {
+   "2/3": "cmvjj4toy002ricrh21bx0kc4",
+   "4/6": "cmvjj4toy002sicrhijss0dfk",
+   "4/7": "cmvjj4toy002ticrhbkdwwzzh",
+   "1/3": "cmvjj4toy002uicrhxxeq2a3u"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Ordena de menor a mayor: 1/2, 3/8, 3/4.",
+  "id": "cmvjj4tq0002vicrh0jav4y2q",
+  "options": {
+   "3/8, 1/2, 3/4": "cmvjj4tq5002wicrhhgrqtirk",
+   "1/2, 3/4, 3/8": "cmvjj4tq5002xicrhznxzs3dc",
+   "3/4, 1/2, 3/8": "cmvjj4tq5002yicrhidbdsrb6",
+   "1/2, 3/8, 3/4": "cmvjj4tq5002zicrhmsftl7lm"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Pablo dice que 2/5 y 4/10 no son equivalentes porque tienen números distintos. ¿Tiene razón?",
+  "id": "cmvjj4tr70030icrhg31txopx",
+  "options": {
+   "No: 2/5 amplificada por 2 es 4/10": "cmvjj4trb0031icrhbgsq5zc1",
+   "Sí: tienen números distintos": "cmvjj4trb0032icrhpau8q32m",
+   "Sí: 4/10 es mayor porque tiene más partes": "cmvjj4trb0033icrhmb70pea6",
+   "No: 4/10 es el doble de 2/5": "cmvjj4trb0034icrhrxzxm4ig"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Josefa simplificó 9/12 y obtuvo 3/4. Matías simplificó la misma fracción y obtuvo 6/9. ¿Quién lo hizo bien?",
+  "id": "cmvjj4tse0035icrhjvzoizxu",
+  "options": {
+   "Josefa": "cmvjj4tsj0036icrh1slf0255",
+   "Matías": "cmvjj4tsj0037icrh8t2ha9ad",
+   "Los dos": "cmvjj4tsj0038icrh416vgb02",
+   "Ninguno": "cmvjj4tsj0039icrh51uk6tvi"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Una cuerda se divide en 10 partes iguales y se usan 6. ¿Qué fracción de la cuerda se usó? Escríbela simplificada.",
+  "id": "cmvjj4ttk003aicrh8j1dqfxh",
+  "options": {
+   "3/5": "cmvjj4ttp003bicrhg37yq7ob",
+   "6/10": "cmvjj4ttp003cicrh3un1am9x",
+   "2/5": "cmvjj4ttp003dicrhsckfivq6",
+   "3/10": "cmvjj4ttp003eicrhxqo8wrwe"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "En un curso, 3/4 de los estudiantes practica deporte. En otro curso, 5/8 practica deporte. ¿En qué curso es mayor la fracción que practica deporte?",
+  "id": "cmvjj4tup003ficrhtir4xvwj",
+  "options": {
+   "En el primero (3/4)": "cmvjj4tuu003gicrhlzrvd8c7",
+   "En el segundo, porque 5 es mayor que 3": "cmvjj4tuu003hicrhx9vihqbf",
+   "Es igual en los dos": "cmvjj4tuu003iicrhtamr3qpp",
+   "No se puede saber": "cmvjj4tuu003jicrhvfosl2ep"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "¿Por qué número hay que amplificar 3/5 para que el denominador sea 20?",
+  "id": "cmvjj4tvx003kicrhtlf2megf",
+  "options": {
+   "4": "cmvjj4tw1003licrhwwnmz7ju",
+   "5": "cmvjj4tw1003nicrhqlwl0cfd",
+   "12": "cmvjj4tw1003oicrhbidk1wwr",
+   "15": "cmvjj4tw1003micrhp6x9s31n"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Mira la barra. Escribe la parte pintada como fracción simplificada.",
+  "id": "cmvjk8ydm001pp9rhm8egqe8e",
+  "options": {
+   "2/3": "cmvjk8ydr001qp9rhp95bs21p",
+   "8/4": "cmvjk8ydr001rp9rh79x7o9a4",
+   "1/3": "cmvjk8ydr001sp9rhugsscb0o",
+   "3/2": "cmvjk8ydr001tp9rh2jn1w61p"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "De 20 estudiantes, 15 llevaron colación. ¿Qué fracción del curso llevó colación? Escríbela simplificada.",
+  "id": "cmvjj4ty8003uicrhp0aqjryt",
+  "options": {
+   "3/4": "cmvjj4tyd003vicrhqg0igz9e",
+   "15/20": "cmvjj4tyd003wicrhvzq5aooh",
+   "1/4": "cmvjj4tyd003xicrh7irpnwmx",
+   "3/5": "cmvjj4tyd003yicrhcw0uf7df"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Rocío dice: «Si a una fracción le sumo 1 arriba y 1 abajo, obtengo una equivalente». Prueba con 1/2. ¿Tiene razón?",
+  "id": "cmvjj4tze003zicrhhpj9s65g",
+  "options": {
+   "No: 1/2 y 2/3 no son equivalentes": "cmvjj4tzi0040icrhl43os9xx",
+   "Sí: 1/2 = 2/3": "cmvjj4tzi0041icrhfz13m8ub",
+   "Sí, siempre funciona": "cmvjj4tzi0042icrhhi8ned7o",
+   "No: hay que sumar 2 arriba y 2 abajo": "cmvjj4tzi0043icrhk7zgztql"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Ordena de mayor a menor: 2/3, 5/6, 7/12.",
+  "id": "cmvjj4u0j0044icrhd960ejw6",
+  "options": {
+   "5/6, 2/3, 7/12": "cmvjj4u0o0045icrht8wo7c8q",
+   "7/12, 5/6, 2/3": "cmvjj4u0o0046icrhy9wwreat",
+   "7/12, 2/3, 5/6": "cmvjj4u0o0047icrhff6wvvys",
+   "2/3, 5/6, 7/12": "cmvjj4u0o0048icrhn479el8h"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Fracciones propias: equivalencia y comparación",
+  "prompt": "Una receta usa 2/4 de taza de leche. Rosa solo tiene una taza medidora de octavos. ¿Cuántos octavos de taza debe medir?",
+  "id": "cmvjj4u1q0049icrhiujhd32d",
+  "options": {
+   "2": "cmvjj4u1v004bicrhlp2unux6",
+   "4": "cmvjj4u1v004aicrh2bj2muqv",
+   "6": "cmvjj4u1v004cicrhlogi07ki",
+   "8": "cmvjj4u1v004dicrhluli9j2y"
   }
  },
  {
@@ -28573,6 +29293,366 @@
    "$4.200": "cmulu2zri071s4crhz3lzwz54",
    "$11.965": "cmulu2zri071t4crh5hrny9r0",
    "$420": "cmulu2zri071u4crhuj0gfr3u"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Cada barra es un entero. ¿Qué número mixto muestra la parte pintada?",
+  "id": "cmvjjdw340009nirhmsg9wbxl",
+  "options": {
+   "2 1/4": "cmvjjdw3b000anirhpsc0p1ep",
+   "3 1/4": "cmvjjdw3b000bnirhqiy6gu2m",
+   "1/4": "cmvjjdw3b000cnirhuew025x9",
+   "2 1/3": "cmvjjdw3b000dnirhe5t7p56o"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Cada barra es un entero. ¿Qué fracción impropia muestra la parte pintada?",
+  "id": "cmvjjdw4g000enirhblekssje",
+  "options": {
+   "9/4": "cmvjjdw4l000fnirhrt3q8x9u",
+   "9/12": "cmvjjdw4l000gnirhthbl0skq",
+   "4/9": "cmvjjdw4l000hnirh7ixijsws",
+   "8/4": "cmvjjdw4l000inirh7b2bv6j6"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Cuál de estas fracciones es impropia?",
+  "id": "cmvjjdw5r000jnirh13uhp2jo",
+  "options": {
+   "7/5": "cmvjjdw5v000knirhkdbag9k2",
+   "5/7": "cmvjjdw5v000lnirhth60lu4s",
+   "3/8": "cmvjjdw5v000mnirhqfeb0peq",
+   "2/9": "cmvjjdw5v000nnirhd0xhvn30"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Escribe 1 3/5 como fracción impropia.",
+  "id": "cmvjjdw6z000onirhvef2j4c1",
+  "options": {
+   "8/5": "cmvjjdw74000pnirhfxs3ocw7",
+   "4/5": "cmvjjdw74000qnirhd96284j2",
+   "3/5": "cmvjjdw74000rnirh48h9a3cx",
+   "13/5": "cmvjjdw74000snirhp7zqp7hh"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Escribe 7/3 como número mixto.",
+  "id": "cmvjjdw89000tnirhj2dkhqn1",
+  "options": {
+   "2 1/3": "cmvjjdw8g000unirhmvaga67t",
+   "1 4/3": "cmvjjdw8g000vnirhhq5lgmn0",
+   "2 1/7": "cmvjjdw8g000wnirhf4u7hzhn",
+   "1 1/3": "cmvjjdw8g000xnirhf0dx0ast"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Cuántos medios hay en 3 enteros?",
+  "id": "cmvjjdw9h000ynirhwcdnwhss",
+  "options": {
+   "3": "cmvjjdw9m0010nirh8f7c20ge",
+   "5": "cmvjjdw9m0011nirhkjgmlxjk",
+   "6": "cmvjjdw9m000znirhk7rau4sr",
+   "9": "cmvjjdw9m0012nirhqau02pwl"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Qué número mixto marca el punto en la recta?",
+  "id": "cmvjjdwap0013nirhujpbrzor",
+  "options": {
+   "1 1/4": "cmvjjdwat0014nirhtumctgqv",
+   "1 1/5": "cmvjjdwat0015nirhd4b6jyr1",
+   "2 1/4": "cmvjjdwat0016nirhjlwkn6z7",
+   "1/4": "cmvjjdwat0017nirhlnsdvaiw"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Qué número mixto es igual a 5/2?",
+  "id": "cmvjjdwby0018nirh94shrnz4",
+  "options": {
+   "2 1/2": "cmvjjdwc30019nirhgoj6im8t",
+   "1 3/2": "cmvjjdwc3001anirhl2rral1s",
+   "5 1/2": "cmvjjdwc3001bnirhoecxwav2",
+   "2 1/5": "cmvjjdwc3001cnirh75g1z6wa"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Cuántos tercios forman 2 enteros?",
+  "id": "cmvjjdwd6001dnirh2ro3gqpn",
+  "options": {
+   "2": "cmvjjdwda001fnirhtv7a05e8",
+   "3": "cmvjjdwda001gnirhgoofcgb4",
+   "5": "cmvjjdwda001hnirh6xlw9j9i",
+   "6": "cmvjjdwda001enirhejrnqcx7"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "En el número mixto 3 2/5, ¿qué indica el 3?",
+  "id": "cmvjjdwed001inirhbryh92ad",
+  "options": {
+   "Cuántos enteros completos hay": "cmvjjdweh001jnirhhz95na1s",
+   "Cuántas partes se toman": "cmvjjdweh001knirh4hcsculr",
+   "En cuántas partes se divide el entero": "cmvjjdweh001lnirhjxsaioe8",
+   "Cuántas partes sobran": "cmvjjdweh001mnirhbto7acp6"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Cada barra es un entero. Escribe la parte pintada como fracción impropia.",
+  "id": "cmvjjdwfk001nnirhq5clcx9k",
+  "options": {
+   "8/3": "cmvjjdwfp001onirhz77szc4u",
+   "8/9": "cmvjjdwfp001pnirh73bmxet1",
+   "2 2/3": "cmvjjdwfp001qnirhloortfxj",
+   "6/3": "cmvjjdwfp001rnirh06is64lt"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Escribe 2 3/4 como fracción impropia.",
+  "id": "cmvjjdwgs001snirhv2fj7wvr",
+  "options": {
+   "11/4": "cmvjjdwgw001tnirha6n2qqce",
+   "5/4": "cmvjjdwgw001unirh54l74yum",
+   "9/4": "cmvjjdwgw001vnirhncyzis2r",
+   "23/4": "cmvjjdwgw001wnirhdyv0yeok"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Escribe 17/5 como número mixto.",
+  "id": "cmvjjdwib001xnirhe5nn8uxa",
+  "options": {
+   "3 2/5": "cmvjjdwig001ynirhogjfmn7f",
+   "2 7/5": "cmvjjdwig001znirhn4xm7546",
+   "3 5/2": "cmvjjdwig0020nirhv5cxxtf5",
+   "17 1/5": "cmvjjdwig0021nirheclvosw0"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Ordena de menor a mayor: 7/4, 1 1/2, 2.",
+  "id": "cmvjjdwjj0022nirhyq51ho72",
+  "options": {
+   "1 1/2, 7/4, 2": "cmvjjdwjo0023nirhkvqvvq57",
+   "7/4, 1 1/2, 2": "cmvjjdwjo0024nirhlv3yn2r5",
+   "2, 7/4, 1 1/2": "cmvjjdwjo0025nirh6rueqezk",
+   "1 1/2, 2, 7/4": "cmvjjdwjo0026nirhss1au0d8"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Cuál es mayor: 9/4 o 2 1/2?",
+  "id": "cmvjjdwkp0027nirh5dc2nnl5",
+  "options": {
+   "2 1/2": "cmvjjdwku0028nirhmaoamhy1",
+   "9/4": "cmvjjdwku0029nirh7rc20agr",
+   "Son iguales": "cmvjjdwku002anirhvlm2uw7g",
+   "No se puede saber": "cmvjjdwku002bnirhxsv3viwd"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Una receta usa 5/2 tazas de harina. ¿Cuántas tazas enteras y qué parte de otra taza son?",
+  "id": "cmvjjdwm2002cnirhhgkfadap",
+  "options": {
+   "2 tazas y 1/2 taza": "cmvjjdwm7002dnirhiquqxova",
+   "5 tazas y 1/2 taza": "cmvjjdwm7002enirhl0jbr0jr",
+   "2 tazas y 1/5 de taza": "cmvjjdwm7002fnirhrimoz5pw",
+   "1 taza y 3/2 tazas": "cmvjjdwm7002gnirh1ph0gswf"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Se cortaron 3 pizzas iguales en 4 partes cada una y se comieron 9 partes. ¿Cuántas pizzas se comieron? Escríbelo como número mixto.",
+  "id": "cmvjjdwn9002hnirhvq0s30gn",
+  "options": {
+   "2 1/4": "cmvjjdwne002inirh5dqquu75",
+   "9/12": "cmvjjdwne002jnirhm1pho82n",
+   "3/4": "cmvjjdwne002knirhoa96cyq1",
+   "2 1/9": "cmvjjdwne002lnirho7pe7s8l"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Qué fracción impropia marca el punto en la recta?",
+  "id": "cmvjjdwoi002mnirhxxedlmex",
+  "options": {
+   "7/3": "cmvjjdwon002nnirhj20vcwvd",
+   "7/9": "cmvjjdwon002onirhpfa07tw8",
+   "1/3": "cmvjjdwon002pnirh1hm86gab",
+   "7/4": "cmvjjdwon002qnirhz2it55qe"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Qué situación muestra el número mixto 1 3/4?",
+  "id": "cmvjjdwpp002rnirhq8a8o3j1",
+  "options": {
+   "1 queque entero y 3 de 4 trozos iguales de otro queque": "cmvjjdwpu002snirha2e6cb9v",
+   "3 queques enteros y 1 de 4 trozos iguales de otro": "cmvjjdwpu002tnirh8ljbks5j",
+   "1 queque entero y 3 trozos de otro cortado en 3 partes": "cmvjjdwpu002unirhof0n7vyh",
+   "1 queque cortado en 4 trozos y se usan 3": "cmvjjdwpu002vnirhapgk0ql7"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Entre qué números enteros está 11/4 en la recta numérica?",
+  "id": "cmvjjdwqz002wnirh6gezc2uq",
+  "options": {
+   "Entre 2 y 3": "cmvjjdwr5002xnirhmdw55dyr",
+   "Entre 11 y 4": "cmvjjdwr5002ynirh27wnx6l3",
+   "Entre 0 y 1": "cmvjjdwr5002znirhhpdxd2z8",
+   "Entre 3 y 4": "cmvjjdwr50030nirhkzzr9nxy"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Benjamín dice que 5/3 es menor que 1 porque es una fracción. ¿Tiene razón?",
+  "id": "cmvjjdws80031nirh42zi7bc1",
+  "options": {
+   "No: 5/3 es más que un entero (1 2/3)": "cmvjjdwsd0032nirhh3aq4xhl",
+   "Sí: las fracciones siempre son menores que 1": "cmvjjdwsd0033nirh5xzj2tpe",
+   "Sí: 5/3 es lo mismo que 3/5": "cmvjjdwsd0034nirhm4995jkk",
+   "No: 5/3 es igual a 1": "cmvjjdwsd0035nirhxhtt8mml"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Fernanda dice que 2 3/5 = 23/5. Ignacio dice que 2 3/5 = 13/5. ¿Quién tiene razón?",
+  "id": "cmvjjdwtj0036nirhykns7yxw",
+  "options": {
+   "Ignacio": "cmvjjdwtp0037nirhmtovuvxg",
+   "Fernanda": "cmvjjdwtp0038nirh4x6a74v1",
+   "Los dos": "cmvjjdwtp0039nirh62bcddtg",
+   "Ninguno": "cmvjjdwtp003anirhhoh37yvq"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Una cinta mide 3 1/2 metros. ¿Cuántos medios metros son?",
+  "id": "cmvjjdwuu003bnirhp9yel6nz",
+  "options": {
+   "5": "cmvjjdwuz003enirhawke4t5a",
+   "6": "cmvjjdwuz003dnirhkujiyhwy",
+   "7": "cmvjjdwuz003cnirhvqty29xu",
+   "31": "cmvjjdwuz003fnirh89lgkk74"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Martina tiene 13 vasos de 1/4 de litro de jugo y los vacía en botellas de 1 litro. ¿Cuántas botellas llena completas y cuánto jugo sobra?",
+  "id": "cmvjjdww2003gnirhf2m8e2s3",
+  "options": {
+   "3 botellas y sobra 1/4 L": "cmvjjdww7003hnirhw4heyakr",
+   "13 botellas": "cmvjjdww7003inirhbco0e6fb",
+   "3 botellas y sobra 1/13 L": "cmvjjdww7003jnirhhdnuric9",
+   "4 botellas y sobra 1/4 L": "cmvjjdww7003knirhcfbycwi4"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Qué fracción es igual a 4 enteros?",
+  "id": "cmvjjdwx9003lnirh7t75884o",
+  "options": {
+   "12/3": "cmvjjdwxe003mnirhcul70z25",
+   "4/12": "cmvjjdwxe003nnirhegz4doz5",
+   "7/3": "cmvjjdwxe003onirhek2jdunv",
+   "16/3": "cmvjjdwxe003pnirhv7dunk42"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Cada barra es un entero. Escribe la parte pintada como número mixto y como fracción impropia.",
+  "id": "cmvjjdwyj003qnirhz8j9xupb",
+  "options": {
+   "1 3/5 = 8/5": "cmvjjdwyo003rnirh2hn7pwch",
+   "1 3/5 = 4/5": "cmvjjdwyo003snirh1bv500fg",
+   "1 3/5 = 13/5": "cmvjjdwyo003tnirhk4xyo8dm",
+   "3/5 = 8/5": "cmvjjdwyo003unirh6kqrm88u"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Ana corrió 7/4 km, Beto 1 1/2 km y Caro 1 3/4 km. ¿Quiénes corrieron la misma distancia?",
+  "id": "cmvjjdwzt003vnirhlvde7oyx",
+  "options": {
+   "Ana y Caro": "cmvjjdwzy003wnirh898ma3al",
+   "Ana y Beto": "cmvjjdwzy003xnirhdi0xuq0u",
+   "Beto y Caro": "cmvjjdwzy003ynirhwg1u7du7",
+   "Ninguno": "cmvjjdwzy003znirhdpgd3lvx"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "Diego dice: «Toda fracción impropia es mayor o igual que 1». ¿Tiene razón?",
+  "id": "cmvjjdx110040nirhyje0jtts",
+  "options": {
+   "Sí: su numerador es mayor o igual que su denominador": "cmvjjdx160041nirhn7mim84v",
+   "No: 3/5 es impropia y es menor que 1": "cmvjjdx160042nirhf7094k3u",
+   "No: las impropias siempre son menores que 1": "cmvjjdx160043nirhhx6xwytc",
+   "No: 4/4 es impropia y es menor que 1": "cmvjk9cfa0021p9rhjz0jz3vn"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Qué número mixto está justo en la mitad entre 2 y 3 en la recta numérica?",
+  "id": "cmvjjdx290045nirh7o5arda8",
+  "options": {
+   "2 1/2": "cmvjjdx2d0046nirh7zcg7d5v",
+   "2 1/3": "cmvjjdx2d0047nirhkd9zfwfd",
+   "1/2": "cmvjjdx2d0048nirhhkcphdhm",
+   "5 1/2": "cmvjjdx2d0049nirhoe6dq5xc"
+  }
+ },
+ {
+  "grade": 6,
+  "skill": "Fracciones impropias y números mixtos",
+  "prompt": "¿Cuántos sextos hay en 2 5/6?",
+  "id": "cmvjjdx3h004anirhuom5h8kr",
+  "options": {
+   "7": "cmvjjdx3m004cnirhb1s8pvqz",
+   "12": "cmvjjdx3m004enirhz4b5vlqu",
+   "17": "cmvjjdx3m004bnirhdz2qglwu",
+   "25": "cmvjjdx3m004dnirhy52ki6m0"
   }
  },
  {

@@ -7248,8 +7248,8 @@
   "exerciseId": "cmvjh3n9v001ra6rhwme0w9ky",
   "optionId": "cmvjh3na0001va6rh9rsr22gv",
   "label": "1/3, un tercio",
-  "feedback": "Cuenta otra vez las partes: son 4, así que cada una es un cuarto.",
-  "feedbackEn": "Count the parts again: there are 4, so each one is a fourth."
+  "feedback": "Vuelve a leer el dato: el queque se cortó en 4 partes, no en 3. Cada una es un cuarto.",
+  "feedbackEn": "Reread the data: the cake was cut into 4 parts, not 3. Each one is a fourth."
  },
  {
   "exerciseId": "cmvjh3naz001wa6rh63uahhr7",
@@ -7498,10 +7498,10 @@
  },
  {
   "exerciseId": "cmvjh3nk30030a6rhjudbd50m",
-  "optionId": "cmvjh3nk80034a6rhvsf6pwr1",
-  "label": "3/4",
-  "feedback": "3/4 es lo que pintó Ema, pero la pregunta pide quién.",
-  "feedbackEn": "3/4 is what Ema colored, but the question asks who."
+  "optionId": "cmvjk844x000sp9rh4jec7rwi",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: las barras son iguales y el dibujo muestra cuántas partes pintó cada uno.",
+  "feedbackEn": "You can tell: the bars are the same and the picture shows how many parts each one colored."
  },
  {
   "exerciseId": "cmvjh3nl60035a6rhdod0i2ba",
@@ -7708,10 +7708,10 @@
  },
  {
   "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
-  "optionId": "cmvjh3nsz0046a6rh3l0u3wlo",
-  "label": "Una pizza cortada en 3 partes iguales, y se comen 4",
-  "feedback": "Aquí se invierten los números: 3 partes y 4 que se comen. Además, no se pueden comer 4 de 3.",
-  "feedbackEn": "Here the numbers are flipped: 3 parts and 4 eaten. Also, you can't eat 4 of 3."
+  "optionId": "cmvjk84gm000tp9rh2fq3cmk1",
+  "label": "Hay 4 pizzas y se comen 3 enteras",
+  "feedback": "Aquí cada pizza es un entero: se comen 3 pizzas, no 3/4 de una. 3/4 son 3 de 4 partes iguales de un mismo entero.",
+  "feedbackEn": "Here each pizza is a whole: 3 pizzas are eaten, not 3/4 of one. 3/4 is 3 of 4 equal parts of the same whole."
  },
  {
   "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
@@ -7834,10 +7834,10 @@
  },
  {
   "exerciseId": "cmvjh3nx8004oa6rhmdxd78cb",
-  "optionId": "cmvjh3nxd004sa6rh4aem6xh2",
-  "label": "2/4",
-  "feedback": "Usa los dos datos del problema: Gabriel comió 1 parte y su papá 3.",
-  "feedbackEn": "Use both pieces of data: Gabriel ate 1 part and his dad 3."
+  "optionId": "cmvjk84ma000up9rhrb9s5znh",
+  "label": "3/4",
+  "feedback": "Usa los dos datos del problema: también comió el papá, no solo Gabriel.",
+  "feedbackEn": "Use both pieces of data: the dad ate too, not just Gabriel."
  },
  {
   "exerciseId": "cmvjh3nye004ta6rhdvn79rmw",
@@ -7866,5 +7866,2525 @@
   "label": "No se puede saber",
   "feedback": "Sí se puede saber: la barra tiene 3 partes iguales y 3/3 son las 3.",
   "feedbackEn": "You can tell: the bar has 3 equal parts and 3/3 is all 3."
+ },
+ {
+  "exerciseId": "cmvjiu59v0008aqrhwqfbp9aa",
+  "optionId": "cmvjiu5a10009aqrh4tf1u0qf",
+  "label": "2/5",
+  "feedback": "Correcto: hay 5 partes iguales y 2 están pintadas: 2/5.",
+  "feedbackEn": "That's right: there are 5 equal parts and 2 are colored: 2/5."
+ },
+ {
+  "exerciseId": "cmvjiu59v0008aqrhwqfbp9aa",
+  "optionId": "cmvjiu5a1000aaqrhcufymvmy",
+  "label": "3/5",
+  "feedback": "3/5 son las partes sin pintar. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "3/5 is the uncolored parts. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjiu59v0008aqrhwqfbp9aa",
+  "optionId": "cmvjiu5a1000baqrhalkgyck4",
+  "label": "5/2",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (2) y abajo el total (5).",
+  "feedbackEn": "Check the order: what you're asked about (2) goes on top and the total (5) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu59v0008aqrhwqfbp9aa",
+  "optionId": "cmvjiu5a1000caqrhyf20p93r",
+  "label": "2/3",
+  "feedback": "Abajo va el total (5), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (5), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjiu5b0000daqrhtaidm7ng",
+  "optionId": "cmvjiu5b5000eaqrhp09c9vlg",
+  "label": "3/8",
+  "feedback": "Correcto: la tableta tiene 8 partes iguales y 3 están pintadas: 3/8.",
+  "feedbackEn": "That's right: the bar has 8 equal parts and 3 are colored: 3/8."
+ },
+ {
+  "exerciseId": "cmvjiu5b0000daqrhtaidm7ng",
+  "optionId": "cmvjiu5b5000faqrh7ic4i64d",
+  "label": "5/8",
+  "feedback": "5/8 son las partes sin pintar. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "5/8 is the uncolored parts. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjiu5b0000daqrhtaidm7ng",
+  "optionId": "cmvjiu5b5000gaqrhf0sibb6w",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (3) y abajo el total (8).",
+  "feedbackEn": "Check the order: what you're asked about (3) goes on top and the total (8) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5b0000daqrhtaidm7ng",
+  "optionId": "cmvjiu5b5000haqrhs4m6ll7l",
+  "label": "3/5",
+  "feedback": "Abajo va el total (8), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (8), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjiu5c7000iaqrhf5yn6a9g",
+  "optionId": "cmvjiu5cc000jaqrhbdn23a7o",
+  "label": "7/10",
+  "feedback": "Correcto: la tira tiene 10 partes iguales y 7 están pintadas: 7/10.",
+  "feedbackEn": "That's right: the strip has 10 equal parts and 7 are colored: 7/10."
+ },
+ {
+  "exerciseId": "cmvjiu5c7000iaqrhf5yn6a9g",
+  "optionId": "cmvjiu5cc000kaqrh9nz7300t",
+  "label": "3/10",
+  "feedback": "3/10 son las partes sin pintar. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "3/10 is the uncolored parts. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjiu5c7000iaqrhf5yn6a9g",
+  "optionId": "cmvjiu5cc000laqrhay879t9f",
+  "label": "10/7",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (7) y abajo el total (10).",
+  "feedbackEn": "Check the order: what you're asked about (7) goes on top and the total (10) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5c7000iaqrhf5yn6a9g",
+  "optionId": "cmvjiu5cc000maqrhu8f6p8yr",
+  "label": "7/3",
+  "feedback": "Abajo va el total (10), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (10), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjk8kdr0013p9rh8lc8q0jv",
+  "optionId": "cmvjk8kdx0014p9rhykaihwvp",
+  "label": "1/6",
+  "feedback": "Correcto: el queque tiene 6 partes iguales y 1 está pintada: 1/6.",
+  "feedbackEn": "That's right: the cake has 6 equal parts and 1 is colored: 1/6."
+ },
+ {
+  "exerciseId": "cmvjk8kdr0013p9rh8lc8q0jv",
+  "optionId": "cmvjk8kdx0015p9rhf8dlce9z",
+  "label": "5/6",
+  "feedback": "5/6 son las partes sin pintar. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "5/6 is the uncolored parts. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjk8kdr0013p9rh8lc8q0jv",
+  "optionId": "cmvjk8kdx0016p9rhg9kw4vhr",
+  "label": "6/1",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (1) y abajo el total (6).",
+  "feedbackEn": "Check the order: what you're asked about (1) goes on top and the total (6) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjk8kdr0013p9rh8lc8q0jv",
+  "optionId": "cmvjk8kdx0017p9rhlwhe3j5o",
+  "label": "1/5",
+  "feedback": "Abajo va el total (6), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (6), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjiu5ee000saqrhnhxgz9ni",
+  "optionId": "cmvjiu5ei000taqrhm1w4vqtr",
+  "label": "2/5",
+  "feedback": "Correcto: hay 5 globos y 2 son azules: 2/5 del grupo.",
+  "feedbackEn": "That's right: there are 5 balloons and 2 are blue: 2/5 of the group."
+ },
+ {
+  "exerciseId": "cmvjiu5ee000saqrhnhxgz9ni",
+  "optionId": "cmvjiu5ei000uaqrhyyi0q6nu",
+  "label": "3/5",
+  "feedback": "3/5 son los globos que no son azules. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "3/5 is the balloons that aren't blue. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjiu5ee000saqrhnhxgz9ni",
+  "optionId": "cmvjiu5ei000vaqrhje0vs16c",
+  "label": "5/2",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (2) y abajo el total (5).",
+  "feedbackEn": "Check the order: what you're asked about (2) goes on top and the total (5) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5ee000saqrhnhxgz9ni",
+  "optionId": "cmvjiu5ei000waqrhqzl9ulg4",
+  "label": "2/3",
+  "feedback": "Abajo va el total (5), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (5), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjiu5fg000xaqrhz4xjjfei",
+  "optionId": "cmvjiu5fl000yaqrhgfcj72l7",
+  "label": "5/8",
+  "feedback": "Correcto: 5 de los 8 lápices son rojos: 5/8.",
+  "feedbackEn": "That's right: 5 of the 8 pencils are red: 5/8."
+ },
+ {
+  "exerciseId": "cmvjiu5fg000xaqrhz4xjjfei",
+  "optionId": "cmvjiu5fl000zaqrhm2v7j6a0",
+  "label": "3/8",
+  "feedback": "3/8 son los lápices que no son rojos. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "3/8 is the pencils that aren't red. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjiu5fg000xaqrhz4xjjfei",
+  "optionId": "cmvjiu5fl0010aqrhq1khicdd",
+  "label": "8/5",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (5) y abajo el total (8).",
+  "feedbackEn": "Check the order: what you're asked about (5) goes on top and the total (8) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5fg000xaqrhz4xjjfei",
+  "optionId": "cmvjiu5fl0011aqrhsc1dhgsp",
+  "label": "5/3",
+  "feedback": "Abajo va el total (8), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (8), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjiu5gk0012aqrh2rwuzj4g",
+  "optionId": "cmvjiu5go0013aqrhu3kks7ci",
+  "label": "cinco octavos",
+  "feedback": "Correcto: 5/8 se lee «cinco octavos»: 5 partes de 8.",
+  "feedbackEn": "That's right: 5/8 is read \"five eighths\": 5 parts of 8."
+ },
+ {
+  "exerciseId": "cmvjiu5gk0012aqrh2rwuzj4g",
+  "optionId": "cmvjiu5go0014aqrhhfo7z0lg",
+  "label": "ocho quintos",
+  "feedback": "Se lee primero el número de arriba (5) y después el nombre de las partes (octavos).",
+  "feedbackEn": "First read the top number (5), then the name of the parts (eighths)."
+ },
+ {
+  "exerciseId": "cmvjiu5gk0012aqrh2rwuzj4g",
+  "optionId": "cmvjk8khy0018p9rhqlyiqy51",
+  "label": "cinco ochos",
+  "feedback": "Casi: el 8 de abajo dice cómo se llaman las partes, y las partes de 8 se llaman octavos: cinco octavos.",
+  "feedbackEn": "Almost: the 8 on the bottom names the parts, and parts of 8 are called eighths: five eighths."
+ },
+ {
+  "exerciseId": "cmvjiu5gk0012aqrh2rwuzj4g",
+  "optionId": "cmvjiu5go0016aqrhn1dwv6hd",
+  "label": "quinto octavo",
+  "feedback": "El número de arriba se dice como número: «cinco», no «quinto».",
+  "feedbackEn": "The top number is said as a number: \"five\", not \"fifth\"."
+ },
+ {
+  "exerciseId": "cmvjiu5hn0017aqrhztiu5fa8",
+  "optionId": "cmvjiu5hs0018aqrhw4lkkkg0",
+  "label": "3/10",
+  "feedback": "Correcto: tres décimos son 3 de 10 partes iguales: 3/10.",
+  "feedbackEn": "That's right: three tenths is 3 of 10 equal parts: 3/10."
+ },
+ {
+  "exerciseId": "cmvjiu5hn0017aqrhztiu5fa8",
+  "optionId": "cmvjiu5hs0019aqrh8f0lrr7x",
+  "label": "10/3",
+  "feedback": "Revisa el orden: arriba va 3 (las partes que tomas) y abajo 10 (los décimos).",
+  "feedbackEn": "Check the order: 3 (the parts taken) goes on top and 10 (tenths) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5hn0017aqrhztiu5fa8",
+  "optionId": "cmvjiu5hs001aaqrhaikibf43",
+  "label": "3/100",
+  "feedback": "Décimos son 10 partes; centésimos son 100. Aquí dice décimos.",
+  "feedbackEn": "Tenths are 10 parts; hundredths are 100. This says tenths."
+ },
+ {
+  "exerciseId": "cmvjiu5hn0017aqrhztiu5fa8",
+  "optionId": "cmvjiu5hs001baqrht0migrik",
+  "label": "1/3",
+  "feedback": "«Tres décimos» no es «un tercio»: el 3 son las partes que tomas, y las partes son décimos.",
+  "feedbackEn": "\"Three tenths\" isn't \"one third\": the 3 is the parts taken, and the parts are tenths."
+ },
+ {
+  "exerciseId": "cmvjiu5iq001caqrho2vn8dym",
+  "optionId": "cmvjiu5iu001daqrhazrmn506",
+  "label": "1/6, un sexto",
+  "feedback": "Correcto: con 6 partes iguales, cada una es 1/6, un sexto.",
+  "feedbackEn": "That's right: with 6 equal parts, each one is 1/6, one sixth."
+ },
+ {
+  "exerciseId": "cmvjiu5iq001caqrho2vn8dym",
+  "optionId": "cmvjiu5iu001eaqrh6ermpgzo",
+  "label": "1/5, un quinto",
+  "feedback": "Vuelve a leer el dato: la pizza se cortó en 6 partes, no en 5. Cada una es un sexto.",
+  "feedbackEn": "Reread the data: the pizza was cut into 6 parts, not 5. Each is a sixth."
+ },
+ {
+  "exerciseId": "cmvjiu5iq001caqrho2vn8dym",
+  "optionId": "cmvjiu5iu001faqrhdf0l1pn0",
+  "label": "6/6, seis sextos",
+  "feedback": "6/6 es la pizza entera. La pregunta es por cada parte.",
+  "feedbackEn": "6/6 is the whole pizza. The question asks about each part."
+ },
+ {
+  "exerciseId": "cmvjiu5iq001caqrho2vn8dym",
+  "optionId": "cmvjiu5iu001gaqrh1w8zf6wz",
+  "label": "1/3, un tercio",
+  "feedback": "Un tercio sale al cortar en 3 partes iguales. Aquí se cortó en 6.",
+  "feedbackEn": "One third comes from cutting into 3 equal parts. Here it was cut into 6."
+ },
+ {
+  "exerciseId": "cmvjiu5jt001haqrh2309pisu",
+  "optionId": "cmvjiu5jx001iaqrhgm109hde",
+  "label": "12",
+  "feedback": "Correcto: 12 doceavos (12/12) forman el entero.",
+  "feedbackEn": "That's right: 12 twelfths (12/12) make one whole."
+ },
+ {
+  "exerciseId": "cmvjiu5jt001haqrh2309pisu",
+  "optionId": "cmvjiu5jx001jaqrhlo2y2227",
+  "label": "1",
+  "feedback": "1 doceavo es solo una parte. El entero tiene todas las partes.",
+  "feedbackEn": "1 twelfth is just one part. The whole has all the parts."
+ },
+ {
+  "exerciseId": "cmvjiu5jt001haqrh2309pisu",
+  "optionId": "cmvjiu5jx001kaqrhrl9l8r3e",
+  "label": "10",
+  "feedback": "Un entero se forma con tantas partes como dice el denominador: los doceavos son 12 partes.",
+  "feedbackEn": "A whole is made of as many parts as the denominator says: twelfths are 12 parts."
+ },
+ {
+  "exerciseId": "cmvjiu5jt001haqrh2309pisu",
+  "optionId": "cmvjiu5jx001laqrhzy7qmdql",
+  "label": "24",
+  "feedback": "Revisa la cuenta: un entero en doceavos son 12 partes, no el doble.",
+  "feedbackEn": "Check the math: a whole in twelfths is 12 parts, not double."
+ },
+ {
+  "exerciseId": "cmvjiu5kw001maqrhlupgqzrw",
+  "optionId": "cmvjiu5l1001naqrh68lif73l",
+  "label": "3/4",
+  "feedback": "Correcto: entre 0 y 1 hay 4 saltos iguales y el punto está a 3 saltos del 0: 3/4.",
+  "feedbackEn": "That's right: there are 4 equal jumps between 0 and 1 and the dot is 3 jumps from 0: 3/4."
+ },
+ {
+  "exerciseId": "cmvjiu5kw001maqrhlupgqzrw",
+  "optionId": "cmvjiu5l1001oaqrh3y32ih28",
+  "label": "3/5",
+  "feedback": "Cuenta saltos, no marcas: entre 0 y 1 hay 4 saltos (y 5 marcas).",
+  "feedbackEn": "Count jumps, not marks: there are 4 jumps between 0 and 1 (and 5 marks)."
+ },
+ {
+  "exerciseId": "cmvjiu5kw001maqrhlupgqzrw",
+  "optionId": "cmvjiu5l1001paqrhyn2gd8cc",
+  "label": "1/4",
+  "feedback": "1/4 es lo que le falta al punto para llegar a 1. La fracción se cuenta desde el 0.",
+  "feedbackEn": "1/4 is what the dot needs to reach 1. The fraction is counted from 0."
+ },
+ {
+  "exerciseId": "cmvjiu5kw001maqrhlupgqzrw",
+  "optionId": "cmvjiu5l1001qaqrh5psn3i4c",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van los saltos hasta el punto (3) y abajo el total de saltos (4).",
+  "feedbackEn": "Check the order: the jumps to the dot (3) go on top and the total jumps (4) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5m3001raqrhb4nvpz7f",
+  "optionId": "cmvjiu5m8001saqrhc8xkcd4d",
+  "label": "5/8",
+  "feedback": "Correcto: entre 0 y 1 hay 8 saltos iguales y el punto está a 5 saltos del 0: 5/8.",
+  "feedbackEn": "That's right: there are 8 equal jumps between 0 and 1 and the dot is 5 jumps from 0: 5/8."
+ },
+ {
+  "exerciseId": "cmvjiu5m3001raqrhb4nvpz7f",
+  "optionId": "cmvjiu5m8001taqrhzld6rb9h",
+  "label": "5/9",
+  "feedback": "Cuenta saltos, no marcas: hay 8 saltos entre 0 y 1 (y 9 marcas).",
+  "feedbackEn": "Count jumps, not marks: there are 8 jumps between 0 and 1 (and 9 marks)."
+ },
+ {
+  "exerciseId": "cmvjiu5m3001raqrhb4nvpz7f",
+  "optionId": "cmvjiu5m8001uaqrh2vyn256l",
+  "label": "3/8",
+  "feedback": "3/8 es lo que le falta al punto para llegar a 1. Cuenta desde el 0.",
+  "feedbackEn": "3/8 is what the dot needs to reach 1. Count from 0."
+ },
+ {
+  "exerciseId": "cmvjiu5m3001raqrhb4nvpz7f",
+  "optionId": "cmvjiu5m8001vaqrhevh6nzpe",
+  "label": "8/5",
+  "feedback": "Revisa el orden: arriba van los saltos hasta el punto y abajo el total de saltos.",
+  "feedbackEn": "Check the order: the jumps to the dot go on top and the total jumps on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5n8001waqrho38nq7zg",
+  "optionId": "cmvjiu5nd001xaqrhec47lu94",
+  "label": "6/10",
+  "feedback": "Correcto: si 4 de 10 llegan en bicicleta, caminan 6: 6/10.",
+  "feedbackEn": "That's right: if 4 of 10 come by bike, 6 walk: 6/10."
+ },
+ {
+  "exerciseId": "cmvjiu5n8001waqrho38nq7zg",
+  "optionId": "cmvjiu5nd001yaqrhri2c74u0",
+  "label": "4/10",
+  "feedback": "4/10 son los que llegan en bicicleta. La pregunta es por los que caminan.",
+  "feedbackEn": "4/10 are the ones who come by bike. The question asks about those who walk."
+ },
+ {
+  "exerciseId": "cmvjiu5n8001waqrho38nq7zg",
+  "optionId": "cmvjiu5nd001zaqrhwze9m85m",
+  "label": "6/4",
+  "feedback": "Abajo va el curso completo (10), no los que llegan en bicicleta.",
+  "feedbackEn": "The bottom number is the whole class (10), not those who bike."
+ },
+ {
+  "exerciseId": "cmvjiu5n8001waqrho38nq7zg",
+  "optionId": "cmvjk8kq90019p9rhjh7uu476",
+  "label": "10/6",
+  "feedback": "Revisa el orden: arriba van los que caminan (6) y abajo el total (10).",
+  "feedbackEn": "Check the order: those who walk (6) go on top and the total (10) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5oc0021aqrhmmkn0st6",
+  "optionId": "cmvjiu5og0022aqrh81jhulcq",
+  "label": "2/12",
+  "feedback": "Correcto: 2 de los 12 dulces son de menta: 2/12.",
+  "feedbackEn": "That's right: 2 of the 12 candies are mint: 2/12."
+ },
+ {
+  "exerciseId": "cmvjiu5oc0021aqrhmmkn0st6",
+  "optionId": "cmvjiu5og0023aqrhs0q6vdry",
+  "label": "2/10",
+  "feedback": "Abajo van todos los dulces (12), no solo los que no son de menta.",
+  "feedbackEn": "The bottom number is all the candies (12), not just the non-mint ones."
+ },
+ {
+  "exerciseId": "cmvjiu5oc0021aqrhmmkn0st6",
+  "optionId": "cmvjiu5og0024aqrhszfyjakv",
+  "label": "10/12",
+  "feedback": "10/12 son los que no son de menta. La pregunta es por los de menta.",
+  "feedbackEn": "10/12 are the ones that aren't mint. The question asks about mint."
+ },
+ {
+  "exerciseId": "cmvjiu5oc0021aqrhmmkn0st6",
+  "optionId": "cmvjiu5og0025aqrhr1zrjogl",
+  "label": "4/12",
+  "feedback": "4 son los de limón. Busca en el enunciado cuántos son de menta.",
+  "feedbackEn": "4 are the lemon ones. Find in the problem how many are mint."
+ },
+ {
+  "exerciseId": "cmvjiu5pg0026aqrh45x4r3ky",
+  "optionId": "cmvjiu5pk0027aqrht5kxuqnw",
+  "label": "1/5",
+  "feedback": "Correcto: con 5 partes, cada parte es más grande que con 8: 1/5 es mayor que 1/8.",
+  "feedbackEn": "That's right: with 5 parts, each part is bigger than with 8: 1/5 is greater than 1/8."
+ },
+ {
+  "exerciseId": "cmvjiu5pg0026aqrh45x4r3ky",
+  "optionId": "cmvjiu5pk0028aqrh7l7z5bpe",
+  "label": "1/8",
+  "feedback": "Un denominador más grande no hace más grande la fracción: con 8 partes, cada una es más chica.",
+  "feedbackEn": "A bigger denominator doesn't make a bigger fraction: with 8 parts, each one is smaller."
+ },
+ {
+  "exerciseId": "cmvjiu5pg0026aqrh45x4r3ky",
+  "optionId": "cmvjiu5pk0029aqrhtgadgew7",
+  "label": "Son iguales",
+  "feedback": "Las dos toman 1 parte, pero las partes no son del mismo tamaño.",
+  "feedbackEn": "Both take 1 part, but the parts aren't the same size."
+ },
+ {
+  "exerciseId": "cmvjiu5pg0026aqrh45x4r3ky",
+  "optionId": "cmvjiu5pk002aaqrhfgr7j2qm",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: es la misma barra, así que basta comparar el tamaño de las partes.",
+  "feedbackEn": "You can tell: it's the same bar, so just compare the size of the parts."
+ },
+ {
+  "exerciseId": "cmvjiu5qk002baqrhac96yqrb",
+  "optionId": "cmvjiu5qo002caqrh5t2dgn58",
+  "label": "3/10",
+  "feedback": "Correcto: con el mismo denominador, es menor la que tiene menos partes: 3 décimos.",
+  "feedbackEn": "That's right: with the same denominator, the one with fewer parts is less: 3 tenths."
+ },
+ {
+  "exerciseId": "cmvjiu5qk002baqrhac96yqrb",
+  "optionId": "cmvjiu5qo002daqrhn018h24g",
+  "label": "7/10",
+  "feedback": "7/10 es la mayor. La pregunta pide la menor.",
+  "feedbackEn": "7/10 is the greater one. The question asks for the lesser one."
+ },
+ {
+  "exerciseId": "cmvjiu5qk002baqrhac96yqrb",
+  "optionId": "cmvjiu5qo002eaqrhfebap7g4",
+  "label": "Son iguales",
+  "feedback": "Tienen el mismo denominador, pero no la misma cantidad de partes.",
+  "feedbackEn": "They have the same denominator, but not the same number of parts."
+ },
+ {
+  "exerciseId": "cmvjiu5qk002baqrhac96yqrb",
+  "optionId": "cmvjiu5qo002faqrhu5lewegw",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede: las dos son décimos, basta comparar los numeradores.",
+  "feedbackEn": "You can tell: both are tenths, so just compare the numerators."
+ },
+ {
+  "exerciseId": "cmvjiu5rm002gaqrhr250d5r1",
+  "optionId": "cmvjiu5rr002haqrhj1qfby36",
+  "label": "5 de 10 partes iguales",
+  "feedback": "Correcto: 5 es la mitad de 10, así que 5 de 10 partes iguales es la mitad: 1/2 = 5/10.",
+  "feedbackEn": "That's right: 5 is half of 10, so 5 of 10 equal parts is half: 1/2 = 5/10."
+ },
+ {
+  "exerciseId": "cmvjiu5rm002gaqrhr250d5r1",
+  "optionId": "cmvjiu5rr002iaqrhxt32agb1",
+  "label": "1 de 10 partes iguales",
+  "feedback": "1 de 10 es un décimo, mucho menos que la mitad.",
+  "feedbackEn": "1 of 10 is one tenth, much less than half."
+ },
+ {
+  "exerciseId": "cmvjiu5rm002gaqrhr250d5r1",
+  "optionId": "cmvjiu5rr002jaqrhtrnhvzeu",
+  "label": "2 de 10 partes iguales",
+  "feedback": "El 2 de 1/2 dice en cuántas partes se divide el entero, no cuántas se toman. La mitad de 10 partes son 5.",
+  "feedbackEn": "The 2 in 1/2 tells how many parts the whole is split into, not how many are taken. Half of 10 parts is 5."
+ },
+ {
+  "exerciseId": "cmvjiu5rm002gaqrhr250d5r1",
+  "optionId": "cmvjk8kvn001ap9rh2acrnltc",
+  "label": "5 de 5 partes iguales",
+  "feedback": "5 de 5 partes es la cinta entera, no la mitad. La mitad son 5 de 10 partes.",
+  "feedbackEn": "5 of 5 parts is the whole ribbon, not half. Half is 5 of 10 parts."
+ },
+ {
+  "exerciseId": "cmvjiu5sp002laqrhzkwc5s26",
+  "optionId": "cmvjiu5st002maqrhpb8x27r9",
+  "label": "7/12",
+  "feedback": "Correcto: quedan 12 − 5 = 7 de las 12 partes: 7/12.",
+  "feedbackEn": "That's right: 12 − 5 = 7 of the 12 parts are left: 7/12."
+ },
+ {
+  "exerciseId": "cmvjiu5sp002laqrhzkwc5s26",
+  "optionId": "cmvjiu5st002naqrh3abml4mm",
+  "label": "5/12",
+  "feedback": "5/12 es lo que se comieron. La pregunta es por lo que queda.",
+  "feedbackEn": "5/12 is what was eaten. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmvjiu5sp002laqrhzkwc5s26",
+  "optionId": "cmvjiu5st002oaqrhlx899lsq",
+  "label": "12/7",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (7) y abajo el total (12).",
+  "feedbackEn": "Check the order: what you're asked about (7) goes on top and the total (12) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu5sp002laqrhzkwc5s26",
+  "optionId": "cmvjiu5st002paqrh2ympz49q",
+  "label": "7/5",
+  "feedback": "Abajo va el total (12), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (12), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjiu5tt002qaqrhb4jov8jd",
+  "optionId": "cmvjiu5tx002raqrhll0pp4ch",
+  "label": "2",
+  "feedback": "Correcto: 6 niños en 3 grupos iguales son 2 por grupo, y 1/3 es un grupo: 2 niños.",
+  "feedbackEn": "That's right: 6 children in 3 equal groups is 2 per group, and 1/3 is one group: 2 children."
+ },
+ {
+  "exerciseId": "cmvjiu5tt002qaqrhb4jov8jd",
+  "optionId": "cmvjiu5tx002saqrh8swp3km4",
+  "label": "3",
+  "feedback": "El 3 dice en cuántos grupos iguales se reparte, no cuántos usan lentes.",
+  "feedbackEn": "The 3 says how many equal groups to make, not how many wear glasses."
+ },
+ {
+  "exerciseId": "cmvjiu5tt002qaqrhb4jov8jd",
+  "optionId": "cmvjiu5tx002taqrh88gk3y9u",
+  "label": "18",
+  "feedback": "1/3 de un grupo es una parte de él: tiene que ser menos que 6. Reparte, no multipliques.",
+  "feedbackEn": "1/3 of a group is part of it: it must be less than 6. Share, don't multiply."
+ },
+ {
+  "exerciseId": "cmvjiu5tt002qaqrhb4jov8jd",
+  "optionId": "cmvjiu5tx002uaqrhdahwfsay",
+  "label": "4",
+  "feedback": "4 son los niños que NO usan lentes (2 grupos). La pregunta es por los que sí.",
+  "feedbackEn": "4 are the children who DON'T wear glasses (2 groups). The question asks about those who do."
+ },
+ {
+  "exerciseId": "cmvjiu5uw002vaqrh8unh6sgf",
+  "optionId": "cmvjiu5v0002waqrhei976aje",
+  "label": "1/2, 1/5, 1/10",
+  "feedback": "Correcto: con menos partes, cada parte es más grande: 1/2 > 1/5 > 1/10.",
+  "feedbackEn": "That's right: with fewer parts, each part is bigger: 1/2 > 1/5 > 1/10."
+ },
+ {
+  "exerciseId": "cmvjiu5uw002vaqrh8unh6sgf",
+  "optionId": "cmvjiu5v0002xaqrhz7dou2hs",
+  "label": "1/10, 1/5, 1/2",
+  "feedback": "Un denominador grande no hace grande la fracción: con más partes, cada parte es más chica, así que 1/10 es la menor. (Si ordenaste de menor a mayor, revisa: se pide de mayor a menor.)",
+  "feedbackEn": "A big denominator doesn't make a big fraction: with more parts, each part is smaller, so 1/10 is the least. (If you ordered least to greatest, check: it asks greatest to least.)"
+ },
+ {
+  "exerciseId": "cmvjiu5uw002vaqrh8unh6sgf",
+  "optionId": "cmvjk8kzm001bp9rh3ohbd7tw",
+  "label": "1/2, 1/10, 1/5",
+  "feedback": "Compara 1/10 y 1/5: un quinto es más grande que un décimo.",
+  "feedbackEn": "Compare 1/10 and 1/5: a fifth is bigger than a tenth."
+ },
+ {
+  "exerciseId": "cmvjiu5uw002vaqrh8unh6sgf",
+  "optionId": "cmvjiu5v0002zaqrh4u1ckbeh",
+  "label": "1/5, 1/2, 1/10",
+  "feedback": "Compara 1/2 y 1/5: la mitad es más grande que un quinto.",
+  "feedbackEn": "Compare 1/2 and 1/5: a half is bigger than a fifth."
+ },
+ {
+  "exerciseId": "cmvjiu5w00030aqrh5fbhzs09",
+  "optionId": "cmvjiu5w50031aqrhash7dboz",
+  "label": "No: con más partes, cada parte es más chica",
+  "feedback": "Correcto: 1/8 es más chico que 1/5: si el entero se divide en más partes, cada una queda más chica.",
+  "feedbackEn": "That's right: 1/8 is less than 1/5: if the whole is split into more parts, each one gets smaller."
+ },
+ {
+  "exerciseId": "cmvjiu5w00030aqrh5fbhzs09",
+  "optionId": "cmvjiu5w50032aqrh49w2gvp6",
+  "label": "Sí: 8 es mayor que 5",
+  "feedback": "Un denominador mayor quiere decir partes más chicas, no una fracción mayor.",
+  "feedbackEn": "A greater denominator means smaller parts, not a greater fraction."
+ },
+ {
+  "exerciseId": "cmvjiu5w00030aqrh5fbhzs09",
+  "optionId": "cmvjiu5w50033aqrhe1jpivsk",
+  "label": "Sí: los octavos son más grandes",
+  "feedback": "Es al revés: los octavos son más chicos que los quintos.",
+  "feedbackEn": "It's the other way around: eighths are smaller than fifths."
+ },
+ {
+  "exerciseId": "cmvjiu5w00030aqrh5fbhzs09",
+  "optionId": "cmvjiu5w50034aqrhr9ztppf2",
+  "label": "No: son iguales",
+  "feedback": "No son iguales: las dos toman 1 parte, pero de distinto tamaño.",
+  "feedbackEn": "They're not equal: both take 1 part, but of different sizes."
+ },
+ {
+  "exerciseId": "cmvjiu5x40035aqrh7u0lfz9q",
+  "optionId": "cmvjiu5x90036aqrhc6ir08hs",
+  "label": "65/100",
+  "feedback": "Correcto: le faltan 100 − 35 = 65 metros de 100: 65/100.",
+  "feedbackEn": "That's right: he has 100 − 35 = 65 meters left out of 100: 65/100."
+ },
+ {
+  "exerciseId": "cmvjiu5x40035aqrh7u0lfz9q",
+  "optionId": "cmvjiu5x90037aqrhvp12gl5j",
+  "label": "35/100",
+  "feedback": "35/100 es lo que ya corrió. La pregunta es por lo que le falta.",
+  "feedbackEn": "35/100 is what he's already run. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmvjiu5x40035aqrh7u0lfz9q",
+  "optionId": "cmvjiu5x90038aqrh0an33n39",
+  "label": "65/35",
+  "feedback": "Abajo va el recorrido completo (100), no lo que ya corrió.",
+  "feedbackEn": "The bottom number is the whole race (100), not what he's run."
+ },
+ {
+  "exerciseId": "cmvjiu5x40035aqrh7u0lfz9q",
+  "optionId": "cmvjk8l2l001cp9rhnzigszxs",
+  "label": "100/65",
+  "feedback": "Revisa el orden: arriba va lo que falta (65) y abajo el recorrido completo (100).",
+  "feedbackEn": "Check the order: what's left (65) goes on top and the whole race (100) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjk8l3m001dp9rhrxb9ck58",
+  "optionId": "cmvjk8l3s001ep9rhf31txn3z",
+  "label": "4/10",
+  "feedback": "Correcto: verdes hay 10 − 3 − 3 = 4 de 10: 4/10.",
+  "feedbackEn": "That's right: there are 10 − 3 − 3 = 4 green out of 10: 4/10."
+ },
+ {
+  "exerciseId": "cmvjk8l3m001dp9rhrxb9ck58",
+  "optionId": "cmvjk8l3s001fp9rh7fr6htd2",
+  "label": "6/10",
+  "feedback": "6/10 son los rojos y los azules juntos. La pregunta es por los verdes.",
+  "feedbackEn": "6/10 is the red and blue ones together. The question asks about the green ones."
+ },
+ {
+  "exerciseId": "cmvjk8l3m001dp9rhrxb9ck58",
+  "optionId": "cmvjk8l3s001gp9rh06rgkxoo",
+  "label": "4/6",
+  "feedback": "Abajo va el total de lápices (10), no solo los rojos y azules.",
+  "feedbackEn": "The bottom number is the total number of pencils (10), not just the red and blue ones."
+ },
+ {
+  "exerciseId": "cmvjk8l3m001dp9rhrxb9ck58",
+  "optionId": "cmvjk8l3s001hp9rh379gkph1",
+  "label": "3/10",
+  "feedback": "3 son los rojos (o los azules). Calcula cuántos son verdes.",
+  "feedbackEn": "3 is the red ones (or the blue ones). Figure out how many are green."
+ },
+ {
+  "exerciseId": "cmvjiu5z9003faqrhsql5z9n1",
+  "optionId": "cmvjiu5ze003gaqrhdp1w644h",
+  "label": "Pintaron lo mismo",
+  "feedback": "Correcto: 4/8 y 2/4 son la mitad de la barra: son representaciones distintas de la misma cantidad.",
+  "feedbackEn": "That's right: 4/8 and 2/4 are both half the bar: different ways to show the same amount."
+ },
+ {
+  "exerciseId": "cmvjiu5z9003faqrhsql5z9n1",
+  "optionId": "cmvjiu5ze003haqrhb3i0j84m",
+  "label": "Ana, porque 4 es más que 2",
+  "feedback": "Ana pintó más partes, pero sus partes son más chicas. Mira cuánto de la barra está pintado.",
+  "feedbackEn": "Ana colored more parts, but her parts are smaller. Look at how much of the bar is colored."
+ },
+ {
+  "exerciseId": "cmvjiu5z9003faqrhsql5z9n1",
+  "optionId": "cmvjiu5ze003iaqrhvfvxkgcv",
+  "label": "Beto, porque sus partes son más grandes",
+  "feedback": "Las partes de Beto son más grandes, pero pintó menos partes. Compara la cantidad pintada.",
+  "feedbackEn": "Beto's parts are bigger, but he colored fewer of them. Compare the amount colored."
+ },
+ {
+  "exerciseId": "cmvjiu5z9003faqrhsql5z9n1",
+  "optionId": "cmvjiu5ze003jaqrh17kro6da",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: las barras son iguales y el dibujo muestra cuánto pintó cada uno.",
+  "feedbackEn": "You can tell: the bars are equal and the drawing shows how much each one colored."
+ },
+ {
+  "exerciseId": "cmvjiu60d003kaqrh2x1qvzvg",
+  "optionId": "cmvjiu60i003laqrh4ktnm8my",
+  "label": "7",
+  "feedback": "Correcto: cada salto es 1/10, así que 7/10 son 7 saltos desde el 0.",
+  "feedbackEn": "That's right: each jump is 1/10, so 7/10 is 7 jumps from 0."
+ },
+ {
+  "exerciseId": "cmvjiu60d003kaqrh2x1qvzvg",
+  "optionId": "cmvjiu60i003maqrhk6ufpj0u",
+  "label": "10",
+  "feedback": "10 saltos llegan hasta el 1. 7/10 está antes.",
+  "feedbackEn": "10 jumps reach 1. 7/10 comes before that."
+ },
+ {
+  "exerciseId": "cmvjiu60d003kaqrh2x1qvzvg",
+  "optionId": "cmvjiu60i003naqrhbb1mzzmq",
+  "label": "3",
+  "feedback": "3 son los saltos que faltan desde 7/10 hasta el 1. La pregunta es desde el 0.",
+  "feedbackEn": "3 is the jumps left from 7/10 to 1. The question asks from 0."
+ },
+ {
+  "exerciseId": "cmvjiu60d003kaqrh2x1qvzvg",
+  "optionId": "cmvjiu60i003oaqrhax13upiq",
+  "label": "8",
+  "feedback": "Cuenta saltos, no marcas: hasta 7/10 hay 7 saltos (y 8 marcas, contando el 0).",
+  "feedbackEn": "Count jumps, not marks: to 7/10 there are 7 jumps (and 8 marks, counting 0)."
+ },
+ {
+  "exerciseId": "cmvjiu61g003paqrhvf0qn62l",
+  "optionId": "cmvjiu61k003qaqrhc1uuu2ae",
+  "label": "De 5 lápices, 3 son azules",
+  "feedback": "Correcto: 3 de un grupo de 5 lápices es 3/5.",
+  "feedbackEn": "That's right: 3 out of a group of 5 pencils is 3/5."
+ },
+ {
+  "exerciseId": "cmvjiu61g003paqrhvf0qn62l",
+  "optionId": "cmvjiu61k003raqrht3jpm268",
+  "label": "De 3 lápices, 5 son azules",
+  "feedback": "No pueden ser azules 5 de 3 lápices. El total va abajo.",
+  "feedbackEn": "5 of 3 pencils can't be blue. The total goes on the bottom."
+ },
+ {
+  "exerciseId": "cmvjiu61g003paqrhvf0qn62l",
+  "optionId": "cmvjiu61k003saqrhww2fm2tr",
+  "label": "Hay 3 lápices azules y 5 rojos",
+  "feedback": "Ahí el total son 3 + 5 = 8 lápices: eso sería 3/8.",
+  "feedbackEn": "There the total is 3 + 5 = 8 pencils: that would be 3/8."
+ },
+ {
+  "exerciseId": "cmvjiu61g003paqrhvf0qn62l",
+  "optionId": "cmvjiu61k003taqrhhp9npzin",
+  "label": "De 5 lápices, 2 son azules",
+  "feedback": "2 de 5 es 2/5. En 3/5 se cuentan 3.",
+  "feedbackEn": "2 of 5 is 2/5. In 3/5, 3 are counted."
+ },
+ {
+  "exerciseId": "cmvjiu62u003uaqrh2ar154t7",
+  "optionId": "cmvjiu62z003vaqrhd5mnhhmi",
+  "label": "9",
+  "feedback": "Correcto: 12 en 4 grupos iguales son 3 por grupo, y 3 grupos son 9 láminas.",
+  "feedbackEn": "That's right: 12 in 4 equal groups is 3 per group, and 3 groups is 9 stickers."
+ },
+ {
+  "exerciseId": "cmvjiu62u003uaqrh2ar154t7",
+  "optionId": "cmvjiu62z003waqrhyhok7tc4",
+  "label": "3",
+  "feedback": "3 es 1/4 de las láminas, un solo grupo. Diego pegó 3 grupos.",
+  "feedbackEn": "3 is 1/4 of the stickers, just one group. Diego stuck in 3 groups."
+ },
+ {
+  "exerciseId": "cmvjiu62u003uaqrh2ar154t7",
+  "optionId": "cmvjiu62z003xaqrhgxg8gpdl",
+  "label": "4",
+  "feedback": "Se repartió en 3 grupos en vez de 4. El 4 de abajo dice en cuántos grupos se reparte.",
+  "feedbackEn": "It was shared into 3 groups instead of 4. The 4 on the bottom says how many groups."
+ },
+ {
+  "exerciseId": "cmvjiu62u003uaqrh2ar154t7",
+  "optionId": "cmvjiu62z003yaqrhuq4j8isw",
+  "label": "16",
+  "feedback": "3/4 de 12 es una parte de las láminas: tiene que ser menos que 12.",
+  "feedbackEn": "3/4 of 12 is part of the stickers: it must be less than 12."
+ },
+ {
+  "exerciseId": "cmvjiu63z003zaqrh61ik9zk2",
+  "optionId": "cmvjiu6430040aqrholtpxmyp",
+  "label": "Sí: los dos son un entero completo",
+  "feedback": "Correcto: 5 de 5 partes y 8 de 8 partes son el entero completo.",
+  "feedbackEn": "That's right: 5 of 5 parts and 8 of 8 parts are both the whole."
+ },
+ {
+  "exerciseId": "cmvjiu63z003zaqrh61ik9zk2",
+  "optionId": "cmvjiu6430041aqrhh2mpajdi",
+  "label": "No: 8/8 es mayor",
+  "feedback": "8/8 tiene números más grandes, pero las dos son el entero completo.",
+  "feedbackEn": "8/8 has bigger numbers, but both are the whole."
+ },
+ {
+  "exerciseId": "cmvjiu63z003zaqrh61ik9zk2",
+  "optionId": "cmvjiu6430042aqrhr2zg40mf",
+  "label": "No: 5/5 es mayor",
+  "feedback": "Las partes de 5/5 son más grandes, pero 8/8 tiene más partes: las dos completan el entero.",
+  "feedbackEn": "The parts of 5/5 are bigger, but 8/8 has more parts: both make the whole."
+ },
+ {
+  "exerciseId": "cmvjiu63z003zaqrh61ik9zk2",
+  "optionId": "cmvjiu6430043aqrhazxmnk6f",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: cuando arriba y abajo hay el mismo número, se toma el entero.",
+  "feedbackEn": "You can tell: when the top and bottom numbers are the same, it's the whole."
+ },
+ {
+  "exerciseId": "cmvjiu6550044aqrhrcu3etr6",
+  "optionId": "cmvjiu65a0045aqrhi15mm2lq",
+  "label": "Ana",
+  "feedback": "Correcto: con el mismo denominador, pintó menos quien tiene el numerador más chico: Ana, con 5/12.",
+  "feedbackEn": "That's right: with the same denominator, the one with the smallest numerator painted the least: Ana, with 5/12."
+ },
+ {
+  "exerciseId": "cmvjiu6550044aqrhrcu3etr6",
+  "optionId": "cmvjiu65a0046aqrhwxymfy8n",
+  "label": "Beto",
+  "feedback": "Beto pintó más que todos. La pregunta es quién pintó menos.",
+  "feedbackEn": "Beto painted the most. The question asks who painted the least."
+ },
+ {
+  "exerciseId": "cmvjiu6550044aqrhrcu3etr6",
+  "optionId": "cmvjiu65a0047aqrhxygrioln",
+  "label": "Caro",
+  "feedback": "Compara 5 y 7: ¿cuál es menor?",
+  "feedbackEn": "Compare 5 and 7: which is less?"
+ },
+ {
+  "exerciseId": "cmvjiu6550044aqrhrcu3etr6",
+  "optionId": "cmvjiu65a0048aqrhbvhpmk7i",
+  "label": "Todos igual",
+  "feedback": "Tienen el mismo denominador, pero no el mismo numerador.",
+  "feedbackEn": "They have the same denominator, but not the same numerator."
+ },
+ {
+  "exerciseId": "cmvjiu66b0049aqrhpu108muu",
+  "optionId": "cmvjiu66h004aaqrh5pl8q4vm",
+  "label": "Entre 0 y 1",
+  "feedback": "Correcto: 3/8 es menos que un entero (3 de 8 partes), así que está entre 0 y 1.",
+  "feedbackEn": "That's right: 3/8 is less than one whole (3 of 8 parts), so it's between 0 and 1."
+ },
+ {
+  "exerciseId": "cmvjiu66b0049aqrhpu108muu",
+  "optionId": "cmvjiu66h004baqrhhm9cmc20",
+  "label": "Entre 3 y 8",
+  "feedback": "3/8 no es un número entre 3 y 8: es una parte de un solo entero.",
+  "feedbackEn": "3/8 isn't a number between 3 and 8: it's part of one whole."
+ },
+ {
+  "exerciseId": "cmvjiu66b0049aqrhpu108muu",
+  "optionId": "cmvjiu66h004caqrhh4rnrkus",
+  "label": "Entre 1 y 2",
+  "feedback": "Para pasar de 1 hacen falta más de 8 octavos. 3/8 es menos que un entero.",
+  "feedbackEn": "To go past 1 you need more than 8 eighths. 3/8 is less than one whole."
+ },
+ {
+  "exerciseId": "cmvjiu66b0049aqrhpu108muu",
+  "optionId": "cmvjiu66h004daqrhb3on80vz",
+  "label": "Después del 8",
+  "feedback": "3/8 no está cerca del 8: es una parte de un entero, entre 0 y 1.",
+  "feedbackEn": "3/8 isn't near 8: it's part of one whole, between 0 and 1."
+ },
+ {
+  "exerciseId": "cmvjj4t2k0008icrh01mu9kcd",
+  "optionId": "cmvjj4t2q0009icrhs1908oxx",
+  "label": "2/4",
+  "feedback": "Correcto: la barra de abajo tiene 4 partes iguales y 2 pintadas: 2/4, que es lo mismo que 1/2.",
+  "feedbackEn": "That's right: the bottom bar has 4 equal parts and 2 colored: 2/4, the same as 1/2."
+ },
+ {
+  "exerciseId": "cmvjj4t2k0008icrh01mu9kcd",
+  "optionId": "cmvjj4t2q000aicrhwheosie7",
+  "label": "1/4",
+  "feedback": "Se cambió solo el denominador. Cuenta cuántas partes están pintadas abajo: son 2.",
+  "feedbackEn": "Only the denominator changed. Count the colored parts in the bottom bar: there are 2."
+ },
+ {
+  "exerciseId": "cmvjj4t2k0008icrh01mu9kcd",
+  "optionId": "cmvjj4t2q000bicrh5du5i34l",
+  "label": "4/2",
+  "feedback": "Revisa el orden: arriba van las partes pintadas (2) y abajo el total (4).",
+  "feedbackEn": "Check the order: the colored parts (2) go on top and the total (4) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjj4t2k0008icrh01mu9kcd",
+  "optionId": "cmvjj4t2q000cicrhjscvbbpc",
+  "label": "3/4",
+  "feedback": "Cuenta otra vez las partes pintadas de la barra de abajo.",
+  "feedbackEn": "Count the colored parts of the bottom bar again."
+ },
+ {
+  "exerciseId": "cmvjj4t3v000dicrh2rha25jc",
+  "optionId": "cmvjj4t40000eicrhecb4g4g5",
+  "label": "2/6",
+  "feedback": "Correcto: la barra de abajo tiene 6 partes iguales y 2 pintadas: 2/6, que es lo mismo que 1/3.",
+  "feedbackEn": "That's right: the bottom bar has 6 equal parts and 2 colored: 2/6, the same as 1/3."
+ },
+ {
+  "exerciseId": "cmvjj4t3v000dicrh2rha25jc",
+  "optionId": "cmvjj4t40000ficrh4ghcctf4",
+  "label": "1/6",
+  "feedback": "Se cambió solo el denominador. Las partes pintadas abajo son 2.",
+  "feedbackEn": "Only the denominator changed. There are 2 colored parts in the bottom bar."
+ },
+ {
+  "exerciseId": "cmvjj4t3v000dicrh2rha25jc",
+  "optionId": "cmvjj4t40000gicrhfre9767x",
+  "label": "6/2",
+  "feedback": "Revisa el orden: arriba van las partes pintadas (2) y abajo el total (6).",
+  "feedbackEn": "Check the order: the colored parts (2) go on top and the total (6) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjj4t3v000dicrh2rha25jc",
+  "optionId": "cmvjj4t40000hicrht2of5ine",
+  "label": "3/6",
+  "feedback": "Cuenta otra vez las partes pintadas: 3/6 sería la mitad, y lo pintado es menos.",
+  "feedbackEn": "Count the colored parts again: 3/6 would be half, and less is colored."
+ },
+ {
+  "exerciseId": "cmvjj4t55000iicrhhtmsumoc",
+  "optionId": "cmvjj4t5c000jicrhpq9c21xk",
+  "label": "4/6",
+  "feedback": "Correcto: 2 × 2 = 4 y 3 × 2 = 6: 2/3 = 4/6.",
+  "feedbackEn": "That's right: 2 × 2 = 4 and 3 × 2 = 6: 2/3 = 4/6."
+ },
+ {
+  "exerciseId": "cmvjj4t55000iicrhhtmsumoc",
+  "optionId": "cmvjj4t5c000kicrhjgdmy79u",
+  "label": "4/3",
+  "feedback": "Faltó multiplicar el denominador: también hay que hacer 3 × 2.",
+  "feedbackEn": "The denominator wasn't multiplied: you also need 3 × 2."
+ },
+ {
+  "exerciseId": "cmvjj4t55000iicrhhtmsumoc",
+  "optionId": "cmvjj4t5c000licrh9lelofbq",
+  "label": "2/6",
+  "feedback": "Faltó multiplicar el numerador: también hay que hacer 2 × 2.",
+  "feedbackEn": "The numerator wasn't multiplied: you also need 2 × 2."
+ },
+ {
+  "exerciseId": "cmvjj4t55000iicrhhtmsumoc",
+  "optionId": "cmvjj4t5c000micrht9z3hj2i",
+  "label": "4/5",
+  "feedback": "Al denominador se le sumó 2. Para amplificar se multiplica: 3 × 2.",
+  "feedbackEn": "2 was added to the denominator. To scale up, multiply: 3 × 2."
+ },
+ {
+  "exerciseId": "cmvjj4t6e000nicrhvnee11ny",
+  "optionId": "cmvjj4t6k000oicrh2wnvflgr",
+  "label": "2/3",
+  "feedback": "Correcto: 6 ÷ 3 = 2 y 9 ÷ 3 = 3: 6/9 = 2/3.",
+  "feedbackEn": "That's right: 6 ÷ 3 = 2 and 9 ÷ 3 = 3: 6/9 = 2/3."
+ },
+ {
+  "exerciseId": "cmvjj4t6e000nicrhvnee11ny",
+  "optionId": "cmvjj4t6k000picrh3n2g90cx",
+  "label": "2/9",
+  "feedback": "Faltó dividir el denominador: también hay que hacer 9 ÷ 3.",
+  "feedbackEn": "The denominator wasn't divided: you also need 9 ÷ 3."
+ },
+ {
+  "exerciseId": "cmvjj4t6e000nicrhvnee11ny",
+  "optionId": "cmvjj4t6k000qicrh7iyg5s5r",
+  "label": "6/3",
+  "feedback": "Faltó dividir el numerador: también hay que hacer 6 ÷ 3.",
+  "feedbackEn": "The numerator wasn't divided: you also need 6 ÷ 3."
+ },
+ {
+  "exerciseId": "cmvjj4t6e000nicrhvnee11ny",
+  "optionId": "cmvjj4t6k000ricrhik3zpt5i",
+  "label": "3/6",
+  "feedback": "Se restó 3 en vez de dividir. Simplificar es dividir los dos por el mismo número.",
+  "feedbackEn": "3 was subtracted instead of dividing. Simplifying means dividing both by the same number."
+ },
+ {
+  "exerciseId": "cmvjj4t7p000sicrh93pkqdwk",
+  "optionId": "cmvjj4t7v000ticrhhcqqun2e",
+  "label": "3/5",
+  "feedback": "Correcto: en 3/5 el numerador (3) es menor que el denominador (5): es menor que un entero.",
+  "feedbackEn": "That's right: in 3/5 the numerator (3) is less than the denominator (5): it's less than one whole."
+ },
+ {
+  "exerciseId": "cmvjj4t7p000sicrh93pkqdwk",
+  "optionId": "cmvjj4t7v000uicrhzua7yug3",
+  "label": "5/3",
+  "feedback": "5/3 es 3/5 dada vuelta: así el numerador queda mayor y es más que un entero. En una propia, el número de arriba es el menor.",
+  "feedbackEn": "5/3 is 3/5 flipped: that makes the numerator greater, so it's more than one whole. In a proper fraction, the top number is the smaller one."
+ },
+ {
+  "exerciseId": "cmvjj4t7p000sicrh93pkqdwk",
+  "optionId": "cmvjj4t7v000vicrhevy9b2m8",
+  "label": "4/4",
+  "feedback": "4/4 es exactamente un entero. Una propia tiene que ser menor que un entero.",
+  "feedbackEn": "4/4 is exactly one whole. A proper fraction has to be less than one whole."
+ },
+ {
+  "exerciseId": "cmvjj4t7p000sicrh93pkqdwk",
+  "optionId": "cmvjj4t7v000wicrhn1cofj8y",
+  "label": "7/2",
+  "feedback": "En 7/2 el numerador es mucho mayor: es más que 3 enteros.",
+  "feedbackEn": "In 7/2 the numerator is much greater: it's more than 3 wholes."
+ },
+ {
+  "exerciseId": "cmvjj4t90000xicrh7k771vn5",
+  "optionId": "cmvjj4t96000yicrht6a4sk5h",
+  "label": "3/8",
+  "feedback": "Correcto: hay 8 círculos y 3 están pintados: 3/8.",
+  "feedbackEn": "That's right: there are 8 circles and 3 are colored: 3/8."
+ },
+ {
+  "exerciseId": "cmvjj4t90000xicrh7k771vn5",
+  "optionId": "cmvjj4t96000zicrhdyi7uqa3",
+  "label": "5/8",
+  "feedback": "5/8 es la otra parte. Vuelve a leer qué te preguntan.",
+  "feedbackEn": "5/8 is the other part. Reread what the question asks."
+ },
+ {
+  "exerciseId": "cmvjj4t90000xicrh7k771vn5",
+  "optionId": "cmvjj4t960010icrhgmp9kzed",
+  "label": "8/3",
+  "feedback": "Revisa el orden: arriba va lo que te preguntan (3) y abajo el total (8).",
+  "feedbackEn": "Check the order: what you're asked about (3) goes on top and the total (8) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjj4t90000xicrh7k771vn5",
+  "optionId": "cmvjj4t960011icrhlxp2dnmk",
+  "label": "3/5",
+  "feedback": "Abajo va el total (8), no solo la otra parte.",
+  "feedbackEn": "The bottom number is the total (8), not just the other part."
+ },
+ {
+  "exerciseId": "cmvjj4ta70012icrh8uc9es0e",
+  "optionId": "cmvjj4tac0013icrhyqggzvk3",
+  "label": "5/7",
+  "feedback": "Correcto: con el mismo denominador, es mayor la que tiene más partes: 5 séptimos.",
+  "feedbackEn": "That's right: with the same denominator, the one with more parts is greater: 5 sevenths."
+ },
+ {
+  "exerciseId": "cmvjj4ta70012icrh8uc9es0e",
+  "optionId": "cmvjj4tac0014icrh1xsj201f",
+  "label": "2/7",
+  "feedback": "2/7 tiene menos partes del mismo tamaño: es la menor.",
+  "feedbackEn": "2/7 has fewer same-size parts: it's the lesser one."
+ },
+ {
+  "exerciseId": "cmvjj4ta70012icrh8uc9es0e",
+  "optionId": "cmvjj4tac0015icrhjxpkx2no",
+  "label": "Son iguales",
+  "feedback": "Tienen el mismo denominador, pero no la misma cantidad de partes.",
+  "feedbackEn": "They have the same denominator, but not the same number of parts."
+ },
+ {
+  "exerciseId": "cmvjj4ta70012icrh8uc9es0e",
+  "optionId": "cmvjj4tac0016icrhptgm1a14",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: las dos son séptimos, basta comparar los numeradores.",
+  "feedbackEn": "You can tell: both are sevenths, so just compare the numerators."
+ },
+ {
+  "exerciseId": "cmvjj4tbf0017icrhcl0fidue",
+  "optionId": "cmvjj4tbj0018icrhvx5vzslw",
+  "label": "2",
+  "feedback": "Correcto: 4 × 2 = 8, así que 1 × 2 = 2: 1/4 = 2/8.",
+  "feedbackEn": "That's right: 4 × 2 = 8, so 1 × 2 = 2: 1/4 = 2/8."
+ },
+ {
+  "exerciseId": "cmvjj4tbf0017icrhcl0fidue",
+  "optionId": "cmvjj4tbj0019icrhz4cnhjmo",
+  "label": "1",
+  "feedback": "Si cambia el denominador, también tiene que cambiar el numerador.",
+  "feedbackEn": "If the denominator changes, the numerator has to change too."
+ },
+ {
+  "exerciseId": "cmvjj4tbf0017icrhcl0fidue",
+  "optionId": "cmvjj4tbj001aicrh96zgvtkw",
+  "label": "5",
+  "feedback": "Para pasar de 4 a 8 se multiplica por 2, no se suma 4.",
+  "feedbackEn": "To go from 4 to 8 you multiply by 2, not add 4."
+ },
+ {
+  "exerciseId": "cmvjj4tbf0017icrhcl0fidue",
+  "optionId": "cmvjj4tbj001bicrhqxbi3200",
+  "label": "4",
+  "feedback": "El 4 es el denominador original. Multiplica el 1 por 2.",
+  "feedbackEn": "4 is the original denominator. Multiply the 1 by 2."
+ },
+ {
+  "exerciseId": "cmvjj4tcn001cicrh0kfq79bz",
+  "optionId": "cmvjj4tcv001dicrhyv0d28kd",
+  "label": "3",
+  "feedback": "Correcto: 10 ÷ 5 = 2, así que 15 ÷ 5 = 3: 10/15 = 2/3.",
+  "feedbackEn": "That's right: 10 ÷ 5 = 2, so 15 ÷ 5 = 3: 10/15 = 2/3."
+ },
+ {
+  "exerciseId": "cmvjj4tcn001cicrh0kfq79bz",
+  "optionId": "cmvjj4tcv001eicrhzkbbymhu",
+  "label": "15",
+  "feedback": "Si cambia el numerador, también tiene que cambiar el denominador.",
+  "feedbackEn": "If the numerator changes, the denominator has to change too."
+ },
+ {
+  "exerciseId": "cmvjj4tcn001cicrh0kfq79bz",
+  "optionId": "cmvjj4tcv001ficrh845l8coq",
+  "label": "7",
+  "feedback": "Para pasar de 10 a 2 se divide por 5, no se resta 8.",
+  "feedbackEn": "To go from 10 to 2 you divide by 5, not subtract 8."
+ },
+ {
+  "exerciseId": "cmvjj4tcn001cicrh0kfq79bz",
+  "optionId": "cmvjj4tcv001gicrhwj5p2qzl",
+  "label": "5",
+  "feedback": "5 es el número por el que se divide, no el nuevo denominador. Divide 15 por 5.",
+  "feedbackEn": "5 is the number you divide by, not the new denominator. Divide 15 by 5."
+ },
+ {
+  "exerciseId": "cmvjj4te8001hicrh7ar4tn65",
+  "optionId": "cmvjj4ted001iicrhl5dv8dwv",
+  "label": "3/5",
+  "feedback": "Correcto: 3 no es la mitad de 5, así que 3/5 no es igual a 1/2. Las otras sí lo son.",
+  "feedbackEn": "That's right: 3 isn't half of 5, so 3/5 isn't equal to 1/2. The others are."
+ },
+ {
+  "exerciseId": "cmvjj4te8001hicrh7ar4tn65",
+  "optionId": "cmvjj4ted001jicrhfj8uwfxo",
+  "label": "2/4",
+  "feedback": "2/4 sí es igual a 1/2. La pregunta pide la que NO lo es.",
+  "feedbackEn": "2/4 does equal 1/2. The question asks for the one that does NOT."
+ },
+ {
+  "exerciseId": "cmvjj4te8001hicrh7ar4tn65",
+  "optionId": "cmvjj4ted001kicrhkq8n40m4",
+  "label": "4/8",
+  "feedback": "Revisa la cuenta: la mitad de 8 es 4, así que 4/8 sí es igual a 1/2.",
+  "feedbackEn": "Check the math: half of 8 is 4, so 4/8 does equal 1/2."
+ },
+ {
+  "exerciseId": "cmvjj4te8001hicrh7ar4tn65",
+  "optionId": "cmvjj4ted001licrh5lyhut5f",
+  "label": "5/10",
+  "feedback": "Que los números sean más grandes no cambia la cantidad: 5 es la mitad de 10, así que 5/10 = 1/2.",
+  "feedbackEn": "Bigger numbers don't change the amount: 5 is half of 10, so 5/10 = 1/2."
+ },
+ {
+  "exerciseId": "cmvjj4tff001micrh28mn4nbd",
+  "optionId": "cmvjj4tfk001nicrhn0799s2c",
+  "label": "1/4, 2/8 y 3/12",
+  "feedback": "Correcto: en las tres barras está pintado el mismo largo: 1/4 = 2/8 = 3/12.",
+  "feedbackEn": "That's right: the same length is colored in all three bars: 1/4 = 2/8 = 3/12."
+ },
+ {
+  "exerciseId": "cmvjj4tff001micrh28mn4nbd",
+  "optionId": "cmvjj4tfk001oicrhnfqbx4k9",
+  "label": "1/4 y 2/8, pero no 3/12",
+  "feedback": "Mira la tercera barra: lo pintado llega al mismo lugar que en las otras dos.",
+  "feedbackEn": "Look at the third bar: the colored part reaches the same spot as the other two."
+ },
+ {
+  "exerciseId": "cmvjj4tff001micrh28mn4nbd",
+  "optionId": "cmvjj4tfk001picrh77ywv29v",
+  "label": "Ninguna: tienen distinto denominador",
+  "feedback": "Fracciones con distinto denominador pueden ser equivalentes: mira cuánto está pintado.",
+  "feedbackEn": "Fractions with different denominators can be equivalent: look at how much is colored."
+ },
+ {
+  "exerciseId": "cmvjj4tff001micrh28mn4nbd",
+  "optionId": "cmvjj4tfk001qicrh3xzxazv0",
+  "label": "Solo 3/12, porque tiene más partes",
+  "feedback": "Tener más partes no la hace mayor: sus partes son más chicas.",
+  "feedbackEn": "Having more parts doesn't make it greater: its parts are smaller."
+ },
+ {
+  "exerciseId": "cmvjj4tgl001ricrh3pzpjkw8",
+  "optionId": "cmvjj4tgq001sicrhqhdhc74g",
+  "label": "9/12",
+  "feedback": "Correcto: 4 × 3 = 12, así que 3 × 3 = 9: 3/4 = 9/12.",
+  "feedbackEn": "That's right: 4 × 3 = 12, so 3 × 3 = 9: 3/4 = 9/12."
+ },
+ {
+  "exerciseId": "cmvjj4tgl001ricrh3pzpjkw8",
+  "optionId": "cmvjj4tgq001ticrhwcrhpwx7",
+  "label": "3/12",
+  "feedback": "Se cambió solo el denominador. Multiplica también el numerador por 3.",
+  "feedbackEn": "Only the denominator changed. Multiply the numerator by 3 too."
+ },
+ {
+  "exerciseId": "cmvjj4tgl001ricrh3pzpjkw8",
+  "optionId": "cmvjj4tgq001uicrhcw9ew8vd",
+  "label": "11/12",
+  "feedback": "Se sumó 8 arriba y abajo. Para amplificar se multiplica.",
+  "feedbackEn": "8 was added to top and bottom. To scale up, multiply."
+ },
+ {
+  "exerciseId": "cmvjj4tgl001ricrh3pzpjkw8",
+  "optionId": "cmvjj4tgq001vicrhhtfiyfq2",
+  "label": "6/12",
+  "feedback": "Revisa por cuánto se multiplica: 4 × 3 = 12, así que el 3 también se multiplica por 3.",
+  "feedbackEn": "Check the multiplier: 4 × 3 = 12, so the 3 is multiplied by 3 too."
+ },
+ {
+  "exerciseId": "cmvjj4thr001wicrh72bp6yuq",
+  "optionId": "cmvjj4thv001xicrhondhi3sr",
+  "label": "2/3",
+  "feedback": "Correcto: 8 y 12 se dividen por 4: 8/12 = 2/3, y ya no se puede simplificar más.",
+  "feedbackEn": "That's right: 8 and 12 can both be divided by 4: 8/12 = 2/3, and it can't be simplified further."
+ },
+ {
+  "exerciseId": "cmvjj4thr001wicrh72bp6yuq",
+  "optionId": "cmvjj4thv001yicrhc9f5hd9z",
+  "label": "4/6",
+  "feedback": "4/6 es igual a 8/12, pero todavía se puede simplificar: 4 y 6 se dividen por 2.",
+  "feedbackEn": "4/6 equals 8/12, but it can still be simplified: 4 and 6 can be divided by 2."
+ },
+ {
+  "exerciseId": "cmvjj4thr001wicrh72bp6yuq",
+  "optionId": "cmvjj4thv001zicrhfwoq9xhb",
+  "label": "4/12",
+  "feedback": "Se dividió solo el numerador. Divide también el denominador.",
+  "feedbackEn": "Only the numerator was divided. Divide the denominator too."
+ },
+ {
+  "exerciseId": "cmvjj4thr001wicrh72bp6yuq",
+  "optionId": "cmvjj4thv0020icrhxjjkizcn",
+  "label": "6/10",
+  "feedback": "Se restó 2 arriba y abajo. Simplificar es dividir los dos por el mismo número.",
+  "feedbackEn": "2 was subtracted from top and bottom. Simplifying means dividing both by the same number."
+ },
+ {
+  "exerciseId": "cmvjj4tiy0021icrhogrnpcz0",
+  "optionId": "cmvjj4tj20022icrhqva0dlb1",
+  "label": "2/3",
+  "feedback": "Correcto: con denominador 15: 2/3 = 10/15 y 3/5 = 9/15, así que 2/3 es mayor.",
+  "feedbackEn": "That's right: with denominator 15: 2/3 = 10/15 and 3/5 = 9/15, so 2/3 is greater."
+ },
+ {
+  "exerciseId": "cmvjj4tiy0021icrhogrnpcz0",
+  "optionId": "cmvjj4tj20023icrhzvscwwse",
+  "label": "3/5",
+  "feedback": "Que 3/5 tenga números más grandes no la hace mayor. Llévalas al mismo denominador.",
+  "feedbackEn": "Bigger numbers in 3/5 don't make it greater. Change them to the same denominator."
+ },
+ {
+  "exerciseId": "cmvjj4tiy0021icrhogrnpcz0",
+  "optionId": "cmvjj4tj20024icrh17pmv2ow",
+  "label": "Son iguales",
+  "feedback": "Revisa la conversión: 2/3 = 10/15 y 3/5 = 9/15 no son iguales.",
+  "feedbackEn": "Check the conversion: 2/3 = 10/15 and 3/5 = 9/15 aren't equal."
+ },
+ {
+  "exerciseId": "cmvjj4tiy0021icrhogrnpcz0",
+  "optionId": "cmvjj4tj20025icrhxumxrizn",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: escribe las fracciones con el mismo denominador y compara.",
+  "feedbackEn": "You can tell: write the fractions with the same denominator and compare."
+ },
+ {
+  "exerciseId": "cmvjj4tk40026icrhfiqpeod4",
+  "optionId": "cmvjj4tk90027icrhzwmtia94",
+  "label": "5/8",
+  "feedback": "Correcto: 3/4 = 6/8, y 5/8 es menor que 6/8.",
+  "feedbackEn": "That's right: 3/4 = 6/8, and 5/8 is less than 6/8."
+ },
+ {
+  "exerciseId": "cmvjj4tk40026icrhfiqpeod4",
+  "optionId": "cmvjj4tk90028icrh68b92c52",
+  "label": "3/4",
+  "feedback": "3/4 = 6/8, que es más que 5/8. La pregunta pide la menor.",
+  "feedbackEn": "3/4 = 6/8, which is more than 5/8. The question asks for the lesser one."
+ },
+ {
+  "exerciseId": "cmvjj4tk40026icrhfiqpeod4",
+  "optionId": "cmvjj4tk90029icrhd38mda98",
+  "label": "Son iguales",
+  "feedback": "Revisa: 3/4 en octavos es 6/8, no 5/8.",
+  "feedbackEn": "Check: 3/4 in eighths is 6/8, not 5/8."
+ },
+ {
+  "exerciseId": "cmvjj4tk40026icrhfiqpeod4",
+  "optionId": "cmvjj4tk9002aicrhd57j6su0",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: escribe las fracciones con el mismo denominador y compara.",
+  "feedbackEn": "You can tell: write the fractions with the same denominator and compare."
+ },
+ {
+  "exerciseId": "cmvjj4tla002bicrh1mpp42hw",
+  "optionId": "cmvjj4tle002cicrhq0w7tb17",
+  "label": "Leyeron lo mismo",
+  "feedback": "Correcto: 3/5 amplificado por 2 es 6/10: leyeron la misma parte del libro.",
+  "feedbackEn": "That's right: 3/5 scaled up by 2 is 6/10: they read the same part of the book."
+ },
+ {
+  "exerciseId": "cmvjj4tla002bicrh1mpp42hw",
+  "optionId": "cmvjj4tle002dicrhr4ysq9lw",
+  "label": "Tomás, porque 6 es mayor que 3",
+  "feedback": "6 es mayor que 3, pero sus partes (décimos) son más chicas. Escribe las dos en décimos.",
+  "feedbackEn": "6 is more than 3, but his parts (tenths) are smaller. Write both in tenths."
+ },
+ {
+  "exerciseId": "cmvjj4tla002bicrh1mpp42hw",
+  "optionId": "cmvjj4tle002eicrhas9d9tm4",
+  "label": "Sofía, porque sus partes son más grandes",
+  "feedback": "Sus partes son más grandes, pero tiene menos. Compara la cantidad leída.",
+  "feedbackEn": "Her parts are bigger, but she has fewer. Compare the amount read."
+ },
+ {
+  "exerciseId": "cmvjj4tla002bicrh1mpp42hw",
+  "optionId": "cmvjj4tle002ficrhugdjx1p1",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: escribe las fracciones con el mismo denominador y compara.",
+  "feedbackEn": "You can tell: write the fractions with the same denominator and compare."
+ },
+ {
+  "exerciseId": "cmvjj4tmh002gicrh41ng4puy",
+  "optionId": "cmvjj4tmm002hicrh6fjs3iur",
+  "label": "1/3",
+  "feedback": "Correcto: 6 ÷ 2 = 3 y 2 ÷ 2 = 1: 2/6 = 1/3.",
+  "feedbackEn": "That's right: 6 ÷ 2 = 3 and 2 ÷ 2 = 1: 2/6 = 1/3."
+ },
+ {
+  "exerciseId": "cmvjj4tmh002gicrh41ng4puy",
+  "optionId": "cmvjj4tmm002iicrhmoh4flzm",
+  "label": "2/3",
+  "feedback": "Se cambió solo el denominador. Divide también el numerador por 2.",
+  "feedbackEn": "Only the denominator changed. Divide the numerator by 2 too."
+ },
+ {
+  "exerciseId": "cmvjj4tmh002gicrh41ng4puy",
+  "optionId": "cmvjj4tmm002jicrhjlbqzzxi",
+  "label": "1/6",
+  "feedback": "Se dividió solo el numerador. La pregunta pide denominador 3.",
+  "feedbackEn": "Only the numerator was divided. The question asks for denominator 3."
+ },
+ {
+  "exerciseId": "cmvjj4tmh002gicrh41ng4puy",
+  "optionId": "cmvjj4tmm002kicrhm67gklbt",
+  "label": "4/12",
+  "feedback": "4/12 es equivalente, pero se amplificó. La pregunta pide denominador 3: hay que simplificar.",
+  "feedbackEn": "4/12 is equivalent, but it was scaled up. The question asks for denominator 3: simplify."
+ },
+ {
+  "exerciseId": "cmvjj4tnn002licrhv1xpfemj",
+  "optionId": "cmvjj4tnr002micrhcyze03p0",
+  "label": "4/6, 6/9 y 8/12",
+  "feedback": "Correcto: 2/3 amplificada por 2, 3 y 4 da 4/6, 6/9 y 8/12.",
+  "feedbackEn": "That's right: 2/3 scaled up by 2, 3 and 4 gives 4/6, 6/9 and 8/12."
+ },
+ {
+  "exerciseId": "cmvjj4tnn002licrhv1xpfemj",
+  "optionId": "cmvjj4tnr002nicrh23o5olur",
+  "label": "4/6, 6/8 y 8/10",
+  "feedback": "Ahí se sumó 2 arriba y abajo cada vez. Para que sean equivalentes hay que multiplicar.",
+  "feedbackEn": "There, 2 was added to top and bottom each time. To be equivalent you have to multiply."
+ },
+ {
+  "exerciseId": "cmvjj4tnn002licrhv1xpfemj",
+  "optionId": "cmvjj4tnr002oicrh820zphwu",
+  "label": "2/6, 2/9 y 2/12",
+  "feedback": "Se multiplicó solo el denominador: el numerador también cambia.",
+  "feedbackEn": "Only the denominator was multiplied: the numerator changes too."
+ },
+ {
+  "exerciseId": "cmvjj4tnn002licrhv1xpfemj",
+  "optionId": "cmvjj4tnr002picrhrv8ufcvc",
+  "label": "4/6, 6/9 y 8/9",
+  "feedback": "Revisa la última: 2/3 × 4 = 8/12, no 8/9.",
+  "feedbackEn": "Check the last one: 2/3 × 4 = 8/12, not 8/9."
+ },
+ {
+  "exerciseId": "cmvjj4tot002qicrhx9exns1d",
+  "optionId": "cmvjj4toy002ricrh21bx0kc4",
+  "label": "2/3",
+  "feedback": "Correcto: el punto está en 4/6, y 4/6 simplificada (÷ 2) es 2/3.",
+  "feedbackEn": "That's right: the dot is at 4/6, and 4/6 simplified (÷ 2) is 2/3."
+ },
+ {
+  "exerciseId": "cmvjj4tot002qicrhx9exns1d",
+  "optionId": "cmvjj4toy002sicrhijss0dfk",
+  "label": "4/6",
+  "feedback": "4/6 es el punto, pero la pregunta pide la fracción simplificada.",
+  "feedbackEn": "4/6 is the dot, but the question asks for the simplified fraction."
+ },
+ {
+  "exerciseId": "cmvjj4tot002qicrhx9exns1d",
+  "optionId": "cmvjj4toy002ticrhbkdwwzzh",
+  "label": "4/7",
+  "feedback": "Cuenta saltos, no marcas: entre 0 y 1 hay 6 saltos (y 7 marcas).",
+  "feedbackEn": "Count jumps, not marks: there are 6 jumps between 0 and 1 (and 7 marks)."
+ },
+ {
+  "exerciseId": "cmvjj4tot002qicrhx9exns1d",
+  "optionId": "cmvjj4toy002uicrhxxeq2a3u",
+  "label": "1/3",
+  "feedback": "1/3 = 2/6, y el punto está más lejos, en 4/6.",
+  "feedbackEn": "1/3 = 2/6, and the dot is further along, at 4/6."
+ },
+ {
+  "exerciseId": "cmvjj4tq0002vicrh0jav4y2q",
+  "optionId": "cmvjj4tq5002wicrhhgrqtirk",
+  "label": "3/8, 1/2, 3/4",
+  "feedback": "Correcto: en octavos: 3/8, 4/8 y 6/8, así que el orden es 3/8, 1/2, 3/4.",
+  "feedbackEn": "That's right: in eighths: 3/8, 4/8 and 6/8, so the order is 3/8, 1/2, 3/4."
+ },
+ {
+  "exerciseId": "cmvjj4tq0002vicrh0jav4y2q",
+  "optionId": "cmvjj4tq5002xicrhznxzs3dc",
+  "label": "1/2, 3/4, 3/8",
+  "feedback": "Se ordenó por el denominador. Llévalas a octavos para compararlas.",
+  "feedbackEn": "They were ordered by denominator. Change them to eighths to compare."
+ },
+ {
+  "exerciseId": "cmvjj4tq0002vicrh0jav4y2q",
+  "optionId": "cmvjj4tq5002yicrhidbdsrb6",
+  "label": "3/4, 1/2, 3/8",
+  "feedback": "Ese orden va de mayor a menor. La pregunta pide de menor a mayor.",
+  "feedbackEn": "That order goes greatest to least. The question asks least to greatest."
+ },
+ {
+  "exerciseId": "cmvjj4tq0002vicrh0jav4y2q",
+  "optionId": "cmvjj4tq5002zicrhmsftl7lm",
+  "label": "1/2, 3/8, 3/4",
+  "feedback": "Compara 1/2 y 3/8: 1/2 = 4/8, que es más que 3/8.",
+  "feedbackEn": "Compare 1/2 and 3/8: 1/2 = 4/8, which is more than 3/8."
+ },
+ {
+  "exerciseId": "cmvjj4tr70030icrhg31txopx",
+  "optionId": "cmvjj4trb0031icrhbgsq5zc1",
+  "label": "No: 2/5 amplificada por 2 es 4/10",
+  "feedback": "Correcto: 2 × 2 = 4 y 5 × 2 = 10: 2/5 = 4/10. Fracciones equivalentes tienen números distintos.",
+  "feedbackEn": "That's right: 2 × 2 = 4 and 5 × 2 = 10: 2/5 = 4/10. Equivalent fractions have different numbers."
+ },
+ {
+  "exerciseId": "cmvjj4tr70030icrhg31txopx",
+  "optionId": "cmvjj4trb0032icrhpau8q32m",
+  "label": "Sí: tienen números distintos",
+  "feedback": "Las fracciones equivalentes justamente tienen números distintos y representan la misma cantidad.",
+  "feedbackEn": "Equivalent fractions have different numbers and show the same amount."
+ },
+ {
+  "exerciseId": "cmvjj4tr70030icrhg31txopx",
+  "optionId": "cmvjj4trb0033icrhmb70pea6",
+  "label": "Sí: 4/10 es mayor porque tiene más partes",
+  "feedback": "4/10 tiene más partes, pero más chicas: representa lo mismo que 2/5.",
+  "feedbackEn": "4/10 has more parts, but smaller ones: it shows the same as 2/5."
+ },
+ {
+  "exerciseId": "cmvjj4tr70030icrhg31txopx",
+  "optionId": "cmvjj4trb0034icrhrxzxm4ig",
+  "label": "No: 4/10 es el doble de 2/5",
+  "feedback": "Duplicar arriba y abajo no duplica la fracción: la deja igual.",
+  "feedbackEn": "Doubling the top and bottom doesn't double the fraction: it stays the same."
+ },
+ {
+  "exerciseId": "cmvjj4tse0035icrhjvzoizxu",
+  "optionId": "cmvjj4tsj0036icrh1slf0255",
+  "label": "Josefa",
+  "feedback": "Correcto: Josefa dividió los dos por 3: 9 ÷ 3 = 3 y 12 ÷ 3 = 4. Matías restó 3, y eso no da una fracción equivalente.",
+  "feedbackEn": "That's right: Josefa divided both by 3: 9 ÷ 3 = 3 and 12 ÷ 3 = 4. Matías subtracted 3, which doesn't give an equivalent fraction."
+ },
+ {
+  "exerciseId": "cmvjj4tse0035icrhjvzoizxu",
+  "optionId": "cmvjj4tsj0037icrh8t2ha9ad",
+  "label": "Matías",
+  "feedback": "Matías restó 3 arriba y abajo. Simplificar es dividir, no restar.",
+  "feedbackEn": "Matías subtracted 3 from top and bottom. Simplifying means dividing, not subtracting."
+ },
+ {
+  "exerciseId": "cmvjj4tse0035icrhjvzoizxu",
+  "optionId": "cmvjj4tsj0038icrh416vgb02",
+  "label": "Los dos",
+  "feedback": "3/4 y 6/9 no son iguales (3/4 = 9/12 y 6/9 = 8/12). Solo uno simplificó bien.",
+  "feedbackEn": "3/4 and 6/9 aren't equal (3/4 = 9/12 and 6/9 = 8/12). Only one simplified correctly."
+ },
+ {
+  "exerciseId": "cmvjj4tse0035icrhjvzoizxu",
+  "optionId": "cmvjj4tsj0039icrh51uk6tvi",
+  "label": "Ninguno",
+  "feedback": "Revisa lo de Josefa: 9 ÷ 3 = 3 y 12 ÷ 3 = 4, está bien.",
+  "feedbackEn": "Check Josefa's work: 9 ÷ 3 = 3 and 12 ÷ 3 = 4, it's right."
+ },
+ {
+  "exerciseId": "cmvjj4ttk003aicrh8j1dqfxh",
+  "optionId": "cmvjj4ttp003bicrhg37yq7ob",
+  "label": "3/5",
+  "feedback": "Correcto: se usaron 6/10, y 6/10 simplificada (÷ 2) es 3/5.",
+  "feedbackEn": "That's right: 6/10 was used, and 6/10 simplified (÷ 2) is 3/5."
+ },
+ {
+  "exerciseId": "cmvjj4ttk003aicrh8j1dqfxh",
+  "optionId": "cmvjj4ttp003cicrh3un1am9x",
+  "label": "6/10",
+  "feedback": "6/10 es correcto, pero falta simplificar: 6 y 10 se dividen por 2.",
+  "feedbackEn": "6/10 is correct, but it still needs simplifying: 6 and 10 can be divided by 2."
+ },
+ {
+  "exerciseId": "cmvjj4ttk003aicrh8j1dqfxh",
+  "optionId": "cmvjj4ttp003dicrhsckfivq6",
+  "label": "2/5",
+  "feedback": "2/5 es lo que no se usó (4/10). La pregunta es por lo usado.",
+  "feedbackEn": "2/5 is what wasn't used (4/10). The question asks what was used."
+ },
+ {
+  "exerciseId": "cmvjj4ttk003aicrh8j1dqfxh",
+  "optionId": "cmvjj4ttp003eicrhxqo8wrwe",
+  "label": "3/10",
+  "feedback": "Se dividió solo el numerador. Divide también el 10.",
+  "feedbackEn": "Only the numerator was divided. Divide the 10 too."
+ },
+ {
+  "exerciseId": "cmvjj4tup003ficrhtir4xvwj",
+  "optionId": "cmvjj4tuu003gicrhlzrvd8c7",
+  "label": "En el primero (3/4)",
+  "feedback": "Correcto: 3/4 = 6/8, que es más que 5/8.",
+  "feedbackEn": "That's right: 3/4 = 6/8, which is more than 5/8."
+ },
+ {
+  "exerciseId": "cmvjj4tup003ficrhtir4xvwj",
+  "optionId": "cmvjj4tuu003hicrhx9vihqbf",
+  "label": "En el segundo, porque 5 es mayor que 3",
+  "feedback": "5 es mayor que 3, pero son octavos, más chicos que los cuartos. Escribe 3/4 en octavos.",
+  "feedbackEn": "5 is more than 3, but those are eighths, smaller than fourths. Write 3/4 in eighths."
+ },
+ {
+  "exerciseId": "cmvjj4tup003ficrhtir4xvwj",
+  "optionId": "cmvjj4tuu003iicrhtamr3qpp",
+  "label": "Es igual en los dos",
+  "feedback": "Revisa: 3/4 son 6 octavos, no 5.",
+  "feedbackEn": "Check: 3/4 is 6 eighths, not 5."
+ },
+ {
+  "exerciseId": "cmvjj4tup003ficrhtir4xvwj",
+  "optionId": "cmvjj4tuu003jicrhvfosl2ep",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: escribe 3/4 en octavos y compara.",
+  "feedbackEn": "You can tell: write 3/4 in eighths and compare."
+ },
+ {
+  "exerciseId": "cmvjj4tvx003kicrhtlf2megf",
+  "optionId": "cmvjj4tw1003licrhwwnmz7ju",
+  "label": "4",
+  "feedback": "Correcto: 5 × 4 = 20, así que se amplifica por 4: 3/5 = 12/20.",
+  "feedbackEn": "That's right: 5 × 4 = 20, so you scale up by 4: 3/5 = 12/20."
+ },
+ {
+  "exerciseId": "cmvjj4tvx003kicrhtlf2megf",
+  "optionId": "cmvjj4tw1003micrhp6x9s31n",
+  "label": "15",
+  "feedback": "15 es lo que hay que sumar a 5 para llegar a 20. Para amplificar se multiplica.",
+  "feedbackEn": "15 is what you add to 5 to get 20. To scale up, you multiply."
+ },
+ {
+  "exerciseId": "cmvjj4tvx003kicrhtlf2megf",
+  "optionId": "cmvjj4tw1003nicrhqlwl0cfd",
+  "label": "5",
+  "feedback": "5 × 5 = 25, no 20. Prueba con otro número.",
+  "feedbackEn": "5 × 5 = 25, not 20. Try another number."
+ },
+ {
+  "exerciseId": "cmvjj4tvx003kicrhtlf2megf",
+  "optionId": "cmvjj4tw1003oicrhbidk1wwr",
+  "label": "12",
+  "feedback": "12 es el nuevo numerador (3 × 4). La pregunta es por el número que amplifica.",
+  "feedbackEn": "12 is the new numerator (3 × 4). The question asks for the number you scale up by."
+ },
+ {
+  "exerciseId": "cmvjk8ydm001pp9rhm8egqe8e",
+  "optionId": "cmvjk8ydr001qp9rhp95bs21p",
+  "label": "2/3",
+  "feedback": "Correcto: lo pintado es 8/12, y dividiendo los dos por 4 queda 2/3.",
+  "feedbackEn": "That's right: the colored part is 8/12, and dividing both by 4 gives 2/3."
+ },
+ {
+  "exerciseId": "cmvjk8ydm001pp9rhm8egqe8e",
+  "optionId": "cmvjk8ydr001rp9rh79x7o9a4",
+  "label": "8/4",
+  "feedback": "Abajo va el total de partes (12), no solo las sin pintar. Lo pintado es 8/12.",
+  "feedbackEn": "The bottom number is the total parts (12), not just the uncolored ones. The colored part is 8/12."
+ },
+ {
+  "exerciseId": "cmvjk8ydm001pp9rhm8egqe8e",
+  "optionId": "cmvjk8ydr001sp9rhugsscb0o",
+  "label": "1/3",
+  "feedback": "1/3 es la parte sin pintar (4/12). La pregunta es por la parte pintada.",
+  "feedbackEn": "1/3 is the uncolored part (4/12). The question asks about the colored part."
+ },
+ {
+  "exerciseId": "cmvjk8ydm001pp9rhm8egqe8e",
+  "optionId": "cmvjk8ydr001tp9rh2jn1w61p",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba va lo pintado (2) y abajo el total (3).",
+  "feedbackEn": "Check the order: the colored part (2) goes on top and the total (3) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjj4ty8003uicrhp0aqjryt",
+  "optionId": "cmvjj4tyd003vicrhqg0igz9e",
+  "label": "3/4",
+  "feedback": "Correcto: 15/20 simplificada (÷ 5) es 3/4.",
+  "feedbackEn": "That's right: 15/20 simplified (÷ 5) is 3/4."
+ },
+ {
+  "exerciseId": "cmvjj4ty8003uicrhp0aqjryt",
+  "optionId": "cmvjj4tyd003wicrhvzq5aooh",
+  "label": "15/20",
+  "feedback": "15/20 es correcto, pero falta simplificar: 15 y 20 se dividen por 5.",
+  "feedbackEn": "15/20 is correct, but it still needs simplifying: 15 and 20 can be divided by 5."
+ },
+ {
+  "exerciseId": "cmvjj4ty8003uicrhp0aqjryt",
+  "optionId": "cmvjj4tyd003xicrh7irpnwmx",
+  "label": "1/4",
+  "feedback": "1/4 es lo que NO llevó colación (5 de 20). La pregunta es por los que sí.",
+  "feedbackEn": "1/4 is the part that did NOT bring a snack (5 of 20). The question asks about those who did."
+ },
+ {
+  "exerciseId": "cmvjj4ty8003uicrhp0aqjryt",
+  "optionId": "cmvjj4tyd003yicrhcw0uf7df",
+  "label": "3/5",
+  "feedback": "Se dividió arriba por 5 y abajo por 4. Hay que dividir los dos por el mismo número.",
+  "feedbackEn": "The top was divided by 5 and the bottom by 4. Both must be divided by the same number."
+ },
+ {
+  "exerciseId": "cmvjj4tze003zicrhhpj9s65g",
+  "optionId": "cmvjj4tzi0040icrhl43os9xx",
+  "label": "No: 1/2 y 2/3 no son equivalentes",
+  "feedback": "Correcto: 1/2 + 1 arriba y abajo da 2/3, y 2/3 es más que 1/2. Para fracciones equivalentes se multiplica o divide.",
+  "feedbackEn": "That's right: adding 1 to top and bottom of 1/2 gives 2/3, and 2/3 is more than 1/2. Equivalent fractions come from multiplying or dividing."
+ },
+ {
+  "exerciseId": "cmvjj4tze003zicrhhpj9s65g",
+  "optionId": "cmvjj4tzi0041icrhfz13m8ub",
+  "label": "Sí: 1/2 = 2/3",
+  "feedback": "Compáralas con denominador 6: 1/2 = 3/6 y 2/3 = 4/6. No son iguales.",
+  "feedbackEn": "Compare them with denominator 6: 1/2 = 3/6 and 2/3 = 4/6. They're not equal."
+ },
+ {
+  "exerciseId": "cmvjj4tze003zicrhhpj9s65g",
+  "optionId": "cmvjj4tzi0042icrhhi8ned7o",
+  "label": "Sí, siempre funciona",
+  "feedback": "Prueba con 1/2: da 2/3, que no es igual. Basta un ejemplo para ver que no funciona.",
+  "feedbackEn": "Try 1/2: it gives 2/3, which isn't equal. One example is enough to see it doesn't work."
+ },
+ {
+  "exerciseId": "cmvjj4tze003zicrhhpj9s65g",
+  "optionId": "cmvjj4tzi0043icrhk7zgztql",
+  "label": "No: hay que sumar 2 arriba y 2 abajo",
+  "feedback": "Sumar tampoco funciona con 2. Para obtener equivalentes hay que multiplicar o dividir.",
+  "feedbackEn": "Adding doesn't work with 2 either. To get equivalent fractions you multiply or divide."
+ },
+ {
+  "exerciseId": "cmvjj4u0j0044icrhd960ejw6",
+  "optionId": "cmvjj4u0o0045icrht8wo7c8q",
+  "label": "5/6, 2/3, 7/12",
+  "feedback": "Correcto: en doceavos: 5/6 = 10/12, 2/3 = 8/12 y 7/12, así que el orden es 5/6, 2/3, 7/12.",
+  "feedbackEn": "That's right: in twelfths: 5/6 = 10/12, 2/3 = 8/12 and 7/12, so the order is 5/6, 2/3, 7/12."
+ },
+ {
+  "exerciseId": "cmvjj4u0j0044icrhd960ejw6",
+  "optionId": "cmvjj4u0o0046icrhy9wwreat",
+  "label": "7/12, 5/6, 2/3",
+  "feedback": "Se ordenó por los números de la fracción. Llévalas a doceavos para comparar.",
+  "feedbackEn": "They were ordered by their numbers. Change them to twelfths to compare."
+ },
+ {
+  "exerciseId": "cmvjj4u0j0044icrhd960ejw6",
+  "optionId": "cmvjj4u0o0047icrhff6wvvys",
+  "label": "7/12, 2/3, 5/6",
+  "feedback": "Ese orden va de menor a mayor. La pregunta pide de mayor a menor.",
+  "feedbackEn": "That order goes least to greatest. The question asks greatest to least."
+ },
+ {
+  "exerciseId": "cmvjj4u0j0044icrhd960ejw6",
+  "optionId": "cmvjj4u0o0048icrhn479el8h",
+  "label": "2/3, 5/6, 7/12",
+  "feedback": "Compara 2/3 y 5/6: 2/3 = 8/12 y 5/6 = 10/12. ¿Cuál es mayor?",
+  "feedbackEn": "Compare 2/3 and 5/6: 2/3 = 8/12 and 5/6 = 10/12. Which is greater?"
+ },
+ {
+  "exerciseId": "cmvjj4u1q0049icrhiujhd32d",
+  "optionId": "cmvjj4u1v004aicrh2bj2muqv",
+  "label": "4",
+  "feedback": "Correcto: 2/4 amplificada por 2 es 4/8: debe medir 4 octavos.",
+  "feedbackEn": "That's right: 2/4 scaled up by 2 is 4/8: she should measure 4 eighths."
+ },
+ {
+  "exerciseId": "cmvjj4u1q0049icrhiujhd32d",
+  "optionId": "cmvjj4u1v004bicrhlp2unux6",
+  "label": "2",
+  "feedback": "Si cambias a octavos, el numerador también cambia: 2 × 2.",
+  "feedbackEn": "If you change to eighths, the numerator changes too: 2 × 2."
+ },
+ {
+  "exerciseId": "cmvjj4u1q0049icrhiujhd32d",
+  "optionId": "cmvjj4u1v004cicrhlogi07ki",
+  "label": "6",
+  "feedback": "Se sumó 4 en vez de multiplicar por 2.",
+  "feedbackEn": "4 was added instead of multiplying by 2."
+ },
+ {
+  "exerciseId": "cmvjj4u1q0049icrhiujhd32d",
+  "optionId": "cmvjj4u1v004dicrhluli9j2y",
+  "label": "8",
+  "feedback": "8 octavos sería la taza entera. 2/4 es la mitad de la taza.",
+  "feedbackEn": "8 eighths would be the whole cup. 2/4 is half a cup."
+ },
+ {
+  "exerciseId": "cmvjjdw340009nirhmsg9wbxl",
+  "optionId": "cmvjjdw3b000anirhpsc0p1ep",
+  "label": "2 1/4",
+  "feedback": "Correcto: hay 2 enteros completos y 1/4 del tercero: 2 1/4.",
+  "feedbackEn": "That's right: there are 2 full wholes and 1/4 of the third: 2 1/4."
+ },
+ {
+  "exerciseId": "cmvjjdw340009nirhmsg9wbxl",
+  "optionId": "cmvjjdw3b000bnirhqiy6gu2m",
+  "label": "3 1/4",
+  "feedback": "La tercera barra no está completa: cuenta solo las barras totalmente pintadas como enteros.",
+  "feedbackEn": "The third bar isn't full: only count the fully colored bars as wholes."
+ },
+ {
+  "exerciseId": "cmvjjdw340009nirhmsg9wbxl",
+  "optionId": "cmvjjdw3b000cnirhuew025x9",
+  "label": "1/4",
+  "feedback": "Faltan los 2 enteros completos. El número mixto incluye los enteros y la parte.",
+  "feedbackEn": "The 2 full wholes are missing. A mixed number includes the wholes and the part."
+ },
+ {
+  "exerciseId": "cmvjjdw340009nirhmsg9wbxl",
+  "optionId": "cmvjjdw3b000dnirhe5t7p56o",
+  "label": "2 1/3",
+  "feedback": "El denominador es en cuántas partes se divide cada entero (4), no las partes sin pintar.",
+  "feedbackEn": "The denominator is how many parts each whole has (4), not the uncolored parts."
+ },
+ {
+  "exerciseId": "cmvjjdw4g000enirhblekssje",
+  "optionId": "cmvjjdw4l000fnirhrt3q8x9u",
+  "label": "9/4",
+  "feedback": "Correcto: hay 4 + 4 + 1 = 9 cuartos pintados: 9/4.",
+  "feedbackEn": "That's right: 4 + 4 + 1 = 9 fourths are colored: 9/4."
+ },
+ {
+  "exerciseId": "cmvjjdw4g000enirhblekssje",
+  "optionId": "cmvjjdw4l000gnirhthbl0skq",
+  "label": "9/12",
+  "feedback": "El denominador es en cuántas partes se divide UN entero (4), no el total de partes de las 3 barras.",
+  "feedbackEn": "The denominator is how many parts ONE whole has (4), not all the parts of the 3 bars."
+ },
+ {
+  "exerciseId": "cmvjjdw4g000enirhblekssje",
+  "optionId": "cmvjjdw4l000hnirh7ixijsws",
+  "label": "4/9",
+  "feedback": "Revisa el orden: arriba van las partes pintadas (9) y abajo las partes de cada entero (4).",
+  "feedbackEn": "Check the order: the colored parts (9) go on top and the parts of each whole (4) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjjdw4g000enirhblekssje",
+  "optionId": "cmvjjdw4l000inirh7b2bv6j6",
+  "label": "8/4",
+  "feedback": "Faltó contar la parte pintada de la tercera barra.",
+  "feedbackEn": "The colored part of the third bar wasn't counted."
+ },
+ {
+  "exerciseId": "cmvjjdw5r000jnirh13uhp2jo",
+  "optionId": "cmvjjdw5v000knirhkdbag9k2",
+  "label": "7/5",
+  "feedback": "Correcto: en 7/5 el numerador (7) es mayor que el denominador (5): es más que un entero.",
+  "feedbackEn": "That's right: in 7/5 the numerator (7) is greater than the denominator (5): it's more than one whole."
+ },
+ {
+  "exerciseId": "cmvjjdw5r000jnirh13uhp2jo",
+  "optionId": "cmvjjdw5v000lnirhth60lu4s",
+  "label": "5/7",
+  "feedback": "5/7 es 7/5 dada vuelta: así el numerador queda menor y es una fracción propia. En una impropia, el número de arriba es el mayor.",
+  "feedbackEn": "5/7 is 7/5 flipped: that makes the numerator smaller, so it's proper. In an improper fraction, the top number is the greater one."
+ },
+ {
+  "exerciseId": "cmvjjdw5r000jnirh13uhp2jo",
+  "optionId": "cmvjjdw5v000mnirhqfeb0peq",
+  "label": "3/8",
+  "feedback": "3/8 es menos que un entero: es propia.",
+  "feedbackEn": "3/8 is less than one whole: it's proper."
+ },
+ {
+  "exerciseId": "cmvjjdw5r000jnirh13uhp2jo",
+  "optionId": "cmvjjdw5v000nnirhd0xhvn30",
+  "label": "2/9",
+  "feedback": "2/9 es menos que un entero: es propia.",
+  "feedbackEn": "2/9 is less than one whole: it's proper."
+ },
+ {
+  "exerciseId": "cmvjjdw6z000onirhvef2j4c1",
+  "optionId": "cmvjjdw74000pnirhfxs3ocw7",
+  "label": "8/5",
+  "feedback": "Correcto: 1 entero = 5/5, y 5/5 + 3/5 = 8/5.",
+  "feedbackEn": "That's right: 1 whole = 5/5, and 5/5 + 3/5 = 8/5."
+ },
+ {
+  "exerciseId": "cmvjjdw6z000onirhvef2j4c1",
+  "optionId": "cmvjjdw74000qnirhd96284j2",
+  "label": "4/5",
+  "feedback": "El entero no vale 1 quinto: vale 5 quintos.",
+  "feedbackEn": "The whole isn't worth 1 fifth: it's worth 5 fifths."
+ },
+ {
+  "exerciseId": "cmvjjdw6z000onirhvef2j4c1",
+  "optionId": "cmvjjdw74000rnirh48h9a3cx",
+  "label": "3/5",
+  "feedback": "Faltó el entero. 1 3/5 es un entero más 3/5.",
+  "feedbackEn": "The whole is missing. 1 3/5 is one whole plus 3/5."
+ },
+ {
+  "exerciseId": "cmvjjdw6z000onirhvef2j4c1",
+  "optionId": "cmvjjdw74000snirhp7zqp7hh",
+  "label": "13/5",
+  "feedback": "No se juntan los dígitos 1 y 3: el entero son 5 quintos.",
+  "feedbackEn": "The digits 1 and 3 aren't put together: the whole is 5 fifths."
+ },
+ {
+  "exerciseId": "cmvjjdw89000tnirhj2dkhqn1",
+  "optionId": "cmvjjdw8g000unirhmvaga67t",
+  "label": "2 1/3",
+  "feedback": "Correcto: 7 tercios = 6 tercios (2 enteros) + 1 tercio: 2 1/3.",
+  "feedbackEn": "That's right: 7 thirds = 6 thirds (2 wholes) + 1 third: 2 1/3."
+ },
+ {
+  "exerciseId": "cmvjjdw89000tnirhj2dkhqn1",
+  "optionId": "cmvjjdw8g000vnirhhq5lgmn0",
+  "label": "1 4/3",
+  "feedback": "Vale lo mismo, pero en un número mixto la fracción debe ser menor que 1: 4/3 es más que un entero, así que saca otro entero.",
+  "feedbackEn": "It's worth the same, but in a mixed number the fraction must be less than 1: 4/3 is more than one whole, so take out another whole."
+ },
+ {
+  "exerciseId": "cmvjjdw89000tnirhj2dkhqn1",
+  "optionId": "cmvjjdw8g000wnirhf4u7hzhn",
+  "label": "2 1/7",
+  "feedback": "El denominador sigue siendo 3: siguen siendo tercios.",
+  "feedbackEn": "The denominator is still 3: they're still thirds."
+ },
+ {
+  "exerciseId": "cmvjjdw89000tnirhj2dkhqn1",
+  "optionId": "cmvjjdw8g000xnirhf0dx0ast",
+  "label": "1 1/3",
+  "feedback": "En 7 tercios caben 2 enteros, no 1. Cuenta de 3 en 3.",
+  "feedbackEn": "2 wholes fit in 7 thirds, not 1. Count by 3s."
+ },
+ {
+  "exerciseId": "cmvjjdw9h000ynirhwcdnwhss",
+  "optionId": "cmvjjdw9m000znirhk7rau4sr",
+  "label": "6",
+  "feedback": "Correcto: cada entero son 2 medios: 3 × 2 = 6 medios.",
+  "feedbackEn": "That's right: each whole is 2 halves: 3 × 2 = 6 halves."
+ },
+ {
+  "exerciseId": "cmvjjdw9h000ynirhwcdnwhss",
+  "optionId": "cmvjjdw9m0010nirh8f7c20ge",
+  "label": "3",
+  "feedback": "3 son los enteros. Cada entero tiene 2 medios.",
+  "feedbackEn": "3 is the number of wholes. Each whole has 2 halves."
+ },
+ {
+  "exerciseId": "cmvjjdw9h000ynirhwcdnwhss",
+  "optionId": "cmvjjdw9m0011nirhkjgmlxjk",
+  "label": "5",
+  "feedback": "Se sumó 3 + 2. Cada entero tiene 2 medios: multiplica.",
+  "feedbackEn": "3 + 2 was added. Each whole has 2 halves: multiply."
+ },
+ {
+  "exerciseId": "cmvjjdw9h000ynirhwcdnwhss",
+  "optionId": "cmvjjdw9m0012nirhqau02pwl",
+  "label": "9",
+  "feedback": "Cada entero tiene 2 medios, no 3.",
+  "feedbackEn": "Each whole has 2 halves, not 3."
+ },
+ {
+  "exerciseId": "cmvjjdwap0013nirhujpbrzor",
+  "optionId": "cmvjjdwat0014nirhtumctgqv",
+  "label": "1 1/4",
+  "feedback": "Correcto: el punto está 1 salto después del 1, y cada entero tiene 4 saltos: 1 1/4.",
+  "feedbackEn": "That's right: the dot is 1 jump past 1, and each whole has 4 jumps: 1 1/4."
+ },
+ {
+  "exerciseId": "cmvjjdwap0013nirhujpbrzor",
+  "optionId": "cmvjjdwat0015nirhd4b6jyr1",
+  "label": "1 1/5",
+  "feedback": "Cuenta saltos, no marcas: entre 1 y 2 hay 4 saltos (y 5 marcas).",
+  "feedbackEn": "Count jumps, not marks: there are 4 jumps between 1 and 2 (and 5 marks)."
+ },
+ {
+  "exerciseId": "cmvjjdwap0013nirhujpbrzor",
+  "optionId": "cmvjjdwat0016nirhjlwkn6z7",
+  "label": "2 1/4",
+  "feedback": "El punto está antes del 2: el entero completo es 1.",
+  "feedbackEn": "The dot is before 2: the whole number is 1."
+ },
+ {
+  "exerciseId": "cmvjjdwap0013nirhujpbrzor",
+  "optionId": "cmvjjdwat0017nirhlnsdvaiw",
+  "label": "1/4",
+  "feedback": "Falta el entero: el punto está después del 1.",
+  "feedbackEn": "The whole is missing: the dot is past 1."
+ },
+ {
+  "exerciseId": "cmvjjdwby0018nirh94shrnz4",
+  "optionId": "cmvjjdwc30019nirhgoj6im8t",
+  "label": "2 1/2",
+  "feedback": "Correcto: 5 medios = 4 medios (2 enteros) + 1 medio: 2 1/2.",
+  "feedbackEn": "That's right: 5 halves = 4 halves (2 wholes) + 1 half: 2 1/2."
+ },
+ {
+  "exerciseId": "cmvjjdwby0018nirh94shrnz4",
+  "optionId": "cmvjjdwc3001anirhl2rral1s",
+  "label": "1 3/2",
+  "feedback": "Vale lo mismo, pero en un número mixto la fracción debe ser menor que 1: 3/2 es más que un entero, así que saca otro entero.",
+  "feedbackEn": "It's worth the same, but in a mixed number the fraction must be less than 1: 3/2 is more than one whole, so take out another whole."
+ },
+ {
+  "exerciseId": "cmvjjdwby0018nirh94shrnz4",
+  "optionId": "cmvjjdwc3001bnirhoecxwav2",
+  "label": "5 1/2",
+  "feedback": "El 5 no son enteros: son medios. 5 medios no llegan a 5 enteros.",
+  "feedbackEn": "The 5 isn't wholes: it's halves. 5 halves don't make 5 wholes."
+ },
+ {
+  "exerciseId": "cmvjjdwby0018nirh94shrnz4",
+  "optionId": "cmvjjdwc3001cnirh75g1z6wa",
+  "label": "2 1/5",
+  "feedback": "El denominador sigue siendo 2: siguen siendo medios.",
+  "feedbackEn": "The denominator is still 2: they're still halves."
+ },
+ {
+  "exerciseId": "cmvjjdwd6001dnirh2ro3gqpn",
+  "optionId": "cmvjjdwda001enirhejrnqcx7",
+  "label": "6",
+  "feedback": "Correcto: cada entero son 3 tercios: 2 × 3 = 6 tercios.",
+  "feedbackEn": "That's right: each whole is 3 thirds: 2 × 3 = 6 thirds."
+ },
+ {
+  "exerciseId": "cmvjjdwd6001dnirh2ro3gqpn",
+  "optionId": "cmvjjdwda001fnirhtv7a05e8",
+  "label": "2",
+  "feedback": "2 son los enteros. Cada entero tiene 3 tercios.",
+  "feedbackEn": "2 is the number of wholes. Each whole has 3 thirds."
+ },
+ {
+  "exerciseId": "cmvjjdwd6001dnirh2ro3gqpn",
+  "optionId": "cmvjjdwda001gnirhgoofcgb4",
+  "label": "3",
+  "feedback": "3 tercios forman solo 1 entero. Para 2 enteros hace falta el doble.",
+  "feedbackEn": "3 thirds make only 1 whole. 2 wholes need double that."
+ },
+ {
+  "exerciseId": "cmvjjdwd6001dnirh2ro3gqpn",
+  "optionId": "cmvjjdwda001hnirh6xlw9j9i",
+  "label": "5",
+  "feedback": "Se sumó 2 + 3. Cada entero tiene 3 tercios: multiplica.",
+  "feedbackEn": "2 + 3 was added. Each whole has 3 thirds: multiply."
+ },
+ {
+  "exerciseId": "cmvjjdwed001inirhbryh92ad",
+  "optionId": "cmvjjdweh001jnirhhz95na1s",
+  "label": "Cuántos enteros completos hay",
+  "feedback": "Correcto: el 3 es la parte entera: hay 3 enteros completos y además 2/5.",
+  "feedbackEn": "That's right: the 3 is the whole-number part: there are 3 full wholes plus 2/5."
+ },
+ {
+  "exerciseId": "cmvjjdwed001inirhbryh92ad",
+  "optionId": "cmvjjdweh001knirh4hcsculr",
+  "label": "Cuántas partes se toman",
+  "feedback": "Las partes que se toman las dice el 2 (el numerador de la fracción).",
+  "feedbackEn": "The parts taken are given by the 2 (the numerator of the fraction)."
+ },
+ {
+  "exerciseId": "cmvjjdwed001inirhbryh92ad",
+  "optionId": "cmvjjdweh001lnirhjxsaioe8",
+  "label": "En cuántas partes se divide el entero",
+  "feedback": "Eso lo dice el 5, el denominador.",
+  "feedbackEn": "That's what the 5, the denominator, tells."
+ },
+ {
+  "exerciseId": "cmvjjdwed001inirhbryh92ad",
+  "optionId": "cmvjjdweh001mnirhbto7acp6",
+  "label": "Cuántas partes sobran",
+  "feedback": "El 3 no cuenta partes: cuenta enteros completos.",
+  "feedbackEn": "The 3 doesn't count parts: it counts full wholes."
+ },
+ {
+  "exerciseId": "cmvjjdwfk001nnirhq5clcx9k",
+  "optionId": "cmvjjdwfp001onirhz77szc4u",
+  "label": "8/3",
+  "feedback": "Correcto: hay 3 + 3 + 2 = 8 tercios pintados: 8/3.",
+  "feedbackEn": "That's right: 3 + 3 + 2 = 8 thirds are colored: 8/3."
+ },
+ {
+  "exerciseId": "cmvjjdwfk001nnirhq5clcx9k",
+  "optionId": "cmvjjdwfp001pnirh73bmxet1",
+  "label": "8/9",
+  "feedback": "El denominador es en cuántas partes se divide UN entero (3), no el total de partes.",
+  "feedbackEn": "The denominator is how many parts ONE whole has (3), not all the parts."
+ },
+ {
+  "exerciseId": "cmvjjdwfk001nnirhq5clcx9k",
+  "optionId": "cmvjjdwfp001qnirhloortfxj",
+  "label": "2 2/3",
+  "feedback": "2 2/3 es el mismo número, pero escrito como número mixto. Se pide fracción impropia.",
+  "feedbackEn": "2 2/3 is the same number, but as a mixed number. An improper fraction is asked for."
+ },
+ {
+  "exerciseId": "cmvjjdwfk001nnirhq5clcx9k",
+  "optionId": "cmvjjdwfp001rnirh06is64lt",
+  "label": "6/3",
+  "feedback": "Faltó contar las 2 partes pintadas de la última barra.",
+  "feedbackEn": "The 2 colored parts of the last bar weren't counted."
+ },
+ {
+  "exerciseId": "cmvjjdwgs001snirhv2fj7wvr",
+  "optionId": "cmvjjdwgw001tnirha6n2qqce",
+  "label": "11/4",
+  "feedback": "Correcto: 2 enteros = 8/4, y 8/4 + 3/4 = 11/4.",
+  "feedbackEn": "That's right: 2 wholes = 8/4, and 8/4 + 3/4 = 11/4."
+ },
+ {
+  "exerciseId": "cmvjjdwgs001snirhv2fj7wvr",
+  "optionId": "cmvjjdwgw001unirh54l74yum",
+  "label": "5/4",
+  "feedback": "Los enteros no valen 1 cuarto cada uno: cada entero son 4 cuartos.",
+  "feedbackEn": "The wholes aren't worth 1 fourth each: each whole is 4 fourths."
+ },
+ {
+  "exerciseId": "cmvjjdwgs001snirhv2fj7wvr",
+  "optionId": "cmvjjdwgw001vnirhncyzis2r",
+  "label": "9/4",
+  "feedback": "Se multiplicó 2 × 3. Los enteros se multiplican por el denominador: 2 × 4.",
+  "feedbackEn": "2 × 3 was multiplied. Wholes are multiplied by the denominator: 2 × 4."
+ },
+ {
+  "exerciseId": "cmvjjdwgs001snirhv2fj7wvr",
+  "optionId": "cmvjjdwgw001wnirhdyv0yeok",
+  "label": "23/4",
+  "feedback": "No se juntan los dígitos 2 y 3: los 2 enteros son 8 cuartos.",
+  "feedbackEn": "The digits 2 and 3 aren't put together: the 2 wholes are 8 fourths."
+ },
+ {
+  "exerciseId": "cmvjjdwib001xnirhe5nn8uxa",
+  "optionId": "cmvjjdwig001ynirhogjfmn7f",
+  "label": "3 2/5",
+  "feedback": "Correcto: 17 = 15 + 2: 3 enteros (15 quintos) y sobran 2 quintos.",
+  "feedbackEn": "That's right: 17 = 15 + 2: 3 wholes (15 fifths) and 2 fifths left."
+ },
+ {
+  "exerciseId": "cmvjjdwib001xnirhe5nn8uxa",
+  "optionId": "cmvjjdwig001znirhn4xm7546",
+  "label": "2 7/5",
+  "feedback": "Vale lo mismo, pero en un número mixto la fracción debe ser menor que 1: 7/5 es más que un entero, así que saca otro entero.",
+  "feedbackEn": "It's worth the same, but in a mixed number the fraction must be less than 1: 7/5 is more than one whole, so take out another whole."
+ },
+ {
+  "exerciseId": "cmvjjdwib001xnirhe5nn8uxa",
+  "optionId": "cmvjjdwig0020nirhv5cxxtf5",
+  "label": "3 5/2",
+  "feedback": "Revisa la fracción: sobran 2 quintos, o sea 2/5 (arriba 2, abajo 5).",
+  "feedbackEn": "Check the fraction: 2 fifths are left, so 2/5 (2 on top, 5 on the bottom)."
+ },
+ {
+  "exerciseId": "cmvjjdwib001xnirhe5nn8uxa",
+  "optionId": "cmvjjdwig0021nirheclvosw0",
+  "label": "17 1/5",
+  "feedback": "17 son quintos, no enteros. Agrupa de 5 en 5.",
+  "feedbackEn": "17 is fifths, not wholes. Group them in 5s."
+ },
+ {
+  "exerciseId": "cmvjjdwjj0022nirhyq51ho72",
+  "optionId": "cmvjjdwjo0023nirhkvqvvq57",
+  "label": "1 1/2, 7/4, 2",
+  "feedback": "Correcto: en cuartos: 1 1/2 = 6/4, 7/4 y 2 = 8/4. El orden es 1 1/2, 7/4, 2.",
+  "feedbackEn": "That's right: in fourths: 1 1/2 = 6/4, 7/4 and 2 = 8/4. The order is 1 1/2, 7/4, 2."
+ },
+ {
+  "exerciseId": "cmvjjdwjj0022nirhyq51ho72",
+  "optionId": "cmvjjdwjo0024nirhlv3yn2r5",
+  "label": "7/4, 1 1/2, 2",
+  "feedback": "7/4 es más que un entero y medio: 7/4 = 1 3/4. Escríbelos de la misma forma.",
+  "feedbackEn": "7/4 is more than one and a half: 7/4 = 1 3/4. Write them the same way."
+ },
+ {
+  "exerciseId": "cmvjjdwjj0022nirhyq51ho72",
+  "optionId": "cmvjjdwjo0025nirh6rueqezk",
+  "label": "2, 7/4, 1 1/2",
+  "feedback": "Ese orden va de mayor a menor. La pregunta pide de menor a mayor.",
+  "feedbackEn": "That order goes greatest to least. The question asks least to greatest."
+ },
+ {
+  "exerciseId": "cmvjjdwjj0022nirhyq51ho72",
+  "optionId": "cmvjjdwjo0026nirhss1au0d8",
+  "label": "1 1/2, 2, 7/4",
+  "feedback": "7/4 es menos que 2 (2 = 8/4).",
+  "feedbackEn": "7/4 is less than 2 (2 = 8/4)."
+ },
+ {
+  "exerciseId": "cmvjjdwkp0027nirh5dc2nnl5",
+  "optionId": "cmvjjdwku0028nirhmaoamhy1",
+  "label": "2 1/2",
+  "feedback": "Correcto: 9/4 = 2 1/4, y 2 1/2 = 2 2/4, que es más.",
+  "feedbackEn": "That's right: 9/4 = 2 1/4, and 2 1/2 = 2 2/4, which is more."
+ },
+ {
+  "exerciseId": "cmvjjdwkp0027nirh5dc2nnl5",
+  "optionId": "cmvjjdwku0029nirh7rc20agr",
+  "label": "9/4",
+  "feedback": "9 parece grande, pero 9/4 son 2 enteros y 1/4. Escríbelo como número mixto.",
+  "feedbackEn": "9 looks big, but 9/4 is 2 wholes and 1/4. Write it as a mixed number."
+ },
+ {
+  "exerciseId": "cmvjjdwkp0027nirh5dc2nnl5",
+  "optionId": "cmvjjdwku002anirhvlm2uw7g",
+  "label": "Son iguales",
+  "feedback": "Revisa: 9/4 = 2 1/4, no 2 1/2.",
+  "feedbackEn": "Check: 9/4 = 2 1/4, not 2 1/2."
+ },
+ {
+  "exerciseId": "cmvjjdwkp0027nirh5dc2nnl5",
+  "optionId": "cmvjjdwku002bnirhxsv3viwd",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: escribe los dos números de la misma forma (los dos como fracción o los dos como número mixto).",
+  "feedbackEn": "You can tell: write both numbers the same way (both as fractions or both as mixed numbers)."
+ },
+ {
+  "exerciseId": "cmvjjdwm2002cnirhhgkfadap",
+  "optionId": "cmvjjdwm7002dnirhiquqxova",
+  "label": "2 tazas y 1/2 taza",
+  "feedback": "Correcto: 5/2 = 2 1/2: 2 tazas enteras y media taza más.",
+  "feedbackEn": "That's right: 5/2 = 2 1/2: 2 full cups and half a cup more."
+ },
+ {
+  "exerciseId": "cmvjjdwm2002cnirhhgkfadap",
+  "optionId": "cmvjjdwm7002enirhl0jbr0jr",
+  "label": "5 tazas y 1/2 taza",
+  "feedback": "Las 5 son medias tazas, no tazas enteras.",
+  "feedbackEn": "The 5 is half cups, not full cups."
+ },
+ {
+  "exerciseId": "cmvjjdwm2002cnirhhgkfadap",
+  "optionId": "cmvjjdwm7002fnirhrimoz5pw",
+  "label": "2 tazas y 1/5 de taza",
+  "feedback": "Lo que sobra es 1 medio, no 1 quinto: siguen siendo medios.",
+  "feedbackEn": "What's left is 1 half, not 1 fifth: they're still halves."
+ },
+ {
+  "exerciseId": "cmvjjdwm2002cnirhhgkfadap",
+  "optionId": "cmvjjdwm7002gnirh1ph0gswf",
+  "label": "1 taza y 3/2 tazas",
+  "feedback": "Vale lo mismo, pero 3/2 de taza es más que una taza: saca otra taza entera para decir cuántas tazas enteras son.",
+  "feedbackEn": "It's worth the same, but 3/2 cups is more than one cup: take out another full cup to say how many full cups there are."
+ },
+ {
+  "exerciseId": "cmvjjdwn9002hnirhvq0s30gn",
+  "optionId": "cmvjjdwne002inirh5dqquu75",
+  "label": "2 1/4",
+  "feedback": "Correcto: 9 cuartos = 8 cuartos (2 pizzas) + 1 cuarto: 2 1/4 pizzas.",
+  "feedbackEn": "That's right: 9 fourths = 8 fourths (2 pizzas) + 1 fourth: 2 1/4 pizzas."
+ },
+ {
+  "exerciseId": "cmvjjdwn9002hnirhvq0s30gn",
+  "optionId": "cmvjjdwne002jnirhm1pho82n",
+  "label": "9/12",
+  "feedback": "El denominador es en cuántas partes se corta UNA pizza (4), no el total de partes.",
+  "feedbackEn": "The denominator is how many parts ONE pizza has (4), not all the parts."
+ },
+ {
+  "exerciseId": "cmvjjdwn9002hnirhvq0s30gn",
+  "optionId": "cmvjjdwne002knirhoa96cyq1",
+  "label": "3/4",
+  "feedback": "3/4 es lo que quedó (3 partes). La pregunta es por lo que se comió.",
+  "feedbackEn": "3/4 is what's left (3 parts). The question asks what was eaten."
+ },
+ {
+  "exerciseId": "cmvjjdwn9002hnirhvq0s30gn",
+  "optionId": "cmvjjdwne002lnirho7pe7s8l",
+  "label": "2 1/9",
+  "feedback": "Lo que sobra es 1 cuarto: el denominador sigue siendo 4.",
+  "feedbackEn": "What's left is 1 fourth: the denominator is still 4."
+ },
+ {
+  "exerciseId": "cmvjjdwoi002mnirhxxedlmex",
+  "optionId": "cmvjjdwon002nnirhj20vcwvd",
+  "label": "7/3",
+  "feedback": "Correcto: cada salto es 1/3 y el punto está a 7 saltos del 0: 7/3.",
+  "feedbackEn": "That's right: each jump is 1/3 and the dot is 7 jumps from 0: 7/3."
+ },
+ {
+  "exerciseId": "cmvjjdwoi002mnirhxxedlmex",
+  "optionId": "cmvjjdwon002onirhpfa07tw8",
+  "label": "7/9",
+  "feedback": "El denominador es en cuántos saltos se divide UN entero (3), no toda la recta.",
+  "feedbackEn": "The denominator is how many jumps ONE whole has (3), not the whole line."
+ },
+ {
+  "exerciseId": "cmvjjdwoi002mnirhxxedlmex",
+  "optionId": "cmvjjdwon002pnirh1hm86gab",
+  "label": "1/3",
+  "feedback": "1/3 es solo la parte después del 2. Cuenta todos los saltos desde el 0.",
+  "feedbackEn": "1/3 is only the part past 2. Count all the jumps from 0."
+ },
+ {
+  "exerciseId": "cmvjjdwoi002mnirhxxedlmex",
+  "optionId": "cmvjjdwon002qnirhz2it55qe",
+  "label": "7/4",
+  "feedback": "Cuenta saltos, no marcas: cada entero tiene 3 saltos (y 4 marcas).",
+  "feedbackEn": "Count jumps, not marks: each whole has 3 jumps (and 4 marks)."
+ },
+ {
+  "exerciseId": "cmvjjdwpp002rnirhq8a8o3j1",
+  "optionId": "cmvjjdwpu002snirha2e6cb9v",
+  "label": "1 queque entero y 3 de 4 trozos iguales de otro queque",
+  "feedback": "Correcto: 1 entero y 3/4 de otro: 1 3/4.",
+  "feedbackEn": "That's right: 1 whole and 3/4 of another: 1 3/4."
+ },
+ {
+  "exerciseId": "cmvjjdwpp002rnirhq8a8o3j1",
+  "optionId": "cmvjjdwpu002tnirh8ljbks5j",
+  "label": "3 queques enteros y 1 de 4 trozos iguales de otro",
+  "feedback": "Ahí se cambió el entero (3) por el numerador (1). Eso sería 3 1/4.",
+  "feedbackEn": "There the whole (3) was swapped with the numerator (1). That would be 3 1/4."
+ },
+ {
+  "exerciseId": "cmvjjdwpp002rnirhq8a8o3j1",
+  "optionId": "cmvjjdwpu002unirhof0n7vyh",
+  "label": "1 queque entero y 3 trozos de otro cortado en 3 partes",
+  "feedback": "3 trozos de 3 son otro queque entero: eso sería 2.",
+  "feedbackEn": "3 pieces of 3 make another whole cake: that would be 2."
+ },
+ {
+  "exerciseId": "cmvjjdwpp002rnirhq8a8o3j1",
+  "optionId": "cmvjjdwpu002vnirhapgk0ql7",
+  "label": "1 queque cortado en 4 trozos y se usan 3",
+  "feedback": "Eso es solo 3/4. Falta el queque entero.",
+  "feedbackEn": "That's only 3/4. The whole cake is missing."
+ },
+ {
+  "exerciseId": "cmvjjdwqz002wnirh6gezc2uq",
+  "optionId": "cmvjjdwr5002xnirhmdw55dyr",
+  "label": "Entre 2 y 3",
+  "feedback": "Correcto: 11/4 = 2 3/4: está después del 2 y antes del 3.",
+  "feedbackEn": "That's right: 11/4 = 2 3/4: it's past 2 and before 3."
+ },
+ {
+  "exerciseId": "cmvjjdwqz002wnirh6gezc2uq",
+  "optionId": "cmvjjdwr5002ynirh27wnx6l3",
+  "label": "Entre 11 y 4",
+  "feedback": "11/4 no es un número entre 11 y 4: son 11 cuartos.",
+  "feedbackEn": "11/4 isn't a number between 11 and 4: it's 11 fourths."
+ },
+ {
+  "exerciseId": "cmvjjdwqz002wnirh6gezc2uq",
+  "optionId": "cmvjjdwr5002znirhhpdxd2z8",
+  "label": "Entre 0 y 1",
+  "feedback": "11/4 es impropia: el numerador es mayor, así que es más que un entero.",
+  "feedbackEn": "11/4 is improper: the numerator is greater, so it's more than one whole."
+ },
+ {
+  "exerciseId": "cmvjjdwqz002wnirh6gezc2uq",
+  "optionId": "cmvjjdwr50030nirhkzzr9nxy",
+  "label": "Entre 3 y 4",
+  "feedback": "En 11 cuartos caben 2 enteros (8 cuartos), no 3 (12 cuartos).",
+  "feedbackEn": "2 wholes (8 fourths) fit in 11 fourths, not 3 (12 fourths)."
+ },
+ {
+  "exerciseId": "cmvjjdws80031nirh42zi7bc1",
+  "optionId": "cmvjjdwsd0032nirhh3aq4xhl",
+  "label": "No: 5/3 es más que un entero (1 2/3)",
+  "feedback": "Correcto: 5 tercios son 3 tercios (1 entero) y 2 más: 1 2/3, más que 1.",
+  "feedbackEn": "That's right: 5 thirds is 3 thirds (1 whole) plus 2 more: 1 2/3, more than 1."
+ },
+ {
+  "exerciseId": "cmvjjdws80031nirh42zi7bc1",
+  "optionId": "cmvjjdwsd0033nirh5xzj2tpe",
+  "label": "Sí: las fracciones siempre son menores que 1",
+  "feedback": "Las fracciones impropias, como 5/3, son mayores o iguales que 1.",
+  "feedbackEn": "Improper fractions, like 5/3, are greater than or equal to 1."
+ },
+ {
+  "exerciseId": "cmvjjdws80031nirh42zi7bc1",
+  "optionId": "cmvjjdwsd0034nirhm4995jkk",
+  "label": "Sí: 5/3 es lo mismo que 3/5",
+  "feedback": "5/3 y 3/5 no son lo mismo: el orden importa.",
+  "feedbackEn": "5/3 and 3/5 aren't the same: the order matters."
+ },
+ {
+  "exerciseId": "cmvjjdws80031nirh42zi7bc1",
+  "optionId": "cmvjjdwsd0035nirhxhtt8mml",
+  "label": "No: 5/3 es igual a 1",
+  "feedback": "1 entero son 3/3. 5/3 tiene 2 tercios más.",
+  "feedbackEn": "1 whole is 3/3. 5/3 has 2 more thirds."
+ },
+ {
+  "exerciseId": "cmvjjdwtj0036nirhykns7yxw",
+  "optionId": "cmvjjdwtp0037nirhmtovuvxg",
+  "label": "Ignacio",
+  "feedback": "Correcto: 2 enteros = 10/5, y 10/5 + 3/5 = 13/5. Fernanda solo juntó los dígitos.",
+  "feedbackEn": "That's right: 2 wholes = 10/5, and 10/5 + 3/5 = 13/5. Fernanda just put the digits together."
+ },
+ {
+  "exerciseId": "cmvjjdwtj0036nirhykns7yxw",
+  "optionId": "cmvjjdwtp0038nirh4x6a74v1",
+  "label": "Fernanda",
+  "feedback": "Fernanda juntó los dígitos 2 y 3. Los 2 enteros son 10 quintos.",
+  "feedbackEn": "Fernanda put the digits 2 and 3 together. The 2 wholes are 10 fifths."
+ },
+ {
+  "exerciseId": "cmvjjdwtj0036nirhykns7yxw",
+  "optionId": "cmvjjdwtp0039nirh62bcddtg",
+  "label": "Los dos",
+  "feedback": "23/5 y 13/5 no son iguales. Solo uno convirtió bien.",
+  "feedbackEn": "23/5 and 13/5 aren't equal. Only one converted correctly."
+ },
+ {
+  "exerciseId": "cmvjjdwtj0036nirhykns7yxw",
+  "optionId": "cmvjjdwtp003anirhhoh37yvq",
+  "label": "Ninguno",
+  "feedback": "Revisa lo de Ignacio: 2 × 5 + 3 = 13. Está bien.",
+  "feedbackEn": "Check Ignacio's work: 2 × 5 + 3 = 13. It's right."
+ },
+ {
+  "exerciseId": "cmvjjdwuu003bnirhp9yel6nz",
+  "optionId": "cmvjjdwuz003cnirhvqty29xu",
+  "label": "7",
+  "feedback": "Correcto: 3 metros = 6 medios, más 1 medio: 7 medios metros (7/2).",
+  "feedbackEn": "That's right: 3 meters = 6 halves, plus 1 half: 7 half meters (7/2)."
+ },
+ {
+  "exerciseId": "cmvjjdwuu003bnirhp9yel6nz",
+  "optionId": "cmvjjdwuz003dnirhkujiyhwy",
+  "label": "6",
+  "feedback": "Faltó sumar el medio metro que sobra.",
+  "feedbackEn": "The extra half meter wasn't added."
+ },
+ {
+  "exerciseId": "cmvjjdwuu003bnirhp9yel6nz",
+  "optionId": "cmvjjdwuz003enirhawke4t5a",
+  "label": "5",
+  "feedback": "Se sumó 3 + 2. Cada metro tiene 2 medios: multiplica 3 × 2 y suma 1.",
+  "feedbackEn": "3 + 2 was added. Each meter has 2 halves: multiply 3 × 2 and add 1."
+ },
+ {
+  "exerciseId": "cmvjjdwuu003bnirhp9yel6nz",
+  "optionId": "cmvjjdwuz003fnirh89lgkk74",
+  "label": "31",
+  "feedback": "No se juntan los dígitos 3 y 1: los 3 metros son 6 medios.",
+  "feedbackEn": "The digits 3 and 1 aren't put together: the 3 meters are 6 halves."
+ },
+ {
+  "exerciseId": "cmvjjdww2003gnirhf2m8e2s3",
+  "optionId": "cmvjjdww7003hnirhw4heyakr",
+  "label": "3 botellas y sobra 1/4 L",
+  "feedback": "Correcto: 13/4 = 3 1/4: llena 3 botellas y sobra 1/4 de litro.",
+  "feedbackEn": "That's right: 13/4 = 3 1/4: she fills 3 bottles and 1/4 liter is left."
+ },
+ {
+  "exerciseId": "cmvjjdww2003gnirhf2m8e2s3",
+  "optionId": "cmvjjdww7003inirhbco0e6fb",
+  "label": "13 botellas",
+  "feedback": "Cada vaso es 1/4 de litro, no un litro. Hacen falta 4 vasos por botella.",
+  "feedbackEn": "Each glass is 1/4 liter, not one liter. It takes 4 glasses per bottle."
+ },
+ {
+  "exerciseId": "cmvjjdww2003gnirhf2m8e2s3",
+  "optionId": "cmvjjdww7003jnirhhdnuric9",
+  "label": "3 botellas y sobra 1/13 L",
+  "feedback": "Lo que sobra es 1 vaso de 1/4 de litro: el denominador es 4.",
+  "feedbackEn": "What's left is 1 glass of 1/4 liter: the denominator is 4."
+ },
+ {
+  "exerciseId": "cmvjjdww2003gnirhf2m8e2s3",
+  "optionId": "cmvjjdww7003knirhcfbycwi4",
+  "label": "4 botellas y sobra 1/4 L",
+  "feedback": "Para 4 botellas harían falta 16 vasos. Con 13 alcanza para 3.",
+  "feedbackEn": "4 bottles would need 16 glasses. 13 is enough for 3."
+ },
+ {
+  "exerciseId": "cmvjjdwx9003lnirh7t75884o",
+  "optionId": "cmvjjdwxe003mnirhcul70z25",
+  "label": "12/3",
+  "feedback": "Correcto: 4 enteros = 4 × 3 = 12 tercios: 12/3.",
+  "feedbackEn": "That's right: 4 wholes = 4 × 3 = 12 thirds: 12/3."
+ },
+ {
+  "exerciseId": "cmvjjdwx9003lnirh7t75884o",
+  "optionId": "cmvjjdwxe003nnirhegz4doz5",
+  "label": "4/12",
+  "feedback": "4/12 es menos que un entero. Revisa el orden: 12 tercios es 12/3.",
+  "feedbackEn": "4/12 is less than one whole. Check the order: 12 thirds is 12/3."
+ },
+ {
+  "exerciseId": "cmvjjdwx9003lnirh7t75884o",
+  "optionId": "cmvjjdwxe003onirhek2jdunv",
+  "label": "7/3",
+  "feedback": "Se sumó 4 + 3. Cada entero son 3 tercios: multiplica.",
+  "feedbackEn": "4 + 3 was added. Each whole is 3 thirds: multiply."
+ },
+ {
+  "exerciseId": "cmvjjdwx9003lnirh7t75884o",
+  "optionId": "cmvjjdwxe003pnirhv7dunk42",
+  "label": "16/3",
+  "feedback": "Revisa la multiplicación: 4 × 3 = 12, no 16.",
+  "feedbackEn": "Check the multiplication: 4 × 3 = 12, not 16."
+ },
+ {
+  "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+  "optionId": "cmvjjdwyo003rnirh2hn7pwch",
+  "label": "1 3/5 = 8/5",
+  "feedback": "Correcto: 1 entero y 3/5: 1 3/5, que son 5 + 3 = 8 quintos.",
+  "feedbackEn": "That's right: 1 whole and 3/5: 1 3/5, which is 5 + 3 = 8 fifths."
+ },
+ {
+  "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+  "optionId": "cmvjjdwyo003snirh1bv500fg",
+  "label": "1 3/5 = 4/5",
+  "feedback": "El entero no vale 1 quinto: vale 5 quintos.",
+  "feedbackEn": "The whole isn't worth 1 fifth: it's worth 5 fifths."
+ },
+ {
+  "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+  "optionId": "cmvjjdwyo003tnirhk4xyo8dm",
+  "label": "1 3/5 = 13/5",
+  "feedback": "No se juntan los dígitos: el entero son 5 quintos.",
+  "feedbackEn": "The digits aren't put together: the whole is 5 fifths."
+ },
+ {
+  "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+  "optionId": "cmvjjdwyo003unirh6kqrm88u",
+  "label": "3/5 = 8/5",
+  "feedback": "3/5 no es igual a 8/5. Falta el entero completo en el número mixto.",
+  "feedbackEn": "3/5 doesn't equal 8/5. The full whole is missing from the mixed number."
+ },
+ {
+  "exerciseId": "cmvjjdwzt003vnirhlvde7oyx",
+  "optionId": "cmvjjdwzy003wnirh898ma3al",
+  "label": "Ana y Caro",
+  "feedback": "Correcto: 7/4 = 1 3/4: Ana y Caro corrieron lo mismo.",
+  "feedbackEn": "That's right: 7/4 = 1 3/4: Ana and Caro ran the same distance."
+ },
+ {
+  "exerciseId": "cmvjjdwzt003vnirhlvde7oyx",
+  "optionId": "cmvjjdwzy003xnirhdi0xuq0u",
+  "label": "Ana y Beto",
+  "feedback": "1 1/2 = 1 2/4, no 1 3/4. Revisa la conversión.",
+  "feedbackEn": "1 1/2 = 1 2/4, not 1 3/4. Check the conversion."
+ },
+ {
+  "exerciseId": "cmvjjdwzt003vnirhlvde7oyx",
+  "optionId": "cmvjjdwzy003ynirhwg1u7du7",
+  "label": "Beto y Caro",
+  "feedback": "1 1/2 = 1 2/4, que es menos que 1 3/4.",
+  "feedbackEn": "1 1/2 = 1 2/4, which is less than 1 3/4."
+ },
+ {
+  "exerciseId": "cmvjjdwzt003vnirhlvde7oyx",
+  "optionId": "cmvjjdwzy003znirhdpgd3lvx",
+  "label": "Ninguno",
+  "feedback": "7/4 y 1 3/4 se escriben distinto, pero son el mismo número.",
+  "feedbackEn": "7/4 and 1 3/4 are written differently, but they're the same number."
+ },
+ {
+  "exerciseId": "cmvjjdx110040nirhyje0jtts",
+  "optionId": "cmvjjdx160041nirhn7mim84v",
+  "label": "Sí: su numerador es mayor o igual que su denominador",
+  "feedback": "Correcto: si el numerador es mayor o igual, hay al menos un entero completo.",
+  "feedbackEn": "That's right: if the numerator is greater or equal, there's at least one full whole."
+ },
+ {
+  "exerciseId": "cmvjjdx110040nirhyje0jtts",
+  "optionId": "cmvjjdx160042nirhf7094k3u",
+  "label": "No: 3/5 es impropia y es menor que 1",
+  "feedback": "3/5 no es impropia: su numerador es menor. Es propia.",
+  "feedbackEn": "3/5 isn't improper: its numerator is smaller. It's proper."
+ },
+ {
+  "exerciseId": "cmvjjdx110040nirhyje0jtts",
+  "optionId": "cmvjjdx160043nirhhx6xwytc",
+  "label": "No: las impropias siempre son menores que 1",
+  "feedback": "Es al revés: las propias son menores que 1; las impropias, mayores o iguales.",
+  "feedbackEn": "It's the opposite: proper fractions are less than 1; improper ones are greater or equal."
+ },
+ {
+  "exerciseId": "cmvjjdx110040nirhyje0jtts",
+  "optionId": "cmvjk9cfa0021p9rhjz0jz3vn",
+  "label": "No: 4/4 es impropia y es menor que 1",
+  "feedback": "4/4 sí es impropia, pero no es menor que 1: 4 cuartos son justo 1 entero. Por eso se dice «mayor o igual».",
+  "feedbackEn": "4/4 is improper, but it isn't less than 1: 4 fourths is exactly 1 whole. That's why it says \"greater than or equal\"."
+ },
+ {
+  "exerciseId": "cmvjjdx290045nirh7o5arda8",
+  "optionId": "cmvjjdx2d0046nirh7zcg7d5v",
+  "label": "2 1/2",
+  "feedback": "Correcto: a mitad de camino entre 2 y 3 está 2 + 1/2 = 2 1/2.",
+  "feedbackEn": "That's right: halfway between 2 and 3 is 2 + 1/2 = 2 1/2."
+ },
+ {
+  "exerciseId": "cmvjjdx290045nirh7o5arda8",
+  "optionId": "cmvjjdx2d0047nirhkd9zfwfd",
+  "label": "2 1/3",
+  "feedback": "1/3 no es la mitad. La mitad es 1/2.",
+  "feedbackEn": "1/3 isn't half. Half is 1/2."
+ },
+ {
+  "exerciseId": "cmvjjdx290045nirh7o5arda8",
+  "optionId": "cmvjjdx2d0048nirhhkcphdhm",
+  "label": "1/2",
+  "feedback": "1/2 está entre 0 y 1. Falta sumar los 2 enteros.",
+  "feedbackEn": "1/2 is between 0 and 1. The 2 wholes still need to be added."
+ },
+ {
+  "exerciseId": "cmvjjdx290045nirh7o5arda8",
+  "optionId": "cmvjjdx2d0049nirhoe6dq5xc",
+  "label": "5 1/2",
+  "feedback": "Se sumaron 2 + 3. El número está entre 2 y 3, no después.",
+  "feedbackEn": "2 + 3 was added. The number is between 2 and 3, not after."
+ },
+ {
+  "exerciseId": "cmvjjdx3h004anirhuom5h8kr",
+  "optionId": "cmvjjdx3m004bnirhdz2qglwu",
+  "label": "17",
+  "feedback": "Correcto: 2 enteros = 12 sextos, más 5: 17 sextos (17/6).",
+  "feedbackEn": "That's right: 2 wholes = 12 sixths, plus 5: 17 sixths (17/6)."
+ },
+ {
+  "exerciseId": "cmvjjdx3h004anirhuom5h8kr",
+  "optionId": "cmvjjdx3m004cnirhb1s8pvqz",
+  "label": "7",
+  "feedback": "Los enteros no valen 1 sexto: cada entero son 6 sextos.",
+  "feedbackEn": "The wholes aren't worth 1 sixth: each whole is 6 sixths."
+ },
+ {
+  "exerciseId": "cmvjjdx3h004anirhuom5h8kr",
+  "optionId": "cmvjjdx3m004dnirhy52ki6m0",
+  "label": "25",
+  "feedback": "No se juntan los dígitos 2 y 5: los 2 enteros son 12 sextos.",
+  "feedbackEn": "The digits 2 and 5 aren't put together: the 2 wholes are 12 sixths."
+ },
+ {
+  "exerciseId": "cmvjjdx3h004anirhuom5h8kr",
+  "optionId": "cmvjjdx3m004enirhz4b5vlqu",
+  "label": "12",
+  "feedback": "12 son solo los sextos de los enteros. Faltan los 5 sextos.",
+  "feedbackEn": "12 is only the sixths from the wholes. The 5 sixths are missing."
  }
 ]

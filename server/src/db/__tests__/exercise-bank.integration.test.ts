@@ -80,6 +80,7 @@ describe("Banco de ejercicios sembrado (T1.2)", () => {
       // 6° básico
       "Razones y proporciones": "MA06 OA03",
       "Porcentajes y su relación con fracciones y decimales": "MA06 OA04",
+      "Fracciones impropias y números mixtos": "MA06 OA05", // verificado 2026-10-22, ver specs/016-plan-anual/modulo-fracciones.md
       "Adición y sustracción de fracciones y números mixtos": "MA06 OA06",
       "Ecuaciones de primer grado con una incógnita": "MA06 OA11",
       "Suma de ángulos interiores de triángulos y cuadriláteros": "MA06 OA17",

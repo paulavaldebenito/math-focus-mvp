@@ -104,6 +104,37 @@ Siempre desde `server/` (fuera de esa carpeta, `npx prisma` toma otra versión y
    "OK: integración verificada sin problemas".
 5. `npm test`, `npm run typecheck` y `npm run lint` en `server/` y en `client/`, todo en verde.
 
+### Control de calidad pedagógica (obligatorio antes de entregar)
+
+Lo más importante de cada tanda es que las preguntas sean coherentes y diversas, y que las
+alternativas, pistas y tips salgan de la taxonomía del error. Dos capas, siempre las dos:
+
+1. **Revisión automática:** `npm run bank:calidad -- "<OA>" --desde <primer id de la tanda>` (desde
+   `server/`, con la base de prueba sembrada). Debe salir con **0 errores**. Revisa cada aviso y
+   corrígelo o justifica por qué se queda (p. ej. "las 3 incorrectas son E1_OP" es aceptable solo si no
+   hay otro error real plausible). Revisa:
+   - las 4 alternativas, con 1 correcta;
+   - un código de la taxonomía en cada incorrecta, y su diversidad;
+   - que la pista no delate la respuesta;
+   - el feedback de las 4 alternativas;
+   - un desarrollo que termina en la respuesta, con el paso equivocado de cada incorrecta;
+   - el inglés;
+   - enunciados casi iguales;
+   - el equilibrio de niveles.
+2. **Revisión pedagógica independiente:** otro agente, que no escribió la tanda, revisa su
+   `datos.json` y sus figuras con esta rúbrica:
+   - **Coherencia:** enunciado claro y adecuado a la edad, una sola respuesta correcta, figura que
+     coincide con el enunciado y nivel razonable.
+   - **Distractores:** cada uno es un error real y plausible de un niño, con el código correcto
+     (E1_OP concepto o procedimiento, E2_RES forma del resultado, E2_CAL cálculo, E3_PREG no responde
+     lo preguntado, E3_DATO dato mal usado), sin alternativas absurdas ni dobles correctas.
+   - **Pista:** orienta sin dar la respuesta.
+   - **Feedback y paso equivocado:** específicos de ese error, amables y sin culpar.
+   - **Diversidad:** contextos, tipos de pregunta, las 4 habilidades y los 5 tipos de error.
+
+   Aplica todo lo marcado como "Corregir". De "Mejorar", aplica lo que no cambie enunciados ya
+   publicados (esos van por `enunciados_editados.json`). Después vuelve a correr la capa 1.
+
 ## Cómo medir el banco
 
 Con la base vacía sembrada, cuenta los problemas base por OA (un problema y sus variantes comparten
@@ -120,6 +151,7 @@ Al terminar, responde con:
 
 - qué OA y semanas cubriste, con el enlace oficial de cada OA verificado;
 - cuántos problemas base nuevos hay por nivel y por habilidad del currículum;
+- el resultado del control de calidad: errores corregidos, avisos que quedan y por qué, y hallazgos del revisor pedagógico;
 - las brechas que quedan;
 - dudas pedagógicas que ella debe decidir;
 - cómo revisarlo: modo revisión → curso → habilidad.

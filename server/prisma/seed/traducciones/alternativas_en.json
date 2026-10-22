@@ -16355,9 +16355,9 @@
     "isCorrect": false
    },
    {
-    "id": "cmvjh3nk80034a6rhvsf6pwr1",
-    "label": "3/4",
-    "labelEn": null,
+    "id": "cmvjk844x000sp9rh4jec7rwi",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
     "isCorrect": false
    }
   ]
@@ -16503,9 +16503,9 @@
     "isCorrect": true
    },
    {
-    "id": "cmvjh3nsz0046a6rh3l0u3wlo",
-    "label": "Una pizza cortada en 3 partes iguales, y se comen 4",
-    "labelEn": "A pizza cut into 3 equal parts, and 4 are eaten",
+    "id": "cmvjk84gm000tp9rh2fq3cmk1",
+    "label": "Hay 4 pizzas y se comen 3 enteras",
+    "labelEn": "There are 4 pizzas and 3 whole ones are eaten",
     "isCorrect": false
    },
    {
@@ -16611,8 +16611,8 @@
     "isCorrect": false
    },
    {
-    "id": "cmvjh3nxd004sa6rh4aem6xh2",
-    "label": "2/4",
+    "id": "cmvjk84ma000up9rhrb9s5znh",
+    "label": "3/4",
     "labelEn": null,
     "isCorrect": false
    }
@@ -16646,6 +16646,1030 @@
     "id": "cmvjh3nyi004xa6rhot8skwsg",
     "label": "No se puede saber",
     "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5gk0012aqrh2rwuzj4g",
+  "grade": 4,
+  "prompt": "¿Cómo se lee la fracción 5/8?",
+  "promptEn": "How do you read the fraction 5/8?",
+  "options": [
+   {
+    "id": "cmvjiu5go0013aqrhu3kks7ci",
+    "label": "cinco octavos",
+    "labelEn": "five eighths",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5go0014aqrhhfo7z0lg",
+    "label": "ocho quintos",
+    "labelEn": "eight fifths",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjk8khy0018p9rhqlyiqy51",
+    "label": "cinco ochos",
+    "labelEn": "five eights",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5go0016aqrhn1dwv6hd",
+    "label": "quinto octavo",
+    "labelEn": "fifth eighth",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5iq001caqrho2vn8dym",
+  "grade": 4,
+  "prompt": "Una pizza se corta en 6 partes iguales. ¿Cómo se llama cada parte?",
+  "promptEn": "A pizza is cut into 6 equal parts. What is each part called?",
+  "options": [
+   {
+    "id": "cmvjiu5iu001daqrhazrmn506",
+    "label": "1/6, un sexto",
+    "labelEn": "1/6, one sixth",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5iu001eaqrh6ermpgzo",
+    "label": "1/5, un quinto",
+    "labelEn": "1/5, one fifth",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5iu001faqrhdf0l1pn0",
+    "label": "6/6, seis sextos",
+    "labelEn": "6/6, six sixths",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5iu001gaqrh1w8zf6wz",
+    "label": "1/3, un tercio",
+    "labelEn": "1/3, one third",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5pg0026aqrh45x4r3ky",
+  "grade": 4,
+  "prompt": "¿Cuál es mayor: 1/5 o 1/8 de una misma barra?",
+  "promptEn": "Which is greater: 1/5 or 1/8 of the same bar?",
+  "options": [
+   {
+    "id": "cmvjiu5pk0027aqrht5kxuqnw",
+    "label": "1/5",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5pk0028aqrh7l7z5bpe",
+    "label": "1/8",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5pk0029aqrhtgadgew7",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5pk002aaqrhfgr7j2qm",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5qk002baqrhac96yqrb",
+  "grade": 4,
+  "prompt": "¿Cuál es menor: 7/10 o 3/10?",
+  "promptEn": "Which is less: 7/10 or 3/10?",
+  "options": [
+   {
+    "id": "cmvjiu5qo002caqrh5t2dgn58",
+    "label": "3/10",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5qo002daqrhn018h24g",
+    "label": "7/10",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5qo002eaqrhfebap7g4",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5qo002faqrhu5lewegw",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5rm002gaqrhr250d5r1",
+  "grade": 4,
+  "prompt": "¿Cuál de estas cantidades es igual a 1/2 de una cinta?",
+  "promptEn": "Which of these amounts is equal to 1/2 of a ribbon?",
+  "options": [
+   {
+    "id": "cmvjiu5rr002haqrhj1qfby36",
+    "label": "5 de 10 partes iguales",
+    "labelEn": "5 of 10 equal parts",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5rr002iaqrhxt32agb1",
+    "label": "1 de 10 partes iguales",
+    "labelEn": "1 of 10 equal parts",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5rr002jaqrhtrnhvzeu",
+    "label": "2 de 10 partes iguales",
+    "labelEn": "2 of 10 equal parts",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjk8kvn001ap9rh2acrnltc",
+    "label": "5 de 5 partes iguales",
+    "labelEn": "5 of 5 equal parts",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5w00030aqrh5fbhzs09",
+  "grade": 4,
+  "prompt": "Lucía dice que 1/8 es mayor que 1/5 porque 8 es mayor que 5. ¿Tiene razón?",
+  "promptEn": "Lucía says 1/8 is greater than 1/5 because 8 is greater than 5. Is she right?",
+  "options": [
+   {
+    "id": "cmvjiu5w50031aqrhash7dboz",
+    "label": "No: con más partes, cada parte es más chica",
+    "labelEn": "No: with more parts, each part is smaller",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5w50032aqrh49w2gvp6",
+    "label": "Sí: 8 es mayor que 5",
+    "labelEn": "Yes: 8 is greater than 5",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5w50033aqrhe1jpivsk",
+    "label": "Sí: los octavos son más grandes",
+    "labelEn": "Yes: eighths are bigger",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5w50034aqrhr9ztppf2",
+    "label": "No: son iguales",
+    "labelEn": "No: they're equal",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5z9003faqrhsql5z9n1",
+  "grade": 4,
+  "prompt": "Ana pintó 4/8 de su barra y Beto pintó 2/4 de una barra igual. ¿Quién pintó más?",
+  "promptEn": "Ana colored 4/8 of her bar and Beto colored 2/4 of an equal bar. Who colored more?",
+  "options": [
+   {
+    "id": "cmvjiu5ze003gaqrhdp1w644h",
+    "label": "Pintaron lo mismo",
+    "labelEn": "They colored the same",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu5ze003haqrhb3i0j84m",
+    "label": "Ana, porque 4 es más que 2",
+    "labelEn": "Ana, because 4 is more than 2",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5ze003iaqrhvfvxkgcv",
+    "label": "Beto, porque sus partes son más grandes",
+    "labelEn": "Beto, because his parts are bigger",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu5ze003jaqrh17kro6da",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu61g003paqrhvf0qn62l",
+  "grade": 4,
+  "prompt": "¿En qué situación se usa la fracción 3/5?",
+  "promptEn": "In which situation do we use the fraction 3/5?",
+  "options": [
+   {
+    "id": "cmvjiu61k003qaqrhc1uuu2ae",
+    "label": "De 5 lápices, 3 son azules",
+    "labelEn": "Of 5 pencils, 3 are blue",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu61k003raqrht3jpm268",
+    "label": "De 3 lápices, 5 son azules",
+    "labelEn": "Of 3 pencils, 5 are blue",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu61k003saqrhww2fm2tr",
+    "label": "Hay 3 lápices azules y 5 rojos",
+    "labelEn": "There are 3 blue pencils and 5 red",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu61k003taqrhhp9npzin",
+    "label": "De 5 lápices, 2 son azules",
+    "labelEn": "Of 5 pencils, 2 are blue",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu63z003zaqrh61ik9zk2",
+  "grade": 4,
+  "prompt": "Martina dice: «5/5 y 8/8 son lo mismo». ¿Tiene razón?",
+  "promptEn": "Martina says: \"5/5 and 8/8 are the same.\" Is she right?",
+  "options": [
+   {
+    "id": "cmvjiu6430040aqrholtpxmyp",
+    "label": "Sí: los dos son un entero completo",
+    "labelEn": "Yes: both are one whole",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu6430041aqrhh2mpajdi",
+    "label": "No: 8/8 es mayor",
+    "labelEn": "No: 8/8 is greater",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu6430042aqrhr2zg40mf",
+    "label": "No: 5/5 es mayor",
+    "labelEn": "No: 5/5 is greater",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu6430043aqrhazxmnk6f",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu6550044aqrhrcu3etr6",
+  "grade": 4,
+  "prompt": "Tres amigos pintaron cada uno una pared igual: Ana pintó 5/12, Beto 9/12 y Caro 7/12. ¿Quién pintó menos?",
+  "promptEn": "Three friends each painted an identical wall: Ana painted 5/12, Beto 9/12 and Caro 7/12. Who painted the least?",
+  "options": [
+   {
+    "id": "cmvjiu65a0045aqrhi15mm2lq",
+    "label": "Ana",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu65a0046aqrhwxymfy8n",
+    "label": "Beto",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu65a0047aqrhxygrioln",
+    "label": "Caro",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu65a0048aqrhbvhpmk7i",
+    "label": "Todos igual",
+    "labelEn": "All the same",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu66b0049aqrhpu108muu",
+  "grade": 4,
+  "prompt": "¿Entre qué números está 3/8 en la recta numérica?",
+  "promptEn": "Between which numbers is 3/8 on the number line?",
+  "options": [
+   {
+    "id": "cmvjiu66h004aaqrh5pl8q4vm",
+    "label": "Entre 0 y 1",
+    "labelEn": "Between 0 and 1",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjiu66h004baqrhhm9cmc20",
+    "label": "Entre 3 y 8",
+    "labelEn": "Between 3 and 8",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu66h004caqrhh4rnrkus",
+    "label": "Entre 1 y 2",
+    "labelEn": "Between 1 and 2",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjiu66h004daqrhb3on80vz",
+    "label": "Después del 8",
+    "labelEn": "After 8",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4ta70012icrh8uc9es0e",
+  "grade": 5,
+  "prompt": "¿Cuál es mayor: 2/7 o 5/7?",
+  "promptEn": "Which is greater: 2/7 or 5/7?",
+  "options": [
+   {
+    "id": "cmvjj4tac0013icrhyqggzvk3",
+    "label": "5/7",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tac0014icrh1xsj201f",
+    "label": "2/7",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tac0015icrhjxpkx2no",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tac0016icrhptgm1a14",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tff001micrh28mn4nbd",
+  "grade": 5,
+  "prompt": "Mira las tres barras. ¿Qué fracciones del dibujo son equivalentes?",
+  "promptEn": "Look at the three bars. Which fractions in the drawing are equivalent?",
+  "options": [
+   {
+    "id": "cmvjj4tfk001nicrhn0799s2c",
+    "label": "1/4, 2/8 y 3/12",
+    "labelEn": "1/4, 2/8 and 3/12",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tfk001oicrhnfqbx4k9",
+    "label": "1/4 y 2/8, pero no 3/12",
+    "labelEn": "1/4 and 2/8, but not 3/12",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tfk001picrh77ywv29v",
+    "label": "Ninguna: tienen distinto denominador",
+    "labelEn": "None: they have different denominators",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tfk001qicrh3xzxazv0",
+    "label": "Solo 3/12, porque tiene más partes",
+    "labelEn": "Only 3/12, because it has more parts",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tiy0021icrhogrnpcz0",
+  "grade": 5,
+  "prompt": "¿Cuál es mayor: 2/3 o 3/5?",
+  "promptEn": "Which is greater: 2/3 or 3/5?",
+  "options": [
+   {
+    "id": "cmvjj4tj20022icrhqva0dlb1",
+    "label": "2/3",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tj20023icrhzvscwwse",
+    "label": "3/5",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tj20024icrh17pmv2ow",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tj20025icrhxumxrizn",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tk40026icrhfiqpeod4",
+  "grade": 5,
+  "prompt": "¿Cuál es menor: 3/4 o 5/8?",
+  "promptEn": "Which is less: 3/4 or 5/8?",
+  "options": [
+   {
+    "id": "cmvjj4tk90027icrhzwmtia94",
+    "label": "5/8",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tk90028icrh68b92c52",
+    "label": "3/4",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tk90029icrhd38mda98",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tk9002aicrhd57j6su0",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tla002bicrh1mpp42hw",
+  "grade": 5,
+  "prompt": "Sofía leyó 3/5 de un libro y Tomás leyó 6/10 de un libro igual. ¿Quién leyó más?",
+  "promptEn": "Sofía read 3/5 of a book and Tomás read 6/10 of an identical book. Who read more?",
+  "options": [
+   {
+    "id": "cmvjj4tle002cicrhq0w7tb17",
+    "label": "Leyeron lo mismo",
+    "labelEn": "They read the same",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tle002dicrhr4ysq9lw",
+    "label": "Tomás, porque 6 es mayor que 3",
+    "labelEn": "Tomás, because 6 is more than 3",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tle002eicrhas9d9tm4",
+    "label": "Sofía, porque sus partes son más grandes",
+    "labelEn": "Sofía, because her parts are bigger",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tle002ficrhugdjx1p1",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tnn002licrhv1xpfemj",
+  "grade": 5,
+  "prompt": "¿Qué grupo tiene solo fracciones equivalentes a 2/3?",
+  "promptEn": "Which group has only fractions equivalent to 2/3?",
+  "options": [
+   {
+    "id": "cmvjj4tnr002micrhcyze03p0",
+    "label": "4/6, 6/9 y 8/12",
+    "labelEn": "4/6, 6/9 and 8/12",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tnr002nicrh23o5olur",
+    "label": "4/6, 6/8 y 8/10",
+    "labelEn": "4/6, 6/8 and 8/10",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tnr002oicrh820zphwu",
+    "label": "2/6, 2/9 y 2/12",
+    "labelEn": "2/6, 2/9 and 2/12",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tnr002picrhrv8ufcvc",
+    "label": "4/6, 6/9 y 8/9",
+    "labelEn": "4/6, 6/9 and 8/9",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tr70030icrhg31txopx",
+  "grade": 5,
+  "prompt": "Pablo dice que 2/5 y 4/10 no son equivalentes porque tienen números distintos. ¿Tiene razón?",
+  "promptEn": "Pablo says 2/5 and 4/10 aren't equivalent because they have different numbers. Is he right?",
+  "options": [
+   {
+    "id": "cmvjj4trb0031icrhbgsq5zc1",
+    "label": "No: 2/5 amplificada por 2 es 4/10",
+    "labelEn": "No: 2/5 scaled up by 2 is 4/10",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4trb0032icrhpau8q32m",
+    "label": "Sí: tienen números distintos",
+    "labelEn": "Yes: they have different numbers",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4trb0033icrhmb70pea6",
+    "label": "Sí: 4/10 es mayor porque tiene más partes",
+    "labelEn": "Yes: 4/10 is greater because it has more parts",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4trb0034icrhrxzxm4ig",
+    "label": "No: 4/10 es el doble de 2/5",
+    "labelEn": "No: 4/10 is double 2/5",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tse0035icrhjvzoizxu",
+  "grade": 5,
+  "prompt": "Josefa simplificó 9/12 y obtuvo 3/4. Matías simplificó la misma fracción y obtuvo 6/9. ¿Quién lo hizo bien?",
+  "promptEn": "Josefa simplified 9/12 and got 3/4. Matías simplified the same fraction and got 6/9. Who did it right?",
+  "options": [
+   {
+    "id": "cmvjj4tsj0036icrh1slf0255",
+    "label": "Josefa",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tsj0037icrh8t2ha9ad",
+    "label": "Matías",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tsj0038icrh416vgb02",
+    "label": "Los dos",
+    "labelEn": "Both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tsj0039icrh51uk6tvi",
+    "label": "Ninguno",
+    "labelEn": "Neither",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tup003ficrhtir4xvwj",
+  "grade": 5,
+  "prompt": "En un curso, 3/4 de los estudiantes practica deporte. En otro curso, 5/8 practica deporte. ¿En qué curso es mayor la fracción que practica deporte?",
+  "promptEn": "In one class, 3/4 of the students play a sport. In another class, 5/8 play a sport. In which class is the fraction that plays a sport greater?",
+  "options": [
+   {
+    "id": "cmvjj4tuu003gicrhlzrvd8c7",
+    "label": "En el primero (3/4)",
+    "labelEn": "In the first one (3/4)",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tuu003hicrhx9vihqbf",
+    "label": "En el segundo, porque 5 es mayor que 3",
+    "labelEn": "In the second, because 5 is more than 3",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tuu003iicrhtamr3qpp",
+    "label": "Es igual en los dos",
+    "labelEn": "It's the same in both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tuu003jicrhvfosl2ep",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tze003zicrhhpj9s65g",
+  "grade": 5,
+  "prompt": "Rocío dice: «Si a una fracción le sumo 1 arriba y 1 abajo, obtengo una equivalente». Prueba con 1/2. ¿Tiene razón?",
+  "promptEn": "Rocío says: \"If I add 1 to the top and 1 to the bottom of a fraction, I get an equivalent one.\" Try it with 1/2. Is she right?",
+  "options": [
+   {
+    "id": "cmvjj4tzi0040icrhl43os9xx",
+    "label": "No: 1/2 y 2/3 no son equivalentes",
+    "labelEn": "No: 1/2 and 2/3 aren't equivalent",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjj4tzi0041icrhfz13m8ub",
+    "label": "Sí: 1/2 = 2/3",
+    "labelEn": "Yes: 1/2 = 2/3",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tzi0042icrhhi8ned7o",
+    "label": "Sí, siempre funciona",
+    "labelEn": "Yes, it always works",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjj4tzi0043icrhk7zgztql",
+    "label": "No: hay que sumar 2 arriba y 2 abajo",
+    "labelEn": "No: you have to add 2 to the top and bottom",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwed001inirhbryh92ad",
+  "grade": 6,
+  "prompt": "En el número mixto 3 2/5, ¿qué indica el 3?",
+  "promptEn": "In the mixed number 3 2/5, what does the 3 tell you?",
+  "options": [
+   {
+    "id": "cmvjjdweh001jnirhhz95na1s",
+    "label": "Cuántos enteros completos hay",
+    "labelEn": "How many full wholes there are",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdweh001knirh4hcsculr",
+    "label": "Cuántas partes se toman",
+    "labelEn": "How many parts are taken",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdweh001lnirhjxsaioe8",
+    "label": "En cuántas partes se divide el entero",
+    "labelEn": "How many parts the whole is split into",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdweh001mnirhbto7acp6",
+    "label": "Cuántas partes sobran",
+    "labelEn": "How many parts are left over",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwkp0027nirh5dc2nnl5",
+  "grade": 6,
+  "prompt": "¿Cuál es mayor: 9/4 o 2 1/2?",
+  "promptEn": "Which is greater: 9/4 or 2 1/2?",
+  "options": [
+   {
+    "id": "cmvjjdwku0028nirhmaoamhy1",
+    "label": "2 1/2",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwku0029nirh7rc20agr",
+    "label": "9/4",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwku002anirhvlm2uw7g",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwku002bnirhxsv3viwd",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwm2002cnirhhgkfadap",
+  "grade": 6,
+  "prompt": "Una receta usa 5/2 tazas de harina. ¿Cuántas tazas enteras y qué parte de otra taza son?",
+  "promptEn": "A recipe uses 5/2 cups of flour. How many full cups and what part of another cup is that?",
+  "options": [
+   {
+    "id": "cmvjjdwm7002dnirhiquqxova",
+    "label": "2 tazas y 1/2 taza",
+    "labelEn": "2 cups and 1/2 cup",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwm7002enirhl0jbr0jr",
+    "label": "5 tazas y 1/2 taza",
+    "labelEn": "5 cups and 1/2 cup",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwm7002fnirhrimoz5pw",
+    "label": "2 tazas y 1/5 de taza",
+    "labelEn": "2 cups and 1/5 of a cup",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwm7002gnirh1ph0gswf",
+    "label": "1 taza y 3/2 tazas",
+    "labelEn": "1 cup and 3/2 cups",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwpp002rnirhq8a8o3j1",
+  "grade": 6,
+  "prompt": "¿Qué situación muestra el número mixto 1 3/4?",
+  "promptEn": "Which situation shows the mixed number 1 3/4?",
+  "options": [
+   {
+    "id": "cmvjjdwpu002snirha2e6cb9v",
+    "label": "1 queque entero y 3 de 4 trozos iguales de otro queque",
+    "labelEn": "1 whole cake and 3 of 4 equal pieces of another cake",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwpu002tnirh8ljbks5j",
+    "label": "3 queques enteros y 1 de 4 trozos iguales de otro",
+    "labelEn": "3 whole cakes and 1 of 4 equal pieces of another",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwpu002unirhof0n7vyh",
+    "label": "1 queque entero y 3 trozos de otro cortado en 3 partes",
+    "labelEn": "1 whole cake and 3 pieces of another cut into 3 parts",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwpu002vnirhapgk0ql7",
+    "label": "1 queque cortado en 4 trozos y se usan 3",
+    "labelEn": "1 cake cut into 4 pieces and 3 are used",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwqz002wnirh6gezc2uq",
+  "grade": 6,
+  "prompt": "¿Entre qué números enteros está 11/4 en la recta numérica?",
+  "promptEn": "Between which whole numbers is 11/4 on the number line?",
+  "options": [
+   {
+    "id": "cmvjjdwr5002xnirhmdw55dyr",
+    "label": "Entre 2 y 3",
+    "labelEn": "Between 2 and 3",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwr5002ynirh27wnx6l3",
+    "label": "Entre 11 y 4",
+    "labelEn": "Between 11 and 4",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwr5002znirhhpdxd2z8",
+    "label": "Entre 0 y 1",
+    "labelEn": "Between 0 and 1",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwr50030nirhkzzr9nxy",
+    "label": "Entre 3 y 4",
+    "labelEn": "Between 3 and 4",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdws80031nirh42zi7bc1",
+  "grade": 6,
+  "prompt": "Benjamín dice que 5/3 es menor que 1 porque es una fracción. ¿Tiene razón?",
+  "promptEn": "Benjamín says 5/3 is less than 1 because it's a fraction. Is he right?",
+  "options": [
+   {
+    "id": "cmvjjdwsd0032nirhh3aq4xhl",
+    "label": "No: 5/3 es más que un entero (1 2/3)",
+    "labelEn": "No: 5/3 is more than one whole (1 2/3)",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwsd0033nirh5xzj2tpe",
+    "label": "Sí: las fracciones siempre son menores que 1",
+    "labelEn": "Yes: fractions are always less than 1",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwsd0034nirhm4995jkk",
+    "label": "Sí: 5/3 es lo mismo que 3/5",
+    "labelEn": "Yes: 5/3 is the same as 3/5",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwsd0035nirhxhtt8mml",
+    "label": "No: 5/3 es igual a 1",
+    "labelEn": "No: 5/3 equals 1",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwtj0036nirhykns7yxw",
+  "grade": 6,
+  "prompt": "Fernanda dice que 2 3/5 = 23/5. Ignacio dice que 2 3/5 = 13/5. ¿Quién tiene razón?",
+  "promptEn": "Fernanda says 2 3/5 = 23/5. Ignacio says 2 3/5 = 13/5. Who is right?",
+  "options": [
+   {
+    "id": "cmvjjdwtp0037nirhmtovuvxg",
+    "label": "Ignacio",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwtp0038nirh4x6a74v1",
+    "label": "Fernanda",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwtp0039nirh62bcddtg",
+    "label": "Los dos",
+    "labelEn": "Both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwtp003anirhhoh37yvq",
+    "label": "Ninguno",
+    "labelEn": "Neither",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdww2003gnirhf2m8e2s3",
+  "grade": 6,
+  "prompt": "Martina tiene 13 vasos de 1/4 de litro de jugo y los vacía en botellas de 1 litro. ¿Cuántas botellas llena completas y cuánto jugo sobra?",
+  "promptEn": "Martina has 13 glasses of 1/4 liter of juice and pours them into 1-liter bottles. How many bottles does she fill completely, and how much juice is left?",
+  "options": [
+   {
+    "id": "cmvjjdww7003hnirhw4heyakr",
+    "label": "3 botellas y sobra 1/4 L",
+    "labelEn": "3 bottles and 1/4 L left",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdww7003inirhbco0e6fb",
+    "label": "13 botellas",
+    "labelEn": "13 bottles",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdww7003jnirhhdnuric9",
+    "label": "3 botellas y sobra 1/13 L",
+    "labelEn": "3 bottles and 1/13 L left",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdww7003knirhcfbycwi4",
+    "label": "4 botellas y sobra 1/4 L",
+    "labelEn": "4 bottles and 1/4 L left",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+  "grade": 6,
+  "prompt": "Cada barra es un entero. Escribe la parte pintada como número mixto y como fracción impropia.",
+  "promptEn": "Each bar is one whole. Write the colored part as a mixed number and as an improper fraction.",
+  "options": [
+   {
+    "id": "cmvjjdwyo003rnirh2hn7pwch",
+    "label": "1 3/5 = 8/5",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwyo003snirh1bv500fg",
+    "label": "1 3/5 = 4/5",
+    "labelEn": "1 3/5 = 4/5",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwyo003tnirhk4xyo8dm",
+    "label": "1 3/5 = 13/5",
+    "labelEn": "1 3/5 = 13/5",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwyo003unirh6kqrm88u",
+    "label": "3/5 = 8/5",
+    "labelEn": "3/5 = 8/5",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwzt003vnirhlvde7oyx",
+  "grade": 6,
+  "prompt": "Ana corrió 7/4 km, Beto 1 1/2 km y Caro 1 3/4 km. ¿Quiénes corrieron la misma distancia?",
+  "promptEn": "Ana ran 7/4 km, Beto 1 1/2 km and Caro 1 3/4 km. Who ran the same distance?",
+  "options": [
+   {
+    "id": "cmvjjdwzy003wnirh898ma3al",
+    "label": "Ana y Caro",
+    "labelEn": "Ana and Caro",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdwzy003xnirhdi0xuq0u",
+    "label": "Ana y Beto",
+    "labelEn": "Ana and Beto",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwzy003ynirhwg1u7du7",
+    "label": "Beto y Caro",
+    "labelEn": "Beto and Caro",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdwzy003znirhdpgd3lvx",
+    "label": "Ninguno",
+    "labelEn": "None",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdx110040nirhyje0jtts",
+  "grade": 6,
+  "prompt": "Diego dice: «Toda fracción impropia es mayor o igual que 1». ¿Tiene razón?",
+  "promptEn": "Diego says: \"Every improper fraction is greater than or equal to 1.\" Is he right?",
+  "options": [
+   {
+    "id": "cmvjjdx160041nirhn7mim84v",
+    "label": "Sí: su numerador es mayor o igual que su denominador",
+    "labelEn": "Yes: its numerator is greater than or equal to its denominator",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjjdx160042nirhf7094k3u",
+    "label": "No: 3/5 es impropia y es menor que 1",
+    "labelEn": "No: 3/5 is improper and less than 1",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjjdx160043nirhhx6xwytc",
+    "label": "No: las impropias siempre son menores que 1",
+    "labelEn": "No: improper fractions are always less than 1",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjk9cfa0021p9rhjz0jz3vn",
+    "label": "No: 4/4 es impropia y es menor que 1",
+    "labelEn": "No: 4/4 is improper and less than 1",
     "isCorrect": false
    }
   ]

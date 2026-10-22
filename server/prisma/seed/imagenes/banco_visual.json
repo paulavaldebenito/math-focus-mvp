@@ -43091,6 +43091,346 @@
         "en": "Two equal bars with 4 equal parts: Ana colored 3 parts and Beto colored 1. Look at Ana's and Beto's bars. Who left 1/4 of their bar uncolored?"
       },
       "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu59v0008aqrhwqfbp9aa",
+      "grade": 4,
+      "prompt": {
+        "es": "Mira el rectángulo. ¿Qué fracción del rectángulo está pintada?",
+        "en": "Look at the rectangle. What fraction of the rectangle is colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu59v0008aqrhwqfbp9aa__barras.png",
+      "width": 1000,
+      "height": 250,
+      "alt": {
+        "es": "Un rectángulo dividido en 5 partes iguales, con 2 pintadas. Mira el rectángulo. ¿Qué fracción del rectángulo está pintada?",
+        "en": "A rectangle divided into 5 equal parts, with 2 colored. Look at the rectangle. What fraction of the rectangle is colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu5b0000daqrhtaidm7ng",
+      "grade": 4,
+      "prompt": {
+        "es": "Mira la tableta de chocolate. ¿Qué fracción de la tableta está pintada?",
+        "en": "Look at the chocolate bar. What fraction of the bar is colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu5b0000daqrhtaidm7ng__barras.png",
+      "width": 1000,
+      "height": 250,
+      "alt": {
+        "es": "Una tableta dividida en 8 partes iguales, con 3 pintadas. Mira la tableta de chocolate. ¿Qué fracción de la tableta está pintada?",
+        "en": "A bar divided into 8 equal parts, with 3 colored. Look at the chocolate bar. What fraction of the bar is colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu5c7000iaqrhf5yn6a9g",
+      "grade": 4,
+      "prompt": {
+        "es": "Mira la tira de papel. ¿Qué fracción de la tira está pintada?",
+        "en": "Look at the paper strip. What fraction of the strip is colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu5c7000iaqrhf5yn6a9g__barras.png",
+      "width": 1000,
+      "height": 250,
+      "alt": {
+        "es": "Una tira dividida en 10 partes iguales, con 7 pintadas. Mira la tira de papel. ¿Qué fracción de la tira está pintada?",
+        "en": "A strip divided into 10 equal parts, with 7 colored. Look at the paper strip. What fraction of the strip is colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjk8kdr0013p9rh8lc8q0jv",
+      "grade": 4,
+      "prompt": {
+        "es": "Mira el queque rectangular cortado en partes iguales. ¿Qué fracción del queque está pintada?",
+        "en": "Look at the rectangular cake cut into equal parts. What fraction of the cake is colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjk8kdr0013p9rh8lc8q0jv__barras.png",
+      "width": 1000,
+      "height": 250,
+      "alt": {
+        "es": "Un queque rectangular dividido en 6 partes iguales, con 1 pintada. Mira el queque rectangular cortado en partes iguales. ¿Qué fracción del queque está pintada?",
+        "en": "A cake divided into 6 equal parts, with 1 colored. Look at the rectangular cake cut into equal parts. What fraction of the cake is colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu5ee000saqrhnhxgz9ni",
+      "grade": 4,
+      "prompt": {
+        "es": "Mira los globos. ¿Qué fracción de los globos es azul?",
+        "en": "Look at the balloons. What fraction of the balloons is blue?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu5ee000saqrhnhxgz9ni__barras.png",
+      "width": 1000,
+      "height": 236,
+      "alt": {
+        "es": "5 círculos: 2 azules y 3 sin color. Mira los globos. ¿Qué fracción de los globos es azul?",
+        "en": "5 circles: 2 blue and 3 uncolored. Look at the balloons. What fraction of the balloons is blue?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu5kw001maqrhlupgqzrw",
+      "grade": 4,
+      "prompt": {
+        "es": "En la recta numérica, ¿qué fracción marca el punto rosado?",
+        "en": "On the number line, what fraction does the pink dot show?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu5kw001maqrhlupgqzrw__barras.png",
+      "width": 1000,
+      "height": 260,
+      "alt": {
+        "es": "Recta de 0 a 1 dividida en 4 saltos iguales, con un punto en el tercer salto. En la recta numérica, ¿qué fracción marca el punto rosado?",
+        "en": "Number line from 0 to 1 split into 4 equal jumps, with a dot at the third jump. On the number line, what fraction does the pink dot show?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu5m3001raqrhb4nvpz7f",
+      "grade": 4,
+      "prompt": {
+        "es": "En esta recta, ¿qué fracción marca el punto?",
+        "en": "On this number line, what fraction does the dot show?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu5m3001raqrhb4nvpz7f__barras.png",
+      "width": 1000,
+      "height": 260,
+      "alt": {
+        "es": "Recta de 0 a 1 dividida en 8 saltos iguales, con un punto en el quinto salto. En esta recta, ¿qué fracción marca el punto?",
+        "en": "Number line from 0 to 1 split into 8 equal jumps, with a dot at the fifth jump. On this number line, what fraction does the dot show?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjiu5z9003faqrhsql5z9n1",
+      "grade": 4,
+      "prompt": {
+        "es": "Ana pintó 4/8 de su barra y Beto pintó 2/4 de una barra igual. ¿Quién pintó más?",
+        "en": "Ana colored 4/8 of her bar and Beto colored 2/4 of an equal bar. Who colored more?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/4b__cmvjiu5z9003faqrhsql5z9n1__barras.png",
+      "width": 1000,
+      "height": 410,
+      "alt": {
+        "es": "Dos barras del mismo largo: Ana con 8 partes iguales y 4 pintadas; Beto con 4 partes iguales y 2 pintadas. Ana pintó 4/8 de su barra y Beto pintó 2/4 de una barra igual. ¿Quién pintó más?",
+        "en": "Two bars of the same length: Ana's with 8 equal parts and 4 colored; Beto's with 4 equal parts and 2 colored. Ana colored 4/8 of her bar and Beto colored 2/4 of an equal bar. Who colored more?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjj4t2k0008icrh01mu9kcd",
+      "grade": 5,
+      "prompt": {
+        "es": "La barra de arriba muestra 1/2. ¿Qué fracción muestra la barra de abajo, que tiene pintada la misma cantidad?",
+        "en": "The top bar shows 1/2. What fraction does the bottom bar show, with the same amount colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/5b__cmvjj4t2k0008icrh01mu9kcd__barras.png",
+      "width": 1000,
+      "height": 410,
+      "alt": {
+        "es": "Dos barras del mismo largo: arriba 2 partes iguales con 1 pintada; abajo 4 partes iguales con 2 pintadas. La barra de arriba muestra 1/2. ¿Qué fracción muestra la barra de abajo, que tiene pintada la misma cantidad?",
+        "en": "Two bars of the same length: top with 2 equal parts and 1 colored; bottom with 4 equal parts and 2 colored. The top bar shows 1/2. What fraction does the bottom bar show, with the same amount colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjj4t3v000dicrh2rha25jc",
+      "grade": 5,
+      "prompt": {
+        "es": "La barra de arriba muestra 1/3. ¿Qué fracción muestra la barra de abajo, que tiene pintada la misma cantidad?",
+        "en": "The top bar shows 1/3. What fraction does the bottom bar show, with the same amount colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/5b__cmvjj4t3v000dicrh2rha25jc__barras.png",
+      "width": 1000,
+      "height": 410,
+      "alt": {
+        "es": "Dos barras del mismo largo: arriba 3 partes iguales con 1 pintada; abajo 6 partes iguales con 2 pintadas. La barra de arriba muestra 1/3. ¿Qué fracción muestra la barra de abajo, que tiene pintada la misma cantidad?",
+        "en": "Two bars of the same length: top with 3 equal parts and 1 colored; bottom with 6 equal parts and 2 colored. The top bar shows 1/3. What fraction does the bottom bar show, with the same amount colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjj4t90000xicrh7k771vn5",
+      "grade": 5,
+      "prompt": {
+        "es": "Mira el grupo de círculos. ¿Qué fracción del grupo está pintada?",
+        "en": "Look at the group of circles. What fraction of the group is colored?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/5b__cmvjj4t90000xicrh7k771vn5__barras.png",
+      "width": 1050,
+      "height": 212,
+      "alt": {
+        "es": "8 círculos: 3 azules y 5 sin color. Mira el grupo de círculos. ¿Qué fracción del grupo está pintada?",
+        "en": "8 circles: 3 blue and 5 uncolored. Look at the group of circles. What fraction of the group is colored?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjj4tff001micrh28mn4nbd",
+      "grade": 5,
+      "prompt": {
+        "es": "Mira las tres barras. ¿Qué fracciones del dibujo son equivalentes?",
+        "en": "Look at the three bars. Which fractions in the drawing are equivalent?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/5b__cmvjj4tff001micrh28mn4nbd__barras.png",
+      "width": 1000,
+      "height": 600,
+      "alt": {
+        "es": "Tres barras del mismo largo: 1 de 4 partes, 2 de 8 partes y 3 de 12 partes pintadas. Mira las tres barras. ¿Qué fracciones del dibujo son equivalentes?",
+        "en": "Three bars of the same length: 1 of 4 parts, 2 of 8 parts and 3 of 12 parts colored. Look at the three bars. Which fractions in the drawing are equivalent?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjj4tot002qicrhx9exns1d",
+      "grade": 5,
+      "prompt": {
+        "es": "¿Qué fracción marca el punto en la recta? Escríbela simplificada.",
+        "en": "What fraction does the dot on the number line show? Write it simplified."
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/5b__cmvjj4tot002qicrhx9exns1d__barras.png",
+      "width": 1000,
+      "height": 260,
+      "alt": {
+        "es": "Recta de 0 a 1 dividida en 6 saltos iguales, con un punto en el cuarto salto. ¿Qué fracción marca el punto en la recta? Escríbela simplificada.",
+        "en": "Number line from 0 to 1 split into 6 equal jumps, with a dot at the fourth jump. What fraction does the dot on the number line show? Write it simplified."
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjk8ydm001pp9rhm8egqe8e",
+      "grade": 5,
+      "prompt": {
+        "es": "Mira la barra. Escribe la parte pintada como fracción simplificada.",
+        "en": "Look at the bar. Write the colored part as a simplified fraction."
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/5b__cmvjk8ydm001pp9rhm8egqe8e__barras.png",
+      "width": 1000,
+      "height": 250,
+      "alt": {
+        "es": "Una barra dividida en 12 partes iguales, con 8 pintadas. Mira la barra. Escribe la parte pintada como fracción simplificada.",
+        "en": "A bar divided into 12 equal parts, with 8 colored. Look at the bar. Write the colored part as a simplified fraction."
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjjdw340009nirhmsg9wbxl",
+      "grade": 6,
+      "prompt": {
+        "es": "Cada barra es un entero. ¿Qué número mixto muestra la parte pintada?",
+        "en": "Each bar is one whole. What mixed number does the colored part show?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/6b__cmvjjdw340009nirhmsg9wbxl__barras.png",
+      "width": 1000,
+      "height": 600,
+      "alt": {
+        "es": "Tres barras iguales divididas en 4 partes: dos completamente pintadas y la tercera con 1 parte pintada. Cada barra es un entero. ¿Qué número mixto muestra la parte pintada?",
+        "en": "Three equal bars divided into 4 parts: two fully colored and the third with 1 part colored. Each bar is one whole. What mixed number does the colored part show?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjjdw4g000enirhblekssje",
+      "grade": 6,
+      "prompt": {
+        "es": "Cada barra es un entero. ¿Qué fracción impropia muestra la parte pintada?",
+        "en": "Each bar is one whole. What improper fraction does the colored part show?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/6b__cmvjjdw4g000enirhblekssje__barras.png",
+      "width": 1000,
+      "height": 600,
+      "alt": {
+        "es": "Tres barras iguales divididas en 4 partes: dos completamente pintadas y la tercera con 1 parte pintada. Cada barra es un entero. ¿Qué fracción impropia muestra la parte pintada?",
+        "en": "Three equal bars divided into 4 parts: two fully colored and the third with 1 part colored. Each bar is one whole. What improper fraction does the colored part show?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjjdwap0013nirhujpbrzor",
+      "grade": 6,
+      "prompt": {
+        "es": "¿Qué número mixto marca el punto en la recta?",
+        "en": "What mixed number does the dot on the number line show?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/6b__cmvjjdwap0013nirhujpbrzor__barras.png",
+      "width": 1000,
+      "height": 260,
+      "alt": {
+        "es": "Recta de 0 a 2 con cada entero dividido en 4 saltos iguales; punto 1 salto después del 1. ¿Qué número mixto marca el punto en la recta?",
+        "en": "Number line from 0 to 2 with each whole split into 4 equal jumps; dot 1 jump past 1. What mixed number does the dot on the number line show?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjjdwfk001nnirhq5clcx9k",
+      "grade": 6,
+      "prompt": {
+        "es": "Cada barra es un entero. Escribe la parte pintada como fracción impropia.",
+        "en": "Each bar is one whole. Write the colored part as an improper fraction."
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/6b__cmvjjdwfk001nnirhq5clcx9k__barras.png",
+      "width": 1000,
+      "height": 600,
+      "alt": {
+        "es": "Tres barras iguales divididas en 3 partes: dos completas y la tercera con 2 partes pintadas. Cada barra es un entero. Escribe la parte pintada como fracción impropia.",
+        "en": "Three equal bars divided into 3 parts: two full and the third with 2 parts colored. Each bar is one whole. Write the colored part as an improper fraction."
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjjdwoi002mnirhxxedlmex",
+      "grade": 6,
+      "prompt": {
+        "es": "¿Qué fracción impropia marca el punto en la recta?",
+        "en": "What improper fraction does the dot on the number line show?"
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/6b__cmvjjdwoi002mnirhxxedlmex__barras.png",
+      "width": 1000,
+      "height": 260,
+      "alt": {
+        "es": "Recta de 0 a 3 con cada entero dividido en 3 saltos iguales; punto 1 salto después del 2. ¿Qué fracción impropia marca el punto en la recta?",
+        "en": "Number line from 0 to 3 with each whole split into 3 equal jumps; dot 1 jump past 2. What improper fraction does the dot on the number line show?"
+      },
+      "letters": []
+    },
+    {
+      "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+      "grade": 6,
+      "prompt": {
+        "es": "Cada barra es un entero. Escribe la parte pintada como número mixto y como fracción impropia.",
+        "en": "Each bar is one whole. Write the colored part as a mixed number and as an improper fraction."
+      },
+      "kind": "fractions",
+      "src": "/exercise-images/6b__cmvjjdwyj003qnirhz8j9xupb__barras.png",
+      "width": 1000,
+      "height": 410,
+      "alt": {
+        "es": "Dos barras iguales divididas en 5 partes: una completamente pintada y la otra con 3 partes pintadas. Cada barra es un entero. Escribe la parte pintada como número mixto y como fracción impropia.",
+        "en": "Two equal bars divided into 5 parts: one fully colored and the other with 3 parts colored. Each bar is one whole. Write the colored part as a mixed number and as an improper fraction."
+      },
+      "letters": []
     }
   ]
 }

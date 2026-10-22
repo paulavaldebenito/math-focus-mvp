@@ -1,6 +1,6 @@
 {
- "entries": 2119,
- "linked": 1777,
+ "entries": 2139,
+ "linked": 1797,
  "emojiPreferred": 334,
  "emojiPictographs": 66,
  "absent": [
@@ -48,7 +48,7 @@
  "promptMismatch": [],
  "legends": {
   "generic": 501,
-  "none": 1090,
+  "none": 1110,
   "named:optionBindings": 19,
   "named:prompt": 101
  },
@@ -60,19 +60,19 @@
   "1": 331,
   "2": 288,
   "3": 361,
-  "4": 288,
-  "5": 199,
-  "6": 310
+  "4": 296,
+  "5": 205,
+  "6": 316
  },
- "rutasVerificadas": 3971,
- "rutasTotales": 3971,
- "conImagen": 1777,
+ "rutasVerificadas": 3991,
+ "rutasTotales": 3991,
+ "conImagen": 1797,
  "porCurso": {
   "1": 331,
   "2": 288,
   "3": 361,
-  "4": 288,
-  "5": 199,
-  "6": 310
+  "4": 296,
+  "5": 205,
+  "6": 316
  }
 }
