@@ -1,0 +1,2821 @@
+[
+ {
+  "exerciseId": "cmvjiu5kw001maqrhlupgqzrw",
+  "prompt": "En la recta numérica, ¿qué fracción marca el punto rosado?",
+  "recode": [
+   {
+    "label": "3/5",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu5m3001raqrhb4nvpz7f",
+  "prompt": "En esta recta, ¿qué fracción marca el punto?",
+  "recode": [
+   {
+    "label": "5/9",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjiu60d003kaqrh2x1qvzvg",
+  "prompt": "En una recta de 0 a 1 dividida en 10 saltos iguales, ¿cuántos saltos hay desde el 0 hasta 7/10?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4t55000iicrhhtmsumoc",
+  "prompt": "Para amplificar 2/3, se multiplican el numerador y el denominador por 2. ¿Qué fracción se obtiene?",
+  "recode": [
+   {
+    "label": "4/3",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   },
+   {
+    "label": "2/6",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4t6e000nicrhvnee11ny",
+  "prompt": "Para simplificar 6/9, se dividen el numerador y el denominador por 3. ¿Qué fracción se obtiene?",
+  "recode": [
+   {
+    "label": "2/9",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   },
+   {
+    "label": "6/3",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tgl001ricrh3pzpjkw8",
+  "prompt": "Escribe 3/4 como una fracción equivalente con denominador 12.",
+  "recode": [
+   {
+    "label": "3/12",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4thr001wicrh72bp6yuq",
+  "prompt": "Simplifica 8/12 lo más posible.",
+  "recode": [
+   {
+    "label": "4/12",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tmh002gicrh41ng4puy",
+  "prompt": "En una huerta, 2/6 del terreno tiene tomates. ¿Qué fracción equivalente, con denominador 3, tiene tomates?",
+  "recode": [
+   {
+    "label": "2/3",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   },
+   {
+    "label": "1/6",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4tnn002licrhv1xpfemj",
+  "prompt": "¿Qué grupo tiene solo fracciones equivalentes a 2/3?",
+  "recode": [
+   {
+    "label": "2/6, 2/9 y 2/12",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4ttk003aicrh8j1dqfxh",
+  "prompt": "Una cuerda se divide en 10 partes iguales y se usan 6. ¿Qué fracción de la cuerda se usó? Escríbela simplificada.",
+  "recode": [
+   {
+    "label": "3/10",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4ty8003uicrhp0aqjryt",
+  "prompt": "De 20 estudiantes, 15 llevaron colación. ¿Qué fracción del curso llevó colación? Escríbela simplificada.",
+  "recode": [
+   {
+    "label": "3/5",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjj4u1q0049icrhiujhd32d",
+  "prompt": "Una receta usa 2/4 de taza de leche. Rosa solo tiene una taza medidora de octavos. ¿Cuántos octavos de taza debe medir?",
+  "recode": [
+   {
+    "label": "2",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwap0013nirhujpbrzor",
+  "prompt": "¿Qué número mixto marca el punto en la recta?",
+  "recode": [
+   {
+    "label": "1 1/5",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwoi002mnirhxxedlmex",
+  "prompt": "¿Qué fracción impropia marca el punto en la recta?",
+  "recode": [
+   {
+    "label": "7/4",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdw6z000onirhvef2j4c1",
+  "prompt": "Escribe 1 3/5 como fracción impropia.",
+  "recode": [
+   {
+    "label": "13/5",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwgs001snirhv2fj7wvr",
+  "prompt": "Escribe 2 3/4 como fracción impropia.",
+  "recode": [
+   {
+    "label": "23/4",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwtj0036nirhykns7yxw",
+  "prompt": "Fernanda dice que 2 3/5 = 23/5. Ignacio dice que 2 3/5 = 13/5. ¿Quién tiene razón?",
+  "recode": [
+   {
+    "label": "Fernanda",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwuu003bnirhp9yel6nz",
+  "prompt": "Una cinta mide 3 1/2 metros. ¿Cuántos medios metros son?",
+  "recode": [
+   {
+    "label": "31",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdwyj003qnirhz8j9xupb",
+  "prompt": "Cada barra es un entero. Escribe la parte pintada como número mixto y como fracción impropia.",
+  "recode": [
+   {
+    "label": "1 3/5 = 13/5",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjjdx3h004anirhuom5h8kr",
+  "prompt": "¿Cuántos sextos hay en 2 5/6?",
+  "recode": [
+   {
+    "label": "25",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7hzh000o6krhz4tw1g90",
+  "prompt": "Cuenta de 1 en 1: 47, 48, 49, ... ¿Qué número sigue?",
+  "relabel": [
+   {
+    "from": "60",
+    "to": "410",
+    "toEn": null,
+    "code": "E2_RES"
+   }
+  ],
+  "hint": {
+   "old": "Al llegar al 49 se completan 4 decenas y 9 unidades: el siguiente número empieza una decena nueva.",
+   "new": "Después del 49 viene un número que empieza con 5.",
+   "oldEn": "At 49 you have 4 tens and 9 ones: the next number starts a new ten.",
+   "newEn": "After 49 comes a number that starts with 5."
+  }
+ },
+ {
+  "exerciseId": "cmun91fie000stwrhur5o2cgj",
+  "prompt": "Empiezas en el número 0 y das saltos de 2 en 2. Después de dar 4 saltos, ¿en qué número quedaste?",
+  "recode": [
+   {
+    "label": "6",
+    "from": "E2_CAL",
+    "to": "E2_RES"
+   },
+   {
+    "label": "4",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91fil000xtwrhdjb0rs7s",
+  "prompt": "Estás en el número 5 y saltas de 5 en 5 tres veces más. ¿En qué número terminas?",
+  "recode": [
+   {
+    "label": "15",
+    "from": "E2_CAL",
+    "to": "E2_RES"
+   },
+   {
+    "label": "3",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91fip0012twrhni8us3mo",
+  "prompt": "Un sapito está en el número 20 y da saltos de 2 en 2 hacia atrás. Después de 5 saltos, ¿en qué número quedó?",
+  "recode": [
+   {
+    "label": "12",
+    "from": "E2_CAL",
+    "to": "E2_RES"
+   },
+   {
+    "label": "5",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91fiw0017twrhb8llesdj",
+  "prompt": "Estás parado en el número 30 y das saltos de 10 en 10 hacia adelante. ¿Cuántos saltos necesitas dar para llegar al número 80?",
+  "recode": [
+   {
+    "label": "50",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "6",
+    "from": "E2_CAL",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i0600186krhe4akv9gy",
+  "prompt": "Cuenta de 2 en 2: 64, 66, __, 70. ¿Qué número falta?",
+  "relabel": [
+   {
+    "from": "58",
+    "to": "70",
+    "toEn": null,
+    "code": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18t20093ftrht45iw6us",
+  "prompt": "Ana tiene 8 stickers y Pedro tiene 13. ¿Quién tiene más?",
+  "add": [
+   {
+    "label": "13",
+    "labelEn": null,
+    "code": "E3_PREG"
+   },
+   {
+    "label": "Tienen lo mismo",
+    "labelEn": "They have the same",
+    "code": "E1_OP"
+   }
+  ],
+  "recode": [
+   {
+    "label": "Ana",
+    "from": "E3_PREG",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18t70096ftrhfwed0kkt",
+  "prompt": "Tomás tiene 16 lápices y Sofía tiene 9. ¿Quién tiene menos lápices?",
+  "add": [
+   {
+    "label": "9",
+    "labelEn": null,
+    "code": "E3_PREG"
+   },
+   {
+    "label": "Tienen lo mismo",
+    "labelEn": "They have the same",
+    "code": "E1_OP"
+   }
+  ],
+  "recode": [
+   {
+    "label": "Tomás",
+    "from": "E3_PREG",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18td0099ftrhn4c7jh3t",
+  "prompt": "Camila leyó 12 páginas y Beto leyó 19. ¿Quién leyó más páginas?",
+  "add": [
+   {
+    "label": "19",
+    "labelEn": null,
+    "code": "E3_PREG"
+   },
+   {
+    "label": "Leyeron lo mismo",
+    "labelEn": "They read the same",
+    "code": "E1_OP"
+   }
+  ],
+  "recode": [
+   {
+    "label": "Camila",
+    "from": "E3_PREG",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18th009cftrhlee0rrmr",
+  "prompt": "En el jardín hay 6 flores rojas y 14 flores amarillas. ¿Hay más flores rojas o amarillas?",
+  "add": [
+   {
+    "label": "14",
+    "labelEn": null,
+    "code": "E3_PREG"
+   },
+   {
+    "label": "Hay igual",
+    "labelEn": "There are the same",
+    "code": "E1_OP"
+   }
+  ],
+  "recode": [
+   {
+    "label": "Rojas",
+    "from": "E3_PREG",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i3d00376krh7kdezsjs",
+  "prompt": "Pedro quiere juntar 20 figuritas para llenar su álbum. Ya tiene 12. ¿Cuántas le faltan?",
+  "recode": [
+   {
+    "label": "12",
+    "from": "E3_DATO",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18f8000eftrhakfbmmfu",
+  "prompt": "¿Cuánto es 20 − 20?",
+  "recode": [
+   {
+    "label": "40",
+    "from": null,
+    "to": "E1_OP"
+   },
+   {
+    "label": "20",
+    "from": "E1_OP",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18fj000jftrh9asm8y1x",
+  "prompt": "¿Cuánto es 8 + 5?",
+  "relabel": [
+   {
+    "from": "18",
+    "to": "14",
+    "toEn": null,
+    "code": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18eu0009ftrhq7sr27q6",
+  "prompt": "¿Cuánto es 6 + 7?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 6, avanzando 7 posiciones.",
+   "new": "Empieza en el 7 y cuenta 6 más.",
+   "oldEn": "Start at 6 and count on seven more.",
+   "newEn": "Start at 7 and count on 6 more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18h00013ftrhz8ypk5dd",
+  "prompt": "¿Cuánto es 3 + 4?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 3, avanzando 4 posiciones.",
+   "new": "Empieza en el 4 y cuenta 3 más.",
+   "oldEn": "Start at 3 and count on four more.",
+   "newEn": "Start at 4 and count on 3 more."
+  }
+ },
+ {
+  "exerciseId": "cmun91ezm000dtwrhi45zj6hk",
+  "prompt": "Párate en el número 12 y da 4 saltos hacia atrás. ¿En qué número quedaste?",
+  "hint": {
+   "old": "Cada salto hacia atrás resta 1 al número en el que estás. Cuenta hacia atrás en voz alta un número por cada salto, empezando justo después del 12.",
+   "new": "Cuenta hacia atrás: 11, 10… un número por salto.",
+   "oldEn": "Each jump backward subtracts 1 from the number you're on. Count back out loud one number per jump, starting right after 12.",
+   "newEn": "Count back: 11, 10… one number for each jump."
+  }
+ },
+ {
+  "exerciseId": "cmuli7i4u004c6krh7zludy0e",
+  "prompt": "Patrón: rojo, rojo, azul, rojo, rojo, azul, rojo, ... ¿Qué sigue?",
+  "recode": [
+   {
+    "label": "azul",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i6p005w6krhd0z1ta80",
+  "prompt": "¿Cuál de estas figuras 3D tiene una punta arriba y una base circular abajo?",
+  "hint": {
+   "old": "Imagina un cucurucho de helado dado vuelta: ¿qué forma tiene?",
+   "new": "Busca la figura que tiene una sola punta.",
+   "oldEn": "Imagine an ice cream cone turned upside down: what shape is it?",
+   "newEn": "Look for the shape with just one point."
+  }
+ },
+ {
+  "exerciseId": "cmulib568000df4rhhqy966hg",
+  "prompt": "Luz mide su banco con clips. Ya puso 3 clips. Le falta poner 1 clip más para cubrir todo el banco. ¿Cuántos clips mide el banco?",
+  "relabel": [
+   {
+    "from": "7",
+    "to": "2",
+    "toEn": null,
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i8v00816krhe5b1h7o0",
+  "prompt": "Mira los dibujos. Cada dibujo vale 1 fruta. ¿Cuántas manzanas hay?",
+  "recode": [
+   {
+    "label": "2",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i8z00866krh2uvrdib4",
+  "prompt": "Mira los dibujos. Cada dibujo vale 1 mascota. ¿Cuántos perros hay?",
+  "recode": [
+   {
+    "label": "3",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7i9t00906krhj83dovtx",
+  "prompt": "Mira los dibujos. Cada dibujo vale 1 fruta. Si se comen 2 manzanas, ¿cuántas manzanas quedan?",
+  "recode": [
+   {
+    "label": "7",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7icu00a56krh76k0uoy3",
+  "prompt": "¿Qué número tiene 6 decenas y 4 unidades?",
+  "recode": [
+   {
+    "label": "46",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7icy00aa6krhm9wtutbl",
+  "prompt": "¿Qué número es 50 + 7?",
+  "recode": [
+   {
+    "label": "507",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "75",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7id100af6krhhu8pqvxr",
+  "prompt": "Un número tiene 9 decenas y 0 unidades. ¿Qué número es?",
+  "recode": [
+   {
+    "label": "9",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "Cada decena vale 10. Cuenta de 10 en 10 tantas decenas como hay; las unidades que faltan no suman nada.",
+   "new": "Cada decena vale 10. 0 unidades quiere decir que no hay cubitos sueltos.",
+   "oldEn": "Each ten is worth 10. Count by 10s for each ten there is; no ones means nothing more to add.",
+   "newEn": "Each ten is worth 10. 0 ones means there are no loose cubes."
+  }
+ },
+ {
+  "exerciseId": "cmuli7id700ak6krh8bigbmga",
+  "prompt": "Marta dice: “Mi número tiene el 2 en las decenas y el 8 en las unidades”. ¿Qué número es?",
+  "recode": [
+   {
+    "label": "82",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "20",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7idc00ap6krh5mfeay9a",
+  "prompt": "Si a 34 le agregas 1 decena, ¿qué número obtienes?",
+  "recode": [
+   {
+    "label": "35",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "134",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7idi00au6krhz2miw5iw",
+  "prompt": "Sofía tiene 4 cajas con 10 lápices cada una y 6 lápices sueltos. ¿Cuántos lápices tiene en total?",
+  "recode": [
+   {
+    "label": "64",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7idl00az6krhkz59pwlo",
+  "prompt": "Hay 52 huevos y se guardan en cartones de 10 huevos. ¿Cuántos cartones llenos se arman y cuántos huevos sobran?",
+  "recode": [
+   {
+    "label": "2 cartones y 5 huevos",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7idr00b46krhrn9wqjin",
+  "prompt": "Con 2 monedas de $10 y 9 monedas de $1, ¿cuánto dinero juntas?",
+  "recode": [
+   {
+    "label": "$92",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7icp00a06krhqh5mn4tk",
+  "prompt": "¿Cuántas unidades hay en 3 decenas?",
+  "recode": [
+   {
+    "label": "13",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7icl009v6krhsb9pmlg8",
+  "prompt": "¿Cuánto vale el 5 en el número 52?",
+  "recode": [
+   {
+    "label": "2",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18mt005aftrhixh4sz3s",
+  "prompt": "¿Cuánto es 12 + 15?",
+  "add": [
+   {
+    "label": "17",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18n0005eftrhknqr2s4v",
+  "prompt": "¿Cuánto es 24 + 13?",
+  "add": [
+   {
+    "label": "27",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18nd005iftrhr5gs6fgs",
+  "prompt": "¿Cuánto es 35 − 12?",
+  "add": [
+   {
+    "label": "33",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18nh005mftrh176lxbz6",
+  "prompt": "¿Cuánto es 47 − 15?",
+  "add": [
+   {
+    "label": "42",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18np005qftrh0gkk390u",
+  "prompt": "¿Cuánto es 23 + 15?",
+  "add": [
+   {
+    "label": "28",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18nt005uftrhf5d8fdvi",
+  "prompt": "¿Cuánto es 34 + 25?",
+  "add": [
+   {
+    "label": "39",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18o0005yftrh9jlptk4j",
+  "prompt": "¿Cuánto es 68 − 24?",
+  "add": [
+   {
+    "label": "64",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18o50062ftrhyam7mygi",
+  "prompt": "¿Cuánto es 56 − 23?",
+  "add": [
+   {
+    "label": "53",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18om006gftrh6g70nyn4",
+  "prompt": "¿Cuánto es 63 + 26?",
+  "add": [
+   {
+    "label": "69",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18ov006kftrh9k3ny20l",
+  "prompt": "¿Cuánto es 88 − 45?",
+  "add": [
+   {
+    "label": "83",
+    "labelEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91g7u001htwrhtqzx83ac",
+  "prompt": "Estás parado en el número 72 y das 15 saltos hacia atrás, de uno en uno. ¿En qué número quedaste?",
+  "level": {
+   "from": 1,
+   "to": 3
+  },
+  "hint": {
+   "old": "Cada salto hacia atrás resta 1. Cuenta hacia atrás en voz alta un número por cada salto, empezando justo después del 72.",
+   "new": "Cada salto hacia atrás resta 1. Cuenta hacia atrás: 71, 70… un número por salto.",
+   "oldEn": "Each backward jump subtracts 1. Count back out loud one number per jump, starting right after 72.",
+   "newEn": "Each backward jump takes away 1. Count back: 71, 70… one number for each jump."
+  }
+ },
+ {
+  "exerciseId": "cmun91g8g0021twrhf9349ldk",
+  "prompt": "Estás parado en el número 95 y das 6 saltos hacia atrás, de 5 en 5. ¿En qué número quedaste?",
+  "recode": [
+   {
+    "label": "30",
+    "from": "E3_DATO",
+    "to": "E3_PREG"
+   }
+  ],
+  "relabel": [
+   {
+    "from": "64",
+    "to": "70",
+    "toEn": null,
+    "code": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7idw00ba6krhb27uilwr",
+  "prompt": "¿Cuánto es 2 × 6?",
+  "recode": [
+   {
+    "label": "26",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "Multiplicar es sumar el mismo número varias veces. 2 × 6 es lo mismo que 6 + 6.",
+   "new": "Son 6 grupos de 2: cuenta de 2 en 2 seis veces.",
+   "oldEn": "Multiplying is adding the same number several times. 2 × 6 is the same as 6 + 6.",
+   "newEn": "There are 6 groups of 2: count by 2s six times."
+  }
+ },
+ {
+  "exerciseId": "cmuli7ie100bf6krhb9wp8hnr",
+  "prompt": "¿Cuánto es 5 × 3?",
+  "recode": [
+   {
+    "label": "35",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "Cuenta de 5 en 5 tres veces: 5, 10, y sigue una vez más.",
+   "new": "Cuenta de 5 en 5, tres veces.",
+   "oldEn": "Count by 5s three times: 5, 10, and go one more time.",
+   "newEn": "Count by 5s, three times."
+  }
+ },
+ {
+  "exerciseId": "cmuli7iec00bp6krh5d752tx8",
+  "prompt": "¿Cuánto es 2 × 9?",
+  "recode": [
+   {
+    "label": "29",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "2 × 9 significa 2 veces el 9. Suma 9 + 9.",
+   "new": "Son 9 grupos de 2: cuenta de 2 en 2 nueve veces.",
+   "oldEn": "2 × 9 means 2 times 9. Add 9 + 9.",
+   "newEn": "There are 9 groups of 2: count by 2s nine times."
+  }
+ },
+ {
+  "exerciseId": "cmuli7ieg00bu6krhju9oilzc",
+  "prompt": "Cada bicicleta tiene 2 ruedas. ¿Cuántas ruedas hay en 7 bicicletas?",
+  "recode": [
+   {
+    "label": "72",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iem00bz6krhr5xke1eb",
+  "prompt": "En una mano hay 5 dedos. ¿Cuántos dedos hay en 6 manos?",
+  "recode": [
+   {
+    "label": "56",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ieq00c46krhb68c7w70",
+  "prompt": "Un paquete trae 10 lápices. ¿Cuántos lápices hay en 4 paquetes?",
+  "recode": [
+   {
+    "label": "104",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7if000ce6krhb3bywjku",
+  "prompt": "¿Cuál es el doble de 8?",
+  "relabel": [
+   {
+    "from": "64",
+    "to": "8",
+    "toEn": null,
+    "code": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91gir0030twrh69750n4o",
+  "prompt": "Martina da saltos de 5 en 5 empezando en el 0. Después de dar 6 saltos, retrocede 3 saltos más, de 1 en 1. ¿En qué número quedó?",
+  "recode": [
+   {
+    "label": "25",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ihd00eo6krhf7may1x7",
+  "prompt": "¿Cuántos lados tiene un triángulo?",
+  "hint": {
+   "old": "Piensa en un cartel de “ceda el paso” y cuenta sus lados rectos uno por uno. El prefijo “tri” también es una pista.",
+   "new": "Recorre el borde con el dedo y cuenta los lados rectos.",
+   "oldEn": "Think of a yield sign and count its straight sides one by one. The prefix \"tri\" is also a clue.",
+   "newEn": "Trace the edge with your finger and count the straight sides."
+  },
+  "relabel": [
+   {
+    "from": "0",
+    "to": "6",
+    "toEn": null,
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmulib5b2000if4rh000qnge2",
+  "prompt": "Marta dibuja una figura con 3 lados y le agrega 1 lado más. De estas figuras, ¿cuál puede ser la que tiene ahora?",
+  "recode": [
+   {
+    "label": "Una figura con 2 lados",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iho00ey6krhjr3gs9q5",
+  "prompt": "¿Qué figura no tiene lados rectos ni esquinas?",
+  "hint": {
+   "old": "Piensa en una moneda o en la tapa de un frasco. Ve cuál figura es completamente curva.",
+   "new": "Pasa el dedo por el borde: ¿en cuál nunca encuentras una esquina?",
+   "oldEn": "Think of a coin or a jar lid. See which shape is completely curved.",
+   "newEn": "Run your finger along the edge: which one never has a corner?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ij600gd6krhsakkxsqh",
+  "prompt": "El reloj digital marca 4:00. ¿Qué hora es?",
+  "relabel": [
+   {
+    "from": "Las 12 y media",
+    "to": "Las 3 y media",
+    "toEn": "Half past 3",
+    "code": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ijo00gx6krhc2uwb34v",
+  "prompt": "Un reloj digital marca 11:30. ¿Qué hora será media hora después?",
+  "relabel": [
+   {
+    "from": "1:00",
+    "to": "11:60",
+    "toEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ijl00gs6krhs15hkczy",
+  "prompt": "¿Cómo se escribe en un reloj digital las 2 y media?",
+  "recode": [
+   {
+    "label": "2:15",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ijt00h26krhiuvnej9o",
+  "prompt": "Son las 5:00. ¿Qué hora será dentro de 1 hora?",
+  "recode": [
+   {
+    "label": "5:30",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ikk00hw6krhiqpqj10v",
+  "prompt": "La película empezó a las 4:00 y duró 2 horas. ¿A qué hora terminó?",
+  "recode": [
+   {
+    "label": "2:00",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ilb00im6krhtin5nzdf",
+  "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que vienen en bus tiene 4 estrellas. ¿Cuántos niños vienen en bus?",
+  "recode": [
+   {
+    "label": "4",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ilf00ir6krh85dkdxh3",
+  "prompt": "En un pictograma, cada helado dibujado vale 5 helados vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos helados se vendieron el viernes?",
+  "recode": [
+   {
+    "label": "3",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   },
+   {
+    "label": "35",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ill00iw6krhgqyb546a",
+  "prompt": "En un pictograma, cada pelota dibujada vale 10 goles. La fila de un equipo tiene 4 pelotas. ¿Cuántos goles hizo el equipo?",
+  "recode": [
+   {
+    "label": "4",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ilz00jb6krhwx3bu2do",
+  "prompt": "En un pictograma, cada manzana dibujada vale 2 manzanas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas manzanas se comieron entre los dos días?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7im500jg6krhapb1ul47",
+  "prompt": "En un pictograma, cada bicicleta dibujada vale 5 bicicletas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas bicicletas más hubo el martes que el lunes?",
+  "recode": [
+   {
+    "label": "2",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7imf00jr6krhho4qw7h0",
+  "prompt": "En el número 372, ¿qué dígito está en el lugar de las centenas?",
+  "recode": [
+   {
+    "label": "7",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "2",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "300",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7imo00k16krhd2mkevw0",
+  "prompt": "En el número 806, ¿qué dígito está en el lugar de las decenas?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "6",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7imr00k66krhi2i4iks4",
+  "prompt": "¿Cuál es el valor del dígito 6 en el número 762?",
+  "recode": [
+   {
+    "label": "6",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "600",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7in600kl6krhsv69n5fm",
+  "prompt": "¿Cuál es la descomposición correcta del número 638?",
+  "recode": [
+   {
+    "label": "600 + 3 + 8",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "60 + 30 + 8",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7imj00jw6krhliati7df",
+  "prompt": "¿Qué número se forma con 4 centenas, 5 decenas y 8 unidades?",
+  "recode": [
+   {
+    "label": "485",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "548",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ina00kq6krhyxx32vtw",
+  "prompt": "Ana anotó un número con 7 unidades, 4 centenas y 9 decenas. ¿Qué número anotó?",
+  "recode": [
+   {
+    "label": "749",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "479",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ine00kv6krh67r4db0t",
+  "prompt": "Tomás dice: «En mi número el 3 vale 300 y el 8 vale 80». Su número tiene tres cifras y termina en 1. ¿Cuál es?",
+  "recode": [
+   {
+    "label": "831",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "318",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7in200kg6krhanp3tnoq",
+  "prompt": "¿Cuál es el número que tiene 5 centenas y 6 unidades?",
+  "recode": [
+   {
+    "label": "560",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ink00l06krhmig612dj",
+  "prompt": "En una dulcería hay bolsas de 100 caramelos, paquetes de 10 y caramelos sueltos. Para tener 234 caramelos, ¿qué se necesita?",
+  "recode": [
+   {
+    "label": "3 bolsas, 2 paquetes y 4 sueltos",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "2 bolsas, 3 paquetes y 40 sueltos",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "4 bolsas, 3 paquetes y 2 sueltos",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7imw00kb6krhq5wc0itn",
+  "prompt": "¿Qué número es 700 + 20 + 5?",
+  "recode": [
+   {
+    "label": "752",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ip100mk6krhxg5jh3pp",
+  "prompt": "Sofía tenía 250 stickers. Le regalaron 175 y después regaló 90 a su prima. ¿Cuántos stickers tiene ahora?",
+  "recode": [
+   {
+    "label": "425",
+    "from": "E3_PREG",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91hal003ztwrh33hswigd",
+  "prompt": "Un grillo salta de 8 en 8 desde el número 0 y llega justo al número 56. ¿Cuántos saltos dio?",
+  "relabel": [
+   {
+    "from": "63",
+    "to": "64",
+    "toEn": null,
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iqc00nz6krhoc082q3i",
+  "prompt": "Un álbum tiene 9 páginas con 6 fotos cada una, todas llenas. Ya tienes 20 fotos pegadas. ¿Cuántas fotos faltan por pegar?",
+  "recode": [
+   {
+    "label": "54",
+    "from": "E3_PREG",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ipg00n06krhwvmnnnks",
+  "prompt": "¿Cuánto es 4 + 4 + 4 + 4 + 4 + 4? Puedes ayudarte con una multiplicación.",
+  "recode": [
+   {
+    "label": "20",
+    "from": "E3_DATO",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7irq00pe6krhnqcwobqa",
+  "prompt": "Se reparten 32 caramelos en partes iguales entre 4 amigos y luego cada uno regala 3. ¿Cuántos caramelos le quedan a cada amigo?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E3_PREG",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iuf00s36krhhq5urlld",
+  "prompt": "Bruno ahorra $100 el lunes, $200 el martes, $300 el miércoles y así sigue. ¿Cuánto ahorra el viernes?",
+  "recode": [
+   {
+    "label": "$1.500",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "$400",
+    "from": "E3_DATO",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7itr00re6krhlztpf4k5",
+  "prompt": "¿Qué número falta? 2, 4, 6, □, 10",
+  "recode": [
+   {
+    "label": "12",
+    "from": "E2_CAL",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmun91hlu004jtwrhqg46cboi",
+  "prompt": "Un niño salta de 3 en 3 empezando en el número 2: 2, 5, 8, 11, … Si sigue el mismo patrón, ¿qué número sigue?",
+  "recode": [
+   {
+    "label": "12",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iuz00so6krhhnjgwgid",
+  "prompt": "¿Qué figura 2D forman las caras de un cubo?",
+  "relabel": [
+   {
+    "from": "Rectángulos",
+    "to": "Rombos",
+    "toEn": "Rhombuses",
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ivd00t36krh6waubzwb",
+  "prompt": "¿Qué figuras 2D forman la red de un cilindro?",
+  "recode": [
+   {
+    "label": "1 círculo y 1 rectángulo",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   },
+   {
+    "label": "2 círculos y 2 rectángulos",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ivp00ti6krhsvsdlqxd",
+  "prompt": "Beatriz tiene una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
+  "recode": [
+   {
+    "label": "Cono",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   },
+   {
+    "label": "Prisma rectangular",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "Imagina que doblas el rectángulo formando un tubo y pegas los círculos en los extremos.",
+   "new": "Piensa en qué figura 3D tiene dos caras planas circulares.",
+   "oldEn": "Imagine you roll the rectangle into a tube and stick the circles on the ends.",
+   "newEn": "Think about which 3D shape has two flat circular faces."
+  },
+  "level": {
+   "from": 3,
+   "to": 2
+  }
+ },
+ {
+  "exerciseId": "cmuli7ivu00tn6krh8gcmky3b",
+  "prompt": "Un cubo y una caja de zapatos, ¿qué tienen en común?",
+  "hint": {
+   "old": "Compara las esquinas de ambos. Recuerda que una caja de zapatos no siempre tiene caras cuadradas.",
+   "new": "Compara las caras, las aristas y los vértices de las dos figuras.",
+   "oldEn": "Compare the corners of both. Remember that a shoebox does not always have square faces.",
+   "newEn": "Compare the faces, edges and vertices of the two shapes."
+  }
+ },
+ {
+  "exerciseId": "cmuli7ivm00td6krhrnu20gt1",
+  "prompt": "¿Cuántas aristas tiene un cubo?",
+  "hint": {
+   "old": "Las aristas son los bordes donde se juntan dos caras. Cuenta 4 arriba, 4 abajo y las que unen ambos pisos.",
+   "new": "Las aristas son los bordes donde se juntan dos caras. Recorre el cubo y no olvides las que no se ven.",
+   "oldEn": "Edges are the borders where two faces meet. Count those on top, those on the bottom and those joining the two levels.",
+   "newEn": "Edges are the lines where two faces meet. Go around the cube and do not forget the ones you cannot see."
+  }
+ },
+ {
+  "exerciseId": "cmuli7iw400ty6krhujdew2is",
+  "prompt": "Un cuadrado tiene lados de 6 cm. ¿Cuál es su perímetro?",
+  "recode": [
+   {
+    "label": "36 cm",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "18 cm",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iw800u36krh2xty69dv",
+  "prompt": "¿Cuál es el perímetro de un rectángulo de 7 cm de largo y 3 cm de ancho?",
+  "recode": [
+   {
+    "label": "21 cm",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "13 cm",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iws00ud6krhmfxxnyhd",
+  "prompt": "Un terreno rectangular mide 12 m de largo y 8 m de ancho. ¿Cuánto mide su perímetro?",
+  "recode": [
+   {
+    "label": "96 m",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "28 m",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ix500us6krh626ywi0x",
+  "prompt": "Un cuaderno mide 20 cm de largo y 15 cm de ancho. ¿Cuál es su perímetro?",
+  "recode": [
+   {
+    "label": "300 cm",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "55 cm",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ixb00ux6krh6rrw7fjz",
+  "prompt": "Don José cercará un jardín cuadrado de 15 m de lado con una reja. ¿Cuántos metros de reja necesita?",
+  "recode": [
+   {
+    "label": "225 m",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "45 m",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ixe00v26krh9s2zchat",
+  "prompt": "Una plaza rectangular mide 40 m de largo y 25 m de ancho. Camila da una vuelta completa caminando por el borde. ¿Cuántos metros camina?",
+  "recode": [
+   {
+    "label": "1.000 m",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "105 m",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iwy00ui6krhqgu6tmkf",
+  "prompt": "El perímetro de un cuadrado es 28 cm. ¿Cuánto mide cada lado?",
+  "recode": [
+   {
+    "label": "14 cm",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ix200un6krhunzfdrsy",
+  "prompt": "Un rectángulo tiene un perímetro de 30 cm y su largo mide 10 cm. ¿Cuánto mide su ancho?",
+  "recode": [
+   {
+    "label": "10 cm",
+    "from": "E2_CAL",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ixj00v76krh34xb4sap",
+  "prompt": "Ema da 2 vueltas completas al borde de una cancha rectangular de 30 m por 20 m. ¿Cuántos metros recorrió en total?",
+  "recode": [
+   {
+    "label": "100 m",
+    "from": "E3_PREG",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iyj00wc6krhlkggl5v1",
+  "prompt": "En un gráfico, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?",
+  "recode": [
+   {
+    "label": "3",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   },
+   {
+    "label": "70",
+    "from": "E3_DATO",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iyt00wh6krh25euztl0",
+  "prompt": "En un pictograma cada libro dibujado representa 3 libros prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos libros se prestaron en total?",
+  "recode": [
+   {
+    "label": "12",
+    "from": "E2_CAL",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ixx00vn6krhh0au2498",
+  "prompt": "En un pictograma, cada dibujo de libro vale 2 libros. En «Lunes» hay 4 dibujos de libro. ¿Cuántos libros representa?",
+  "recode": [
+   {
+    "label": "6",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iza00wx6krhtrcusl29",
+  "prompt": "En el número 5.273, ¿cuál es el valor del dígito 7?",
+  "recode": [
+   {
+    "label": "7",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "700",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "7.000",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7izj00x76krhh5d3h7iz",
+  "prompt": "¿Qué suma corresponde al número 7.086?",
+  "recode": [
+   {
+    "label": "7.000 + 800 + 6",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "7.000 + 8 + 6",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7iz600ws6krh0hp3r09q",
+  "prompt": "¿Qué número se forma con 3 unidades de mil, 4 centenas, 5 decenas y 2 unidades?",
+  "recode": [
+   {
+    "label": "3.542",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7izv00xm6krh3klfxb4g",
+  "prompt": "Un estadio tiene capacidad para 7.508 personas. ¿Cómo se lee esa cantidad?",
+  "recode": [
+   {
+    "label": "siete mil cincuenta y ocho",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "siete mil quinientos ochenta",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7ize00x26krh50ovtlz7",
+  "prompt": "Cuentas de 100 en 100: 2.300, 2.400, 2.500… ¿Qué número sigue?",
+  "recode": [
+   {
+    "label": "3.500",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j0200xr6krhc16oh7wf",
+  "prompt": "Diego tiene 2.450 puntos en un juego. Gana 100 puntos por cada nivel que supera y supera 3 niveles. ¿Cuántos puntos tiene ahora?",
+  "recode": [
+   {
+    "label": "5.450",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "2.480",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7izn00xc6krh6kidv98f",
+  "prompt": "Ordena de menor a mayor: 4.205, 4.025, 4.250, 4.052.",
+  "recode": [
+   {
+    "label": "4.025, 4.052, 4.250, 4.205",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j0y00yr6krh0pwjgjd3",
+  "prompt": "Para estimar 398 × 5, redondeas 398 a la centena más cercana. ¿Cuál es la estimación?",
+  "recode": [
+   {
+    "label": "2.500",
+    "from": "E3_DATO",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j0j00yc6krhue3bw6ql",
+  "prompt": "Sabes que 8 × 7 = 56. ¿Cuánto es 80 × 7?",
+  "recode": [
+   {
+    "label": "56",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j0f00y76krhonfofth2",
+  "prompt": "¿Cuánto es 212 × 3?",
+  "recode": [
+   {
+    "label": "606",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j1700z16krhm40sczwf",
+  "prompt": "Cada paquete de galletas cuesta $345. ¿Cuánto cuestan 4 paquetes?",
+  "recode": [
+   {
+    "label": "$1.360",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j1a00z66krhsmycqji0",
+  "prompt": "Ana compra 3 cuadernos de $950 cada uno. ¿Cuánto paga en total?",
+  "recode": [
+   {
+    "label": "$2.700",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j0r00ym6krhuhj7u2gq",
+  "prompt": "Sofía calcula 213 × 4 así: 200 × 4 + 10 × 4 + 3 × 4. ¿Cuál es el resultado?",
+  "recode": [
+   {
+    "label": "843",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j1z00zw6krhnwfiyyul",
+  "prompt": "Al dividir 47 ÷ 5, ¿cuál es el cociente y cuál es el resto?",
+  "recode": [
+   {
+    "label": "2 y resto 9",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j2g010g6krhif2ia6m8",
+  "prompt": "Van 45 personas a un paseo y cada auto lleva 4 personas. ¿Cuántos autos se necesitan para que nadie quede sin lugar?",
+  "recode": [
+   {
+    "label": "11",
+    "from": "E2_RES",
+    "to": "E3_PREG"
+   }
+  ],
+  "hint": {
+   "old": "Divide 45 por 4 y mira qué pasa con lo que sobra: esas personas también necesitan un auto.",
+   "new": "Divide 45 por 4. Antes de elegir, comprueba: ¿caben todas las personas en esa cantidad de autos?",
+   "oldEn": "Divide 45 by 4 and look at what is left over: those people also need a car.",
+   "newEn": "Divide 45 by 4. Before you choose, check: do all the people fit in that many cars?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j2301016krhozy666a5",
+  "prompt": "¿Con cuál de estas operaciones puedes comprobar que 56 ÷ 8 = 7?",
+  "recode": [
+   {
+    "label": "7 × 7 = 49",
+    "from": "E2_CAL",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j4301266krh3k7qpovb",
+  "prompt": "¿Cuál de estos números hace verdadera la desigualdad? □ + 10 > 30",
+  "recode": [
+   {
+    "label": "20",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "Prueba cada número: súmale 10 y mira si el resultado es mayor que 30 (no basta con que sea igual).",
+   "new": "Prueba cada número: súmale 10 y compara el resultado con 30 usando el signo >.",
+   "oldEn": "Try each number: add 10 and check whether the result is greater than 30 (being equal is not enough).",
+   "newEn": "Try each number: add 10 and compare the result with 30 using the > sign."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j4h012l6krhv05s57z2",
+  "prompt": "¿Cuál de estos números hace verdadera la desigualdad? □ + 15 < 40",
+  "recode": [
+   {
+    "label": "25",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ],
+  "hint": {
+   "old": "Prueba cada número: súmale 15 y mira si el resultado es menor que 40 (igual a 40 no sirve).",
+   "new": "Prueba cada número: súmale 15 y compara el resultado con 40 usando el signo <.",
+   "oldEn": "Try each number: add 15 and check whether the result is less than 40 (equal to 40 does not work).",
+   "newEn": "Try each number: add 15 and compare the result with 40 using the < sign."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j4l012q6krhwvhr6hj1",
+  "prompt": "Tenía algunas figuritas. Me regalaron 24 y ahora tengo 60. ¿Cuántas figuritas tenía al principio?",
+  "recode": [
+   {
+    "label": "24",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j5e013l6krhqta5c68v",
+  "prompt": "Un triángulo equilátero tiene sus 3 lados iguales. ¿Cuántas líneas de simetría tiene?",
+  "hint": {
+   "old": "Prueba doblar el triángulo desde cada vértice hasta el punto medio del lado de enfrente.",
+   "new": "Imagina doblar el triángulo de distintas formas. Cuenta solo los dobleces en que las dos mitades calzan exactamente.",
+   "oldEn": "Try folding the triangle from each vertex to the midpoint of the opposite side.",
+   "newEn": "Imagine folding the triangle in different ways. Count only the folds where both halves match exactly."
+  },
+  "recode": [
+   {
+    "label": "6",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j5q01406krh5bt87zvz",
+  "prompt": "Un pentágono regular tiene 5 lados iguales y 5 ángulos iguales. ¿Cuántas líneas de simetría tiene?",
+  "hint": {
+   "old": "Cada línea de simetría pasa por un vértice y llega al medio del lado opuesto. Cuenta cuántos vértices hay.",
+   "new": "Busca dobleces en que las dos mitades calcen y revisa que no cuentes dos veces el mismo.",
+   "oldEn": "Each line of symmetry goes through a vertex and reaches the middle of the opposite side. Count how many vertices there are.",
+   "newEn": "Look for folds where both halves match, and check that you do not count the same one twice."
+  },
+  "recode": [
+   {
+    "label": "10",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j61014a6krh657zn6gx",
+  "prompt": "Se dobla una hoja cuadrada por una de sus diagonales y queda un triángulo con un ángulo recto y dos lados iguales. ¿Cuántas líneas de simetría tiene ese triángulo?",
+  "hint": {
+   "old": "Busca cómo doblar el triángulo para que las mitades calcen. Solo sirve doblar por el ángulo recto hacia el lado que tiene enfrente.",
+   "new": "Prueba distintos dobleces y revisa en cuáles las dos mitades calzan justo.",
+   "oldEn": "Look for a way to fold the triangle so the halves match. Only a fold from the right angle to the side facing it works.",
+   "newEn": "Try different folds and check in which ones both halves match exactly."
+  },
+  "recode": [
+   {
+    "label": "2",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "0",
+    "from": "E3_PREG",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j5101366krhzfptirfp",
+  "prompt": "¿Cuántas líneas de simetría tiene un cuadrado?",
+  "recode": [
+   {
+    "label": "2",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j55013b6krheddw9v0u",
+  "prompt": "¿Cuántas líneas de simetría tiene un rectángulo que no es cuadrado?",
+  "recode": [
+   {
+    "label": "1",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j7n01606krh2nmzuh6d",
+  "prompt": "Un gráfico de barras muestra votos: Rojo 12, Azul 18 y Verde 9. ¿Qué color tiene la barra más alta?",
+  "relabel": [
+   {
+    "from": "Ninguno, las barras son iguales",
+    "to": "18",
+    "toEn": null,
+    "code": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j8a016p6krhyrc791vj",
+  "prompt": "En un gráfico de barras con escala de 20 en 20, la barra de María llega justo a la mitad entre 40 y 60 y la de Juan llega a 80. ¿Cuántos puntos más tiene Juan?",
+  "recode": [
+   {
+    "label": "20",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j82016f6krhczkg6hd8",
+  "prompt": "En un pictograma cada símbolo vale 10 libros. El martes hay 2 símbolos y medio. ¿Cuántos libros se prestaron el martes?",
+  "recode": [
+   {
+    "label": "20",
+    "from": "E2_RES",
+    "to": "E3_DATO"
+   },
+   {
+    "label": "30",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j7e015q6krhrs33vy7f",
+  "prompt": "En un pictograma, cada símbolo vale 5 puntos. El equipo Rojo tiene 4 símbolos. ¿Cuántos puntos tiene?",
+  "recode": [
+   {
+    "label": "4",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j7j015v6krhwhdp453u",
+  "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los gatos llega a la tercera línea después del 0. ¿Cuántos gatos hay?",
+  "recode": [
+   {
+    "label": "3",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j8f016u6krhrhikngjt",
+  "prompt": "En un pictograma cada símbolo vale 6 helados. El lunes hay 3 símbolos y el martes 5. ¿Cuántos helados se vendieron entre los dos días?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j7w016a6krhnsuucw3w",
+  "prompt": "En el gráfico de votos, Azul tiene 18 y Verde tiene 9. ¿Cuántos votos más tiene Azul que Verde?",
+  "recode": [
+   {
+    "label": "18",
+    "from": "E3_DATO",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jah01946krhn0aen5k6",
+  "prompt": "¿Cuánto es 275 ÷ 4? Escribe el cociente y el resto.",
+  "relabel": [
+   {
+    "from": "68 resto 7",
+    "to": "67 resto 7",
+    "toEn": "67 remainder 7",
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jam01996krh7gne4n5s",
+  "prompt": "¿Cuánto es 359 ÷ 6? Escribe el cociente y el resto.",
+  "relabel": [
+   {
+    "from": "59 resto 11",
+    "to": "58 resto 11",
+    "toEn": "58 remainder 11",
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jaq019e6krh8wb418gj",
+  "prompt": "¿Cuánto es 500 ÷ 7? Escribe el cociente y el resto.",
+  "relabel": [
+   {
+    "from": "71 resto 10",
+    "to": "70 resto 10",
+    "toEn": "70 remainder 10",
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jav019j6krh6y1h9fzn",
+  "prompt": "¿Cuál es el resto de 408 ÷ 5?",
+  "recode": [
+   {
+    "label": "5",
+    "from": "E2_RES",
+    "to": "E3_DATO"
+   },
+   {
+    "label": "13",
+    "from": "E2_CAL",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jb6019t6krh8be8aq63",
+  "prompt": "Se reparten 350 lápices en partes iguales entre 8 cursos. ¿Cuántos lápices sobran?",
+  "relabel": [
+   {
+    "from": "8",
+    "to": "14",
+    "toEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jba019y6krhzwe0h9lf",
+  "prompt": "Deben viajar 130 personas en vans de 8 asientos. ¿Cuántas vans se necesitan como mínimo para que nadie quede sin asiento?",
+  "hint": {
+   "old": "Divide y mira el resto: las personas que sobran también necesitan una van.",
+   "new": "Divide y mira el resto. ¿Qué pasa con las personas que sobran?",
+   "oldEn": "Divide and look at the remainder: the people left over also need a van.",
+   "newEn": "Divide and look at the remainder. What happens to the people who are left over?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jdl01c36krhp7apmxhx",
+  "prompt": "¿Qué valor de x cumple x − 25 = 40?",
+  "hint": {
+   "old": "Deshaz la resta: al número que queda (40) devuélvele lo que se quitó (25).",
+   "new": "Si al quitarle 25 a un número quedaron 40, ¿cuánto había antes de quitar?",
+   "oldEn": "Undo the subtraction: give back to the remaining number (40) what was taken away (25).",
+   "newEn": "If you took 25 away from a number and 40 were left, how many were there before?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jdi01by6krhw2as7a26",
+  "prompt": "¿Qué valor de x cumple 12 + x = 30?",
+  "hint": {
+   "old": "Pregúntate cuánto falta para llegar desde 12 hasta 30. Es una resta.",
+   "new": "Pregúntate cuánto falta para llegar desde 12 hasta 30.",
+   "oldEn": "Ask yourself how much is needed to go from 12 to 30. It is a subtraction.",
+   "newEn": "Ask yourself how much you need to go from 12 to 30."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jdz01ci6krhlr5cioby",
+  "prompt": "¿Cuál de estos valores cumple n + 6 > 10?",
+  "recode": [
+   {
+    "label": "4",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7je301cn6krhc3muwkyp",
+  "prompt": "¿Cuál de estos valores cumple x − 4 < 6?",
+  "recode": [
+   {
+    "label": "10",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j8k01706krhdvcldwmf",
+  "prompt": "¿Qué dígito ocupa la posición de las centenas de mil en el número 3.482.915?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   }
+  ],
+  "relabel": [
+   {
+    "from": "2",
+    "to": "1",
+    "toEn": null,
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j8p01756krhybpjahmm",
+  "prompt": "¿Cuál es el valor del dígito 7 en el número 5.708.246?",
+  "recode": [
+   {
+    "label": "7.000",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   },
+   {
+    "label": "70.000",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j8x017f6krh509f8a4h",
+  "prompt": "¿Qué número es 6.000.000 + 300.000 + 20.000 + 500 + 7?",
+  "hint": {
+   "old": "Ubica cada sumando en su posición. Las posiciones que no aparecen (las decenas y las unidades de mil) llevan cero.",
+   "new": "Ubica cada sumando en su posición. Si una posición no aparece en la suma, escribe un 0 en ella.",
+   "oldEn": "Place each addend in its position. The places that do not appear (tens and thousands) get a zero.",
+   "newEn": "Put each addend in its place. If a place does not appear in the sum, write a 0 there."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j97017p6krh4fhnq4am",
+  "prompt": "Aproxima 43.950 al millar más cercano.",
+  "recode": [
+   {
+    "label": "43.000",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "40.000",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "43.900",
+    "from": "E2_RES",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j9t018e6krhyxi03cjz",
+  "prompt": "Aproxima 1.478.520 a la centena de mil más cercana.",
+  "recode": [
+   {
+    "label": "1.480.000",
+    "from": "E2_RES",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "1.000.000",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   },
+   {
+    "label": "1.400.000",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j9f017z6krhsw3te927",
+  "prompt": "Un contador marca 2.849.999. ¿Qué número marcará cuando avance una unidad más?",
+  "relabel": [
+   {
+    "from": "2.849.100",
+    "to": "3.000.000",
+    "toEn": "3,000,000",
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j9k01846krhj86dgfx5",
+  "prompt": "¿Cuántos grupos completos de 100.000 caben en 1.250.000?",
+  "recode": [
+   {
+    "label": "125",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   },
+   {
+    "label": "1.250",
+    "from": "E2_RES",
+    "to": "E2_CAL"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jhm01g66krhy2q1qxhv",
+  "prompt": "Un piso rectangular mide 6 m por 5 m. Cada m² de cerámica cuesta $8.000. ¿Cuánto cuesta cubrir todo el piso?",
+  "recode": [
+   {
+    "label": "$88.000",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   },
+   {
+    "label": "$48.000",
+    "from": "E2_CAL",
+    "to": "E3_DATO"
+   },
+   {
+    "label": "$176.000",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jg901f26krhh2hn9d4h",
+  "prompt": "Un cuadrado tiene 6 m de lado. ¿Cuál es su área?",
+  "recode": [
+   {
+    "label": "12 m²",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "24 m²",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jhg01g16krhug68a0ii",
+  "prompt": "Todos estos rectángulos tienen un perímetro de 20 cm. ¿Cuál de ellos tiene el mayor área?",
+  "recode": [
+   {
+    "label": "9 cm por 1 cm",
+    "from": "E2_RES",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jg001es6krhqqnrz4k3",
+  "prompt": "Un rectángulo mide 8 cm de largo y 5 cm de ancho. ¿Cuál es su área?",
+  "recode": [
+   {
+    "label": "26 cm²",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jg501ex6krhtvewsyqu",
+  "prompt": "Un rectángulo mide 9 cm de largo y 4 cm de ancho. ¿Cuál es su perímetro?",
+  "recode": [
+   {
+    "label": "36 cm",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jge01f76krhzf4z3p4o",
+  "prompt": "Un cuadrado tiene 7 cm de lado. ¿Cuál es su perímetro?",
+  "recode": [
+   {
+    "label": "49 cm",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jh601fr6krhcqnljhm2",
+  "prompt": "¿Cuál es el área de un rectángulo de 15 cm de largo y 12 cm de ancho?",
+  "recode": [
+   {
+    "label": "54 cm²",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jhc01fw6krh1rzxni6r",
+  "prompt": "Un jardín rectangular de 12 m de largo y 5 m de ancho se cierra con una malla por todo su borde. ¿Cuántos metros de malla se necesitan?",
+  "recode": [
+   {
+    "label": "60 m",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jh301fm6krhb4hnmluy",
+  "prompt": "¿Cuál de estos rectángulos tiene un área de 24 cm²?",
+  "recode": [
+   {
+    "label": "8 cm por 4 cm",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jfn01ec6krh4hh07oeg",
+  "prompt": "Un tesoro está en (7, 3). Camila parte del origen y avanza 7 unidades a la derecha. ¿Cuántas unidades debe subir para llegar al tesoro?",
+  "level": {
+   "from": 3,
+   "to": 1
+  }
+ },
+ {
+  "exerciseId": "cmuli7jfv01em6krhgtdm4qks",
+  "prompt": "Tres vértices de un triángulo rectángulo son (0, 0), (6, 0) y (6, 4). ¿Cuánto mide el lado vertical, en unidades?",
+  "recode": [
+   {
+    "label": "2",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ],
+  "level": {
+   "from": 3,
+   "to": 2
+  }
+ },
+ {
+  "exerciseId": "cmuli7jf801dx6krh4ldjfq8c",
+  "prompt": "Los puntos A(5, 2) y B(5, 7) se marcan en el plano. ¿Qué afirmación es correcta?",
+  "recode": [
+   {
+    "label": "Los dos están sobre el eje y",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jes01dd6krh3zwumzm6",
+  "prompt": "En el punto (6, 2), ¿qué número indica el movimiento horizontal, sobre el eje x?",
+  "relabel": [
+   {
+    "from": "8",
+    "to": "0",
+    "toEn": null,
+    "code": "E1_OP"
+   },
+   {
+    "from": "4",
+    "to": "6 y 2",
+    "toEn": "6 and 2",
+    "code": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jj101hq6krhqqy861fs",
+  "prompt": "Las notas de Diego en 4 pruebas fueron 5,0; 7,0; 4,0 y 6,0. ¿Cuál es su promedio final?",
+  "relabel": [
+   {
+    "from": "6,0",
+    "to": "5,3",
+    "toEn": "5.3",
+    "code": "E3_DATO"
+   }
+  ],
+  "level": {
+   "from": 3,
+   "to": 2
+  }
+ },
+ {
+  "exerciseId": "cmuli7jm601kq6krhxzi4wmsf",
+  "prompt": "¿Cuánto es 3/8 + 2/8?",
+  "recode": [
+   {
+    "label": "5/16",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jmb01kv6krh2m1dqy06",
+  "prompt": "¿Cuánto es 7/9 − 2/9?",
+  "recode": [
+   {
+    "label": "5/18",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "2/9",
+    "from": "E2_CAL",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jmf01l06krh0wpfrljf",
+  "prompt": "Por la mañana se usó 1/4 L de leche y por la tarde 2/4 L. ¿Cuánta leche se usó en total?",
+  "recode": [
+   {
+    "label": "3/8 L",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jml01l56krh0upwgnss",
+  "prompt": "¿Cuánto es 1/2 + 1/4?",
+  "recode": [
+   {
+    "label": "2/6",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jmp01la6krhtssgy07l",
+  "prompt": "¿Cuánto es 2/3 + 1/6?",
+  "recode": [
+   {
+    "label": "3/9",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jmu01lf6krhw5z9qmq7",
+  "prompt": "¿Cuánto es 5/6 − 1/3?",
+  "recode": [
+   {
+    "label": "4/3",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jmy01lk6krhu2rxrmtw",
+  "prompt": "¿Cuánto es 1 1/2 + 2 1/4?",
+  "recode": [
+   {
+    "label": "3 2/6",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "3/4",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jn201lp6krhcrh6eomm",
+  "prompt": "Ana comió 1/4 de una barra de chocolate y Beto comió 1/3 de otra barra igual. ¿Qué parte de una barra comieron entre los dos?",
+  "recode": [
+   {
+    "label": "2/7",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jn801lu6krhkcd21jp3",
+  "prompt": "Un jarro tenía 9/10 L de jugo y se tomaron 1/2 L. ¿Cuánto jugo queda?",
+  "recode": [
+   {
+    "label": "8/8 L",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jnb01lz6krhbvkav95b",
+  "prompt": "Sofía caminó 1 1/2 km el sábado y 2 3/4 km el domingo. ¿Cuántos km caminó en total?",
+  "recode": [
+   {
+    "label": "3 4/6 km",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   },
+   {
+    "label": "1 1/4 km",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7joc01n46krh61hzix5z",
+  "prompt": "Pedro tenía x láminas. Después de comprar 8 más, tiene 23. ¿Cuántas láminas tenía al principio?",
+  "hint": {
+   "old": "Escribe la ecuación x + 8 = 23 y deshaz la suma con la operación contraria.",
+   "new": "Escribe una ecuación: lo que tenía, más lo que compró, es lo que tiene ahora.",
+   "oldEn": "Write the equation x + 8 = 23 and undo the addition with the opposite operation.",
+   "newEn": "Write an equation: what he had, plus what he bought, is what he has now."
+  },
+  "level": {
+   "from": 3,
+   "to": 2
+  }
+ },
+ {
+  "exerciseId": "cmuli7joi01n96krh3dkneyoz",
+  "prompt": "Tres amigos compran el mismo helado cada uno y pagan $4.500 en total. Si p es el precio de un helado, ¿cuál es ese precio?",
+  "recode": [
+   {
+    "label": "$4.500",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ],
+  "hint": {
+   "old": "Escribe la ecuación 3 × p = 4.500. Piensa en repartir el total en partes iguales.",
+   "new": "Escribe una ecuación con p: tres helados iguales cuestan $4.500 en total.",
+   "oldEn": "Write the equation 3 × p = 4,500. Think of splitting the total into equal parts.",
+   "newEn": "Write an equation with p: three equal ice creams cost $4,500 in total."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jon01ne6krh2iep9q8q",
+  "prompt": "Sofía compró cajas de 6 lápices y además 4 lápices sueltos. En total tiene 46 lápices. ¿Cuántas cajas compró?",
+  "hint": {
+   "old": "Escribe 6 × c + 4 = 46. Primero saca los lápices sueltos y después reparte el resto en cajas de 6.",
+   "new": "Escribe una ecuación con c: los lápices de las cajas más los sueltos dan el total.",
+   "oldEn": "Write 6 × c + 4 = 46. First set aside the loose pencils and then split the rest into boxes of 6.",
+   "newEn": "Write an equation with c: the pencils in the boxes plus the loose ones make the total."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jry01qy6krhjspvkl2b",
+  "prompt": "Un gráfico de barras dobles compara la nota de dos cursos en Matemática. Aprobaron 28 estudiantes de 6°A y 24 de 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?",
+  "relabel": [
+   {
+    "from": "30",
+    "to": "42",
+    "toEn": null,
+    "code": "E2_RES"
+   },
+   {
+    "from": "8",
+    "to": "28",
+    "toEn": null,
+    "code": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jsr01rs6krhs8aeg1g5",
+  "prompt": "Un gráfico circular representa a 60 estudiantes. El sector de ciencias es 1/4 del círculo y el de deportes es el 30%. ¿Cuántos estudiantes eligieron deportes?",
+  "hint": {
+   "old": "Ignora el sector de ciencias, que no se pregunta. Calcula el 30% del total: primero el 10% y luego multiplica.",
+   "new": "Fíjate en qué sector te preguntan y usa solo el dato que le corresponde.",
+   "oldEn": "Ignore the science section, which is not asked about. Find 30% of the total: first 10% and then multiply.",
+   "newEn": "Look at which section the question is about and use only the data for that section."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jsa01rd6krhb1qg49re",
+  "prompt": "En un gráfico circular sobre 100 personas: fútbol es el 45%, tenis es el 30% y natación es el resto. ¿Qué porcentaje elige natación?",
+  "recode": [
+   {
+    "label": "15%",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jrt01qt6krhuikzq48e",
+  "prompt": "En un gráfico circular, el sector azul ocupa la mitad del círculo. ¿Qué porcentaje representa ese sector?",
+  "relabel": [
+   {
+    "from": "20%",
+    "to": "2%",
+    "toEn": null,
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7js201r36krhp52wm51y",
+  "prompt": "Un gráfico de barras dobles muestra los goles de dos equipos en 3 partidos. Equipo Rojo: 2, 3 y 5 goles. Equipo Azul: 4, 1 y 3 goles. ¿Cuántos goles más hizo el equipo Rojo que el Azul en total?",
+  "recode": [
+   {
+    "label": "8",
+    "from": "E3_DATO",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jlc01jv6krhutoyuohm",
+  "prompt": "¿Cuál es el 25% de 60?",
+  "recode": [
+   {
+    "label": "240",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jl001jg6krh5kegrq6k",
+  "prompt": "¿Qué porcentaje representa la fracción 1/2?",
+  "recode": [
+   {
+    "label": "25%",
+    "from": "E2_RES",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jk601il6krhg17oe1uw",
+  "prompt": "¿Cuál de estas razones es equivalente a 4 : 6?",
+  "recode": [
+   {
+    "label": "6 : 4",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jkh01iv6krh0g71zm7o",
+  "prompt": "En un curso hay 18 niñas y 12 niños. ¿Cuál es la razón entre las niñas y el total de estudiantes, con los números más pequeños posibles?",
+  "relabel": [
+   {
+    "from": "5 : 3",
+    "to": "18 : 30",
+    "toEn": null,
+    "code": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jkq01j56krhrv2zljit",
+  "prompt": "En un mapa, 1 cm representa 5 km en la realidad. Dos ciudades están a 30 km una de otra. ¿A cuántos cm están en el mapa?",
+  "recode": [
+   {
+    "label": "30 cm",
+    "from": "E3_PREG",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jox01np6krh5lewqb14",
+  "prompt": "Un triángulo tiene ángulos de 90° y 30°. ¿Cuánto mide el tercer ángulo?",
+  "recode": [
+   {
+    "label": "150°",
+    "from": "E1_OP",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jp901o46krhiq5189o0",
+  "prompt": "En un triángulo isósceles, los dos ángulos iguales miden 50° cada uno. ¿Cuánto mide el tercer ángulo?",
+  "recode": [
+   {
+    "label": "130°",
+    "from": "E1_OP",
+    "to": "E3_DATO"
+   },
+   {
+    "label": "50°",
+    "from": "E3_DATO",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jpf01o96krhyfa01qnm",
+  "prompt": "En un triángulo rectángulo, un ángulo agudo mide 35°. ¿Cuánto mide el otro ángulo agudo?",
+  "recode": [
+   {
+    "label": "145°",
+    "from": "E1_OP",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jpt01oo6krhfswvsfu9",
+  "prompt": "Un triángulo tiene un ángulo de 40° y los otros dos ángulos son iguales entre sí. ¿Cuánto mide cada uno de esos dos ángulos?",
+  "recode": [
+   {
+    "label": "90°",
+    "from": "E2_CAL",
+    "to": "E3_DATO"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jq901p46krhod53e2ev",
+  "prompt": "Un paralelepípedo mide 4 cm de largo, 2 cm de ancho y 3 cm de alto. ¿Cuál es su volumen?",
+  "recode": [
+   {
+    "label": "52 cm²",
+    "from": "E1_OP",
+    "to": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jqz01py6krhhk8ptqbn",
+  "prompt": "Una caja tiene un volumen de 120 cm³. Su largo mide 6 cm y su ancho 5 cm. ¿Cuánto mide su alto?",
+  "recode": [
+   {
+    "label": "30 cm",
+    "from": "E1_OP",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jr401q36krh4gwt481y",
+  "prompt": "Un cubo tiene 5 cm de arista. Si se pegan 2 cubos iguales, uno al lado del otro, se forma un paralelepípedo. ¿Cuál es el volumen del paralelepípedo?",
+  "recode": [
+   {
+    "label": "500 cm³",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jrd01qd6krhagh2xv03",
+  "prompt": "Una caja de 30 cm de largo, 20 cm de ancho y 10 cm de alto se llena con cubos de 10 cm de arista. ¿Cuántos cubos caben?",
+  "recode": [
+   {
+    "label": "60",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   },
+   {
+    "label": "1.000",
+    "from": "E3_DATO",
+    "to": "E2_RES"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jq401oz6krhm2a8p11v",
+  "prompt": "Un cubo tiene 3 cm de arista. ¿Cuál es su volumen?",
+  "relabel": [
+   {
+    "from": "81 cm³",
+    "to": "54 cm²",
+    "toEn": null,
+    "code": "E3_PREG"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7jqm01pj6krhwrhiqpla",
+  "prompt": "El volumen de un cubo es 64 cm³. ¿Cuánto mide su arista?",
+  "recode": [
+   {
+    "label": "8 cm",
+    "from": "E2_CAL",
+    "to": "E1_OP"
+   }
+  ]
+ }
+]

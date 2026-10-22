@@ -61,14 +61,14 @@ describe("App", () => {
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
     // Un perfil recién creado elige compañero antes de la evaluación inicial.
-    await screen.findByRole("heading", { name: "Elige tu compañero" });
+    await screen.findByRole("heading", { name: "Elige tu mascota" });
     await user.click(screen.getByRole("button", { name: /Capi/ }));
     await user.click(screen.getByRole("button", { name: "¡Listo, empezar!" }));
 
     // Luego elige un interés, también antes de la evaluación inicial.
     await screen.findByRole("heading", { name: "¿Qué te gusta más?" });
     await user.click(screen.getByRole("button", { name: /Fútbol/ }));
-    await user.click(screen.getByRole("button", { name: "¡Listo, empezar!" }));
+    await user.click(screen.getByRole("button", { name: "¡Listo!" }));
 
     // Antes del control, ofrece un momento de respiración (siempre saltable).
     await user.click(await screen.findByRole("button", { name: "Empezar ahora" }));
@@ -106,7 +106,7 @@ describe("App", () => {
 
     await screen.findByRole("heading", { name: "¿Qué te gusta más?" });
     await user.click(screen.getByRole("button", { name: /Música/ }));
-    await user.click(screen.getByRole("button", { name: "¡Listo, empezar!" }));
+    await user.click(screen.getByRole("button", { name: "¡Listo!" }));
 
     // Va directo al mapa de habilidades, no a practicar (elige un nodo primero).
     await waitFor(() => {

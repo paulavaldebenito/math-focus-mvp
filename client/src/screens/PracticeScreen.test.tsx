@@ -197,7 +197,7 @@ describe("PracticeScreen", () => {
     await screen.findByRole("heading", { name: "¡Llegaste a la mitad! 🎉" });
     // En este recreo la mascota aparece destacada (grande, festejante) como
     // parte de la oferta — no una pantalla ni un bloqueo nuevo.
-    expect(screen.getByText("¡Qué bien lo estás haciendo!")).toBeInTheDocument();
+    expect(screen.getByText("¡Llegaste a la mitad con mucho esfuerzo!")).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Prefiero seguir" }));
 
     expect(mocks.submitPauseEvent).toHaveBeenCalledWith("s1", { kind: "respiracion", accepted: false });
@@ -249,7 +249,7 @@ describe("PracticeScreen", () => {
     expect(screen.queryByRole("heading", { name: "¡Llegaste a la mitad! 🎉" })).not.toBeInTheDocument();
     // La pausa por cansancio nunca festeja con la mascota — ese destaque es
     // solo del recreo de mitad de sesión.
-    expect(screen.queryByText("¡Qué bien lo estás haciendo!")).not.toBeInTheDocument();
+    expect(screen.queryByText("¡Llegaste a la mitad con mucho esfuerzo!")).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Prefiero seguir" }));
     await screen.findByText("Pregunta 4");
   });
@@ -418,7 +418,7 @@ describe("PracticeScreen", () => {
 
     expect(
       await screen.findByText(
-        "Antes de calcular, piensa bien qué necesitas hacer con estos números para responder la pregunta.",
+        "Lee otra vez el problema: ¿qué hay que hacer con estos números? Abajo ves cómo se resuelve.",
       ),
     ).toBeInTheDocument();
   });
@@ -482,7 +482,7 @@ describe("PracticeScreen", () => {
     await user.click(screen.getByRole("button", { name: "correcta" }));
     // Un acierto suelto (sin bonus) nunca dispara el momento destacado de la
     // mascota — solo debe sentirse en la racha de 3, no en cada acierto.
-    expect(screen.queryByText("¡Vas increíble! Sigue así")).not.toBeInTheDocument();
+    expect(screen.queryByText("¡Tres seguidas! Se nota que lees con atención.")).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
     await screen.findByText("Pregunta 2");
@@ -493,7 +493,7 @@ describe("PracticeScreen", () => {
     expect(await screen.findByText(/Racha de 3! Estrella extra/)).toBeInTheDocument();
     // Al llegar a la racha de 3, la mascota aparece grande y festejante —
     // "de vez en cuando", no en cada acierto (ver arriba, preguntas 1 y 2).
-    expect(await screen.findByText("¡Vas increíble! Sigue así")).toBeInTheDocument();
+    expect(await screen.findByText("¡Tres seguidas! Se nota que lees con atención.")).toBeInTheDocument();
 
     // El momento es puramente decorativo: nunca bloquea seguir la sesión, ni
     // siquiera mientras sigue visible en pantalla. La pregunta 3 también es
@@ -501,7 +501,7 @@ describe("PracticeScreen", () => {
     // sesión (con la mascota destacada ahí también) antes de la pregunta 4.
     await user.click(screen.getByRole("button", { name: "Continuar" }));
     await screen.findByRole("heading", { name: "¡Llegaste a la mitad! 🎉" });
-    expect(screen.getByText("¡Qué bien lo estás haciendo!")).toBeInTheDocument();
+    expect(screen.getByText("¡Llegaste a la mitad con mucho esfuerzo!")).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Prefiero seguir" }));
     await screen.findByText("Pregunta 4");
   });
@@ -581,7 +581,7 @@ describe("PracticeScreen", () => {
 
     await user.click(screen.getByRole("button", { name: "Tuvo un error de cálculo" }));
 
-    expect(await screen.findByText("No fue por eso: Se confundió de operación.")).toBeInTheDocument();
+    expect(await screen.findByText("Buen intento, pero fue otra cosa. Se confundió de operación.")).toBeInTheDocument();
     expect(screen.getByText("La respuesta correcta era: 4")).toBeInTheDocument();
   });
 
@@ -616,7 +616,7 @@ describe("PracticeScreen — ánimo con caritas y pausas sin repetir", () => {
     render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
     const user = userEvent.setup();
 
-    await screen.findByText("¿Cómo estás hoy?");
+    await screen.findByText("¡Hola! Antes de empezar…");
     const groups = screen.getAllByRole("radiogroup");
     expect(groups).toHaveLength(2);
     expect(screen.getByRole("button", { name: "Listo" })).toBeDisabled();
@@ -649,7 +649,7 @@ describe("PracticeScreen — ánimo con caritas y pausas sin repetir", () => {
     render(<PracticeScreen childId="child-1" startingLevel={2} onSessionComplete={vi.fn()} />);
 
     await screen.findByRole("button", { name: "Empezar ahora" });
-    expect(screen.queryByText("¿Cómo estás hoy?")).not.toBeInTheDocument();
+    expect(screen.queryByText("¡Hola! Antes de empezar…")).not.toBeInTheDocument();
     expect(mocks.submitCheckIn).not.toHaveBeenCalled();
   });
 
@@ -781,7 +781,7 @@ describe("PracticeScreen — ilustración SVG y alternativas bilingües", () => 
     expect(mocks.submitFindStepAttempt).toHaveBeenCalledWith("s1", { exerciseId: "f2", wrongOptionId: "w1", chosenLine: 1 });
     expect(await screen.findByText("¡Lo encontraste! Ese era el paso equivocado.")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Paso 2/ })).toHaveClass("correct");
-    expect(screen.getByText(/Así era/).parentElement).toHaveTextContent("2/4 + 1/4 = 3/4");
+    expect(screen.getByText(/Lo correcto era/).parentElement).toHaveTextContent("2/4 + 1/4 = 3/4");
     expect(screen.getByText(/Aquí se equivocó tu amigo/)).toBeInTheDocument();
   });
 });

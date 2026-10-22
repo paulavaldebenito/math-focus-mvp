@@ -273,6 +273,8 @@ export interface TopicProgress {
   trend: "up" | "down" | "steady" | null;
   lastPracticed: string;
   lastEmotion: Emotion | null;
+  recentAttempts: number;
+  recentCorrect: number;
   needsHelp: Array<"aciertos" | "emocion">;
   game: HomeGame | null;
   timesPlayed: number;

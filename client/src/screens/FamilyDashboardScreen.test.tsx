@@ -25,7 +25,7 @@ describe("FamilyDashboardScreen", () => {
     expect(screen.getByText("75%")).toBeInTheDocument();
     // Aparece dos veces a propósito: en "dónde practicar más" y de nuevo
     // como encabezado de su sugerencia para el hogar.
-    expect(screen.getAllByText("Cálculo puntual").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Hacer los cálculos con cuidado").length).toBeGreaterThan(0);
     expect(screen.getByText("1")).toBeInTheDocument();
     expect(screen.queryByText(/ranking/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/comparad[oa] con/i)).not.toBeInTheDocument();
@@ -49,7 +49,7 @@ describe("FamilyDashboardScreen", () => {
     expect(screen.getByText("Ideas para practicar en casa:")).toBeInTheDocument();
     // Las 2 áreas con más ocurrencias (E1_OP, E3_DATO) traen su sugerencia...
     expect(screen.getByText(/qué operación usaría y por qué/)).toBeInTheDocument();
-    expect(screen.getByText(/marcando en voz alta los números/)).toBeInTheDocument();
+    expect(screen.getByText(/subraye o diga en voz alta los números/)).toBeInTheDocument();
     // ...la tercera (E2_CAL, menos frecuente) no se muestra, para no abrumar.
     expect(screen.queryByText(/cálculo mental simple/)).not.toBeInTheDocument();
   });
@@ -129,14 +129,14 @@ describe("FamilyDashboardScreen", () => {
 
     render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
 
-    expect(await screen.findByText("🙂 Ánimo al empezar el día y aciertos")).toBeInTheDocument();
-    expect(screen.getByText(/nervioso\/a con las matemáticas acertó un 42 %; .* tranquilo\/a, un 92 %/)).toBeInTheDocument();
+    expect(await screen.findByText("🙂 Ánimo al empezar a practicar y aciertos")).toBeInTheDocument();
+    expect(screen.getByText(/sentir nervios con las matemáticas acertó un 42 %; .* con calma, un 92 %/)).toBeInTheDocument();
     // Ánimo triste: 1 solo día — no alcanza para comparar, no se muestra.
     expect(screen.queryByText(/se sintió triste acertó/)).not.toBeInTheDocument();
     expect(screen.getByText(/coincidencia observada, no una conclusión/)).toBeInTheDocument();
-    expect(screen.getByText("Si se siente nervioso/a con las matemáticas")).toBeInTheDocument();
+    expect(screen.getByText("Si siente nervios con las matemáticas")).toBeInTheDocument();
     expect(screen.getByRole("table")).toBeInTheDocument();
-    expect(screen.getAllByRole("img", { name: "Muy nervioso/a" })).toHaveLength(1);
+    expect(screen.getAllByRole("img", { name: "Con muchos nervios" })).toHaveLength(1);
     expect(screen.getByText("33 % (2/6)")).toBeInTheDocument();
     expect(screen.queryByText(/diagn[oó]stico|trastorno|ansiedad/i)).not.toBeInTheDocument();
   });
@@ -174,6 +174,8 @@ describe("FamilyDashboardScreen", () => {
     nameEn: "Common fractions",
     attempts: 8,
     accuracy: 0.25,
+    recentAttempts: 8,
+    recentCorrect: 2,
     trend: null,
     lastPracticed: "2026-10-21",
     lastEmotion: "nervios",
@@ -224,7 +226,7 @@ describe("FamilyDashboardScreen", () => {
     render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
 
     expect(await screen.findByText("🎲 Juegos para la casa")).toBeInTheDocument();
-    expect(screen.getByText("Le está costando: acertó un 25 % de 8 preguntas.")).toBeInTheDocument();
+    expect(screen.getByText("Le está costando: en sus últimas 8 preguntas acertó 2.")).toBeInTheDocument();
     expect(screen.getByText(/La última vez que lo practicó sintió nervios/)).toBeInTheDocument();
     expect(screen.getAllByText("El sándwich en partes")[0]).toBeInTheDocument();
     await user.click(screen.getAllByRole("button", { name: "¡Lo jugamos! ✅" })[0]!);

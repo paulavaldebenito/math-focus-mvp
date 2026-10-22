@@ -40,7 +40,7 @@ for (const grade of [3, 4, 5, 6]) {
     await page.getByRole("button", { name: /Zorro/ }).click();
     await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
     await page.getByRole("button", { name: /Animales/ }).click();
-    await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+    await page.getByRole("button", { name: "¡Listo!" }).click();
 
     // Evaluación inicial: cada pregunta trae 4 alternativas del curso.
     // Antes de la evaluación: ofrece un momento de respiración (siempre se puede saltar).
@@ -49,7 +49,7 @@ for (const grade of [3, 4, 5, 6]) {
 
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
     await page.getByRole("button", { name: "Empezar" }).click();
-    const doneAssessment = page.getByRole("heading", { name: "¡Perfecto!" });
+    const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
     let firstShot = true;
     for (let i = 0; i < 10; i++) {
       if (await doneAssessment.isVisible()) break;
@@ -72,7 +72,7 @@ for (const grade of [3, 4, 5, 6]) {
 
 
     // Check-in de caritas al empezar la práctica: opcional, se salta.
-    await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+    await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
     await page.getByRole("button", { name: "Saltar" }).click();
     await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
     await page.getByRole("button", { name: "Empezar ahora" }).click();

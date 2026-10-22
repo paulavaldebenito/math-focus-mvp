@@ -42,8 +42,8 @@ describe("TeacherDashboard", () => {
   it("muestra acciones concretas, el mapa de calor accesible y las alertas solo de quien autorizó", async () => {
     const onOpen = vi.fn();
     render(<TeacherDashboard data={teacher} lang="es" onOpenStudent={onOpen} />);
-    expect(screen.getByText(/Reenseñar MA03 OA11 Fracciones a todo el curso: 1 de 2 están en nivel Inicial. Error más común: Comprensión del enunciado/)).toBeInTheDocument();
-    expect(screen.getByText(/Sin práctica hace 7 días o más: Beto — conviene/)).toBeInTheDocument();
+    expect(screen.getByText(/Volver a enseñar MA03 OA11 Fracciones al curso: 1 de los 2 estudiantes que lo practicaron están en nivel Inicial. Error más común: Entender qué se pregunta/)).toBeInTheDocument();
+    expect(screen.getByText(/Sin practicar desde hace 7 días o más: Beto. Conviene/)).toBeInTheDocument();
     expect(screen.getByLabelText("Ana, MA03 OA11 Fracciones: Inicial (30 %)")).toHaveTextContent("30");
     expect(screen.getAllByText("1/2", { selector: ".dash-stat-value" })).toHaveLength(2); // practicaron y OA con práctica
     expect(screen.getByText(/Reportó rabia o nervios 3 veces, sobre todo en MA03 OA11/)).toBeInTheDocument();
@@ -79,7 +79,7 @@ describe("DirectorDashboard", () => {
     render(<DirectorDashboard data={data} lang="es" />);
     expect(screen.getByText("62 %")).toBeInTheDocument();
     expect(screen.getAllByText("pocos datos").length).toBeGreaterThanOrEqual(3);
-    expect(screen.getByText("3° A: solo 33 % de los estudiantes practicó esta semana.")).toBeInTheDocument();
+    expect(screen.getByText("3° A: solo el 33 % de los estudiantes practicó esta semana.")).toBeInTheDocument();
     expect(screen.getByText(/Ningún grupo con menos de 5 estudiantes/)).toBeInTheDocument();
   });
 });

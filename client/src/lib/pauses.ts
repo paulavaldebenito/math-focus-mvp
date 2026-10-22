@@ -46,8 +46,8 @@ export const BREATHING_EXERCISES: BreathingExercise[] = [
     icon: "🎈",
     visual: "circle",
     phases: [8, 4, 18],
-    es: { title: "Respiración de globo", labels: ["inhalar", "sostener", "exhalar"] },
-    en: { title: "Balloon breathing", labels: ["breathe in", "hold", "breathe out"] },
+    es: { title: "Respiración de globo", labels: ["inhala inflando la panza como un globo", "aguanta un poquito", "bota el aire lento"] },
+    en: { title: "Balloon breathing", labels: ["breathe in, filling your tummy like a balloon", "hold a little", "let the air out slowly"] },
   },
   {
     key: "abeja",
@@ -94,7 +94,7 @@ export const MOVEMENT_EXERCISES: MovementExercise[] = [
     icon: "🤸",
     es: "Haz 10 saltos de estrella (brazos y piernas abriendo y cerrando)",
     en: "Do 10 star jumps (arms and legs opening and closing)",
-    seatedEs: "Abre y cierra los brazos por encima de la cabeza, sentado/a",
+    seatedEs: "Abre y cierra los brazos por encima de la cabeza, en tu silla",
     seatedEn: "Open and close your arms above your head while seated",
   },
   {
@@ -103,7 +103,7 @@ export const MOVEMENT_EXERCISES: MovementExercise[] = [
     icon: "🦵",
     es: "Marcha en el lugar tocando la rodilla contraria con la mano",
     en: "March in place, touching your opposite knee with your hand",
-    seatedEs: "Toca la rodilla contraria con la mano, sentado/a",
+    seatedEs: "Toca la rodilla contraria con la mano, en tu silla",
     seatedEn: "Touch your opposite knee with your hand while seated",
   },
   {
@@ -121,7 +121,7 @@ export const MOVEMENT_EXERCISES: MovementExercise[] = [
     icon: "🐻",
     es: "Camina como oso, cangrejo o rana durante unos pasos",
     en: "Walk like a bear, a crab, or a frog for a few steps",
-    seatedEs: "Imita el animal solo con los brazos y la cara, sentado/a",
+    seatedEs: "Imita el animal solo con los brazos y la cara, en tu silla",
     seatedEn: "Imitate the animal using just your arms and face, while seated",
   },
   {
@@ -130,7 +130,7 @@ export const MOVEMENT_EXERCISES: MovementExercise[] = [
     icon: "🧊",
     es: "Muévete libremente unos segundos y después congélate como una estatua, sin moverte",
     en: "Move around freely for a few seconds, then freeze like a statue, without moving",
-    seatedEs: "Igual, sentado/a: mueve los brazos unos segundos y después congélate",
+    seatedEs: "Igual, en tu silla: mueve los brazos unos segundos y después congélate",
     seatedEn: "Same, seated: move your arms for a few seconds, then freeze",
   },
 ];

@@ -10,8 +10,8 @@ import { integrateImageBank } from "./integrar-banco-imagenes.js";
 // patrones de comportamiento (no describen "por qué esta alternativa está
 // mal", sino señales de sesión) quedan con level: null.
 const ERROR_TYPES = [
-  { code: "E1_OP", level: 1, label: "Confusión de operación", description: "No identifica correctamente qué operación (suma o resta) corresponde usar." },
-  { code: "E2_RES", level: 2, label: "Error de reagrupación/procedimiento", description: "Entiende la idea, pero se equivoca al pedir prestado, reagrupar o seguir el procedimiento." },
+  { code: "E1_OP", level: 1, label: "Confusión de operación", description: "No identifica qué operación corresponde usar para resolver el problema." },
+  { code: "E2_RES", level: 2, label: "Error de reagrupación/procedimiento", description: "Entiende la idea, pero se equivoca al reagrupar o al seguir un paso del procedimiento." },
   { code: "E2_CAL", level: 2, label: "Error de cálculo puntual", description: "El procedimiento es correcto, pero hay un error aritmético puntual." },
   { code: "E3_PREG", level: 3, label: "No responde lo que se pregunta", description: "No interpreta correctamente qué pide la pregunta del enunciado." },
   { code: "E3_DATO", level: 3, label: "Uso incorrecto de un dato del enunciado", description: "No usa correctamente un dato relevante del enunciado (lo omite o lo cambia)." },

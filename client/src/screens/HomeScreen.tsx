@@ -70,8 +70,14 @@ export function HomeScreen({
             <div className="rank-bar-fill" style={{ width: `${(summary.starsIntoRank / (summary.starsIntoRank + summary.starsToNextRank)) * 100}%` }} />
           </div>
           <span className="rank-bar-hint">
-            {t(lang, "starsToNextRankPrefix") && `${t(lang, "starsToNextRankPrefix")} `}
-            {summary.starsToNextRank} {t(lang, "starsToNextRankSuffix")}
+            {summary.starsToNextRank === 1 ? (
+              t(lang, "starsToNextRankOne")
+            ) : (
+              <>
+                {t(lang, "starsToNextRankPrefix") && `${t(lang, "starsToNextRankPrefix")} `}
+                {summary.starsToNextRank} {t(lang, "starsToNextRankSuffix")}
+              </>
+            )}
           </span>
         </div>
       )}

@@ -60,7 +60,7 @@ async function serveAssessmentWithFirst(page: Page, first: Payload) {
 }
 
 async function finishAssessment(page: Page) {
-  const done = page.getByRole("heading", { name: "¡Perfecto!" });
+  const done = page.getByRole("heading", { name: "¡Listo!" });
   for (let i = 0; i < 10; i++) {
     const option = page.locator(".option-btn:not([disabled])").first();
     const outcome = await Promise.race([
@@ -149,7 +149,7 @@ async function reachAssessment(page: Page, grade: number) {
   await page.getByRole("button", { name: /Zorro/ }).click();
   await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
   await page.getByRole("button", { name: /Animales/ }).click();
-  await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+  await page.getByRole("button", { name: "¡Listo!" }).click();
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
@@ -157,12 +157,12 @@ async function reachAssessment(page: Page, grade: number) {
 }
 
 async function reachPractice(page: Page) {
-  await page.getByRole("heading", { name: "¡Perfecto!" }).waitFor();
+  await page.getByRole("heading", { name: "¡Listo!" }).waitFor();
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
   await page.getByRole("heading", { name: "Mapa de aprendizaje" }).waitFor();
   await page.locator(".skill-node:not([disabled])").first().click();
   // Check-in de caritas al empezar la práctica: opcional, se salta.
-  await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+  await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
   await page.getByRole("button", { name: "Saltar" }).click();
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();

@@ -24,7 +24,7 @@ describe("MovementPause", () => {
   it("si elige hacerlo sentado/a, la mascota lo acompaña con un movimiento más suave", () => {
     const { container } = render(<MovementPause lang="es" companion={companionByKey("zorro")} onDone={() => {}} />);
     expect(container.querySelector(".mascot-exercise")).not.toHaveClass("seated");
-    fireEvent.click(screen.getByRole("button", { name: /sentado/i }));
+    fireEvent.click(screen.getByRole("button", { name: /en mi silla/i }));
     expect(container.querySelector(".mascot-exercise")).toHaveClass("seated");
   });
 

@@ -19,7 +19,7 @@ describe("ClassroomLink", () => {
     await user.click(join);
     expect(mocks.joinClassroom).toHaveBeenCalledWith("k1", "3B-K7Q2X", false);
     expect(await screen.findByText("Vinculado a 3° B · Colegio Ficticio.")).toBeInTheDocument();
-    expect(screen.getByText("La profesora no ve sus emociones individuales.")).toBeInTheDocument();
+    expect(screen.getByText("Su docente no ve sus emociones individuales.")).toBeInTheDocument();
   });
 
   it("explica si el código es de otro curso escolar", async () => {

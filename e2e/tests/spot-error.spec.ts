@@ -50,14 +50,14 @@ test("detecta el error: aparece dentro de la sesión, muestra la respuesta ajena
   await page.getByRole("button", { name: /Zorro/ }).click();
   await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
   await page.getByRole("button", { name: /Animales/ }).click();
-  await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+  await page.getByRole("button", { name: "¡Listo!" }).click();
 
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
 
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
   await page.getByRole("button", { name: "Empezar" }).click();
-  await answerAssessmentUntil(page, "¡Perfecto!", 10);
+  await answerAssessmentUntil(page, "¡Listo!", 10);
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
   // Primer nodo del mapa: "Adición y sustracción dentro de 20", el que
@@ -66,7 +66,7 @@ test("detecta el error: aparece dentro de la sesión, muestra la respuesta ajena
   await page.locator(".skill-node:not([disabled])").first().click();
 
   // Check-in de caritas al empezar la práctica: opcional, se salta.
-  await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+  await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
   await page.getByRole("button", { name: "Saltar" }).click();
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
@@ -111,7 +111,7 @@ test("detecta el error: aparece dentro de la sesión, muestra la respuesta ajena
       await chips.first().click();
       // Feedback: confirma o corrige, y de cualquier forma revela la
       // respuesta correcta — nunca dos veces la misma alternativa "ganadora".
-      await expect(page.getByText(/¡Exacto!|No fue por eso:/)).toBeVisible();
+      await expect(page.getByText(/¡Exacto!|Buen intento, pero fue otra cosa./)).toBeVisible();
       await expect(page.getByText("La respuesta correcta era:")).toBeVisible();
 
       const continueBtn = page.getByRole("button", { name: "Continuar" });

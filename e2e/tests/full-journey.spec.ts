@@ -105,7 +105,7 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
 
   // Elegir interés (tematiza los ejercicios; no bloquea el resto del recorrido).
   await page.getByRole("button", { name: /Animales/ }).click();
-  await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+  await page.getByRole("button", { name: "¡Listo!" }).click();
 
   // Antes de la evaluación: ofrece un momento de respiración (siempre se puede saltar).
   await expect(page.getByRole("heading", { name: "Antes de empezar" })).toBeVisible();
@@ -114,7 +114,7 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   // Evaluación inicial breve.
   await expect(page.getByRole("heading", { name: "Vamos a conocernos" })).toBeVisible();
   await page.getByRole("button", { name: "Empezar" }).click();
-  await answerAssessmentUntil(page, "¡Perfecto!", 10);
+  await answerAssessmentUntil(page, "¡Listo!", 10);
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
   // El mapa de habilidades reemplazó al botón directo de practicar: se elige
@@ -125,7 +125,7 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
 
   // Sesión de práctica adaptativa.
   // Check-in breve con caritas al empezar la práctica (opcional).
-  await expect(page.getByRole("heading", { name: "¿Cómo estás hoy?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "¡Hola! Antes de empezar…" })).toBeVisible();
   await page.getByRole("radio", { name: "Bien", exact: true }).click();
   await page.getByRole("radio", { name: "Tranquilo/a", exact: true }).click();
   await page.getByRole("button", { name: "Listo" }).click();

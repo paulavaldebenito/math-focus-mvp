@@ -796,7 +796,7 @@ export function PracticeScreen({
 
           {phase === "feedback" && result && (
             <div className={`feedback-card ${result.isCorrect ? "correct" : "retry"}`} aria-live="polite">
-              <span className="icon" aria-hidden="true">{result.isCorrect ? "✓" : "↻"}</span>
+              <span className="icon" aria-hidden="true">{result.isCorrect ? "✓" : "💡"}</span>
               <span>{feedbackVariant}</span>
             </div>
           )}

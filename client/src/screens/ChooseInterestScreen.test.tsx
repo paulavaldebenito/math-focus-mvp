@@ -9,7 +9,7 @@ vi.mock("../api/endpoints.js", () => ({ setInterests: mocks.setInterests }));
 describe("ChooseInterestScreen", () => {
   it("no permite continuar sin elegir ningún interés", () => {
     render(<ChooseInterestScreen childId="child-1" onDone={vi.fn()} />);
-    expect(screen.getByRole("button", { name: "¡Listo, empezar!" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "¡Listo!" })).toBeDisabled();
   });
 
   it("ofrece los 10 intereses", () => {
@@ -25,7 +25,7 @@ describe("ChooseInterestScreen", () => {
     const user = userEvent.setup();
     await user.click(screen.getByRole("button", { name: /Fútbol/ }));
     await user.click(screen.getByRole("button", { name: /Cocina/ }));
-    await user.click(screen.getByRole("button", { name: "¡Listo, empezar!" }));
+    await user.click(screen.getByRole("button", { name: "¡Listo!" }));
 
     expect(mocks.setInterests).toHaveBeenCalledWith("child-1", ["futbol", "cocina"]);
     expect(onDone).toHaveBeenCalledWith(["futbol", "cocina"]);
@@ -49,7 +49,7 @@ describe("ChooseInterestScreen", () => {
   it("al editar arranca con lo ya elegido marcado", () => {
     render(<ChooseInterestScreen childId="child-1" initial={["espacio"]} onDone={vi.fn()} />);
     expect(screen.getByRole("button", { name: /Espacio/ })).toHaveAttribute("aria-pressed", "true");
-    expect(screen.getByRole("button", { name: "¡Listo, empezar!" })).toBeEnabled();
+    expect(screen.getByRole("button", { name: "¡Listo!" })).toBeEnabled();
   });
 
   it("avanza igual si falla el guardado — elegir intereses nunca bloquea", async () => {
@@ -59,7 +59,7 @@ describe("ChooseInterestScreen", () => {
     render(<ChooseInterestScreen childId="child-1" onDone={onDone} />);
     const user = userEvent.setup();
     await user.click(screen.getByRole("button", { name: /Animales/ }));
-    await user.click(screen.getByRole("button", { name: "¡Listo, empezar!" }));
+    await user.click(screen.getByRole("button", { name: "¡Listo!" }));
 
     expect(onDone).toHaveBeenCalledWith(["animales"]);
   });

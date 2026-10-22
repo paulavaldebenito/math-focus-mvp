@@ -22,6 +22,7 @@ import { applyOptionFeedback } from "./seed/traducciones/applyOptionFeedback.js"
 import { applyWorkedSteps } from "./seed/traducciones/applyWorkedSteps.js";
 import { linkBancoVisual, loadBancoVisual } from "./seed/imagenes/bancoVisual.js";
 import { applyPromptEdits } from "./seed/traducciones/applyPromptEdits.js";
+import { applyOptionCorrections } from "./seed/traducciones/applyOptionCorrections.js";
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PUBLIC_DIR = fileURLToPath(new URL("../../client/public", import.meta.url));
@@ -34,6 +35,14 @@ export async function integrateImageBank(): Promise<string[]> {
   const pe = await applyPromptEdits(prisma);
   console.log(`Enunciados editados: ${pe.written} textos escritos en esta corrida (${pe.already} ya estaban al día).`);
   problems.push(...pe.problems);
+
+  // Correcciones de la revisión pedagógica (tipo de error, distractores
+  // reemplazados, alternativas agregadas, pistas y niveles): temprano, como
+  // los enunciados editados. Las capas siguientes (traducciones, inglés de
+  // aula, feedback, pasos) ya están escritas sobre el estado corregido.
+  const oc = await applyOptionCorrections(prisma);
+  console.log(`Correcciones de alternativas: ${oc.written} escritas en esta corrida (${oc.already} ya estaban al día).`);
+  problems.push(...oc.problems);
 
   // El banco visual completo (por exerciseId) reemplaza a la ilustración
   // anterior en los ejercicios que cubre; la anterior queda solo como
@@ -80,10 +89,11 @@ export async function integrateImageBank(): Promise<string[]> {
   const expected = loadOptionTranslations().flatMap((e) => e.options.filter((o) => o.labelEn !== null));
   const inDb = await prisma.exerciseOption.findMany({
     where: { id: { in: expected.map((o) => o.id) } },
-    select: { id: true, labelEn: true },
+    select: { id: true, label: true, labelEn: true },
   });
-  const dbLabel = new Map(inDb.map((o) => [o.id, o.labelEn]));
-  const missing = expected.filter((o) => dbLabel.has(o.id) && dbLabel.get(o.id) !== o.labelEn);
+  const dbLabel = new Map(inDb.map((o) => [o.id, o]));
+  // Una alternativa reemplazada por la revisión pedagógica ya no es la del JSON: no se verifica.
+  const missing = expected.filter((o) => dbLabel.get(o.id)?.label === o.label && dbLabel.get(o.id)?.labelEn !== o.labelEn);
   console.log(`Alternativas traducidas verificadas en la BD: ${expected.length - missing.length}/${expected.length}`);
 
   // Banco visual completo: después de las traducciones, porque las leyendas

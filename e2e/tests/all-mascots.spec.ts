@@ -34,7 +34,7 @@ for (const companion of COMPANIONS) {
     await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
 
     await page.getByRole("button", { name: /Animales/ }).click();
-    await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+    await page.getByRole("button", { name: "¡Listo!" }).click();
 
     // Antes de la evaluación: ofrece un momento de respiración (siempre se puede saltar).
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
@@ -43,7 +43,7 @@ for (const companion of COMPANIONS) {
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
     await page.getByRole("button", { name: "Empezar" }).click();
 
-    const doneAssessment = page.getByRole("heading", { name: "¡Perfecto!" });
+    const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
     for (let i = 0; i < 10; i++) {
       if (await doneAssessment.isVisible()) break;
       const option = enabledOption(page);
@@ -60,7 +60,7 @@ for (const companion of COMPANIONS) {
 
 
     // Check-in de caritas al empezar la práctica: opcional, se salta.
-    await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+    await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
     await page.getByRole("button", { name: "Saltar" }).click();
     await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
     await page.getByRole("button", { name: "Empezar ahora" }).click();

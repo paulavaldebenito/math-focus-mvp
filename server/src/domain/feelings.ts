@@ -112,8 +112,8 @@ export const EMOTION_GUIDANCE: Record<Emotion, Guidance> = {
     label: { es: "Nervios", en: "Nerves" },
     meaning: { es: "Sintió inseguridad o miedo a equivocarse.", en: "They felt unsure or afraid of making mistakes." },
     say: {
-      es: ["«Aquí equivocarse está permitido.»", "«Lo importante es que lo intentaste.»"],
-      en: ["“Mistakes are allowed here.”", "“What matters is that you tried.”"],
+      es: ["«Equivocarse está permitido: así se aprende.»", "«Lo importante es que lo intentaste.»"],
+      en: ["“Mistakes are allowed: that's how we learn.”", "“What matters is that you tried.”"],
     },
     do: {
       es: [
@@ -149,8 +149,8 @@ export const HARDEST_GUIDANCE: Record<Exclude<Hardest, "nada">, { emoji: string;
     emoji: "🌀",
     label: { es: "Concentrarse", en: "Focusing" },
     tip: {
-      es: "Elijan un momento sin pantallas ni ruido, sesiones de 10 minutos, y acepten las pausas que ofrece la app.",
-      en: "Pick a time without screens or noise, 10-minute sessions, and accept the breaks the app offers.",
+      es: "Elijan un momento tranquilo, sin ruido ni otras pantallas encendidas, con prácticas cortas, y acepten las pausas que ofrece la app.",
+      en: "Pick a quiet time, with no noise or other screens on, keep practices short, and accept the breaks the app offers.",
     },
   },
 };
@@ -241,6 +241,9 @@ export interface TopicProgress {
   trend: "up" | "down" | "steady" | null;
   lastPracticed: string;
   lastEmotion: Emotion | null;
+  /** Últimos RECENT_ATTEMPTS (o menos): con ellos se decide "le está costando". */
+  recentAttempts: number;
+  recentCorrect: number;
   /** Por qué conviene un juego en casa: pocos aciertos y/o una emoción difícil reciente. */
   needsHelp: Array<"aciertos" | "emocion">;
 }
@@ -288,6 +291,8 @@ export function topicProgress(attempts: TopicAttemptRow[], reflections: Reflecti
       nameEn: s.nameEn,
       attempts: list.length,
       accuracy,
+      recentAttempts: current.length,
+      recentCorrect: current.filter((a) => a.isCorrect).length,
       trend,
       lastPracticed: localDay(list[list.length - 1]!.createdAt),
       lastEmotion,

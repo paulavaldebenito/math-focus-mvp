@@ -35,7 +35,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
 
   await page.screenshot({ path: "screenshots/03-choose-interest.png" });
   await page.getByRole("button", { name: /Animales/ }).click();
-  await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+  await page.getByRole("button", { name: "¡Listo!" }).click();
 
   // Evaluación inicial.
   // Antes de la evaluación: ofrece un momento de respiración (siempre se puede saltar).
@@ -46,7 +46,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
   await page.screenshot({ path: "screenshots/04-assessment-intro.png" });
   await page.getByRole("button", { name: "Empezar" }).click();
 
-  const doneAssessment = page.getByRole("heading", { name: "¡Perfecto!" });
+  const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
   for (let i = 0; i < 10; i++) {
     if (await doneAssessment.isVisible()) break;
     const option = enabledOption(page);
@@ -65,7 +65,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
 
   // Práctica.
   // Check-in de caritas al empezar la práctica: opcional, se salta.
-  await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+  await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
   await page.getByRole("button", { name: "Saltar" }).click();
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.screenshot({ path: "screenshots/06-pre-pause.png" });

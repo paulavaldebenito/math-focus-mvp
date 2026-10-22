@@ -43,7 +43,7 @@ test("elegir hasta 3 intereses, la 4ª tarjeta se deshabilita, y llegan pregunta
 
   // Elección de intereses: parte sin nada elegido.
   await page.getByRole("heading", { name: "¿Qué te gusta más?" }).waitFor();
-  const continueBtn = page.getByRole("button", { name: "¡Listo, empezar!" });
+  const continueBtn = page.getByRole("button", { name: "¡Listo!" });
   await expect(continueBtn).toBeDisabled();
 
   await page.getByRole("button", { name: /Fútbol/ }).click();
@@ -66,7 +66,7 @@ test("elegir hasta 3 intereses, la 4ª tarjeta se deshabilita, y llegan pregunta
 
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
   await page.getByRole("button", { name: "Empezar" }).click();
-  const doneAssessment = page.getByRole("heading", { name: "¡Perfecto!" });
+  const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
   for (let i = 0; i < 10; i++) {
     if (await doneAssessment.isVisible()) break;
     const option = page.locator(".option-btn:not([disabled])").first();
@@ -82,7 +82,7 @@ test("elegir hasta 3 intereses, la 4ª tarjeta se deshabilita, y llegan pregunta
   await page.locator(".skill-node:not([disabled])").first().click();
 
   // Check-in de caritas al empezar la práctica: opcional, se salta.
-  await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+  await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
   await page.getByRole("button", { name: "Saltar" }).click();
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();

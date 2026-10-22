@@ -27,8 +27,13 @@ la semana: unas 42 preguntas por semana. Para no repetir problemas, cada semana 
    nivel. Lo de un curso superior va en ese curso.
 3. **Nunca edites el texto de un ejercicio existente** en `server/prisma/seed/grade*.ts` ni en
    `themes/*.ts`: el seed empareja por enunciado y duplicaría. Las correcciones van en
-   `server/prisma/seed/traducciones/enunciados_editados.json` (old → new). Lo nuevo sí se agrega en
-   los archivos fuente.
+   `server/prisma/seed/traducciones/enunciados_editados.json` (old → new). Para alternativas de
+   ejercicios ya publicados —tipo de error, distractor reemplazado, alternativa agregada, pista o
+   nivel— usa `correcciones_alternativas.json` (misma carpeta), que se aplica al base y a todas sus
+   variantes temáticas, en BD nuevas y existentes. Si cambias el texto de una alternativa o pista
+   que también está en `alternativas_en.json`, `feedback_por_alternativa.json`,
+   `pasos_resueltos.json` o `ingles_de_aula.json`, actualiza esas capas al estado final.
+   Lo nuevo sí se agrega en los archivos fuente.
 4. **No inventes datos curriculares**: si no puedes verificar un OA o un indicador, dilo y pregunta.
 5. **Nada se publica sin revisión de la usuaria:** al terminar una tanda, ella la revisa en el modo
    revisión de la app. No hagas commit ni push salvo que la usuaria lo pida explícitamente.
@@ -126,8 +131,10 @@ alternativas, pistas y tips salgan de la taxonomía del error. Dos capas, siempr
    - **Coherencia:** enunciado claro y adecuado a la edad, una sola respuesta correcta, figura que
      coincide con el enunciado y nivel razonable.
    - **Distractores:** cada uno es un error real y plausible de un niño, con el código correcto
-     (E1_OP concepto o procedimiento, E2_RES forma del resultado, E2_CAL cálculo, E3_PREG no responde
-     lo preguntado, E3_DATO dato mal usado), sin alternativas absurdas ni dobles correctas.
+     según la taxonomía oficial de `server/prisma/seed.ts` (E1_OP confusión de operación o
+     de idea, E2_RES reagrupación/procedimiento —entiende la idea pero falla un paso, lo aplica a un solo
+     término o lo deja incompleto—, E2_CAL cálculo puntual, E3_PREG no responde lo preguntado, E3_DATO
+     dato mal usado), sin alternativas absurdas ni dobles correctas.
    - **Pista:** orienta sin dar la respuesta.
    - **Feedback y paso equivocado:** específicos de ese error, amables y sin culpar.
    - **Diversidad:** contextos, tipos de pregunta, las 4 habilidades y los 5 tipos de error.

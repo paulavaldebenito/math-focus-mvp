@@ -13,9 +13,9 @@ export const MOOD_FACES = [
 ] as const;
 
 export const MATH_FACES = [
-  { value: 1, emoji: "😰", es: "Muy nervioso/a", en: "Very nervous" },
-  { value: 2, emoji: "😟", es: "Un poco nervioso/a", en: "A little nervous" },
+  { value: 1, emoji: "😰", es: "Con muchos nervios", en: "Very nervous" },
+  { value: 2, emoji: "😟", es: "Con algunos nervios", en: "A little nervous" },
   { value: 3, emoji: "😐", es: "Más o menos", en: "Okay" },
   { value: 4, emoji: "🙂", es: "Tranquilo/a", en: "Calm" },
-  { value: 5, emoji: "😎", es: "¡Muy tranquilo/a!", en: "Very calm!" },
+  { value: 5, emoji: "😎", es: "¡Con mucha calma!", en: "Very calm!" },
 ] as const;

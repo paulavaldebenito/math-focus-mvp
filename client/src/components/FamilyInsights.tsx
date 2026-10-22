@@ -24,17 +24,17 @@ const pct = (x: number) => `${Math.round(x * 100)} %`;
  */
 const COPY = {
   es: {
-    wellbeingTitle: "🙂 Ánimo al empezar el día y aciertos",
+    wellbeingTitle: "🙂 Ánimo al empezar a practicar y aciertos",
     wellbeingEmpty:
       "Todavía no hay registros. En la primera práctica de cada día le preguntamos, con caritas y de forma opcional, cómo se siente y cómo se siente con las matemáticas.",
     fewDays: "Aún hay pocos días para comparar. Con más prácticas verás aquí si su ánimo y sus aciertos van de la mano.",
     mathCompare: (a: string, b: string) =>
-      `Los días en que dijo sentirse nervioso/a con las matemáticas acertó un ${a}; los días en que se sintió tranquilo/a, un ${b}.`,
+      `Los días en que dijo sentir nervios con las matemáticas acertó un ${a}; los días en que se sintió con calma, un ${b}.`,
     moodCompare: (a: string, b: string) =>
       `Los días en que se sintió triste acertó un ${a}; los días en que se sintió bien, un ${b}.`,
     caveat:
       "Es una coincidencia observada, no una conclusión: úsala como punto de partida para conversar con tu hijo/a sobre cómo se siente.",
-    nervousTitle: "Si se siente nervioso/a con las matemáticas",
+    nervousTitle: "Si siente nervios con las matemáticas",
     nervousTip:
       "Hablen de que equivocarse es parte de aprender y celebren el esfuerzo más que el resultado. Eviten frases como «yo también era malo/a para las matemáticas», prefieran sesiones cortas y tranquilas, y empiecen por algo que ya le sale bien para ganar confianza.",
     daysTitle: "Últimos días",
@@ -156,7 +156,7 @@ export function WellbeingPanel({ wellbeing, lang }: { wellbeing: WellbeingCross;
 const FEEL = {
   es: {
     title: "💛 Cómo se ha sentido al practicar",
-    empty: "Aún no hay respuestas. Al terminar cada práctica le preguntamos, con emojis y de forma opcional, qué sintió.",
+    empty: "Aún no hay respuestas. Al terminar cada práctica le preguntamos, con caritas y de forma opcional, qué sintió.",
     count: (n: number) => `En las últimas 2 semanas contó cómo se sintió en ${n} ${n === 1 ? "práctica" : "prácticas"}.`,
     weather: "Clima de sus prácticas",
     energy: "Energía que le puso",
@@ -169,7 +169,7 @@ const FEEL = {
   },
   en: {
     title: "💛 How they’ve felt while practicing",
-    empty: "No answers yet. At the end of each practice we ask, with emojis and always optionally, how they felt.",
+    empty: "No answers yet. At the end of each practice we ask, with faces and always optionally, how they felt.",
     count: (n: number) => `In the last 2 weeks they shared how they felt in ${n} ${n === 1 ? "practice" : "practices"}.`,
     weather: "Weather of their practices",
     energy: "Energy they put in",
@@ -273,9 +273,9 @@ export function FeelingsPanel({ feelings, lang }: { feelings: FeelingsSummary; l
 const TOPIC = {
   es: {
     gamesTitle: "🎲 Juegos para la casa",
-    gamesIntro: "Para los temas que más le cuestan o que le hacen sentir rabia o nervios. Sin pantalla, de 5 a 15 minutos.",
+    gamesIntro: "Para los temas que más le cuestan o en los que hace poco sintió rabia o nervios. Sin pantalla, de 5 a 15 minutos.",
     gamesNone: "Por ahora ningún tema necesita refuerzo. ¡Sigan así! Más abajo, cada tema tiene su juego por si quieren jugar igual.",
-    reasonAccuracy: (p: string, n: number) => `Le está costando: acertó un ${p} de ${n} ${n === 1 ? "pregunta" : "preguntas"}.`,
+    reasonAccuracy: (c: number, n: number) => `Le está costando: en sus últimas ${n} preguntas acertó ${c}.`,
     reasonEmotion: (label: string) => `La última vez que lo practicó sintió ${label.toLowerCase()}.`,
     minutes: (n: number) => `⏱ ${n} min`,
     materials: "Necesitan",
@@ -292,9 +292,9 @@ const TOPIC = {
   },
   en: {
     gamesTitle: "🎲 Games for home",
-    gamesIntro: "For the topics they find hardest or that make them feel frustrated or nervous. No screens, 5 to 15 minutes.",
+    gamesIntro: "For the topics they find hardest or where they recently felt frustrated or nervous. No screens, 5 to 15 minutes.",
     gamesNone: "For now no topic needs extra support. Keep it up! Below, each topic has its game in case you want to play anyway.",
-    reasonAccuracy: (p: string, n: number) => `It’s been tricky: they got ${p} of ${n} ${n === 1 ? "question" : "questions"} right.`,
+    reasonAccuracy: (c: number, n: number) => `It’s been tricky lately: in their last ${n} questions they got ${c} right.`,
     reasonEmotion: (label: string) => `The last time they practiced it they felt ${label.toLowerCase()}.`,
     minutes: (n: number) => `⏱ ${n} min`,
     materials: "You need",
@@ -303,7 +303,7 @@ const TOPIC = {
     playErr: "Couldn’t save it. Please try again.",
     topicsTitle: "📈 How each topic is going",
     topicsEmpty: "Once they practice, you’ll see here how each topic is going.",
-    trend: { up: "↗ Improving", down: "↘ Getting harder", steady: "→ Steady" },
+    trend: { up: "↗ Improving", down: "↘ Finding it harder lately", steady: "→ Steady" },
     fewYet: "Not many questions yet",
     felt: "Felt",
     seeGame: "See the home game",
@@ -366,7 +366,7 @@ export function HomeGamesPanel({ childId, topics, lang }: { childId: string; top
           {featured.map((t) => (
             <div key={t.skillId} className="dash-game-topic">
               <p className="dash-tip-area">{localize(lang, t.name, t.nameEn)}</p>
-              {t.needsHelp.includes("aciertos") && <p className="dash-review-stat">{c.reasonAccuracy(pct(t.accuracy), t.attempts)}</p>}
+              {t.needsHelp.includes("aciertos") && <p className="dash-review-stat">{c.reasonAccuracy(t.recentCorrect, t.recentAttempts)}</p>}
               {t.needsHelp.includes("emocion") && t.lastEmotion && (
                 <p className="dash-review-stat">
                   {emotionChoice(t.lastEmotion).emoji} {c.reasonEmotion(emotionChoice(t.lastEmotion).label[lang])}

@@ -22,12 +22,15 @@ ellas; las alternativas, a través de la taxonomía del error, pistas y tips aco
 - **Capa 2, revisor pedagógico independiente** (otro agente, con rúbrica). Encontró:
   - **un error de fondo:** en 4°, «10 lápices: 3 rojos, 2 azules…» se podía acertar por el camino
     equivocado. Ahora son 3 rojos y 3 azules, y la respuesta es 4/10;
-  - **~70 códigos de error mal asignados.** Se unificaron así:
-    - contar marcas en vez de saltos → E1_OP;
-    - aplicar el procedimiento a un solo término → E1_OP;
-    - sumar en vez de multiplicar → E1_OP;
-    - fracción sin simplificar o número mixto sin normalizar → E2_RES;
-    - inversiones → E2_RES;
+  - **~70 códigos de error mal asignados.** Se unificaron según la taxonomía oficial
+    (`server/prisma/seed.ts`):
+    - procedimiento aplicado a un solo término, contar marcas en vez de saltos, no simplificar,
+      número mixto sin normalizar e inversiones → E2_RES (reagrupación/procedimiento);
+    - sumar en vez de multiplicar, o una regla o concepto equivocado → E1_OP.
+
+    Nota: una primera versión usó por error "E2_RES = forma del resultado" y pasó a E1_OP los errores
+    de procedimiento. Se corrigió el mismo día; las 17 alternativas afectadas se revierten también en
+    las BD existentes con `correcciones_alternativas.json`.
   - **3 alternativas poco plausibles**, reemplazadas por errores reales;
   - **pistas y feedback ajustados**, por ejemplo «vale lo mismo, pero en un número mixto la fracción
     debe ser menor que 1»;

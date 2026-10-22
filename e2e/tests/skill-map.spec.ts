@@ -33,14 +33,14 @@ test("mapa de habilidades: solo el primer nodo está disponible, elegirlo muestr
   await page.getByRole("button", { name: /Zorro/ }).click();
   await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
   await page.getByRole("button", { name: /Espacio/ }).click();
-  await page.getByRole("button", { name: "¡Listo, empezar!" }).click();
+  await page.getByRole("button", { name: "¡Listo!" }).click();
 
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
 
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
   await page.getByRole("button", { name: "Empezar" }).click();
-  const doneAssessment = page.getByRole("heading", { name: "¡Perfecto!" });
+  const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
   for (let i = 0; i < 10; i++) {
     if (await doneAssessment.isVisible()) break;
     const option = page.locator(".option-btn:not([disabled])").first();
@@ -65,7 +65,7 @@ test("mapa de habilidades: solo el primer nodo está disponible, elegirlo muestr
   await nodes.first().click();
 
   // Check-in de caritas al empezar la práctica: opcional, se salta.
-  await page.getByRole("heading", { name: "¿Cómo estás hoy?" }).waitFor();
+  await page.getByRole("heading", { name: "¡Hola! Antes de empezar…" }).waitFor();
   await page.getByRole("button", { name: "Saltar" }).click();
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();

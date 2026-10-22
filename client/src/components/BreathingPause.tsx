@@ -99,7 +99,7 @@ export function BreathingPause({ lang, companion, onDone, exclude = [] }: Props)
         {exercise.visual === "hand" && <HandBreath totalSec={totalSec} />}
         {exercise.visual === "wave" && <WaveBreath totalSec={totalSec} />}
         {exercise.visual === "companion" && <CircleBreath totalSec={totalSec} icon={exercise.icon} />}
-        <p className="pause-label">{copy.labels[0]}</p>
+        <p className="pause-label">{copy.labels.join(" · ")}</p>
       </div>
     </div>
   );

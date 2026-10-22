@@ -3097,8 +3097,8 @@
    },
    {
     "id": "cmuli7j7n01646krhjlrmhj0w",
-    "label": "Ninguno, las barras son iguales",
-    "labelEn": "None, the bars are the same height",
+    "label": "18",
+    "labelEn": null,
     "isCorrect": false
    }
   ]
@@ -3129,8 +3129,8 @@
    },
    {
     "id": "cmulu2y9v05k34crhyxjczbyh",
-    "label": "Ninguno, las barras son iguales",
-    "labelEn": "None, the bars are the same height",
+    "label": "18",
+    "labelEn": null,
     "isCorrect": false
    }
   ]
@@ -3161,8 +3161,8 @@
    },
    {
     "id": "cmulu2yc205mg4crhf1ust2r4",
-    "label": "Ninguno, las barras son iguales",
-    "labelEn": "None, the bars are the same height",
+    "label": "18",
+    "labelEn": null,
     "isCorrect": false
    }
   ]
@@ -3193,8 +3193,8 @@
    },
    {
     "id": "cmulu2ydj05nz4crhnf9wg44g",
-    "label": "Ninguno, las barras son iguales",
-    "labelEn": "None, the bars are the same height",
+    "label": "18",
+    "labelEn": null,
     "isCorrect": false
    }
   ]
@@ -3225,8 +3225,8 @@
    },
    {
     "id": "cmulu2yfw05qm4crh2nd51wzg",
-    "label": "Ninguno, las barras son iguales",
-    "labelEn": "None, the bars are the same height",
+    "label": "18",
+    "labelEn": null,
     "isCorrect": false
    }
   ]
@@ -3251,8 +3251,8 @@
    },
    {
     "id": "cmuli7jai01976krhhzlim9ja",
-    "label": "68 resto 7",
-    "labelEn": "68 remainder 7",
+    "label": "67 resto 7",
+    "labelEn": "67 remainder 7",
     "isCorrect": false
    },
    {
@@ -3283,8 +3283,8 @@
    },
    {
     "id": "cmuli7jan019c6krhhrfdahn5",
-    "label": "59 resto 11",
-    "labelEn": "59 remainder 11",
+    "label": "58 resto 11",
+    "labelEn": "58 remainder 11",
     "isCorrect": false
    },
    {
@@ -3315,8 +3315,8 @@
    },
    {
     "id": "cmuli7jar019h6krhwxam4yon",
-    "label": "71 resto 10",
-    "labelEn": "71 remainder 10",
+    "label": "70 resto 10",
+    "labelEn": "70 remainder 10",
     "isCorrect": false
    },
    {
@@ -3347,8 +3347,8 @@
    },
    {
     "id": "cmulu2ynn05y34crh2okib5k8",
-    "label": "68 resto 7",
-    "labelEn": "68 remainder 7",
+    "label": "67 resto 7",
+    "labelEn": "67 remainder 7",
     "isCorrect": false
    },
    {
@@ -3379,8 +3379,8 @@
    },
    {
     "id": "cmulu2ynr05y84crhya7w6blp",
-    "label": "59 resto 11",
-    "labelEn": "59 remainder 11",
+    "label": "58 resto 11",
+    "labelEn": "58 remainder 11",
     "isCorrect": false
    },
    {
@@ -3411,8 +3411,8 @@
    },
    {
     "id": "cmulu2ynw05yd4crh7myfwihw",
-    "label": "71 resto 10",
-    "labelEn": "71 remainder 10",
+    "label": "70 resto 10",
+    "labelEn": "70 remainder 10",
     "isCorrect": false
    },
    {
@@ -3443,8 +3443,8 @@
    },
    {
     "id": "cmulu2yoz05zm4crhx2rqs3rm",
-    "label": "68 resto 7",
-    "labelEn": "68 remainder 7",
+    "label": "67 resto 7",
+    "labelEn": "67 remainder 7",
     "isCorrect": false
    },
    {
@@ -5497,8 +5497,8 @@
    },
    {
     "id": "cmuli7ij600gh6krh5c4r8ied",
-    "label": "Las 12 y media",
-    "labelEn": "Half past 12",
+    "label": "Las 3 y media",
+    "labelEn": "Half past 3",
     "isCorrect": false
    }
   ]
@@ -5593,8 +5593,8 @@
    },
    {
     "id": "cmulu2vis02vf4crhhvww1z20",
-    "label": "Las 12 y media",
-    "labelEn": "Half past 12",
+    "label": "Las 3 y media",
+    "labelEn": "Half past 3",
     "isCorrect": false
    }
   ]
@@ -6893,8 +6893,8 @@
    },
    {
     "id": "cmuli7iv000sq6krhd30oqabx",
-    "label": "Rectángulos",
-    "labelEn": "Rectangles",
+    "label": "Rombos",
+    "labelEn": "Rhombuses",
     "isCorrect": false
    },
    {
@@ -11762,8 +11762,8 @@
    },
    {
     "id": "cmulu2yjg05ty4crh9qdg82ay",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -11916,8 +11916,8 @@
    },
    {
     "id": "cmulu2yim05sz4crhts2imjnb",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -12058,8 +12058,8 @@
    },
    {
     "id": "cmulu2yk505us4crhixknxn6l",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -12090,8 +12090,8 @@
    },
    {
     "id": "cmulu2yka05ux4crhtunoz1jh",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -12258,8 +12258,8 @@
    },
    {
     "id": "cmulu2yja05tt4crhrd32lbck",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -12348,8 +12348,8 @@
    },
    {
     "id": "cmulu2yia05sp4crhqf6cd8yb",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -12412,8 +12412,8 @@
    },
    {
     "id": "cmulu2yjt05ud4crhl7vb38p6",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -12444,8 +12444,8 @@
    },
    {
     "id": "cmuli7j9h01836krhlmls371h",
-    "label": "2.849.100",
-    "labelEn": "2,849,100",
+    "label": "3.000.000",
+    "labelEn": "3,000,000",
     "isCorrect": false
    }
   ]
@@ -13238,8 +13238,8 @@
    },
    {
     "id": "cmuli7jj201ht6krhxu54k4xa",
-    "label": "6,0",
-    "labelEn": "6.0",
+    "label": "5,3",
+    "labelEn": "5.3",
     "isCorrect": false
    },
    {
@@ -13270,8 +13270,8 @@
    },
    {
     "id": "cmulu2zem06or4crhnsbjq5sj",
-    "label": "6,0",
-    "labelEn": "6.0",
+    "label": "5,3",
+    "labelEn": "5.3",
     "isCorrect": false
    },
    {

@@ -67,7 +67,7 @@ describe("HomeScreen", () => {
     expect(screen.queryByRole("heading", { name: "Búho" })).not.toBeInTheDocument();
   });
 
-  it("el botón «Cambiar tu mascota o su nombre» avisa al padre con el compañero, su nombre y los nombres de cada mascota", async () => {
+  it("el botón «Cambiar mi mascota o su nombre» avisa al padre con el compañero, su nombre y los nombres de cada mascota", async () => {
     mocks.getHomeSummary.mockResolvedValue({
       companion: "zorro",
       mascotName: "Firu",
@@ -93,7 +93,7 @@ describe("HomeScreen", () => {
     );
 
     await screen.findByRole("heading", { name: "Firu" });
-    await userEvent.setup().click(screen.getByRole("button", { name: "Cambiar tu mascota o su nombre" }));
+    await userEvent.setup().click(screen.getByRole("button", { name: "Cambiar mi mascota o su nombre" }));
     expect(onChangeMascotName).toHaveBeenCalledWith("zorro", "Firu", { zorro: "Firu", buho: "Sabio" });
   });
 
