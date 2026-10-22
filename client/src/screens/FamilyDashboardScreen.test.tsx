@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { FamilyDashboardScreen } from "./FamilyDashboardScreen.js";
 
-const mocks = vi.hoisted(() => ({ getProgress: vi.fn(), playHomeGame: vi.fn() }));
+const mocks = vi.hoisted(() => ({ getProgress: vi.fn(), playHomeGame: vi.fn(), childEnrollment: vi.fn().mockResolvedValue(null) }));
 vi.mock("../api/endpoints.js", () => mocks);
 
 describe("FamilyDashboardScreen", () => {

@@ -1741,10 +1741,6 @@
 
 /* ---- Modo revisión (specs/011-modo-revision): solo cuentas revisoras ---- */
 .review-entry {
-  position: fixed;
-  left: 1rem;
-  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
-  z-index: 20;
   min-height: 2.75rem;
   padding: 0.4rem 1rem;
   border: 1px solid var(--border);
@@ -1916,3 +1912,70 @@
 .dash-trend-up { color: var(--success-dark); font-weight: 700; }
 .dash-trend-down { color: var(--retry); font-weight: 700; }
 .dash-topic-game summary { cursor: pointer; color: var(--brand); font-weight: 700; min-height: 2.75rem; display: flex; align-items: center; }
+
+/* ---- Paneles escolares (specs/014) ---- */
+.school-entry {
+  min-height: 2.75rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.school-screen { justify-content: flex-start; max-width: 60rem; text-align: left; align-items: stretch; }
+.school-screen > h1 { text-align: center; }
+.school-back { width: auto; align-self: flex-start; padding: 0.5rem 1rem; }
+.school-dash { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
+.school-subtitle { margin: 0; }
+.school-empty, .school-code { padding: 0.7rem 0.9rem; border-radius: 12px; background: var(--brand-bg); margin: 0; font-weight: 700; }
+.school-form { display: flex; flex-direction: column; gap: 0.6rem; width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.school-form label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 700; font-size: 0.9rem; }
+.school-form input, .school-form select { min-height: 2.75rem; padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: 10px; background: var(--ground); color: var(--ink); font: inherit; }
+.school-form-inline { flex-direction: row; flex-wrap: wrap; align-items: flex-end; }
+.school-form-inline label { flex: 1 1 9rem; }
+.school-form-inline button { width: auto; flex: 0 0 auto; }
+.school-check { flex-direction: row !important; align-items: flex-start; gap: 0.5rem !important; font-weight: 400 !important; }
+.school-check input { min-height: 1.4rem !important; width: 1.4rem; margin-top: 0.1rem; flex: 0 0 auto; }
+.school-actions { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.school-action { padding: 0.7rem 0.9rem; border-radius: 12px; background: var(--brand-bg); line-height: 1.45; }
+.school-action-reensenar, .school-action-grupo { background: var(--star-bg); }
+.school-action-emocion_tema, .school-action-inactivos { background: var(--retry-bg); }
+.school-link { border: none; background: none; padding: 0.2rem 0; color: var(--brand); font: inherit; font-weight: 700; text-align: left; text-decoration: underline; min-height: 2rem; }
+.school-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0; padding: 0; font-size: 0.85rem; }
+.school-legend .heat { display: inline-block; width: 1rem; height: 1rem; border-radius: 4px; vertical-align: middle; border: 1px solid var(--border); }
+.school-table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.school-table, .school-heatmap { border-collapse: collapse; font-size: 0.85rem; min-width: 100%; }
+.school-table th, .school-table td { padding: 0.45rem 0.55rem; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; }
+.school-table thead th { color: var(--ink-soft); font-weight: 700; }
+.school-heatmap th, .school-heatmap td { padding: 0.3rem; text-align: center; border: 2px solid var(--surface); }
+.school-heatmap td { min-width: 2.6rem; height: 2.2rem; font-weight: 700; font-size: 0.8rem; border-radius: 6px; }
+.school-heatmap tbody th, .school-table tbody th { position: sticky; left: 0; background: var(--surface); text-align: left; z-index: 1; }
+.heat-inicial { background: var(--alert-bg); color: var(--ink); }
+.heat-desarrollo { background: var(--star-bg); color: var(--ink); }
+.heat-logrado { background: var(--success-bg); color: var(--ink); }
+.heat-pocos { background: var(--ground); color: var(--ink-soft); }
+.heat-sin { background: var(--surface); color: var(--ink-faint); }
+.school-legend .heat-inicial, td.heat-inicial { box-shadow: inset 0 0 0 2px var(--alert); }
+.school-legend .heat-logrado, td.heat-logrado { box-shadow: inset 0 0 0 2px var(--success); }
+.school-legend .heat-desarrollo, td.heat-desarrollo { box-shadow: inset 0 0 0 2px var(--star); }
+.school-oa-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+.school-stack { display: flex; height: 1.4rem; border-radius: 8px; overflow: hidden; font-size: 0.75rem; font-weight: 700; }
+.school-stack > span { display: flex; align-items: center; justify-content: center; min-width: 1.2rem; }
+.school-groups { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.school-row-alert th, .school-row-alert td { background: var(--retry-bg); }
+.school-emotions { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; }
+.school-file-oa { display: flex; align-items: center; gap: 0.6rem; }
+.school-chip { flex: 0 0 auto; padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; }
+.school-few { color: var(--ink-faint); font-style: italic; }
+.school-pct-0 { background: var(--alert-bg); }
+.school-pct-1 { background: var(--alert-bg); }
+.school-pct-2 { background: var(--star-bg); }
+.school-pct-3 { background: var(--success-bg); }
+.school-pct-4 { background: var(--success-bg); font-weight: 700; }
+
+/* Entradas a modo revisión y panel escolar: en el flujo de la página (no
+   flotantes), para que nunca tapen botones de la pantalla en el teléfono. */
+.app-entries { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; max-width: 30rem; margin: 0.5rem auto 0; padding: 0 1.25rem; }

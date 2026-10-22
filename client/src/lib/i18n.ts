@@ -6,6 +6,7 @@ export const LANG_KEY = "mathfocus.lang";
 
 const STRINGS = {
   es: {
+    schoolEntryNew: "🏫 Soy docente o directivo/a",
     reflectionTitle: "Antes de irte, cuéntame…",
     reflectionEmotionQuestion: "¿Qué sentiste hoy practicando?",
     reflectionWeatherQuestion: "Si la práctica de hoy fuera un clima, ¿cuál sería?",
@@ -176,6 +177,7 @@ const STRINGS = {
     starsEarnedThisSession: "estrellas ganadas hoy",
   },
   en: {
+    schoolEntryNew: "🏫 I’m a teacher or school leader",
     reflectionTitle: "Before you go, tell me…",
     reflectionEmotionQuestion: "How did you feel while practicing today?",
     reflectionWeatherQuestion: "If today’s practice were weather, what would it be?",

@@ -22,6 +22,8 @@ model AdultUser {
   consents     Consent[]
   children     ChildProfile[]
   reviewComments ReviewComment[]
+  staffMemberships SchoolStaff[]
+  teacherNotes   TeacherNote[]
 }
 
 /// Consentimiento explícito de un adulto. Es obligatorio y precede a la
@@ -73,6 +75,8 @@ model ChildProfile {
   checkIns          WellbeingCheckIn[]
   reflections    SessionReflection[]
   homeGamePlays  HomeGamePlay[]
+  enrollments    ClassEnrollment[]
+  teacherNotes   TeacherNote[]
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -381,4 +385,82 @@ model HomeGamePlay {
   playedAt       DateTime     @default(now())
 
   @@index([childProfileId])
+}
+
+// ---------- Colegio (specs/014-paneles-escolares) ----------
+
+/// Establecimiento. Lo crea una cuenta adulta, que queda como directiva;
+/// el resto del personal se une con `staffCode`.
+model School {
+  id         String        @id @default(cuid())
+  name       String
+  /// Código para que docentes y directivos se unan al colegio.
+  staffCode  String        @unique
+  createdAt  DateTime      @default(now())
+  staff      SchoolStaff[]
+  classrooms Classroom[]
+}
+
+/// Rol de una cuenta adulta en un colegio: "director" (UTP/dirección, ve
+/// todo el colegio AGREGADO) o "teacher" (ve sus cursos, por estudiante).
+model SchoolStaff {
+  id          String      @id @default(cuid())
+  schoolId    String
+  school      School      @relation(fields: [schoolId], references: [id])
+  adultUserId String
+  adultUser   AdultUser   @relation(fields: [adultUserId], references: [id])
+  role        String
+  /// Última vez que abrió su panel: indicador de adopción para directivos.
+  lastPanelAt DateTime?
+  createdAt   DateTime    @default(now())
+  classrooms  Classroom[]
+
+  @@unique([schoolId, adultUserId])
+}
+
+/// Curso de un colegio (p. ej. "3° B"), a cargo de una docente. Las familias
+/// vinculan a su hijo/a con `joinCode`.
+model Classroom {
+  id          String            @id @default(cuid())
+  schoolId    String
+  school      School            @relation(fields: [schoolId], references: [id])
+  teacherId   String
+  teacher     SchoolStaff       @relation(fields: [teacherId], references: [id])
+  name        String
+  grade       Int
+  joinCode    String            @unique
+  createdAt   DateTime          @default(now())
+  enrollments ClassEnrollment[]
+  notes       TeacherNote[]
+}
+
+/// Un niño en un curso. Unirse ES el consentimiento de la familia para
+/// compartir su progreso académico con el colegio; `shareEmotions` es un
+/// consentimiento APARTE para que la docente vea sus emociones individuales
+/// (sin él, solo aporta al agregado del curso). `leftAt` = la familia lo
+/// desvinculó (deja de verse en los paneles).
+model ClassEnrollment {
+  id             String       @id @default(cuid())
+  classroomId    String
+  classroom      Classroom    @relation(fields: [classroomId], references: [id])
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id])
+  shareEmotions  Boolean      @default(false)
+  consentedAt    DateTime     @default(now())
+  leftAt         DateTime?
+
+  @@unique([classroomId, childProfileId])
+}
+
+/// Nota privada de la docente sobre un estudiante (no la ve la familia).
+model TeacherNote {
+  id             String       @id @default(cuid())
+  classroomId    String
+  classroom      Classroom    @relation(fields: [classroomId], references: [id])
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id])
+  authorId       String
+  author         AdultUser    @relation(fields: [authorId], references: [id])
+  text           String
+  createdAt      DateTime     @default(now())
 }

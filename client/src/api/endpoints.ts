@@ -9,6 +9,11 @@ import type {
   InitialAssessmentResult,
   NextExercisePublic,
   ProgressResponse,
+  ChildEnrollment,
+  DirectorDashboardData,
+  SchoolMembership,
+  StudentFileData,
+  TeacherDashboardData,
   ReflectionInput,
   ReviewAnswerResult,
   ReviewComment,
@@ -181,4 +186,43 @@ export function reviewDeleteComment(commentId: string) {
 export async function reviewPendingComments(): Promise<ReviewPendingComment[]> {
   const { comments } = await api.get<{ comments: ReviewPendingComment[] }>("/api/review/comments");
   return comments;
+}
+
+// ---- Paneles escolares (specs/014) ----
+
+export async function mySchools(): Promise<SchoolMembership[]> {
+  return (await api.get<{ schools: SchoolMembership[] }>("/api/school/mine")).schools;
+}
+export function createSchool(name: string) {
+  return api.post<{ id: string; name: string; staffCode: string }>("/api/school", { name });
+}
+export function joinSchool(staffCode: string) {
+  return api.post<{ id: string; name: string }>("/api/school/join", { staffCode });
+}
+export function createClassroom(schoolId: string, name: string, grade: number) {
+  return api.post<{ id: string; name: string; grade: number; joinCode: string }>(`/api/school/${schoolId}/classrooms`, { name, grade });
+}
+export function teacherDashboard(classroomId: string) {
+  return api.get<TeacherDashboardData>(`/api/school/classrooms/${classroomId}/dashboard`);
+}
+export function studentFile(classroomId: string, childId: string) {
+  return api.get<StudentFileData>(`/api/school/classrooms/${classroomId}/students/${childId}`);
+}
+export function addTeacherNote(classroomId: string, childId: string, text: string) {
+  return api.post<{ id: string; text: string; createdAt: string }>(`/api/school/classrooms/${classroomId}/students/${childId}/notes`, { text });
+}
+export function directorDashboard(schoolId: string) {
+  return api.get<DirectorDashboardData>(`/api/school/${schoolId}/director`);
+}
+export async function childEnrollment(childId: string): Promise<ChildEnrollment | null> {
+  return (await api.get<{ enrollment: ChildEnrollment | null }>(`/api/children/${childId}/classroom`)).enrollment;
+}
+export function joinClassroom(childId: string, joinCode: string, shareEmotions: boolean) {
+  return api.post<ChildEnrollment>(`/api/children/${childId}/classroom`, { joinCode, shareEmotions });
+}
+export function setShareEmotions(childId: string, shareEmotions: boolean) {
+  return api.patch<{ shareEmotions: boolean }>(`/api/children/${childId}/classroom`, { shareEmotions });
+}
+export function leaveClassroom(childId: string) {
+  return api.delete<void>(`/api/children/${childId}/classroom`);
 }

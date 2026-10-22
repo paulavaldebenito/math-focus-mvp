@@ -13,10 +13,12 @@ import { PracticeScreen } from "./screens/PracticeScreen.js";
 import { FamilyDashboardScreen } from "./screens/FamilyDashboardScreen.js";
 import { HomeScreen } from "./screens/HomeScreen.js";
 import { ReviewScreen } from "./screens/ReviewScreen.js";
+import { SchoolScreen } from "./screens/SchoolScreen.js";
 import * as endpoints from "./api/endpoints.js";
 import type { ChildProfile } from "./api/types.js";
 import { LangProvider } from "./context/LangContext.js";
 import { t, useLang } from "./lib/i18n.js";
+import { SCHOOL } from "./components/school/copy.js";
 import { isMuted, playClick, playSelect, setMuted } from "./lib/sound.js";
 
 type OnboardingStep = "loading-children" | "consent" | "create-child" | "done";
@@ -246,6 +248,8 @@ function AppShell() {
   const [child, setChild] = useState<ChildProfile | null>(null);
   const [isNewChild, setIsNewChild] = useState(false);
   const [reviewing, setReviewing] = useState(false);
+  const [inSchool, setInSchool] = useState(false);
+  const [becameStaff, setBecameStaff] = useState(false);
 
   if (loading) {
     return (
@@ -262,17 +266,31 @@ function AppShell() {
   // Modo revisión: solo cuentas revisoras (REVIEWER_EMAILS en el servidor).
   // Se puede entrar antes de crear un niño; al salir se vuelve al flujo
   // normal tal como estaba (ChildFlow no se desmonta mientras se revisa).
-  const reviewEntry = adult.isReviewer && !reviewing && (
+  const reviewEntry = adult.isReviewer && !reviewing && !inSchool && (
     <button className="review-entry" type="button" onClick={() => setReviewing(true)}>
       {t(lang, "reviewEntry")}
+    </button>
+  );
+  // Panel escolar (specs/014): siempre para quien tiene un rol en un colegio;
+  // antes de crear un perfil de niño, también como "Soy docente o directivo/a".
+  const isStaff = adult.isStaff || becameStaff;
+  const schoolEntry = !inSchool && !reviewing && (isStaff || !child) && (
+    <button className="school-entry" type="button" onClick={() => setInSchool(true)}>
+      {isStaff ? SCHOOL[lang].entry : t(lang, "schoolEntryNew")}
     </button>
   );
 
   return (
     <>
-      {reviewEntry}
+      {(reviewEntry || schoolEntry) && (
+        <div className="app-entries">
+          {reviewEntry}
+          {schoolEntry}
+        </div>
+      )}
       {reviewing && <ReviewScreen onExit={() => setReviewing(false)} />}
-      <div hidden={reviewing}>
+      {inSchool && <SchoolScreen onExit={() => setInSchool(false)} onBecameStaff={() => setBecameStaff(true)} />}
+      <div hidden={reviewing || inSchool}>
         {!child ? (
           <Onboarding
             onChildReady={(c, fresh) => {

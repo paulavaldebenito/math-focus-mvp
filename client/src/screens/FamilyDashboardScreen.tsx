@@ -3,30 +3,10 @@ import * as endpoints from "../api/endpoints.js";
 import type { ProgressResponse } from "../api/types.js";
 import { t, useLang, type Lang } from "../lib/i18n.js";
 import { playBack } from "../lib/sound.js";
+import { ERROR_LABELS } from "../lib/errorLabels.js";
 import { FeelingsPanel, HomeGamesPanel, TopicsPanel, WellbeingPanel } from "../components/FamilyInsights.js";
+import { ClassroomLink } from "../components/ClassroomLink.js";
 
-const ERROR_LABELS: Record<Lang, Record<string, string>> = {
-  es: {
-    E1_OP: "Confusión de operación",
-    E2_RES: "Reagrupación/procedimiento",
-    E2_CAL: "Cálculo puntual",
-    E3_PREG: "Comprensión del enunciado",
-    E3_DATO: "Uso de un dato del enunciado",
-    respuesta_rapida: "Respuestas muy rápidas",
-    abandono: "Actividades sin terminar",
-    solicitud_ayuda_repetida: "Pistas usadas seguido",
-  },
-  en: {
-    E1_OP: "Operation confusion",
-    E2_RES: "Regrouping/procedure",
-    E2_CAL: "One-off calculation slip",
-    E3_PREG: "Understanding the question",
-    E3_DATO: "Using a detail from the question",
-    respuesta_rapida: "Very fast responses",
-    abandono: "Unfinished activities",
-    solicitud_ayuda_repetida: "Hints used often",
-  },
-};
 
 /**
  * Sugerencias concretas para trabajar en casa, sin pantalla — una por cada
@@ -158,6 +138,8 @@ export function FamilyDashboardScreen({ childId, onBack }: Props) {
       {progress.topics && <TopicsPanel childId={childId} topics={progress.topics} lang={lang} />}
 
       {progress.wellbeing && <WellbeingPanel wellbeing={progress.wellbeing} lang={lang} />}
+
+      <ClassroomLink childId={childId} lang={lang} />
 
       {errorEntries.length > 0 && (
         <div className="dash-errors">

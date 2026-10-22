@@ -48,13 +48,14 @@ authRouter.post("/login", async (req, res) => {
   // Regenera el ID de sesión antes de autenticar — evita fijación de sesión
   // (un atacante que fija un session ID en la víctima antes del login no
   // puede heredar la sesión ya autenticada, porque el ID cambia acá).
+  const body = await adultPublic(adult);
   req.session.regenerate((err) => {
     if (err) {
       res.status(500).json({ error: "session_error" });
       return;
     }
     req.session.adultUserId = adult.id;
-    res.status(200).json(adultPublic(adult));
+    res.status(200).json(body);
   });
 });
 
@@ -70,5 +71,5 @@ authRouter.get("/me", requireAuth, async (req, res) => {
     res.status(401).json({ error: "not_authenticated" });
     return;
   }
-  res.status(200).json(adultPublic(adult));
+  res.status(200).json(await adultPublic(adult));
 });

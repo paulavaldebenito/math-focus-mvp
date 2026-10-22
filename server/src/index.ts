@@ -21,6 +21,7 @@ import { sessionMiddleware } from "./auth/session.js";
 import { checkInsRouter } from "./routes/checkIns.js";
 import { reviewRouter } from "./routes/review.js";
 import { homeGamesRouter, reflectionRouter } from "./routes/reflection.js";
+import { childClassroomRouter, schoolRouter } from "./routes/school.js";
 
 export const app = express();
 
@@ -56,6 +57,8 @@ app.use("/api/sessions/:sessionId/complete", sessionCompleteRouter);
 app.use("/api/children/:childId/home", homeSummaryRouter);
 app.use("/api/children/:childId/skill-path", skillPathRouter);
 app.use("/api/review", reviewRouter);
+app.use("/api/school", schoolRouter);
+app.use("/api/children/:childId/classroom", childClassroomRouter);
 
 // Cualquier ruta no definida arriba — JSON consistente en vez del HTML por
 // defecto de Express (el cliente espera poder parsear `.json()` siempre).

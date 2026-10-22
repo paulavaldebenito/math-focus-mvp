@@ -16,8 +16,11 @@ export function isReviewerEmail(email: string): boolean {
 }
 
 /** Datos públicos del adulto: nunca passwordHash. */
-export function adultPublic(adult: { id: string; email: string }) {
-  return { id: adult.id, email: adult.email, isReviewer: isReviewerEmail(adult.email) };
+export async function adultPublic(adult: { id: string; email: string }) {
+  // Si tiene un rol en algún colegio (specs/014), el cliente muestra la
+  // entrada al panel escolar.
+  const isStaff = (await prisma.schoolStaff.count({ where: { adultUserId: adult.id } })) > 0;
+  return { id: adult.id, email: adult.email, isReviewer: isReviewerEmail(adult.email), isStaff };
 }
 
 /** Exige sesión iniciada y que la cuenta esté en REVIEWER_EMAILS (403 si no). */

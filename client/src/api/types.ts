@@ -3,6 +3,8 @@ export interface AdultUser {
   email: string;
   /** true si la cuenta está en REVIEWER_EMAILS del servidor (modo revisión). */
   isReviewer?: boolean;
+  /** true si tiene un rol (docente/directiva) en algún colegio (specs/014). */
+  isStaff?: boolean;
 }
 
 export interface Consent {
@@ -368,4 +370,119 @@ export interface ReviewAnswerResult extends AttemptResult {
 
 export interface ReviewPendingComment extends ReviewComment {
   exercise: { id: string; prompt: string; theme: string | null; skill: { id: string; grade: number; name: string } };
+}
+
+// ---- Paneles escolares (specs/014-paneles-escolares) ----
+
+export type MasteryLevel = "inicial" | "desarrollo" | "logrado" | "pocos" | "sin";
+
+export interface SchoolMembership {
+  schoolId: string;
+  schoolName: string;
+  role: "director" | "teacher";
+  staffCode: string | null;
+  classrooms: Array<{ id: string; name: string; grade: number; joinCode: string; students: number; mine: boolean }>;
+}
+
+export interface SchoolSkill {
+  id: string;
+  name: string;
+  nameEn: string | null;
+  oaCode: string | null;
+  axis: string;
+  axisEn: string | null;
+  order: number;
+  grade: number;
+}
+
+export interface MasteryCell {
+  level: MasteryLevel;
+  attempts: number;
+  recentAccuracy: number | null;
+  mainError: string | null;
+}
+
+export interface ParticipationRow {
+  childId: string;
+  lastPractice: string | null;
+  daysSinceLast: number | null;
+  sessions7d: number;
+  minutes7d: number;
+  inactive: boolean;
+  hintRate: number | null;
+  fastRate: number | null;
+  homeGames: number;
+}
+
+export type TeacherRecommendation =
+  | { kind: "reensenar"; skillId: string; inicial: number; assessed: number; errorCode: string | null }
+  | { kind: "grupo"; skillId: string; childIds: string[]; errorCode: string | null }
+  | { kind: "inactivos"; childIds: string[] }
+  | { kind: "emocion_tema"; skillId: string; reports: number; students: number };
+
+export interface TeacherDashboardData {
+  classroom: { id: string; name: string; grade: number; joinCode: string };
+  students: Array<{ id: string; name: string; shareEmotions: boolean }>;
+  skills: SchoolSkill[];
+  heatmap: Record<string, Record<string, MasteryCell>>;
+  skillSummary: Array<{ skillId: string; levels: Record<MasteryLevel, number>; assessed: number; topError: { code: string; count: number } | null }>;
+  groups: Array<{ skillId: string; errorCode: string | null; childIds: string[] }>;
+  participation: ParticipationRow[];
+  week: { activeStudents: number; minutes: number; sessions: number };
+  climate: {
+    emotionCounts: Record<Emotion, number>;
+    reporters: number;
+    difficultSkills: Array<{ skillId: string; reports: number; students: number }>;
+    alerts: Array<{ childId: string; reason: "emociones_dificiles" | "animo_bajo"; count: number; skillId: string | null }>;
+  };
+  coverage: { practiced: number; total: number };
+  actions: TeacherRecommendation[];
+}
+
+export interface StudentFileData {
+  student: { id: string; name: string; shareEmotions: boolean };
+  skills: SchoolSkill[];
+  cells: Record<string, MasteryCell>;
+  trends: Record<string, "up" | "down" | "steady" | null>;
+  errorBreakdown: Record<string, number>;
+  participation: ParticipationRow;
+  emotions: Array<{ date: string; emotion: Emotion; skillId: string | null }> | null;
+  notes: Array<{ id: string; text: string; createdAt: string; author: string }>;
+}
+
+export type Guarded<T> = { ok: true; value: T; students: number } | { ok: false; students: number };
+
+export interface DirectorDashboardData {
+  school: { id: string; name: string; staffCode: string };
+  skills: SchoolSkill[];
+  totals: { classes: number; students: number; activeStudents7d: number; teachersUsingPanel7d: number; teachers: number };
+  masteryByGradeAxis: Array<{ grade: number; axis: string; axisEn: string | null; logrado: Guarded<number> }>;
+  monthly: Array<{ grade: number; month: string; accuracy: Guarded<number> }>;
+  classes: Array<{
+    id: string;
+    name: string;
+    grade: number;
+    teacherEmail: string;
+    teacherLastPanelAt: string | null;
+    enrolled: number;
+    active7d: number;
+    minutes7d: number;
+    logrado: Guarded<number>;
+    difficultEmotionShare: Guarded<number>;
+    homeGames: number;
+  }>;
+  parallel: Array<{ grade: number; skillId: string; byClass: Array<{ classId: string; logrado: Guarded<number> }> }>;
+  wellbeingByGrade: Array<{ grade: number; counts: Guarded<Record<Emotion, number>> }>;
+  alerts: Array<
+    | { kind: "baja_aciertos"; grade: number; before: number; after: number }
+    | { kind: "emociones_dificiles"; classId: string; share: number }
+    | { kind: "baja_participacion"; classId: string; share: number }
+  >;
+}
+
+export interface ChildEnrollment {
+  classroomName: string;
+  schoolName: string;
+  grade: number;
+  shareEmotions: boolean;
 }
