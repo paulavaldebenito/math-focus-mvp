@@ -159,12 +159,12 @@ describe("banco_visual.json", () => {
   const { entries } = loadBancoVisual();
   const publicDir = fileURLToPath(new URL("../../../../../client/public", import.meta.url));
 
-  it("tiene 2.123 ejercicios únicos y las 3.990 rutas (2.123 PNG + 1.867 SVG; los dibujos nuevos de fracciones — dinosaurios, comida redonda y rectángulos — son solo PNG) existen en client/public", () => {
-    expect(entries).toHaveLength(2123);
-    expect(new Set(entries.map((e) => e.exerciseId)).size).toBe(2123);
+  it("tiene 2.108 ejercicios únicos y las 3.960 rutas (2.108 PNG + 1.852 SVG; los dibujos nuevos de fracciones — dinosaurios, comida redonda y rectángulos — son solo PNG) existen en client/public", () => {
+    expect(entries).toHaveLength(2108);
+    expect(new Set(entries.map((e) => e.exerciseId)).size).toBe(2108);
     const paths = entries.flatMap((e) => (e.svgSrc ? [e.src, e.svgSrc] : [e.src]));
-    expect(paths.filter((p) => p.endsWith(".png"))).toHaveLength(2123);
-    expect(paths.filter((p) => p.endsWith(".svg"))).toHaveLength(1867);
+    expect(paths.filter((p) => p.endsWith(".png"))).toHaveLength(2108);
+    expect(paths.filter((p) => p.endsWith(".svg"))).toHaveLength(1852);
     expect(paths.filter((p) => !existsSync(publicDir + p))).toEqual([]);
   });
 

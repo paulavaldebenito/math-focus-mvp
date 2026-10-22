@@ -2955,10 +2955,13 @@
   {
    "exerciseId": "cmulu2uxt029x4crh59rhp8ye",
    "grade": 2,
-   "prompt": "En la cancha de baby fútbol juegan 5 jugadores por equipo. ¿Cuántos jugadores hay en 6 equipos?",
+   "prompt": "Cada equipo de baby fútbol usa 5 camisetas. ¿Cuántas camisetas usan 6 equipos?",
    "promptEn": {
-    "old": "On a five-a-side pitch, 5 players play for each team. How many players are there in 6 teams?",
-    "new": "In a small-sided soccer game, 5 players play on each team. How many players are there in 6 teams?"
+    "old": [
+     "On a five-a-side pitch, 5 players play for each team. How many players are there in 6 teams?",
+     "In a small-sided soccer game, 5 players play on each team. How many players are there in 6 teams?"
+    ],
+    "new": "Each small-sided soccer team uses 5 jerseys. How many jerseys do 6 teams use?"
    }
   },
   {

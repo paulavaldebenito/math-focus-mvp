@@ -3105,5 +3105,45 @@
     }
    }
   ]
+ },
+ {
+  "exerciseId": "cmulu2uxt029x4crh59rhp8ye",
+  "grade": 2,
+  "prompt": {
+   "old": "En la cancha de baby fútbol juegan 5 jugadores por equipo. ¿Cuántos jugadores hay en 6 equipos?",
+   "new": "Cada equipo de baby fútbol usa 5 camisetas. ¿Cuántas camisetas usan 6 equipos?"
+  },
+  "promptEn": {
+   "old": "In a small-sided soccer game, 5 players play on each team. How many players are there in 6 teams?",
+   "new": "Each small-sided soccer team uses 5 jerseys. How many jerseys do 6 teams use?"
+  },
+  "procedureNote": {
+   "old": "Cada equipo es un grupo de 5. Cuenta de 5 en 5, seis veces.",
+   "new": "Cada equipo es un grupo de 5 camisetas. Cuenta de 5 en 5, seis veces."
+  },
+  "procedureNoteEn": {
+   "old": "Each team is a group of 5. Count by 5s, six times.",
+   "new": "Each team is a group of 5 jerseys. Count by 5s, six times."
+  }
+ },
+ {
+  "exerciseId": "cmulu2v0102cf4crh8vcbhyht",
+  "grade": 2,
+  "prompt": {
+   "old": "Cada pentagrama tiene 5 líneas. ¿Cuántas líneas hay en 6 pentagramas?",
+   "new": "En una banda, cada fila tiene 5 tambores. ¿Cuántos tambores hay en 6 filas?"
+  },
+  "promptEn": {
+   "old": "Each music staff has 5 lines. How many lines are there in 6 staves?",
+   "new": "In a marching band, each row has 5 drums. How many drums are there in 6 rows?"
+  },
+  "procedureNote": {
+   "old": "Cada pentagrama es un grupo de 5. Cuenta de 5 en 5, seis veces.",
+   "new": "Cada fila es un grupo de 5 tambores. Cuenta de 5 en 5, seis veces."
+  },
+  "procedureNoteEn": {
+   "old": "Each staff is a group of 5. Count by 5s, six times.",
+   "new": "Each row is a group of 5 drums. Count by 5s, six times."
+  }
  }
 ]
