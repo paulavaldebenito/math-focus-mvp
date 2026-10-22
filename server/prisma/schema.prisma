@@ -167,6 +167,11 @@ model Exercise {
   /// envía SOLO después de responder (antes delataría la respuesta). Lo
   /// escribe prisma/seed/traducciones/applyWorkedSteps.ts. NULL = sin desarrollo.
   solution        Json?
+  /// Retirado del banco por la revisión pedagógica (specs/017): ya no se
+  /// entrega en práctica, evaluación ni revisión, pero se conserva por los
+  /// intentos que lo referencian. Lo marca prisma/seed/traducciones/
+  /// applyRetirements.ts desde ejercicios_retirados.json, nunca a mano.
+  retired         Boolean          @default(false)
   createdAt       DateTime         @default(now())
   options         ExerciseOption[]
   attempts        Attempt[]

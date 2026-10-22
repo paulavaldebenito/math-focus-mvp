@@ -17673,5 +17673,293 @@
     "isCorrect": false
    }
   ]
+ },
+ {
+  "exerciseId": "cmvk0h4rl001ht7rhyp0ypdy5",
+  "grade": 1,
+  "prompt": "Patrón de colores: rojo, azul, rojo, azul, rojo, ... ¿Qué 2 colores siguen?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h4rq001it7rh33157rrs",
+    "label": "azul, rojo",
+    "labelEn": "blue, red",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h4rq001jt7rh2ikdzp9d",
+    "label": "rojo, azul",
+    "labelEn": "red, blue",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4rq001kt7rhpjxjtu9g",
+    "label": "azul, azul",
+    "labelEn": "blue, blue",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4rq001lt7rhez31csnd",
+    "label": "rojo, rojo",
+    "labelEn": "red, red",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h4sq001mt7rhtsmdwpzh",
+  "grade": 1,
+  "prompt": "Patrón de sonidos: palmada, pisada, palmada, pisada, palmada, ... ¿Qué 2 sonidos siguen?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h4sv001nt7rhtcaiz5xe",
+    "label": "pisada, palmada",
+    "labelEn": "stomp, clap",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h4sv001ot7rhdqkf3bkl",
+    "label": "palmada, pisada",
+    "labelEn": "clap, stomp",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4sv001pt7rhp3e2lzzl",
+    "label": "pisada, pisada",
+    "labelEn": "stomp, stomp",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4sv001qt7rh3n4plf1m",
+    "label": "palmada, palmada",
+    "labelEn": "clap, clap",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h4tu001rt7rh9ux77gaa",
+  "grade": 1,
+  "prompt": "Patrón de figuras: círculo, cuadrado, cuadrado, círculo, cuadrado, cuadrado, ... ¿Qué 2 figuras siguen?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h4tz001st7rhu7osx7eh",
+    "label": "círculo, cuadrado",
+    "labelEn": "circle, square",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h4tz001tt7rhjnc9weq8",
+    "label": "cuadrado, círculo",
+    "labelEn": "square, circle",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4tz001ut7rhtrm49buv",
+    "label": "cuadrado, cuadrado",
+    "labelEn": "square, square",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4tz001vt7rhnajajxrs",
+    "label": "círculo, círculo",
+    "labelEn": "circle, circle",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h4v4001wt7rh4s3dveh1",
+  "grade": 1,
+  "prompt": "Patrón: gato, perro, pez, gato, perro, pez, gato, ... ¿Qué 2 siguen?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h4va001xt7rhe04755sn",
+    "label": "perro, pez",
+    "labelEn": "dog, fish",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h4va001yt7rh4vabtcfq",
+    "label": "pez, gato",
+    "labelEn": "fish, cat",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4va001zt7rhnq5qv31r",
+    "label": "gato, perro",
+    "labelEn": "cat, dog",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4va0020t7rhok26lhcg",
+    "label": "perro, gato",
+    "labelEn": "dog, cat",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h4w80021t7rhnhb6yykh",
+  "grade": 1,
+  "prompt": "Patrón: rojo, rojo, azul, rojo, rojo, azul, rojo, ... ¿Qué 2 colores siguen?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h4wd0022t7rhun2hb6or",
+    "label": "rojo, azul",
+    "labelEn": "red, blue",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h4wd0023t7rhc6z5gdsh",
+    "label": "azul, rojo",
+    "labelEn": "blue, red",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4wd0024t7rhnvm4xrud",
+    "label": "rojo, rojo",
+    "labelEn": "red, red",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4wd0025t7rh7h1hodxu",
+    "label": "azul, azul",
+    "labelEn": "blue, blue",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h4xf0026t7rhn6itkrr3",
+  "grade": 1,
+  "prompt": "Rosa arma una pulsera con este patrón: amarilla, roja, azul, amarilla, roja, azul, y así sigue. La pulsera tiene 8 cuentas. ¿De qué color es la última cuenta?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h4xm0027t7rhhyfqmvdw",
+    "label": "roja",
+    "labelEn": "red",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h4xm0028t7rh5jqsk9jj",
+    "label": "amarilla",
+    "labelEn": "yellow",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4xm0029t7rhncqh0u26",
+    "label": "azul",
+    "labelEn": "blue",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h4xm002at7rhhc5v61lb",
+    "label": "8",
+    "labelEn": null,
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h8u4002dt7rhpidx9mel",
+  "grade": 1,
+  "prompt": "El banco mide 4 clips de largo y la mesa mide 6 clips. ¿Cuál es más corto?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h8u9002et7rhoxtmwznm",
+    "label": "El banco",
+    "labelEn": "The bench",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h8u9002ft7rhitku1uy9",
+    "label": "La mesa",
+    "labelEn": "The table",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h8u9002gt7rhh1cslvo4",
+    "label": "4 clips",
+    "labelEn": "4 clips",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h8u9002ht7rhz8i7o9cb",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h8v9002it7rhp5kqjo38",
+  "grade": 1,
+  "prompt": "La cinta roja mide 5 clips y la cinta azul mide 8 clips. ¿Cuál cinta es más larga?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h8ve002jt7rhdr9qd5dq",
+    "label": "La azul",
+    "labelEn": "The blue one",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h8ve002kt7rhmeqntdyi",
+    "label": "La roja",
+    "labelEn": "The red one",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h8ve002lt7rhwo3cqmg8",
+    "label": "8 clips",
+    "labelEn": "8 clips",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h8ve002mt7rhd1usvyy7",
+    "label": "Miden lo mismo",
+    "labelEn": "They are the same length",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvk0h8we002nt7rh59f4pp7d",
+  "grade": 1,
+  "prompt": "Mateo midió su mesa con su cuaderno y le dio 5 cuadernos. Su hermana midió la misma mesa con un lápiz y le dio 9 lápices. ¿Por qué les dieron números distintos?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvk0h8wj002ot7rhr0rujw5s",
+    "label": "El lápiz es más corto que el cuaderno",
+    "labelEn": "The pencil is shorter than the notebook",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvk0h8wj002pt7rhcblxs241",
+    "label": "El lápiz es más largo que el cuaderno",
+    "labelEn": "The pencil is longer than the notebook",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h8wj002qt7rhtsxopy14",
+    "label": "La mesa cambió de largo",
+    "labelEn": "The table changed length",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvk0h8wj002rt7rhx8i6bfrx",
+    "label": "Uno de los dos contó mal",
+    "labelEn": "One of them counted wrong",
+    "isCorrect": false
+   }
+  ]
  }
 ]

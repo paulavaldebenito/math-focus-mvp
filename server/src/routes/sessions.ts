@@ -354,6 +354,7 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
       where: {
         AND: [
           {
+            retired: false,
             mathSkill: {
               grade: child.grade,
               ...(practiceSession?.mathSkillId ? { id: practiceSession.mathSkillId } : {}),

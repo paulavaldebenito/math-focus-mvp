@@ -2620,6 +2620,102 @@
  {
   "grade": 1,
   "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "¿Cuál es el número mayor: 3, 9, 6 u 8?",
+  "id": "cmvk0gwxg000at7rh9st4yrqe",
+  "options": {
+   "3": "cmvk0gwxl000ct7rh3gfqvsgo",
+   "6": "cmvk0gwxl000et7rhhjgm348u",
+   "8": "cmvk0gwxl000dt7rhc6bd64oa",
+   "9": "cmvk0gwxl000bt7rh3mnn5nd8"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "¿Cuál es el número menor: 15, 6, 11 o 9?",
+  "id": "cmvk0gwyk000ft7rht3lpt78n",
+  "options": {
+   "6": "cmvk0gwyq000gt7rh9fr3tanu",
+   "9": "cmvk0gwyq000it7rhtfp585rf",
+   "11": "cmvk0gwyq000jt7rhp6ezzvc3",
+   "15": "cmvk0gwyq000ht7rhwi3ma5ez"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "¿Cuál es el número mayor: 8, 2, 5 o 4?",
+  "id": "cmvk0gwzq000kt7rhaf0dvm2o",
+  "options": {
+   "2": "cmvk0gwzv000mt7rheny12nw0",
+   "4": "cmvk0gwzv000ot7rhty1b9h7w",
+   "5": "cmvk0gwzv000nt7rh2xfvf1xx",
+   "8": "cmvk0gwzv000lt7rhdjnw12vl"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "¿Cuál es el número menor: 14, 17, 4 o 16?",
+  "id": "cmvk0gx0w000pt7rhwcg2y9fc",
+  "options": {
+   "4": "cmvk0gx11000qt7rhub80vupv",
+   "14": "cmvk0gx11000st7rhyz8ctn0j",
+   "16": "cmvk0gx11000tt7rhyjg151ev",
+   "17": "cmvk0gx11000rt7rh68nv5add"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "¿Cuál es el número mayor: 11, 9, 19 o 12?",
+  "id": "cmvk0gx20000ut7rhd38u8c6r",
+  "options": {
+   "9": "cmvk0gx26000wt7rh4j5i60bl",
+   "11": "cmvk0gx26000yt7rhercvpyia",
+   "12": "cmvk0gx26000xt7rhefojm5yu",
+   "19": "cmvk0gx26000vt7rh62a8bta5"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "¿Qué número va justo entre el 14 y el 16?",
+  "id": "cmvk0gx37000zt7rh7kv8hn35",
+  "options": {
+   "13": "cmvk0gx3c0011t7rhi32ky88t",
+   "15": "cmvk0gx3c0010t7rh4ur7tu0q",
+   "16": "cmvk0gx3c0013t7rhdts6vk90",
+   "17": "cmvk0gx3c0012t7rh9d1lgm76"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "Ordena de menor a mayor: 12, 7, 15, 9.",
+  "id": "cmvk0gx4a0014t7rhe0qjsvx7",
+  "options": {
+   "7, 9, 12, 15": "cmvk0gx4e0015t7rhn4sw6ho9",
+   "15, 12, 9, 7": "cmvk0gx4e0016t7rh50n6ya7l",
+   "12, 15, 7, 9": "cmvk0gx4e0017t7rhxrzkp9a7",
+   "7, 12, 9, 15": "cmvk0gx4e0018t7rhibdy8dk2"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
+  "prompt": "Ordena de mayor a menor: 18, 3, 10, 13.",
+  "id": "cmvk0gx5e0019t7rhb0tyvtp5",
+  "options": {
+   "18, 13, 10, 3": "cmvk0gx5k001at7rh8czemnu2",
+   "3, 10, 13, 18": "cmvk0gx5k001bt7rhwjyw66ji",
+   "18, 10, 13, 3": "cmvk0gx5k001ct7rhrbvavh5i",
+   "3, 18, 13, 10": "cmvk0gx5k001dt7rhiito2m4a"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar y ordenar números dentro de 20",
   "prompt": "Dos redes de la cancha tienen balones: una tiene 3 y la otra tiene 9. ¿Cuál número es mayor?",
   "id": "cmulu2t6800nk4crh203qelnw",
   "options": {
@@ -4840,6 +4936,78 @@
  {
   "grade": 1,
   "skill": "Patrones repetitivos y numéricos hasta 20",
+  "prompt": "Patrón de colores: rojo, azul, rojo, azul, rojo, ... ¿Qué 2 colores siguen?",
+  "id": "cmvk0h4rl001ht7rhyp0ypdy5",
+  "options": {
+   "azul, rojo": "cmvk0h4rq001it7rh33157rrs",
+   "rojo, azul": "cmvk0h4rq001jt7rh2ikdzp9d",
+   "azul, azul": "cmvk0h4rq001kt7rhpjxjtu9g",
+   "rojo, rojo": "cmvk0h4rq001lt7rhez31csnd"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Patrones repetitivos y numéricos hasta 20",
+  "prompt": "Patrón de sonidos: palmada, pisada, palmada, pisada, palmada, ... ¿Qué 2 sonidos siguen?",
+  "id": "cmvk0h4sq001mt7rhtsmdwpzh",
+  "options": {
+   "pisada, palmada": "cmvk0h4sv001nt7rhtcaiz5xe",
+   "palmada, pisada": "cmvk0h4sv001ot7rhdqkf3bkl",
+   "pisada, pisada": "cmvk0h4sv001pt7rhp3e2lzzl",
+   "palmada, palmada": "cmvk0h4sv001qt7rh3n4plf1m"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Patrones repetitivos y numéricos hasta 20",
+  "prompt": "Patrón de figuras: círculo, cuadrado, cuadrado, círculo, cuadrado, cuadrado, ... ¿Qué 2 figuras siguen?",
+  "id": "cmvk0h4tu001rt7rh9ux77gaa",
+  "options": {
+   "círculo, cuadrado": "cmvk0h4tz001st7rhu7osx7eh",
+   "cuadrado, círculo": "cmvk0h4tz001tt7rhjnc9weq8",
+   "cuadrado, cuadrado": "cmvk0h4tz001ut7rhtrm49buv",
+   "círculo, círculo": "cmvk0h4tz001vt7rhnajajxrs"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Patrones repetitivos y numéricos hasta 20",
+  "prompt": "Patrón: gato, perro, pez, gato, perro, pez, gato, ... ¿Qué 2 siguen?",
+  "id": "cmvk0h4v4001wt7rh4s3dveh1",
+  "options": {
+   "perro, pez": "cmvk0h4va001xt7rhe04755sn",
+   "pez, gato": "cmvk0h4va001yt7rh4vabtcfq",
+   "gato, perro": "cmvk0h4va001zt7rhnq5qv31r",
+   "perro, gato": "cmvk0h4va0020t7rhok26lhcg"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Patrones repetitivos y numéricos hasta 20",
+  "prompt": "Patrón: rojo, rojo, azul, rojo, rojo, azul, rojo, ... ¿Qué 2 colores siguen?",
+  "id": "cmvk0h4w80021t7rhnhb6yykh",
+  "options": {
+   "rojo, azul": "cmvk0h4wd0022t7rhun2hb6or",
+   "azul, rojo": "cmvk0h4wd0023t7rhc6z5gdsh",
+   "rojo, rojo": "cmvk0h4wd0024t7rhnvm4xrud",
+   "azul, azul": "cmvk0h4wd0025t7rh7h1hodxu"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Patrones repetitivos y numéricos hasta 20",
+  "prompt": "Rosa arma una pulsera con este patrón: amarilla, roja, azul, amarilla, roja, azul, y así sigue. La pulsera tiene 8 cuentas. ¿De qué color es la última cuenta?",
+  "id": "cmvk0h4xf0026t7rhn6itkrr3",
+  "options": {
+   "8": "cmvk0h4xm002at7rhhc5v61lb",
+   "roja": "cmvk0h4xm0027t7rhhyfqmvdw",
+   "amarilla": "cmvk0h4xm0028t7rh5jqsk9jj",
+   "azul": "cmvk0h4xm0029t7rhncqh0u26"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Patrones repetitivos y numéricos hasta 20",
   "prompt": "Las camisetas de un equipo se cuelgan en el camarín con este patrón de colores: rojo, azul, rojo, azul, rojo, ... ¿Qué color sigue?",
   "id": "cmulu2ts0015z4crhqmez883x",
   "options": {
@@ -5975,6 +6143,42 @@
    "6": "cmuli7i8q007z6krhnb1ood6w",
    "7": "cmuli7i8q007w6krh2fdhyk0d",
    "17": "cmuli7i8q007x6krhv60cklx6"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar la longitud de objetos: largo y corto",
+  "prompt": "El banco mide 4 clips de largo y la mesa mide 6 clips. ¿Cuál es más corto?",
+  "id": "cmvk0h8u4002dt7rhpidx9mel",
+  "options": {
+   "El banco": "cmvk0h8u9002et7rhoxtmwznm",
+   "La mesa": "cmvk0h8u9002ft7rhitku1uy9",
+   "4 clips": "cmvk0h8u9002gt7rhh1cslvo4",
+   "No se puede saber": "cmvk0h8u9002ht7rhz8i7o9cb"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar la longitud de objetos: largo y corto",
+  "prompt": "La cinta roja mide 5 clips y la cinta azul mide 8 clips. ¿Cuál cinta es más larga?",
+  "id": "cmvk0h8v9002it7rhp5kqjo38",
+  "options": {
+   "La azul": "cmvk0h8ve002jt7rhdr9qd5dq",
+   "La roja": "cmvk0h8ve002kt7rhmeqntdyi",
+   "8 clips": "cmvk0h8ve002lt7rhwo3cqmg8",
+   "Miden lo mismo": "cmvk0h8ve002mt7rhd1usvyy7"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Comparar la longitud de objetos: largo y corto",
+  "prompt": "Mateo midió su mesa con su cuaderno y le dio 5 cuadernos. Su hermana midió la misma mesa con un lápiz y le dio 9 lápices. ¿Por qué les dieron números distintos?",
+  "id": "cmvk0h8we002nt7rh59f4pp7d",
+  "options": {
+   "El lápiz es más corto que el cuaderno": "cmvk0h8wj002ot7rhr0rujw5s",
+   "El lápiz es más largo que el cuaderno": "cmvk0h8wj002pt7rhcblxs241",
+   "La mesa cambió de largo": "cmvk0h8wj002qt7rhtsxopy14",
+   "Uno de los dos contó mal": "cmvk0h8wj002rt7rhx8i6bfrx"
   }
  },
  {
@@ -10501,6 +10705,54 @@
    "12": "cmun91gpd003ntwrhu6da42zb",
    "13": "cmun91gpe003otwrh6t8nft4j",
    "14": "cmun91gpd003ltwrh1tky9h50"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Patrones numéricos: continuar y completar",
+  "prompt": "Completa el patrón: 34, 36, 38, 40, … ¿Qué número sigue?",
+  "id": "cmvk0hney002xt7rha7o9uhgi",
+  "options": {
+   "40": "cmvk0hnf30031t7rhh5iyw692",
+   "41": "cmvk0hnf3002zt7rhtnho9a4q",
+   "42": "cmvk0hnf3002yt7rhkhcl6c87",
+   "44": "cmvk0hnf30030t7rhmwvz4tnx"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Patrones numéricos: continuar y completar",
+  "prompt": "Completa el patrón: 55, 60, 65, 70, … ¿Qué número sigue?",
+  "id": "cmvk0hng30032t7rhi7g8h18r",
+  "options": {
+   "70": "cmvk0hng80036t7rhwvrlaxkz",
+   "71": "cmvk0hng80034t7rh8n7ncw18",
+   "75": "cmvk0hng80033t7rhljpjhrws",
+   "80": "cmvk0hng80035t7rhx1tv1zx3"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Patrones numéricos: continuar y completar",
+  "prompt": "Completa el patrón: 43, 53, 63, … ¿Qué número sigue?",
+  "id": "cmvk0hnh80037t7rhfiehqkza",
+  "options": {
+   "64": "cmvk0hnhd0039t7rhwx84plnu",
+   "73": "cmvk0hnhd0038t7rhfnhnpjd3",
+   "74": "cmvk0hnhd003bt7rh1mr11afx",
+   "83": "cmvk0hnhd003at7rh677p6p6l"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Patrones numéricos: continuar y completar",
+  "prompt": "¿Qué número falta en el patrón 85, 80, 75, __, 65?",
+  "id": "cmvk0hnic003ct7rhq9mb4hdi",
+  "options": {
+   "60": "cmvk0hnig003ft7rhivbbz5dw",
+   "65": "cmvk0hnig003gt7rhcf9fng36",
+   "70": "cmvk0hnig003dt7rhsaw5wtbp",
+   "74": "cmvk0hnig003et7rhh2ow55ob"
   }
  },
  {
@@ -25794,6 +26046,30 @@
  {
   "grade": 5,
   "skill": "Ecuaciones e inecuaciones de un paso",
+  "prompt": "¿Cuál es el menor número natural que cumple n + 6 > 10?",
+  "id": "cmvk0izvx0045t7rhxp147v6f",
+  "options": {
+   "4": "cmvk0izw20047t7rhzkxwpvlx",
+   "5": "cmvk0izw20046t7rh2jzpog99",
+   "6": "cmvk0izw20049t7rhyd2cfkez",
+   "16": "cmvk0izw20048t7rh4dubqxzt"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Ecuaciones e inecuaciones de un paso",
+  "prompt": "¿Cuál es el mayor número natural que cumple x − 4 < 6?",
+  "id": "cmvk0izx5004at7rhen0b6y5a",
+  "options": {
+   "2": "cmvk0izxd004dt7rhvu4l2ku9",
+   "6": "cmvk0izxd004et7rhcvoi07xk",
+   "9": "cmvk0izxd004bt7rhzdtqzzm4",
+   "10": "cmvk0izxd004ct7rhej9g5ijh"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Ecuaciones e inecuaciones de un paso",
   "prompt": "Tomás tenía algunas láminas de fútbol. Le regalaron 26 y ahora tiene 71. ¿Cuántas láminas tenía al inicio?",
   "id": "cmulu2yv3064o4crh1g25di2y",
   "options": {
@@ -27445,6 +27721,54 @@
    "22,0": "cmuli7jj201hs6krhtj6q4rna",
    "6,0": "cmuli7jj201ht6krhxu54k4xa",
    "5,0": "cmuli7jj201hu6krhlnuqtoi2"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Promedio de un conjunto de datos",
+  "prompt": "¿Cuál es el promedio de 3, 5 y 10?",
+  "id": "cmvk0j5ar004it7rhhcj9v0h6",
+  "options": {
+   "5": "cmvk0j5aw004lt7rh6bmpg79b",
+   "6": "cmvk0j5aw004jt7rhs0ct34us",
+   "9": "cmvk0j5aw004mt7rhojcdn8iv",
+   "18": "cmvk0j5aw004kt7rhao393jft"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Promedio de un conjunto de datos",
+  "prompt": "¿Cuál es el promedio de 10, 20 y 60?",
+  "id": "cmvk0j5by004nt7rhtwbladqm",
+  "options": {
+   "20": "cmvk0j5c3004qt7rhl6gchdow",
+   "30": "cmvk0j5c3004ot7rhqwkvj80d",
+   "45": "cmvk0j5c3004rt7rh0pajwta0",
+   "90": "cmvk0j5c3004pt7rhngsbyqc9"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Promedio de un conjunto de datos",
+  "prompt": "¿Cuál es el promedio de 1, 4, 5, 10 y 15?",
+  "id": "cmvk0j5d4004st7rh1suudh3k",
+  "options": {
+   "5": "cmvk0j5d9004vt7rh63h9tby4",
+   "7": "cmvk0j5d9004tt7rhqda6ivuq",
+   "8": "cmvk0j5d9004wt7rh6xjqqbn1",
+   "35": "cmvk0j5d9004ut7rh7z801dla"
+  }
+ },
+ {
+  "grade": 5,
+  "skill": "Promedio de un conjunto de datos",
+  "prompt": "La temperatura máxima en 6 días fue 18, 21, 19, 24, 23 y 15 grados. ¿Cuál fue la temperatura máxima promedio?",
+  "id": "cmvk0j5ee004xt7rhusq9u655",
+  "options": {
+   "19": "cmvk0j5ej0051t7rh2nhcmt22",
+   "20": "cmvk0j5ej004yt7rhj8y00m9t",
+   "24": "cmvk0j5ej0050t7rh7t8aetcj",
+   "120": "cmvk0j5ej004zt7rhccg915yd"
   }
  },
  {

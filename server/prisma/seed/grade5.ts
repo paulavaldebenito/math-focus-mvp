@@ -321,6 +321,13 @@ export function grade5(errorTypeByCode: ErrorIds): SkillBlock[] {
       q(3, ["En un curso hay 32 estudiantes. Si 19 son niñas y el resto son niños, ¿qué ecuación permite hallar la cantidad de niños (n)?", "A class has 32 students. If 19 are girls and the rest are boys, which equation lets you find the number of boys (n)?"],
         ["Las niñas más los niños deben dar el total del curso. Escribe esa idea con los datos del problema.", "The girls plus the boys must give the total of the class. Write that idea using the numbers in the problem."],
         "19 + n = 32", [["n − 19 = 32", "E1_OP"], ["n + 32 = 19", "E3_DATO"], ["19 − n = 32", "E1_OP"]], c),
+      // --- Revisión pedagógica 2026-10-22 (specs/017): inecuaciones con una sola respuesta ---
+      q(2, ["¿Cuál es el menor número natural que cumple n + 6 > 10?", "What is the least whole number that makes n + 6 > 10 true?"],
+        ["Prueba números: ¿con cuál n + 6 da exactamente 10? El que buscas tiene que dar más que 10.", "Try numbers: which n makes n + 6 exactly 10? The one you want has to give more than 10."],
+        "5", [["4", "E1_OP"], ["16", "E1_OP"], ["6", "E3_DATO"]], c),
+      q(3, ["¿Cuál es el mayor número natural que cumple x − 4 < 6?", "What is the greatest whole number that makes x − 4 < 6 true?"],
+        ["Prueba números: ¿con cuál x − 4 da exactamente 6? El que buscas tiene que dar menos que 6.", "Try numbers: which x makes x − 4 exactly 6? The one you want has to give less than 6."],
+        "9", [["10", "E1_OP"], ["2", "E1_OP"], ["6", "E3_DATO"]], c),
     ],
   ));
 
@@ -462,6 +469,19 @@ export function grade5(errorTypeByCode: ErrorIds): SkillBlock[] {
       q(3, ["Las notas de Diego en 4 pruebas fueron 5,0; 7,0; 4,0 y 6,0. ¿Cuál es su promedio final?", "Diego's grades (on a 1 to 7 scale) on 4 tests were 5.0, 7.0, 4.0 and 6.0. What is his final average?"],
         ["Suma las cuatro notas y divide por 4. Recuerda contar todas las pruebas, también la última.", "Add the four grades and divide by 4. Remember to count all the tests, including the last one."],
         "5,5", [["22,0", "E2_RES"], ["6,0", "E2_CAL"], ["5,0", "E2_CAL"]], c),
+      // --- Revisión pedagógica 2026-10-22 (specs/017): promedios que no se adivinan sin calcular ---
+      q(1, ["¿Cuál es el promedio de 3, 5 y 10?", "What is the average of 3, 5 and 10?"],
+        ["Suma los tres números y reparte el total en partes iguales entre los 3.", "Add the three numbers and share the total equally among the 3."],
+        "6", [["18", "E2_RES"], ["5", "E3_PREG"], ["9", "E3_DATO"]], c),
+      q(1, ["¿Cuál es el promedio de 10, 20 y 60?", "What is the average of 10, 20 and 60?"],
+        ["Suma los tres números y reparte el total en partes iguales entre los 3.", "Add the three numbers and share the total equally among the 3."],
+        "30", [["90", "E2_RES"], ["20", "E3_PREG"], ["45", "E3_DATO"]], c),
+      q(2, ["¿Cuál es el promedio de 1, 4, 5, 10 y 15?", "What is the average of 1, 4, 5, 10 and 15?"],
+        ["Suma los cinco números y divide por la cantidad de datos.", "Add the five numbers and divide by how many there are."],
+        "7", [["35", "E2_RES"], ["5", "E3_PREG"], ["8", "E2_CAL"]], c),
+      q(2, ["La temperatura máxima en 6 días fue 18, 21, 19, 24, 23 y 15 grados. ¿Cuál fue la temperatura máxima promedio?", "The highest temperature over 6 days was 18, 21, 19, 24, 23 and 15 degrees. What was the average highest temperature?"],
+        ["Suma las seis temperaturas y divide por la cantidad de días.", "Add the six temperatures and divide by the number of days."],
+        "20", [["120", "E2_RES"], ["24", "E3_PREG"], ["19", "E2_CAL"]], c),
     ],
   ));
 

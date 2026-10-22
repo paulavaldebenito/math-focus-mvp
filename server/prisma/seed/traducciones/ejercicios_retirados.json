@@ -1,0 +1,380 @@
+[
+ {
+  "exerciseId": "cmuli7ikr00i26krhmj1bo2jh",
+  "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de pelota y cada dibujo vale 1 pelota. ¿Cuántas pelotas tiene Camila?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ikx00i76krhuorhgztb",
+  "prompt": "En un gráfico de barras, la barra de los perros llega hasta el 6 y la de los gatos hasta el 4. ¿Cuántos niños prefieren los perros?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7il200ic6krhmu6c08n8",
+  "prompt": "En un pictograma de frutas, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta. ¿De qué fruta hay más?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7il700ih6krhgaooqp9r",
+  "prompt": "En un gráfico de barras, la barra de helado de frutilla llega al 7 y la de vainilla llega al 3. ¿Qué sabor eligieron menos niños?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ilb00im6krhtin5nzdf",
+  "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que vienen en bus tiene 4 estrellas. ¿Cuántos niños vienen en bus?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ilf00ir6krh85dkdxh3",
+  "prompt": "En un pictograma, cada helado dibujado vale 5 helados vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos helados se vendieron el viernes?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ill00iw6krhgqyb546a",
+  "prompt": "En un pictograma, cada pelota dibujada vale 10 goles. La fila de un equipo tiene 4 pelotas. ¿Cuántos goles hizo el equipo?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ilp00j16krhzo9uzzjj",
+  "prompt": "En un gráfico de barras, la barra de los lápices llega al 9 y la de las gomas llega al 5. ¿Cuántos lápices más que gomas hay?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ilv00j66krhr0qzpaei",
+  "prompt": "En un gráfico de barras, los perros llegan al 6, los gatos al 4 y los conejos al 2. ¿Cuántos niños votaron en total?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ilz00jb6krhwx3bu2do",
+  "prompt": "En un pictograma, cada manzana dibujada vale 2 manzanas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas manzanas se comieron entre los dos días?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7im500jg6krhapb1ul47",
+  "prompt": "En un pictograma, cada bicicleta dibujada vale 5 bicicletas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas bicicletas más hubo el martes que el lunes?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7im900jl6krh9rqnnn3x",
+  "prompt": "En un gráfico de barras de frutas, la manzana llega al 8, el plátano al 5 y la naranja al 3. Si 4 niños más eligen naranja, ¿cuántos niños eligen naranja ahora?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ixo00vd6krh99f51gfa",
+  "prompt": "En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ixu00vi6krhsxtgt0mm",
+  "prompt": "En un gráfico de barras de frutas, plátano llega hasta 8, manzana hasta 5 y pera hasta 3. ¿Qué fruta tiene la barra más corta?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iy200vs6krh8zoftlh2",
+  "prompt": "En un gráfico de barras, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iy600vx6krhu7gbqa5u",
+  "prompt": "En un gráfico, la barra de manzanas llega a 7 y la de peras a 4. ¿Cuántas manzanas más que peras hay?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iya00w26krht73ngxgf",
+  "prompt": "Un gráfico de mascotas muestra: perros 8, gatos 6 y peces 3. ¿Cuántos niños respondieron en total?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iyf00w76krht6b9adyq",
+  "prompt": "En un pictograma cada auto vale 5 personas. El grupo A tiene 3 autos y el grupo B tiene 5 autos. ¿Cuántas personas hay en el grupo B?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iyj00wc6krhlkggl5v1",
+  "prompt": "En un gráfico, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iyt00wh6krh25euztl0",
+  "prompt": "En un pictograma cada libro dibujado representa 3 libros prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos libros se prestaron en total?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7iz000wm6krh092w5ih7",
+  "prompt": "En un curso de 30 estudiantes, las barras muestran el color favorito: rojo 9, azul 12 y verde 6. El resto eligió amarillo. ¿Cuántos estudiantes eligieron amarillo?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j7e015q6krhrs33vy7f",
+  "prompt": "En un pictograma, cada símbolo vale 5 puntos. El equipo Rojo tiene 4 símbolos. ¿Cuántos puntos tiene?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j7j015v6krhwhdp453u",
+  "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los gatos llega a la tercera línea después del 0. ¿Cuántos gatos hay?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j7n01606krh2nmzuh6d",
+  "prompt": "Un gráfico de barras muestra votos: Rojo 12, Azul 18 y Verde 9. ¿Qué color tiene la barra más alta?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j7q01656krhd8s0s947",
+  "prompt": "Un gráfico de barras muestra los votos: Rojo 12, Azul 18 y Verde 9. ¿Cuántos votos hubo en total?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j7w016a6krhnsuucw3w",
+  "prompt": "En el gráfico de votos, Azul tiene 18 y Verde tiene 9. ¿Cuántos votos más tiene Azul que Verde?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j8a016p6krhyrc791vj",
+  "prompt": "En un gráfico de barras con escala de 20 en 20, la barra de María llega justo a la mitad entre 40 y 60 y la de Juan llega a 80. ¿Cuántos puntos más tiene Juan?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j8f016u6krhrhikngjt",
+  "prompt": "En un pictograma cada símbolo vale 6 helados. El lunes hay 3 símbolos y el martes 5. ¿Cuántos helados se vendieron entre los dos días?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7jrl01qj6krhcsglvhj4",
+  "prompt": "Un gráfico de barras muestra el deporte favorito de un curso: fútbol tiene 12 votos y básquetbol tiene 8 votos. ¿Cuántos votos más tiene el fútbol que el básquetbol?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7jrp01qo6krha7rvzuuf",
+  "prompt": "Un gráfico de barras muestra las mascotas de un curso: perros 9, gatos 6 y peces 3. ¿Cuántas mascotas hay en total?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7jry01qy6krhjspvkl2b",
+  "prompt": "Un gráfico de barras dobles compara la nota de dos cursos en Matemática. Aprobaron 28 estudiantes de 6°A y 24 de 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7js201r36krhp52wm51y",
+  "prompt": "Un gráfico de barras dobles muestra los goles de dos equipos en 3 partidos. Equipo Rojo: 2, 3 y 5 goles. Equipo Azul: 4, 1 y 3 goles. ¿Cuántos goles más hizo el equipo Rojo que el Azul en total?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7jsl01rn6krhtg9exukz",
+  "prompt": "Un gráfico de barras dobles muestra los helados vendidos. En enero: 30 de vainilla y 20 de frutilla. En febrero: 25 de vainilla y 35 de frutilla. ¿Cuántos helados más se vendieron en febrero que en enero?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7j82016f6krhczkg6hd8",
+  "prompt": "En un pictograma cada símbolo vale 10 libros. El martes hay 2 símbolos y medio. ¿Cuántos libros se prestaron el martes?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ixx00vn6krhh0au2498",
+  "prompt": "En un pictograma, cada dibujo de libro vale 2 libros. En «Lunes» hay 4 dibujos de libro. ¿Cuántos libros representa?",
+  "alcance": "variantes",
+  "motivo": "Gráfico: el dato venía escrito en el enunciado; el base se reescribió para leerlo en el gráfico y las variantes, que repiten el dato, se retiran."
+ },
+ {
+  "exerciseId": "cmtsx18ru008dftrhd6swlec4",
+  "prompt": "¿Cuál número es mayor: 3 o 9?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18s1008gftrhwiugs034",
+  "prompt": "¿Cuál número es menor: 15 o 6?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18s4008jftrhg50dxsyw",
+  "prompt": "¿Cuál número es mayor: 8 o 2?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18sa008mftrhg4sdolqa",
+  "prompt": "¿Cuál número es menor: 4 o 17?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18sf008pftrhuqgo5bfx",
+  "prompt": "¿Cuál número es mayor: 11 o 9?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18sm008sftrhnhqq3cuw",
+  "prompt": "¿Cuál número es menor: 14 o 16?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18st008vftrh5alukcv9",
+  "prompt": "¿Cuál de estos números es el más grande: 5, 12, 8?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmtsx18sx008zftrh994twjze",
+  "prompt": "¿Cuál de estos números es el más chico: 18, 3, 10?",
+  "alcance": "familia",
+  "motivo": "Comparación con 2 o 3 alternativas (adivinar da 50 %): se reemplaza por comparar u ordenar 4 números."
+ },
+ {
+  "exerciseId": "cmuli7i3m003d6krhejqpb7z2",
+  "prompt": "Patrón de colores: rojo, azul, rojo, azul, rojo, ... ¿Qué color sigue?",
+  "alcance": "familia",
+  "motivo": "Patrón con distractores ajenos al patrón (colores, sonidos o animales que no aparecen): se reemplaza por «¿qué 2 siguen?»."
+ },
+ {
+  "exerciseId": "cmuli7i3s003i6krhcm69lx2i",
+  "prompt": "Patrón de sonidos: palmada, pisada, palmada, pisada, palmada, ... ¿Qué sonido sigue?",
+  "alcance": "familia",
+  "motivo": "Patrón con distractores ajenos al patrón (colores, sonidos o animales que no aparecen): se reemplaza por «¿qué 2 siguen?»."
+ },
+ {
+  "exerciseId": "cmuli7i47003s6krhhkczp6p3",
+  "prompt": "Falta una figura en el patrón: círculo, cuadrado, ___, cuadrado. ¿Cuál falta?",
+  "alcance": "familia",
+  "motivo": "Patrón con distractores ajenos al patrón (colores, sonidos o animales que no aparecen): se reemplaza por «¿qué 2 siguen?»."
+ },
+ {
+  "exerciseId": "cmuli7i4c003x6krhtes8ossp",
+  "prompt": "Patrón: gato, perro, pez, gato, perro, pez, gato, ... ¿Qué sigue?",
+  "alcance": "familia",
+  "motivo": "Patrón con distractores ajenos al patrón (colores, sonidos o animales que no aparecen): se reemplaza por «¿qué 2 siguen?»."
+ },
+ {
+  "exerciseId": "cmuli7i4u004c6krh7zludy0e",
+  "prompt": "Patrón: rojo, rojo, azul, rojo, rojo, azul, rojo, ... ¿Qué sigue?",
+  "alcance": "familia",
+  "motivo": "Patrón con distractores ajenos al patrón (colores, sonidos o animales que no aparecen): se reemplaza por «¿qué 2 siguen?»."
+ },
+ {
+  "exerciseId": "cmuli7i50004h6krhj1vacd3j",
+  "prompt": "Rosa arma una pulsera con este patrón: amarilla, roja, azul, amarilla, roja, azul, y así sigue. Si la pulsera tiene 7 cuentas, ¿de qué color es la cuenta número 7?",
+  "alcance": "familia",
+  "motivo": "Patrón con distractores ajenos al patrón (colores, sonidos o animales que no aparecen): se reemplaza por «¿qué 2 siguen?»."
+ },
+ {
+  "exerciseId": "cmuli7i8f007l6krh5frmx5kz",
+  "prompt": "La cinta roja mide 5 clips y la azul mide 3 clips más que la roja. ¿Cuántos clips mide la cinta azul?",
+  "alcance": "familia",
+  "motivo": "Problema aditivo, no de comparar longitudes (MA01 OA18): se reemplaza por comparaciones de largo."
+ },
+ {
+  "exerciseId": "cmuli7i8p007v6krha6b8cy8u",
+  "prompt": "Una cinta de 12 cuadritos se corta en dos partes. Una parte mide 5 cuadritos. ¿Cuántos cuadritos mide la otra parte?",
+  "alcance": "familia",
+  "motivo": "Problema aditivo, no de comparar longitudes (MA01 OA18): se reemplaza por comparaciones de largo."
+ },
+ {
+  "exerciseId": "cmulib568000df4rhhqy966hg",
+  "prompt": "Luz mide su banco con clips. Ya puso 3 clips. Le falta poner 1 clip más para cubrir todo el banco. ¿Cuántos clips mide el banco?",
+  "alcance": "familia",
+  "motivo": "Problema aditivo, no de comparar longitudes (MA01 OA18): se reemplaza por comparaciones de largo."
+ },
+ {
+  "exerciseId": "cmuli7ifn00cz6krh330b8csv",
+  "prompt": "Completa el patrón: 2, 4, 6, 8, … ¿Qué número sigue?",
+  "alcance": "familia",
+  "motivo": "Calcado de un ejercicio de 1° básico: se reemplaza por un patrón con números de 2°."
+ },
+ {
+  "exerciseId": "cmuli7ifr00d46krhqxfrij3j",
+  "prompt": "Completa el patrón: 5, 10, 15, 20, … ¿Qué número sigue?",
+  "alcance": "familia",
+  "motivo": "Calcado de un ejercicio de 1° básico: se reemplaza por un patrón con números de 2°."
+ },
+ {
+  "exerciseId": "cmuli7ifw00d96krhwgz2lq00",
+  "prompt": "Completa el patrón: 10, 20, 30, … ¿Qué número sigue?",
+  "alcance": "familia",
+  "motivo": "Calcado de un ejercicio de 1° básico: se reemplaza por un patrón con números de 2°."
+ },
+ {
+  "exerciseId": "cmuli7igf00dt6krhdvzr0vvs",
+  "prompt": "¿Qué número falta en el patrón 50, 45, 40, __, 30?",
+  "alcance": "familia",
+  "motivo": "Calcado de un ejercicio de 1° básico: se reemplaza por un patrón con números de 2°."
+ },
+ {
+  "exerciseId": "cmuli7jdz01ci6krhlr5cioby",
+  "prompt": "¿Cuál de estos valores cumple n + 6 > 10?",
+  "alcance": "familia",
+  "motivo": "Inecuación con distractores que no corresponden a errores reales: se reemplaza por «el menor/mayor número que cumple…»."
+ },
+ {
+  "exerciseId": "cmuli7je301cn6krhc3muwkyp",
+  "prompt": "¿Cuál de estos valores cumple x − 4 < 6?",
+  "alcance": "familia",
+  "motivo": "Inecuación con distractores que no corresponden a errores reales: se reemplaza por «el menor/mayor número que cumple…»."
+ },
+ {
+  "exerciseId": "cmuli7jhq01gc6krhwnwnkfel",
+  "prompt": "¿Cuál es el promedio de 4, 6 y 8?",
+  "alcance": "familia",
+  "motivo": "El promedio coincide con un dato (el del medio o el que más se repite): se acierta sin calcular."
+ },
+ {
+  "exerciseId": "cmuli7jhv01gh6krhu05tfhg3",
+  "prompt": "¿Cuál es el promedio de 10, 20 y 30?",
+  "alcance": "familia",
+  "motivo": "El promedio coincide con un dato (el del medio o el que más se repite): se acierta sin calcular."
+ },
+ {
+  "exerciseId": "cmuli7ji801gw6krh43a3vorj",
+  "prompt": "¿Cuál es el promedio de 2, 7, 6, 9 y 6?",
+  "alcance": "familia",
+  "motivo": "El promedio coincide con un dato (el del medio o el que más se repite): se acierta sin calcular."
+ },
+ {
+  "exerciseId": "cmuli7jil01hb6krh6799tmu5",
+  "prompt": "La temperatura máxima en 6 días fue 18, 21, 19, 22, 20 y 20 grados. ¿Cuál fue la temperatura promedio?",
+  "alcance": "familia",
+  "motivo": "El promedio coincide con un dato (el del medio o el que más se repite): se acierta sin calcular."
+ },
+ {
+  "exerciseId": "cmuli7i73006b6krhptqblaxv",
+  "prompt": "Sofía busca un bloque que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
+  "alcance": "variantes",
+  "motivo": "Ambiguo (un cilindro o un cono apoyados en su base tampoco ruedan): el base se reescribió y las variantes se retiran."
+ }
+]

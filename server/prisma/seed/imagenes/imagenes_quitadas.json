@@ -1,0 +1,17 @@
+[
+ {
+  "exerciseId": "cmuli7imw00kb6krhq5wc0itn",
+  "prompt": "¿Qué número es 700 + 20 + 5?",
+  "motivo": "La imagen era la respuesta (el número o la descomposición pedidos)."
+ },
+ {
+  "exerciseId": "cmuli7ine00kv6krh67r4db0t",
+  "prompt": "Tomás dice: «En mi número el 3 vale 300 y el 8 vale 80». Su número tiene tres cifras y termina en 1. ¿Cuál es?",
+  "motivo": "La imagen era la respuesta (el número o la descomposición pedidos)."
+ },
+ {
+  "exerciseId": "cmuli7j9o01896krh0qy0huzp",
+  "prompt": "Un número tiene 3 millones, 0 centenas de mil, 4 decenas de mil, 0 unidades de mil, 7 centenas, 0 decenas y 5 unidades. ¿Cuál es?",
+  "motivo": "La imagen era la respuesta (el número o la descomposición pedidos)."
+ }
+]

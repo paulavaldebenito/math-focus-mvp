@@ -23,6 +23,8 @@ import { applyWorkedSteps } from "./seed/traducciones/applyWorkedSteps.js";
 import { linkBancoVisual, loadBancoVisual } from "./seed/imagenes/bancoVisual.js";
 import { applyPromptEdits } from "./seed/traducciones/applyPromptEdits.js";
 import { applyOptionCorrections } from "./seed/traducciones/applyOptionCorrections.js";
+import { applyRetirements } from "./seed/traducciones/applyRetirements.js";
+import { applyImageRemovals } from "./seed/imagenes/applyImageRemovals.js";
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PUBLIC_DIR = fileURLToPath(new URL("../../client/public", import.meta.url));
@@ -43,6 +45,11 @@ export async function integrateImageBank(): Promise<string[]> {
   const oc = await applyOptionCorrections(prisma);
   console.log(`Correcciones de alternativas: ${oc.written} escritas en esta corrida (${oc.already} ya estaban al día).`);
   problems.push(...oc.problems);
+
+  // Ejercicios retirados por la revisión pedagógica (se conservan por los intentos).
+  const rt = await applyRetirements(prisma);
+  console.log(`Ejercicios retirados: ${rt.written} marcados en esta corrida (${rt.already} ya lo estaban).`);
+  problems.push(...rt.problems);
 
   // El banco visual completo (por exerciseId) reemplaza a la ilustración
   // anterior en los ejercicios que cubre; la anterior queda solo como
@@ -99,6 +106,8 @@ export async function integrateImageBank(): Promise<string[]> {
   // Banco visual completo: después de las traducciones, porque las leyendas
   // usan labelEn de las alternativas y el alt usa el inglés de aula vigente.
   const bv = await linkBancoVisual(prisma);
+  const ir = await applyImageRemovals(prisma);
+  console.log(`Imágenes quitadas (la imagen era la respuesta): ${ir.cleared} borradas en esta corrida.`);
   console.log(
     `Banco visual: ${bv.entries} en el paquete — ${bv.linked} vinculados por exerciseId, ${bv.emojiPreferred} con dibujo de emojis (se prefiere), ${bv.emojiPictographs} pictogramas de emojis, ${bv.absent.length} ausentes ` +
       `en la BD, ${bv.promptMismatch.length} con enunciado distinto. Leyendas:`,

@@ -65,7 +65,7 @@ reviewRouter.get("/skills/:skillId/exercises", async (req, res) => {
     return;
   }
   const exercises = await prisma.exercise.findMany({
-    where: { mathSkillId: skill.id },
+    where: { mathSkillId: skill.id, retired: false },
     select: {
       id: true,
       prompt: true,

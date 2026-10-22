@@ -3145,5 +3145,485 @@
    "old": "Each staff is a group of 5. Count by 5s, six times.",
    "new": "Each row is a group of 5 drums. Count by 5s, six times."
   }
+ },
+ {
+  "exerciseId": "cmuli7ikr00i26krhmj1bo2jh",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma, la fila de Camila tiene 5 dibujos de pelota y cada dibujo vale 1 pelota. ¿Cuántas pelotas tiene Camila?",
+   "new": "Mira el pictograma: la fila A es la de Camila. Cada dibujo vale 1 pelota. ¿Cuántas pelotas tiene Camila?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, Camila's row has 5 ball pictures and each picture stands for 1 ball. How many balls does Camila have?",
+   "new": "Look at the pictograph: row A is Camila's. Each picture stands for 1 ball. How many balls does Camila have?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ikx00i76krhuorhgztb",
+  "grade": 2,
+  "prompt": {
+   "old": "En un gráfico de barras, la barra de los perros llega hasta el 6 y la de los gatos hasta el 4. ¿Cuántos niños prefieren los perros?",
+   "new": "Mira el gráfico de barras: A son los perros y B los gatos. ¿Cuántos niños prefieren los perros?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, the dogs' bar reaches 6 and the cats' bar reaches 4. How many children prefer dogs?",
+   "new": "Look at the bar graph: A is dogs and B is cats. How many children prefer dogs?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7il200ic6krhmu6c08n8",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma de frutas, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta. ¿De qué fruta hay más?",
+   "new": "Mira el pictograma de frutas: la fila A es la de las manzanas y la B la de las peras. Cada dibujo vale 1 fruta. ¿De qué fruta hay más?"
+  },
+  "promptEn": {
+   "old": "In a fruit pictograph, the apples row has 3 pictures and the pears row has 5 pictures. Each picture stands for 1 fruit. Which fruit is there more of?",
+   "new": "Look at the fruit pictograph: row A is apples and row B is pears. Each picture stands for 1 fruit. Which fruit is there more of?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7il700ih6krhgaooqp9r",
+  "grade": 2,
+  "prompt": {
+   "old": "En un gráfico de barras, la barra de helado de frutilla llega al 7 y la de vainilla llega al 3. ¿Qué sabor eligieron menos niños?",
+   "new": "Mira el gráfico de barras: A es el helado de frutilla y B el de vainilla. ¿Qué sabor eligieron menos niños?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, the strawberry ice cream bar reaches 7 and the vanilla bar reaches 3. Which flavor did fewer children choose?",
+   "new": "Look at the bar graph: A is strawberry ice cream and B is vanilla. Which flavor did fewer children choose?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ilb00im6krhtin5nzdf",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma, cada estrella vale 2 niños. La fila de los que vienen en bus tiene 4 estrellas. ¿Cuántos niños vienen en bus?",
+   "new": "Mira el pictograma: la fila A es la de los niños que vienen en bus. Cada dibujo vale 2 niños. ¿Cuántos niños vienen en bus?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each star stands for 2 children. The row for those who come by bus has 4 stars. How many children come by bus?",
+   "new": "Look at the pictograph: row A is the children who come by bus. Each picture stands for 2 children. How many children come by bus?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ilf00ir6krh85dkdxh3",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma, cada helado dibujado vale 5 helados vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos helados se vendieron el viernes?",
+   "new": "Mira el pictograma: la fila A es la del viernes. Cada dibujo vale 5 helados vendidos. ¿Cuántos helados se vendieron el viernes?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each ice cream picture stands for 5 ice creams sold. There are 3 pictures in Friday's row. How many ice creams were sold on Friday?",
+   "new": "Look at the pictograph: row A is Friday. Each picture stands for 5 ice creams sold. How many ice creams were sold on Friday?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ill00iw6krhgqyb546a",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma, cada pelota dibujada vale 10 goles. La fila de un equipo tiene 4 pelotas. ¿Cuántos goles hizo el equipo?",
+   "new": "Mira el pictograma: la fila A es la de un equipo. Cada dibujo vale 10 goles. ¿Cuántos goles hizo el equipo?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each ball picture stands for 10 goals. A team's row has 4 balls. How many goals did the team score?",
+   "new": "Look at the pictograph: row A is a team's. Each picture stands for 10 goals. How many goals did the team score?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ilp00j16krhzo9uzzjj",
+  "grade": 2,
+  "prompt": {
+   "old": "En un gráfico de barras, la barra de los lápices llega al 9 y la de las gomas llega al 5. ¿Cuántos lápices más que gomas hay?",
+   "new": "Mira el gráfico de barras: A son los lápices y B las gomas. ¿Cuántos lápices más que gomas hay?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, the pencils bar reaches 9 and the erasers bar reaches 5. How many more pencils than erasers are there?",
+   "new": "Look at the bar graph: A is pencils and B is erasers. How many more pencils than erasers are there?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ilv00j66krhr0qzpaei",
+  "grade": 2,
+  "prompt": {
+   "old": "En un gráfico de barras, los perros llegan al 6, los gatos al 4 y los conejos al 2. ¿Cuántos niños votaron en total?",
+   "new": "Mira el gráfico de barras: A son los perros, B los gatos y C los conejos. Cada niño votó una vez. ¿Cuántos niños votaron en total?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, dogs reach 6, cats reach 4 and rabbits reach 2. How many children voted in total?",
+   "new": "Look at the bar graph: A is dogs, B is cats and C is rabbits. Each child voted once. How many children voted in total?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ilz00jb6krhwx3bu2do",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma, cada manzana dibujada vale 2 manzanas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas manzanas se comieron entre los dos días?",
+   "new": "Mira el pictograma: la fila A es el lunes y la B el martes. Cada dibujo vale 2 manzanas. ¿Cuántas manzanas se comieron entre los dos días?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each apple picture stands for 2 apples. On Monday there are 5 pictures and on Tuesday there are 3 pictures. How many apples were eaten over the two days?",
+   "new": "Look at the pictograph: row A is Monday and row B is Tuesday. Each picture stands for 2 apples. How many apples were eaten over the two days?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7im500jg6krhapb1ul47",
+  "grade": 2,
+  "prompt": {
+   "old": "En un pictograma, cada bicicleta dibujada vale 5 bicicletas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas bicicletas más hubo el martes que el lunes?",
+   "new": "Mira el pictograma: la fila A es el lunes y la B el martes. Cada dibujo vale 5 bicicletas. ¿Cuántas bicicletas más hubo el martes que el lunes?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each bicycle picture stands for 5 bicycles. On Monday there are 4 pictures and on Tuesday there are 6 pictures. How many more bicycles were there on Tuesday than on Monday?",
+   "new": "Look at the pictograph: row A is Monday and row B is Tuesday. Each picture stands for 5 bicycles. How many more bicycles were there on Tuesday than on Monday?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7im900jl6krh9rqnnn3x",
+  "grade": 2,
+  "prompt": {
+   "old": "En un gráfico de barras de frutas, la manzana llega al 8, el plátano al 5 y la naranja al 3. Si 4 niños más eligen naranja, ¿cuántos niños eligen naranja ahora?",
+   "new": "Mira el gráfico de barras de frutas: A es la manzana, B el plátano y C la naranja. Si 4 niños más eligen naranja, ¿cuántos niños eligen naranja ahora?"
+  },
+  "promptEn": {
+   "old": "In a fruit bar graph, apple reaches 8, banana reaches 5 and orange reaches 3. If 4 more children choose orange, how many children choose orange now?",
+   "new": "Look at the fruit bar graph: A is apple, B is banana and C is orange. If 4 more children choose orange, how many children choose orange now?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ixo00vd6krh99f51gfa",
+  "grade": 3,
+  "prompt": {
+   "old": "En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?",
+   "new": "Mira el gráfico de deportes favoritos: A es fútbol, B básquetbol y C natación. ¿Qué deporte prefieren más niños?"
+  },
+  "promptEn": {
+   "old": "In a bar graph of favorite sports, soccer reaches 10, basketball reaches 6 and swimming reaches 4. Which sport do most children prefer?",
+   "new": "Look at the graph of favorite sports: A is soccer, B is basketball and C is swimming. Which sport do most children prefer?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ixu00vi6krhsxtgt0mm",
+  "grade": 3,
+  "prompt": {
+   "old": "En un gráfico de barras de frutas, plátano llega hasta 8, manzana hasta 5 y pera hasta 3. ¿Qué fruta tiene la barra más corta?",
+   "new": "Mira el gráfico de frutas: A es plátano, B manzana y C pera. ¿Qué fruta tiene la barra más corta?"
+  },
+  "promptEn": {
+   "old": "In a bar graph of fruits, banana reaches 8, apple reaches 5 and pear reaches 3. Which fruit has the shortest bar?",
+   "new": "Look at the fruit graph: A is banana, B is apple and C is pear. Which fruit has the shortest bar?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7iy200vs6krh8zoftlh2",
+  "grade": 3,
+  "prompt": {
+   "old": "En un gráfico de barras, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?",
+   "new": "Mira el gráfico de barras: la barra A es la del sábado. ¿Cuántas personas representa?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, each square on the axis stands for 5. Saturday's bar reaches 6 squares. How many people does it represent?",
+   "new": "Look at the bar graph: bar A is Saturday's. How many people does it represent?"
+  },
+  "procedureNote": {
+   "old": "Cada cuadrito no es 1, vale más. Usa la escala del eje para saber el valor de la barra.",
+   "new": "Fíjate de cuánto en cuánto sube el eje y hasta qué número llega la barra."
+  },
+  "procedureNoteEn": {
+   "old": "Each square does not stand for 1, it stands for more. Use the scale of the axis to find the value of the bar.",
+   "new": "Check how much the axis goes up by and which number the bar reaches."
+  }
+ },
+ {
+  "exerciseId": "cmuli7iy600vx6krhu7gbqa5u",
+  "grade": 3,
+  "prompt": {
+   "old": "En un gráfico, la barra de manzanas llega a 7 y la de peras a 4. ¿Cuántas manzanas más que peras hay?",
+   "new": "Mira el gráfico: A son las manzanas y B las peras. ¿Cuántas manzanas más que peras hay?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, the apple bar reaches 7 and the pear bar reaches 4. How many more apples than pears are there?",
+   "new": "Look at the graph: A is apples and B is pears. How many more apples than pears are there?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7iya00w26krht73ngxgf",
+  "grade": 3,
+  "prompt": {
+   "old": "Un gráfico de mascotas muestra: perros 8, gatos 6 y peces 3. ¿Cuántos niños respondieron en total?",
+   "new": "Mira el gráfico de mascotas: A son los perros, B los gatos y C los peces. ¿Cuántos niños respondieron en total?"
+  },
+  "promptEn": {
+   "old": "A pet graph shows: dogs 8, cats 6 and fish 3. How many children answered in total?",
+   "new": "Look at the pet graph: A is dogs, B is cats and C is fish. How many children answered in total?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7iyf00w76krht6b9adyq",
+  "grade": 3,
+  "prompt": {
+   "old": "En un pictograma cada auto vale 5 personas. El grupo A tiene 3 autos y el grupo B tiene 5 autos. ¿Cuántas personas hay en el grupo B?",
+   "new": "Mira el pictograma: cada dibujo vale 5 personas. ¿Cuántas personas hay en el grupo B?"
+  },
+  "promptEn": {
+   "old": "In a pictograph each car stands for 5 people. Group A has 3 cars and group B has 5 cars. How many people are in group B?",
+   "new": "Look at the pictograph: each picture stands for 5 people. How many people are in group B?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7iyj00wc6krhlkggl5v1",
+  "grade": 3,
+  "prompt": {
+   "old": "En un gráfico, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?",
+   "new": "Mira el gráfico de puntos: A es Sara y B es Tomás. ¿Cuántos puntos más tiene Sara que Tomás?"
+  },
+  "promptEn": {
+   "old": "In a bar graph, each square stands for 10 points. Sara's bar reaches 7 squares and Tomás's reaches 4. How many more points does Sara have than Tomás?",
+   "new": "Look at the points graph: A is Sara and B is Tomás. How many more points does Sara have than Tomás?"
+  },
+  "procedureNote": {
+   "old": "Primero convierte cada barra a puntos usando la escala. Después compara los dos valores.",
+   "new": "Lee en el eje hasta dónde llega cada barra. Después compara los dos valores."
+  },
+  "procedureNoteEn": {
+   "old": "First turn each bar into points using the scale. Then compare the two values.",
+   "new": "Read on the axis how far each bar reaches. Then compare the two values."
+  }
+ },
+ {
+  "exerciseId": "cmuli7iyt00wh6krh25euztl0",
+  "grade": 3,
+  "prompt": {
+   "old": "En un pictograma cada libro dibujado representa 3 libros prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos libros se prestaron en total?",
+   "new": "Mira el pictograma: la fila A es el lunes, la B el martes y la C el miércoles. Cada dibujo vale 3 libros prestados. ¿Cuántos libros se prestaron en total?"
+  },
+  "promptEn": {
+   "old": "In a pictograph each drawn book represents 3 borrowed books. Monday has 2 pictures, Tuesday 4 and Wednesday 3. How many books were borrowed in total?",
+   "new": "Look at the pictograph: row A is Monday, row B is Tuesday and row C is Wednesday. Each picture stands for 3 borrowed books. How many books were borrowed in total?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7iz000wm6krh092w5ih7",
+  "grade": 3,
+  "prompt": {
+   "old": "En un curso de 30 estudiantes, las barras muestran el color favorito: rojo 9, azul 12 y verde 6. El resto eligió amarillo. ¿Cuántos estudiantes eligieron amarillo?",
+   "new": "En un curso de 30 estudiantes, el gráfico muestra el color favorito: A es rojo, B azul y C verde. El resto eligió amarillo. ¿Cuántos estudiantes eligieron amarillo?"
+  },
+  "promptEn": {
+   "old": "In a class of 30 students, the bars show favorite color: red 9, blue 12 and green 6. The rest chose yellow. How many students chose yellow?",
+   "new": "In a class of 30 students, the graph shows favorite color: A is red, B is blue and C is green. The rest chose yellow. How many students chose yellow?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j7e015q6krhrs33vy7f",
+  "grade": 4,
+  "prompt": {
+   "old": "En un pictograma, cada símbolo vale 5 puntos. El equipo Rojo tiene 4 símbolos. ¿Cuántos puntos tiene?",
+   "new": "Mira el pictograma: la fila A es la del equipo Rojo. Cada símbolo vale 5 puntos. ¿Cuántos puntos tiene el equipo Rojo?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each symbol stands for 5 points. The Red team has 4 symbols. How many points does it have?",
+   "new": "Look at the pictograph: row A is the Red team's. Each symbol stands for 5 points. How many points does the Red team have?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j7j015v6krhwhdp453u",
+  "grade": 4,
+  "prompt": {
+   "old": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los gatos llega a la tercera línea después del 0. ¿Cuántos gatos hay?",
+   "new": "Mira el gráfico de barras: la barra A es la de los gatos. ¿Cuántos gatos hay?"
+  },
+  "promptEn": {
+   "old": "In a bar graph the scale goes up by 10s from 0. The cats' bar reaches the third line after 0. How many cats are there?",
+   "new": "Look at the bar graph: bar A is the cats'. How many cats are there?"
+  },
+  "procedureNote": {
+   "old": "Cada línea del gráfico vale lo que dice la escala. Cuenta las líneas que sube la barra y lee cuánto valen.",
+   "new": "Fíjate de cuánto en cuánto sube el eje y hasta qué línea llega la barra."
+  },
+  "procedureNoteEn": {
+   "old": "Each line on the graph stands for what the scale says. Count how many lines the bar goes up and read what they stand for.",
+   "new": "Check how much the axis goes up by and which line the bar reaches."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j7n01606krh2nmzuh6d",
+  "grade": 4,
+  "prompt": {
+   "old": "Un gráfico de barras muestra votos: Rojo 12, Azul 18 y Verde 9. ¿Qué color tiene la barra más alta?",
+   "new": "Mira el gráfico de votos: A es Rojo, B Azul y C Verde. ¿Qué color tiene la barra más alta?"
+  },
+  "promptEn": {
+   "old": "A bar graph shows votes: Red 12, Blue 18 and Green 9. Which color has the tallest bar?",
+   "new": "Look at the vote graph: A is Red, B is Blue and C is Green. Which color has the tallest bar?"
+  },
+  "procedureNote": {
+   "old": "La barra más alta es la que tiene el valor mayor. Compara los tres números.",
+   "new": "Compara hasta dónde llega cada barra."
+  },
+  "procedureNoteEn": {
+   "old": "The tallest bar is the one with the greatest value. Compare the three numbers.",
+   "new": "Compare how far each bar reaches."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j7q01656krhd8s0s947",
+  "grade": 4,
+  "prompt": {
+   "old": "Un gráfico de barras muestra los votos: Rojo 12, Azul 18 y Verde 9. ¿Cuántos votos hubo en total?",
+   "new": "Mira el gráfico de votos: A es Rojo, B Azul y C Verde. ¿Cuántos votos hubo en total?"
+  },
+  "promptEn": {
+   "old": "A bar graph shows the votes: Red 12, Blue 18 and Green 9. How many votes were there in total?",
+   "new": "Look at the vote graph: A is Red, B is Blue and C is Green. How many votes were there in total?"
+  },
+  "procedureNote": {
+   "old": "El total incluye todas las barras, no solo algunas. Suma los tres valores.",
+   "new": "Lee el valor de cada barra en el eje. El total incluye todas las barras."
+  },
+  "procedureNoteEn": {
+   "old": "The total includes all the bars, not just some. Add the three values.",
+   "new": "Read the value of each bar on the axis. The total includes all the bars."
+  }
+ },
+ {
+  "exerciseId": "cmuli7j7w016a6krhnsuucw3w",
+  "grade": 4,
+  "prompt": {
+   "old": "En el gráfico de votos, Azul tiene 18 y Verde tiene 9. ¿Cuántos votos más tiene Azul que Verde?",
+   "new": "Mira el gráfico de votos: A es Azul y B es Verde. ¿Cuántos votos más tiene Azul que Verde?"
+  },
+  "promptEn": {
+   "old": "In the vote graph, Blue has 18 and Green has 9. How many more votes does Blue have than Green?",
+   "new": "Look at the vote graph: A is Blue and B is Green. How many more votes does Blue have than Green?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j8a016p6krhyrc791vj",
+  "grade": 4,
+  "prompt": {
+   "old": "En un gráfico de barras con escala de 20 en 20, la barra de María llega justo a la mitad entre 40 y 60 y la de Juan llega a 80. ¿Cuántos puntos más tiene Juan?",
+   "new": "Mira el gráfico de puntos: A es María y B es Juan. ¿Cuántos puntos más tiene Juan que María?"
+  },
+  "promptEn": {
+   "old": "In a bar graph with a scale of 20s, María's bar reaches exactly halfway between 40 and 60 and Juan's reaches 80. How many more points does Juan have?",
+   "new": "Look at the points graph: A is María and B is Juan. How many more points does Juan have than María?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j8f016u6krhrhikngjt",
+  "grade": 4,
+  "prompt": {
+   "old": "En un pictograma cada símbolo vale 6 helados. El lunes hay 3 símbolos y el martes 5. ¿Cuántos helados se vendieron entre los dos días?",
+   "new": "Mira el pictograma: la fila A es el lunes y la B el martes. Cada símbolo vale 6 helados. ¿Cuántos helados se vendieron entre los dos días?"
+  },
+  "promptEn": {
+   "old": "In a pictograph each symbol stands for 6 ice creams. On Monday there are 3 symbols and on Tuesday 5. How many ice creams were sold over the two days?",
+   "new": "Look at the pictograph: row A is Monday and row B is Tuesday. Each symbol stands for 6 ice creams. How many ice creams were sold over the two days?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jrl01qj6krhcsglvhj4",
+  "grade": 6,
+  "prompt": {
+   "old": "Un gráfico de barras muestra el deporte favorito de un curso: fútbol tiene 12 votos y básquetbol tiene 8 votos. ¿Cuántos votos más tiene el fútbol que el básquetbol?",
+   "new": "Mira el gráfico del deporte favorito de un curso: A es fútbol y B básquetbol. ¿Cuántos votos más tiene el fútbol que el básquetbol?"
+  },
+  "promptEn": {
+   "old": "A bar graph shows a class's favorite sport: soccer has 12 votes and basketball has 8 votes. How many more votes does soccer have than basketball?",
+   "new": "Look at the graph of a class's favorite sport: A is soccer and B is basketball. How many more votes does soccer have than basketball?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jrp01qo6krha7rvzuuf",
+  "grade": 6,
+  "prompt": {
+   "old": "Un gráfico de barras muestra las mascotas de un curso: perros 9, gatos 6 y peces 3. ¿Cuántas mascotas hay en total?",
+   "new": "Mira el gráfico de mascotas de un curso: A son los perros, B los gatos y C los peces. ¿Cuántas mascotas hay en total?"
+  },
+  "promptEn": {
+   "old": "A bar graph shows the pets of a class: dogs 9, cats 6 and fish 3. How many pets are there in total?",
+   "new": "Look at the graph of a class's pets: A is dogs, B is cats and C is fish. How many pets are there in total?"
+  },
+  "procedureNote": {
+   "old": "La pregunta pide el total de las tres barras. Suma todos los valores del gráfico.",
+   "new": "La pregunta pide el total: lee el valor de cada barra y júntalos."
+  },
+  "procedureNoteEn": {
+   "old": "The question asks for the total of the three bars. Add all the values on the graph.",
+   "new": "The question asks for the total: read the value of each bar and put them together."
+  }
+ },
+ {
+  "exerciseId": "cmuli7jry01qy6krhjspvkl2b",
+  "grade": 6,
+  "prompt": {
+   "old": "Un gráfico de barras dobles compara la nota de dos cursos en Matemática. Aprobaron 28 estudiantes de 6°A y 24 de 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?",
+   "new": "Mira el gráfico de aprobados en Matemática: A es 6°A y B es 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?"
+  },
+  "promptEn": {
+   "old": "A double bar graph compares the math test results of two classes. 28 students from class 6A and 24 from class 6B passed. How many students passed in the two classes together?",
+   "new": "Look at the graph of students who passed math: A is class 6A and B is class 6B. How many students passed in the two classes together?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7js201r36krhp52wm51y",
+  "grade": 6,
+  "prompt": {
+   "old": "Un gráfico de barras dobles muestra los goles de dos equipos en 3 partidos. Equipo Rojo: 2, 3 y 5 goles. Equipo Azul: 4, 1 y 3 goles. ¿Cuántos goles más hizo el equipo Rojo que el Azul en total?",
+   "new": "Mira el gráfico de barras dobles: A es el equipo Rojo, B el Azul, y 1, 2 y 3 son los partidos. ¿Cuántos goles más hizo el equipo Rojo que el Azul en total?"
+  },
+  "promptEn": {
+   "old": "A double bar graph shows the goals of two teams in 3 games. Red team: 2, 3 and 5 goals. Blue team: 4, 1 and 3 goals. How many more goals did the Red team score than the Blue team in total?",
+   "new": "Look at the double bar graph: A is the Red team, B is the Blue team, and 1, 2 and 3 are the games. How many more goals did the Red team score than the Blue team in total?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7jsl01rn6krhtg9exukz",
+  "grade": 6,
+  "prompt": {
+   "old": "Un gráfico de barras dobles muestra los helados vendidos. En enero: 30 de vainilla y 20 de frutilla. En febrero: 25 de vainilla y 35 de frutilla. ¿Cuántos helados más se vendieron en febrero que en enero?",
+   "new": "Mira el gráfico de helados vendidos: A es vainilla, B frutilla, 1 es enero y 2 es febrero. ¿Cuántos helados más se vendieron en febrero que en enero?"
+  },
+  "promptEn": {
+   "old": "A double bar graph shows ice creams sold. In January: 30 vanilla and 20 strawberry. In February: 25 vanilla and 35 strawberry. How many more ice creams were sold in February than in January?",
+   "new": "Look at the graph of ice creams sold: A is vanilla, B is strawberry, 1 is January and 2 is February. How many more ice creams were sold in February than in January?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7j82016f6krhczkg6hd8",
+  "grade": 4,
+  "prompt": {
+   "old": "En un pictograma cada símbolo vale 10 libros. El martes hay 2 símbolos y medio. ¿Cuántos libros se prestaron el martes?",
+   "new": "Mira el pictograma: la fila A es el martes. Cada símbolo vale 10 libros. ¿Cuántos libros se prestaron el martes?"
+  },
+  "promptEn": {
+   "old": "In a pictograph each symbol stands for 10 books. On Tuesday there are 2 and a half symbols. How many books were borrowed on Tuesday?",
+   "new": "Look at the pictograph: row A is Tuesday. Each symbol stands for 10 books. How many books were borrowed on Tuesday?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ixx00vn6krhh0au2498",
+  "grade": 3,
+  "prompt": {
+   "old": "En un pictograma, cada dibujo de libro vale 2 libros. En «Lunes» hay 4 dibujos de libro. ¿Cuántos libros representa?",
+   "new": "Mira el pictograma: la fila A es el lunes. Cada dibujo vale 2 libros. ¿Cuántos libros representa?"
+  },
+  "promptEn": {
+   "old": "In a pictograph, each book picture stands for 2 books. In the “Monday” row there are 4 book pictures. How many books does that represent?",
+   "new": "Look at the pictograph: row A is Monday. Each picture stands for 2 books. How many books does it represent?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7i73006b6krhptqblaxv",
+  "grade": 1,
+  "prompt": {
+   "old": "Sofía busca un bloque que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
+   "new": "Sofía busca un bloque que no ruede, lo pongas como lo pongas. ¿Cuál figura 3D le sirve?"
+  },
+  "promptEn": {
+   "old": "Sofía is looking for a block that will not roll even if you push it across the floor. Which 3D shape works?",
+   "new": "Sofía wants a block that won't roll, however you set it down. Which 3D shape works for her?"
+  }
  }
 ]

@@ -25,7 +25,7 @@ initialAssessmentRouter.get("/", requireAuth, async (req, res) => {
   // Solo contenido neutro o de sus intereses, y un único ejercicio por
   // problema base: la evaluación no calibra con la misma historia repetida.
   let pool = await prisma.exercise.findMany({
-    where: { AND: [{ mathSkill: { grade: child.grade } }, allowedThemeWhere(child.interests)] },
+    where: { AND: [{ mathSkill: { grade: child.grade }, retired: false }, allowedThemeWhere(child.interests)] },
     include: { options: { select: { id: true, label: true, labelEn: true } } }, // sin isCorrect ni errorTypeId
   });
 

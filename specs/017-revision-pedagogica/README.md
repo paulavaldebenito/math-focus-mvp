@@ -43,35 +43,55 @@ Pedido de la usuaria: "el agente corrector que revise toda la app".
 | E3_PREG | Responde otra cosa: el complemento, el número de saltos, la duración, el área cuando se pide el perímetro. |
 | E3_DATO | Omite o cambia un dato. |
 
-## Pendiente: requiere decisión de la usuaria o rediseño (no se aplicó)
-**Enunciados que hay que reescribir**
+## Arreglos del banco (segunda parte, a pedido de la usuaria: "arreglemos el banco")
 
-Cambian el problema y sus variantes, así que conviene hacerlo en tandas:
-- **1° MA01 OA04:** 8 comparaciones de 2 números («¿cuál es mayor: 3 o 9?»). Con 2 alternativas se acierta la mitad de las veces adivinando. Propuesta: comparar 4 números.
-- **Gráficos sin necesidad de leerlos.** El dato viene en el enunciado, así que el gráfico no se lee. Pasa en 2° MA02 OA22, 3° y 4° (gráficos) y 6° OA24.
-- **1° MA01 OA11:** patrones con distractores absurdos. Propuesta: preguntar por «los 2 que siguen».
-- **1° MA01 OA18:** 3 ejercicios que son sumas o restas.
-- **1° `ptqblaxv`:** tiene dos respuestas posibles.
-- **5° OA15:** inecuaciones mal planteadas.
-- **5° OA23:** promedios que se aciertan sin calcular.
-- **6° OA11:** pistas que escriben la ecuación.
-- **2° MA02 OA12:** 4 ejercicios calcados de 1°.
-- **4° área:** los 9 ejercicios tienen los mismos distractores.
+Mecanismos nuevos (todos se aplican igual en una BD nueva y en una existente):
+- `Exercise.retired` + `ejercicios_retirados.json` (`applyRetirements.ts`): un ejercicio retirado no
+  se entrega en práctica, evaluación ni revisión, pero se conserva por los intentos. Alcance
+  "familia" (base y variantes) o "variantes" (solo las variantes temáticas).
+- `imagenes_quitadas.json` (`applyImageRemovals.ts`): borra la imagen de ejercicios en que la
+  imagen era la respuesta.
+- `enunciados_editados.json`: ahora el inglés sigue al español (sirve con el inglés de aula ya
+  aplicado).
 
-**Imágenes que hay que rehacer**
-- El círculo dibujado como esfera: en 1°, 2° y 4°.
-- Bases de cilindro rotas.
-- Flores con colores cambiados (1° `lee0rrmr`).
-- Cuerda «más larga» dibujada igual (1° `jhah5f43`).
-- Descomposición de 5° (`y0huzp`), que no corresponde al número.
-- Imágenes de valor posicional que dan la respuesta, en 3° y 5°.
-- Números sin punto de miles en 5°.
-- Gráficos con rótulos A/B en vez de nombres.
+Qué se arregló:
+- **Gráficos (35 problemas de 2°, 3°, 4° y 6°):** el enunciado ya no trae el dato. Dice qué es cada
+  letra («A son los perros y B los gatos») y el niño lee el valor en el gráfico. Las variantes
+  temáticas, que repetían el dato, se retiraron. Los gráficos circulares quedan con el porcentaje en
+  el texto, porque el dibujo no lo muestra.
+- **27 problemas reemplazados por versiones nuevas** (los antiguos y sus variantes, retirados):
+  - 8 comparaciones de 1° con 2 o 3 alternativas → comparar 4 números, «¿qué número va entre…?» y
+    ordenar;
+  - 6 patrones de 1° con distractores ajenos al patrón → «¿qué 2 siguen?»;
+  - 3 problemas aditivos en «comparar longitudes» de 1° → comparaciones de largo y uno de
+    argumentar (medir con unidades distintas);
+  - 4 patrones de 2° calcados de 1° → números de 2°;
+  - 2 inecuaciones de 5° → «el menor/mayor número que cumple…»;
+  - 4 promedios de 5° que se acertaban sin calcular → datos en que el promedio no es ninguno de
+    ellos.
+- **1° «un bloque que no ruede»:** el enunciado ya no es ambiguo («lo pongas como lo pongas»).
+- **27 imágenes redibujadas** en estilo plano:
+  - valor posicional como tarjetas de cifras sin rótulos de posición (ya no dan la respuesta), con
+    punto de miles;
+  - círculos planos (no esferas);
+  - cilindros y conos con la base bien dibujada;
+  - triángulo isósceles distinto del equilátero;
+  - letras en el orden de las alternativas;
+  - flores rojas y amarillas con su color;
+  - cuerda «más larga» claramente más larga;
+  - rectángulo con su cuadrícula de 1 cm;
+  - álbum sin el «−20» que adelantaba el paso;
+  - el cilindro armado en vez de la red que daba la respuesta.
+- **3 imágenes quitadas:** el acertijo de Tomás, 700 + 20 + 5 y la descomposición de 5°, porque la
+  imagen era la respuesta.
 
-**Convenciones a confirmar**
-- Multiplicación: ¿3 × 2 es «3 grupos de 2» o «3 veces 2 = 2 + 2 + 2»? Hoy las pistas de 2 × 6 y 2 × 9 se alinearon con la imagen (6 grupos de 2).
-- Nombres cortos para niños en el mapa («Sumar y restar hasta 20») junto al nombre oficial.
-
-**Lo que falta en el banco**
-- Diversidad: argumentar es casi inexistente fuera de fracciones; faltan problemas de juntar, comparar y cambio en 1°–2°; también construir gráficos, ordenar números y ubicar en la recta.
-- Retroalimentación por alternativa y desarrollo paso a paso: solo los tienen fracciones y porcentajes.
+## Pendiente
+- **Convención de multiplicación:** ¿3 × 2 es «3 grupos de 2» o «3 veces 2 = 2 + 2 + 2»? Las pistas de
+  2 × 6 y 2 × 9 se alinearon con la imagen (6 grupos de 2).
+- **Imágenes de 2° que adelantan la multiplicación:** «6 × 10» en decenas y unidades y en los helados.
+- **4° área:** los 9 ejercicios repiten la misma terna de distractores.
+- **Simetría de 4°:** casi siempre pregunta «cuántas líneas».
+- **Nombres cortos para niños en el mapa,** junto al nombre oficial.
+- **Diversidad:** casi no hay «argumentar» fuera de fracciones. Faltan problemas de juntar, comparar
+  y cambio en 1°–2°, y también construir gráficos y ubicar en la recta.
+- **Desarrollo paso a paso y feedback por alternativa:** solo los tienen fracciones y porcentajes.

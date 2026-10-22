@@ -54,13 +54,21 @@ export async function applyPromptEdits(
       continue;
     }
     const data: { prompt?: string; promptEn?: string; procedureNote?: string; procedureNoteEn?: string } = {};
+    const esOf = { promptEn: "prompt", procedureNoteEn: "procedureNote" } as const;
     for (const field of ["prompt", "promptEn", "procedureNote", "procedureNoteEn"] as const) {
       const change = e[field];
       if (!change) continue;
       const cur = ex[field];
       if (cur === change.new) report.already += 1;
       else if (cur === change.old) data[field] = change.new;
-      else report.problems.push(`${e.exerciseId}: ${field} distinto del esperado, no se edita`);
+      else if (field in esOf) {
+        // El inglés sigue al español: si el campo ES de esta edición está en su texto anterior o en el
+        // nuevo, la EN queda la nueva aunque la anterior venga del inglés de aula (BD existentes).
+        const es = esOf[field as keyof typeof esOf];
+        const esChange = e[es];
+        if (esChange && (ex[es] === esChange.old || ex[es] === esChange.new)) data[field] = change.new;
+        else report.problems.push(`${e.exerciseId}: ${field} distinto del esperado, no se edita`);
+      } else report.problems.push(`${e.exerciseId}: ${field} distinto del esperado, no se edita`);
     }
     if (Object.keys(data).length > 0) {
       await prisma.exercise.update({ where: { id: e.exerciseId }, data });

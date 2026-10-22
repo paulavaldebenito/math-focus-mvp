@@ -4409,7 +4409,6 @@
       },
       "kind": "rows",
       "src": "/exercise-images/1b__cmtsx18th009cftrhlee0rrmr__rows.png",
-      "svgSrc": "/exercise-images/1b__cmtsx18th009cftrhlee0rrmr__rows.svg",
       "width": 1550,
       "height": 650,
       "alt": {
@@ -7798,7 +7797,6 @@
       },
       "kind": "shape",
       "src": "/exercise-images/1b__cmuli7i5z00576krhaqxkw58z__shape.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i5z00576krhaqxkw58z__shape.svg",
       "width": 1000,
       "height": 942,
       "alt": {
@@ -7852,12 +7850,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/1b__cmuli7i6j005r6krh9bfv2o3m__shapes.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i6j005r6krh9bfv2o3m__shapes.svg",
       "width": 1712,
       "height": 1166,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál de estas figuras 2D tiene el borde completamente curvo?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which of these 2D shapes has a completely curved edge?"
+        "es": "Dibujo del enunciado. ¿Cuál de estas figuras 2D tiene el borde completamente curvo?",
+        "en": "Drawing for the problem. Which of these 2D shapes has a completely curved edge?"
       },
       "letters": [
         "A",
@@ -7881,12 +7878,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/1b__cmuli7i6p005w6krhd0z1ta80__shapes.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i6p005w6krhd0z1ta80__shapes.svg",
       "width": 1710,
       "height": 1250,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál de estas figuras 3D tiene una punta arriba y una base circular abajo?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which of these 3D shapes has a point on top and a circular base at the bottom?"
+        "es": "Dibujo del enunciado. ¿Cuál de estas figuras 3D tiene una punta arriba y una base circular abajo?",
+        "en": "Drawing for the problem. Which of these 3D shapes has a point on top and a circular base at the bottom?"
       },
       "letters": [
         "A",
@@ -7910,12 +7906,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/1b__cmuli7i6t00616krhx8xfe1p0__shapes.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i6t00616krhx8xfe1p0__shapes.svg",
       "width": 1888,
       "height": 864,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Julia dibujó el contorno de la tapa de una lata y el contorno de una cara de un dado. ¿Qué dos figuras 2D dibujó?",
-        "en": "Precise visual support constructed from the data given in the prompt. Julia traced the outline of a can lid and the outline of one face of a die. Which two 2D shapes did she draw?"
+        "es": "Dibujo del enunciado. Julia dibujó el contorno de la tapa de una lata y el contorno de una cara de un dado. ¿Qué dos figuras 2D dibujó?",
+        "en": "Drawing for the problem. Julia traced the outline of a can lid and the outline of one face of a die. Which two 2D shapes did she draw?"
       },
       "letters": [
         "A",
@@ -7931,7 +7926,6 @@
       },
       "kind": "shape",
       "src": "/exercise-images/1b__cmuli7i7000666krhrt271vtf__shape.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i7000666krhrt271vtf__shape.svg",
       "width": 1000,
       "height": 942,
       "alt": {
@@ -7949,12 +7943,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/1b__cmuli7i73006b6krhptqblaxv__shapes.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i73006b6krhptqblaxv__shapes.svg",
       "width": 1712,
       "height": 1196,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Sofía busca un bloque que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
-        "en": "Precise visual support constructed from the data given in the prompt. Sofía is looking for a block that will not roll even if you push it across the floor. Which 3D shape works?"
+        "es": "Dibujo del enunciado. Sofía busca un bloque que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
+        "en": "Drawing for the problem. Sofía is looking for a block that will not roll even if you push it across the floor. Which 3D shape works?"
       },
       "letters": [
         "A",
@@ -8437,12 +8430,11 @@
       },
       "kind": "length_reference",
       "src": "/exercise-images/1b__cmuli7i7o006w6krhjhah5f43__length_reference.png",
-      "svgSrc": "/exercise-images/1b__cmuli7i7o006w6krhjhah5f43__length_reference.svg",
       "width": 1268,
       "height": 664,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Pedro dice: \"Mi cuerda es más larga que la tuya\". Tu cuerda mide 7 pasos. ¿Cuál de estas medidas puede tener la cuerda de Pedro?",
-        "en": "Precise visual support constructed from the data given in the prompt. Pedro says: \"My rope is longer than yours\". Your rope is 7 steps long. Which of these lengths can Pedro's rope have?"
+        "es": "Dibujo del enunciado. Pedro dice: \"Mi cuerda es más larga que la tuya\". Tu cuerda mide 7 pasos. ¿Cuál de estas medidas puede tener la cuerda de Pedro?",
+        "en": "Drawing for the problem. Pedro says: \"My rope is longer than yours\". Your rope is 7 steps long. Which of these lengths can Pedro's rope have?"
       },
       "letters": []
     },
@@ -16056,12 +16048,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/2b__cmuli7ihh00et6krhqszcn3y1__shapes.png",
-      "svgSrc": "/exercise-images/2b__cmuli7ihh00et6krhqszcn3y1__shapes.svg",
       "width": 1670,
       "height": 1166,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué figura tiene 4 lados iguales y 4 esquinas rectas?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which shape has 4 equal sides and 4 square corners?"
+        "es": "Dibujo del enunciado. ¿Qué figura tiene 4 lados iguales y 4 esquinas rectas?",
+        "en": "Drawing for the problem. Which shape has 4 equal sides and 4 square corners?"
       },
       "letters": [
         "A",
@@ -16085,12 +16076,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/2b__cmuli7iho00ey6krhjr3gs9q5__shapes.png",
-      "svgSrc": "/exercise-images/2b__cmuli7iho00ey6krhjr3gs9q5__shapes.svg",
       "width": 1712,
       "height": 1166,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué figura no tiene lados rectos ni esquinas?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which shape has no straight sides and no corners?"
+        "es": "Dibujo del enunciado. ¿Qué figura no tiene lados rectos ni esquinas?",
+        "en": "Drawing for the problem. Which shape has no straight sides and no corners?"
       },
       "letters": [
         "A",
@@ -16192,12 +16182,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/2b__cmuli7iim00fx6krh04yqntqq__shapes.png",
-      "svgSrc": "/exercise-images/2b__cmuli7iim00fx6krh04yqntqq__shapes.svg",
       "width": 1658,
       "height": 1166,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Ana dibujó un triángulo, dos cuadrados y un círculo. ¿Cuántos lados rectos dibujó en total?",
-        "en": "Precise visual support constructed from the data given in the prompt. Ana drew a triangle, two squares and a circle. How many straight sides did she draw in total?"
+        "es": "Dibujo del enunciado. Ana dibujó un triángulo, dos cuadrados y un círculo. ¿Cuántos lados rectos dibujó en total?",
+        "en": "Drawing for the problem. Ana drew a triangle, two squares and a circle. How many straight sides did she draw in total?"
       },
       "letters": [
         "A",
@@ -19899,12 +19888,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/3b__cmuli7imf00jr6krhho4qw7h0__place_value.png",
-      "svgSrc": "/exercise-images/3b__cmuli7imf00jr6krhho4qw7h0__place_value.svg",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En el número 372, ¿qué dígito está en el lugar de las centenas?",
-        "en": "Precise visual support constructed from the data given in the prompt. In the number 372, which digit is in the hundreds place?"
+        "es": "Dibujo del enunciado. En el número 372, ¿qué dígito está en el lugar de las centenas?",
+        "en": "Drawing for the problem. In the number 372, which digit is in the hundreds place?"
       },
       "letters": []
     },
@@ -19935,12 +19923,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/3b__cmuli7imo00k16krhd2mkevw0__place_value.png",
-      "svgSrc": "/exercise-images/3b__cmuli7imo00k16krhd2mkevw0__place_value.svg",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En el número 806, ¿qué dígito está en el lugar de las decenas?",
-        "en": "Precise visual support constructed from the data given in the prompt. In the number 806, which digit is in the tens place?"
+        "es": "Dibujo del enunciado. En el número 806, ¿qué dígito está en el lugar de las decenas?",
+        "en": "Drawing for the problem. In the number 806, which digit is in the tens place?"
       },
       "letters": []
     },
@@ -19953,30 +19940,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/3b__cmuli7imr00k66krhi2i4iks4__place_value.png",
-      "svgSrc": "/exercise-images/3b__cmuli7imr00k66krhi2i4iks4__place_value.svg",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál es el valor del dígito 6 en el número 762?",
-        "en": "Precise visual support constructed from the data given in the prompt. What is the value of the digit 6 in the number 762?"
-      },
-      "letters": []
-    },
-    {
-      "exerciseId": "cmuli7imw00kb6krhq5wc0itn",
-      "grade": 3,
-      "prompt": {
-        "es": "¿Qué número es 700 + 20 + 5?",
-        "en": "Which number is 700 + 20 + 5?"
-      },
-      "kind": "components",
-      "src": "/exercise-images/3b__cmuli7imw00kb6krhq5wc0itn__components.png",
-      "svgSrc": "/exercise-images/3b__cmuli7imw00kb6krhq5wc0itn__components.svg",
-      "width": 1708,
-      "height": 650,
-      "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué número es 700 + 20 + 5?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which number is 700 + 20 + 5?"
+        "es": "Dibujo del enunciado. ¿Cuál es el valor del dígito 6 en el número 762?",
+        "en": "Drawing for the problem. What is the value of the digit 6 in the number 762?"
       },
       "letters": []
     },
@@ -20007,12 +19975,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/3b__cmuli7in600kl6krhsv69n5fm__place_value.png",
-      "svgSrc": "/exercise-images/3b__cmuli7in600kl6krhsv69n5fm__place_value.svg",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál es la descomposición correcta del número 638?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which is the correct expanded form of the number 638?"
+        "es": "Dibujo del enunciado. ¿Cuál es la descomposición correcta del número 638?",
+        "en": "Drawing for the problem. Which is the correct expanded form of the number 638?"
       },
       "letters": []
     },
@@ -20035,24 +20002,6 @@
       "letters": []
     },
     {
-      "exerciseId": "cmuli7ine00kv6krh67r4db0t",
-      "grade": 3,
-      "prompt": {
-        "es": "Tomás dice: «En mi número el 3 vale 300 y el 8 vale 80». Su número tiene tres cifras y termina en 1. ¿Cuál es?",
-        "en": "Tomás says: \"In my number the 3 is worth 300 and the 8 is worth 80.\" His number has three digits and ends in 1. Which is it?"
-      },
-      "kind": "components",
-      "src": "/exercise-images/3b__cmuli7ine00kv6krh67r4db0t__components.png",
-      "svgSrc": "/exercise-images/3b__cmuli7ine00kv6krh67r4db0t__components.svg",
-      "width": 1708,
-      "height": 650,
-      "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Tomás dice: «En mi número el 3 vale 300 y el 8 vale 80». Su número tiene tres cifras y termina en 1. ¿Cuál es?",
-        "en": "Precise visual support constructed from the data given in the prompt. Tomás says: \"In my number the 3 is worth 300 and the 8 is worth 80.\" His number has three digits and ends in 1. Which is it?"
-      },
-      "letters": []
-    },
-    {
       "exerciseId": "cmuli7ink00l06krhmig612dj",
       "grade": 3,
       "prompt": {
@@ -20061,12 +20010,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/3b__cmuli7ink00l06krhmig612dj__place_value.png",
-      "svgSrc": "/exercise-images/3b__cmuli7ink00l06krhmig612dj__place_value.svg",
       "width": 1000,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En una dulcería hay bolsas de 100 caramelos, paquetes de 10 y caramelos sueltos. Para tener 234 caramelos, ¿qué se necesita?",
-        "en": "Precise visual support constructed from the data given in the prompt. A candy shop has bags of 100 candies, packs of 10 and loose candies. To have 234 candies, what is needed?"
+        "es": "Dibujo del enunciado. En una dulcería hay bolsas de 100 caramelos, paquetes de 10 y caramelos sueltos. Para tener 234 caramelos, ¿qué se necesita?",
+        "en": "Drawing for the problem. A candy shop has bags of 100 candies, packs of 10 and loose candies. To have 234 candies, what is needed?"
       },
       "letters": []
     },
@@ -20475,12 +20423,11 @@
       },
       "kind": "grouped",
       "src": "/exercise-images/3b__cmuli7iqc00nz6krhoc082q3i__grouped.png",
-      "svgSrc": "/exercise-images/3b__cmuli7iqc00nz6krhoc082q3i__grouped.svg",
       "width": 1708,
       "height": 1196,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un álbum tiene 9 páginas con 6 fotos cada una, todas llenas. Ya tienes 20 fotos pegadas. ¿Cuántas fotos faltan por pegar?",
-        "en": "Precise visual support constructed from the data given in the prompt. An album has 9 pages with 6 photos on each one, all full. You have already stuck in 20 photos. How many photos are left to stick?"
+        "es": "Dibujo del enunciado. Un álbum tiene 9 páginas con 6 fotos cada una, todas llenas. Ya tienes 20 fotos pegadas. ¿Cuántas fotos faltan por pegar?",
+        "en": "Drawing for the problem. An album has 9 pages with 6 photos on each one, all full. You have already stuck in 20 photos. How many photos are left to stick?"
       },
       "letters": []
     },
@@ -23381,7 +23328,6 @@
       },
       "kind": "shape",
       "src": "/exercise-images/3b__cmuli7iv200st6krh4fqe84ie__shape.png",
-      "svgSrc": "/exercise-images/3b__cmuli7iv200st6krh4fqe84ie__shape.svg",
       "width": 1000,
       "height": 942,
       "alt": {
@@ -23417,12 +23363,11 @@
       },
       "kind": "cylinder_net",
       "src": "/exercise-images/3b__cmuli7ivd00t36krh6waubzwb__cylinder_net.png",
-      "svgSrc": "/exercise-images/3b__cmuli7ivd00t36krh6waubzwb__cylinder_net.svg",
       "width": 1228,
       "height": 1300,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué figuras 2D forman la red de un cilindro?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which 2D shapes make the net of a cylinder?"
+        "es": "Dibujo del enunciado. ¿Qué figuras 2D forman la red de un cilindro?",
+        "en": "Drawing for the problem. Which 2D shapes make the net of a cylinder?"
       },
       "letters": []
     },
@@ -23471,12 +23416,11 @@
       },
       "kind": "cylinder_net",
       "src": "/exercise-images/3b__cmuli7ivp00ti6krhsvsdlqxd__cylinder_net.png",
-      "svgSrc": "/exercise-images/3b__cmuli7ivp00ti6krhsvsdlqxd__cylinder_net.svg",
       "width": 1228,
       "height": 1300,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Beatriz tiene una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
-        "en": "Precise visual support constructed from the data given in the prompt. Beatriz has a flat net made of 2 equal circles and 1 rectangle. Which 3D figure does it make when assembled?"
+        "es": "Dibujo del enunciado. Beatriz tiene una red plana formada por 2 círculos iguales y 1 rectángulo. ¿Qué figura 3D forma al armarla?",
+        "en": "Drawing for the problem. Beatriz has a flat net made of 2 equal circles and 1 rectangle. Which 3D figure does it make when assembled?"
       },
       "letters": []
     },
@@ -26880,12 +26824,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/4b__cmuli7iza00wx6krhtrcusl29__place_value.png",
-      "svgSrc": "/exercise-images/4b__cmuli7iza00wx6krhtrcusl29__place_value.svg",
       "width": 1094,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En el número 5.273, ¿cuál es el valor del dígito 7?",
-        "en": "Precise visual support constructed from the data given in the prompt. In the number 5,273, what is the value of the digit 7?"
+        "es": "Dibujo del enunciado. En el número 5.273, ¿cuál es el valor del dígito 7?",
+        "en": "Drawing for the problem. In the number 5,273, what is the value of the digit 7?"
       },
       "letters": []
     },
@@ -26916,12 +26859,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/4b__cmuli7izj00x76krhh5d3h7iz__place_value.png",
-      "svgSrc": "/exercise-images/4b__cmuli7izj00x76krhh5d3h7iz__place_value.svg",
       "width": 1094,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué suma corresponde al número 7.086?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which sum matches the number 7,086?"
+        "es": "Dibujo del enunciado. ¿Qué suma corresponde al número 7.086?",
+        "en": "Drawing for the problem. Which sum matches the number 7,086?"
       },
       "letters": []
     },
@@ -30085,12 +30027,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/4b__cmuli7j5h013q6krhiwdoq1gg__shapes.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j5h013q6krhiwdoq1gg__shapes.svg",
       "width": 1724,
       "height": 1140,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál de estas figuras no tiene ninguna línea de simetría?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which of these shapes has no line of symmetry at all?"
+        "es": "Dibujo del enunciado. ¿Cuál de estas figuras no tiene ninguna línea de simetría?",
+        "en": "Drawing for the problem. Which of these shapes has no line of symmetry at all?"
       },
       "letters": [
         "A",
@@ -30152,12 +30093,11 @@
       },
       "kind": "shapes",
       "src": "/exercise-images/4b__cmuli7j5v01456krhncxj9ueq__shapes.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j5v01456krhncxj9ueq__shapes.svg",
       "width": 1712,
       "height": 1166,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un artesano quiere hacer una placa con exactamente 2 líneas de simetría. ¿Qué forma le sirve?",
-        "en": "Precise visual support constructed from the data given in the prompt. A craftsman wants to make a plaque with exactly 2 lines of symmetry. Which shape works?"
+        "es": "Dibujo del enunciado. Un artesano quiere hacer una placa con exactamente 2 líneas de simetría. ¿Qué forma le sirve?",
+        "en": "Drawing for the problem. A craftsman wants to make a plaque with exactly 2 lines of symmetry. Which shape works?"
       },
       "letters": [
         "A",
@@ -30490,7 +30430,6 @@
       },
       "kind": "rectangle",
       "src": "/exercise-images/4b__cmuli7j68014g6krhbemyci4h__rectangle.png",
-      "svgSrc": "/exercise-images/4b__cmuli7j68014g6krhbemyci4h__rectangle.svg",
       "width": 1414,
       "height": 876,
       "alt": {
@@ -33012,12 +32951,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/5b__cmuli7j8k01706krhdvcldwmf__place_value.png",
-      "svgSrc": "/exercise-images/5b__cmuli7j8k01706krhdvcldwmf__place_value.svg",
       "width": 1694,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué dígito ocupa la posición de las centenas de mil en el número 3.482.915?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which digit is in the hundred-thousands place in the number 3,482,915?"
+        "es": "Dibujo del enunciado. ¿Qué dígito ocupa la posición de las centenas de mil en el número 3.482.915?",
+        "en": "Drawing for the problem. Which digit is in the hundred-thousands place in the number 3,482,915?"
       },
       "letters": []
     },
@@ -33030,12 +32968,11 @@
       },
       "kind": "place_value",
       "src": "/exercise-images/5b__cmuli7j8p01756krhybpjahmm__place_value.png",
-      "svgSrc": "/exercise-images/5b__cmuli7j8p01756krhybpjahmm__place_value.svg",
       "width": 1694,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuál es el valor del dígito 7 en el número 5.708.246?",
-        "en": "Precise visual support constructed from the data given in the prompt. What is the value of the digit 7 in the number 5,708,246?"
+        "es": "Dibujo del enunciado. ¿Cuál es el valor del dígito 7 en el número 5.708.246?",
+        "en": "Drawing for the problem. What is the value of the digit 7 in the number 5,708,246?"
       },
       "letters": []
     },
@@ -33090,24 +33027,6 @@
       "alt": {
         "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuántos grupos completos de 100.000 caben en 1.250.000?",
         "en": "Precise visual support constructed from the data given in the prompt. How many complete groups of 100,000 fit in 1,250,000?"
-      },
-      "letters": []
-    },
-    {
-      "exerciseId": "cmuli7j9o01896krh0qy0huzp",
-      "grade": 5,
-      "prompt": {
-        "es": "Un número tiene 3 millones, 0 centenas de mil, 4 decenas de mil, 0 unidades de mil, 7 centenas, 0 decenas y 5 unidades. ¿Cuál es?",
-        "en": "A number has 3 millions, 0 hundred-thousands, 4 ten-thousands, 0 thousands, 7 hundreds, 0 tens and 5 units. Which is it?"
-      },
-      "kind": "components",
-      "src": "/exercise-images/5b__cmuli7j9o01896krh0qy0huzp__components.png",
-      "svgSrc": "/exercise-images/5b__cmuli7j9o01896krh0qy0huzp__components.svg",
-      "width": 1708,
-      "height": 958,
-      "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un número tiene 3 millones, 0 centenas de mil, 4 decenas de mil, 0 unidades de mil, 7 centenas, 0 decenas y 5 unidades. ¿Cuál es?",
-        "en": "Precise visual support constructed from the data given in the prompt. A number has 3 millions, 0 hundred-thousands, 4 ten-thousands, 0 thousands, 7 hundreds, 0 tens and 5 units. Which is it?"
       },
       "letters": []
     },

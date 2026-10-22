@@ -36,7 +36,7 @@ const jaccard = (a: Set<string>, b: Set<string>) => {
 const revealsAnswer = (hint: string, answer: string) => /^[\d\s/.,]+$/.test(answer) && new RegExp(`(^|[^\\d/])${answer.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&")}($|[^\\d/])`).test(hint);
 
 const exercises = await prisma.exercise.findMany({
-  where: { mathSkill: { oaCode: oa }, theme: null },
+  where: { mathSkill: { oaCode: oa }, theme: null, retired: false },
   include: { options: { include: { errorType: true } }, mathSkill: true },
   orderBy: { id: "asc" },
 });

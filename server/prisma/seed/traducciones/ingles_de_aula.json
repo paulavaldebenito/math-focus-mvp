@@ -3028,19 +3028,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7ill00iw6krhgqyb546a",
-      "grade": 2,
-      "prompt": "En un pictograma, cada pelota dibujada vale 10 goles. La fila de un equipo tiene 4 pelotas. ¿Cuántos goles hizo el equipo?",
-      "promptEn": {
-        "old": "In a pictograph, each ball picture is worth 10 goals. A team's row has 4 balls. How many goals did the team score?",
-        "new": "In a pictograph, each ball picture stands for 10 goals. A team's row has 4 balls. How many goals did the team score?"
-      },
-      "procedureNoteEn": {
-        "old": "Each picture is worth 10, so count by 10s as many times as there are pictures.",
-        "new": "Each picture stands for 10, so count by 10s as many times as there are pictures."
-      }
-    },
-    {
       "exerciseId": "cmulu2vvs038d4crh146yvp3g",
       "grade": 2,
       "prompt": "En un pictograma, cada bus dibujado vale 5 buses que pasaron por la calle. Hay 3 dibujos en la fila del viernes. ¿Cuántos buses pasaron el viernes?",
@@ -3190,19 +3177,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7ilb00im6krhtin5nzdf",
-      "grade": 2,
-      "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que vienen en bus tiene 4 estrellas. ¿Cuántos niños vienen en bus?",
-      "promptEn": {
-        "old": "In a pictograph, each star is worth 2 children. The row for those who come by bus has 4 stars. How many children come by bus?",
-        "new": "In a pictograph, each star stands for 2 children. The row for those who come by bus has 4 stars. How many children come by bus?"
-      },
-      "procedureNoteEn": {
-        "old": "Each star is not worth 1, it is worth 2: count by 2s, as many times as there are stars.",
-        "new": "Each star does not stand for 1, it stands for 2: count by 2s, as many times as there are stars."
-      }
-    },
-    {
       "exerciseId": "cmulu2vv0037j4crhfwc48mzq",
       "grade": 2,
       "prompt": "En un pictograma, cada botella dibujada vale 2 botellas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas botellas se tomaron entre los dos días?",
@@ -3274,19 +3248,6 @@
       "procedureNoteEn": {
         "old": "First put together the drawings from the two days. Then remember that each drawing is worth more than 1 train.",
         "new": "First put together the drawings from the two days. Then remember that each drawing stands for more than 1 train."
-      }
-    },
-    {
-      "exerciseId": "cmuli7ilz00jb6krhwx3bu2do",
-      "grade": 2,
-      "prompt": "En un pictograma, cada manzana dibujada vale 2 manzanas. El lunes hay 5 dibujos y el martes hay 3 dibujos. ¿Cuántas manzanas se comieron entre los dos días?",
-      "promptEn": {
-        "old": "In a pictograph, each apple picture is worth 2 apples. On Monday there are 5 pictures and on Tuesday there are 3 pictures. How many apples were eaten over the two days?",
-        "new": "In a pictograph, each apple picture stands for 2 apples. On Monday there are 5 pictures and on Tuesday there are 3 pictures. How many apples were eaten over the two days?"
-      },
-      "procedureNoteEn": {
-        "old": "First put together the pictures from both days. Then remember that each picture is worth more than 1 apple.",
-        "new": "First put together the pictures from both days. Then remember that each picture stands for more than 1 apple."
       }
     },
     {
@@ -3388,15 +3349,6 @@
       "promptEn": {
         "old": "In a pictogram, each ball drawn is worth 5 balls lent out. On Monday there are 4 drawings and on Tuesday there are 6 drawings. How many more balls were lent on Tuesday than on Monday?",
         "new": "In a pictograph, each ball drawn stands for 5 balls lent out. On Monday there are 4 drawings and on Tuesday there are 6 drawings. How many more balls were lent on Tuesday than on Monday?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7il200ic6krhmu6c08n8",
-      "grade": 2,
-      "prompt": "En un pictograma de frutas, la fila de las manzanas tiene 3 dibujos y la de las peras tiene 5 dibujos. Cada dibujo vale 1 fruta. ¿De qué fruta hay más?",
-      "promptEn": {
-        "old": "In a fruit pictograph, the apples row has 3 pictures and the pears row has 5 pictures. Each picture is worth 1 fruit. Which fruit is there more of?",
-        "new": "In a fruit pictograph, the apples row has 3 pictures and the pears row has 5 pictures. Each picture stands for 1 fruit. Which fruit is there more of?"
       }
     },
     {
@@ -3604,15 +3556,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7im500jg6krhapb1ul47",
-      "grade": 2,
-      "prompt": "En un pictograma, cada bicicleta dibujada vale 5 bicicletas. El lunes hay 4 dibujos y el martes hay 6 dibujos. ¿Cuántas bicicletas más hubo el martes que el lunes?",
-      "promptEn": {
-        "old": "In a pictograph, each bicycle picture is worth 5 bicycles. On Monday there are 4 pictures and on Tuesday there are 6 pictures. How many more bicycles were there on Tuesday than on Monday?",
-        "new": "In a pictograph, each bicycle picture stands for 5 bicycles. On Monday there are 4 pictures and on Tuesday there are 6 pictures. How many more bicycles were there on Tuesday than on Monday?"
-      }
-    },
-    {
       "exerciseId": "cmulu2vqv03384crhjwze6oub",
       "grade": 2,
       "prompt": "En un pictograma, cada estrella vale 2 niños. La fila de los que llegan al museo de dinosaurios en bus tiene 4 estrellas. ¿Cuántos niños llegan en bus?",
@@ -3632,32 +3575,6 @@
       "promptEn": {
         "old": "In a pictogram, each pizza drawn is worth 5 pizzas. On Monday there are 4 pictures and on Tuesday there are 6 pictures. How many more pizzas were made on Tuesday than on Monday?",
         "new": "In a pictograph, each pizza drawn stands for 5 pizzas. On Monday there are 4 pictures and on Tuesday there are 6 pictures. How many more pizzas were made on Tuesday than on Monday?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7ilf00ir6krh85dkdxh3",
-      "grade": 2,
-      "prompt": "En un pictograma, cada helado dibujado vale 5 helados vendidos. Hay 3 dibujos en la fila del viernes. ¿Cuántos helados se vendieron el viernes?",
-      "promptEn": {
-        "old": "In a pictograph, each ice cream picture is worth 5 ice creams sold. There are 3 pictures in Friday's row. How many ice creams were sold on Friday?",
-        "new": "In a pictograph, each ice cream picture stands for 5 ice creams sold. There are 3 pictures in Friday's row. How many ice creams were sold on Friday?"
-      },
-      "procedureNoteEn": {
-        "old": "Each picture is worth 5: count by 5s, as many times as there are pictures.",
-        "new": "Each picture stands for 5: count by 5s, as many times as there are pictures."
-      }
-    },
-    {
-      "exerciseId": "cmuli7ikr00i26krhmj1bo2jh",
-      "grade": 2,
-      "prompt": "En un pictograma, la fila de Camila tiene 5 dibujos de pelota y cada dibujo vale 1 pelota. ¿Cuántas pelotas tiene Camila?",
-      "promptEn": {
-        "old": "In a pictograph, Camila's row has 5 ball pictures and each picture is worth 1 ball. How many balls does Camila have?",
-        "new": "In a pictograph, Camila's row has 5 ball pictures and each picture stands for 1 ball. How many balls does Camila have?"
-      },
-      "procedureNoteEn": {
-        "old": "Count the pictures in the row and check how much each one is worth.",
-        "new": "Count the pictures in the row and check how many each one stands for."
       }
     },
     {
@@ -4698,34 +4615,12 @@
       }
     },
     {
-      "exerciseId": "cmuli7iyj00wc6krhlkggl5v1",
-      "grade": 3,
-      "prompt": "En un gráfico, cada cuadrito vale 10 puntos. La barra de Sara llega a 7 cuadritos y la de Tomás a 4. ¿Cuántos puntos más tiene Sara que Tomás?",
-      "promptEn": {
-        "old": "In a graph, each square is worth 10 points. Sara's bar reaches 7 squares and Tomás's reaches 4. How many more points does Sara have than Tomás?",
-        "new": "In a bar graph, each square stands for 10 points. Sara's bar reaches 7 squares and Tomás's reaches 4. How many more points does Sara have than Tomás?"
-      }
-    },
-    {
       "exerciseId": "cmulu2xa304lj4crh7fl1b490",
       "grade": 3,
       "prompt": "En un gráfico, la barra de tortas llega a 7 y la de tartas a 4. ¿Cuántas tortas más que tartas hay?",
       "promptEn": {
         "old": "In a graph, the cake bar reaches 7 and the pie bar reaches 4. How many more cakes than pies are there?",
         "new": "In a bar graph, the cake bar reaches 7 and the pie bar reaches 4. How many more cakes than pies are there?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7ixx00vn6krhh0au2498",
-      "grade": 3,
-      "prompt": "En un pictograma, cada dibujo de libro vale 2 libros. En «Lunes» hay 4 dibujos de libro. ¿Cuántos libros representa?",
-      "promptEn": {
-        "old": "In a pictogram, each book picture is worth 2 books. On \"Monday\" there are 4 book pictures. How many books does that represent?",
-        "new": "In a pictograph, each book picture stands for 2 books. In the “Monday” row there are 4 book pictures. How many books does that represent?"
-      },
-      "procedureNoteEn": {
-        "old": "Look at the key of the pictogram: each picture is not worth 1, it is worth more. Use that scale to count.",
-        "new": "Look at the key of the pictograph: each picture does not stand for 1, it stands for more. Use that scale to count."
       }
     },
     {
@@ -4794,19 +4689,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7iyf00w76krht6b9adyq",
-      "grade": 3,
-      "prompt": "En un pictograma cada auto vale 5 personas. El grupo A tiene 3 autos y el grupo B tiene 5 autos. ¿Cuántas personas hay en el grupo B?",
-      "promptEn": {
-        "old": "In a pictogram each car is worth 5 people. Group A has 3 cars and group B has 5 cars. How many people are in group B?",
-        "new": "In a pictograph each car stands for 5 people. Group A has 3 cars and group B has 5 cars. How many people are in group B?"
-      },
-      "procedureNoteEn": {
-        "old": "Check which group you are asked about and multiply its pictures by what each one is worth.",
-        "new": "Check which group you are asked about and multiply its pictures by what each one stands for."
-      }
-    },
-    {
       "exerciseId": "cmulu2x5i04g94crhj45mahi1",
       "grade": 3,
       "prompt": "En un pictograma, cada dibujo de balón vale 2 goles. En «Lunes» hay 4 dibujos de balón. ¿Cuántos goles representa?",
@@ -4830,15 +4712,6 @@
       "procedureNoteEn": {
         "old": "Count all the drawings from the three days and then use what each drawing is worth.",
         "new": "Count all the drawings from the three days and then use what each drawing stands for."
-      }
-    },
-    {
-      "exerciseId": "cmuli7iy600vx6krhu7gbqa5u",
-      "grade": 3,
-      "prompt": "En un gráfico, la barra de manzanas llega a 7 y la de peras a 4. ¿Cuántas manzanas más que peras hay?",
-      "promptEn": {
-        "old": "In a graph, the apple bar reaches 7 and the pear bar reaches 4. How many more apples than pears are there?",
-        "new": "In a bar graph, the apple bar reaches 7 and the pear bar reaches 4. How many more apples than pears are there?"
       }
     },
     {
@@ -4968,19 +4841,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7iy200vs6krh8zoftlh2",
-      "grade": 3,
-      "prompt": "En un gráfico de barras, cada cuadrito del eje vale 5. La barra del sábado llega a 6 cuadritos. ¿Cuántas personas representa?",
-      "promptEn": {
-        "old": "In a bar graph, each square on the axis is worth 5. Saturday's bar reaches 6 squares. How many people does it represent?",
-        "new": "In a bar graph, each square on the axis stands for 5. Saturday's bar reaches 6 squares. How many people does it represent?"
-      },
-      "procedureNoteEn": {
-        "old": "Each square is not 1, it is worth more. Use the scale of the axis to find the value of the bar.",
-        "new": "Each square does not stand for 1, it stands for more. Use the scale of the axis to find the value of the bar."
-      }
-    },
-    {
       "exerciseId": "cmulu2xaf04ly4crh1zv13d0t",
       "grade": 3,
       "prompt": "En un pictograma cada galleta dibujada representa 3 galletas vendidas. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántas galletas se vendieron en total?",
@@ -5107,19 +4967,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7iyt00wh6krh25euztl0",
-      "grade": 3,
-      "prompt": "En un pictograma cada libro dibujado representa 3 libros prestados. El lunes hay 2 dibujos, el martes 4 y el miércoles 3. ¿Cuántos libros se prestaron en total?",
-      "promptEn": {
-        "old": "In a pictogram each drawn book represents 3 borrowed books. Monday has 2 pictures, Tuesday 4 and Wednesday 3. How many books were borrowed in total?",
-        "new": "In a pictograph each drawn book represents 3 borrowed books. Monday has 2 pictures, Tuesday 4 and Wednesday 3. How many books were borrowed in total?"
-      },
-      "procedureNoteEn": {
-        "old": "Count all the pictures from the three days and then use what each picture is worth.",
-        "new": "Count all the pictures from the three days and then use what each picture stands for."
-      }
-    },
-    {
       "exerciseId": "cmulu2xbq04ms4crhwutww07h",
       "grade": 3,
       "prompt": "En un pictograma cada bote vale 5 pescadores. La caleta A tiene 3 botes y la caleta B tiene 5 botes. ¿Cuántos pescadores hay en la caleta B?",
@@ -5187,15 +5034,6 @@
       "promptEn": {
         "old": "In a chart, the basketball bar reaches 7 and the volleyball bar reaches 4. How many more children chose basketball than volleyball?",
         "new": "In a bar graph, the basketball bar reaches 7 and the volleyball bar reaches 4. How many more children chose basketball than volleyball?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7ixo00vd6krh99f51gfa",
-      "grade": 3,
-      "prompt": "En un gráfico de barras de deportes favoritos, fútbol llega hasta 10, básquetbol hasta 6 y natación hasta 4. ¿Qué deporte prefieren más niños?",
-      "promptEn": {
-        "old": "In a bar graph of favorite sports, football reaches 10, basketball reaches 6 and swimming reaches 4. Which sport do most children prefer?",
-        "new": "In a bar graph of favorite sports, soccer reaches 10, basketball reaches 6 and swimming reaches 4. Which sport do most children prefer?"
       }
     },
     {
@@ -5859,28 +5697,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7j82016f6krhczkg6hd8",
-      "grade": 4,
-      "prompt": "En un pictograma cada símbolo vale 10 libros. El martes hay 2 símbolos y medio. ¿Cuántos libros se prestaron el martes?",
-      "promptEn": {
-        "old": "In a pictograph each symbol is worth 10 books. On Tuesday there are 2 and a half symbols. How many books were borrowed on Tuesday?",
-        "new": "In a pictograph each symbol stands for 10 books. On Tuesday there are 2 and a half symbols. How many books were borrowed on Tuesday?"
-      },
-      "procedureNoteEn": {
-        "old": "A whole symbol is worth 10; half a symbol is worth half. Add what the whole symbols and the half symbol are worth.",
-        "new": "A whole symbol stands for 10; half a symbol stands for half. Add what the whole symbols and the half symbol stand for."
-      }
-    },
-    {
-      "exerciseId": "cmuli7j7n01606krh2nmzuh6d",
-      "grade": 4,
-      "prompt": "Un gráfico de barras muestra votos: Rojo 12, Azul 18 y Verde 9. ¿Qué color tiene la barra más alta?",
-      "promptEn": {
-        "old": "A bar graph shows votes: Red 12, Blue 18 and Green 9. Which colour has the tallest bar?",
-        "new": "A bar graph shows votes: Red 12, Blue 18 and Green 9. Which color has the tallest bar?"
-      }
-    },
-    {
       "exerciseId": "cmulu2yaj05ko4crhcz0wj2wx",
       "grade": 4,
       "prompt": "En un pictograma cada símbolo vale 6 bebidas vendidas en el kiosco del club. El lunes hay 3 símbolos y el martes 5. ¿Cuántas bebidas se vendieron entre los dos días?",
@@ -6033,15 +5849,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7j8a016p6krhyrc791vj",
-      "grade": 4,
-      "prompt": "En un gráfico de barras con escala de 20 en 20, la barra de María llega justo a la mitad entre 40 y 60 y la de Juan llega a 80. ¿Cuántos puntos más tiene Juan?",
-      "procedureNoteEn": {
-        "old": "First read what María's bar is worth: it sits exactly between two lines. Then compare with Juan's.",
-        "new": "First read the value of María's bar: it sits exactly between two lines. Then compare with Juan's."
-      }
-    },
-    {
       "exerciseId": "cmulu2ygq05rh4crh2r13zmi7",
       "grade": 4,
       "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los autos llega a la tercera línea después del 0. ¿Cuántos autos hay?",
@@ -6070,15 +5877,6 @@
       "procedureNoteEn": {
         "old": "Each line of the graph is worth what the scale says. Count the lines the bar goes up and read how much they are worth.",
         "new": "Each line of the graph stands for what the scale says. Count the lines the bar goes up and read what they stand for."
-      }
-    },
-    {
-      "exerciseId": "cmuli7j7j015v6krhwhdp453u",
-      "grade": 4,
-      "prompt": "En un gráfico de barras la escala sube de 10 en 10 desde el 0. La barra de los gatos llega a la tercera línea después del 0. ¿Cuántos gatos hay?",
-      "procedureNoteEn": {
-        "old": "Each line on the graph is worth what the scale says. Count how many lines the bar goes up and read what they are worth.",
-        "new": "Each line on the graph stands for what the scale says. Count how many lines the bar goes up and read what they stand for."
       }
     },
     {
@@ -6127,32 +5925,6 @@
       "procedureNoteEn": {
         "old": "A whole symbol is worth 10; half a symbol is worth half. Add what the whole symbols are worth and the half symbol.",
         "new": "A whole symbol stands for 10; half a symbol stands for half. Add what the whole symbols and the half symbol stand for."
-      }
-    },
-    {
-      "exerciseId": "cmuli7j7e015q6krhrs33vy7f",
-      "grade": 4,
-      "prompt": "En un pictograma, cada símbolo vale 5 puntos. El equipo Rojo tiene 4 símbolos. ¿Cuántos puntos tiene?",
-      "promptEn": {
-        "old": "In a pictograph, each symbol is worth 5 points. The Red team has 4 symbols. How many points does it have?",
-        "new": "In a pictograph, each symbol stands for 5 points. The Red team has 4 symbols. How many points does it have?"
-      },
-      "procedureNoteEn": {
-        "old": "Read the scale first: how much each symbol is worth. Then multiply by the number of symbols.",
-        "new": "Read the scale first: how many each symbol stands for. Then multiply by the number of symbols."
-      }
-    },
-    {
-      "exerciseId": "cmuli7j8f016u6krhrhikngjt",
-      "grade": 4,
-      "prompt": "En un pictograma cada símbolo vale 6 helados. El lunes hay 3 símbolos y el martes 5. ¿Cuántos helados se vendieron entre los dos días?",
-      "promptEn": {
-        "old": "In a pictograph each symbol is worth 6 ice creams. On Monday there are 3 symbols and on Tuesday 5. How many ice creams were sold over the two days?",
-        "new": "In a pictograph each symbol stands for 6 ice creams. On Monday there are 3 symbols and on Tuesday 5. How many ice creams were sold over the two days?"
-      },
-      "procedureNoteEn": {
-        "old": "Count the symbols for both days and multiply by what each symbol is worth.",
-        "new": "Count the symbols for both days and multiply by what each symbol stands for."
       }
     },
     {
@@ -8012,15 +7784,6 @@
       "promptEn": {
         "old": "A circle graph shows the favourite character of 200 players. Sector \"A\" is 40%. How many players chose character A?",
         "new": "A pie chart shows the favorite character of 200 players. Section \"A\" is 40%. How many players chose character A?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7jry01qy6krhjspvkl2b",
-      "grade": 6,
-      "prompt": "Un gráfico de barras dobles compara la nota de dos cursos en Matemática. Aprobaron 28 estudiantes de 6°A y 24 de 6°B. ¿Cuántos estudiantes aprobaron entre los dos cursos?",
-      "promptEn": {
-        "old": "A double bar graph compares two classes' Mathematics results. 28 students from 6°A and 24 from 6°B passed. How many students passed in the two classes together?",
-        "new": "A double bar graph compares the math test results of two classes. 28 students from class 6A and 24 from class 6B passed. How many students passed in the two classes together?"
       }
     },
     {
