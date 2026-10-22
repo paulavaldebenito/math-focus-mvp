@@ -1718,5 +1718,997 @@
     "en": "It’s written as 3 + 1/4 and the whole from the fractions gets lost. Answer: 3 1/4."
    }
   }
+ },
+ {
+  "key": "cmvjh3n23000sa6rh2nb4oe3r",
+  "oa": "MA03 OA11",
+  "prompt": "Mira la barra de chocolate. ¿Qué fracción de la barra está pintada?",
+  "steps": [
+   {
+    "es": "Cuenta las partes iguales: son 4. Abajo va 4.",
+    "en": "Count the equal parts: there are 4. 4 goes on the bottom."
+   },
+   {
+    "es": "Cuenta las partes pintadas: 1. Arriba va 1. Respuesta: 1/4.",
+    "en": "Count the colored parts: 1. 1 goes on top. Answer: 1/4."
+   }
+  ],
+  "wrong": {
+   "3/4": {
+    "step": 1,
+    "es": "Se cuentan las partes sin pintar: 3. Respuesta: 3/4.",
+    "en": "The uncolored parts are counted: 3. Answer: 3/4."
+   },
+   "4/1": {
+    "step": 1,
+    "es": "Arriba va el total (4) y abajo lo pintado (1). Respuesta: 4/1.",
+    "en": "The total (4) goes on top and the colored part (1) on the bottom. Answer: 4/1."
+   },
+   "1/3": {
+    "step": 0,
+    "es": "Abajo se pone solo lo que no está pintado: 3. Respuesta: 1/3.",
+    "en": "Only the uncolored parts go on the bottom: 3. Answer: 1/3."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n37000xa6rhu5gs6r5h",
+  "oa": "MA03 OA11",
+  "prompt": "Mira la hoja doblada. ¿Qué fracción de la hoja está pintada?",
+  "steps": [
+   {
+    "es": "Cuenta las partes iguales: son 2. Abajo va 2.",
+    "en": "Count the equal parts: there are 2. 2 goes on the bottom."
+   },
+   {
+    "es": "Cuenta las partes pintadas: 1. Arriba va 1. Respuesta: 1/2.",
+    "en": "Count the colored parts: 1. 1 goes on top. Answer: 1/2."
+   }
+  ],
+  "wrong": {
+   "2/1": {
+    "step": 1,
+    "es": "Arriba va el total (2) y abajo lo pintado (1). Respuesta: 2/1.",
+    "en": "The total (2) goes on top and the colored part (1) on the bottom. Answer: 2/1."
+   },
+   "1/1": {
+    "step": 0,
+    "es": "Abajo se pone solo la parte sin pintar: 1. Respuesta: 1/1.",
+    "en": "Only the uncolored part goes on the bottom: 1. Answer: 1/1."
+   },
+   "2/2": {
+    "step": 1,
+    "es": "Se cuentan todas las partes como pintadas: 2. Respuesta: 2/2.",
+    "en": "All the parts are counted as colored: 2. Answer: 2/2."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n4c0012a6rhcjzuhdww",
+  "oa": "MA03 OA11",
+  "prompt": "Mira la cinta. ¿Qué fracción de la cinta está pintada?",
+  "steps": [
+   {
+    "es": "Cuenta las partes iguales: son 3. Abajo va 3.",
+    "en": "Count the equal parts: there are 3. 3 goes on the bottom."
+   },
+   {
+    "es": "Cuenta las partes pintadas: 1. Arriba va 1. Respuesta: 1/3.",
+    "en": "Count the colored parts: 1. 1 goes on top. Answer: 1/3."
+   }
+  ],
+  "wrong": {
+   "3/1": {
+    "step": 1,
+    "es": "Arriba va el total (3) y abajo lo pintado (1). Respuesta: 3/1.",
+    "en": "The total (3) goes on top and the colored part (1) on the bottom. Answer: 3/1."
+   },
+   "1/2": {
+    "step": 0,
+    "es": "Abajo se pone solo lo que no está pintado: 2. Respuesta: 1/2.",
+    "en": "Only the uncolored parts go on the bottom: 2. Answer: 1/2."
+   },
+   "2/3": {
+    "step": 1,
+    "es": "Se cuentan las partes sin pintar: 2. Respuesta: 2/3.",
+    "en": "The uncolored parts are counted: 2. Answer: 2/3."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n5e0017a6rhvd303gxz",
+  "oa": "MA03 OA11",
+  "prompt": "Mira la pared. ¿Qué fracción de la pared está pintada?",
+  "steps": [
+   {
+    "es": "Cuenta las partes iguales: son 3. Abajo va 3.",
+    "en": "Count the equal parts: there are 3. 3 goes on the bottom."
+   },
+   {
+    "es": "Cuenta las partes pintadas: 2. Arriba va 2. Respuesta: 2/3.",
+    "en": "Count the colored parts: 2. 2 goes on top. Answer: 2/3."
+   }
+  ],
+  "wrong": {
+   "1/3": {
+    "step": 1,
+    "es": "Se cuenta la parte sin pintar: 1. Respuesta: 1/3.",
+    "en": "The unpainted part is counted: 1. Answer: 1/3."
+   },
+   "3/2": {
+    "step": 1,
+    "es": "Arriba va el total (3) y abajo lo pintado (2). Respuesta: 3/2.",
+    "en": "The total (3) goes on top and the painted parts (2) on the bottom. Answer: 3/2."
+   },
+   "2/1": {
+    "step": 0,
+    "es": "Abajo se pone solo la parte sin pintar: 1. Respuesta: 2/1.",
+    "en": "Only the unpainted part goes on the bottom: 1. Answer: 2/1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n6h001ca6rhqsax2j6t",
+  "oa": "MA03 OA11",
+  "prompt": "Mira el jardín. ¿Qué fracción del jardín tiene flores?",
+  "steps": [
+   {
+    "es": "Cuenta las partes iguales: son 4. Abajo va 4.",
+    "en": "Count the equal parts: there are 4. 4 goes on the bottom."
+   },
+   {
+    "es": "Cuenta las partes con flores (azules): 3. Arriba va 3. Respuesta: 3/4.",
+    "en": "Count the parts with flowers (blue): 3. 3 goes on top. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 1,
+    "es": "Se cuenta la parte sin flores: 1. Respuesta: 1/4.",
+    "en": "The part without flowers is counted: 1. Answer: 1/4."
+   },
+   "4/3": {
+    "step": 1,
+    "es": "Arriba va el total (4) y abajo las partes con flores (3). Respuesta: 4/3.",
+    "en": "The total (4) goes on top and the parts with flowers (3) on the bottom. Answer: 4/3."
+   },
+   "3/1": {
+    "step": 0,
+    "es": "Abajo se pone solo la parte sin flores: 1. Respuesta: 3/1.",
+    "en": "Only the part without flowers goes on the bottom: 1. Answer: 3/1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n7l001ha6rhomgl0l5f",
+  "oa": "MA03 OA11",
+  "prompt": "Mira las barras de Ana y Beto. ¿Cuál está dividida en cuartos?",
+  "steps": [
+   {
+    "es": "Las dos barras tienen 4 partes.",
+    "en": "Both bars have 4 parts."
+   },
+   {
+    "es": "En los cuartos las 4 partes tienen que ser iguales: solo las de Ana lo son. Respuesta: la de Ana.",
+    "en": "For fourths the 4 parts must be equal: only Ana's are. Answer: Ana's."
+   }
+  ],
+  "wrong": {
+   "La de Beto": {
+    "step": 1,
+    "es": "Se elige la de Beto porque tiene 4 partes, sin mirar si son iguales. Respuesta: la de Beto.",
+    "en": "Beto's is chosen because it has 4 parts, without checking if they're equal. Answer: Beto's."
+   },
+   "Las dos": {
+    "step": 1,
+    "es": "Como las dos tienen 4 partes, se piensa que las dos son cuartos. Respuesta: las dos.",
+    "en": "Since both have 4 parts, it's assumed both are fourths. Answer: both."
+   },
+   "Ninguna": {
+    "step": 0,
+    "es": "Se piensa que ninguna tiene 4 partes. Respuesta: ninguna.",
+    "en": "It's thought that neither has 4 parts. Answer: neither."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n8q001ma6rh122wkz4m",
+  "oa": "MA03 OA11",
+  "prompt": "Una naranja se parte en 2 partes iguales. ¿Cómo se llama cada parte?",
+  "steps": [
+   {
+    "es": "La naranja se divide en 2 partes iguales: abajo va 2 (medios).",
+    "en": "The orange is divided into 2 equal parts: 2 goes on the bottom (halves)."
+   },
+   {
+    "es": "Cada parte es 1 de las 2: 1/2, un medio. Respuesta: 1/2, un medio.",
+    "en": "Each part is 1 of the 2: 1/2, one half. Answer: 1/2, one half."
+   }
+  ],
+  "wrong": {
+   "1/3, un tercio": {
+    "step": 0,
+    "es": "Se piensa que 2 partes son tercios. Respuesta: 1/3.",
+    "en": "2 parts are taken to be thirds. Answer: 1/3."
+   },
+   "1/4, un cuarto": {
+    "step": 0,
+    "es": "Se piensa que 2 partes son cuartos. Respuesta: 1/4.",
+    "en": "2 parts are taken to be fourths. Answer: 1/4."
+   },
+   "2/2, dos medios": {
+    "step": 1,
+    "es": "Se nombran las dos partes juntas: 2/2. Respuesta: 2/2.",
+    "en": "Both parts together are named: 2/2. Answer: 2/2."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3n9v001ra6rhwme0w9ky",
+  "oa": "MA03 OA11",
+  "prompt": "Un queque se corta en 4 partes iguales. ¿Cómo se llama cada parte?",
+  "steps": [
+   {
+    "es": "El queque se corta en 4 partes iguales: abajo va 4 (cuartos).",
+    "en": "The cake is cut into 4 equal parts: 4 goes on the bottom (fourths)."
+   },
+   {
+    "es": "Cada parte es 1 de las 4: 1/4, un cuarto. Respuesta: 1/4, un cuarto.",
+    "en": "Each part is 1 of the 4: 1/4, one fourth. Answer: 1/4, one fourth."
+   }
+  ],
+  "wrong": {
+   "1/2, un medio": {
+    "step": 0,
+    "es": "Se piensa que 4 partes son medios. Respuesta: 1/2.",
+    "en": "4 parts are taken to be halves. Answer: 1/2."
+   },
+   "4/4, cuatro cuartos": {
+    "step": 1,
+    "es": "Se nombran todas las partes juntas: 4/4. Respuesta: 4/4.",
+    "en": "All the parts together are named: 4/4. Answer: 4/4."
+   },
+   "1/3, un tercio": {
+    "step": 0,
+    "es": "Se cuentan 3 partes en vez de 4. Respuesta: 1/3.",
+    "en": "3 parts are counted instead of 4. Answer: 1/3."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3naz001wa6rh63uahhr7",
+  "oa": "MA03 OA11",
+  "prompt": "¿En cuántas partes iguales hay que dividir un entero para obtener tercios?",
+  "steps": [
+   {
+    "es": "Medios: 2 partes iguales. Cuartos: 4 partes iguales.",
+    "en": "Halves: 2 equal parts. Fourths: 4 equal parts."
+   },
+   {
+    "es": "Tercios: 3 partes iguales, cada una es 1/3. Respuesta: 3.",
+    "en": "Thirds: 3 equal parts, each one is 1/3. Answer: 3."
+   }
+  ],
+  "wrong": {
+   "2": {
+    "step": 1,
+    "es": "Se confunden los tercios con los medios: 2 partes. Respuesta: 2.",
+    "en": "Thirds are mixed up with halves: 2 parts. Answer: 2."
+   },
+   "4": {
+    "step": 1,
+    "es": "Se confunden los tercios con los cuartos: 4 partes. Respuesta: 4.",
+    "en": "Thirds are mixed up with fourths: 4 parts. Answer: 4."
+   },
+   "1": {
+    "step": 1,
+    "es": "Se toma el número de arriba de 1/3. Respuesta: 1.",
+    "en": "The top number of 1/3 is taken. Answer: 1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nc20021a6rhde12das8",
+  "oa": "MA03 OA11",
+  "prompt": "En la fracción 2/3, ¿qué indica el número 2?",
+  "steps": [
+   {
+    "es": "En 2/3, el 2 está arriba: es el numerador.",
+    "en": "In 2/3, the 2 is on top: it's the numerator."
+   },
+   {
+    "es": "El numerador dice cuántas partes se toman. Respuesta: cuántas partes se toman.",
+    "en": "The numerator tells how many parts are taken. Answer: how many parts are taken."
+   }
+  ],
+  "wrong": {
+   "En cuántas partes iguales se dividió el entero": {
+    "step": 0,
+    "es": "Se confunde con el número de abajo. Respuesta: en cuántas partes iguales se dividió el entero.",
+    "en": "It's mixed up with the bottom number. Answer: how many equal parts the whole was divided into."
+   },
+   "Cuántos enteros hay": {
+    "step": 1,
+    "es": "Se piensa que el 2 cuenta enteros. Respuesta: cuántos enteros hay.",
+    "en": "The 2 is thought to count wholes. Answer: how many wholes there are."
+   },
+   "Cuántas partes sobran": {
+    "step": 1,
+    "es": "Se piensa que el 2 cuenta lo que sobra. Respuesta: cuántas partes sobran.",
+    "en": "The 2 is thought to count what's left. Answer: how many parts are left over."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nd60026a6rh0ivsywxz",
+  "oa": "MA03 OA11",
+  "prompt": "Mira la bandera. ¿Qué fracción de la bandera NO está pintada?",
+  "steps": [
+   {
+    "es": "La bandera tiene 4 partes iguales: abajo va 4.",
+    "en": "The flag has 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Partes sin pintar: 1. Arriba va 1. Respuesta: 1/4.",
+    "en": "Uncolored parts: 1. 1 goes on top. Answer: 1/4."
+   }
+  ],
+  "wrong": {
+   "3/4": {
+    "step": 1,
+    "es": "Se cuentan las partes pintadas: 3. Respuesta: 3/4.",
+    "en": "The colored parts are counted: 3. Answer: 3/4."
+   },
+   "1/3": {
+    "step": 0,
+    "es": "Abajo se ponen solo las partes pintadas: 3. Respuesta: 1/3.",
+    "en": "Only the colored parts go on the bottom: 3. Answer: 1/3."
+   },
+   "4/1": {
+    "step": 1,
+    "es": "Arriba va el total (4) y abajo la parte sin pintar (1). Respuesta: 4/1.",
+    "en": "The total (4) goes on top and the uncolored part (1) on the bottom. Answer: 4/1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nea002ba6rhy8kg9qo7",
+  "oa": "MA03 OA11",
+  "prompt": "Ana y Beto pintaron una parte de sus barras y los dos dicen que pintaron 1/3. ¿Quién tiene razón?",
+  "steps": [
+   {
+    "es": "Los dos pintaron 1 de 3 partes.",
+    "en": "Both colored 1 of 3 parts."
+   },
+   {
+    "es": "Para ser 1/3, las 3 partes tienen que ser iguales: solo las de Ana lo son. Respuesta: solo Ana.",
+    "en": "To be 1/3, the 3 parts must be equal: only Ana's are. Answer: only Ana."
+   }
+  ],
+  "wrong": {
+   "Solo Beto": {
+    "step": 1,
+    "es": "Se elige la parte más grande como si fuera 1/3. Respuesta: solo Beto.",
+    "en": "The bigger part is chosen as if it were 1/3. Answer: only Beto."
+   },
+   "Los dos": {
+    "step": 1,
+    "es": "Como los dos pintaron 1 de 3 partes, se piensa que los dos tienen razón. Respuesta: los dos.",
+    "en": "Since both colored 1 of 3 parts, both are thought to be right. Answer: both."
+   },
+   "Ninguno": {
+    "step": 0,
+    "es": "Se piensa que ninguno pintó 1 de 3 partes. Respuesta: ninguno.",
+    "en": "It's thought that neither colored 1 of 3 parts. Answer: neither."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nfe002ga6rh66elvtot",
+  "oa": "MA03 OA11",
+  "prompt": "Sofía corta una tortilla en 3 partes iguales y se come 2. ¿Qué fracción de la tortilla se comió?",
+  "steps": [
+   {
+    "es": "La tortilla tiene 3 partes iguales: abajo va 3.",
+    "en": "The flatbread has 3 equal parts: 3 goes on the bottom."
+   },
+   {
+    "es": "Se comió 2 partes: arriba va 2. Respuesta: 2/3.",
+    "en": "She ate 2 parts: 2 goes on top. Answer: 2/3."
+   }
+  ],
+  "wrong": {
+   "1/3": {
+    "step": 1,
+    "es": "Se cuenta la parte que queda: 1. Respuesta: 1/3.",
+    "en": "The part left is counted: 1. Answer: 1/3."
+   },
+   "3/2": {
+    "step": 1,
+    "es": "Arriba va el total (3) y abajo lo que se comió (2). Respuesta: 3/2.",
+    "en": "The total (3) goes on top and what she ate (2) on the bottom. Answer: 3/2."
+   },
+   "2/5": {
+    "step": 0,
+    "es": "Se suman los números: 3 + 2 = 5, así que abajo va 5. Respuesta: 2/5.",
+    "en": "The numbers are added: 3 + 2 = 5, so 5 goes on the bottom. Answer: 2/5."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3ngg002la6rh7kk41c7j",
+  "oa": "MA03 OA11",
+  "prompt": "Un huerto se divide en 4 partes iguales. En 1 parte se plantan lechugas y en las demás, zanahorias. ¿Qué fracción del huerto tiene zanahorias?",
+  "steps": [
+   {
+    "es": "El huerto tiene 4 partes iguales: abajo va 4.",
+    "en": "The garden has 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Partes con zanahorias: 4 − 1 = 3.",
+    "en": "Parts with carrots: 4 − 1 = 3."
+   },
+   {
+    "es": "Arriba va 3. Respuesta: 3/4.",
+    "en": "3 goes on top. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 1,
+    "es": "Se toma la parte con lechugas: 1. Respuesta: 1/4.",
+    "en": "The part with lettuce is taken: 1. Answer: 1/4."
+   },
+   "3/1": {
+    "step": 0,
+    "es": "Abajo se pone la parte con lechugas: 1. Respuesta: 3/1.",
+    "en": "The lettuce part goes on the bottom: 1. Answer: 3/1."
+   },
+   "4/3": {
+    "step": 2,
+    "es": "Arriba va el total (4) y abajo las partes con zanahorias (3). Respuesta: 4/3.",
+    "en": "The total (4) goes on top and the carrot parts (3) on the bottom. Answer: 4/3."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nhs002qa6rh0xk86iwp",
+  "oa": "MA03 OA11",
+  "prompt": "¿En qué situación se usa la fracción 1/2?",
+  "steps": [
+   {
+    "es": "1/2 significa: el entero dividido en 2 partes iguales.",
+    "en": "1/2 means: the whole divided into 2 equal parts."
+   },
+   {
+    "es": "Y se toma 1 de esas partes. Respuesta: se corta una pizza en 2 partes iguales y se come 1.",
+    "en": "And 1 of those parts is taken. Answer: a pizza is cut into 2 equal parts and 1 is eaten."
+   }
+  ],
+  "wrong": {
+   "Se corta una pizza en 2 partes de distinto tamaño y se come 1": {
+    "step": 0,
+    "es": "Se divide en 2 partes, pero no iguales. Respuesta: 2 partes de distinto tamaño.",
+    "en": "It's divided into 2 parts, but not equal ones. Answer: 2 parts of different sizes."
+   },
+   "Se compran 2 pizzas y se come 1 entera": {
+    "step": 0,
+    "es": "Se usan 2 pizzas enteras en vez de 2 partes de una. Respuesta: se compran 2 pizzas y se come 1.",
+    "en": "2 whole pizzas are used instead of 2 parts of one. Answer: 2 pizzas are bought and 1 is eaten."
+   },
+   "Se corta una pizza en 4 partes iguales y se come 1": {
+    "step": 0,
+    "es": "Se divide en 4 partes iguales en vez de 2. Respuesta: 4 partes, se come 1.",
+    "en": "It's divided into 4 equal parts instead of 2. Answer: 4 parts, 1 eaten."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3niz002va6rh1q5s9nl1",
+  "oa": "MA03 OA11",
+  "prompt": "¿Qué fracción representa «tres de cuatro partes iguales»?",
+  "steps": [
+   {
+    "es": "El total de partes iguales es 4: abajo va 4.",
+    "en": "The total equal parts is 4: 4 goes on the bottom."
+   },
+   {
+    "es": "Se toman 3: arriba va 3. Respuesta: 3/4.",
+    "en": "3 are taken: 3 goes on top. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "4/3": {
+    "step": 1,
+    "es": "Arriba va el total (4) y abajo las partes tomadas (3). Respuesta: 4/3.",
+    "en": "The total (4) goes on top and the parts taken (3) on the bottom. Answer: 4/3."
+   },
+   "3/7": {
+    "step": 0,
+    "es": "Se suman: 3 + 4 = 7, así que abajo va 7. Respuesta: 3/7.",
+    "en": "They're added: 3 + 4 = 7, so 7 goes on the bottom. Answer: 3/7."
+   },
+   "1/4": {
+    "step": 1,
+    "es": "Se cuenta la parte que no se toma: 1. Respuesta: 1/4.",
+    "en": "The part not taken is counted: 1. Answer: 1/4."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nk30030a6rhjudbd50m",
+  "oa": "MA03 OA11",
+  "prompt": "Mira las barras de Leo y Ema. ¿Quién pintó una parte mayor de su barra?",
+  "steps": [
+   {
+    "es": "Las dos barras tienen 4 partes iguales del mismo tamaño.",
+    "en": "Both bars have 4 equal parts of the same size."
+   },
+   {
+    "es": "Leo pintó 1/4 y Ema 3/4.",
+    "en": "Leo colored 1/4 and Ema 3/4."
+   },
+   {
+    "es": "3 partes es más que 1 parte. Respuesta: Ema.",
+    "en": "3 parts is more than 1 part. Answer: Ema."
+   }
+  ],
+  "wrong": {
+   "Leo": {
+    "step": 2,
+    "es": "Se elige a quien pintó menos partes. Respuesta: Leo.",
+    "en": "The one who colored fewer parts is chosen. Answer: Leo."
+   },
+   "Los dos igual": {
+    "step": 1,
+    "es": "Como las barras son iguales, se piensa que pintaron lo mismo. Respuesta: los dos igual.",
+    "en": "Since the bars are the same, it's assumed they colored the same. Answer: both the same."
+   },
+   "3/4": {
+    "step": 2,
+    "es": "Se responde con la fracción en vez del nombre. Respuesta: 3/4.",
+    "en": "The fraction is given instead of the name. Answer: 3/4."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nl60035a6rhdod0i2ba",
+  "oa": "MA03 OA11",
+  "prompt": "Una cinta se divide en 3 partes iguales. ¿Qué trozo es más largo: 1/3 o 2/3 de la cinta?",
+  "steps": [
+   {
+    "es": "Las dos fracciones son de la misma cinta, con 3 partes iguales.",
+    "en": "Both fractions are of the same ribbon, with 3 equal parts."
+   },
+   {
+    "es": "Se comparan los números de arriba: 2 es más que 1. Respuesta: 2/3.",
+    "en": "Compare the top numbers: 2 is more than 1. Answer: 2/3."
+   }
+  ],
+  "wrong": {
+   "1/3": {
+    "step": 1,
+    "es": "Se elige el número de arriba más chico: 1. Respuesta: 1/3.",
+    "en": "The smaller top number is chosen: 1. Answer: 1/3."
+   },
+   "Son iguales": {
+    "step": 1,
+    "es": "Como las dos tienen 3 abajo, se piensa que son iguales. Respuesta: son iguales.",
+    "en": "Since both have 3 on the bottom, they're assumed equal. Answer: they're equal."
+   },
+   "No se puede saber": {
+    "step": 0,
+    "es": "Se piensa que faltan datos para comparar. Respuesta: no se puede saber.",
+    "en": "It's assumed there isn't enough data. Answer: you can't tell."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nm9003aa6rhthaaoqaj",
+  "oa": "MA03 OA11",
+  "prompt": "Pedro comió 1/4 de un queque y Rosa comió 3/4 del mismo queque. ¿Quién comió más?",
+  "steps": [
+   {
+    "es": "Las dos fracciones son del mismo queque, con 4 partes iguales.",
+    "en": "Both fractions are of the same cake, with 4 equal parts."
+   },
+   {
+    "es": "Se comparan los números de arriba: 3 es más que 1. Respuesta: Rosa.",
+    "en": "Compare the top numbers: 3 is more than 1. Answer: Rosa."
+   }
+  ],
+  "wrong": {
+   "Pedro": {
+    "step": 1,
+    "es": "Se elige el número de arriba más chico: 1. Respuesta: Pedro.",
+    "en": "The smaller top number is chosen: 1. Answer: Pedro."
+   },
+   "Comieron lo mismo": {
+    "step": 1,
+    "es": "Como las dos fracciones tienen el mismo número abajo, se piensa que son iguales. Respuesta: comieron lo mismo.",
+    "en": "Since both fractions have the same bottom number, they're assumed equal. Answer: they ate the same."
+   },
+   "No se puede saber": {
+    "step": 0,
+    "es": "Se piensa que faltan datos para comparar. Respuesta: no se puede saber.",
+    "en": "It's assumed there isn't enough data. Answer: you can't tell."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nnb003fa6rhereb836l",
+  "oa": "MA03 OA11",
+  "prompt": "Una barra tiene 3 partes iguales y 1 está pintada. ¿Cuántas partes más hay que pintar para que quede pintado 2/3 de la barra?",
+  "steps": [
+   {
+    "es": "2/3 son 2 de las 3 partes iguales.",
+    "en": "2/3 is 2 of the 3 equal parts."
+   },
+   {
+    "es": "Ya hay 1 pintada: 2 − 1 = 1. Respuesta: 1.",
+    "en": "1 is already colored: 2 − 1 = 1. Answer: 1."
+   }
+  ],
+  "wrong": {
+   "2": {
+    "step": 1,
+    "es": "Se olvida la parte ya pintada y se pintan 2 más. Respuesta: 2.",
+    "en": "The part already colored is forgotten and 2 more are colored. Answer: 2."
+   },
+   "3": {
+    "step": 0,
+    "es": "Se piensa que 2/3 es pintar las 3 partes. Respuesta: 3.",
+    "en": "2/3 is thought to mean coloring all 3 parts. Answer: 3."
+   },
+   "0": {
+    "step": 1,
+    "es": "Se piensa que ya está pintado 2/3. Respuesta: 0.",
+    "en": "It's thought 2/3 is already colored. Answer: 0."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nof003ka6rhb91pwyq5",
+  "oa": "MA03 OA11",
+  "prompt": "Una cinta se corta en 4 partes iguales. Se usa 1 parte para envolver un regalo y 2 partes para adornar un cuaderno. ¿Qué fracción de la cinta se usó?",
+  "steps": [
+   {
+    "es": "La cinta tiene 4 partes iguales: abajo va 4.",
+    "en": "The ribbon has 4 equal parts: 4 goes on the bottom."
+   },
+   {
+    "es": "Partes usadas: 1 + 2 = 3.",
+    "en": "Parts used: 1 + 2 = 3."
+   },
+   {
+    "es": "Arriba va 3. Respuesta: 3/4.",
+    "en": "3 goes on top. Answer: 3/4."
+   }
+  ],
+  "wrong": {
+   "2/4": {
+    "step": 1,
+    "es": "Se cuenta solo lo del cuaderno: 2. Respuesta: 2/4.",
+    "en": "Only the notebook part is counted: 2. Answer: 2/4."
+   },
+   "1/4": {
+    "step": 2,
+    "es": "Se cuenta la parte que sobra: 1. Respuesta: 1/4.",
+    "en": "The part left over is counted: 1. Answer: 1/4."
+   },
+   "3/8": {
+    "step": 2,
+    "es": "Se suman también los números de abajo: 4 + 4 = 8. Respuesta: 3/8.",
+    "en": "The bottom numbers are added too: 4 + 4 = 8. Answer: 3/8."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3npj003pa6rhy1z8g15b",
+  "oa": "MA03 OA11",
+  "prompt": "Javier dice: «Si corto una pizza en 4 pedazos, cada pedazo es 1/4». ¿Tiene razón?",
+  "steps": [
+   {
+    "es": "Un cuarto es 1 de 4 partes del entero.",
+    "en": "A fourth is 1 of 4 parts of the whole."
+   },
+   {
+    "es": "Pero las 4 partes tienen que ser iguales. Respuesta: solo si los 4 pedazos son iguales.",
+    "en": "But the 4 parts must be equal. Answer: only if the 4 pieces are equal."
+   }
+  ],
+  "wrong": {
+   "Sí, siempre": {
+    "step": 1,
+    "es": "Se piensa que basta con tener 4 pedazos. Respuesta: sí, siempre.",
+    "en": "It's assumed having 4 pieces is enough. Answer: yes, always."
+   },
+   "No, cada pedazo es 1/2": {
+    "step": 0,
+    "es": "Se piensa que 4 pedazos son medios. Respuesta: 1/2.",
+    "en": "4 pieces are taken to be halves. Answer: 1/2."
+   },
+   "No, cada pedazo es 4/1": {
+    "step": 0,
+    "es": "Arriba va el total (4) y abajo el pedazo (1). Respuesta: 4/1.",
+    "en": "The total (4) goes on top and the piece (1) on the bottom. Answer: 4/1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nqm003ua6rhnw2af2l0",
+  "oa": "MA03 OA11",
+  "prompt": "Martín pintó 2 de las 3 partes iguales de una cartulina. Valentina dice que Martín pintó 2/3 y Tomás dice que pintó 3/2. ¿Quién tiene razón?",
+  "steps": [
+   {
+    "es": "Total de partes iguales: 3. Abajo va 3.",
+    "en": "Total equal parts: 3. 3 goes on the bottom."
+   },
+   {
+    "es": "Partes pintadas: 2. Arriba va 2: 2/3. Respuesta: Valentina.",
+    "en": "Colored parts: 2. 2 goes on top: 2/3. Answer: Valentina."
+   }
+  ],
+  "wrong": {
+   "Tomás": {
+    "step": 1,
+    "es": "Arriba va el total (3) y abajo lo pintado (2): 3/2. Respuesta: Tomás.",
+    "en": "The total (3) goes on top and the colored parts (2) on the bottom: 3/2. Answer: Tomás."
+   },
+   "Los dos": {
+    "step": 1,
+    "es": "Se piensa que el orden no importa. Respuesta: los dos.",
+    "en": "It's assumed the order doesn't matter. Answer: both."
+   },
+   "Ninguno": {
+    "step": 0,
+    "es": "Se piensa que ninguno usó bien los datos. Respuesta: ninguno.",
+    "en": "It's assumed neither used the data correctly. Answer: neither."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nrq003za6rhydghn5on",
+  "oa": "MA03 OA11",
+  "prompt": "Un chocolate tiene 3 partes iguales. Lucas se come 1 parte y su hermana se come otra parte. ¿Qué fracción del chocolate queda?",
+  "steps": [
+   {
+    "es": "El chocolate tiene 3 partes iguales: abajo va 3.",
+    "en": "The chocolate bar has 3 equal parts: 3 goes on the bottom."
+   },
+   {
+    "es": "Se comieron 1 + 1 = 2 partes.",
+    "en": "1 + 1 = 2 parts were eaten."
+   },
+   {
+    "es": "Queda 3 − 2 = 1 parte. Respuesta: 1/3.",
+    "en": "3 − 2 = 1 part is left. Answer: 1/3."
+   }
+  ],
+  "wrong": {
+   "2/3": {
+    "step": 2,
+    "es": "Se cuenta lo que se comieron: 2. Respuesta: 2/3.",
+    "en": "What was eaten is counted: 2. Answer: 2/3."
+   },
+   "1/2": {
+    "step": 2,
+    "es": "Queda 1 parte, y abajo se pone lo que se comieron (2). Respuesta: 1/2.",
+    "en": "1 part is left, and what was eaten (2) goes on the bottom. Answer: 1/2."
+   },
+   "3/3": {
+    "step": 1,
+    "es": "No se descuenta lo que se comieron: quedan 3. Respuesta: 3/3.",
+    "en": "What was eaten isn't taken away: 3 are left. Answer: 3/3."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nsu0044a6rhd047pxly",
+  "oa": "MA03 OA11",
+  "prompt": "¿Cuál de estas situaciones muestra la fracción 3/4?",
+  "steps": [
+   {
+    "es": "3/4: el entero dividido en 4 partes iguales.",
+    "en": "3/4: the whole divided into 4 equal parts."
+   },
+   {
+    "es": "Y se toman 3 de esas partes. Respuesta: la pizza en 4 partes iguales con 3 que quedan.",
+    "en": "And 3 of those parts are taken. Answer: the pizza in 4 equal parts with 3 left."
+   }
+  ],
+  "wrong": {
+   "Una pizza cortada en 3 partes iguales, y se comen 4": {
+    "step": 0,
+    "es": "Se divide en 3 y se toman 4, al revés. Respuesta: 3 partes y se comen 4.",
+    "en": "It's divided into 3 and 4 are taken, the other way around. Answer: 3 parts, 4 eaten."
+   },
+   "Una pizza cortada en 4 partes de distinto tamaño, y quedan 3": {
+    "step": 0,
+    "es": "Se divide en 4 partes, pero no iguales. Respuesta: 4 partes de distinto tamaño.",
+    "en": "It's divided into 4 parts, but not equal ones. Answer: 4 parts of different sizes."
+   },
+   "Una pizza cortada en 7 partes iguales, y quedan 3": {
+    "step": 0,
+    "es": "Se suman 3 + 4 = 7 partes. Respuesta: 7 partes y quedan 3.",
+    "en": "3 + 4 = 7 parts are added. Answer: 7 parts with 3 left."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3ntx0049a6rhfwyyze1w",
+  "oa": "MA03 OA11",
+  "prompt": "Mira las barras de Ana y Beto. ¿Quién dejó sin pintar 1/4 de su barra?",
+  "steps": [
+   {
+    "es": "Las dos barras tienen 4 partes iguales.",
+    "en": "Both bars have 4 equal parts."
+   },
+   {
+    "es": "Ana dejó 1 parte sin pintar (1/4) y Beto dejó 3 (3/4).",
+    "en": "Ana left 1 part uncolored (1/4) and Beto left 3 (3/4)."
+   },
+   {
+    "es": "Respuesta: Ana.",
+    "en": "Answer: Ana."
+   }
+  ],
+  "wrong": {
+   "Beto": {
+    "step": 1,
+    "es": "Se mira la parte pintada en vez de la sin pintar: Beto pintó 1/4. Respuesta: Beto.",
+    "en": "The colored part is checked instead of the uncolored one: Beto colored 1/4. Answer: Beto."
+   },
+   "Los dos": {
+    "step": 1,
+    "es": "Se piensa que las dos barras dejaron lo mismo sin pintar. Respuesta: los dos.",
+    "en": "Both bars are assumed to have the same uncolored part. Answer: both."
+   },
+   "Ninguno": {
+    "step": 1,
+    "es": "Se cuentan mal las partes sin pintar. Respuesta: ninguno.",
+    "en": "The uncolored parts are miscounted. Answer: neither."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nv1004ea6rhvj2cgttf",
+  "oa": "MA03 OA11",
+  "prompt": "Rodrigo dobla una hoja en 2 partes iguales y después dobla cada parte otra vez por la mitad. ¿En cuántas partes iguales quedó la hoja y qué fracción es cada parte?",
+  "steps": [
+   {
+    "es": "Primer doblez: 2 partes iguales.",
+    "en": "First fold: 2 equal parts."
+   },
+   {
+    "es": "Cada parte se dobla por la mitad: 2 + 2 = 4 partes iguales.",
+    "en": "Each part is folded in half: 2 + 2 = 4 equal parts."
+   },
+   {
+    "es": "Cada parte es 1 de 4: 1/4. Respuesta: 4 partes; cada una es 1/4.",
+    "en": "Each part is 1 of 4: 1/4. Answer: 4 parts; each is 1/4."
+   }
+  ],
+  "wrong": {
+   "3 partes; cada una es 1/3": {
+    "step": 1,
+    "es": "Se cuenta 1 parte más en vez de duplicar: 3 partes. Respuesta: 3 partes, 1/3.",
+    "en": "1 more part is counted instead of doubling: 3 parts. Answer: 3 parts, 1/3."
+   },
+   "2 partes; cada una es 1/2": {
+    "step": 1,
+    "es": "Se olvida el segundo doblez: 2 partes. Respuesta: 2 partes, 1/2.",
+    "en": "The second fold is forgotten: 2 parts. Answer: 2 parts, 1/2."
+   },
+   "4 partes; cada una es 4/1": {
+    "step": 2,
+    "es": "Arriba va el total (4) y abajo la parte (1). Respuesta: 4 partes, 4/1.",
+    "en": "The total (4) goes on top and the part (1) on the bottom. Answer: 4 parts, 4/1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nw4004ja6rh9krgwogy",
+  "oa": "MA03 OA11",
+  "prompt": "Isidora quiere repartir un queque en partes iguales entre ella y 2 amigas. ¿Qué fracción del queque recibe cada una?",
+  "steps": [
+   {
+    "es": "Personas: Isidora + 2 amigas = 3.",
+    "en": "People: Isidora + 2 friends = 3."
+   },
+   {
+    "es": "El queque se divide en 3 partes iguales: abajo va 3.",
+    "en": "The cake is divided into 3 equal parts: 3 goes on the bottom."
+   },
+   {
+    "es": "Cada una recibe 1 parte. Respuesta: 1/3.",
+    "en": "Each gets 1 part. Answer: 1/3."
+   }
+  ],
+  "wrong": {
+   "1/2": {
+    "step": 0,
+    "es": "Se cuentan solo las 2 amigas: 2 personas. Respuesta: 1/2.",
+    "en": "Only the 2 friends are counted: 2 people. Answer: 1/2."
+   },
+   "2/3": {
+    "step": 2,
+    "es": "Se pone arriba el número de amigas: 2. Respuesta: 2/3.",
+    "en": "The number of friends goes on top: 2. Answer: 2/3."
+   },
+   "3/1": {
+    "step": 2,
+    "es": "Arriba va el total (3) y abajo la parte (1). Respuesta: 3/1.",
+    "en": "The total (3) goes on top and the part (1) on the bottom. Answer: 3/1."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nx8004oa6rhmdxd78cb",
+  "oa": "MA03 OA11",
+  "prompt": "Gabriel comió 1/4 de una pizza y su papá comió 3/4 de la misma pizza. ¿Cuánto quedó de la pizza?",
+  "steps": [
+   {
+    "es": "La pizza tiene 4 partes iguales.",
+    "en": "The pizza has 4 equal parts."
+   },
+   {
+    "es": "Se comieron 1 + 3 = 4 partes.",
+    "en": "1 + 3 = 4 parts were eaten."
+   },
+   {
+    "es": "4 de 4 partes es la pizza entera. Respuesta: no quedó nada.",
+    "en": "4 of 4 parts is the whole pizza. Answer: nothing is left."
+   }
+  ],
+  "wrong": {
+   "1/4": {
+    "step": 1,
+    "es": "Se cuentan mal las partes comidas: 3. Queda 1. Respuesta: 1/4.",
+    "en": "The eaten parts are miscounted: 3. 1 is left. Answer: 1/4."
+   },
+   "4/8": {
+    "step": 1,
+    "es": "Se suman arriba y abajo: 1 + 3 = 4 y 4 + 4 = 8. Respuesta: 4/8.",
+    "en": "Top and bottom are added: 1 + 3 = 4 and 4 + 4 = 8. Answer: 4/8."
+   },
+   "2/4": {
+    "step": 1,
+    "es": "Se usa un dato equivocado: se comieron 2 partes. Quedan 2. Respuesta: 2/4.",
+    "en": "A wrong data point is used: 2 parts were eaten. 2 are left. Answer: 2/4."
+   }
+  }
+ },
+ {
+  "key": "cmvjh3nye004ta6rhdvn79rmw",
+  "oa": "MA03 OA11",
+  "prompt": "Daniela dice que en una barra dividida en 3 partes iguales, 3/3 es toda la barra. ¿Tiene razón?",
+  "steps": [
+   {
+    "es": "La barra tiene 3 partes iguales.",
+    "en": "The bar has 3 equal parts."
+   },
+   {
+    "es": "3/3 es tomar las 3 partes: toda la barra. Respuesta: sí, tiene razón.",
+    "en": "3/3 means taking all 3 parts: the whole bar. Answer: yes, she's right."
+   }
+  ],
+  "wrong": {
+   "No: 3/3 es un tercio": {
+    "step": 1,
+    "es": "Se lee 3/3 como un tercio. Respuesta: no, es un tercio.",
+    "en": "3/3 is read as one third. Answer: no, it's one third."
+   },
+   "No: 3/3 es más que la barra": {
+    "step": 1,
+    "es": "Se piensa que 3/3 pasa del entero. Respuesta: no, es más que la barra.",
+    "en": "3/3 is thought to go past the whole. Answer: no, it's more than the bar."
+   },
+   "No se puede saber": {
+    "step": 0,
+    "es": "Se piensa que faltan datos. Respuesta: no se puede saber.",
+    "en": "It's assumed data is missing. Answer: you can't tell."
+   }
+  }
  }
 ]

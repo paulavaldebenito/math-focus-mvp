@@ -16137,5 +16137,517 @@
     "isCorrect": false
    }
   ]
+ },
+ {
+  "exerciseId": "cmvjh3n7l001ha6rhomgl0l5f",
+  "grade": 3,
+  "prompt": "Mira las barras de Ana y Beto. ¿Cuál está dividida en cuartos?",
+  "promptEn": "Look at Ana's and Beto's bars. Which one is divided into fourths?",
+  "options": [
+   {
+    "id": "cmvjh3n7q001ia6rhlch9seh0",
+    "label": "La de Ana",
+    "labelEn": "Ana's",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3n7q001ja6rh2ifzt7j2",
+    "label": "La de Beto",
+    "labelEn": "Beto's",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3n7q001ka6rhyjbb40fp",
+    "label": "Las dos",
+    "labelEn": "Both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3n7q001la6rh6pzcnq6l",
+    "label": "Ninguna",
+    "labelEn": "Neither",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3n8q001ma6rh122wkz4m",
+  "grade": 3,
+  "prompt": "Una naranja se parte en 2 partes iguales. ¿Cómo se llama cada parte?",
+  "promptEn": "An orange is cut into 2 equal parts. What is each part called?",
+  "options": [
+   {
+    "id": "cmvjh3n8w001na6rhl9lzcv3p",
+    "label": "1/2, un medio",
+    "labelEn": "1/2, one half",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3n8w001oa6rhvztylw6x",
+    "label": "1/3, un tercio",
+    "labelEn": "1/3, one third",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3n8w001pa6rhw0d7n4cs",
+    "label": "1/4, un cuarto",
+    "labelEn": "1/4, one fourth",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3n8w001qa6rhh28zv5nk",
+    "label": "2/2, dos medios",
+    "labelEn": "2/2, two halves",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3n9v001ra6rhwme0w9ky",
+  "grade": 3,
+  "prompt": "Un queque se corta en 4 partes iguales. ¿Cómo se llama cada parte?",
+  "promptEn": "A pound cake is cut into 4 equal parts. What is each part called?",
+  "options": [
+   {
+    "id": "cmvjh3na0001sa6rhqt5grqe7",
+    "label": "1/4, un cuarto",
+    "labelEn": "1/4, one fourth",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3na0001ta6rh4gq6tijk",
+    "label": "1/2, un medio",
+    "labelEn": "1/2, one half",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3na0001ua6rhxa6llz2h",
+    "label": "4/4, cuatro cuartos",
+    "labelEn": "4/4, four fourths",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3na0001va6rh9rsr22gv",
+    "label": "1/3, un tercio",
+    "labelEn": "1/3, one third",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nc20021a6rhde12das8",
+  "grade": 3,
+  "prompt": "En la fracción 2/3, ¿qué indica el número 2?",
+  "promptEn": "In the fraction 2/3, what does the number 2 tell you?",
+  "options": [
+   {
+    "id": "cmvjh3nc80022a6rh0ti1hx1a",
+    "label": "Cuántas partes se toman",
+    "labelEn": "How many parts are taken",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nc80023a6rhlt27f8ou",
+    "label": "En cuántas partes iguales se dividió el entero",
+    "labelEn": "How many equal parts the whole was divided into",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nc80024a6rhq5euipyz",
+    "label": "Cuántos enteros hay",
+    "labelEn": "How many wholes there are",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nc80025a6rhlol4wyhk",
+    "label": "Cuántas partes sobran",
+    "labelEn": "How many parts are left over",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nea002ba6rhy8kg9qo7",
+  "grade": 3,
+  "prompt": "Ana y Beto pintaron una parte de sus barras y los dos dicen que pintaron 1/3. ¿Quién tiene razón?",
+  "promptEn": "Ana and Beto each colored part of their bars, and both say they colored 1/3. Who is right?",
+  "options": [
+   {
+    "id": "cmvjh3nef002ca6rhdpot34cs",
+    "label": "Solo Ana",
+    "labelEn": "Only Ana",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nef002da6rh13ax3y0s",
+    "label": "Solo Beto",
+    "labelEn": "Only Beto",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nef002ea6rhpswbxr30",
+    "label": "Los dos",
+    "labelEn": "Both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nef002fa6rhhinz6jdk",
+    "label": "Ninguno",
+    "labelEn": "Neither",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nhs002qa6rh0xk86iwp",
+  "grade": 3,
+  "prompt": "¿En qué situación se usa la fracción 1/2?",
+  "promptEn": "In which situation do we use the fraction 1/2?",
+  "options": [
+   {
+    "id": "cmvjh3ni1002ra6rh1p6z2njq",
+    "label": "Se corta una pizza en 2 partes iguales y se come 1",
+    "labelEn": "A pizza is cut into 2 equal parts and 1 is eaten",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3ni1002sa6rh7o4sl9iq",
+    "label": "Se corta una pizza en 2 partes de distinto tamaño y se come 1",
+    "labelEn": "A pizza is cut into 2 parts of different sizes and 1 is eaten",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3ni1002ta6rhsjdgrr1d",
+    "label": "Se compran 2 pizzas y se come 1 entera",
+    "labelEn": "2 pizzas are bought and 1 whole pizza is eaten",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3ni1002ua6rh2anggo32",
+    "label": "Se corta una pizza en 4 partes iguales y se come 1",
+    "labelEn": "A pizza is cut into 4 equal parts and 1 is eaten",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nk30030a6rhjudbd50m",
+  "grade": 3,
+  "prompt": "Mira las barras de Leo y Ema. ¿Quién pintó una parte mayor de su barra?",
+  "promptEn": "Look at Leo's and Ema's bars. Who colored a bigger part of their bar?",
+  "options": [
+   {
+    "id": "cmvjh3nk80031a6rhba1rbcst",
+    "label": "Ema",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nk80032a6rhyodiih11",
+    "label": "Leo",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nk80033a6rhfw19udhk",
+    "label": "Los dos igual",
+    "labelEn": "Both the same",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nk80034a6rhvsf6pwr1",
+    "label": "3/4",
+    "labelEn": null,
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nl60035a6rhdod0i2ba",
+  "grade": 3,
+  "prompt": "Una cinta se divide en 3 partes iguales. ¿Qué trozo es más largo: 1/3 o 2/3 de la cinta?",
+  "promptEn": "A ribbon is divided into 3 equal parts. Which piece is longer: 1/3 or 2/3 of the ribbon?",
+  "options": [
+   {
+    "id": "cmvjh3nlb0036a6rhq5yv9vkt",
+    "label": "2/3",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nlb0037a6rh6w557kbg",
+    "label": "1/3",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nlb0038a6rh2ybsycri",
+    "label": "Son iguales",
+    "labelEn": "They're equal",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nlb0039a6rh86xkn5gk",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nm9003aa6rhthaaoqaj",
+  "grade": 3,
+  "prompt": "Pedro comió 1/4 de un queque y Rosa comió 3/4 del mismo queque. ¿Quién comió más?",
+  "promptEn": "Pedro ate 1/4 of a pound cake and Rosa ate 3/4 of the same cake. Who ate more?",
+  "options": [
+   {
+    "id": "cmvjh3nmd003ba6rhlty1e85i",
+    "label": "Rosa",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nmd003ca6rhergddpqs",
+    "label": "Pedro",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nmd003da6rhs1vgfqod",
+    "label": "Comieron lo mismo",
+    "labelEn": "They ate the same",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nmd003ea6rhmy5j4qpr",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3npj003pa6rhy1z8g15b",
+  "grade": 3,
+  "prompt": "Javier dice: «Si corto una pizza en 4 pedazos, cada pedazo es 1/4». ¿Tiene razón?",
+  "promptEn": "Javier says: \"If I cut a pizza into 4 pieces, each piece is 1/4.\" Is he right?",
+  "options": [
+   {
+    "id": "cmvjh3npo003qa6rh5uuzrikb",
+    "label": "Solo si los 4 pedazos son iguales",
+    "labelEn": "Only if the 4 pieces are equal",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3npo003ra6rhgkszmbtj",
+    "label": "Sí, siempre",
+    "labelEn": "Yes, always",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3npo003sa6rh10xskhp3",
+    "label": "No, cada pedazo es 1/2",
+    "labelEn": "No, each piece is 1/2",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3npo003ta6rhfltawpwh",
+    "label": "No, cada pedazo es 4/1",
+    "labelEn": "No, each piece is 4/1",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nqm003ua6rhnw2af2l0",
+  "grade": 3,
+  "prompt": "Martín pintó 2 de las 3 partes iguales de una cartulina. Valentina dice que Martín pintó 2/3 y Tomás dice que pintó 3/2. ¿Quién tiene razón?",
+  "promptEn": "Martín colored 2 of the 3 equal parts of a poster board. Valentina says Martín colored 2/3 and Tomás says he colored 3/2. Who is right?",
+  "options": [
+   {
+    "id": "cmvjh3nqq003va6rha1te89ig",
+    "label": "Valentina",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nqq003wa6rhb27ebfqg",
+    "label": "Tomás",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nqq003xa6rhsre3qups",
+    "label": "Los dos",
+    "labelEn": "Both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nqq003ya6rhkrwi9psc",
+    "label": "Ninguno",
+    "labelEn": "Neither",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
+  "grade": 3,
+  "prompt": "¿Cuál de estas situaciones muestra la fracción 3/4?",
+  "promptEn": "Which of these situations shows the fraction 3/4?",
+  "options": [
+   {
+    "id": "cmvjh3nsz0045a6rhw4exiftp",
+    "label": "Una pizza cortada en 4 partes iguales, y quedan 3",
+    "labelEn": "A pizza cut into 4 equal parts, and 3 are left",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nsz0046a6rh3l0u3wlo",
+    "label": "Una pizza cortada en 3 partes iguales, y se comen 4",
+    "labelEn": "A pizza cut into 3 equal parts, and 4 are eaten",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nsz0047a6rhcqqki3l6",
+    "label": "Una pizza cortada en 4 partes de distinto tamaño, y quedan 3",
+    "labelEn": "A pizza cut into 4 parts of different sizes, and 3 are left",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nsz0048a6rh4ckkfbxm",
+    "label": "Una pizza cortada en 7 partes iguales, y quedan 3",
+    "labelEn": "A pizza cut into 7 equal parts, and 3 are left",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3ntx0049a6rhfwyyze1w",
+  "grade": 3,
+  "prompt": "Mira las barras de Ana y Beto. ¿Quién dejó sin pintar 1/4 de su barra?",
+  "promptEn": "Look at Ana's and Beto's bars. Who left 1/4 of their bar uncolored?",
+  "options": [
+   {
+    "id": "cmvjh3nu1004aa6rh5v11cumy",
+    "label": "Ana",
+    "labelEn": null,
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nu1004ba6rhygiu1wc9",
+    "label": "Beto",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nu1004ca6rhelslebew",
+    "label": "Los dos",
+    "labelEn": "Both",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nu1004da6rh5hjj7uv8",
+    "label": "Ninguno",
+    "labelEn": "Neither",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nv1004ea6rhvj2cgttf",
+  "grade": 3,
+  "prompt": "Rodrigo dobla una hoja en 2 partes iguales y después dobla cada parte otra vez por la mitad. ¿En cuántas partes iguales quedó la hoja y qué fracción es cada parte?",
+  "promptEn": "Rodrigo folds a sheet into 2 equal parts, then folds each part in half again. How many equal parts does the sheet have now, and what fraction is each part?",
+  "options": [
+   {
+    "id": "cmvjh3nv5004fa6rhenzota4x",
+    "label": "4 partes; cada una es 1/4",
+    "labelEn": "4 parts; each is 1/4",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nv5004ga6rhp3wqr494",
+    "label": "3 partes; cada una es 1/3",
+    "labelEn": "3 parts; each is 1/3",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nv5004ha6rhmcd5iyb7",
+    "label": "2 partes; cada una es 1/2",
+    "labelEn": "2 parts; each is 1/2",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nv5004ia6rhabe8ii8j",
+    "label": "4 partes; cada una es 4/1",
+    "labelEn": "4 parts; each is 4/1",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nx8004oa6rhmdxd78cb",
+  "grade": 3,
+  "prompt": "Gabriel comió 1/4 de una pizza y su papá comió 3/4 de la misma pizza. ¿Cuánto quedó de la pizza?",
+  "promptEn": "Gabriel ate 1/4 of a pizza and his dad ate 3/4 of the same pizza. How much of the pizza is left?",
+  "options": [
+   {
+    "id": "cmvjh3nxd004pa6rhzyeslhhw",
+    "label": "Nada: se comieron toda la pizza",
+    "labelEn": "Nothing: they ate the whole pizza",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nxd004qa6rhgawq1zzz",
+    "label": "1/4",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nxd004ra6rhwrzl1sgw",
+    "label": "4/8",
+    "labelEn": null,
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nxd004sa6rh4aem6xh2",
+    "label": "2/4",
+    "labelEn": null,
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvjh3nye004ta6rhdvn79rmw",
+  "grade": 3,
+  "prompt": "Daniela dice que en una barra dividida en 3 partes iguales, 3/3 es toda la barra. ¿Tiene razón?",
+  "promptEn": "Daniela says that in a bar divided into 3 equal parts, 3/3 is the whole bar. Is she right?",
+  "options": [
+   {
+    "id": "cmvjh3nyi004ua6rh783iw7hi",
+    "label": "Sí: 3 de 3 partes es la barra entera",
+    "labelEn": "Yes: 3 of 3 parts is the whole bar",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvjh3nyi004va6rhw2rha42n",
+    "label": "No: 3/3 es un tercio",
+    "labelEn": "No: 3/3 is one third",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nyi004wa6rhdhueac6k",
+    "label": "No: 3/3 es más que la barra",
+    "labelEn": "No: 3/3 is more than the bar",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvjh3nyi004xa6rhot8skwsg",
+    "label": "No se puede saber",
+    "labelEn": "You can't tell",
+    "isCorrect": false
+   }
+  ]
  }
 ]

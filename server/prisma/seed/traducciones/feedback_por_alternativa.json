@@ -7026,5 +7026,845 @@
   "label": "$420",
   "feedback": "Es muy poco: el 10% de $12.000 ya es $1.200. Calcula el 35% y réstalo de lo que tenía.",
   "feedbackEn": "That's too little: 10% of 12,000 pesos is already 1,200. Find 35% and subtract it from what she had."
+ },
+ {
+  "exerciseId": "cmvjh3n23000sa6rh2nb4oe3r",
+  "optionId": "cmvjh3n29000ta6rh5b6lceqp",
+  "label": "1/4",
+  "feedback": "Correcto: la barra tiene 4 partes iguales y 1 está pintada: 1/4.",
+  "feedbackEn": "That's right: the bar has 4 equal parts and 1 is colored: 1/4."
+ },
+ {
+  "exerciseId": "cmvjh3n23000sa6rh2nb4oe3r",
+  "optionId": "cmvjh3n29000ua6rhxrvdbm8d",
+  "label": "3/4",
+  "feedback": "3/4 es la parte sin pintar. La pregunta pide la parte pintada.",
+  "feedbackEn": "3/4 is the part that isn't colored. The question asks for the colored part."
+ },
+ {
+  "exerciseId": "cmvjh3n23000sa6rh2nb4oe3r",
+  "optionId": "cmvjh3n29000va6rh7t2bt7k2",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba van las partes pintadas y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the colored parts go on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3n23000sa6rh2nb4oe3r",
+  "optionId": "cmvjh3n29000wa6rhncswdo2j",
+  "label": "1/3",
+  "feedback": "Abajo va el total de partes iguales de la barra, contando también la pintada.",
+  "feedbackEn": "The bottom number is the total equal parts of the bar, counting the colored one too."
+ },
+ {
+  "exerciseId": "cmvjh3n37000xa6rhu5gs6r5h",
+  "optionId": "cmvjh3n3c000ya6rhjblhk3sd",
+  "label": "1/2",
+  "feedback": "Correcto: la hoja tiene 2 partes iguales y 1 está pintada: 1/2, la mitad.",
+  "feedbackEn": "That's right: the sheet has 2 equal parts and 1 is colored: 1/2, one half."
+ },
+ {
+  "exerciseId": "cmvjh3n37000xa6rhu5gs6r5h",
+  "optionId": "cmvjh3n3c000za6rhw6br3p18",
+  "label": "2/1",
+  "feedback": "Revisa el orden: arriba va la parte pintada y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the colored part goes on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3n37000xa6rhu5gs6r5h",
+  "optionId": "cmvjh3n3c0010a6rhowfgv2vl",
+  "label": "1/1",
+  "feedback": "Abajo va el total de partes de la hoja: la pintada y la sin pintar.",
+  "feedbackEn": "The bottom number is the total parts of the sheet: the colored one and the uncolored one."
+ },
+ {
+  "exerciseId": "cmvjh3n37000xa6rhu5gs6r5h",
+  "optionId": "cmvjh3n3c0011a6rhpufdh2re",
+  "label": "2/2",
+  "feedback": "2/2 sería la hoja completa. La pregunta pide solo la parte pintada.",
+  "feedbackEn": "2/2 would be the whole sheet. The question asks only for the colored part."
+ },
+ {
+  "exerciseId": "cmvjh3n4c0012a6rhcjzuhdww",
+  "optionId": "cmvjh3n4g0013a6rhs29xeig8",
+  "label": "1/3",
+  "feedback": "Correcto: la cinta tiene 3 partes iguales y 1 está pintada: 1/3.",
+  "feedbackEn": "That's right: the ribbon has 3 equal parts and 1 is colored: 1/3."
+ },
+ {
+  "exerciseId": "cmvjh3n4c0012a6rhcjzuhdww",
+  "optionId": "cmvjh3n4g0014a6rhrqfh7h1g",
+  "label": "3/1",
+  "feedback": "Revisa el orden: arriba va la parte pintada y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the colored part goes on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3n4c0012a6rhcjzuhdww",
+  "optionId": "cmvjh3n4g0015a6rhz6s7tea4",
+  "label": "1/2",
+  "feedback": "Abajo va el total de partes iguales, contando también la pintada: son 3.",
+  "feedbackEn": "The bottom number is the total equal parts, counting the colored one too: there are 3."
+ },
+ {
+  "exerciseId": "cmvjh3n4c0012a6rhcjzuhdww",
+  "optionId": "cmvjh3n4g0016a6rh7bopcnow",
+  "label": "2/3",
+  "feedback": "2/3 es la parte sin pintar. La pregunta pide la parte pintada.",
+  "feedbackEn": "2/3 is the uncolored part. The question asks for the colored part."
+ },
+ {
+  "exerciseId": "cmvjh3n5e0017a6rhvd303gxz",
+  "optionId": "cmvjh3n5j0018a6rhzso9sxmz",
+  "label": "2/3",
+  "feedback": "Correcto: la pared tiene 3 partes iguales y 2 están pintadas: 2/3.",
+  "feedbackEn": "That's right: the wall has 3 equal parts and 2 are painted: 2/3."
+ },
+ {
+  "exerciseId": "cmvjh3n5e0017a6rhvd303gxz",
+  "optionId": "cmvjh3n5j0019a6rhcuu4rcy0",
+  "label": "1/3",
+  "feedback": "1/3 es la parte sin pintar. La pregunta pide la parte pintada.",
+  "feedbackEn": "1/3 is the unpainted part. The question asks for the painted part."
+ },
+ {
+  "exerciseId": "cmvjh3n5e0017a6rhvd303gxz",
+  "optionId": "cmvjh3n5j001aa6rh8csr4ff5",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes pintadas y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the painted parts go on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3n5e0017a6rhvd303gxz",
+  "optionId": "cmvjh3n5j001ba6rhi3592c5y",
+  "label": "2/1",
+  "feedback": "Abajo va el total de partes de la pared, no solo la que falta pintar.",
+  "feedbackEn": "The bottom number is the total parts of the wall, not just the one left to paint."
+ },
+ {
+  "exerciseId": "cmvjh3n6h001ca6rhqsax2j6t",
+  "optionId": "cmvjh3n6l001da6rhcsvr0say",
+  "label": "3/4",
+  "feedback": "Correcto: el jardín tiene 4 partes iguales y 3 tienen flores: 3/4.",
+  "feedbackEn": "That's right: the garden has 4 equal parts and 3 have flowers: 3/4."
+ },
+ {
+  "exerciseId": "cmvjh3n6h001ca6rhqsax2j6t",
+  "optionId": "cmvjh3n6l001ea6rh6te4d0xq",
+  "label": "1/4",
+  "feedback": "1/4 es la parte sin flores. La pregunta pide la parte con flores.",
+  "feedbackEn": "1/4 is the part without flowers. The question asks for the part with flowers."
+ },
+ {
+  "exerciseId": "cmvjh3n6h001ca6rhqsax2j6t",
+  "optionId": "cmvjh3n6l001fa6rh6j0ftv7n",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes con flores y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts with flowers go on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3n6h001ca6rhqsax2j6t",
+  "optionId": "cmvjh3n6l001ga6rh4ifi77nj",
+  "label": "3/1",
+  "feedback": "Abajo va el total de partes del jardín, no solo la que no tiene flores.",
+  "feedbackEn": "The bottom number is the total parts of the garden, not just the one without flowers."
+ },
+ {
+  "exerciseId": "cmvjh3n7l001ha6rhomgl0l5f",
+  "optionId": "cmvjh3n7q001ia6rhlch9seh0",
+  "label": "La de Ana",
+  "feedback": "Correcto: la barra de Ana tiene 4 partes iguales. La de Beto tiene 4 partes, pero de distinto tamaño.",
+  "feedbackEn": "That's right: Ana's bar has 4 equal parts. Beto's has 4 parts too, but of different sizes."
+ },
+ {
+  "exerciseId": "cmvjh3n7l001ha6rhomgl0l5f",
+  "optionId": "cmvjh3n7q001ja6rh2ifzt7j2",
+  "label": "La de Beto",
+  "feedback": "La barra de Beto tiene 4 partes, pero no son del mismo tamaño. Los cuartos tienen que ser partes iguales.",
+  "feedbackEn": "Beto's bar has 4 parts, but they aren't the same size. Fourths must be equal parts."
+ },
+ {
+  "exerciseId": "cmvjh3n7l001ha6rhomgl0l5f",
+  "optionId": "cmvjh3n7q001ka6rhyjbb40fp",
+  "label": "Las dos",
+  "feedback": "Contar 4 partes no basta: también tienen que ser del mismo tamaño. Compara las partes de cada barra.",
+  "feedbackEn": "Counting 4 parts isn't enough: they also have to be the same size. Compare the parts of each bar."
+ },
+ {
+  "exerciseId": "cmvjh3n7l001ha6rhomgl0l5f",
+  "optionId": "cmvjh3n7q001la6rh6pzcnq6l",
+  "label": "Ninguna",
+  "feedback": "Mira otra vez el dibujo: una de las barras sí tiene 4 partes iguales.",
+  "feedbackEn": "Look at the drawing again: one of the bars does have 4 equal parts."
+ },
+ {
+  "exerciseId": "cmvjh3n8q001ma6rh122wkz4m",
+  "optionId": "cmvjh3n8w001na6rhl9lzcv3p",
+  "label": "1/2, un medio",
+  "feedback": "Correcto: con 2 partes iguales, cada una es 1/2, un medio.",
+  "feedbackEn": "That's right: with 2 equal parts, each one is 1/2, one half."
+ },
+ {
+  "exerciseId": "cmvjh3n8q001ma6rh122wkz4m",
+  "optionId": "cmvjh3n8w001oa6rhvztylw6x",
+  "label": "1/3, un tercio",
+  "feedback": "Los tercios salen al dividir en 3 partes iguales. Aquí se dividió en 2.",
+  "feedbackEn": "Thirds come from dividing into 3 equal parts. Here it was divided into 2."
+ },
+ {
+  "exerciseId": "cmvjh3n8q001ma6rh122wkz4m",
+  "optionId": "cmvjh3n8w001pa6rhw0d7n4cs",
+  "label": "1/4, un cuarto",
+  "feedback": "Los cuartos salen al dividir en 4 partes iguales. Aquí se dividió en 2.",
+  "feedbackEn": "Fourths come from dividing into 4 equal parts. Here it was divided into 2."
+ },
+ {
+  "exerciseId": "cmvjh3n8q001ma6rh122wkz4m",
+  "optionId": "cmvjh3n8w001qa6rhh28zv5nk",
+  "label": "2/2, dos medios",
+  "feedback": "2/2 es la naranja completa. La pregunta es por cada parte.",
+  "feedbackEn": "2/2 is the whole orange. The question asks about each part."
+ },
+ {
+  "exerciseId": "cmvjh3n9v001ra6rhwme0w9ky",
+  "optionId": "cmvjh3na0001sa6rhqt5grqe7",
+  "label": "1/4, un cuarto",
+  "feedback": "Correcto: con 4 partes iguales, cada una es 1/4, un cuarto.",
+  "feedbackEn": "That's right: with 4 equal parts, each one is 1/4, one fourth."
+ },
+ {
+  "exerciseId": "cmvjh3n9v001ra6rhwme0w9ky",
+  "optionId": "cmvjh3na0001ta6rh4gq6tijk",
+  "label": "1/2, un medio",
+  "feedback": "Un medio sale al cortar en 2 partes iguales. Aquí se cortó en 4.",
+  "feedbackEn": "One half comes from cutting into 2 equal parts. Here it was cut into 4."
+ },
+ {
+  "exerciseId": "cmvjh3n9v001ra6rhwme0w9ky",
+  "optionId": "cmvjh3na0001ua6rhxa6llz2h",
+  "label": "4/4, cuatro cuartos",
+  "feedback": "4/4 es el queque completo. La pregunta es por cada parte.",
+  "feedbackEn": "4/4 is the whole cake. The question asks about each part."
+ },
+ {
+  "exerciseId": "cmvjh3n9v001ra6rhwme0w9ky",
+  "optionId": "cmvjh3na0001va6rh9rsr22gv",
+  "label": "1/3, un tercio",
+  "feedback": "Cuenta otra vez las partes: son 4, así que cada una es un cuarto.",
+  "feedbackEn": "Count the parts again: there are 4, so each one is a fourth."
+ },
+ {
+  "exerciseId": "cmvjh3naz001wa6rh63uahhr7",
+  "optionId": "cmvjh3nb4001xa6rhux4ua8e7",
+  "label": "3",
+  "feedback": "Correcto: los tercios salen al dividir el entero en 3 partes iguales.",
+  "feedbackEn": "That's right: thirds come from dividing the whole into 3 equal parts."
+ },
+ {
+  "exerciseId": "cmvjh3naz001wa6rh63uahhr7",
+  "optionId": "cmvjh3nb4001ya6rh8x002jat",
+  "label": "2",
+  "feedback": "Con 2 partes iguales se obtienen medios, no tercios.",
+  "feedbackEn": "With 2 equal parts you get halves, not thirds."
+ },
+ {
+  "exerciseId": "cmvjh3naz001wa6rh63uahhr7",
+  "optionId": "cmvjh3nb4001za6rhl3sjeer3",
+  "label": "4",
+  "feedback": "Con 4 partes iguales se obtienen cuartos, no tercios.",
+  "feedbackEn": "With 4 equal parts you get fourths, not thirds."
+ },
+ {
+  "exerciseId": "cmvjh3naz001wa6rh63uahhr7",
+  "optionId": "cmvjh3nb40020a6rhmvcgv63u",
+  "label": "1",
+  "feedback": "En 1/3, el 1 es la parte que se toma. El número que dice en cuántas partes se divide es el de abajo.",
+  "feedbackEn": "In 1/3, the 1 is the part taken. The number that says how many parts there are is the bottom one."
+ },
+ {
+  "exerciseId": "cmvjh3nc20021a6rhde12das8",
+  "optionId": "cmvjh3nc80022a6rh0ti1hx1a",
+  "label": "Cuántas partes se toman",
+  "feedback": "Correcto: el 2 es el numerador: dice cuántas de las 3 partes iguales se toman.",
+  "feedbackEn": "That's right: the 2 is the numerator: it tells how many of the 3 equal parts are taken."
+ },
+ {
+  "exerciseId": "cmvjh3nc20021a6rhde12das8",
+  "optionId": "cmvjh3nc80023a6rhlt27f8ou",
+  "label": "En cuántas partes iguales se dividió el entero",
+  "feedback": "Eso lo dice el número de abajo, el denominador (el 3).",
+  "feedbackEn": "That's what the bottom number, the denominator (the 3), tells."
+ },
+ {
+  "exerciseId": "cmvjh3nc20021a6rhde12das8",
+  "optionId": "cmvjh3nc80024a6rhq5euipyz",
+  "label": "Cuántos enteros hay",
+  "feedback": "Aquí hay un solo entero. El 2 cuenta partes de ese entero.",
+  "feedbackEn": "There's only one whole here. The 2 counts parts of that whole."
+ },
+ {
+  "exerciseId": "cmvjh3nc20021a6rhde12das8",
+  "optionId": "cmvjh3nc80025a6rhlol4wyhk",
+  "label": "Cuántas partes sobran",
+  "feedback": "El 2 no cuenta lo que sobra: cuenta las partes que se toman.",
+  "feedbackEn": "The 2 doesn't count what's left over: it counts the parts taken."
+ },
+ {
+  "exerciseId": "cmvjh3nd60026a6rh0ivsywxz",
+  "optionId": "cmvjh3ndb0027a6rhynzi9x7k",
+  "label": "1/4",
+  "feedback": "Correcto: de las 4 partes iguales, 1 no está pintada: 1/4.",
+  "feedbackEn": "That's right: of the 4 equal parts, 1 isn't colored: 1/4."
+ },
+ {
+  "exerciseId": "cmvjh3nd60026a6rh0ivsywxz",
+  "optionId": "cmvjh3ndb0028a6rhxpuulv6y",
+  "label": "3/4",
+  "feedback": "3/4 es la parte pintada. La pregunta pide la que NO está pintada.",
+  "feedbackEn": "3/4 is the colored part. The question asks for the part that is NOT colored."
+ },
+ {
+  "exerciseId": "cmvjh3nd60026a6rh0ivsywxz",
+  "optionId": "cmvjh3ndb0029a6rhzf6f0gwl",
+  "label": "1/3",
+  "feedback": "Abajo va el total de partes iguales de la bandera: son 4, no 3.",
+  "feedbackEn": "The bottom number is the total equal parts of the flag: there are 4, not 3."
+ },
+ {
+  "exerciseId": "cmvjh3nd60026a6rh0ivsywxz",
+  "optionId": "cmvjh3ndb002aa6rhjomacit1",
+  "label": "4/1",
+  "feedback": "Revisa el orden: arriba va la parte sin pintar y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the uncolored part goes on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3nea002ba6rhy8kg9qo7",
+  "optionId": "cmvjh3nef002ca6rhdpot34cs",
+  "label": "Solo Ana",
+  "feedback": "Correcto: la barra de Ana tiene 3 partes iguales. La de Beto tiene 3 partes de distinto tamaño, así que su parte no es 1/3.",
+  "feedbackEn": "That's right: Ana's bar has 3 equal parts. Beto's has 3 parts of different sizes, so his part isn't 1/3."
+ },
+ {
+  "exerciseId": "cmvjh3nea002ba6rhy8kg9qo7",
+  "optionId": "cmvjh3nef002da6rh13ax3y0s",
+  "label": "Solo Beto",
+  "feedback": "Las partes de Beto no son iguales: la pintada es más grande que un tercio.",
+  "feedbackEn": "Beto's parts aren't equal: the colored one is bigger than a third."
+ },
+ {
+  "exerciseId": "cmvjh3nea002ba6rhy8kg9qo7",
+  "optionId": "cmvjh3nef002ea6rhpswbxr30",
+  "label": "Los dos",
+  "feedback": "No basta con pintar 1 de 3 partes: las partes tienen que ser iguales. Revisa la barra de Beto.",
+  "feedbackEn": "Coloring 1 of 3 parts isn't enough: the parts have to be equal. Check Beto's bar."
+ },
+ {
+  "exerciseId": "cmvjh3nea002ba6rhy8kg9qo7",
+  "optionId": "cmvjh3nef002fa6rhhinz6jdk",
+  "label": "Ninguno",
+  "feedback": "Mira otra vez: una de las barras sí tiene 3 partes iguales con 1 pintada.",
+  "feedbackEn": "Look again: one of the bars does have 3 equal parts with 1 colored."
+ },
+ {
+  "exerciseId": "cmvjh3nfe002ga6rh66elvtot",
+  "optionId": "cmvjh3nfj002ha6rh130rlfs2",
+  "label": "2/3",
+  "feedback": "Correcto: se comió 2 de las 3 partes iguales: 2/3.",
+  "feedbackEn": "That's right: she ate 2 of the 3 equal parts: 2/3."
+ },
+ {
+  "exerciseId": "cmvjh3nfe002ga6rh66elvtot",
+  "optionId": "cmvjh3nfj002ia6rhs64pz20t",
+  "label": "1/3",
+  "feedback": "1/3 es lo que queda. La pregunta pide lo que se comió.",
+  "feedbackEn": "1/3 is what's left. The question asks what she ate."
+ },
+ {
+  "exerciseId": "cmvjh3nfe002ga6rh66elvtot",
+  "optionId": "cmvjh3nfj002ja6rhh38ft9k1",
+  "label": "3/2",
+  "feedback": "Revisa el orden: arriba van las partes que se comió y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts she ate go on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3nfe002ga6rh66elvtot",
+  "optionId": "cmvjh3nfj002ka6rhmldsm0r1",
+  "label": "2/5",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales en que se cortó la tortilla.",
+  "feedbackEn": "The bottom number doesn't come from adding: it's the total equal parts the flatbread was cut into."
+ },
+ {
+  "exerciseId": "cmvjh3ngg002la6rh7kk41c7j",
+  "optionId": "cmvjh3ngl002ma6rhs1swcvh4",
+  "label": "3/4",
+  "feedback": "Correcto: si 1 de las 4 partes tiene lechugas, las otras 3 tienen zanahorias: 3/4.",
+  "feedbackEn": "That's right: if 1 of the 4 parts has lettuce, the other 3 have carrots: 3/4."
+ },
+ {
+  "exerciseId": "cmvjh3ngg002la6rh7kk41c7j",
+  "optionId": "cmvjh3ngl002na6rhvkqpsjjo",
+  "label": "1/4",
+  "feedback": "1/4 es la parte con lechugas. La pregunta es por las zanahorias.",
+  "feedbackEn": "1/4 is the part with lettuce. The question asks about carrots."
+ },
+ {
+  "exerciseId": "cmvjh3ngg002la6rh7kk41c7j",
+  "optionId": "cmvjh3ngl002oa6rh3zfzdpqd",
+  "label": "3/1",
+  "feedback": "Abajo va el total de partes del huerto (4), no la parte con lechugas.",
+  "feedbackEn": "The bottom number is the total parts of the garden (4), not the lettuce part."
+ },
+ {
+  "exerciseId": "cmvjh3ngg002la6rh7kk41c7j",
+  "optionId": "cmvjh3ngl002pa6rh71da71j7",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes con zanahorias y abajo el total de partes iguales.",
+  "feedbackEn": "Check the order: the parts with carrots go on top and the total equal parts on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3nhs002qa6rh0xk86iwp",
+  "optionId": "cmvjh3ni1002ra6rh1p6z2njq",
+  "label": "Se corta una pizza en 2 partes iguales y se come 1",
+  "feedback": "Correcto: 1/2 es 1 de 2 partes iguales de la pizza.",
+  "feedbackEn": "That's right: 1/2 is 1 of 2 equal parts of the pizza."
+ },
+ {
+  "exerciseId": "cmvjh3nhs002qa6rh0xk86iwp",
+  "optionId": "cmvjh3ni1002sa6rh7o4sl9iq",
+  "label": "Se corta una pizza en 2 partes de distinto tamaño y se come 1",
+  "feedback": "Si las partes no son iguales, cada una no es un medio.",
+  "feedbackEn": "If the parts aren't equal, each one isn't a half."
+ },
+ {
+  "exerciseId": "cmvjh3nhs002qa6rh0xk86iwp",
+  "optionId": "cmvjh3ni1002ta6rhsjdgrr1d",
+  "label": "Se compran 2 pizzas y se come 1 entera",
+  "feedback": "Aquí se habla de pizzas enteras. 1/2 es una parte de un solo entero.",
+  "feedbackEn": "This is about whole pizzas. 1/2 is a part of a single whole."
+ },
+ {
+  "exerciseId": "cmvjh3nhs002qa6rh0xk86iwp",
+  "optionId": "cmvjh3ni1002ua6rh2anggo32",
+  "label": "Se corta una pizza en 4 partes iguales y se come 1",
+  "feedback": "Con 4 partes iguales, cada una es un cuarto, no un medio.",
+  "feedbackEn": "With 4 equal parts, each one is a fourth, not a half."
+ },
+ {
+  "exerciseId": "cmvjh3niz002va6rh1q5s9nl1",
+  "optionId": "cmvjh3nj5002wa6rhrq2cuq2t",
+  "label": "3/4",
+  "feedback": "Correcto: 3 de 4 partes iguales es 3/4.",
+  "feedbackEn": "That's right: 3 of 4 equal parts is 3/4."
+ },
+ {
+  "exerciseId": "cmvjh3niz002va6rh1q5s9nl1",
+  "optionId": "cmvjh3nj5002xa6rhaiptew4f",
+  "label": "4/3",
+  "feedback": "Revisa el orden: arriba van las partes que se toman (3) y abajo el total (4).",
+  "feedbackEn": "Check the order: the parts taken (3) go on top and the total (4) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3niz002va6rh1q5s9nl1",
+  "optionId": "cmvjh3nj5002ya6rh6zer1okz",
+  "label": "3/7",
+  "feedback": "El número de abajo no se obtiene sumando: es el total de partes iguales, 4.",
+  "feedbackEn": "The bottom number doesn't come from adding: it's the total equal parts, 4."
+ },
+ {
+  "exerciseId": "cmvjh3niz002va6rh1q5s9nl1",
+  "optionId": "cmvjh3nj5002za6rh6nf1vial",
+  "label": "1/4",
+  "feedback": "1/4 es la parte que no se toma. La frase dice tres de cuatro.",
+  "feedbackEn": "1/4 is the part not taken. The phrase says three of four."
+ },
+ {
+  "exerciseId": "cmvjh3nk30030a6rhjudbd50m",
+  "optionId": "cmvjh3nk80031a6rhba1rbcst",
+  "label": "Ema",
+  "feedback": "Correcto: las partes son del mismo tamaño, y Ema pintó 3 de 4 mientras Leo pintó 1 de 4.",
+  "feedbackEn": "That's right: the parts are the same size, and Ema colored 3 of 4 while Leo colored 1 of 4."
+ },
+ {
+  "exerciseId": "cmvjh3nk30030a6rhjudbd50m",
+  "optionId": "cmvjh3nk80032a6rhyodiih11",
+  "label": "Leo",
+  "feedback": "Leo pintó 1 parte y Ema 3. Con partes del mismo tamaño, pinta más quien pinta más partes.",
+  "feedbackEn": "Leo colored 1 part and Ema 3. With same-size parts, whoever colors more parts colors more."
+ },
+ {
+  "exerciseId": "cmvjh3nk30030a6rhjudbd50m",
+  "optionId": "cmvjh3nk80033a6rhfw19udhk",
+  "label": "Los dos igual",
+  "feedback": "Las barras son iguales, pero no pintaron la misma cantidad de partes. Cuéntalas.",
+  "feedbackEn": "The bars are the same, but they didn't color the same number of parts. Count them."
+ },
+ {
+  "exerciseId": "cmvjh3nk30030a6rhjudbd50m",
+  "optionId": "cmvjh3nk80034a6rhvsf6pwr1",
+  "label": "3/4",
+  "feedback": "3/4 es lo que pintó Ema, pero la pregunta pide quién.",
+  "feedbackEn": "3/4 is what Ema colored, but the question asks who."
+ },
+ {
+  "exerciseId": "cmvjh3nl60035a6rhdod0i2ba",
+  "optionId": "cmvjh3nlb0036a6rhq5yv9vkt",
+  "label": "2/3",
+  "feedback": "Correcto: las partes son iguales y 2/3 tiene 2 partes, mientras 1/3 tiene 1.",
+  "feedbackEn": "That's right: the parts are equal, and 2/3 has 2 parts while 1/3 has 1."
+ },
+ {
+  "exerciseId": "cmvjh3nl60035a6rhdod0i2ba",
+  "optionId": "cmvjh3nlb0037a6rh6w557kbg",
+  "label": "1/3",
+  "feedback": "1/3 es 1 parte y 2/3 son 2 partes del mismo tamaño. ¿Cuál es más largo?",
+  "feedbackEn": "1/3 is 1 part and 2/3 is 2 parts of the same size. Which is longer?"
+ },
+ {
+  "exerciseId": "cmvjh3nl60035a6rhdod0i2ba",
+  "optionId": "cmvjh3nlb0038a6rh2ybsycri",
+  "label": "Son iguales",
+  "feedback": "Tienen el mismo número abajo, pero no la misma cantidad de partes.",
+  "feedbackEn": "They have the same bottom number, but not the same number of parts."
+ },
+ {
+  "exerciseId": "cmvjh3nl60035a6rhdod0i2ba",
+  "optionId": "cmvjh3nlb0039a6rh86xkn5gk",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: es la misma cinta y las partes son iguales.",
+  "feedbackEn": "You can tell: it's the same ribbon and the parts are equal."
+ },
+ {
+  "exerciseId": "cmvjh3nm9003aa6rhthaaoqaj",
+  "optionId": "cmvjh3nmd003ba6rhlty1e85i",
+  "label": "Rosa",
+  "feedback": "Correcto: el queque está cortado en 4 partes iguales, y Rosa comió 3 y Pedro 1.",
+  "feedbackEn": "That's right: the cake is cut into 4 equal parts, and Rosa ate 3 and Pedro 1."
+ },
+ {
+  "exerciseId": "cmvjh3nm9003aa6rhthaaoqaj",
+  "optionId": "cmvjh3nmd003ca6rhergddpqs",
+  "label": "Pedro",
+  "feedback": "Mira el número de arriba: dice cuántas de las 4 partes comió cada uno. ¿Quién comió más partes?",
+  "feedbackEn": "Look at the top number: it tells how many of the 4 parts each one ate. Who ate more parts?"
+ },
+ {
+  "exerciseId": "cmvjh3nm9003aa6rhthaaoqaj",
+  "optionId": "cmvjh3nmd003da6rhs1vgfqod",
+  "label": "Comieron lo mismo",
+  "feedback": "Las partes son del mismo tamaño, pero no comieron la misma cantidad de partes.",
+  "feedbackEn": "The parts are the same size, but they didn't eat the same number of parts."
+ },
+ {
+  "exerciseId": "cmvjh3nm9003aa6rhthaaoqaj",
+  "optionId": "cmvjh3nmd003ea6rhmy5j4qpr",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: es el mismo queque, cortado en 4 partes iguales.",
+  "feedbackEn": "You can tell: it's the same cake, cut into 4 equal parts."
+ },
+ {
+  "exerciseId": "cmvjh3nnb003fa6rhereb836l",
+  "optionId": "cmvjh3nng003ga6rh69vvsoxg",
+  "label": "1",
+  "feedback": "Correcto: para 2/3 se necesitan 2 partes pintadas; ya hay 1, así que falta 1.",
+  "feedbackEn": "That's right: 2/3 needs 2 colored parts; there's already 1, so 1 more is needed."
+ },
+ {
+  "exerciseId": "cmvjh3nnb003fa6rhereb836l",
+  "optionId": "cmvjh3nng003ha6rhnmjupu5a",
+  "label": "2",
+  "feedback": "Ya hay 1 parte pintada. Para llegar a 2 partes, ¿cuántas faltan?",
+  "feedbackEn": "1 part is already colored. To get to 2 parts, how many more?"
+ },
+ {
+  "exerciseId": "cmvjh3nnb003fa6rhereb836l",
+  "optionId": "cmvjh3nng003ia6rh5j2qtbxm",
+  "label": "3",
+  "feedback": "3 es el total de partes. 2/3 son solo 2 de esas partes.",
+  "feedbackEn": "3 is the total number of parts. 2/3 is only 2 of those parts."
+ },
+ {
+  "exerciseId": "cmvjh3nnb003fa6rhereb836l",
+  "optionId": "cmvjh3nng003ja6rhstmab311",
+  "label": "0",
+  "feedback": "Con 1 parte pintada hay 1/3, no 2/3. Falta pintar una más.",
+  "feedbackEn": "With 1 part colored there's 1/3, not 2/3. One more is needed."
+ },
+ {
+  "exerciseId": "cmvjh3nof003ka6rhb91pwyq5",
+  "optionId": "cmvjh3nok003la6rhwm6hjx6h",
+  "label": "3/4",
+  "feedback": "Correcto: se usaron 1 + 2 = 3 de las 4 partes iguales: 3/4.",
+  "feedbackEn": "That's right: 1 + 2 = 3 of the 4 equal parts were used: 3/4."
+ },
+ {
+  "exerciseId": "cmvjh3nof003ka6rhb91pwyq5",
+  "optionId": "cmvjh3nok003ma6rh2lcrg7y1",
+  "label": "2/4",
+  "feedback": "2/4 es solo lo del cuaderno. Suma también la parte del regalo.",
+  "feedbackEn": "2/4 is just the notebook part. Add the gift part too."
+ },
+ {
+  "exerciseId": "cmvjh3nof003ka6rhb91pwyq5",
+  "optionId": "cmvjh3nok003na6rh7y9jtj5o",
+  "label": "1/4",
+  "feedback": "1/4 es lo que sobró. La pregunta pide lo que se usó.",
+  "feedbackEn": "1/4 is what's left. The question asks what was used."
+ },
+ {
+  "exerciseId": "cmvjh3nof003ka6rhb91pwyq5",
+  "optionId": "cmvjh3nok003oa6rhhejx0rmq",
+  "label": "3/8",
+  "feedback": "El número de abajo no cambia: la cinta sigue teniendo 4 partes iguales.",
+  "feedbackEn": "The bottom number doesn't change: the ribbon still has 4 equal parts."
+ },
+ {
+  "exerciseId": "cmvjh3npj003pa6rhy1z8g15b",
+  "optionId": "cmvjh3npo003qa6rh5uuzrikb",
+  "label": "Solo si los 4 pedazos son iguales",
+  "feedback": "Correcto: cada pedazo es 1/4 solo si los 4 pedazos son del mismo tamaño.",
+  "feedbackEn": "That's right: each piece is 1/4 only if the 4 pieces are the same size."
+ },
+ {
+  "exerciseId": "cmvjh3npj003pa6rhy1z8g15b",
+  "optionId": "cmvjh3npo003ra6rhgkszmbtj",
+  "label": "Sí, siempre",
+  "feedback": "Si los pedazos son de distinto tamaño, no son cuartos. Las partes tienen que ser iguales.",
+  "feedbackEn": "If the pieces are different sizes, they're not fourths. The parts have to be equal."
+ },
+ {
+  "exerciseId": "cmvjh3npj003pa6rhy1z8g15b",
+  "optionId": "cmvjh3npo003sa6rh10xskhp3",
+  "label": "No, cada pedazo es 1/2",
+  "feedback": "Con 4 partes iguales, cada una es un cuarto, no un medio.",
+  "feedbackEn": "With 4 equal parts, each one is a fourth, not a half."
+ },
+ {
+  "exerciseId": "cmvjh3npj003pa6rhy1z8g15b",
+  "optionId": "cmvjh3npo003ta6rhfltawpwh",
+  "label": "No, cada pedazo es 4/1",
+  "feedback": "Revisa el orden: arriba va 1 pedazo y abajo el total de pedazos iguales.",
+  "feedbackEn": "Check the order: 1 piece goes on top and the total equal pieces on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3nqm003ua6rhnw2af2l0",
+  "optionId": "cmvjh3nqq003va6rha1te89ig",
+  "label": "Valentina",
+  "feedback": "Correcto: 2 de 3 partes iguales se escribe 2/3: arriba lo pintado y abajo el total.",
+  "feedbackEn": "That's right: 2 of 3 equal parts is written 2/3: the colored parts on top and the total on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3nqm003ua6rhnw2af2l0",
+  "optionId": "cmvjh3nqq003wa6rhb27ebfqg",
+  "label": "Tomás",
+  "feedback": "Tomás invirtió los números: arriba van las partes pintadas, no el total.",
+  "feedbackEn": "Tomás flipped the numbers: the colored parts go on top, not the total."
+ },
+ {
+  "exerciseId": "cmvjh3nqm003ua6rhnw2af2l0",
+  "optionId": "cmvjh3nqq003xa6rhsre3qups",
+  "label": "Los dos",
+  "feedback": "2/3 y 3/2 no son lo mismo: el orden de los números importa.",
+  "feedbackEn": "2/3 and 3/2 aren't the same: the order of the numbers matters."
+ },
+ {
+  "exerciseId": "cmvjh3nqm003ua6rhnw2af2l0",
+  "optionId": "cmvjh3nqq003ya6rhkrwi9psc",
+  "label": "Ninguno",
+  "feedback": "Uno de los dos sí escribió bien la fracción. Revisa el enunciado: 2 de 3 partes.",
+  "feedbackEn": "One of them did write the fraction correctly. Reread the problem: 2 of 3 parts."
+ },
+ {
+  "exerciseId": "cmvjh3nrq003za6rhydghn5on",
+  "optionId": "cmvjh3nru0040a6rh9rrg3xvl",
+  "label": "1/3",
+  "feedback": "Correcto: se comieron 2 de las 3 partes, así que queda 1: 1/3.",
+  "feedbackEn": "That's right: 2 of the 3 parts were eaten, so 1 is left: 1/3."
+ },
+ {
+  "exerciseId": "cmvjh3nrq003za6rhydghn5on",
+  "optionId": "cmvjh3nru0041a6rhjwm47b7a",
+  "label": "2/3",
+  "feedback": "2/3 es lo que se comieron. La pregunta pide lo que queda.",
+  "feedbackEn": "2/3 is what was eaten. The question asks what's left."
+ },
+ {
+  "exerciseId": "cmvjh3nrq003za6rhydghn5on",
+  "optionId": "cmvjh3nru0042a6rhilgdct74",
+  "label": "1/2",
+  "feedback": "Abajo va el total de partes del chocolate (3), no las que se comieron.",
+  "feedbackEn": "The bottom number is the total parts of the chocolate (3), not the ones eaten."
+ },
+ {
+  "exerciseId": "cmvjh3nrq003za6rhydghn5on",
+  "optionId": "cmvjh3nru0043a6rhd6wgl6bm",
+  "label": "3/3",
+  "feedback": "3/3 sería el chocolate entero. Se comieron 2 partes: ¿cuántas quedan?",
+  "feedbackEn": "3/3 would be the whole bar. 2 parts were eaten: how many are left?"
+ },
+ {
+  "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
+  "optionId": "cmvjh3nsz0045a6rhw4exiftp",
+  "label": "Una pizza cortada en 4 partes iguales, y quedan 3",
+  "feedback": "Correcto: quedan 3 de las 4 partes iguales de la pizza: 3/4.",
+  "feedbackEn": "That's right: 3 of the pizza's 4 equal parts are left: 3/4."
+ },
+ {
+  "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
+  "optionId": "cmvjh3nsz0046a6rh3l0u3wlo",
+  "label": "Una pizza cortada en 3 partes iguales, y se comen 4",
+  "feedback": "Aquí se invierten los números: 3 partes y 4 que se comen. Además, no se pueden comer 4 de 3.",
+  "feedbackEn": "Here the numbers are flipped: 3 parts and 4 eaten. Also, you can't eat 4 of 3."
+ },
+ {
+  "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
+  "optionId": "cmvjh3nsz0047a6rhcqqki3l6",
+  "label": "Una pizza cortada en 4 partes de distinto tamaño, y quedan 3",
+  "feedback": "Las partes tienen que ser iguales para que cada una sea un cuarto.",
+  "feedbackEn": "The parts must be equal for each one to be a fourth."
+ },
+ {
+  "exerciseId": "cmvjh3nsu0044a6rhd047pxly",
+  "optionId": "cmvjh3nsz0048a6rh4ckkfbxm",
+  "label": "Una pizza cortada en 7 partes iguales, y quedan 3",
+  "feedback": "El número de abajo no es la suma de 3 y 4: es el total de partes iguales, 4.",
+  "feedbackEn": "The bottom number isn't 3 plus 4: it's the total equal parts, 4."
+ },
+ {
+  "exerciseId": "cmvjh3ntx0049a6rhfwyyze1w",
+  "optionId": "cmvjh3nu1004aa6rh5v11cumy",
+  "label": "Ana",
+  "feedback": "Correcto: Ana pintó 3 de 4 partes, así que dejó 1 sin pintar: 1/4.",
+  "feedbackEn": "That's right: Ana colored 3 of 4 parts, so she left 1 uncolored: 1/4."
+ },
+ {
+  "exerciseId": "cmvjh3ntx0049a6rhfwyyze1w",
+  "optionId": "cmvjh3nu1004ba6rhygiu1wc9",
+  "label": "Beto",
+  "feedback": "Beto pintó 1/4, pero dejó sin pintar 3/4. La pregunta es por la parte SIN pintar.",
+  "feedbackEn": "Beto colored 1/4, but left 3/4 uncolored. The question is about the UNCOLORED part."
+ },
+ {
+  "exerciseId": "cmvjh3ntx0049a6rhfwyyze1w",
+  "optionId": "cmvjh3nu1004ca6rhelslebew",
+  "label": "Los dos",
+  "feedback": "Las barras no están pintadas igual. Cuenta las partes sin pintar de cada una.",
+  "feedbackEn": "The bars aren't colored the same way. Count the uncolored parts of each one."
+ },
+ {
+  "exerciseId": "cmvjh3ntx0049a6rhfwyyze1w",
+  "optionId": "cmvjh3nu1004da6rh5hjj7uv8",
+  "label": "Ninguno",
+  "feedback": "Mira otra vez el dibujo: una de las barras tiene exactamente 1 parte sin pintar.",
+  "feedbackEn": "Look at the drawing again: one of the bars has exactly 1 uncolored part."
+ },
+ {
+  "exerciseId": "cmvjh3nv1004ea6rhvj2cgttf",
+  "optionId": "cmvjh3nv5004fa6rhenzota4x",
+  "label": "4 partes; cada una es 1/4",
+  "feedback": "Correcto: 2 partes, cada una partida en 2, son 4 partes iguales: cada una es 1/4.",
+  "feedbackEn": "That's right: 2 parts, each split in 2, make 4 equal parts: each one is 1/4."
+ },
+ {
+  "exerciseId": "cmvjh3nv1004ea6rhvj2cgttf",
+  "optionId": "cmvjh3nv5004ga6rhp3wqr494",
+  "label": "3 partes; cada una es 1/3",
+  "feedback": "Cada una de las 2 partes queda partida en 2: cuenta de nuevo cuántas partes quedan.",
+  "feedbackEn": "Each of the 2 parts is split in 2: count again how many parts there are."
+ },
+ {
+  "exerciseId": "cmvjh3nv1004ea6rhvj2cgttf",
+  "optionId": "cmvjh3nv5004ha6rhmcd5iyb7",
+  "label": "2 partes; cada una es 1/2",
+  "feedback": "Ese es solo el primer doblez. Después cada parte se dobla otra vez.",
+  "feedbackEn": "That's only the first fold. Then each part is folded again."
+ },
+ {
+  "exerciseId": "cmvjh3nv1004ea6rhvj2cgttf",
+  "optionId": "cmvjh3nv5004ia6rhabe8ii8j",
+  "label": "4 partes; cada una es 4/1",
+  "feedback": "Son 4 partes, bien. Pero en la fracción arriba va 1 parte y abajo el total: 1/4.",
+  "feedbackEn": "4 parts is right. But in the fraction, 1 part goes on top and the total on the bottom: 1/4."
+ },
+ {
+  "exerciseId": "cmvjh3nw4004ja6rh9krgwogy",
+  "optionId": "cmvjh3nw9004ka6rhk91dqh0q",
+  "label": "1/3",
+  "feedback": "Correcto: son 3 personas (Isidora y 2 amigas), así que cada una recibe 1/3.",
+  "feedbackEn": "That's right: there are 3 people (Isidora and 2 friends), so each gets 1/3."
+ },
+ {
+  "exerciseId": "cmvjh3nw4004ja6rh9krgwogy",
+  "optionId": "cmvjh3nw9004la6rhi7keu7zp",
+  "label": "1/2",
+  "feedback": "Faltó contar a Isidora: son ella y sus 2 amigas.",
+  "feedbackEn": "Isidora wasn't counted: it's her and her 2 friends."
+ },
+ {
+  "exerciseId": "cmvjh3nw4004ja6rh9krgwogy",
+  "optionId": "cmvjh3nw9004ma6rh6gcglhes",
+  "label": "2/3",
+  "feedback": "Cada una recibe 1 parte, no 2. El 2 son las amigas, no las partes que recibe cada una.",
+  "feedbackEn": "Each one gets 1 part, not 2. The 2 is the friends, not the parts each one gets."
+ },
+ {
+  "exerciseId": "cmvjh3nw4004ja6rh9krgwogy",
+  "optionId": "cmvjh3nw9004na6rh6jzrj8m3",
+  "label": "3/1",
+  "feedback": "Revisa el orden: arriba va la parte de cada una (1) y abajo el total de partes (3).",
+  "feedbackEn": "Check the order: each one's part (1) goes on top and the total parts (3) on the bottom."
+ },
+ {
+  "exerciseId": "cmvjh3nx8004oa6rhmdxd78cb",
+  "optionId": "cmvjh3nxd004pa6rhzyeslhhw",
+  "label": "Nada: se comieron toda la pizza",
+  "feedback": "Correcto: 1 parte + 3 partes son las 4 partes de la pizza: no quedó nada.",
+  "feedbackEn": "That's right: 1 part + 3 parts are all 4 parts of the pizza: nothing is left."
+ },
+ {
+  "exerciseId": "cmvjh3nx8004oa6rhmdxd78cb",
+  "optionId": "cmvjh3nxd004qa6rhgawq1zzz",
+  "label": "1/4",
+  "feedback": "Cuenta las partes que se comieron: 1 + 3. ¿Cuántas de las 4 quedan?",
+  "feedbackEn": "Count the parts eaten: 1 + 3. How many of the 4 are left?"
+ },
+ {
+  "exerciseId": "cmvjh3nx8004oa6rhmdxd78cb",
+  "optionId": "cmvjh3nxd004ra6rhwrzl1sgw",
+  "label": "4/8",
+  "feedback": "La pizza sigue teniendo 4 partes: el número de abajo no se suma.",
+  "feedbackEn": "The pizza still has 4 parts: the bottom number isn't added."
+ },
+ {
+  "exerciseId": "cmvjh3nx8004oa6rhmdxd78cb",
+  "optionId": "cmvjh3nxd004sa6rh4aem6xh2",
+  "label": "2/4",
+  "feedback": "Usa los dos datos del problema: Gabriel comió 1 parte y su papá 3.",
+  "feedbackEn": "Use both pieces of data: Gabriel ate 1 part and his dad 3."
+ },
+ {
+  "exerciseId": "cmvjh3nye004ta6rhdvn79rmw",
+  "optionId": "cmvjh3nyi004ua6rh783iw7hi",
+  "label": "Sí: 3 de 3 partes es la barra entera",
+  "feedback": "Correcto: si se toman las 3 partes de 3, se toma la barra completa.",
+  "feedbackEn": "That's right: if you take all 3 of 3 parts, you take the whole bar."
+ },
+ {
+  "exerciseId": "cmvjh3nye004ta6rhdvn79rmw",
+  "optionId": "cmvjh3nyi004va6rhw2rha42n",
+  "label": "No: 3/3 es un tercio",
+  "feedback": "Un tercio es 1/3, una sola parte. 3/3 son las 3 partes.",
+  "feedbackEn": "One third is 1/3, a single part. 3/3 is all 3 parts."
+ },
+ {
+  "exerciseId": "cmvjh3nye004ta6rhdvn79rmw",
+  "optionId": "cmvjh3nyi004wa6rhdhueac6k",
+  "label": "No: 3/3 es más que la barra",
+  "feedback": "No se puede tomar más partes de las que hay: 3 de 3 es justo la barra.",
+  "feedbackEn": "You can't take more parts than there are: 3 of 3 is exactly the bar."
+ },
+ {
+  "exerciseId": "cmvjh3nye004ta6rhdvn79rmw",
+  "optionId": "cmvjh3nyi004xa6rhot8skwsg",
+  "label": "No se puede saber",
+  "feedback": "Sí se puede saber: la barra tiene 3 partes iguales y 3/3 son las 3.",
+  "feedbackEn": "You can tell: the bar has 3 equal parts and 3/3 is all 3."
  }
 ]

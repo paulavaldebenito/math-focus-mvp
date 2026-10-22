@@ -15822,6 +15822,366 @@
  {
   "grade": 3,
   "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira la barra de chocolate. ¿Qué fracción de la barra está pintada?",
+  "id": "cmvjh3n23000sa6rh2nb4oe3r",
+  "options": {
+   "1/4": "cmvjh3n29000ta6rh5b6lceqp",
+   "3/4": "cmvjh3n29000ua6rhxrvdbm8d",
+   "4/1": "cmvjh3n29000va6rh7t2bt7k2",
+   "1/3": "cmvjh3n29000wa6rhncswdo2j"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira la hoja doblada. ¿Qué fracción de la hoja está pintada?",
+  "id": "cmvjh3n37000xa6rhu5gs6r5h",
+  "options": {
+   "1/2": "cmvjh3n3c000ya6rhjblhk3sd",
+   "2/1": "cmvjh3n3c000za6rhw6br3p18",
+   "1/1": "cmvjh3n3c0010a6rhowfgv2vl",
+   "2/2": "cmvjh3n3c0011a6rhpufdh2re"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira la cinta. ¿Qué fracción de la cinta está pintada?",
+  "id": "cmvjh3n4c0012a6rhcjzuhdww",
+  "options": {
+   "1/3": "cmvjh3n4g0013a6rhs29xeig8",
+   "3/1": "cmvjh3n4g0014a6rhrqfh7h1g",
+   "1/2": "cmvjh3n4g0015a6rhz6s7tea4",
+   "2/3": "cmvjh3n4g0016a6rh7bopcnow"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira la pared. ¿Qué fracción de la pared está pintada?",
+  "id": "cmvjh3n5e0017a6rhvd303gxz",
+  "options": {
+   "2/3": "cmvjh3n5j0018a6rhzso9sxmz",
+   "1/3": "cmvjh3n5j0019a6rhcuu4rcy0",
+   "3/2": "cmvjh3n5j001aa6rh8csr4ff5",
+   "2/1": "cmvjh3n5j001ba6rhi3592c5y"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira el jardín. ¿Qué fracción del jardín tiene flores?",
+  "id": "cmvjh3n6h001ca6rhqsax2j6t",
+  "options": {
+   "3/4": "cmvjh3n6l001da6rhcsvr0say",
+   "1/4": "cmvjh3n6l001ea6rh6te4d0xq",
+   "4/3": "cmvjh3n6l001fa6rh6j0ftv7n",
+   "3/1": "cmvjh3n6l001ga6rh4ifi77nj"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira las barras de Ana y Beto. ¿Cuál está dividida en cuartos?",
+  "id": "cmvjh3n7l001ha6rhomgl0l5f",
+  "options": {
+   "La de Ana": "cmvjh3n7q001ia6rhlch9seh0",
+   "La de Beto": "cmvjh3n7q001ja6rh2ifzt7j2",
+   "Las dos": "cmvjh3n7q001ka6rhyjbb40fp",
+   "Ninguna": "cmvjh3n7q001la6rh6pzcnq6l"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una naranja se parte en 2 partes iguales. ¿Cómo se llama cada parte?",
+  "id": "cmvjh3n8q001ma6rh122wkz4m",
+  "options": {
+   "1/2, un medio": "cmvjh3n8w001na6rhl9lzcv3p",
+   "1/3, un tercio": "cmvjh3n8w001oa6rhvztylw6x",
+   "1/4, un cuarto": "cmvjh3n8w001pa6rhw0d7n4cs",
+   "2/2, dos medios": "cmvjh3n8w001qa6rhh28zv5nk"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un queque se corta en 4 partes iguales. ¿Cómo se llama cada parte?",
+  "id": "cmvjh3n9v001ra6rhwme0w9ky",
+  "options": {
+   "1/4, un cuarto": "cmvjh3na0001sa6rhqt5grqe7",
+   "1/2, un medio": "cmvjh3na0001ta6rh4gq6tijk",
+   "4/4, cuatro cuartos": "cmvjh3na0001ua6rhxa6llz2h",
+   "1/3, un tercio": "cmvjh3na0001va6rh9rsr22gv"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "¿En cuántas partes iguales hay que dividir un entero para obtener tercios?",
+  "id": "cmvjh3naz001wa6rh63uahhr7",
+  "options": {
+   "1": "cmvjh3nb40020a6rhmvcgv63u",
+   "2": "cmvjh3nb4001ya6rh8x002jat",
+   "3": "cmvjh3nb4001xa6rhux4ua8e7",
+   "4": "cmvjh3nb4001za6rhl3sjeer3"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "En la fracción 2/3, ¿qué indica el número 2?",
+  "id": "cmvjh3nc20021a6rhde12das8",
+  "options": {
+   "Cuántas partes se toman": "cmvjh3nc80022a6rh0ti1hx1a",
+   "En cuántas partes iguales se dividió el entero": "cmvjh3nc80023a6rhlt27f8ou",
+   "Cuántos enteros hay": "cmvjh3nc80024a6rhq5euipyz",
+   "Cuántas partes sobran": "cmvjh3nc80025a6rhlol4wyhk"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira la bandera. ¿Qué fracción de la bandera NO está pintada?",
+  "id": "cmvjh3nd60026a6rh0ivsywxz",
+  "options": {
+   "1/4": "cmvjh3ndb0027a6rhynzi9x7k",
+   "3/4": "cmvjh3ndb0028a6rhxpuulv6y",
+   "1/3": "cmvjh3ndb0029a6rhzf6f0gwl",
+   "4/1": "cmvjh3ndb002aa6rhjomacit1"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Ana y Beto pintaron una parte de sus barras y los dos dicen que pintaron 1/3. ¿Quién tiene razón?",
+  "id": "cmvjh3nea002ba6rhy8kg9qo7",
+  "options": {
+   "Solo Ana": "cmvjh3nef002ca6rhdpot34cs",
+   "Solo Beto": "cmvjh3nef002da6rh13ax3y0s",
+   "Los dos": "cmvjh3nef002ea6rhpswbxr30",
+   "Ninguno": "cmvjh3nef002fa6rhhinz6jdk"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Sofía corta una tortilla en 3 partes iguales y se come 2. ¿Qué fracción de la tortilla se comió?",
+  "id": "cmvjh3nfe002ga6rh66elvtot",
+  "options": {
+   "2/3": "cmvjh3nfj002ha6rh130rlfs2",
+   "1/3": "cmvjh3nfj002ia6rhs64pz20t",
+   "3/2": "cmvjh3nfj002ja6rhh38ft9k1",
+   "2/5": "cmvjh3nfj002ka6rhmldsm0r1"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un huerto se divide en 4 partes iguales. En 1 parte se plantan lechugas y en las demás, zanahorias. ¿Qué fracción del huerto tiene zanahorias?",
+  "id": "cmvjh3ngg002la6rh7kk41c7j",
+  "options": {
+   "3/4": "cmvjh3ngl002ma6rhs1swcvh4",
+   "1/4": "cmvjh3ngl002na6rhvkqpsjjo",
+   "3/1": "cmvjh3ngl002oa6rh3zfzdpqd",
+   "4/3": "cmvjh3ngl002pa6rh71da71j7"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "¿En qué situación se usa la fracción 1/2?",
+  "id": "cmvjh3nhs002qa6rh0xk86iwp",
+  "options": {
+   "Se corta una pizza en 2 partes iguales y se come 1": "cmvjh3ni1002ra6rh1p6z2njq",
+   "Se corta una pizza en 2 partes de distinto tamaño y se come 1": "cmvjh3ni1002sa6rh7o4sl9iq",
+   "Se compran 2 pizzas y se come 1 entera": "cmvjh3ni1002ta6rhsjdgrr1d",
+   "Se corta una pizza en 4 partes iguales y se come 1": "cmvjh3ni1002ua6rh2anggo32"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "¿Qué fracción representa «tres de cuatro partes iguales»?",
+  "id": "cmvjh3niz002va6rh1q5s9nl1",
+  "options": {
+   "3/4": "cmvjh3nj5002wa6rhrq2cuq2t",
+   "4/3": "cmvjh3nj5002xa6rhaiptew4f",
+   "3/7": "cmvjh3nj5002ya6rh6zer1okz",
+   "1/4": "cmvjh3nj5002za6rh6nf1vial"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira las barras de Leo y Ema. ¿Quién pintó una parte mayor de su barra?",
+  "id": "cmvjh3nk30030a6rhjudbd50m",
+  "options": {
+   "Ema": "cmvjh3nk80031a6rhba1rbcst",
+   "Leo": "cmvjh3nk80032a6rhyodiih11",
+   "Los dos igual": "cmvjh3nk80033a6rhfw19udhk",
+   "3/4": "cmvjh3nk80034a6rhvsf6pwr1"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una cinta se divide en 3 partes iguales. ¿Qué trozo es más largo: 1/3 o 2/3 de la cinta?",
+  "id": "cmvjh3nl60035a6rhdod0i2ba",
+  "options": {
+   "2/3": "cmvjh3nlb0036a6rhq5yv9vkt",
+   "1/3": "cmvjh3nlb0037a6rh6w557kbg",
+   "Son iguales": "cmvjh3nlb0038a6rh2ybsycri",
+   "No se puede saber": "cmvjh3nlb0039a6rh86xkn5gk"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Pedro comió 1/4 de un queque y Rosa comió 3/4 del mismo queque. ¿Quién comió más?",
+  "id": "cmvjh3nm9003aa6rhthaaoqaj",
+  "options": {
+   "Rosa": "cmvjh3nmd003ba6rhlty1e85i",
+   "Pedro": "cmvjh3nmd003ca6rhergddpqs",
+   "Comieron lo mismo": "cmvjh3nmd003da6rhs1vgfqod",
+   "No se puede saber": "cmvjh3nmd003ea6rhmy5j4qpr"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una barra tiene 3 partes iguales y 1 está pintada. ¿Cuántas partes más hay que pintar para que quede pintado 2/3 de la barra?",
+  "id": "cmvjh3nnb003fa6rhereb836l",
+  "options": {
+   "0": "cmvjh3nng003ja6rhstmab311",
+   "1": "cmvjh3nng003ga6rh69vvsoxg",
+   "2": "cmvjh3nng003ha6rhnmjupu5a",
+   "3": "cmvjh3nng003ia6rh5j2qtbxm"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Una cinta se corta en 4 partes iguales. Se usa 1 parte para envolver un regalo y 2 partes para adornar un cuaderno. ¿Qué fracción de la cinta se usó?",
+  "id": "cmvjh3nof003ka6rhb91pwyq5",
+  "options": {
+   "3/4": "cmvjh3nok003la6rhwm6hjx6h",
+   "2/4": "cmvjh3nok003ma6rh2lcrg7y1",
+   "1/4": "cmvjh3nok003na6rh7y9jtj5o",
+   "3/8": "cmvjh3nok003oa6rhhejx0rmq"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Javier dice: «Si corto una pizza en 4 pedazos, cada pedazo es 1/4». ¿Tiene razón?",
+  "id": "cmvjh3npj003pa6rhy1z8g15b",
+  "options": {
+   "Solo si los 4 pedazos son iguales": "cmvjh3npo003qa6rh5uuzrikb",
+   "Sí, siempre": "cmvjh3npo003ra6rhgkszmbtj",
+   "No, cada pedazo es 1/2": "cmvjh3npo003sa6rh10xskhp3",
+   "No, cada pedazo es 4/1": "cmvjh3npo003ta6rhfltawpwh"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Martín pintó 2 de las 3 partes iguales de una cartulina. Valentina dice que Martín pintó 2/3 y Tomás dice que pintó 3/2. ¿Quién tiene razón?",
+  "id": "cmvjh3nqm003ua6rhnw2af2l0",
+  "options": {
+   "Valentina": "cmvjh3nqq003va6rha1te89ig",
+   "Tomás": "cmvjh3nqq003wa6rhb27ebfqg",
+   "Los dos": "cmvjh3nqq003xa6rhsre3qups",
+   "Ninguno": "cmvjh3nqq003ya6rhkrwi9psc"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Un chocolate tiene 3 partes iguales. Lucas se come 1 parte y su hermana se come otra parte. ¿Qué fracción del chocolate queda?",
+  "id": "cmvjh3nrq003za6rhydghn5on",
+  "options": {
+   "1/3": "cmvjh3nru0040a6rh9rrg3xvl",
+   "2/3": "cmvjh3nru0041a6rhjwm47b7a",
+   "1/2": "cmvjh3nru0042a6rhilgdct74",
+   "3/3": "cmvjh3nru0043a6rhd6wgl6bm"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "¿Cuál de estas situaciones muestra la fracción 3/4?",
+  "id": "cmvjh3nsu0044a6rhd047pxly",
+  "options": {
+   "Una pizza cortada en 4 partes iguales, y quedan 3": "cmvjh3nsz0045a6rhw4exiftp",
+   "Una pizza cortada en 3 partes iguales, y se comen 4": "cmvjh3nsz0046a6rh3l0u3wlo",
+   "Una pizza cortada en 4 partes de distinto tamaño, y quedan 3": "cmvjh3nsz0047a6rhcqqki3l6",
+   "Una pizza cortada en 7 partes iguales, y quedan 3": "cmvjh3nsz0048a6rh4ckkfbxm"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Mira las barras de Ana y Beto. ¿Quién dejó sin pintar 1/4 de su barra?",
+  "id": "cmvjh3ntx0049a6rhfwyyze1w",
+  "options": {
+   "Ana": "cmvjh3nu1004aa6rh5v11cumy",
+   "Beto": "cmvjh3nu1004ba6rhygiu1wc9",
+   "Los dos": "cmvjh3nu1004ca6rhelslebew",
+   "Ninguno": "cmvjh3nu1004da6rh5hjj7uv8"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Rodrigo dobla una hoja en 2 partes iguales y después dobla cada parte otra vez por la mitad. ¿En cuántas partes iguales quedó la hoja y qué fracción es cada parte?",
+  "id": "cmvjh3nv1004ea6rhvj2cgttf",
+  "options": {
+   "4 partes; cada una es 1/4": "cmvjh3nv5004fa6rhenzota4x",
+   "3 partes; cada una es 1/3": "cmvjh3nv5004ga6rhp3wqr494",
+   "2 partes; cada una es 1/2": "cmvjh3nv5004ha6rhmcd5iyb7",
+   "4 partes; cada una es 4/1": "cmvjh3nv5004ia6rhabe8ii8j"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Isidora quiere repartir un queque en partes iguales entre ella y 2 amigas. ¿Qué fracción del queque recibe cada una?",
+  "id": "cmvjh3nw4004ja6rh9krgwogy",
+  "options": {
+   "1/3": "cmvjh3nw9004ka6rhk91dqh0q",
+   "1/2": "cmvjh3nw9004la6rhi7keu7zp",
+   "2/3": "cmvjh3nw9004ma6rh6gcglhes",
+   "3/1": "cmvjh3nw9004na6rh6jzrj8m3"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Gabriel comió 1/4 de una pizza y su papá comió 3/4 de la misma pizza. ¿Cuánto quedó de la pizza?",
+  "id": "cmvjh3nx8004oa6rhmdxd78cb",
+  "options": {
+   "Nada: se comieron toda la pizza": "cmvjh3nxd004pa6rhzyeslhhw",
+   "1/4": "cmvjh3nxd004qa6rhgawq1zzz",
+   "4/8": "cmvjh3nxd004ra6rhwrzl1sgw",
+   "2/4": "cmvjh3nxd004sa6rh4aem6xh2"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
+  "prompt": "Daniela dice que en una barra dividida en 3 partes iguales, 3/3 es toda la barra. ¿Tiene razón?",
+  "id": "cmvjh3nye004ta6rhdvn79rmw",
+  "options": {
+   "Sí: 3 de 3 partes es la barra entera": "cmvjh3nyi004ua6rh783iw7hi",
+   "No: 3/3 es un tercio": "cmvjh3nyi004va6rhw2rha42n",
+   "No: 3/3 es más que la barra": "cmvjh3nyi004wa6rhdhueac6k",
+   "No se puede saber": "cmvjh3nyi004xa6rhot8skwsg"
+  }
+ },
+ {
+  "grade": 3,
+  "skill": "Fracciones de uso común: 1/4, 1/3, 1/2, 2/3 y 3/4",
   "prompt": "Después del partido, una pizza se corta en 4 partes iguales y te comes 1. ¿Qué fracción de la pizza te comiste?",
   "id": "cmulu2wkb03vk4crh4pgj6xpt",
   "options": {
