@@ -34,8 +34,11 @@ la semana: unas 42 preguntas por semana. Para no repetir problemas, cada semana 
    que también está en `alternativas_en.json`, `feedback_por_alternativa.json`,
    `pasos_resueltos.json` o `ingles_de_aula.json`, actualiza esas capas al estado final.
    Lo nuevo sí se agrega en los archivos fuente.
-4. **No inventes datos curriculares**: si no puedes verificar un OA o un indicador, dilo y pregunta.
-5. **Nada se publica sin revisión de la usuaria:** al terminar una tanda, ella la revisa en el modo
+4. **Multiplicación: a × b se lee «a grupos de b»** (decisión de la usuaria, 2026-10-23). Por
+   ejemplo, 6 × 2 son 6 grupos de 2 = 2 + 2 + 2 + 2 + 2 + 2, y es de la tabla del 2. Enunciado,
+   pista e imagen deben usar esa lectura; en un problema con historia, los grupos los da la historia.
+5. **No inventes datos curriculares**: si no puedes verificar un OA o un indicador, dilo y pregunta.
+6. **Nada se publica sin revisión de la usuaria:** al terminar una tanda, ella la revisa en el modo
    revisión de la app. No hagas commit ni push salvo que la usuaria lo pida explícitamente.
 
 ## Modo A: planificación anual de un curso

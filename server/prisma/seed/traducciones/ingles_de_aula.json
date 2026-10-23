@@ -2758,42 +2758,6 @@
       }
     },
     {
-      "exerciseId": "cmuli7iec00bp6krh5d752tx8",
-      "grade": 2,
-      "prompt": "¿Cuánto es 2 × 9?",
-      "promptEn": {
-        "old": "How much is 2 × 9?",
-        "new": "What is 2 × 9?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7ie600bk6krhwuxjkm4r",
-      "grade": 2,
-      "prompt": "¿Cuánto es 10 × 7?",
-      "promptEn": {
-        "old": "How much is 10 × 7?",
-        "new": "What is 10 × 7?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7ie100bf6krhb9wp8hnr",
-      "grade": 2,
-      "prompt": "¿Cuánto es 5 × 3?",
-      "promptEn": {
-        "old": "How much is 5 × 3?",
-        "new": "What is 5 × 3?"
-      }
-    },
-    {
-      "exerciseId": "cmuli7idw00ba6krhb27uilwr",
-      "grade": 2,
-      "prompt": "¿Cuánto es 2 × 6?",
-      "promptEn": {
-        "old": "How much is 2 × 6?",
-        "new": "What is 2 × 6?"
-      }
-    },
-    {
       "exerciseId": "cmulu2uy802ac4crhj8e283ft",
       "grade": 2,
       "prompt": "En el kiosco del club, cada botella de agua cuesta $10. Si compras 6 botellas, ¿cuánto pagas?",

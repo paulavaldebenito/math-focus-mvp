@@ -85,9 +85,12 @@ Qué se arregló:
 - **3 imágenes quitadas:** el acertijo de Tomás, 700 + 20 + 5 y la descomposición de 5°, porque la
   imagen era la respuesta.
 
+## Convención de multiplicación (decisión de la usuaria, 2026-10-23)
+**a × b se lee «a grupos de b»** (6 × 2 = 6 grupos de 2). Los 4 cálculos de 2° que contradecían su
+imagen y su pista se escribieron en ese orden: 6 × 2, 3 × 5, 7 × 10 y 9 × 2. También se corrigió
+una pista de variante («9 grupos de 2… suma 9 + 9»).
+
 ## Pendiente
-- **Convención de multiplicación:** ¿3 × 2 es «3 grupos de 2» o «3 veces 2 = 2 + 2 + 2»? Las pistas de
-  2 × 6 y 2 × 9 se alinearon con la imagen (6 grupos de 2).
 - **Imágenes de 2° que adelantan la multiplicación:** «6 × 10» en decenas y unidades y en los helados.
 - **4° área:** los 9 ejercicios repiten la misma terna de distractores.
 - **Simetría de 4°:** casi siempre pregunta «cuántas líneas».

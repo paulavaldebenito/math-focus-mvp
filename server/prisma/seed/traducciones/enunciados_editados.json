@@ -3625,5 +3625,53 @@
    "old": "Sofía is looking for a block that will not roll even if you push it across the floor. Which 3D shape works?",
    "new": "Sofía wants a block that won't roll, however you set it down. Which 3D shape works for her?"
   }
+ },
+ {
+  "exerciseId": "cmuli7idw00ba6krhb27uilwr",
+  "grade": 2,
+  "prompt": {
+   "old": "¿Cuánto es 2 × 6?",
+   "new": "¿Cuánto es 6 × 2?"
+  },
+  "promptEn": {
+   "old": "What is 2 × 6?",
+   "new": "What is 6 × 2?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ie100bf6krhb9wp8hnr",
+  "grade": 2,
+  "prompt": {
+   "old": "¿Cuánto es 5 × 3?",
+   "new": "¿Cuánto es 3 × 5?"
+  },
+  "promptEn": {
+   "old": "What is 5 × 3?",
+   "new": "What is 3 × 5?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7ie600bk6krhwuxjkm4r",
+  "grade": 2,
+  "prompt": {
+   "old": "¿Cuánto es 10 × 7?",
+   "new": "¿Cuánto es 7 × 10?"
+  },
+  "promptEn": {
+   "old": "What is 10 × 7?",
+   "new": "What is 7 × 10?"
+  }
+ },
+ {
+  "exerciseId": "cmuli7iec00bp6krh5d752tx8",
+  "grade": 2,
+  "prompt": {
+   "old": "¿Cuánto es 2 × 9?",
+   "new": "¿Cuánto es 9 × 2?"
+  },
+  "promptEn": {
+   "old": "What is 2 × 9?",
+   "new": "What is 9 × 2?"
+  }
  }
 ]
