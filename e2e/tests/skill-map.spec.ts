@@ -74,7 +74,7 @@ test("mapa de habilidades: solo el primer nodo está disponible, elegirlo muestr
   await expect(page.getByText(firstSkillName)).toBeVisible();
 
   // Termina la sesión (6 preguntas) sin asumir cuáles son correctas.
-  const sessionDone = page.getByRole("heading", { name: "¡Sesión terminada!" });
+  const sessionDone = page.getByRole("heading", { name: "¡Práctica terminada!" });
   const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
   for (let i = 0; i < 20; i++) {
     if (await sessionDone.isVisible()) break;

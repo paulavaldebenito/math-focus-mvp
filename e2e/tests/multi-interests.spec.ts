@@ -92,7 +92,7 @@ test("elegir hasta 3 intereses, la 4ª tarjeta se deshabilita, y llegan pregunta
   // para no fallar por eso. Con ~70% de preguntas temáticas, la
   // probabilidad de no ver ninguna en 6 preguntas es de ~0,3^6 ≈ 0,07%.
   let sawThemed = false;
-  const sessionDone = page.getByRole("heading", { name: "¡Sesión terminada!" });
+  const sessionDone = page.getByRole("heading", { name: "¡Práctica terminada!" });
   const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
   for (let i = 0; i < 20; i++) {
     if (await sessionDone.isVisible()) break;

@@ -376,5 +376,29 @@
   "prompt": "Sofía busca un bloque que no ruede aunque lo empujes por el piso. ¿Cuál figura 3D le sirve?",
   "alcance": "variantes",
   "motivo": "Ambiguo (un cilindro o un cono apoyados en su base tampoco ruedan): el base se reescribió y las variantes se retiran."
+ },
+ {
+  "exerciseId": "cmuli7ikg00hr6krhs4z2r594",
+  "prompt": "Sofía llegó al colegio a las 8:00 y salió al recreo a las 9:30. ¿Cuánto tiempo pasó?",
+  "alcance": "familia",
+  "motivo": "Tiempo transcurrido de 1 hora y media: excede el OA (horas y medias horas). Se reemplazó por lectura de la hora."
+ },
+ {
+  "exerciseId": "cmuli7ijy00h76krhdpwyd2l5",
+  "prompt": "Son las 8:30. ¿Qué hora era hace media hora?",
+  "alcance": "familia",
+  "motivo": "Demasiado tiempo transcurrido frente a lectura de la hora en MA02 OA18: se reemplazó por lectura de la hora."
+ },
+ {
+  "exerciseId": "cmuli7ik700hh6krht93mb1rh",
+  "prompt": "¿Cuántos minutos pasan desde las 3:00 hasta las 3:30?",
+  "alcance": "familia",
+  "motivo": "Demasiado tiempo transcurrido frente a lectura de la hora en MA02 OA18: se reemplazó por lectura de la hora."
+ },
+ {
+  "exerciseId": "cmuli7i6d005m6krhijs249d7",
+  "prompt": "¿Cuál de estos objetos tiene forma de cubo?",
+  "alcance": "familia",
+  "motivo": "El dado aparecía en 4 ejercicios de 1°: se reemplazó por uno de cilindro."
  }
 ]

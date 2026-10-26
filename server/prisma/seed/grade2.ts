@@ -974,6 +974,22 @@ export function grade2(errorTypeByCode: ErrorIds): SkillBlock[] {
         "Cada hora que pasa avanza un número en el reloj. Avanza dos horas desde la hora de inicio.",
         "Each hour that passes moves the clock forward by one number. Move forward two hours from the starting time.",
         "6:00", [["6:30", "E2_CAL"], ["2:00", "E1_OP"], ["5:00", "E2_CAL"]]),
+      // --- Revisión pedagógica 2026-10-26 (specs/017): más lectura de la hora (se retiraron 3 de tiempo transcurrido) ---
+      q(1, "El reloj digital marca 12:30. ¿Qué hora es?",
+        "The digital clock shows 12:30. What time is it?",
+        "Mira el número de la izquierda para la hora y el de la derecha para los minutos.",
+        "Look at the number on the left for the hour and the one on the right for the minutes.",
+        "Las 12 y media", [["Las 12 en punto", "E1_OP"], ["La 1 y media", "E2_CAL"], ["Las 3 en punto", "E1_OP"]]),
+      q(1, "¿Qué reloj digital marca las 6 y media?",
+        "Which digital clock shows half past 6?",
+        "Y media son 30 minutos. La hora va a la izquierda de los dos puntos.",
+        "Half past means 30 minutes. The hour goes to the left of the colon.",
+        "6:30", [["6:00", "E1_OP"], ["6:03", "E2_RES"], ["7:30", "E2_CAL"]]),
+      q(2, "Ana almuerza cuando el reloj digital marca 1:00. ¿Cómo se lee esa hora?",
+        "Ana has lunch when the digital clock shows 1:00. How do you read that time?",
+        "Los dos ceros de la derecha quieren decir que no pasó ningún minuto.",
+        "The two zeros on the right mean that no minutes have passed.",
+        "La 1 en punto", [["La 1 y media", "E1_OP"], ["Las 10 en punto", "E1_OP"], ["Las 12 en punto", "E2_CAL"]]),
     ],
   ));
 

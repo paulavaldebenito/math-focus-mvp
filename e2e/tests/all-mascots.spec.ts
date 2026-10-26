@@ -65,7 +65,7 @@ for (const companion of COMPANIONS) {
     await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
     await page.getByRole("button", { name: "Empezar ahora" }).click();
 
-    const doneSession = page.getByRole("heading", { name: "¡Sesión terminada!" });
+    const doneSession = page.getByRole("heading", { name: "¡Práctica terminada!" });
     const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
     for (let i = 0; i < 20; i++) {
       if (await doneSession.isVisible()) break;

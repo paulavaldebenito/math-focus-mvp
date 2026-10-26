@@ -80,7 +80,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
   await page.getByRole("button", { name: "Continuar" }).click();
 
   // Home.
-  const doneSession = page.getByRole("heading", { name: "¡Sesión terminada!" });
+  const doneSession = page.getByRole("heading", { name: "¡Práctica terminada!" });
   const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
   for (let i = 0; i < 20; i++) {
     if (await doneSession.isVisible()) break;

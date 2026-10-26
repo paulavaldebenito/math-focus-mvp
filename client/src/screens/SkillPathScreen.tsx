@@ -3,6 +3,7 @@ import * as endpoints from "../api/endpoints.js";
 import type { SkillNode } from "../api/types.js";
 import { localize, t, useLang } from "../lib/i18n.js";
 import { playBack, playClick, playSelect } from "../lib/sound.js";
+import { shortSkillName } from "../lib/skillShortNames.js";
 
 interface Props {
   childId: string;
@@ -101,7 +102,7 @@ export function SkillPathScreen({ childId, onSelect, onBack }: Props) {
           // español (clave canónica, estable) — solo el TEXTO mostrado se
           // localiza, para no depender de tener el ícono repetido por idioma.
           const displayAxis = localize(lang, skill.axis, skill.axisEn);
-          const displayName = localize(lang, skill.name, skill.nameEn);
+          const displayName = shortSkillName(lang, skill.name, skill.nameEn);
 
           return (
             <div key={skill.id} className="skill-path-item">

@@ -2346,33 +2346,6 @@
       }
     },
     {
-      "exerciseId": "cmulu2un002014crhzeo16sqe",
-      "grade": 2,
-      "prompt": "Tenías 45 stickers de notas musicales y un amigo te regaló 20 más. ¿Cuántos tienes ahora?",
-      "procedureNoteEn": {
-        "old": "Getting more is putting together. Add the tens (40 and 20) and the units (5 and 0) separately, then put the two results together.",
-        "new": "Getting more is putting together. Add the tens (40 and 20) and the ones (5 and 0) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2um501z94crhlimrpkh4",
-      "grade": 2,
-      "prompt": "En la caja hay 24 cuerdas de guitarra y 13 cuerdas de violín. ¿Cuántas cuerdas hay en total?",
-      "procedureNoteEn": {
-        "old": "Add the tens (20 and 10) and the units (4 and 3) separately, then put the two results together.",
-        "new": "Add the tens (20 and 10) and the ones (4 and 3) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2umj01zl4crho65tbs65",
-      "grade": 2,
-      "prompt": "En el desfile van 23 niños con tambores y 15 niños con flautas. ¿Cuántos niños van en total?",
-      "procedureNoteEn": {
-        "old": "Add the tens (20 and 10) and the units (3 and 5) separately, then put the two results together.",
-        "new": "Add the tens (20 and 10) and the ones (3 and 5) separately, then put the two results together."
-      }
-    },
-    {
       "exerciseId": "cmulu2uru024r4crh2opptuid",
       "grade": 2,
       "prompt": "Un vivero tenía 68 plantitas y regaló 24 para plantar en una plaza. ¿Cuántas plantitas le quedan?",
@@ -2382,84 +2355,12 @@
       }
     },
     {
-      "exerciseId": "cmulu2umx01zx4crh12vy5clh",
-      "grade": 2,
-      "prompt": "La banda tenía 56 cascabeles y regaló 23 a otro curso. ¿Cuántos cascabeles le quedan?",
-      "procedureNoteEn": {
-        "old": "Subtract the tens (50 and 20) and the units (6 and 3) separately, then put the two results together.",
-        "new": "Subtract the tens (50 and 20) and the ones (6 and 3) separately, then put the two results together."
-      }
-    },
-    {
       "exerciseId": "cmulu2upz02314crhyonkiniy",
       "grade": 2,
       "prompt": "En la pastelería había 47 alfajores y se vendieron 15. ¿Cuántos alfajores quedan?",
       "promptEn": {
         "old": "At the pastry shop there were 47 alfajores and 15 were sold. How many alfajores are left?",
         "new": "At the pastry shop there were 47 alfajores (sandwich cookies) and 15 were sold. How many alfajores are left?"
-      }
-    },
-    {
-      "exerciseId": "cmulu2una020b4crh74bipcrc",
-      "grade": 2,
-      "prompt": "En el festival del colegio participan 63 niños del coro y 26 niños de la banda. ¿Cuántos niños participan en total?",
-      "procedureNoteEn": {
-        "old": "Add the tens (60 and 20) and the units (3 and 6) separately, then put the two results together.",
-        "new": "Add the tens (60 and 20) and the ones (3 and 6) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2umo01zp4crhiakthpo2",
-      "grade": 2,
-      "prompt": "Una tienda de música vendió 34 flautas en la mañana y 25 en la tarde. ¿Cuántas flautas vendió en total?",
-      "procedureNoteEn": {
-        "old": "Add the tens (30 and 20) and the units (4 and 5) separately, then put the two results together.",
-        "new": "Add the tens (30 and 20) and the ones (4 and 5) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2uni020j4crhfwc9h2oe",
-      "grade": 2,
-      "prompt": "En un nivel ganas 12 monedas y luego encuentras 15 monedas más. ¿Cuántas monedas tienes en total?",
-      "procedureNoteEn": {
-        "old": "Add the tens (10 and 10) and the units (2 and 5) separately, then add the two results together.",
-        "new": "Add the tens (10 and 10) and the ones (2 and 5) separately, then add the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2unf020f4crhfwq1qbkn",
-      "grade": 2,
-      "prompt": "La bodega tenía 88 instrumentos y 45 se prestaron a otro colegio. ¿Cuántos instrumentos quedan?",
-      "procedureNoteEn": {
-        "old": "Subtract the tens (80 and 40) and the units (8 and 5) separately, then put the two results together.",
-        "new": "Subtract the tens (80 and 40) and the ones (8 and 5) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2um101z54crhdwib6005",
-      "grade": 2,
-      "prompt": "En la sala de ensayo hay 12 tambores y 15 flautas. ¿Cuántos instrumentos hay en total?",
-      "procedureNoteEn": {
-        "old": "Add the tens (10 and 10) and the units (2 and 5) separately, then put the two results together.",
-        "new": "Add the tens (10 and 10) and the ones (2 and 5) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2umf01zh4crh616ror8v",
-      "grade": 2,
-      "prompt": "En la biblioteca de música había 47 partituras y se prestaron 15. ¿Cuántas partituras quedan?",
-      "procedureNoteEn": {
-        "old": "Subtract the tens (40 and 10) and the units (7 and 5) separately, then put the two results together.",
-        "new": "Subtract the tens (40 and 10) and the ones (7 and 5) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2unq020r4crhgvxo89ko",
-      "grade": 2,
-      "prompt": "Tenías 45 gemas en el juego y un amigo te regaló 20 más. ¿Cuántas gemas tienes ahora?",
-      "procedureNoteEn": {
-        "old": "Getting more means joining. Add the tens (40 and 20) and the units (5 and 0) separately, then add the two results together.",
-        "new": "Getting more means joining. Add the tens (40 and 20) and the ones (5 and 0) separately, then add the two results together."
       }
     },
     {
@@ -2505,24 +2406,6 @@
       "promptEn": {
         "old": "How much is 88 − 45?",
         "new": "What is 88 − 45?"
-      }
-    },
-    {
-      "exerciseId": "cmulu2umb01zd4crhyxwsn1bc",
-      "grade": 2,
-      "prompt": "El colegio tenía 35 sillas para el concierto y se llevaron 12 a otra sala. ¿Cuántas sillas quedaron?",
-      "procedureNoteEn": {
-        "old": "Subtract the tens (30 and 10) and the units (5 and 2) separately, then put the two results together.",
-        "new": "Subtract the tens (30 and 10) and the ones (5 and 2) separately, then put the two results together."
-      }
-    },
-    {
-      "exerciseId": "cmulu2ums01zt4crhnjamax9u",
-      "grade": 2,
-      "prompt": "En el auditorio hay 68 asientos y 24 quedaron vacíos. ¿Cuántos asientos están ocupados?",
-      "procedureNoteEn": {
-        "old": "Subtract the tens (60 and 20) and the units (8 and 4) separately, then put the two results together.",
-        "new": "Subtract the tens (60 and 20) and the ones (8 and 4) separately, then put the two results together."
       }
     },
     {
@@ -2589,15 +2472,6 @@
       }
     },
     {
-      "exerciseId": "cmulu2unu020w4crhr0t05dj8",
-      "grade": 2,
-      "prompt": "Había 76 jugadores conectados a un torneo en línea y 32 se desconectaron. ¿Cuántos jugadores quedan conectados?",
-      "procedureNoteEn": {
-        "old": "Disconnecting means taking away. Subtract the tens (70 and 30) and the units (6 and 2) separately, then add the two results together.",
-        "new": "Disconnecting means taking away. Subtract the tens (70 and 30) and the ones (6 and 2) separately, then add the two results together."
-      }
-    },
-    {
       "exerciseId": "cmulu2un502064crhfyxn40wz",
       "grade": 2,
       "prompt": "En el auditorio había 76 personas y 32 salieron a comprar algo en el intermedio. ¿Cuántas personas quedan sentadas?",
@@ -2613,10 +2487,6 @@
       "promptEn": {
         "old": "You had 35 saved lives and used 12 on a hard level. How many lives do you have left?",
         "new": "You had 35 extra lives and used 12 on a hard level. How many lives do you have left?"
-      },
-      "procedureNoteEn": {
-        "old": "Subtract the tens (30 and 10) and the units (5 and 2) separately, then add the two results together.",
-        "new": "Subtract the tens (30 and 10) and the ones (5 and 2) separately, then add the two results together."
       }
     },
     {

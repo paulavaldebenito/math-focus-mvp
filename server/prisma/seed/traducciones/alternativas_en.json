@@ -921,8 +921,8 @@
    },
    {
     "id": "cmuli7i5m00516krh05uum7hr",
-    "label": "óvalo",
-    "labelEn": "oval",
+    "label": "rectángulo",
+    "labelEn": "rectangle",
     "isCorrect": false
    }
   ]
@@ -1305,8 +1305,8 @@
    },
    {
     "id": "cmulu2u0r01ep4crhzt84p4qo",
-    "label": "óvalo",
-    "labelEn": "oval",
+    "label": "rectángulo",
+    "labelEn": "rectangle",
     "isCorrect": false
    }
   ]
@@ -7129,7 +7129,7 @@
    },
    {
     "id": "cmulu2y8w05jj4crhk793uoy1",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -7161,7 +7161,7 @@
    },
    {
     "id": "cmulu2y8005ip4crh8wb496fb",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -7386,7 +7386,7 @@
    },
    {
     "id": "cmulu2y5305fi4crhrw3ppaxh",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -7548,7 +7548,7 @@
    },
    {
     "id": "cmulu2y6x05hg4crhj5ni6uyl",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -7580,7 +7580,7 @@
    },
    {
     "id": "cmulu2y4k05ey4crh90culx5f",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -8030,7 +8030,7 @@
    },
    {
     "id": "cmulu2y5u05gc4crhippm9tom",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -8062,7 +8062,7 @@
    },
    {
     "id": "cmulu2y8j05j44crhqudurnl5",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -8094,7 +8094,7 @@
    },
    {
     "id": "cmulu2y5i05fx4crhplkggy61",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -8126,7 +8126,7 @@
    },
    {
     "id": "cmulu2y6c05gr4crhtxs4zu6o",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -8158,7 +8158,7 @@
    },
    {
     "id": "cmuli7j6z015e6krhh6jwq3na",
-    "label": "12 m",
+    "label": "16 m²",
     "labelEn": null,
     "isCorrect": false
    }
@@ -17958,6 +17958,198 @@
     "id": "cmvk0h8wj002rt7rhx8i6bfrx",
     "label": "Uno de los dos contó mal",
     "labelEn": "One of them counted wrong",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvpjq7fq000eggrh1c5f5m3r",
+  "grade": 1,
+  "prompt": "¿Cuál de estos objetos tiene forma de cilindro?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvpjq7g1000fggrhnt1qt092",
+    "label": "Un tarro de leche",
+    "labelEn": "A can of milk",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvpjq7g1000gggrhe2ozv8au",
+    "label": "Un dado",
+    "labelEn": "A die",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjq7g1000hggrh10in9qq8",
+    "label": "Una pelota",
+    "labelEn": "A ball",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjq7g1000iggrhla5zwuwj",
+    "label": "Un gorro de cumpleaños",
+    "labelEn": "A birthday hat",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvpjr9cj000rggrhbt8gbt9o",
+  "grade": 2,
+  "prompt": "El reloj digital marca 12:30. ¿Qué hora es?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvpjr9cr000sggrhctjjyu30",
+    "label": "Las 12 y media",
+    "labelEn": "Half past 12",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvpjr9cr000tggrhi5j9dehs",
+    "label": "Las 12 en punto",
+    "labelEn": "12 o'clock",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjr9cr000uggrhiw1motaq",
+    "label": "La 1 y media",
+    "labelEn": "Half past 1",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjr9cr000vggrhitn7j5cc",
+    "label": "Las 3 en punto",
+    "labelEn": "3 o'clock",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvpjr9gx0011ggrh8vhudmm4",
+  "grade": 2,
+  "prompt": "Ana almuerza cuando el reloj digital marca 1:00. ¿Cómo se lee esa hora?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvpjr9h80012ggrho3rd94pk",
+    "label": "La 1 en punto",
+    "labelEn": "1 o'clock",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvpjr9h80013ggrhzy1pxgr0",
+    "label": "La 1 y media",
+    "labelEn": "Half past 1",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjr9h80014ggrhy5z3ck3u",
+    "label": "Las 10 en punto",
+    "labelEn": "10 o'clock",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjr9h80015ggrh9duwlcn1",
+    "label": "Las 12 en punto",
+    "labelEn": "12 o'clock",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvpjtb8e001wggrhg5w52bxz",
+  "grade": 4,
+  "prompt": "Tomás dice: «Si doblo un rectángulo que no es cuadrado por su diagonal, las dos mitades calzan justo, así que la diagonal es una línea de simetría». ¿Tiene razón?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvpjtb8o001xggrhrheg4dt9",
+    "label": "No: al doblarlo, las puntas no calzan",
+    "labelEn": "No: when you fold it, the corners don't match",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvpjtb8o001yggrhc6uja2fi",
+    "label": "Sí: la diagonal lo divide en dos triángulos iguales",
+    "labelEn": "Yes: the diagonal splits it into two equal triangles",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjtb8o001zggrhjhs474qf",
+    "label": "Sí: todas las líneas que pasan por el centro son de simetría",
+    "labelEn": "Yes: every line through the center is a line of symmetry",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjtb8o0020ggrhwpwk4vjf",
+    "label": "No: un rectángulo no tiene ninguna línea de simetría",
+    "labelEn": "No: a rectangle has no lines of symmetry",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvpjtd250027ggrh8193evus",
+  "grade": 4,
+  "prompt": "Un rectángulo mide 3 cm de largo y 2 cm de ancho. Si el largo se duplica y el ancho queda igual, ¿qué pasa con su área?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvpjtd2g0028ggrh65fxj3fl",
+    "label": "Se duplica: pasa de 6 cm² a 12 cm²",
+    "labelEn": "It doubles: from 6 cm² to 12 cm²",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvpjtd2g0029ggrh0u7zdcp8",
+    "label": "Se cuadruplica: pasa de 6 cm² a 24 cm²",
+    "labelEn": "It becomes four times as big: from 6 cm² to 24 cm²",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjtd2g002aggrhqbqgogpy",
+    "label": "Queda igual: 6 cm²",
+    "labelEn": "It stays the same: 6 cm²",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjtd2g002bggrhcyvsl272",
+    "label": "Aumenta en 3 cm²: pasa de 6 cm² a 9 cm²",
+    "labelEn": "It grows by 3 cm²: from 6 cm² to 9 cm²",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmvpjtd4r002cggrhlhc5mmk2",
+  "grade": 4,
+  "prompt": "Ana dice: «Si dos rectángulos tienen el mismo perímetro, también tienen la misma área». Prueba con un rectángulo de 2 cm por 6 cm y un cuadrado de 4 cm por 4 cm. ¿Tiene razón?",
+  "promptEn": null,
+  "options": [
+   {
+    "id": "cmvpjtd54002dggrhw0h4pm6b",
+    "label": "No: los dos miden 16 cm de perímetro, pero las áreas son 12 cm² y 16 cm²",
+    "labelEn": "No: both have a 16 cm perimeter, but the areas are 12 cm² and 16 cm²",
+    "isCorrect": true
+   },
+   {
+    "id": "cmvpjtd54002eggrhfma46igu",
+    "label": "Sí: los dos tienen 16 cm² de área",
+    "labelEn": "Yes: both have an area of 16 cm²",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjtd54002fggrhfhl1rktn",
+    "label": "Sí: si el contorno es igual, la superficie también",
+    "labelEn": "Yes: if the border is the same, so is the surface",
+    "isCorrect": false
+   },
+   {
+    "id": "cmvpjtd54002gggrh3cqah4iv",
+    "label": "No: tienen distinto perímetro",
+    "labelEn": "No: they have different perimeters",
     "isCorrect": false
    }
   ]

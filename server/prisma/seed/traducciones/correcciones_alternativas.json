@@ -457,7 +457,13 @@
     "toEn": null,
     "code": "E2_CAL"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Conteo hacia adelante desde 8, avanzando 5 posiciones.",
+   "new": "Empieza en el 8 y cuenta 5 más.",
+   "oldEn": "Start at 8 and count on five more.",
+   "newEn": "Start at 8 and count on five more."
+  }
  },
  {
   "exerciseId": "cmtsx18eu0009ftrhq7sr27q6",
@@ -695,7 +701,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Suma las decenas (10 y 10) y las unidades (2 y 5) por separado, y junta los dos resultados.",
+   "new": "Suma primero las decenas y después las unidades.",
+   "oldEn": "Add the tens (10 and 10) and the ones (2 and 5) separately, then add the two results together.",
+   "newEn": "Add the tens first, then the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18n0005eftrhknqr2s4v",
@@ -706,7 +718,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Suma las decenas (20 y 10) y las unidades (4 y 3) por separado, y junta los dos resultados.",
+   "new": "Parte en el 24 y avanza 1 decena. Después suma las unidades que faltan.",
+   "oldEn": "Add the tens (20 and 10) and the ones (4 and 3) separately, then add the two results together.",
+   "newEn": "Start at 24 and go up 1 ten. Then add the ones that are left."
+  }
  },
  {
   "exerciseId": "cmtsx18nd005iftrhr5gs6fgs",
@@ -717,7 +735,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Resta las decenas (30 y 10) y las unidades (5 y 2) por separado, y junta los dos resultados.",
+   "new": "Quita primero las decenas y después las unidades.",
+   "oldEn": "Subtract the tens (30 and 10) and the ones (5 and 2) separately, then add the two results together.",
+   "newEn": "Take away the tens first, then the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18nh005mftrh176lxbz6",
@@ -728,7 +752,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Resta las decenas (40 y 10) y las unidades (7 y 5) por separado, y junta los dos resultados.",
+   "new": "Parte en el 47 y retrocede 1 decena. Después quita las unidades.",
+   "oldEn": "Subtract the tens (40 and 10) and the ones (7 and 5) separately, then add the two results together.",
+   "newEn": "Start at 47 and go back 1 ten. Then take away the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18np005qftrh0gkk390u",
@@ -739,7 +769,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Suma las decenas (20 y 10) y las unidades (3 y 5) por separado, y junta los dos resultados.",
+   "new": "Separa cada número en decenas y unidades, y junta las decenas con las decenas y las unidades con las unidades.",
+   "oldEn": "Add the tens (20 and 10) and the ones (3 and 5) separately, then add the two results together.",
+   "newEn": "Split each number into tens and ones, then put tens with tens and ones with ones."
+  }
  },
  {
   "exerciseId": "cmtsx18nt005uftrhf5d8fdvi",
@@ -750,7 +786,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Suma las decenas (30 y 20) y las unidades (4 y 5) por separado, y junta los dos resultados.",
+   "new": "Suma primero las decenas y después las unidades.",
+   "oldEn": "Add the tens (30 and 20) and the ones (4 and 5) separately, then add the two results together.",
+   "newEn": "Add the tens first, then the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18o0005yftrh9jlptk4j",
@@ -761,7 +803,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Resta las decenas (60 y 20) y las unidades (8 y 4) por separado, y junta los dos resultados.",
+   "new": "Quita primero las decenas y después las unidades.",
+   "oldEn": "Subtract the tens (60 and 20) and the ones (8 and 4) separately, then add the two results together.",
+   "newEn": "Take away the tens first, then the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18o50062ftrhyam7mygi",
@@ -772,7 +820,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Resta las decenas (50 y 20) y las unidades (6 y 3) por separado, y junta los dos resultados.",
+   "new": "Parte en el 56 y retrocede 2 decenas. Después quita las unidades.",
+   "oldEn": "Subtract the tens (50 and 20) and the ones (6 and 3) separately, then add the two results together.",
+   "newEn": "Start at 56 and go back 2 tens. Then take away the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18om006gftrh6g70nyn4",
@@ -783,7 +837,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Suma las decenas (60 y 20) y las unidades (3 y 6) por separado, y junta los dos resultados.",
+   "new": "Parte en el 63 y avanza 2 decenas. Después suma las unidades.",
+   "oldEn": "Add the tens (60 and 20) and the ones (3 and 6) separately, then add the two results together.",
+   "newEn": "Start at 63 and go up 2 tens. Then add the ones."
+  }
  },
  {
   "exerciseId": "cmtsx18ov006kftrh9k3ny20l",
@@ -794,7 +854,13 @@
     "labelEn": null,
     "code": "E2_RES"
    }
-  ]
+  ],
+  "hint": {
+   "old": "Resta las decenas (80 y 40) y las unidades (8 y 5) por separado, y junta los dos resultados.",
+   "new": "Separa cada número en decenas y unidades, y quita decenas de decenas y unidades de unidades.",
+   "oldEn": "Subtract the tens (80 and 40) and the ones (8 and 5) separately, then add the two results together.",
+   "newEn": "Split each number into tens and ones, then take tens from tens and ones from ones."
+  }
  },
  {
   "exerciseId": "cmun91g7u001htwrhtqzx83ac",
@@ -2815,6 +2881,110 @@
     "label": "8 cm",
     "from": "E2_CAL",
     "to": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmtsx18i6001sftrhzf0a2fnp",
+  "prompt": "¿Cuánto es 2 + 6?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 6, avanzando 2 posiciones.",
+   "new": "Empieza en el 6 y cuenta 2 más.",
+   "oldEn": "Start at 6 and count on two more.",
+   "newEn": "Start at 6 and count on two more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18ie001xftrhzk6nkluu",
+  "prompt": "¿Cuánto es 7 + 6?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 7, avanzando 6 posiciones.",
+   "new": "Empieza en el 7 y cuenta 6 más.",
+   "oldEn": "Start at 7 and count on six more.",
+   "newEn": "Start at 7 and count on six more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18iz002cftrhu1s1grtm",
+  "prompt": "¿Cuánto es 6 + 8?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 8, avanzando 6 posiciones.",
+   "new": "Empieza en el 8 y cuenta 6 más.",
+   "oldEn": "Start at 8 and count on six more.",
+   "newEn": "Start at 8 and count on six more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18jb002mftrh0sl478uy",
+  "prompt": "¿Cuánto es 9 + 4?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 9, avanzando 4 posiciones.",
+   "new": "Empieza en el 9 y cuenta 4 más.",
+   "oldEn": "Start at 9 and count on four more.",
+   "newEn": "Start at 9 and count on four more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18jy0031ftrhp3m38q0w",
+  "prompt": "¿Cuánto es 8 + 9?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 9, avanzando 8 posiciones.",
+   "new": "Empieza en el 9 y cuenta 8 más.",
+   "oldEn": "Start at 9 and count on eight more.",
+   "newEn": "Start at 9 and count on eight more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18kg003gftrht3f686ey",
+  "prompt": "¿Cuánto es 7 + 9?",
+  "hint": {
+   "old": "Conteo hacia adelante desde 9, avanzando 7 posiciones.",
+   "new": "Empieza en el 9 y cuenta 7 más.",
+   "oldEn": "Start at 9 and count on seven more.",
+   "newEn": "Start at 9 and count on seven more."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18ob0066ftrh8cjen0mn",
+  "prompt": "Tenías 45 stickers y un amigo te regaló 20 más. ¿Cuántos tienes ahora?",
+  "hint": {
+   "old": "Regalar más es juntar. Suma las decenas (40 y 20) y las unidades (5 y 0) por separado, y junta los dos resultados.",
+   "new": "Regalar más es juntar. Avanza de 10 en 10 desde el 45.",
+   "oldEn": "Getting more means joining. Add the tens (40 and 20) and the ones (5 and 0) separately, then add the two results together.",
+   "newEn": "Getting more means joining. Count on by 10s from 45."
+  }
+ },
+ {
+  "exerciseId": "cmtsx18og006bftrh004eefxp",
+  "prompt": "Había 76 personas en el bus y bajaron 32. ¿Cuántas personas quedan?",
+  "hint": {
+   "old": "Bajarse es quitar. Resta las decenas (70 y 30) y las unidades (6 y 2) por separado, y junta los dos resultados.",
+   "new": "Bajarse es quitar. Quita primero las decenas y después las unidades.",
+   "oldEn": "Getting off means taking away. Subtract the tens (70 and 30) and the ones (6 and 2) separately, then add the two results together.",
+   "newEn": "Getting off means taking away. Take away the tens first, then the ones."
+  }
+ },
+ {
+  "exerciseId": "cmuli7i5l004x6krhu8h5o0zm",
+  "prompt": "Un dado tiene forma de cubo. ¿Qué figura 2D ves en cada una de sus caras?",
+  "relabel": [
+   {
+    "from": "óvalo",
+    "to": "rectángulo",
+    "toEn": "rectangle",
+    "code": "E1_OP"
+   }
+  ]
+ },
+ {
+  "exerciseId": "cmuli7j6y015a6krhlxgd4aqy",
+  "prompt": "Una pared rectangular mide 4 m de largo y 3 m de alto y se va a pintar completa. ¿Cuántos metros cuadrados hay que pintar?",
+  "relabel": [
+   {
+    "from": "12 m",
+    "to": "16 m²",
+    "toEn": null,
+    "code": "E3_DATO"
    }
   ]
  }

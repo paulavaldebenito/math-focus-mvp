@@ -5764,6 +5764,18 @@
  {
   "grade": 1,
   "skill": "Figuras 3D y 2D del entorno",
+  "prompt": "¿Cuál de estos objetos tiene forma de cilindro?",
+  "id": "cmvpjq7fq000eggrh1c5f5m3r",
+  "options": {
+   "Un tarro de leche": "cmvpjq7g1000fggrhnt1qt092",
+   "Un dado": "cmvpjq7g1000gggrhe2ozv8au",
+   "Una pelota": "cmvpjq7g1000hggrh10in9qq8",
+   "Un gorro de cumpleaños": "cmvpjq7g1000iggrhla5zwuwj"
+  }
+ },
+ {
+  "grade": 1,
+  "skill": "Figuras 3D y 2D del entorno",
   "prompt": "Un cono de entrenamiento tiene forma de cono. Si lo apoyas sobre el pasto, ¿qué figura 2D dibuja el borde que toca el pasto?",
   "id": "cmulu2tzi01d74crh9i26z8dz",
   "options": {
@@ -11773,6 +11785,42 @@
    "6:30": "cmuli7ikl00hy6krhupzshoie",
    "2:00": "cmuli7ikl00hz6krhxlz7rzpy",
    "5:00": "cmuli7ikl00i06krh64l2zhyt"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Horas y medias horas en el reloj digital",
+  "prompt": "El reloj digital marca 12:30. ¿Qué hora es?",
+  "id": "cmvpjr9cj000rggrhbt8gbt9o",
+  "options": {
+   "Las 12 y media": "cmvpjr9cr000sggrhctjjyu30",
+   "Las 12 en punto": "cmvpjr9cr000tggrhi5j9dehs",
+   "La 1 y media": "cmvpjr9cr000uggrhiw1motaq",
+   "Las 3 en punto": "cmvpjr9cr000vggrhitn7j5cc"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Horas y medias horas en el reloj digital",
+  "prompt": "¿Qué reloj digital marca las 6 y media?",
+  "id": "cmvpjr9es000wggrhdhyyzevb",
+  "options": {
+   "6:30": "cmvpjr9f1000xggrh21cf5gzi",
+   "6:00": "cmvpjr9f1000yggrhltkp4m7w",
+   "6:03": "cmvpjr9f1000zggrhz29r5nbm",
+   "7:30": "cmvpjr9f10010ggrhce6u5uuo"
+  }
+ },
+ {
+  "grade": 2,
+  "skill": "Horas y medias horas en el reloj digital",
+  "prompt": "Ana almuerza cuando el reloj digital marca 1:00. ¿Cómo se lee esa hora?",
+  "id": "cmvpjr9gx0011ggrh8vhudmm4",
+  "options": {
+   "La 1 en punto": "cmvpjr9h80012ggrho3rd94pk",
+   "La 1 y media": "cmvpjr9h80013ggrhzy1pxgr0",
+   "Las 10 en punto": "cmvpjr9h80014ggrhy5z3ck3u",
+   "Las 12 en punto": "cmvpjr9h80015ggrh9duwlcn1"
   }
  },
  {
@@ -22590,6 +22638,42 @@
  {
   "grade": 4,
   "skill": "Simetría: líneas de simetría en figuras 2D",
+  "prompt": "¿Cuál de estas letras tiene una línea de simetría horizontal (de izquierda a derecha)?",
+  "id": "cmvpjtb3g001mggrhhnqalnhy",
+  "options": {
+   "B": "cmvpjtb3s001nggrhz2juoh0y",
+   "F": "cmvpjtb3s001oggrhj408b7cn",
+   "N": "cmvpjtb3s001pggrhw4be9zwf",
+   "A": "cmvpjtb3s001qggrhhjbwkpmm"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Simetría: líneas de simetría en figuras 2D",
+  "prompt": "Una figura tiene una línea de simetría vertical. A la izquierda de la línea hay 5 cuadritos pintados. ¿Cuántos cuadritos pintados tiene la figura completa?",
+  "id": "cmvpjtb64001rggrhqgxtrl6v",
+  "options": {
+   "5": "cmvpjtb6g001tggrhb8ajqizc",
+   "6": "cmvpjtb6g001uggrhy9bnc2et",
+   "10": "cmvpjtb6g001sggrhxflm5g0u",
+   "15": "cmvpjtb6g001vggrh7boaazcj"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Simetría: líneas de simetría en figuras 2D",
+  "prompt": "Tomás dice: «Si doblo un rectángulo que no es cuadrado por su diagonal, las dos mitades calzan justo, así que la diagonal es una línea de simetría». ¿Tiene razón?",
+  "id": "cmvpjtb8e001wggrhg5w52bxz",
+  "options": {
+   "No: al doblarlo, las puntas no calzan": "cmvpjtb8o001xggrhrheg4dt9",
+   "Sí: la diagonal lo divide en dos triángulos iguales": "cmvpjtb8o001yggrhc6uja2fi",
+   "Sí: todas las líneas que pasan por el centro son de simetría": "cmvpjtb8o001zggrhjhs474qf",
+   "No: un rectángulo no tiene ninguna línea de simetría": "cmvpjtb8o0020ggrhwpwk4vjf"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Simetría: líneas de simetría en figuras 2D",
   "prompt": "Una cancha de fútbol vista desde arriba es un rectángulo que no es cuadrado. ¿Cuántas líneas de simetría tiene ese rectángulo?",
   "id": "cmulu2y2205cw4crhg220ssoi",
   "options": {
@@ -22849,6 +22933,42 @@
    "4 cm × 4 cm y 2 cm × 6 cm": "cmuli7j79015m6krhhxifr1yf",
    "2 cm × 6 cm y 3 cm × 5 cm": "cmuli7j79015n6krhdmx9rzlk",
    "2 cm × 5 cm y 3 cm × 4 cm": "cmuli7j79015o6krhgglqb0xs"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Área de rectángulos y cuadrados",
+  "prompt": "Un rectángulo está formado por 4 filas de 6 cuadrados de 1 cm de lado. ¿Cuál es su área?",
+  "id": "cmvpjtczs0022ggrh0uqimta7",
+  "options": {
+   "24 cm²": "cmvpjtd020023ggrh9oiqav9i",
+   "10 cm²": "cmvpjtd020024ggrhrfylay2d",
+   "20 cm²": "cmvpjtd020025ggrhayejgd86",
+   "28 cm²": "cmvpjtd020026ggrhk7x7klkj"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Área de rectángulos y cuadrados",
+  "prompt": "Un rectángulo mide 3 cm de largo y 2 cm de ancho. Si el largo se duplica y el ancho queda igual, ¿qué pasa con su área?",
+  "id": "cmvpjtd250027ggrh8193evus",
+  "options": {
+   "Se duplica: pasa de 6 cm² a 12 cm²": "cmvpjtd2g0028ggrh65fxj3fl",
+   "Se cuadruplica: pasa de 6 cm² a 24 cm²": "cmvpjtd2g0029ggrh0u7zdcp8",
+   "Queda igual: 6 cm²": "cmvpjtd2g002aggrhqbqgogpy",
+   "Aumenta en 3 cm²: pasa de 6 cm² a 9 cm²": "cmvpjtd2g002bggrhcyvsl272"
+  }
+ },
+ {
+  "grade": 4,
+  "skill": "Área de rectángulos y cuadrados",
+  "prompt": "Ana dice: «Si dos rectángulos tienen el mismo perímetro, también tienen la misma área». Prueba con un rectángulo de 2 cm por 6 cm y un cuadrado de 4 cm por 4 cm. ¿Tiene razón?",
+  "id": "cmvpjtd4r002cggrhlhc5mmk2",
+  "options": {
+   "No: los dos miden 16 cm de perímetro, pero las áreas son 12 cm² y 16 cm²": "cmvpjtd54002dggrhw0h4pm6b",
+   "Sí: los dos tienen 16 cm² de área": "cmvpjtd54002eggrhfma46igu",
+   "Sí: si el contorno es igual, la superficie también": "cmvpjtd54002fggrhfhl1rktn",
+   "No: tienen distinto perímetro": "cmvpjtd54002gggrh3cqah4iv"
   }
  },
  {

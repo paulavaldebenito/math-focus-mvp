@@ -71,7 +71,7 @@ test("detecta el error: aparece dentro de la sesión, muestra la respuesta ajena
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
 
-  const sessionDone = page.getByRole("heading", { name: "¡Sesión terminada!" });
+  const sessionDone = page.getByRole("heading", { name: "¡Práctica terminada!" });
   const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
   const spotErrorLead = page.getByText("Tu amigo resolvió este problema:");
   let sawSpotError = false;

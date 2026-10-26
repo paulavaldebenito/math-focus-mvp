@@ -394,7 +394,7 @@ describe("PracticeScreen", () => {
       if (pauseDecline) await user.click(pauseDecline);
     }
 
-    await screen.findByRole("heading", { name: "¡Sesión terminada!" });
+    await screen.findByRole("heading", { name: "¡Práctica terminada!" });
     expect(screen.getByText("6/6")).toBeInTheDocument();
     expect(screen.getByText(/3 días seguidos/)).toBeInTheDocument();
   });

@@ -81,7 +81,11 @@ export function SessionReflection({ lang, question, onSubmit }: Props) {
       <div className="reflection-question">
         <p id="reflection-emotion">{t(lang, "reflectionEmotionQuestion")}</p>
         {speechSupported && (
-          <button className="reflection-listen" type="button" onClick={() => speak(t(lang, "reflectionEmotionQuestion"), lang)}>
+          <button
+            className="reflection-listen"
+            type="button"
+            onClick={() => speak(`${t(lang, "reflectionEmotionQuestion")} ${EMOTION_CHOICES.map((e) => e.label[lang]).join(", ")}.`, lang)}
+          >
             {t(lang, "reflectionListen")}
           </button>
         )}
@@ -104,7 +108,19 @@ export function SessionReflection({ lang, question, onSubmit }: Props) {
           </button>
         ))}
       </div>
-      <p id="reflection-extra" className="reflection-question">{t(lang, q.question)}</p>
+      {/* En 1°–2° muchos aún no leen: la segunda pregunta y sus opciones también se pueden escuchar. */}
+      <div className="reflection-question">
+        <p id="reflection-extra">{t(lang, q.question)}</p>
+        {speechSupported && (
+          <button
+            className="reflection-listen"
+            type="button"
+            onClick={() => speak(`${t(lang, q.question)} ${q.options.map((o) => o.label[lang]).join(", ")}.`, lang)}
+          >
+            {t(lang, "reflectionListen")}
+          </button>
+        )}
+      </div>
       <div className={`reflection-extra reflection-extra-${q.options.length}`} role="radiogroup" aria-labelledby="reflection-extra">
         {q.options.map((o) => (
           <button

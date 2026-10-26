@@ -98,10 +98,39 @@ una pista de variante («9 grupos de 2… suma 9 + 9»).
 
 La de los helados muestra 6 helados de $10. Las generó otra IA con un encargo de estilo y cantidades exactas, y cada barra se contó con un programa antes de instalarla.
 
+## Tercera parte (2026-10-26): variedad y textos
+
+**Banco**
+- **Área de 4°:** 3 preguntas nuevas.
+  - Contar cuadrados por filas.
+  - ¿Qué pasa con el área si se duplica el largo?
+  - Argumentar: «mismo perímetro, ¿misma área?», con 2 × 6 y 4 × 4.
+
+  Además, un distractor de unidad se cambió por uno de dato («16 m²»). Los demás distractores que se
+  repiten (perímetro en vez de área, sumar lados, unidad lineal) se mantienen: son los 3 errores
+  reales más frecuentes.
+- **Simetría de 4°:** 3 preguntas nuevas, además de «¿cuántas líneas?».
+  - Simetría horizontal en letras.
+  - Completar una figura simétrica.
+  - Argumentar: ¿la diagonal de un rectángulo es línea de simetría?
+- **La hora en 2°:** se retiraron 3 de tiempo transcurrido (una de 1 hora y media excedía el OA) y
+  entraron 3 de leer la hora.
+- **1°:** «óvalo» pasó a «rectángulo», y el cuarto ejercicio del dado se reemplazó por uno de
+  cilindro.
+- **Pistas de sumas y restas:**
+  - 1° (7 pistas): ya no dicen «Conteo hacia adelante desde X, avanzando Y posiciones», sino
+    «Empieza en el X y cuenta Y más».
+  - 2° (12 pistas): ya no separan los números por el niño, sino que proponen estrategias variadas
+    (decenas primero, avanzar de 10 en 10, descomponer).
+
+**Textos de la app**
+- Se usa «práctica» en vez de «sesión» o «misión» con niños y familias.
+- Nombres cortos para niños en el mapa y en el chip de práctica (`client/src/lib/skillShortNames.ts`);
+  la familia y los docentes siguen viendo el nombre oficial.
+- La reflexión final permite escuchar las dos preguntas con sus opciones.
+- Si el niño responde muy rápido, el aviso ya no se pierde cuando hay un mensaje de error concreto.
+
 ## Pendiente
-- **4° área:** los 9 ejercicios repiten la misma terna de distractores.
-- **Simetría de 4°:** casi siempre pregunta «cuántas líneas».
-- **Nombres cortos para niños en el mapa,** junto al nombre oficial.
 - **Diversidad:** casi no hay «argumentar» fuera de fracciones. Faltan problemas de juntar, comparar
   y cambio en 1°–2°, y también construir gráficos y ubicar en la recta.
 - **Desarrollo paso a paso y feedback por alternativa:** solo los tienen fracciones y porcentajes.

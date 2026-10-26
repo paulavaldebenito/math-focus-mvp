@@ -35,6 +35,7 @@ import {
   useLang,
   type Lang,
 } from "../lib/i18n.js";
+import { shortSkillName } from "../lib/skillShortNames.js";
 
 const QUESTIONS_PER_SESSION = 6;
 // A mitad de sesión se ofrece un recreo con movimiento/respiración aunque no
@@ -654,7 +655,7 @@ export function PracticeScreen({
       )}
       <BrickCompanionAvatar companion={companion} mood={phase === "feedback" ? mood : "idle"} />
 
-      {skillName && <p className="skill-name-chip">{localize(lang, skillName, skillNameEn)}</p>}
+      {skillName && <p className="skill-name-chip">{shortSkillName(lang, skillName, skillNameEn)}</p>}
       <p className="hint-text">
         {t(lang, "level")} {level}
       </p>

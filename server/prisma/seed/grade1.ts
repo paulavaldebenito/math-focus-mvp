@@ -1178,6 +1178,12 @@ export function grade1(errorTypeByCode: ErrorIds): SkillBlock[] {
         ["Sofía is looking for a block that will not roll even if you push it across the floor. Which 3D shape works?", "Think about which shapes have curved parts that let them roll, and which one has only flat faces."],
         "cubo",
         [["esfera", "E1_OP"], ["cilindro", "E1_OP"], ["cono", "E1_OP"]]),
+      // --- Revisión pedagógica 2026-10-26 (specs/017): cilindro en vez de un cuarto ejercicio del dado ---
+      q(2,
+        ["¿Cuál de estos objetos tiene forma de cilindro?", "Busca el objeto que puede rodar y además tiene dos caras planas redondas."],
+        ["Which of these objects is shaped like a cylinder?", "Look for the object that can roll and also has two flat round faces."],
+        "Un tarro de leche",
+        [["Un dado", "E1_OP"], ["Una pelota", "E1_OP"], ["Un gorro de cumpleaños", "E1_OP"]]),
     ],
   ));
 

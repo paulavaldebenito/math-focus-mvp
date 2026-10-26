@@ -131,7 +131,7 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   await page.getByRole("button", { name: "Listo" }).click();
   await expect(page.getByRole("heading", { name: "Antes de empezar" })).toBeVisible();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
-  await answerPracticeUntil(page, "¡Sesión terminada!", 20);
+  await answerPracticeUntil(page, "¡Práctica terminada!", 20);
   await page.getByRole("button", { name: "Volver al inicio" }).click();
 
   // Panel familiar de progreso — accesible desde el inicio.
