@@ -90,8 +90,15 @@ Qué se arregló:
 imagen y su pista se escribieron en ese orden: 6 × 2, 3 × 5, 7 × 10 y 9 × 2. También se corrigió
 una pista de variante («9 grupos de 2… suma 9 + 9»).
 
+**Imágenes de 2° sin «6 × 10» (2026-10-26).** Las de decenas y unidades ahora son material base 10:
+- 3 barras;
+- 6 barras y 4 cubitos;
+- 9 barras;
+- 3 barras y 4 cubitos + 1 barra.
+
+La de los helados muestra 6 helados de $10. Las generó otra IA con un encargo de estilo y cantidades exactas, y cada barra se contó con un programa antes de instalarla.
+
 ## Pendiente
-- **Imágenes de 2° que adelantan la multiplicación:** «6 × 10» en decenas y unidades y en los helados.
 - **4° área:** los 9 ejercicios repiten la misma terna de distractores.
 - **Simetría de 4°:** casi siempre pregunta «cuántas líneas».
 - **Nombres cortos para niños en el mapa,** junto al nombre oficial.

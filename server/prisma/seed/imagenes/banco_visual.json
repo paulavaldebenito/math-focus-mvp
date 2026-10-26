@@ -13932,12 +13932,11 @@
       },
       "kind": "components",
       "src": "/exercise-images/2b__cmuli7icp00a06krhqh5mn4tk__components.png",
-      "svgSrc": "/exercise-images/2b__cmuli7icp00a06krhqh5mn4tk__components.svg",
       "width": 1708,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Cuántas unidades hay en 3 decenas?",
-        "en": "Precise visual support constructed from the data given in the prompt. How many units are there in 3 tens?"
+        "es": "3 barras de 10 cubitos. ¿Cuántas unidades hay en 3 decenas?",
+        "en": "3 rods of 10 cubes. How many units are there in 3 tens?"
       },
       "letters": []
     },
@@ -13950,12 +13949,11 @@
       },
       "kind": "components",
       "src": "/exercise-images/2b__cmuli7icu00a56krh76k0uoy3__components.png",
-      "svgSrc": "/exercise-images/2b__cmuli7icu00a56krh76k0uoy3__components.svg",
       "width": 1708,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. ¿Qué número tiene 6 decenas y 4 unidades?",
-        "en": "Precise visual support constructed from the data given in the prompt. Which number has 6 tens and 4 units?"
+        "es": "6 barras de 10 cubitos y 4 cubitos sueltos. ¿Qué número tiene 6 decenas y 4 unidades?",
+        "en": "6 rods of 10 cubes and 4 loose cubes. Which number has 6 tens and 4 units?"
       },
       "letters": []
     },
@@ -13986,12 +13984,11 @@
       },
       "kind": "components",
       "src": "/exercise-images/2b__cmuli7id100af6krhhu8pqvxr__components.png",
-      "svgSrc": "/exercise-images/2b__cmuli7id100af6krhhu8pqvxr__components.svg",
       "width": 1708,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Un número tiene 9 decenas y 0 unidades. ¿Qué número es?",
-        "en": "Precise visual support constructed from the data given in the prompt. A number has 9 tens and 0 units. Which number is it?"
+        "es": "9 barras de 10 cubitos. Un número tiene 9 decenas y 0 unidades. ¿Qué número es?",
+        "en": "9 rods of 10 cubes. A number has 9 tens and 0 units. Which number is it?"
       },
       "letters": []
     },
@@ -14022,12 +14019,11 @@
       },
       "kind": "components",
       "src": "/exercise-images/2b__cmuli7idc00ap6krh5mfeay9a__components.png",
-      "svgSrc": "/exercise-images/2b__cmuli7idc00ap6krh5mfeay9a__components.svg",
       "width": 1708,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. Si a 34 le agregas 1 decena, ¿qué número obtienes?",
-        "en": "Precise visual support constructed from the data given in the prompt. If you add 1 ten to 34, which number do you get?"
+        "es": "3 barras de 10 cubitos y 4 cubitos sueltos, más 1 barra de 10. Si a 34 le agregas 1 decena, ¿qué número obtienes?",
+        "en": "3 rods of 10 cubes and 4 loose cubes, plus 1 rod of 10. If you add 1 ten to 34, which number do you get?"
       },
       "letters": []
     },
@@ -14688,12 +14684,11 @@
       },
       "kind": "components",
       "src": "/exercise-images/2b__cmuli7if600cj6krhliivoiv3__components.png",
-      "svgSrc": "/exercise-images/2b__cmuli7if600cj6krhliivoiv3__components.svg",
       "width": 1708,
       "height": 650,
       "alt": {
-        "es": "Apoyo visual exacto construido a partir de los datos del enunciado. En el kiosco, cada helado cuesta $10. Si compras 6 helados, ¿cuánto pagas?",
-        "en": "Precise visual support constructed from the data given in the prompt. At the kiosk, each ice cream costs $10. If you buy 6 ice creams, how much do you pay?"
+        "es": "6 helados iguales, cada uno con su precio de $10. En el kiosco, cada helado cuesta $10. Si compras 6 helados, ¿cuánto pagas?",
+        "en": "6 identical ice creams, each priced at $10. At the kiosk, each ice cream costs $10. If you buy 6 ice creams, how much do you pay?"
       },
       "letters": []
     },
