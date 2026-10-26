@@ -85,6 +85,6 @@ app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
 if (process.env.NODE_ENV !== "test") {
   const PORT = process.env.PORT ? Number(process.env.PORT) : 4100;
   app.listen(PORT, () => {
-    console.log(`Math Focus MVP server listening on http://localhost:${PORT}`);
+    console.log(`Eureka server listening on http://localhost:${PORT}`);
   });
 }

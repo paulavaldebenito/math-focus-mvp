@@ -218,3 +218,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .social-urgent { background: #fff; border: 2px solid #f2a07b; border-radius: 12px; padding: 0.5rem 0.9rem; margin-top: 0.9rem; }
 .social-note { background: #f7f8fb; border-radius: 12px; padding: 0.6rem 0.9rem; }
 .social-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+/* Marca Eureka en la pantalla de ingreso. */
+.brand-hero { display: block; width: 100%; max-width: 34rem; max-height: 11rem; object-fit: cover; object-position: 70% center; margin: 0 auto 0.75rem; border-radius: 20px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }

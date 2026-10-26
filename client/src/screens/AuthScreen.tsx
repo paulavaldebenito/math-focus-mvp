@@ -49,6 +49,8 @@ export function AuthScreen() {
 
   return (
     <main className="screen">
+      {/* Marca Eureka: la ilustración ya trae el nombre; el <h1> queda para lectores de pantalla. */}
+      <img className="brand-hero" src="/brand/eureka-hero.jpg" alt="Eureka" />
       <div className="choice-grid" role="group" aria-label={t(lang, "chooseLanguageLabel")}>
         <button
           type="button"
@@ -72,7 +74,7 @@ export function AuthScreen() {
         </button>
       </div>
 
-      <h1>{t(lang, "authTitle")}</h1>
+      <h1 className="visually-hidden">{t(lang, "authTitle")}</h1>
       <h2>{mode === "login" ? t(lang, "authLoginTitle") : t(lang, "authRegisterTitle")}</h2>
       <p className="hint-text">{t(lang, "authSubtitle")}</p>
 
