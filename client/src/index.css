@@ -134,3 +134,87 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Espacio familia (specs/018): botón discreto en el inicio del niño, con un punto si hay una señal. */
+.btn-family {
+  position: relative;
+  margin-top: 1.25rem;
+  background: transparent;
+  border: 1px dashed var(--ink-soft, #8a94a6);
+  color: var(--ink-soft, #5b6476);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.family-alert-dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f28b82;
+  border: 2px solid #fff;
+}
+.btn-link {
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+/* Espacio familia (specs/018): «La semana de…» con semáforo suave y «Con los demás». */
+.week-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.week-card {
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  border: 2px solid #d9dee8;
+  background: #fff;
+  text-align: left;
+}
+.week-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+.week-card p {
+  margin: 0.25rem 0;
+}
+.week-status {
+  font-weight: 700;
+}
+.week-card.status-bien { border-color: #8fd3a8; background: #f2fbf5; }
+.week-card.status-atento,
+.week-card.status-conversar { border-color: #f2c96b; background: #fff9ea; }
+.week-card.status-atencion { border-color: #f2a07b; background: #fff3ee; }
+.week-card.status-sin_datos,
+.week-card.status-desactivado { border-color: #d9dee8; background: #f7f8fb; }
+.week-link {
+  font-size: 0.9rem;
+}
+.social-signal {
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+  text-align: left;
+}
+.social-signal.signal-conversar { background: #fff9ea; border: 2px solid #f2c96b; }
+.social-signal.signal-atencion { background: #fff3ee; border: 2px solid #f2a07b; }
+.social-signal h3 { margin-top: 0; }
+.social-signal h4 { margin: 0.9rem 0 0.25rem; }
+.table-scroll { overflow-x: auto; }
+.social-history { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.social-history caption { text-align: left; font-weight: 700; padding: 0.5rem 0; }
+.social-history th, .social-history td { padding: 0.4rem 0.5rem; border-bottom: 1px solid #e6e9f0; text-align: left; }
+.plan-teaser ul { text-align: left; }
+.social-checkin { margin-top: 1rem; }
+.social-urgent { background: #fff; border: 2px solid #f2a07b; border-radius: 12px; padding: 0.5rem 0.9rem; margin-top: 0.9rem; }
+.social-note { background: #f7f8fb; border-radius: 12px; padding: 0.6rem 0.9rem; }
+.social-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }

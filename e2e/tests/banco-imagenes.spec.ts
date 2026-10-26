@@ -141,7 +141,7 @@ async function reachAssessment(page: Page, grade: number) {
   await page.getByLabel("Correo electrónico").fill(`e2e.imagenes.g${grade}.${Date.now()}@example.test`);
   await page.getByLabel("Contraseña").fill("clave-de-prueba-e2e-1234");
   await page.getByRole("button", { name: "Crear cuenta" }).click();
-  await page.getByRole("checkbox").check();
+  await page.getByRole("checkbox", { name: /doy mi consentimiento/ }).check();
   await page.getByRole("button", { name: "Continuar" }).click();
   await page.getByLabel("Nombre").fill(`Niño ${grade}° imágenes`);
   await page.getByRole("button", { name: `${grade}° básico` }).click();

@@ -26,6 +26,8 @@ export interface ChildProfile {
 }
 
 export interface HomeSummary {
+  /** Hay una señal social para la familia (specs/018): «Para la familia» muestra un punto. */
+  familyAlert?: boolean;
   companion: string | null;
   mascotName: string | null;
   /** Nombre propio que el niño le puso a cada mascota (por clave). */
@@ -316,7 +318,59 @@ export interface AttemptResult {
   correctStep?: WorkedStep | null;
 }
 
+export type CardStatus = "bien" | "atento" | "conversar" | "atencion" | "sin_datos" | "desactivado";
+export type SocialReason =
+  | "excluded_often"
+  | "excluded_repeated"
+  | "excluded_once"
+  | "excluded_recent"
+  | "alone_and_no_confidant"
+  | "alone_recess"
+  | "no_confidant";
+export interface SocialAnswer {
+  weekKey: string;
+  recess: number | null;
+  confidant: number | null;
+  excluded: string | null;
+}
+export interface WeeklySummary {
+  weekKey: string;
+  learning: {
+    status: CardStatus;
+    practices: number;
+    practicesPrev: number;
+    attempts: number;
+    accuracy: number | null;
+    accuracyPrev: number | null;
+    topics: Array<{ name: string; nameEn: string | null }>;
+    focusTopic: { name: string; nameEn: string | null } | null;
+  };
+  feelings: { status: CardStatus; topEmotion: string | null; topEmotionPrev: string | null; moodAvg: number | null; moodAvgPrev: number | null };
+  social: { status: CardStatus; answeredThisWeek: boolean };
+}
+export interface SocialPanelData {
+  enabled: boolean;
+  answeredWeeks: number;
+  latest: SocialAnswer | null;
+  history: SocialAnswer[];
+  signal: { level: "conversar" | "atencion"; reasons: SocialReason[] } | null;
+  notes: Array<{ key: string } & Bi>;
+  guidance: {
+    open: Bi[];
+    avoid: Bi[];
+    school: Bi;
+    professional: Bi;
+    urgent: Bi;
+    resources: Bi;
+    reasons: Array<{ key: SocialReason } & Bi>;
+  } | null;
+}
+
 export interface ProgressResponse {
+  /** "familia" (panel completo) o "gratis" (resumen básico). Piloto: todos en "familia". */
+  plan?: "familia" | "gratis";
+  week?: WeeklySummary;
+  social?: SocialPanelData;
   child: { id: string; displayName: string; grade: number };
   currentLevel: number;
   totalSessions: number;

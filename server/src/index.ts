@@ -1,4 +1,6 @@
 import "dotenv/config";
+import { familyRouter } from "./routes/family.js";
+import { socialCheckInRouter, socialConsentRouter } from "./routes/social.js";
 import express from "express";
 import type { NextFunction, Request, Response } from "express";
 import cors from "cors";
@@ -58,6 +60,9 @@ app.use("/api/children/:childId/home-games", homeGamesRouter);
 app.use("/api/sessions/:sessionId/complete", sessionCompleteRouter);
 app.use("/api/children/:childId/home", homeSummaryRouter);
 app.use("/api/children/:childId/skill-path", skillPathRouter);
+app.use("/api/family", familyRouter);
+app.use("/api/children/:childId/social-check-in", socialCheckInRouter);
+app.use("/api/children/:childId/social-consent", socialConsentRouter);
 app.use("/api/review", reviewRouter);
 app.use("/api/school", schoolRouter);
 app.use("/api/children/:childId/classroom", childClassroomRouter);

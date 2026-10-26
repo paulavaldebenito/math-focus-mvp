@@ -4,6 +4,7 @@ import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild, getOwnedSession } from "./childAccess.js";
 import { EMOTIONS, HARDEST } from "../domain/feelings.js";
+import { requireFamilyUnlock } from "./family.js";
 
 /// Reflexión al TERMINAR una práctica (specs/013): emoción + una pregunta
 /// lúdica que rota. Todo opcional; un cuerpo vacío = "lo saltó" y también se
@@ -51,7 +52,7 @@ const homeGameSchema = z.object({ mathSkillId: z.string().min(1) }).strict();
 
 export const homeGamesRouter = Router({ mergeParams: true });
 
-homeGamesRouter.post("/", requireAuth, async (req, res) => {
+homeGamesRouter.post("/", requireAuth, requireFamilyUnlock, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
   if (!child) {
     res.status(404).json({ error: "child_not_found" });

@@ -29,7 +29,7 @@ describe("CreateChildScreen", () => {
     await user.click(screen.getByRole("button", { name: "2° básico" }));
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
-    expect(mocks.createChild).toHaveBeenCalledWith("consent-abc", "Ana", 2);
+    expect(mocks.createChild).toHaveBeenCalledWith("consent-abc", "Ana", 2, false);
     expect(onCreated).toHaveBeenCalledWith({ id: "child-1", displayName: "Ana", grade: 2, language: "es" });
   });
 
@@ -43,6 +43,6 @@ describe("CreateChildScreen", () => {
     await user.type(screen.getByLabelText("Nombre"), "Luis");
     await user.click(screen.getByRole("button", { name: "6° básico" }));
     await user.click(screen.getByRole("button", { name: "Continuar" }));
-    expect(mocks.createChild).toHaveBeenCalledWith("consent-xyz", "Luis", 6);
+    expect(mocks.createChild).toHaveBeenCalledWith("consent-xyz", "Luis", 6, false);
   });
 });

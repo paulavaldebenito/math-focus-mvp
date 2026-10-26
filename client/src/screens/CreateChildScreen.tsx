@@ -7,6 +7,8 @@ import { playConfirm, playSelect } from "../lib/sound.js";
 
 interface Props {
   consentId: string;
+  /// Consentimiento opcional de la pregunta social semanal, dado en la pantalla anterior.
+  socialCheckInConsent?: boolean;
   onCreated: (child: ChildProfile) => void;
 }
 
@@ -21,7 +23,7 @@ const GRADE_LABEL_KEYS: Record<(typeof SUPPORTED_GRADES)[number], StringKey> = {
   6: "grade6Label",
 };
 
-export function CreateChildScreen({ consentId, onCreated }: Props) {
+export function CreateChildScreen({ consentId, socialCheckInConsent = false, onCreated }: Props) {
   const { lang } = useLang();
   const [displayName, setDisplayName] = useState("");
   const [grade, setGrade] = useState<(typeof SUPPORTED_GRADES)[number] | null>(null);
@@ -35,7 +37,7 @@ export function CreateChildScreen({ consentId, onCreated }: Props) {
     setError(null);
     setSubmitting(true);
     try {
-      const child = await endpoints.createChild(consentId, displayName.trim(), grade);
+      const child = await endpoints.createChild(consentId, displayName.trim(), grade, socialCheckInConsent);
       onCreated(child);
     } catch (err) {
       if (err instanceof ApiError && (err.body as { error?: string } | null)?.error === "consent_already_used") {

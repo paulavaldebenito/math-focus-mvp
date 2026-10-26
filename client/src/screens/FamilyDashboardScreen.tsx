@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import * as endpoints from "../api/endpoints.js";
+import { ApiError } from "../api/client.js";
+import { PlanTeaser, SocialPanel, WeekPanel } from "../components/FamilyWeek.js";
 import type { ProgressResponse } from "../api/types.js";
 import { t, useLang, type Lang } from "../lib/i18n.js";
 import { playBack } from "../lib/sound.js";
@@ -49,20 +51,26 @@ const MAX_HOME_TIPS = 2;
 interface Props {
   childId: string;
   onBack: () => void;
+  /** El espacio familia se bloqueó (pasaron los 30 minutos): hay que volver a pedir el PIN. */
+  onLocked?: () => void;
 }
 
-export function FamilyDashboardScreen({ childId, onBack }: Props) {
+export function FamilyDashboardScreen({ childId, onBack, onLocked }: Props) {
   const { lang } = useLang();
   const [progress, setProgress] = useState<ProgressResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [reload, setReload] = useState(0);
 
   useEffect(() => {
     endpoints
       .getProgress(childId)
       .then(setProgress)
-      .catch(() => setError(t(lang, "progressErr")));
+      .catch((err) => {
+        if (err instanceof ApiError && err.status === 403 && onLocked) onLocked();
+        else setError(t(lang, "progressErr"));
+      });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [childId]);
+  }, [childId, reload]);
 
   function formatDate(iso: string | null): string {
     if (!iso) return t(lang, "progressNotYetPracticed");
@@ -102,6 +110,8 @@ export function FamilyDashboardScreen({ childId, onBack }: Props) {
   }
 
   const errorEntries = Object.entries(progress.errorBreakdown).sort((a, b) => b[1] - a[1]);
+  // Plan gratis: resumen básico de aprendizaje y una invitación al Plan Familia (specs/018).
+  const paid = progress.plan !== "gratis";
 
   return (
     <main className="screen">
@@ -109,6 +119,13 @@ export function FamilyDashboardScreen({ childId, onBack }: Props) {
         {t(lang, "progressTitle")} {progress.child.displayName}
       </h1>
       <p className="hint-text">{t(lang, "progressNote")}</p>
+
+      {progress.week && <WeekPanel week={progress.week} name={progress.child.displayName} lang={lang} feelingsLocked={!paid} />}
+
+      {/* «Con los demás» está en todos los planes: una señal de posible acoso no puede quedar detrás de un pago. */}
+      {progress.social && (
+        <SocialPanel childId={childId} social={progress.social} lang={lang} onChanged={() => setReload((n) => n + 1)} />
+      )}
 
       <div className="dash-stats">
         <div className="dash-stat">
@@ -131,17 +148,19 @@ export function FamilyDashboardScreen({ childId, onBack }: Props) {
         </div>
       </div>
 
-      {progress.feelings && <FeelingsPanel feelings={progress.feelings} lang={lang} />}
+      {paid && progress.feelings && <FeelingsPanel feelings={progress.feelings} lang={lang} />}
 
-      {progress.topics && <HomeGamesPanel childId={childId} topics={progress.topics} lang={lang} />}
+      {paid && progress.topics && <HomeGamesPanel childId={childId} topics={progress.topics} lang={lang} />}
 
-      {progress.topics && <TopicsPanel childId={childId} topics={progress.topics} lang={lang} />}
+      {paid && progress.topics && <TopicsPanel childId={childId} topics={progress.topics} lang={lang} />}
 
-      {progress.wellbeing && <WellbeingPanel wellbeing={progress.wellbeing} lang={lang} />}
+      {paid && progress.wellbeing && <WellbeingPanel wellbeing={progress.wellbeing} lang={lang} />}
 
       <ClassroomLink childId={childId} lang={lang} />
 
-      {errorEntries.length > 0 && (
+      {!paid && <PlanTeaser lang={lang} />}
+
+      {paid && errorEntries.length > 0 && (
         <div className="dash-errors">
           <p className="dash-errors-title">{t(lang, "progressWhereToPractice")}</p>
           <ul className="dash-error-list">
@@ -155,7 +174,7 @@ export function FamilyDashboardScreen({ childId, onBack }: Props) {
         </div>
       )}
 
-      {errorEntries.length > 0 && (
+      {paid && errorEntries.length > 0 && (
         <div className="dash-tips">
           <p className="dash-errors-title">{t(lang, "progressHomeTipsTitle")}</p>
           <ul className="dash-tip-list">

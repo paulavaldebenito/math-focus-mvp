@@ -14,16 +14,23 @@ datasource db {
 
 /// Adulto responsable (apoderado/docente) — único rol con credenciales en el MVP.
 model AdultUser {
-  id           String         @id @default(cuid())
-  email        String         @unique
-  passwordHash String
-  createdAt    DateTime       @default(now())
-  updatedAt    DateTime       @updatedAt
-  consents     Consent[]
-  children     ChildProfile[]
-  reviewComments ReviewComment[]
+  id               String          @id @default(cuid())
+  email            String          @unique
+  passwordHash     String
+  /// PIN de 4 dígitos del espacio familia (specs/018), con el mismo hash que
+  /// la contraseña. NULL = aún no lo crea: el panel familiar lo pide antes de
+  /// abrirse. Separa lo que ve el niño de lo que ve el adulto en la misma app.
+  familyPinHash    String?
+  /// Plan de la familia: "familia" (panel completo) o "gratis" (resumen
+  /// básico). Piloto: todos en "familia" hasta habilitar el cobro.
+  plan             String          @default("familia")
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  consents         Consent[]
+  children         ChildProfile[]
+  reviewComments   ReviewComment[]
   staffMemberships SchoolStaff[]
-  teacherNotes   TeacherNote[]
+  teacherNotes     TeacherNote[]
 }
 
 /// Consentimiento explícito de un adulto. Es obligatorio y precede a la
@@ -40,43 +47,52 @@ model Consent {
 
 /// Perfil del estudiante. Datos mínimos: sin diagnósticos ni datos de salud.
 model ChildProfile {
-  id                String             @id @default(cuid())
-  adultUserId       String
-  adultUser         AdultUser          @relation(fields: [adultUserId], references: [id])
-  consentId         String             @unique
-  consent           Consent            @relation(fields: [consentId], references: [id])
-  displayName       String
+  id                   String              @id @default(cuid())
+  adultUserId          String
+  adultUser            AdultUser           @relation(fields: [adultUserId], references: [id])
+  consentId            String              @unique
+  consent              Consent             @relation(fields: [consentId], references: [id])
+  displayName          String
   /// MVP v1: fijo en 1° básico. Se guarda el valor real igualmente para no
   /// tener que migrar el esquema cuando se habiliten otros cursos.
-  grade             Int
-  language          String             @default("es")
+  grade                Int
+  language             String              @default("es")
   /// Clave fija de un catálogo cerrado (ver COMPANION_KEYS en el servidor).
   /// Nullable: un perfil recién creado todavía no lo eligió.
-  companion         String?
+  companion            String?
   /// Nombre propio que el niño le puso a su mascota (p. ej. "Pelusa") — nunca
   /// se modera/valida el contenido más allá de largo, es un nombre inventado
   /// por el niño para su personaje, no un dato público ni compartido con
   /// otros niños. Nullable: sin nombre propio, la UI usa el nombre por
   /// defecto del personaje (ver companions.ts).
-  mascotName        String?
+  mascotName           String?
   /// Nombre propio que el niño le puso a CADA mascota, por clave del
   /// catálogo ({ "zorro": "Pelusa", "buho": "Sabio" }). Así, al cambiar de
   /// mascota y volver, recupera el nombre que ya le había puesto.
   /// `mascotName` sigue siendo el nombre de la mascota ACTUAL.
-  mascotNames       Json               @default("{}")
+  mascotNames          Json                @default("{}")
   /// Claves de un catálogo cerrado (ver INTEREST_KEYS en el servidor). De 1 a
   /// MAX_INTERESTS al elegir; vacío = un perfil recién creado (o anterior a
   /// esta funcionalidad) que todavía no eligió.
-  interests         String[]           @default([])
-  createdAt         DateTime           @default(now())
-  sessions          Session[]
-  progressSnapshots ProgressSnapshot[]
-  starEvents        StarEvent[]
-  checkIns          WellbeingCheckIn[]
-  reflections    SessionReflection[]
-  homeGamePlays  HomeGamePlay[]
-  enrollments    ClassEnrollment[]
-  teacherNotes   TeacherNote[]
+  interests            String[]            @default([])
+  /// Consentimiento aparte para la pregunta social semanal (specs/018): sin
+  /// él, al niño nunca se le pregunta por el recreo ni la convivencia.
+  socialCheckInConsent Boolean             @default(false)
+  /// Cuándo y con qué versión del texto se dio ese consentimiento (para poder demostrarlo).
+  socialConsentAt      DateTime?
+  socialConsentVersion String?
+  /// Última vez que la familia abrió el panel: apaga el punto de aviso del inicio.
+  familySeenAt         DateTime?
+  createdAt            DateTime            @default(now())
+  sessions             Session[]
+  progressSnapshots    ProgressSnapshot[]
+  starEvents           StarEvent[]
+  checkIns             WellbeingCheckIn[]
+  socialCheckIns       SocialCheckIn[]
+  reflections          SessionReflection[]
+  homeGamePlays        HomeGamePlay[]
+  enrollments          ClassEnrollment[]
+  teacherNotes         TeacherNote[]
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -98,29 +114,29 @@ model ErrorType {
 
 /// Habilidad matemática. MVP v1: fija en 1° básico, eje Números y operaciones.
 model MathSkill {
-  id        String     @id @default(cuid())
-  grade     Int
-  axis      String
-  name      String
+  id            String              @id @default(cuid())
+  grade         Int
+  axis          String
+  name          String
   /// Traducción al inglés del eje/nombre de la habilidad — se muestran en el
   /// mapa de aprendizaje. Nullable: no todas las habilidades la tienen
   /// todavía — el cliente cae de vuelta al español si falta (mismo patrón
   /// que Exercise.promptEn). Debe usar el vocabulario escolar real en inglés
   /// (p. ej. "pie chart", no una traducción literal), no una traducción
   /// palabra por palabra.
-  axisEn    String?
-  nameEn    String?
+  axisEn        String?
+  nameEn        String?
   /// Código de Objetivo de Aprendizaje. NULL a propósito: no existe una fuente
   /// curricular oficial verificada en este entorno. No completar sin validar
   /// contra el documento oficial de MINEDUC.
-  oaCode    String?
+  oaCode        String?
   /// Orden dentro de su curso — posición en el mapa de habilidades (un
   /// contenido se desbloquea al completar el anterior). Lo asigna el seed
   /// según el orden en que cada agente de curso escribió sus contenidos.
-  order     Int        @default(0)
-  exercises Exercise[]
-  sessions  Session[]
-  reflections SessionReflection[]
+  order         Int                 @default(0)
+  exercises     Exercise[]
+  sessions      Session[]
+  reflections   SessionReflection[]
   homeGamePlays HomeGamePlay[]
 }
 
@@ -273,13 +289,13 @@ model Hint {
 /// Pausa activa ofrecida durante una sesión. Siempre opcional — `accepted`
 /// puede ser falso, la app nunca bloquea ni castiga por rechazarla.
 model PauseEvent {
-  id         String   @id @default(cuid())
-  sessionId  String
-  session    Session  @relation(fields: [sessionId], references: [id])
-  kind       String
-  offeredAt  DateTime @default(now())
-  accepted   Boolean  @default(true)
-  durationMs Int?
+  id          String   @id @default(cuid())
+  sessionId   String
+  session     Session  @relation(fields: [sessionId], references: [id])
+  kind        String
+  offeredAt   DateTime @default(now())
+  accepted    Boolean  @default(true)
+  durationMs  Int?
   /// Ejercicio concreto de la pausa (clave del catálogo del cliente, p. ej.
   /// "globo" o "saltos-estrella"). Nullable: pausas rechazadas o anteriores
   /// a este campo. Sirve para no repetir el mismo ejercicio en una sesión.
@@ -304,6 +320,30 @@ model WellbeingCheckIn {
   /// (ansiedad = 6 − mathFeeling). NULL = no respondió.
   mathFeeling    Int?
   createdAt      DateTime     @default(now())
+}
+
+/// Pregunta social semanal (specs/018): cómo le fue con los demás esta
+/// semana, autorreportado por el niño con caritas, una vez por semana y solo
+/// con consentimiento. Sirve para dar a la familia SEÑALES PARA CONVERSAR,
+/// nunca un diagnóstico. Solo la ve su familia (no el colegio). Todo opcional;
+/// todos los campos NULL = la saltó (y no se vuelve a preguntar esa semana).
+model SocialCheckIn {
+  id             String       @id @default(cuid())
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id], onDelete: Cascade)
+  /// Semana local (America/Santiago) en formato ISO, p. ej. "2026-W44".
+  weekKey        String
+  /// En el recreo estuvo: 1 con sus amigos, 2 con algunos compañeros, 3 sin
+  /// nadie y estuvo bien, 4 sin nadie y quería estar con alguien, 5 no fue al
+  /// colegio esa semana (no cuenta para las señales).
+  recess         Int?
+  /// Tiene en su curso a alguien a quien contarle cosas: 1 sí, 2 más o menos, 3 no.
+  confidant      Int?
+  /// Alguien lo molestó o lo dejó fuera: "no", "una_vez", "varias", "prefiero_no".
+  excluded       String?
+  createdAt      DateTime     @default(now())
+
+  @@unique([childProfileId, weekKey])
 }
 
 /// Registro auditable de cada cambio de dificultad. `ruleCode` identifica

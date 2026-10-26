@@ -15,6 +15,7 @@ async function registerLoginAndChild(baseUrl: string, email: string, password: s
     body: JSON.stringify({ email, password }),
   });
   const cookie = loginRes.headers.get("set-cookie")!.split(";")[0]!;
+  await fetch(`${baseUrl}/api/family/pin`, { method: "PUT", headers: { "Content-Type": "application/json", Cookie: cookie }, body: JSON.stringify({ pin: "2468", password: password }) }); // espacio familia (specs/018)
   const consentRes = await fetch(`${baseUrl}/api/consent`, {
     method: "POST",
     headers: { "Content-Type": "application/json", Cookie: cookie },

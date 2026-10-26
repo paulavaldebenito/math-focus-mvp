@@ -3,6 +3,7 @@ import { randomInt } from "node:crypto";
 import { z } from "zod";
 import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
+import { requireFamilyUnlock } from "./family.js";
 import { getOwnedChild } from "./childAccess.js";
 import { localDay } from "../domain/wellbeing.js";
 import { topicProgress } from "../domain/feelings.js";
@@ -296,7 +297,7 @@ childClassroomRouter.get("/", requireAuth, async (req, res) => {
   res.json({ enrollment: e ? { classroomName: e.classroom.name, schoolName: e.classroom.school.name, grade: e.classroom.grade, shareEmotions: e.shareEmotions } : null });
 });
 
-childClassroomRouter.post("/", requireAuth, async (req, res) => {
+childClassroomRouter.post("/", requireAuth, requireFamilyUnlock, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
   if (!child) {
     res.status(404).json({ error: "child_not_found" });
@@ -326,7 +327,7 @@ childClassroomRouter.post("/", requireAuth, async (req, res) => {
   res.status(201).json({ classroomName: classroom.name, schoolName: classroom.school.name, grade: classroom.grade, shareEmotions: parsed.data.shareEmotions });
 });
 
-childClassroomRouter.patch("/", requireAuth, async (req, res) => {
+childClassroomRouter.patch("/", requireAuth, requireFamilyUnlock, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
   const parsed = z.object({ shareEmotions: z.boolean() }).strict().safeParse(req.body);
   if (!child || !parsed.success) {
@@ -337,7 +338,7 @@ childClassroomRouter.patch("/", requireAuth, async (req, res) => {
   res.status(r.count ? 200 : 404).json({ shareEmotions: parsed.data.shareEmotions });
 });
 
-childClassroomRouter.delete("/", requireAuth, async (req, res) => {
+childClassroomRouter.delete("/", requireAuth, requireFamilyUnlock, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
   if (!child) {
     res.status(404).json({ error: "child_not_found" });

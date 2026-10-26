@@ -24,7 +24,9 @@ async function registerAndLogin(baseUrl: string, email: string, password: string
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password }),
   });
-  return res.headers.get("set-cookie")!.split(";")[0]!;
+  const cookie = res.headers.get("set-cookie")!.split(";")[0]!;
+  await fetch(`${baseUrl}/api/family/pin`, { method: "PUT", headers: { "Content-Type": "application/json", Cookie: cookie }, body: JSON.stringify({ pin: "2468", password }) }); // espacio familia (specs/018)
+  return cookie;
 }
 
 describe("Control de acceso cruzado entre adultos (IDOR)", () => {

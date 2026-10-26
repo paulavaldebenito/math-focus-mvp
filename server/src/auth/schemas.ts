@@ -35,6 +35,8 @@ export const childProfileSchema = z.object({
     message: `El curso debe ser uno de: ${SUPPORTED_GRADES.join(", ")}.`,
   }),
   language: z.enum(["es", "en"]).default("es"),
+  /// Consentimiento aparte para la pregunta social semanal (specs/018). Opcional.
+  socialCheckInConsent: z.boolean().default(false),
 });
 
 export type ChildProfileInput = z.infer<typeof childProfileSchema>;

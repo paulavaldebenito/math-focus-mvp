@@ -89,7 +89,7 @@ describe("FamilyDashboardScreen", () => {
     await screen.findByRole("heading", { name: "Progreso de Ana" });
 
     const user = userEvent.setup();
-    await user.click(screen.getByRole("button", { name: "Volver" }));
+    await user.click(screen.getByRole("button", { name: "🔒 Salir del espacio familia" }));
     expect(onBack).toHaveBeenCalled();
   });
   const base = {
@@ -247,5 +247,74 @@ describe("FamilyDashboardScreen", () => {
     expect(screen.getByTitle("Orgullo")).toHaveTextContent("🤩");
     expect(screen.getByText(/ningún tema necesita refuerzo/)).toBeInTheDocument();
     expect(screen.getByText(/Aún no hay respuestas/)).toBeInTheDocument();
+  });
+
+  describe("espacio familia: la semana, con los demás y el plan (specs/018)", () => {
+    const week = {
+      weekKey: "2026-W44",
+      learning: { status: "atento", practices: 3, practicesPrev: 1, attempts: 30, accuracy: 0.6, accuracyPrev: null, topics: [], focusTopic: { name: "Adición y sustracción dentro de 20", nameEn: null } },
+      feelings: { status: "bien", topEmotion: "alegria", topEmotionPrev: null, moodAvg: 4, moodAvgPrev: null },
+      social: { status: "atencion", answeredThisWeek: true },
+    };
+    const social = {
+      enabled: true,
+      answeredWeeks: 1,
+      latest: { weekKey: "2026-W44", recess: 4, confidant: 2, excluded: "varias" },
+      history: [{ weekKey: "2026-W44", recess: 4, confidant: 2, excluded: "varias" }],
+      signal: { level: "atencion", reasons: ["excluded_often"] },
+      notes: [],
+      guidance: {
+        open: [{ es: "Busquen un momento tranquilo.", en: "Find a calm moment." }],
+        avoid: [{ es: "Evitar minimizar.", en: "Avoid brushing it off." }],
+        school: { es: "Hablen con el encargado de convivencia escolar.", en: "Talk with the coexistence coordinator." },
+        professional: { es: "Busca apoyo profesional si dura.", en: "Seek support if it lasts." },
+        urgent: { es: "Llama gratis a la línea *4141.", en: "Call *4141." },
+        resources: { es: "Fono Infancia 800 200 818.", en: "Fono Infancia." },
+        reasons: [{ key: "excluded_often", es: "En su última respuesta contó que alguien lo molestó o lo dejó fuera varias veces esta semana.", en: "x" }],
+      },
+    };
+    const progress = (plan: "familia" | "gratis") => ({
+      plan,
+      week,
+      social,
+      child: { id: "c1", displayName: "Sofía", grade: 2 },
+      currentLevel: 2,
+      totalSessions: 3,
+      lastSessionAt: null,
+      totalAttempts: 30,
+      correctAttempts: 18,
+      accuracy: 0.6,
+      errorBreakdown: {},
+    });
+
+    it("muestra «La semana de…», la señal social con qué hacer, y el historial con nombres cortos para la familia", async () => {
+      mocks.getProgress.mockResolvedValue(progress("familia"));
+      render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
+      expect(await screen.findByRole("heading", { name: "📅 La semana de Sofía" })).toBeInTheDocument();
+      expect(screen.getByText("Para reforzar: Sumar y restar hasta 20")).toBeInTheDocument();
+      expect(screen.getByRole("heading", { name: "🧡 Conviene conversar en los próximos días" })).toBeInTheDocument();
+      expect(screen.getByText(/varias veces esta semana/)).toBeInTheDocument();
+      expect(screen.getByText("Llama gratis a la línea *4141.")).toBeInTheDocument();
+      expect(screen.getByText(/encargado de convivencia escolar/)).toBeInTheDocument();
+      expect(screen.getByText(/el colegio no las ve/)).toBeInTheDocument();
+      expect(screen.getByText("😔 sin nadie, y quería estar con alguien")).toBeInTheDocument();
+    });
+
+    it("en el plan gratis muestra aprendizaje, «Con los demás» (una señal de acoso no va detrás de un pago) y el Plan Familia, sin emociones", async () => {
+      mocks.getProgress.mockResolvedValue(progress("gratis"));
+      render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} />);
+      expect(await screen.findByRole("heading", { name: "⭐ Plan Familia" })).toBeInTheDocument();
+      expect(screen.getByText("📚 Aprendizaje")).toBeInTheDocument();
+      expect(screen.queryByText("💛 Cómo se siente")).not.toBeInTheDocument();
+      expect(screen.getByRole("heading", { level: 2, name: "🤝 Con los demás" })).toBeInTheDocument();
+    });
+
+    it("si el espacio familia se bloqueó, vuelve a pedir el PIN", async () => {
+      const { ApiError } = await import("../api/client.js");
+      mocks.getProgress.mockRejectedValue(new ApiError(403, { error: "family_locked" }));
+      const onLocked = vi.fn();
+      render(<FamilyDashboardScreen childId="c1" onBack={vi.fn()} onLocked={onLocked} />);
+      await vi.waitFor(() => expect(onLocked).toHaveBeenCalled());
+    });
   });
 });

@@ -3,6 +3,7 @@ import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
 import { toMascotNames } from "../domain/mascotNames.js";
+import { summarizeSocial, weekKey } from "../domain/social.js";
 
 export const homeSummaryRouter = Router({ mergeParams: true });
 
@@ -76,7 +77,23 @@ homeSummaryRouter.get("/", requireAuth, async (req, res) => {
     prisma.starEvent.count({ where: { childProfileId: child.id, createdAt: { gte: startOfToday } } }),
   ]);
 
+  // Punto en «Para la familia» (specs/018): hay algo nuevo desde la última vez que la familia abrió
+  // el panel. Puede ser una señal social o, igual de seguido, que ya hay resumen de la semana:
+  // así el niño no aprende que su respuesta enciende el punto. Se apaga al abrir el panel.
+  const seen = child.familySeenAt;
+  const socialRows = child.socialCheckInConsent
+    ? await prisma.socialCheckIn.findMany({ where: { childProfileId: child.id }, orderBy: { weekKey: "desc" }, take: 6 })
+    : [];
+  const newSignal =
+    summarizeSocial(socialRows).signal !== null && socialRows.some((r) => !seen || r.createdAt > seen);
+  const practicedThisWeek = await prisma.session.count({
+    where: { childProfileId: child.id, startedAt: { gte: seen ?? new Date(0) } },
+  });
+  const newWeek = practicedThisWeek > 0 && (!seen || weekKey(seen) < weekKey(new Date()));
+  const familyAlert = newSignal || newWeek;
+
   res.status(200).json({
+    familyAlert,
     companion: child.companion,
     mascotName: child.mascotName,
     // Nombre que el niño le puso a cada mascota — la pantalla de editar la

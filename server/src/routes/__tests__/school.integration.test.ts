@@ -29,6 +29,7 @@ describe("paneles escolares (specs/014)", () => {
       await fetch(`${baseUrl}/api/auth/register`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }) });
       const r = await fetch(`${baseUrl}/api/auth/login`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }) });
       cookies[k] = r.headers.get("set-cookie")!.split(";")[0]!;
+      await fetch(`${baseUrl}/api/family/pin`, { method: "PUT", headers: { "Content-Type": "application/json", Cookie: cookies[k] }, body: JSON.stringify({ pin: "2468", password }) }); // espacio familia (specs/018)
     }
     const { id: consentId } = (await (await call("fam", "POST", "/api/consent", { scope: "MVP v1 — datos mínimos, ficticio de prueba" })).json()) as { id: string };
     const created = await call("fam", "POST", "/api/children", { consentId, displayName: "Niño ficticio", grade: 3 });

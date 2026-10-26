@@ -45,8 +45,8 @@ export function createConsent(scope: string) {
   return api.post<Consent>("/api/consent", { scope });
 }
 
-export function createChild(consentId: string, displayName: string, grade: number) {
-  return api.post<ChildProfile>("/api/children", { consentId, displayName, grade });
+export function createChild(consentId: string, displayName: string, grade: number, socialCheckInConsent = false) {
+  return api.post<ChildProfile>("/api/children", { consentId, displayName, grade, socialCheckInConsent });
 }
 
 export async function listChildren(): Promise<ChildProfile[]> {
@@ -229,4 +229,34 @@ export function setShareEmotions(childId: string, shareEmotions: boolean) {
 }
 export function leaveClassroom(childId: string) {
   return api.delete<void>(`/api/children/${childId}/classroom`);
+}
+
+// ---------- Espacio familia y pregunta social (specs/018) ----------
+
+export function getFamilyStatus() {
+  return api.get<{ hasPin: boolean; unlocked: boolean; plan: "familia" | "gratis" }>("/api/family/status");
+}
+
+export function setFamilyPin(pin: string, password: string) {
+  return api.put<void>("/api/family/pin", { pin, password });
+}
+
+export function unlockFamily(pin: string) {
+  return api.post<void>("/api/family/unlock", { pin });
+}
+
+export function lockFamily() {
+  return api.post<void>("/api/family/lock", {});
+}
+
+export function getSocialCheckIn(childId: string) {
+  return api.get<{ due: boolean }>(`/api/children/${childId}/social-check-in`);
+}
+
+export function submitSocialCheckIn(childId: string, answer: { recess?: number; confidant?: number; excluded?: string }) {
+  return api.post<{ id: string }>(`/api/children/${childId}/social-check-in`, answer);
+}
+
+export function setSocialConsent(childId: string, enabled: boolean, deleteAnswers = false) {
+  return api.put<{ enabled: boolean }>(`/api/children/${childId}/social-consent`, deleteAnswers ? { enabled, deleteAnswers } : { enabled });
 }

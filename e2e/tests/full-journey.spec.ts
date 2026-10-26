@@ -91,7 +91,7 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   await page.getByRole("button", { name: "Crear cuenta" }).click();
 
   // Consentimiento explícito — obligatorio antes de crear el perfil.
-  await page.getByRole("checkbox").check();
+  await page.getByRole("checkbox", { name: /doy mi consentimiento/ }).check();
   await page.getByRole("button", { name: "Continuar" }).click();
 
   // Perfil infantil — el curso es obligatorio desde la expansión a 2° básico.
@@ -127,14 +127,22 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   // Check-in breve con caritas al empezar la práctica (opcional).
   await expect(page.getByRole("heading", { name: "¡Hola! Antes de empezar…" })).toBeVisible();
   await page.getByRole("radio", { name: "Bien", exact: true }).click();
-  await page.getByRole("radio", { name: "Tranquilo/a", exact: true }).click();
+  await page.getByRole("radio", { name: "Con calma", exact: true }).click();
   await page.getByRole("button", { name: "Listo" }).click();
   await expect(page.getByRole("heading", { name: "Antes de empezar" })).toBeVisible();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
   await answerPracticeUntil(page, "¡Práctica terminada!", 20);
   await page.getByRole("button", { name: "Volver al inicio" }).click();
 
-  // Panel familiar de progreso — accesible desde el inicio.
-  await page.getByRole("button", { name: "Ver progreso" }).click();
-  await expect(page.getByRole("button", { name: "Volver" })).toBeVisible();
+  // Espacio familia (specs/018): botón discreto en el inicio, con PIN que el adulto crea con su contraseña.
+  await page.getByRole("button", { name: /Para la familia/ }).click();
+  await page.getByLabel("PIN (4 dígitos)").fill("2468");
+  await page.getByLabel("Repite el PIN").fill("2468");
+  await page.getByLabel("Contraseña de tu cuenta").fill(password);
+  await page.getByRole("button", { name: "Crear PIN y entrar" }).click();
+  await expect(page.getByRole("heading", { name: /La semana de/ })).toBeVisible();
+  // La pregunta social semanal es opcional: desde aquí se activa (consentimiento aparte).
+  await page.getByRole("button", { name: "Activar las preguntas semanales" }).click();
+  await expect(page.getByRole("button", { name: "Desactivar las preguntas semanales" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "🔒 Salir del espacio familia" })).toBeVisible();
 });

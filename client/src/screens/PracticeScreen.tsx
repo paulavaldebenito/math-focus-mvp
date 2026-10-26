@@ -10,6 +10,7 @@ import { BrickCompanionAvatar, type CompanionMood } from "../components/BrickCom
 import { Confetti } from "../components/Confetti.js";
 import { MascotMoment } from "../components/MascotMoment.js";
 import { SessionReflection } from "../components/SessionReflection.js";
+import { SocialCheckIn } from "../components/SocialCheckIn.js";
 import { WorkedSolution } from "../components/WorkedSolution.js";
 import type { ReflectionQuestion } from "../api/types.js";
 import { wrongFeedbackText } from "../lib/feedback.js";
@@ -96,6 +97,7 @@ export function PracticeScreen({
   const { lang } = useLang();
   const [phase, setPhase] = useState<Phase>("loading");
   const [sessionId, setSessionId] = useState<string | null>(null);
+  const [reflectionDone, setReflectionDone] = useState(false);
   // Ejercicios de pausa (respiración o movimiento) ya hechos en esta sesión:
   // la siguiente pausa elige otro, nunca repite el mismo.
   const [usedPauseKeys, setUsedPauseKeys] = useState<string[]>([]);
@@ -617,8 +619,14 @@ export function PracticeScreen({
           {t(lang, "sessionDoneHabitatPrefix")} {companionName(companion, lang, mascotName)}.
         </p>
         {sessionId && (
-          <SessionReflection lang={lang} question={reflectionQuestion} onSubmit={(input) => endpoints.submitReflection(sessionId, input)} />
+          <SessionReflection
+            lang={lang}
+            question={reflectionQuestion}
+            onSubmit={(input) => endpoints.submitReflection(sessionId, input).finally(() => setReflectionDone(true))}
+          />
         )}
+        {/* Pregunta social de la semana (specs/018): después de la reflexión, una vez por semana y solo con consentimiento. */}
+        {reflectionDone && <SocialCheckIn childId={childId} lang={lang} />}
         <button
           className="btn-primary"
           type="button"

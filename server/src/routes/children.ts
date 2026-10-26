@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { prisma } from "../db/prisma.js";
+import { SOCIAL_CONSENT_VERSION } from "../domain/social.js";
 import { childProfileSchema, companionSchema, interestsSchema, mascotNameSchema } from "../auth/schemas.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
@@ -31,7 +32,7 @@ childrenRouter.post("/", requireAuth, async (req, res) => {
     return;
   }
 
-  const { consentId, displayName, grade, language } = parsed.data;
+  const { consentId, displayName, grade, language, socialCheckInConsent } = parsed.data;
 
   const consent = await prisma.consent.findUnique({ where: { id: consentId } });
   if (!consent || consent.adultUserId !== req.session.adultUserId! || consent.revokedAt) {
@@ -52,6 +53,8 @@ childrenRouter.post("/", requireAuth, async (req, res) => {
       displayName,
       grade,
       language,
+      socialCheckInConsent,
+      ...(socialCheckInConsent ? { socialConsentAt: new Date(), socialConsentVersion: SOCIAL_CONSENT_VERSION } : {}),
     },
   });
 

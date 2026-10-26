@@ -21,7 +21,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
   await page.getByLabel("Contraseña").fill(password);
   await page.getByRole("button", { name: "Crear cuenta" }).click();
 
-  await page.getByRole("checkbox").check();
+  await page.getByRole("checkbox", { name: /doy mi consentimiento/ }).check();
   await page.getByRole("button", { name: "Continuar" }).click();
 
   await page.getByLabel("Nombre").fill("Niño Demo");
@@ -110,7 +110,11 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
   );
   await page.screenshot({ path: "screenshots/10-home.png" });
 
-  await page.getByRole("button", { name: "Ver progreso" }).click();
-  await page.getByRole("button", { name: "Volver" }).waitFor();
+  await page.getByRole("button", { name: /Para la familia/ }).click();
+  await page.getByLabel("PIN (4 dígitos)").fill("2468");
+  await page.getByLabel("Repite el PIN").fill("2468");
+  await page.getByLabel("Contraseña de tu cuenta").fill(password);
+  await page.getByRole("button", { name: "Crear PIN y entrar" }).click();
+  await page.getByRole("button", { name: "🔒 Salir del espacio familia" }).waitFor();
   await page.screenshot({ path: "screenshots/11-family-dashboard.png" });
 });

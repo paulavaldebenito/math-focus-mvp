@@ -6,10 +6,13 @@ import { getCurrentLevelForChild } from "../adaptive/levelLookup.js";
 import { buildWellbeingCross, localDay, skillsToReview } from "../domain/wellbeing.js";
 import { homeGameFor } from "../domain/homeGames.js";
 import { EMOTION_GUIDANCE, HARDEST_GUIDANCE, summarizeFeelings, topicProgress } from "../domain/feelings.js";
+import { SOCIAL_GUIDANCE, summarizeSocial } from "../domain/social.js";
+import { weeklySummary } from "../domain/weekly.js";
+import { requireFamilyUnlock } from "./family.js";
 
 export const progressRouter = Router({ mergeParams: true });
 
-progressRouter.get("/", requireAuth, async (req, res) => {
+progressRouter.get("/", requireAuth, requireFamilyUnlock, async (req, res) => {
   const child = await getOwnedChild(String(req.params.childId), req.session.adultUserId!);
   if (!child) {
     res.status(404).json({ error: "child_not_found" });
@@ -85,7 +88,45 @@ progressRouter.get("/", requireAuth, async (req, res) => {
     (d) => localDay(d),
   ).map((t) => ({ ...t, game: homeGameFor(t.grade, t.name), timesPlayed: playsBySkill.get(t.skillId) ?? 0 }));
 
+  // Con los demás (specs/018): solo con consentimiento; señales para conversar, nunca un diagnóstico.
+  const socialRows = child.socialCheckInConsent
+    ? await prisma.socialCheckIn.findMany({ where: { childProfileId: child.id }, orderBy: { weekKey: "desc" }, take: 12 })
+    : [];
+  const socialSummary = summarizeSocial(socialRows);
+  const social = {
+    enabled: child.socialCheckInConsent,
+    ...socialSummary,
+    notes: socialSummary.notes.map((n) => ({ key: n, ...SOCIAL_GUIDANCE.notes[n] })),
+    guidance: socialSummary.signal
+      ? {
+          open: SOCIAL_GUIDANCE.open,
+          avoid: SOCIAL_GUIDANCE.avoid,
+          school: SOCIAL_GUIDANCE.school,
+          professional: SOCIAL_GUIDANCE.professional,
+          urgent: SOCIAL_GUIDANCE.urgent,
+          resources: SOCIAL_GUIDANCE.resources,
+          reasons: socialSummary.signal.reasons.map((r) => ({ key: r, ...SOCIAL_GUIDANCE.reasons[r] })),
+        }
+      : null,
+  };
+  // La familia abrió el panel: se apaga el punto de aviso del inicio (specs/018).
+  await prisma.childProfile.update({ where: { id: child.id }, data: { familySeenAt: new Date() } });
+  const week = weeklySummary({
+    now: new Date(),
+    sessions,
+    attempts: attempts.map((a) => ({ createdAt: a.createdAt, isCorrect: a.isCorrect, skill: a.exercise.mathSkill })),
+    reflections: reflectionRows,
+    checkIns,
+    topicsNeedingHelp: topics.filter((t) => t.needsHelp.includes("aciertos")).map((t) => ({ name: t.name, nameEn: t.nameEn })),
+    socialEnabled: child.socialCheckInConsent,
+    social: socialSummary,
+  });
+  const adult = await prisma.adultUser.findUnique({ where: { id: req.session.adultUserId! }, select: { plan: true } });
+
   res.status(200).json({
+    plan: adult?.plan ?? "gratis",
+    week,
+    social,
     child: { id: child.id, displayName: child.displayName, grade: child.grade },
     currentLevel,
     totalSessions: sessions.length,

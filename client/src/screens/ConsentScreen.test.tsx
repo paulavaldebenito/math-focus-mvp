@@ -12,7 +12,7 @@ describe("ConsentScreen", () => {
     expect(screen.getByRole("button", { name: "Continuar" })).toBeDisabled();
 
     const user = userEvent.setup();
-    await user.click(screen.getByRole("checkbox"));
+    await user.click(screen.getByRole("checkbox", { name: /doy mi consentimiento/ }));
     expect(screen.getByRole("button", { name: "Continuar" })).toBeEnabled();
   });
 
@@ -22,9 +22,20 @@ describe("ConsentScreen", () => {
 
     render(<ConsentScreen onConsented={onConsented} />);
     const user = userEvent.setup();
-    await user.click(screen.getByRole("checkbox"));
+    await user.click(screen.getByRole("checkbox", { name: /doy mi consentimiento/ }));
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
-    expect(onConsented).toHaveBeenCalledWith("consent-123");
+    expect(onConsented).toHaveBeenCalledWith("consent-123", false);
+  });
+
+  it("la pregunta social semanal es un consentimiento aparte y opcional (specs/018)", async () => {
+    const user = userEvent.setup();
+    const onConsented = vi.fn();
+    mocks.createConsent.mockResolvedValue({ id: "consent-456", scope: "x", grantedAt: "2026-10-26" });
+    render(<ConsentScreen onConsented={onConsented} />);
+    await user.click(screen.getByRole("checkbox", { name: /doy mi consentimiento/ }));
+    await user.click(screen.getByRole("checkbox", { name: /una vez por semana/ }));
+    await user.click(screen.getByRole("button", { name: "Continuar" }));
+    expect(onConsented).toHaveBeenCalledWith("consent-456", true);
   });
 });

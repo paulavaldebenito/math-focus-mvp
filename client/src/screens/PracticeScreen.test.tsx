@@ -622,7 +622,7 @@ describe("PracticeScreen — ánimo con caritas y pausas sin repetir", () => {
     expect(screen.getByRole("button", { name: "Listo" })).toBeDisabled();
 
     await user.click(screen.getByRole("radio", { name: "Un poco triste" }));
-    await user.click(screen.getByRole("radio", { name: "Tranquilo/a" }));
+    await user.click(screen.getByRole("radio", { name: "Con calma" }));
     expect(screen.getByRole("radio", { name: "Un poco triste" })).toHaveAttribute("aria-checked", "true");
     await user.click(screen.getByRole("button", { name: "Listo" }));
 

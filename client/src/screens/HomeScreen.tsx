@@ -110,16 +110,6 @@ export function HomeScreen({
         type="button"
         onClick={() => {
           playClick();
-          onViewProgress();
-        }}
-      >
-        {t(lang, "viewProgress")}
-      </button>
-      <button
-        className="btn-secondary"
-        type="button"
-        onClick={() => {
-          playClick();
           onChangeInterests();
         }}
       >
@@ -144,6 +134,19 @@ export function HomeScreen({
         }}
       >
         {t(lang, "logout")}
+      </button>
+      {/* Espacio familia (specs/018): discreto y con PIN. El punto avisa que hay una señal nueva;
+          qué es, lo ve solo el adulto. */}
+      <button
+        className="btn-family"
+        type="button"
+        onClick={() => {
+          playClick();
+          onViewProgress();
+        }}
+      >
+        {t(lang, "viewProgress")}
+        {summary?.familyAlert && <span className="family-alert-dot" aria-label={t(lang, "familyAlertLabel")} />}
       </button>
     </main>
   );

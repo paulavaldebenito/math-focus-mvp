@@ -11,6 +11,7 @@ import { InitialAssessmentScreen } from "./screens/InitialAssessmentScreen.js";
 import { SkillPathScreen } from "./screens/SkillPathScreen.js";
 import { PracticeScreen } from "./screens/PracticeScreen.js";
 import { FamilyDashboardScreen } from "./screens/FamilyDashboardScreen.js";
+import { FamilyGateScreen } from "./screens/FamilyGateScreen.js";
 import { HomeScreen } from "./screens/HomeScreen.js";
 import { ReviewScreen } from "./screens/ReviewScreen.js";
 import { SchoolScreen } from "./screens/SchoolScreen.js";
@@ -31,6 +32,7 @@ function Onboarding({
   const { lang } = useLang();
   const [step, setStep] = useState<OnboardingStep>("loading-children");
   const [consentId, setConsentId] = useState<string | null>(null);
+  const [socialConsent, setSocialConsent] = useState(false);
   const started = useRef(false);
 
   useEffect(() => {
@@ -61,8 +63,9 @@ function Onboarding({
   if (step === "consent") {
     return (
       <ConsentScreen
-        onConsented={(id) => {
+        onConsented={(id, social) => {
           setConsentId(id);
+          setSocialConsent(social);
           setStep("create-child");
         }}
       />
@@ -70,7 +73,7 @@ function Onboarding({
   }
 
   if (step === "create-child" && consentId) {
-    return <CreateChildScreen consentId={consentId} onCreated={(child) => onChildReady(child, true)} />;
+    return <CreateChildScreen consentId={consentId} socialCheckInConsent={socialConsent} onCreated={(child) => onChildReady(child, true)} />;
   }
 
   return null;
@@ -97,6 +100,7 @@ function initialStage(child: ChildProfile, isNewChild: boolean): Stage {
 
 function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boolean }) {
   const [stage, setStage] = useState<Stage>(initialStage(child, isNewChild));
+  const [familyUnlocked, setFamilyUnlocked] = useState(false);
   // Lo elegido en esta sesión; el `child` que llega por props no se refresca.
   const [interests, setInterests] = useState<string[]>(child.interests ?? []);
   // Nodo del mapa de habilidades elegido para la sesión de práctica en curso.
@@ -188,7 +192,22 @@ function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boo
   }
 
   if (stage === "dashboard") {
-    return <FamilyDashboardScreen childId={child.id} onBack={() => setStage("home")} />;
+    // Espacio familia (specs/018): primero el PIN; si el panel responde que se bloqueó (pasaron los
+    // 30 minutos), vuelve a pedirlo.
+    if (!familyUnlocked) {
+      return <FamilyGateScreen onUnlocked={() => setFamilyUnlocked(true)} onBack={() => setStage("home")} />;
+    }
+    return (
+      <FamilyDashboardScreen
+        childId={child.id}
+        onLocked={() => setFamilyUnlocked(false)}
+        onBack={() => {
+          setFamilyUnlocked(false);
+          void endpoints.lockFamily().catch(() => {});
+          setStage("home");
+        }}
+      />
+    );
   }
 
   return (

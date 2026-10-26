@@ -23,6 +23,7 @@ describe("reflexión al cerrar la práctica y juegos para la casa (specs/013)", 
     await fetch(`${baseUrl}/api/auth/register`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }) });
     const login = await fetch(`${baseUrl}/api/auth/login`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }) });
     cookie = login.headers.get("set-cookie")!.split(";")[0]!;
+    await fetch(`${baseUrl}/api/family/pin`, { method: "PUT", headers: { "Content-Type": "application/json", Cookie: cookie }, body: JSON.stringify({ pin: "2468", password: password }) }); // espacio familia (specs/018)
     const { id: consentId } = (await (await json("POST", "/api/consent", { scope: "ficticio de prueba" })).json()) as { id: string };
     childId = ((await (await json("POST", "/api/children", { consentId, displayName: "Niña ficticia", grade: 3 })).json()) as { id: string }).id;
     skillId = (await prisma.mathSkill.findFirstOrThrow({ where: { grade: 3, oaCode: "MA03 OA11" } })).id;
@@ -91,6 +92,7 @@ describe("reflexión al cerrar la práctica y juegos para la casa (specs/013)", 
     await fetch(`${baseUrl}/api/auth/register`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: otherEmail, password }) });
     const login = await fetch(`${baseUrl}/api/auth/login`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: otherEmail, password }) });
     const other = login.headers.get("set-cookie")!.split(";")[0]!;
+    await fetch(`${baseUrl}/api/family/pin`, { method: "PUT", headers: { "Content-Type": "application/json", Cookie: other }, body: JSON.stringify({ pin: "2468", password }) }); // espacio familia (specs/018)
     const session = await prisma.session.findFirstOrThrow({ where: { childProfileId: childId } });
     const post = (path: string, body: unknown) => fetch(`${baseUrl}${path}`, { method: "POST", headers: { "Content-Type": "application/json", Cookie: other }, body: JSON.stringify(body) });
     expect((await post(`/api/sessions/${session.id}/reflection`, { emotion: "calma" })).status).toBe(404);

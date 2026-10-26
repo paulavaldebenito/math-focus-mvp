@@ -52,7 +52,7 @@ describe("App", () => {
     await user.click(screen.getByRole("button", { name: "Iniciar sesión" }));
 
     await screen.findByRole("heading", { name: "Antes de continuar" });
-    await user.click(screen.getByRole("checkbox"));
+    await user.click(screen.getByRole("checkbox", { name: /doy mi consentimiento/ }));
     await user.click(screen.getByRole("button", { name: "Continuar" }));
 
     await screen.findByRole("heading", { name: "Crea el perfil de tu hijo/a" });

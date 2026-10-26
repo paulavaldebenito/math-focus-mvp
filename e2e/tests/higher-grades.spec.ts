@@ -25,7 +25,7 @@ for (const grade of [3, 4, 5, 6]) {
     await page.getByLabel("Contraseña").fill(password);
     await page.getByRole("button", { name: "Crear cuenta" }).click();
 
-    await page.getByRole("checkbox").check();
+    await page.getByRole("checkbox", { name: /doy mi consentimiento/ }).check();
     await page.getByRole("button", { name: "Continuar" }).click();
 
     // Los seis cursos están disponibles.
