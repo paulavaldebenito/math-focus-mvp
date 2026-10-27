@@ -28,8 +28,15 @@ export default defineConfig({
       use: { viewport: { width: 390, height: 844 }, video: { mode: "on", size: { width: 780, height: 1688 } }, deviceScaleFactor: 2, isMobile: true, hasTouch: true },
     },
     {
+      // Tomas de «Cómo funciona»: el video graba en píxeles CSS, así que se graba un celular de
+      // 390 px al doble con zoom (ver video-como-funciona.spec.ts) para que el texto se lea nítido.
+      name: "celular-hd",
+      grep: /toma [12] /,
+      use: { viewport: { width: 780, height: 1688 }, video: { mode: "on", size: { width: 780, height: 1688 } }, isMobile: true, hasTouch: true },
+    },
+    {
       name: "computador",
-      grep: /escena [35] /,
+      grep: /escena [35] |toma [34] /,
       use: { viewport: { width: 1366, height: 820 }, video: { mode: "on", size: { width: 1366, height: 820 } } },
     },
   ],
