@@ -25,7 +25,9 @@ export async function getOwnedSession(sessionId: string, adultUserId: string) {
     where: { id: sessionId },
     include: { childProfile: true },
   });
-  if (!session || session.childProfile.adultUserId !== adultUserId) {
+  // Solo sesiones de práctica: la evaluación de ubicación (specs/020) tiene sus propias rutas, y no se
+  // le pueden meter intentos, pausas, reflexiones ni cerrarla por estas.
+  if (!session || session.childProfile.adultUserId !== adultUserId || session.kind !== "practica") {
     return null;
   }
   return session;

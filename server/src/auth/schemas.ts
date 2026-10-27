@@ -72,17 +72,14 @@ export const mascotNameSchema = z.object({
 
 export type MascotNameInput = z.infer<typeof mascotNameSchema>;
 
-export const initialAssessmentAttemptsSchema = z.object({
-  attempts: z
-    .array(
-      z.object({
-        exerciseId: z.string().min(1),
-        selectedOptionId: z.string().min(1),
-        responseTimeMs: z.number().int().positive().optional(),
-      }),
-    )
-    .min(3, "La evaluación inicial requiere al menos 3 respuestas.")
-    .max(5, "La evaluación inicial no debe exceder 5 preguntas."),
-});
-
-export type InitialAssessmentAttemptsInput = z.infer<typeof initialAssessmentAttemptsSchema>;
+/// Una respuesta de la evaluación de ubicación (specs/020): se envía de a una, porque la siguiente
+/// pregunta depende de esta.
+export const placementAnswerSchema = z
+  .object({
+    exerciseId: z.string().min(1),
+    selectedOptionId: z.string().min(1).optional(),
+    /// «Todavía no lo sé»: cuenta como no dominada sin obligar a adivinar.
+    dontKnow: z.literal(true).optional(),
+    responseTimeMs: z.number().int().positive().optional(),
+  })
+  .refine((a) => Boolean(a.selectedOptionId) !== Boolean(a.dontKnow), "Elige una alternativa o «todavía no lo sé».");

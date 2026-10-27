@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { loadChildReview } from "../assessment/placementData.js";
 import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
 import { getOwnedChild } from "./childAccess.js";
@@ -19,8 +20,10 @@ progressRouter.get("/", requireAuth, requireFamilyUnlock, async (req, res) => {
     return;
   }
 
+  // Solo práctica: las respuestas de la evaluación de ubicación (que puede bajar a cursos anteriores,
+  // specs/020) no entran en la precisión ni en los errores que ve la familia.
   const sessions = await prisma.session.findMany({
-    where: { childProfileId: child.id },
+    where: { childProfileId: child.id, kind: "practica" },
     orderBy: { startedAt: "desc" },
   });
 
@@ -28,7 +31,7 @@ progressRouter.get("/", requireAuth, requireFamilyUnlock, async (req, res) => {
   // ejercicios; una ronda de "detecta el error" mide diagnóstico, no
   // cálculo, y mezclarla distorsionaría este número.
   const attempts = await prisma.attempt.findMany({
-    where: { session: { childProfileId: child.id }, isSpotError: false },
+    where: { session: { childProfileId: child.id, kind: "practica" }, isSpotError: false },
     include: {
       errorType: true,
       exercise: { select: { mathSkill: { select: { id: true, grade: true, name: true, nameEn: true } } } },
@@ -122,10 +125,13 @@ progressRouter.get("/", requireAuth, requireFamilyUnlock, async (req, res) => {
     social: socialSummary,
   });
   const adult = await prisma.adultUser.findUnique({ where: { id: req.session.adultUserId! }, select: { plan: true } });
+  // Ubicación y repaso de bases de cursos anteriores (specs/020): la familia sí ve el curso de origen.
+  const review = await loadChildReview(child.id, child.grade);
 
   res.status(200).json({
     plan: adult?.plan ?? "gratis",
     week,
+    placement: { placedAt: review.placedAt, review: review.nodes },
     social,
     child: { id: child.id, displayName: child.displayName, grade: child.grade },
     currentLevel,

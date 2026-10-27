@@ -11,7 +11,8 @@ const mocks = vi.hoisted(() => ({
   createChild: vi.fn(),
   setCompanion: vi.fn(),
   setInterests: vi.fn(),
-  getInitialAssessment: vi.fn(),
+  startPlacement: vi.fn(),
+  answerPlacement: vi.fn(),
   startSession: vi.fn(),
   getNextExercise: vi.fn(),
   getHomeSummary: vi.fn(),
@@ -39,8 +40,12 @@ describe("App", () => {
     mocks.createChild.mockResolvedValue({ id: "child-1", displayName: "Ana", grade: 1, language: "es" });
     mocks.setCompanion.mockResolvedValue({ id: "child-1", companion: "capi" });
     mocks.setInterests.mockResolvedValue({ id: "child-1", interests: ["futbol"] });
-    mocks.getInitialAssessment.mockResolvedValue({
-      exercises: [{ id: "ex1", prompt: "¿Cuánto es 6 + 7?", options: [{ id: "a1", label: "13" }] }],
+    mocks.startPlacement.mockResolvedValue({
+      sessionId: "s1",
+      done: false,
+      exercise: { id: "ex1", prompt: "¿Cuánto es 6 + 7?", options: [{ id: "a1", label: "13" }] },
+      answered: 0,
+      maxQuestions: 15,
     });
 
     render(<App />);

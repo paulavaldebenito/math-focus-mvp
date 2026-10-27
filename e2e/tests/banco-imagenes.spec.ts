@@ -48,20 +48,35 @@ async function serveOnce(page: Page, pattern: string, body: unknown) {
   });
 }
 
-/** La evaluación inicial real (3 preguntas del curso), con la primera reemplazada por `first`. */
+/**
+ * La evaluación de ubicación real (specs/020), con la primera pregunta reemplazada por `first`. Como
+ * el servidor valida que cada respuesta sea de la pregunta que tocaba, la respuesta a `first` se
+ * envía como respuesta a la pregunta real que reemplazó.
+ */
 async function serveAssessmentWithFirst(page: Page, first: Payload) {
+  let real: { id: string; options: Array<{ id: string }> } | null = null;
   await page.route("**/api/children/*/initial-assessment", async (route) => {
-    if (route.request().method() !== "GET") return route.fallback();
+    if (route.request().method() !== "POST") return route.fallback();
     const response = await route.fetch();
-    const body = (await response.json()) as { exercises: Payload[] };
-    body.exercises[0] = first;
+    const body = (await response.json()) as { exercise?: { id: string; options: Array<{ id: string }> } };
+    if (body.exercise) {
+      real = body.exercise;
+      body.exercise = first as unknown as typeof real;
+    }
     await route.fulfill({ response, json: body });
+  });
+  await page.route("**/api/children/*/initial-assessment/*/answers", async (route) => {
+    const data = route.request().postDataJSON() as { exerciseId: string; selectedOptionId: string };
+    if (!real || data.exerciseId !== first.id) return route.fallback();
+    const swapped = { ...data, exerciseId: real.id, selectedOptionId: real.options[0]!.id };
+    real = null;
+    await route.fallback({ postData: JSON.stringify(swapped) });
   });
 }
 
 async function finishAssessment(page: Page) {
   const done = page.getByRole("heading", { name: "¡Listo!" });
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 20; i++) {
     const option = page.locator(".option-btn:not([disabled])").first();
     const outcome = await Promise.race([
       done.waitFor({ state: "visible" }).then(() => "done" as const),

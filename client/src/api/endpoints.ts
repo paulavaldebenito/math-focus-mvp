@@ -5,8 +5,7 @@ import type {
   ChildProfile,
   Consent,
   HomeSummary,
-  InitialAssessmentResponse,
-  InitialAssessmentResult,
+  PlacementStep,
   NextExercisePublic,
   ProgressResponse,
   ChildEnrollment,
@@ -54,20 +53,14 @@ export async function listChildren(): Promise<ChildProfile[]> {
   return children;
 }
 
-export function getInitialAssessment(childId: string) {
-  return api.get<InitialAssessmentResponse>(`/api/children/${childId}/initial-assessment`);
+/** Empieza (o repite) la evaluación de ubicación adaptativa; trae la primera pregunta. */
+export function startPlacement(childId: string) {
+  return api.post<PlacementStep & { sessionId: string }>(`/api/children/${childId}/initial-assessment`);
 }
 
-export interface InitialAssessmentAttemptInput {
-  exerciseId: string;
-  selectedOptionId: string;
-  responseTimeMs?: number;
-}
-
-export function submitInitialAssessment(childId: string, attempts: InitialAssessmentAttemptInput[]) {
-  return api.post<InitialAssessmentResult>(`/api/children/${childId}/initial-assessment/attempts`, {
-    attempts,
-  });
+/** Responde una pregunta de la ubicación; trae la siguiente (depende de esta) o el resultado. */
+export function answerPlacement(childId: string, sessionId: string, answer: { exerciseId: string; selectedOptionId?: string; dontKnow?: true; responseTimeMs?: number }) {
+  return api.post<PlacementStep>(`/api/children/${childId}/initial-assessment/${sessionId}/answers`, answer);
 }
 
 export function startSession(childId: string, mathSkillId?: string) {

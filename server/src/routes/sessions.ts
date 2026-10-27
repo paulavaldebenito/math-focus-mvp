@@ -11,6 +11,7 @@ import { shuffle } from "../lib/shuffle.js";
 import { allowedThemeWhere, notAttemptedWhere, pickExercise } from "../exercises/select.js";
 import { buildFindStepRound, buildSpotErrorRound, isFindStepEligible, isSpotErrorEligible, wantsSpotErrorRound } from "../exercises/spotError.js";
 import { extraQuestionFor } from "../domain/feelings.js";
+import { flagPrerequisitesFromPractice } from "../assessment/placementData.js";
 
 // Cada cuántos aciertos seguidos (sin cortar racha) se otorga una estrella
 // extra — decisión de diseño del juego, no un umbral pedagógico validado.
@@ -43,7 +44,12 @@ childSessionsRouter.post("/", requireAuth, async (req, res) => {
 
   if (parsed.data.mathSkillId) {
     const skill = await prisma.mathSkill.findUnique({ where: { id: parsed.data.mathSkillId } });
-    if (!skill || skill.grade !== child.grade) {
+    // De su curso, o de un curso anterior si está en su Repaso (specs/020-ubicacion-adaptativa).
+    const inReview =
+      skill && skill.grade < child.grade
+        ? Boolean(await prisma.skillPlacement.findFirst({ where: { childProfileId: child.id, mathSkillId: skill.id, status: "reforzar" } }))
+        : false;
+    if (!skill || (skill.grade !== child.grade && !inReview)) {
       res.status(400).json({ error: "invalid_math_skill" });
       return;
     }
@@ -172,6 +178,13 @@ sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
   const currentLevel = await getCurrentLevelForChild(practiceSession.childProfileId);
   const newLevel = applyLevelChange(currentLevel, action);
 
+  // Ya en la dificultad más baja y con errores conceptuales: le falta una base. Se agregan sus
+  // prerrequisitos al Repaso (specs/020-ubicacion-adaptativa); el niño lo ve en su mapa.
+  const reviewAdded =
+    action.type === "LOWER_LEVEL" && currentLevel === 1 && practiceSession.mathSkillId
+      ? await flagPrerequisitesFromPractice(practiceSession.childProfileId, practiceSession.childProfile.grade, practiceSession.mathSkillId)
+      : 0;
+
   if (action.type !== "NO_CHANGE") {
     await prisma.adaptiveDecision.create({
       data: {
@@ -184,7 +197,7 @@ sessionAttemptsRouter.post("/", requireAuth, async (req, res) => {
     });
   }
 
-  res.status(201).json({ isCorrect, action, level: newLevel, errorCode, feedback, feedbackEn, bonusStarAwarded, solution, wrongStep });
+  res.status(201).json({ isCorrect, action, level: newLevel, errorCode, feedback, feedbackEn, bonusStarAwarded, solution, wrongStep, reviewAdded });
 });
 
 const spotErrorAttemptSchema = z.object({
@@ -330,7 +343,7 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
   // acotan a esa habilidad; sin ella (o sesión vieja de antes del mapa),
   // sigue siendo de todo el curso, como antes.
   const practiceSession = sessionId
-    ? await prisma.session.findUnique({ where: { id: sessionId }, select: { mathSkillId: true } })
+    ? await prisma.session.findFirst({ where: { id: sessionId, childProfileId: child.id, kind: "practica" }, select: { mathSkillId: true } })
     : null;
 
   const attempted = sessionId
@@ -355,10 +368,8 @@ nextExerciseRouter.get("/", requireAuth, async (req, res) => {
         AND: [
           {
             retired: false,
-            mathSkill: {
-              grade: child.grade,
-              ...(practiceSession?.mathSkillId ? { id: practiceSession.mathSkillId } : {}),
-            },
+            // La habilidad de la sesión ya se validó al empezarla (de su curso o de su Repaso).
+            mathSkill: practiceSession?.mathSkillId ? { id: practiceSession.mathSkillId } : { grade: child.grade },
           },
           allowedThemeWhere(child.interests),
           notAttemptedWhere(alreadyAttempted, attemptedBaseKeys),

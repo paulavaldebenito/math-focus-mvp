@@ -42,7 +42,8 @@ for (const grade of [3, 4, 5, 6]) {
     await page.getByRole("button", { name: /Animales/ }).click();
     await page.getByRole("button", { name: "¡Listo!" }).click();
 
-    // Evaluación inicial: cada pregunta trae 4 alternativas del curso.
+    // Evaluación de ubicación (specs/020): puede bajar de curso, así que las preguntas no siempre
+    // traen 4 alternativas; termina en a lo más 15.
     // Antes de la evaluación: ofrece un momento de respiración (siempre se puede saltar).
   await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
   await page.getByRole("button", { name: "Empezar ahora" }).click();
@@ -51,12 +52,12 @@ for (const grade of [3, 4, 5, 6]) {
     await page.getByRole("button", { name: "Empezar" }).click();
     const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
     let firstShot = true;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       if (await doneAssessment.isVisible()) break;
       const option = enabledOption(page);
       await Promise.race([doneAssessment.waitFor({ state: "visible" }), option.waitFor({ state: "visible" })]);
       if (await doneAssessment.isVisible()) break;
-      await expect(page.locator(".option-btn")).toHaveCount(4);
+      expect(await page.locator(".option-btn").count()).toBeGreaterThanOrEqual(2);
       if (firstShot && process.env.SHOTS) {
         await page.screenshot({ path: `screenshots/grade-${grade}-2-evaluacion.png` });
         firstShot = false;

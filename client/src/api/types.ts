@@ -55,11 +55,26 @@ export interface SkillNode {
   order: number;
   status: SkillStatus;
   correctCount: number;
+  /** Depende de una base de su Repaso aún no superada (specs/020): se recomienda hacer antes el repaso. */
+  afterReview?: boolean;
+}
+
+/** Habilidad de un curso anterior que el niño debe reforzar (su Repaso, specs/020). */
+export interface ReviewNode {
+  id: string;
+  grade: number;
+  name: string;
+  nameEn: string | null;
+  oaCode: string | null;
+  status: SkillStatus;
+  correctCount: number;
 }
 
 export interface SkillPathResult {
   grade: number;
   skills: SkillNode[];
+  review?: ReviewNode[];
+  placedAt?: string | null;
 }
 
 export interface ExerciseOptionPublic {
@@ -201,15 +216,19 @@ export interface FindStepExercisePublic {
 
 export type NextExercisePublic = ExercisePublic | SpotErrorExercisePublic | FindStepExercisePublic;
 
-export interface InitialAssessmentResponse {
-  exercises: ExercisePublic[];
-}
+/** Un paso de la evaluación de ubicación adaptativa (specs/020): la siguiente pregunta o el resultado. */
+export type PlacementStep =
+  | { done: false; sessionId?: string; exercise: ExercisePublic; answered: number; maxQuestions: number }
+  | InitialAssessmentResult;
 
 export interface InitialAssessmentResult {
+  done: true;
   sessionId: string;
   correctCount: number;
   total: number;
   initialLevel: number;
+  /** Habilidades de cursos anteriores que quedaron en su Repaso. */
+  reviewCount: number;
 }
 
 export interface StartSessionResponse {
@@ -371,6 +390,8 @@ export interface ProgressResponse {
   plan?: "familia" | "gratis";
   week?: WeeklySummary;
   social?: SocialPanelData;
+  /** Ubicación adaptativa y repaso de bases de cursos anteriores (specs/020). */
+  placement?: { placedAt: string | null; review: ReviewNode[] };
   child: { id: string; displayName: string; grade: number };
   currentLevel: number;
   totalSessions: number;
@@ -535,6 +556,8 @@ export interface TeacherDashboardData {
 
 export interface StudentFileData {
   student: { id: string; name: string; shareEmotions: boolean };
+  /** Ubicación adaptativa y repaso de bases de cursos anteriores (specs/020). */
+  placement?: { placedAt: string | null; review: ReviewNode[] };
   skills: SchoolSkill[];
   cells: Record<string, MasteryCell>;
   trends: Record<string, "up" | "down" | "steady" | null>;

@@ -67,7 +67,8 @@ test("elegir hasta 3 intereses, la 4ª tarjeta se deshabilita, y llegan pregunta
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
   await page.getByRole("button", { name: "Empezar" }).click();
   const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
-  for (let i = 0; i < 10; i++) {
+  // Ubicación adaptativa (specs/020): hasta 15 preguntas.
+  for (let i = 0; i < 20; i++) {
     if (await doneAssessment.isVisible()) break;
     const option = page.locator(".option-btn:not([disabled])").first();
     await Promise.race([doneAssessment.waitFor({ state: "visible" }), option.waitFor({ state: "visible" })]);

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import * as endpoints from "../api/endpoints.js";
 import { ApiError } from "../api/client.js";
 import { PlanTeaser, SocialPanel, WeekPanel } from "../components/FamilyWeek.js";
+import { PlacementPanel } from "../components/PlacementPanel.js";
 import type { ProgressResponse } from "../api/types.js";
 import { t, useLang, type Lang } from "../lib/i18n.js";
 import { playBack } from "../lib/sound.js";
@@ -53,9 +54,11 @@ interface Props {
   onBack: () => void;
   /** El espacio familia se bloqueó (pasaron los 30 minutos): hay que volver a pedir el PIN. */
   onLocked?: () => void;
+  /** Lleva al niño a la evaluación de ubicación (specs/020). */
+  onStartPlacement?: () => void;
 }
 
-export function FamilyDashboardScreen({ childId, onBack, onLocked }: Props) {
+export function FamilyDashboardScreen({ childId, onBack, onLocked, onStartPlacement }: Props) {
   const { lang } = useLang();
   const [progress, setProgress] = useState<ProgressResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -121,6 +124,8 @@ export function FamilyDashboardScreen({ childId, onBack, onLocked }: Props) {
       <p className="hint-text">{t(lang, "progressNote")}</p>
 
       {progress.week && <WeekPanel week={progress.week} name={progress.child.displayName} lang={lang} feelingsLocked={!paid} />}
+
+      {progress.placement && <PlacementPanel placement={progress.placement} lang={lang} onStartPlacement={onStartPlacement} />}
 
       {/* «Con los demás» está en todos los planes: una señal de posible acoso no puede quedar detrás de un pago. */}
       {progress.social && (

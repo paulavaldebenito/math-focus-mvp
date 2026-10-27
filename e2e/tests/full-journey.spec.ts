@@ -26,8 +26,8 @@ function enabledOption(page: Page) {
   return page.locator(".option-btn:not([disabled])").first();
 }
 
-// Evaluación inicial (InitialAssessmentScreen): cada respuesta avanza
-// directo a la siguiente pregunta, sin pantalla de feedback intermedia.
+// Evaluación de ubicación (InitialAssessmentScreen, specs/020): cada respuesta avanza directo a la
+// siguiente pregunta, sin feedback intermedio; el largo depende de las respuestas (máximo 15).
 async function answerAssessmentUntil(page: Page, doneHeading: string, maxSteps: number) {
   const done = page.getByRole("heading", { name: doneHeading });
   for (let i = 0; i < maxSteps; i++) {
@@ -114,7 +114,7 @@ test("registro, consentimiento, perfil, mascota, evaluación inicial, práctica 
   // Evaluación inicial breve.
   await expect(page.getByRole("heading", { name: "Vamos a conocernos" })).toBeVisible();
   await page.getByRole("button", { name: "Empezar" }).click();
-  await answerAssessmentUntil(page, "¡Listo!", 10);
+  await answerAssessmentUntil(page, "¡Listo!", 20);
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
   // El mapa de habilidades reemplazó al botón directo de practicar: se elige

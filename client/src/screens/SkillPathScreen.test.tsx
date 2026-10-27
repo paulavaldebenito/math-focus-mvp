@@ -124,3 +124,35 @@ describe("SkillPathScreen", () => {
     expect(onSelect).toHaveBeenCalledWith({ id: "s2", name: "Restas", nameEn: "Subtraction" });
   });
 });
+
+describe("SkillPathScreen — repaso de bases (specs/020)", () => {
+  it("muestra el repaso primero, sin el curso, con el primer nodo abierto como «¡Empezar!»", async () => {
+    mocks.getSkillPath.mockResolvedValue({
+      grade: 5,
+      skills: skills.map((s) => (s.id === "s2" ? { ...s, afterReview: true } : s)),
+      review: [
+        { id: "r1", grade: 2, name: "Multiplicación como suma repetida: tablas del 2, 5 y 10", nameEn: null, oaCode: "MA02 OA11", status: "available", correctCount: 1 },
+        { id: "r2", grade: 3, name: "Tablas de multiplicar hasta el 10", nameEn: null, oaCode: "MA03 OA08", status: "locked", correctCount: 0 },
+      ],
+    });
+    const onSelect = vi.fn();
+    render(<SkillPathScreen childId="c1" onSelect={onSelect} onBack={vi.fn()} />);
+
+    await screen.findByRole("heading", { name: "🔁 Tu repaso" });
+    expect(screen.queryByText(/básico|2°|3°/)).not.toBeInTheDocument();
+    // «El que sigue» es el repaso, no el nodo de su curso (que avisa «Después de tu repaso»).
+    expect(screen.getAllByText("¡Empezar!")).toHaveLength(1);
+    expect(screen.getByText("Mejor después de tu repaso")).toBeInTheDocument();
+
+    const first = screen.getAllByRole("button", { name: /— ¡Empezar!$/ })[0]!;
+    await userEvent.setup().click(first);
+    expect(onSelect).toHaveBeenCalledWith(expect.objectContaining({ id: "r1" }));
+  });
+
+  it("sin repaso pendiente no muestra la sección", async () => {
+    mocks.getSkillPath.mockResolvedValue({ grade: 4, skills, review: [] });
+    render(<SkillPathScreen childId="c1" onSelect={vi.fn()} onBack={vi.fn()} />);
+    await screen.findByText("Restas");
+    expect(screen.queryByRole("heading", { name: "🔁 Tu repaso" })).not.toBeInTheDocument();
+  });
+});

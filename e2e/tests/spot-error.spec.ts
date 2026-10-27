@@ -57,7 +57,7 @@ test("detecta el error: aparece dentro de la sesión, muestra la respuesta ajena
 
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
   await page.getByRole("button", { name: "Empezar" }).click();
-  await answerAssessmentUntil(page, "¡Listo!", 10);
+  await answerAssessmentUntil(page, "¡Listo!", 20);
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
   // Primer nodo del mapa: "Adición y sustracción dentro de 20", el que

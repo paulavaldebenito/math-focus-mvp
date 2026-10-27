@@ -98,18 +98,19 @@ describe("Control de acceso cruzado entre adultos (IDOR)", () => {
     expect(res.status).toBe(404);
   });
 
-  it("B no puede ver la evaluación inicial de un hijo de A (404)", async () => {
+  it("B no puede empezar la evaluación de ubicación de un hijo de A (404)", async () => {
     const res = await fetch(`${baseUrl}/api/children/${childIdA}/initial-assessment`, {
+      method: "POST",
       headers: { Cookie: cookieB },
     });
     expect(res.status).toBe(404);
   });
 
-  it("B no puede registrar intentos de evaluación inicial para un hijo de A (404)", async () => {
-    const res = await fetch(`${baseUrl}/api/children/${childIdA}/initial-assessment/attempts`, {
+  it("B no puede responder la evaluación de ubicación de un hijo de A (404)", async () => {
+    const res = await fetch(`${baseUrl}/api/children/${childIdA}/initial-assessment/cualquiera/answers`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Cookie: cookieB },
-      body: JSON.stringify({ attempts: [] }),
+      body: JSON.stringify({ exerciseId: "x", selectedOptionId: "y" }),
     });
     expect(res.status).toBe(404);
   });

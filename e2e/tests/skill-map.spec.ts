@@ -41,7 +41,8 @@ test("mapa de habilidades: solo el primer nodo está disponible, elegirlo muestr
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
   await page.getByRole("button", { name: "Empezar" }).click();
   const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
-  for (let i = 0; i < 10; i++) {
+  // Ubicación adaptativa (specs/020): hasta 15 preguntas.
+  for (let i = 0; i < 20; i++) {
     if (await doneAssessment.isVisible()) break;
     const option = page.locator(".option-btn:not([disabled])").first();
     await Promise.race([doneAssessment.waitFor({ state: "visible" }), option.waitFor({ state: "visible" })]);
@@ -52,7 +53,8 @@ test("mapa de habilidades: solo el primer nodo está disponible, elegirlo muestr
 
   // El mapa reemplaza al botón directo de practicar.
   await page.getByRole("heading", { name: "Mapa de aprendizaje" }).waitFor();
-  const nodes = page.locator(".skill-node");
+  // Camino de su curso (el Repaso de la ubicación, si lo hay, va aparte en .skill-review).
+  const nodes = page.locator("main > .skill-path .skill-node");
   await expect(nodes.first()).toBeEnabled();
   const nodeCount = await nodes.count();
   expect(nodeCount).toBeGreaterThan(1);
@@ -61,7 +63,7 @@ test("mapa de habilidades: solo el primer nodo está disponible, elegirlo muestr
     await expect(nodes.nth(i)).toBeDisabled();
   }
 
-  const firstSkillName = await page.locator(".skill-node-label p").first().innerText();
+  const firstSkillName = await page.locator("main > .skill-path .skill-node-label p").first().innerText();
   await nodes.first().click();
 
   // Check-in de caritas al empezar la práctica: opcional, se salta.

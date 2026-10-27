@@ -65,8 +65,9 @@ homeSummaryRouter.get("/", requireAuth, async (req, res) => {
     return;
   }
 
+  // Solo práctica: la evaluación de ubicación (specs/020) no cuenta para la racha ni el aviso.
   const sessions = await prisma.session.findMany({
-    where: { childProfileId: child.id },
+    where: { childProfileId: child.id, kind: "practica" },
     select: { startedAt: true },
   });
 
@@ -87,7 +88,7 @@ homeSummaryRouter.get("/", requireAuth, async (req, res) => {
   const newSignal =
     summarizeSocial(socialRows).signal !== null && socialRows.some((r) => !seen || r.createdAt > seen);
   const practicedThisWeek = await prisma.session.count({
-    where: { childProfileId: child.id, startedAt: { gte: seen ?? new Date(0) } },
+    where: { childProfileId: child.id, kind: "practica", startedAt: { gte: seen ?? new Date(0) } },
   });
   const newWeek = practicedThisWeek > 0 && (!seen || weekKey(seen) < weekKey(new Date()));
   const familyAlert = newSignal || newWeek;

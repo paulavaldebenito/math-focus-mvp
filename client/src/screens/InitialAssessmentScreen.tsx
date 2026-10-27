@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as endpoints from "../api/endpoints.js";
-import type { ExercisePublic, InitialAssessmentResult } from "../api/types.js";
-import type { InitialAssessmentAttemptInput } from "../api/endpoints.js";
+import { ApiError } from "../api/client.js";
+import type { ExercisePublic, InitialAssessmentResult, PlacementStep } from "../api/types.js";
 import { ExerciseIllustration } from "../components/ExerciseIllustration.js";
 import { BrickCompanionAvatar } from "../components/BrickCompanionAvatar.js";
 import { BreathingPause } from "../components/BreathingPause.js";
@@ -24,11 +24,17 @@ interface Props {
 // PauseEvent ni otorga estrella: es puramente un momento de calma.
 type Stage = "breathing-offer" | "breathing" | "intro" | "question" | "outro";
 
+/**
+ * Evaluación de ubicación adaptativa (specs/020-ubicacion-adaptativa): las preguntas llegan de a una
+ * porque la siguiente depende de la respuesta (el servidor baja de curso si hace falta). El niño
+ * nunca ve de qué curso es cada pregunta.
+ */
 export function InitialAssessmentScreen({ childId, onDone }: Props) {
   const { lang } = useLang();
-  const [exercises, setExercises] = useState<ExercisePublic[] | null>(null);
-  const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState<InitialAssessmentAttemptInput[]>([]);
+  const [current, setCurrent] = useState<ExercisePublic | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [progress, setProgress] = useState({ answered: 0, max: 1 });
+  const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [stage, setStage] = useState<Stage>("breathing-offer");
@@ -39,6 +45,10 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
   const [childInterests, setChildInterests] = useState<string[]>([]);
   const [pendingResult, setPendingResult] = useState<InitialAssessmentResult | null>(null);
   const questionShownAt = useRef<number>(Date.now());
+  // Bloqueo síncrono contra el doble toque (el estado `submitting` llega un render tarde).
+  const inFlight = useRef(false);
+  // Respuesta que no se pudo enviar (red): se reintenta la misma.
+  const [failed, setFailed] = useState<{ selectedOptionId?: string; dontKnow?: true; responseTimeMs: number } | null>(null);
   const started = useRef(false);
 
   useEffect(() => {
@@ -46,8 +56,12 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
     started.current = true;
 
     endpoints
-      .getInitialAssessment(childId)
-      .then((res) => setExercises(res.exercises))
+      .startPlacement(childId)
+      .then((step) => {
+        setSessionId(step.sessionId);
+        applyStep(step);
+        setLoaded(true);
+      })
       .catch(() => setError(t(lang, "assessmentLoadErr")));
 
     endpoints
@@ -65,7 +79,18 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
 
   useEffect(() => {
     questionShownAt.current = Date.now();
-  }, [index]);
+  }, [current]);
+
+  function applyStep(step: PlacementStep) {
+    if (step.done) {
+      setPendingResult(step);
+      setCurrent(null);
+      setStage((s) => (s === "question" ? "outro" : s));
+      return;
+    }
+    setCurrent(step.exercise);
+    setProgress({ answered: step.answered, max: step.maxQuestions });
+  }
 
   useEffect(() => {
     // La narración ya no se dispara sola al mostrar la pregunta (voz
@@ -74,7 +99,7 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
     // corta esa lectura en vez de dejarla sonando encima de la siguiente.
     return () => cancelSpeech();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [exercises, index, stage]);
+  }, [current, stage]);
 
   if (error) {
     return (
@@ -86,7 +111,7 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
     );
   }
 
-  if (!exercises) {
+  if (!loaded) {
     return (
       <main className="screen" aria-busy="true">
         <p>{t(lang, "loading")}</p>
@@ -145,7 +170,8 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
           type="button"
           onClick={() => {
             playConfirm();
-            setStage("question");
+            // Caso raro: no hubo preguntas que hacer (banco vacío); se pasa directo al cierre.
+            setStage(pendingResult && !current ? "outro" : "question");
           }}
         >
           {t(lang, "assessmentIntroStart")}
@@ -160,6 +186,7 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
         <BrickCompanionAvatar companion={companion} mood="happy" />
         <h1>{t(lang, "assessmentOutroTitle")}</h1>
         <p>{t(lang, "assessmentOutroBody")}</p>
+        {pendingResult && pendingResult.reviewCount > 0 && <p>{t(lang, "assessmentReviewReady")}</p>}
         <button
           className="btn-primary"
           type="button"
@@ -174,34 +201,38 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
     );
   }
 
-  const current = exercises[index];
-
-  async function handleAnswer(optionId: string) {
-    if (!current || !exercises) return;
-    playSelect();
-    const responseTimeMs = Date.now() - questionShownAt.current;
-    const nextAnswers = [
-      ...answers,
-      { exerciseId: current.id, selectedOptionId: optionId, responseTimeMs },
-    ];
-    setAnswers(nextAnswers);
-
-    if (index + 1 < exercises.length) {
-      setIndex(index + 1);
-      return;
-    }
-
+  async function send(answer: { selectedOptionId?: string; dontKnow?: true; responseTimeMs: number }) {
+    if (!current || !sessionId || inFlight.current) return;
+    inFlight.current = true;
     setSubmitting(true);
+    setFailed(null);
     try {
-      const result = await endpoints.submitInitialAssessment(childId, nextAnswers);
-      playReady();
-      setPendingResult(result);
-      setStage("outro");
-    } catch {
-      setError(t(lang, "assessmentSubmitErr"));
+      const step = await endpoints.answerPlacement(childId, sessionId, { exerciseId: current.id, ...answer });
+      if (step.done) {
+        playReady();
+        setPendingResult(step);
+        setStage("outro");
+      } else applyStep(step);
+    } catch (err) {
+      if (err instanceof ApiError && err.status === 409) {
+        // La respuesta sí llegó antes (se perdió la confirmación): se retoma con una evaluación nueva.
+        try {
+          const step = await endpoints.startPlacement(childId);
+          setSessionId(step.sessionId);
+          applyStep(step);
+        } catch {
+          setError(t(lang, "assessmentSubmitErr"));
+        }
+      } else setFailed(answer);
     } finally {
+      inFlight.current = false;
       setSubmitting(false);
     }
+  }
+
+  function handleAnswer(optionId: string) {
+    playSelect();
+    void send({ selectedOptionId: optionId, responseTimeMs: Date.now() - questionShownAt.current });
   }
 
   if (!current) {
@@ -224,10 +255,9 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
     <main className="screen">
       <BrickCompanionAvatar companion={companion} />
 
-      <div className="progress-dots" aria-hidden="true">
-        {exercises.map((ex, i) => (
-          <span key={ex.id} className={i < index ? "done" : ""} />
-        ))}
+      {/* Avance aproximado: el largo depende de las respuestas (nunca pasa del tope). */}
+      <div className="assessment-progress" aria-hidden="true">
+        <span style={{ width: `${Math.round((100 * progress.answered) / progress.max)}%` }} />
       </div>
 
       <div className="focus-frame" key={current.id} style={accentStyle}>
@@ -263,7 +293,27 @@ export function InitialAssessmentScreen({ childId, onDone }: Props) {
               {localize(lang, opt.label, opt.labelEn)}
             </button>
           ))}
+          {/* Mejor que adivinar: cuenta como «todavía no» y la evaluación baja a algo más fácil. */}
+          <button
+            className="btn-link assessment-dont-know"
+            type="button"
+            disabled={submitting}
+            onClick={() => {
+              playClick();
+              void send({ dontKnow: true, responseTimeMs: Date.now() - questionShownAt.current });
+            }}
+          >
+            {t(lang, "assessmentDontKnow")}
+          </button>
         </div>
+        {failed && (
+          <div className="error-text" role="alert">
+            <p>{t(lang, "assessmentRetryErr")}</p>
+            <button className="btn-primary" type="button" onClick={() => void send(failed)}>
+              {t(lang, "retryButton")}
+            </button>
+          </div>
+        )}
       </div>
     </main>
   );

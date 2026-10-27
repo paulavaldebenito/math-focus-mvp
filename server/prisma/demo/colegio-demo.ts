@@ -47,6 +47,7 @@ async function wipe() {
     await prisma.teacherNote.deleteMany({ where: { childProfileId: { in: ids } } });
     await prisma.classEnrollment.deleteMany({ where: { childProfileId: { in: ids } } });
     await prisma.homeGamePlay.deleteMany({ where: { childProfileId: { in: ids } } });
+    await prisma.skillPlacement.deleteMany({ where: { childProfileId: { in: ids } } });
     await prisma.sessionReflection.deleteMany({ where: { childProfileId: { in: ids } } });
     await prisma.wellbeingCheckIn.deleteMany({ where: { childProfileId: { in: ids } } });
     await prisma.attempt.deleteMany({ where: { session: { childProfileId: { in: ids } } } });
@@ -126,6 +127,28 @@ async function sofia(schoolId: string) {
       }),
     });
   }
+  // Ubicación adaptativa (specs/020) hace dos semanas: domina las bases de 3°, salvo las tablas del
+  // 2, 5 y 10 de 2°, que quedaron en su Repaso (va en 3 de 5 aciertos).
+  const placedAt = new Date(NOW - 14 * DAY);
+  const placement = await prisma.session.create({ data: { childProfileId: child.id, kind: "ubicacion", startedAt: placedAt, endedAt: new Date(placedAt.getTime() + 8 * 60000) } });
+  await prisma.adaptiveDecision.create({ data: { sessionId: placement.id, ruleCode: "INITIAL_ASSESSMENT", reason: "Ubicación: 9/12 correctas; 1 habilidad de cursos anteriores para repasar.", previousLevel: 2, newLevel: 2, createdAt: placement.endedAt! } });
+  const byOa = async (oa: string) => (await prisma.mathSkill.findFirst({ where: { oaCode: oa }, include: { exercises: { where: { retired: false, theme: null }, include: { options: true }, take: 6 } } }))!;
+  const tables2 = await byOa("MA02 OA11");
+  await prisma.skillPlacement.create({ data: { childProfileId: child.id, mathSkillId: tables2.id, status: "reforzar", source: "ubicacion", createdAt: placement.endedAt! } });
+  for (const oa of ["MA03 OA05", "MA03 OA06", "MA03 OA08", "MA03 OA09", "MA03 OA11", "MA02 OA09", "MA02 OA07"]) {
+    const sk = await byOa(oa);
+    await prisma.skillPlacement.create({ data: { childProfileId: child.id, mathSkillId: sk.id, status: "dominada", source: "ubicacion", direct: oa.startsWith("MA03"), createdAt: placement.endedAt! } });
+  }
+  const reviewStart = new Date(NOW - 6 * DAY);
+  const reviewSession = await prisma.session.create({ data: { childProfileId: child.id, mathSkillId: tables2.id, startedAt: reviewStart, endedAt: new Date(reviewStart.getTime() + 5 * 60000) } });
+  await prisma.attempt.createMany({
+    data: tables2.exercises.slice(0, 6).map((ex, q) => {
+      const ok = q % 2 === 0;
+      const opt = ok ? ex.options.find((o) => o.isCorrect)! : ex.options.find((o) => !o.isCorrect)!;
+      return { sessionId: reviewSession.id, exerciseId: ex.id, selectedOptionId: opt.id, isCorrect: ok, errorTypeId: ok ? null : (opt.errorTypeId ?? null), responseTimeMs: 14000, hintsUsed: 0, createdAt: new Date(reviewStart.getTime() + q * 50000) };
+    }),
+  });
+
   // Preguntas semanales: 4 semanas tranquilas y, esta semana, «una vez me dejaron fuera».
   const { weekKey } = await import("../../src/domain/social.js");
   const answers = [

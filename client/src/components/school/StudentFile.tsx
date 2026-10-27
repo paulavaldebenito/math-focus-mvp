@@ -3,7 +3,7 @@ import * as endpoints from "../../api/endpoints.js";
 import type { StudentFileData } from "../../api/types.js";
 import { ERROR_LABELS } from "../../lib/errorLabels.js";
 import { EMOTION_CHOICES } from "../../lib/emotions.js";
-import type { Lang } from "../../lib/i18n.js";
+import { localize, type Lang } from "../../lib/i18n.js";
 import { SCHOOL, oaLabel, pct } from "./copy.js";
 
 interface Props {
@@ -61,6 +61,27 @@ export function StudentFile({ classroomId, data, lang }: Props) {
           })}
         </ul>
       </section>
+
+      {data.placement && (
+        <section className="dash-section" aria-labelledby="f-review">
+          <h3 id="f-review" className="dash-section-title">{c.fileReview}</h3>
+          {data.placement.review.length > 0 ? (
+            <>
+              <p className="hint-text">{c.fileReviewIntro}</p>
+              <ol className="placement-list">
+                {data.placement.review.map((r) => (
+                  <li key={r.id}>
+                    {r.oaCode} · {localize(lang, r.name, r.nameEn)} · {r.grade}° ·{" "}
+                    {r.status === "completed" ? c.fileReviewDone : c.fileReviewProgress(Math.min(r.correctCount, 5))}
+                  </li>
+                ))}
+              </ol>
+            </>
+          ) : (
+            <p className="hint-text">{data.placement.placedAt ? c.fileReviewNone : c.fileReviewNever}</p>
+          )}
+        </section>
+      )}
 
       <section className="dash-section" aria-labelledby="f-err">
         <h3 id="f-err" className="dash-section-title">{c.fileErrors}</h3>

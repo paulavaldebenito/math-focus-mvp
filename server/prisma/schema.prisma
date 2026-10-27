@@ -92,6 +92,7 @@ model ChildProfile {
   reflections          SessionReflection[]
   homeGamePlays        HomeGamePlay[]
   enrollments          ClassEnrollment[]
+  placements           SkillPlacement[]
   teacherNotes         TeacherNote[]
 }
 
@@ -138,6 +139,7 @@ model MathSkill {
   sessions      Session[]
   reflections   SessionReflection[]
   homeGamePlays HomeGamePlay[]
+  placements    SkillPlacement[]
 }
 
 /// Ejercicio. `isFictitious` marca explícitamente los datos de prueba —
@@ -235,6 +237,11 @@ model Session {
   /// ocurre en sesiones creadas antes de esta funcionalidad).
   mathSkillId       String?
   mathSkill         MathSkill?         @relation(fields: [mathSkillId], references: [id])
+  /// "practica" (por defecto) o "ubicacion": la evaluación de ubicación adaptativa (specs/020).
+  kind              String             @default("practica")
+  /// Ubicación: la pregunta servida que se espera responder. Se «reclama» de forma atómica al
+  /// responder, así un doble envío no cuenta dos veces ni se puede responder otra pregunta.
+  pendingExerciseId String?
   startedAt         DateTime           @default(now())
   endedAt           DateTime?
   attempts          Attempt[]
@@ -518,4 +525,25 @@ model TeacherNote {
   author         AdultUser    @relation(fields: [authorId], references: [id])
   text           String
   createdAt      DateTime     @default(now())
+}
+
+/// Ubicación del niño en una habilidad (specs/020-ubicacion-adaptativa): qué domina y qué debe
+/// reforzar. Lo escribe la evaluación de ubicación (source "ubicacion", reemplaza la anterior) y la
+/// práctica cuando detecta que le falta una base (source "practica"). Las habilidades «reforzar» de
+/// cursos anteriores forman su Repaso en el mapa; se dan por superadas al completarlas practicando.
+model SkillPlacement {
+  id             String       @id @default(cuid())
+  childProfileId String
+  childProfile   ChildProfile @relation(fields: [childProfileId], references: [id], onDelete: Cascade)
+  mathSkillId    String
+  mathSkill      MathSkill    @relation(fields: [mathSkillId], references: [id])
+  /// "dominada" | "reforzar"
+  status         String
+  /// "ubicacion" | "practica"
+  source         String
+  /// true si se respondió en la evaluación; false si se infirió (base de algo dominado).
+  direct         Boolean      @default(true)
+  createdAt      DateTime     @default(now())
+
+  @@unique([childProfileId, mathSkillId])
 }

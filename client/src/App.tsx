@@ -201,6 +201,12 @@ function ChildFlow({ child, isNewChild }: { child: ChildProfile; isNewChild: boo
       <FamilyDashboardScreen
         childId={child.id}
         onLocked={() => setFamilyUnlocked(false)}
+        onStartPlacement={() => {
+          // La hace el niño: se cierra el espacio familia antes de pasarle el dispositivo.
+          setFamilyUnlocked(false);
+          void endpoints.lockFamily().catch(() => {});
+          setStage("assessment");
+        }}
         onBack={() => {
           setFamilyUnlocked(false);
           void endpoints.lockFamily().catch(() => {});

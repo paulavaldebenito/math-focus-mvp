@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { loadChildReview } from "../assessment/placementData.js";
 import { randomInt } from "node:crypto";
 import { z } from "zod";
 import { prisma } from "../db/prisma.js";
@@ -128,7 +129,8 @@ async function loadData(childIds: string[]) {
   // un colegio entero son miles de filas, y las selecciones anidadas o en paralelo hacen caer la BD
   // local de desarrollo (prisma dev). En producción también resulta más liviano.
   const sessionRows = await prisma.session.findMany({
-    where: { childProfileId: { in: childIds } },
+    // Solo práctica: la evaluación de ubicación (specs/020) no entra en logro ni participación.
+    where: { childProfileId: { in: childIds }, kind: "practica" },
     select: { id: true, childProfileId: true, startedAt: true, endedAt: true },
   });
   const childOfSession = new Map(sessionRows.map((s) => [s.id, s.childProfileId]));
@@ -224,7 +226,10 @@ schoolRouter.get("/classrooms/:classroomId/students/:childId", requireAuth, asyn
   const errorBreakdown: Record<string, number> = {};
   for (const a of data.attempts) if (!a.isCorrect && a.errorCode) errorBreakdown[a.errorCode] = (errorBreakdown[a.errorCode] ?? 0) + 1;
   const notes = await prisma.teacherNote.findMany({ where: { classroomId: access.classroom.id, childProfileId: childId }, orderBy: { createdAt: "desc" }, include: { author: { select: { email: true } } } });
+  // Repaso de bases de cursos anteriores que dejó la ubicación adaptativa (specs/020).
+  const review = await loadChildReview(childId, enrollment.childProfile.grade);
   res.json({
+    placement: { placedAt: review.placedAt, review: review.nodes },
     student: { id: childId, name: enrollment.childProfile.displayName, shareEmotions: enrollment.shareEmotions },
     skills: dash.skills,
     cells: dash.heatmap[childId],
