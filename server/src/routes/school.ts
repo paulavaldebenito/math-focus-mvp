@@ -124,38 +124,41 @@ schoolRouter.post("/:schoolId/classrooms", requireAuth, async (req, res) => {
 // ---------- Datos de un conjunto de niños (para ambos paneles) ----------
 
 async function loadData(childIds: string[]) {
-  const [attempts, sessions, reflections, checkIns, plays] = await Promise.all([
-    prisma.attempt.findMany({
-      where: { session: { childProfileId: { in: childIds } }, isSpotError: false },
-      select: {
-        isCorrect: true,
-        createdAt: true,
-        hintsUsed: true,
-        responseTimeMs: true,
-        errorType: { select: { code: true } },
-        exercise: { select: { mathSkillId: true } },
-        session: { select: { childProfileId: true } },
-      },
-    }),
-    prisma.session.findMany({
-      where: { childProfileId: { in: childIds } },
-      select: { childProfileId: true, startedAt: true, endedAt: true, attempts: { select: { createdAt: true }, orderBy: { createdAt: "desc" }, take: 1 } },
-    }),
-    prisma.sessionReflection.findMany({ where: { childProfileId: { in: childIds } }, select: { childProfileId: true, mathSkillId: true, emotion: true, createdAt: true } }),
-    prisma.wellbeingCheckIn.findMany({ where: { childProfileId: { in: childIds } }, select: { childProfileId: true, mood: true, createdAt: true } }),
-    prisma.homeGamePlay.findMany({ where: { childProfileId: { in: childIds } }, select: { childProfileId: true, playedAt: true } }),
-  ]);
+  // Consultas planas y secuenciales, y el cruce (niño, habilidad, código de error) en memoria: con
+  // un colegio entero son miles de filas, y las selecciones anidadas o en paralelo hacen caer la BD
+  // local de desarrollo (prisma dev). En producción también resulta más liviano.
+  const sessionRows = await prisma.session.findMany({
+    where: { childProfileId: { in: childIds } },
+    select: { id: true, childProfileId: true, startedAt: true, endedAt: true },
+  });
+  const childOfSession = new Map(sessionRows.map((s) => [s.id, s.childProfileId]));
+  const rawAttempts = await prisma.attempt.findMany({
+    where: { sessionId: { in: sessionRows.map((s) => s.id) }, isSpotError: false },
+    select: { isCorrect: true, createdAt: true, hintsUsed: true, responseTimeMs: true, errorTypeId: true, exerciseId: true, sessionId: true },
+  });
+  const skillOfExercise = new Map(
+    (await prisma.exercise.findMany({ where: { id: { in: [...new Set(rawAttempts.map((a) => a.exerciseId))] } }, select: { id: true, mathSkillId: true } })).map((e) => [e.id, e.mathSkillId]),
+  );
+  const codeOfError = new Map((await prisma.errorType.findMany({ select: { id: true, code: true } })).map((e) => [e.id, e.code]));
+  const lastAttempt = new Map<string, Date>();
+  for (const a of rawAttempts) {
+    const prev = lastAttempt.get(a.sessionId);
+    if (!prev || a.createdAt > prev) lastAttempt.set(a.sessionId, a.createdAt);
+  }
+  const reflections = await prisma.sessionReflection.findMany({ where: { childProfileId: { in: childIds } }, select: { childProfileId: true, mathSkillId: true, emotion: true, createdAt: true } });
+  const checkIns = await prisma.wellbeingCheckIn.findMany({ where: { childProfileId: { in: childIds } }, select: { childProfileId: true, mood: true, createdAt: true } });
+  const plays = await prisma.homeGamePlay.findMany({ where: { childProfileId: { in: childIds } }, select: { childProfileId: true, playedAt: true } });
   return {
-    attempts: attempts.map<AttemptRow>((a) => ({
-      childId: a.session.childProfileId,
-      skillId: a.exercise.mathSkillId,
+    attempts: rawAttempts.map<AttemptRow>((a) => ({
+      childId: childOfSession.get(a.sessionId)!,
+      skillId: skillOfExercise.get(a.exerciseId)!,
       isCorrect: a.isCorrect,
       createdAt: a.createdAt,
-      errorCode: a.errorType?.code ?? null,
+      errorCode: a.errorTypeId ? (codeOfError.get(a.errorTypeId) ?? null) : null,
       hintsUsed: a.hintsUsed,
       responseTimeMs: a.responseTimeMs,
     })),
-    sessions: sessions.map((s) => ({ childId: s.childProfileId, startedAt: s.startedAt, endedAt: s.endedAt, lastAttemptAt: s.attempts[0]?.createdAt ?? null })),
+    sessions: sessionRows.map((s) => ({ childId: s.childProfileId, startedAt: s.startedAt, endedAt: s.endedAt, lastAttemptAt: lastAttempt.get(s.id) ?? null })),
     reflections: reflections.map((r) => ({ childId: r.childProfileId, skillId: r.mathSkillId, emotion: r.emotion, createdAt: r.createdAt })),
     checkIns: checkIns.map((c) => ({ childId: c.childProfileId, mood: c.mood, createdAt: c.createdAt })),
     plays: plays.map((p) => ({ childId: p.childProfileId, playedAt: p.playedAt })),

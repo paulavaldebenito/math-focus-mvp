@@ -9,6 +9,9 @@
  *
  * Cuentas ficticias (clave: demo-colegio-1234):
  *   demo.directora@example.test · demo.profe3a@example.test · demo.profe3b@example.test · demo.profe4a@example.test
+ *   demo.sofia@example.test — familia de «Sofía» (3° A), con práctica de esta semana, emociones,
+ *   preguntas semanales con una señal suave para conversar y PIN del espacio familia 2468 (para el
+ *   video de demostración, specs/019).
  * Es idempotente: si el colegio demo ya existe, lo borra y lo vuelve a crear.
  */
 import "dotenv/config";
@@ -36,7 +39,8 @@ async function adult(email: string) {
 
 async function wipe() {
   const school = await prisma.school.findFirst({ where: { name: SCHOOL_NAME } });
-  const family = await prisma.adultUser.findUnique({ where: { email: "demo.familias@example.test" } });
+  for (const email of ["demo.familias@example.test", "demo.sofia@example.test"]) {
+  const family = await prisma.adultUser.findUnique({ where: { email } });
   if (family) {
     const kids = (await prisma.childProfile.findMany({ where: { adultUserId: family.id }, select: { id: true, consentId: true } }));
     const ids = kids.map((k) => k.id);
@@ -53,6 +57,7 @@ async function wipe() {
     await prisma.childProfile.deleteMany({ where: { id: { in: ids } } });
     await prisma.consent.deleteMany({ where: { id: { in: kids.map((k) => k.consentId) } } });
   }
+  }
   if (school) {
     await prisma.teacherNote.deleteMany({ where: { classroom: { schoolId: school.id } } });
     await prisma.classEnrollment.deleteMany({ where: { classroom: { schoolId: school.id } } });
@@ -60,6 +65,79 @@ async function wipe() {
     await prisma.schoolStaff.deleteMany({ where: { schoolId: school.id } });
     await prisma.school.delete({ where: { id: school.id } });
   }
+}
+
+/// Familia demo para el video (specs/019): Sofía, 3° A. Practicó esta semana y las anteriores,
+/// con fracciones que le cuestan un poco, emociones, y las preguntas semanales: estuvo bien, pero
+/// esta semana contó que una vez la dejaron fuera (señal suave «para conversar»).
+async function sofia(schoolId: string) {
+  const fam = await prisma.adultUser.upsert({
+    where: { email: "demo.sofia@example.test" },
+    create: { email: "demo.sofia@example.test", passwordHash: hashPassword(PASSWORD), familyPinHash: hashPassword("2468"), plan: "familia" },
+    update: { familyPinHash: hashPassword("2468"), plan: "familia" },
+  });
+  const consent = await prisma.consent.create({ data: { adultUserId: fam.id, scope: "Datos ficticios de demostración" } });
+  const child = await prisma.childProfile.create({
+    data: {
+      adultUserId: fam.id,
+      consentId: consent.id,
+      displayName: "Sofía",
+      grade: 3,
+      companion: "buho",
+      mascotName: "Lumi",
+      interests: ["animales", "musica"],
+      socialCheckInConsent: true,
+      socialConsentAt: new Date(NOW - 40 * DAY),
+      socialConsentVersion: "2026-10-26",
+      familySeenAt: new Date(NOW - 8 * DAY),
+    },
+  });
+  const classroom = await prisma.classroom.findFirstOrThrow({ where: { schoolId, name: "3° A" } });
+  await prisma.classEnrollment.create({ data: { classroomId: classroom.id, childProfileId: child.id, shareEmotions: false, consentedAt: new Date(NOW - 40 * DAY) } });
+  const skills = await prisma.mathSkill.findMany({ where: { grade: 3 }, orderBy: { order: "asc" }, include: { exercises: { where: { theme: null, retired: false }, include: { options: true } } } });
+  const fractions = skills.find((s) => s.name.startsWith("Fracciones"))!;
+  const others = skills.filter((s) => s.id !== fractions.id && s.exercises.length > 0).slice(0, 3);
+  // Días hacia atrás con práctica: varias en las últimas semanas y dos en esta.
+  const days = [0.1, 1.2, 4, 6, 9, 11, 13, 16, 20, 23, 27];
+  for (const [i, d] of days.entries()) {
+    const skill = i % 3 === 2 ? others[i % others.length]! : fractions;
+    const start = new Date(NOW - d * DAY);
+    const session = await prisma.session.create({ data: { childProfileId: child.id, mathSkillId: skill.id, startedAt: start, endedAt: new Date(start.getTime() + 5 * 60000) } });
+    const pCorrect = skill.id === fractions.id ? 0.55 + (days.length - i) * 0.025 : 0.85;
+    const rows = Array.from({ length: 6 }, (_, q) => {
+      const ex = pick(skill.exercises);
+      const ok = rnd() < pCorrect;
+      const opt = ok ? ex.options.find((o) => o.isCorrect)! : pick(ex.options.filter((o) => !o.isCorrect));
+      return { sessionId: session.id, exerciseId: ex.id, selectedOptionId: opt.id, isCorrect: ok, errorTypeId: ok ? null : (opt.errorTypeId ?? null), responseTimeMs: 9000 + Math.floor(rnd() * 20000), hintsUsed: 0, createdAt: new Date(start.getTime() + q * 50000) };
+    });
+    await prisma.attempt.createMany({ data: rows });
+    await prisma.sessionReflection.create({ data: { childProfileId: child.id, sessionId: session.id, mathSkillId: skill.id, emotion: i === 1 ? "nervios" : pick(["alegria", "orgullo", "calma", "alegria"]), weather: 3, createdAt: new Date(start.getTime() + 5 * 60000) } });
+    if (i % 2 === 0) await prisma.wellbeingCheckIn.create({ data: { childProfileId: child.id, sessionId: session.id, mood: pick([4, 4, 5]), mathFeeling: skill.id === fractions.id ? 3 : 4, createdAt: start } });
+  }
+  // El mapa desbloquea en orden: Sofía ya pasó por las habilidades anteriores a Fracciones, que es
+  // donde está practicando (y donde se ve el desarrollo paso a paso en el video).
+  for (const [k, skill] of skills.filter((sk) => sk.order < fractions.order && sk.exercises.length > 0).entries()) {
+    const start = new Date(NOW - (40 + k * 3) * DAY);
+    const session = await prisma.session.create({ data: { childProfileId: child.id, mathSkillId: skill.id, startedAt: start, endedAt: new Date(start.getTime() + 5 * 60000) } });
+    await prisma.attempt.createMany({
+      data: Array.from({ length: 6 }, (_, q) => {
+        const ex = skill.exercises[q % skill.exercises.length]!;
+        return { sessionId: session.id, exerciseId: ex.id, selectedOptionId: ex.options.find((o) => o.isCorrect)!.id, isCorrect: true, errorTypeId: null, responseTimeMs: 12000, hintsUsed: 0, createdAt: new Date(start.getTime() + q * 50000) };
+      }),
+    });
+  }
+  // Preguntas semanales: 4 semanas tranquilas y, esta semana, «una vez me dejaron fuera».
+  const { weekKey } = await import("../../src/domain/social.js");
+  const answers = [
+    { w: 0, recess: 2, confidant: 1, excluded: "una_vez" },
+    { w: 1, recess: 1, confidant: 1, excluded: "no" },
+    { w: 2, recess: 1, confidant: 2, excluded: "no" },
+    { w: 3, recess: 3, confidant: 1, excluded: "no" },
+  ];
+  for (const a of answers) {
+    await prisma.socialCheckIn.create({ data: { childProfileId: child.id, weekKey: weekKey(new Date(NOW - a.w * 7 * DAY)), recess: a.recess, confidant: a.confidant, excluded: a.excluded, createdAt: new Date(NOW - a.w * 7 * DAY) } });
+  }
+  await prisma.homeGamePlay.create({ data: { childProfileId: child.id, mathSkillId: fractions.id, playedAt: new Date(NOW - 5 * DAY) } });
 }
 
 async function main() {
@@ -85,7 +163,7 @@ async function main() {
     const t = await adult(p.teacher);
     const staff = await prisma.schoolStaff.create({ data: { schoolId: school.id, adultUserId: t.id, role: "teacher", lastPanelAt: new Date(NOW - p.panelDaysAgo * DAY) } });
     const classroom = await prisma.classroom.create({ data: { schoolId: school.id, teacherId: staff.id, name: p.name, grade: p.grade, joinCode: p.code } });
-    const skills = await prisma.mathSkill.findMany({ where: { grade: p.grade }, orderBy: { order: "asc" }, include: { exercises: { where: { theme: null }, include: { options: true } } } });
+    const skills = await prisma.mathSkill.findMany({ where: { grade: p.grade }, orderBy: { order: "asc" }, include: { exercises: { where: { theme: null, retired: false }, include: { options: true } } } });
     // El curso avanza por el mapa: las primeras habilidades se practicaron más.
     const taught = skills.slice(0, Math.min(skills.length, 6));
     // Dificultad del curso por habilidad (3° B tiene más problemas con fracciones, a propósito).
@@ -145,8 +223,10 @@ async function main() {
       }
     }
   }
+  await sofia(school.id);
   console.log(`Colegio demo listo: ${kidsCreated} estudiantes ficticios, ${attemptsCreated} respuestas simuladas.`);
   console.log(`Directiva: demo.directora@example.test · Docentes: ${plan.map((p) => p.teacher).join(", ")} · Clave: ${PASSWORD}`);
+  console.log(`Familia para el video: demo.sofia@example.test (clave ${PASSWORD}, PIN del espacio familia 2468)`);
   console.log(`Códigos de curso: ${plan.map((p) => `${p.name} ${p.code}`).join(" · ")} · Código del colegio: COL-DEMO1`);
   await prisma.$disconnect();
 }
