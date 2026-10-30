@@ -3,6 +3,19 @@
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
 
+/// En AWS (specs/025) no hay DATABASE_URL: la clave llega sola desde Secrets Manager
+/// (DB_PASSWORD) y el resto como propiedades del entorno, igual que en src/db/conexion.ts.
+/// RDS exige TLS: `sslmode=require` cifra la conexión de `migrate deploy`, que va de la
+/// instancia a RDS dentro de la VPC (el grupo de seguridad de RDS solo acepta a la API).
+function urlBaseDatos(): string | undefined {
+  const env = process.env;
+  if (env.DATABASE_URL) return env.DATABASE_URL;
+  const { DB_HOST, DB_PORT = "5432", DB_NAME, DB_USER, DB_PASSWORD } = env;
+  if (!DB_HOST || !DB_NAME || !DB_USER || !DB_PASSWORD) return undefined;
+  const credenciales = `${encodeURIComponent(DB_USER)}:${encodeURIComponent(DB_PASSWORD)}`;
+  return `postgres://${credenciales}@${DB_HOST}:${DB_PORT}/${encodeURIComponent(DB_NAME)}?sslmode=require`;
+}
+
 export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
@@ -14,6 +27,6 @@ export default defineConfig({
     // interno, lo que rompe el aislamiento que `migrate dev` necesita para
     // su base sombra. Por eso en este entorno se usa `prisma db push` en
     // vez de `migrate dev` — ver README.
-    url: process.env["DATABASE_URL"],
+    url: urlBaseDatos(),
   },
 });

@@ -50,7 +50,9 @@ paso "Base de test nueva ($NOMBRE)"
 npx prisma dev stop "$NOMBRE" >/dev/null 2>&1 || true
 npx prisma dev rm "$NOMBRE" >/dev/null 2>&1 || true
 # `prisma dev` elige sus propios puertos (ignora -P): se toma la URL que imprime al arrancar.
-URL_DB="$(npx prisma dev --name "$NOMBRE" -d 2>/dev/null | grep -oE 'postgres://[^[:space:]]+' | head -1)"
+# Sin PORT ni server/.env: la versión actual de `prisma dev` usa la variable PORT (PORT=4100 en
+# .env) para sus tres puertos a la vez y se queda colgada «starting_up» (2026-10-30).
+URL_DB="$(env -u PORT DOTENV_CONFIG_PATH=/dev/null npx prisma dev --name "$NOMBRE" -d 2>/dev/null | grep -oE 'postgres://[^[:space:]]+' | head -1)"
 if [ -z "$URL_DB" ]; then echo "No se pudo levantar la base de test." >&2; exit 1; fi
 PUERTO_DB="$(echo "$URL_DB" | sed -E 's#.*@localhost:([0-9]+)/.*#\1#')"
 # Nunca correr migraciones/seed/pruebas contra la base de desarrollo.

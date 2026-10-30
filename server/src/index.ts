@@ -27,17 +27,23 @@ import { checkInsRouter } from "./routes/checkIns.js";
 import { reviewRouter } from "./routes/review.js";
 import { homeGamesRouter, reflectionRouter } from "./routes/reflection.js";
 import { childClassroomRouter, schoolRouter } from "./routes/school.js";
+import { crearRutasSalud } from "./routes/health.js";
+import { configurarProxy } from "./lib/proxy.js";
+import { crearApagado } from "./lib/apagado.js";
+import { pool } from "./db/prisma.js";
 
 export const app = express();
 
-// En AWS el servidor queda detrás de un balanceador / CloudFront que termina HTTPS: sin esto
-// Express ve la conexión como HTTP, nunca manda la cookie `secure` y el login no persiste.
-// También hace que el límite de intentos use la IP real del cliente y no la del proxy.
+// En AWS el servidor queda detrás de CloudFront, el balanceador y nginx, que terminan HTTPS: sin
+// `trust proxy` Express ve la conexión como HTTP, nunca manda la cookie `secure` y el login no
+// persiste. El número de saltos (TRUST_PROXY_HOPS) hace que el límite de intentos use la IP real
+// del cliente y no la de un proxy — ver src/lib/proxy.ts y specs/025.
 if (process.env.NODE_ENV === "production") {
   if (!process.env.CLIENT_ORIGIN) {
     throw new Error("CLIENT_ORIGIN es obligatoria en producción (dominio del cliente para CORS).");
   }
-  app.set("trust proxy", 1);
+  const saltos = configurarProxy(app);
+  console.log(`trust proxy: ${saltos} salto(s) (TRUST_PROXY_HOPS).`);
 }
 
 // El cliente vive en otro puerto (Vite) y necesita mandar la cookie de
@@ -45,6 +51,8 @@ if (process.env.NODE_ENV === "production") {
 // Cabeceras de seguridad (specs/023): nosniff, sin iframes ajenos (clickjacking), HSTS, sin
 // referrer hacia otros sitios, y sin delatar «X-Powered-By: Express».
 app.use(helmet());
+// Antes de CORS y de la sesión: el balanceador lo llama sin cookie ni Origin (specs/025).
+app.use("/api/health", crearRutasSalud(() => pool.query("SELECT 1")));
 app.use(
   cors({
     origin: process.env.CLIENT_ORIGIN ?? "http://localhost:5173",
@@ -53,10 +61,6 @@ app.use(
 );
 app.use(express.json());
 app.use(sessionMiddleware);
-
-app.get("/api/health", (_req, res) => {
-  res.json({ ok: true });
-});
 
 app.post("/api/auth/login", loginLimiter);
 app.post("/api/auth/register", registerLimiter);
@@ -113,7 +117,11 @@ app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
 
 if (process.env.NODE_ENV !== "test") {
   const PORT = process.env.PORT ? Number(process.env.PORT) : 4100;
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`Eureka server listening on http://localhost:${PORT}`);
   });
+  // Elastic Beanstalk detiene el proceso con SIGTERM en cada despliegue (specs/025).
+  const apagar = crearApagado({ server, cerrarRecursos: () => pool.end() });
+  process.once("SIGTERM", () => void apagar("SIGTERM"));
+  process.once("SIGINT", () => void apagar("SIGINT"));
 }

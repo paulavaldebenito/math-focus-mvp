@@ -1,0 +1,571 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >-
+  Eureka (specs/025): web en S3 + CloudFront (app.eurekalatam.com), API en Elastic Beanstalk
+  (Node.js 22, AL2023) detrás de un ALB con HTTPS (api-origen.eurekalatam.com) y RDS PostgreSQL
+  privado. Región sa-east-1. CloudFront y su política de cabeceras son globales.
+
+# Configuración piloto (sin usuarios reales todavía): una instancia t4g.small, RDS db.t4g.micro
+# Single-AZ con 20 GB gp3, sin NAT Gateway. Para la prueba de carga de 100 mil (specs/024) se
+# cambian ClaseInstanciaBd, InstanciasMin/Max y PoliticaDespliegue: ver specs/025.
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label: { default: Dominios y certificados }
+        Parameters: [DominioWeb, DominioApiOrigen, CertificadoWebArn, CertificadoApiArn]
+      - Label: { default: Red }
+        Parameters: [VpcId, SubredesInstancias, SubredesBalanceador, ListaPrefijosCloudFront]
+      - Label: { default: Base de datos }
+        Parameters: [VersionPostgres, ClaseInstanciaBd, AlmacenamientoBdGB, DiasRespaldo]
+      - Label: { default: API }
+        Parameters:
+          [PilaPlataformaEb, TipoInstanciaApi, InstanciasMin, InstanciasMax, PoliticaDespliegue, PgPoolMax, CorreosRevisores]
+
+Parameters:
+  DominioWeb:
+    Type: String
+    Default: app.eurekalatam.com
+    Description: Dominio público de la app (CNAME hacia CloudFront).
+  DominioApiOrigen:
+    Type: String
+    Default: api-origen.eurekalatam.com
+    Description: Dominio del balanceador; solo lo usa CloudFront como origen de /api/*.
+  CertificadoWebArn:
+    Type: String
+    Default: arn:aws:acm:us-east-1:034726292734:certificate/85f1b875-7831-4fd0-9ac6-58228fc4481a
+    Description: Certificado ACM de DominioWeb. CloudFront exige que esté en us-east-1.
+    AllowedPattern: "arn:aws:acm:us-east-1:[0-9]{12}:certificate/.+"
+  CertificadoApiArn:
+    Type: String
+    Default: arn:aws:acm:sa-east-1:034726292734:certificate/1a76960f-e92f-48c8-b48f-116fd5749984
+    Description: Certificado ACM de DominioApiOrigen, en la región del balanceador (sa-east-1).
+    AllowedPattern: "arn:aws:acm:sa-east-1:[0-9]{12}:certificate/.+"
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+    Default: vpc-0674aa109e6f53b2a
+    Description: VPC por defecto de sa-east-1 (subredes públicas, sin NAT Gateway).
+  SubredesInstancias:
+    Type: List<AWS::EC2::Subnet::Id>
+    Default: subnet-046d2317bf1c6794b,subnet-046b6286859bf8b52,subnet-09726d203960adf2d
+    Description: >-
+      Subredes para las instancias de la API y para RDS (al menos 2 zonas). RDS queda sin IP
+      pública; las instancias tienen IP pública solo para salir a internet (npm, Prisma).
+  SubredesBalanceador:
+    Type: List<AWS::EC2::Subnet::Id>
+    Default: subnet-046d2317bf1c6794b,subnet-046b6286859bf8b52
+    Description: Dos subredes para el ALB (el mínimo; cada una es una IP pública que se paga).
+  ListaPrefijosCloudFront:
+    Type: String
+    Default: pl-5da64334
+    Description: >-
+      Lista administrada com.amazonaws.global.cloudfront.origin-facing en sa-east-1. El ALB
+      solo acepta conexiones desde CloudFront.
+  VersionPostgres:
+    Type: String
+    Default: "17"
+    AllowedValues: ["16", "17"]
+  ClaseInstanciaBd:
+    Type: String
+    Default: db.t4g.micro
+    AllowedValues: [db.t4g.micro, db.t4g.small, db.t4g.medium, db.t4g.large]
+  AlmacenamientoBdGB:
+    Type: Number
+    Default: 20
+    MinValue: 20
+    MaxValue: 200
+  DiasRespaldo:
+    Type: Number
+    Default: 7
+    MinValue: 1
+    MaxValue: 35
+    Description: Días de respaldos automáticos (restauración a cualquier minuto dentro del plazo).
+  PilaPlataformaEb:
+    Type: String
+    Default: 64bit Amazon Linux 2023 v6.12.0 running Node.js 22
+    Description: >-
+      Plataforma de Elastic Beanstalk. Ver la vigente con
+      `aws elasticbeanstalk list-available-solution-stacks`.
+  TipoInstanciaApi:
+    Type: String
+    Default: t4g.small
+    AllowedValues: [t4g.micro, t4g.small, t4g.medium, c7g.large]
+  InstanciasMin:
+    Type: Number
+    Default: 1
+    MinValue: 1
+    MaxValue: 4
+  InstanciasMax:
+    Type: Number
+    Default: 1
+    MinValue: 1
+    MaxValue: 4
+  PoliticaDespliegue:
+    Type: String
+    Default: AllAtOnce
+    AllowedValues: [AllAtOnce, Rolling]
+    Description: >-
+      AllAtOnce con una instancia (corte de ~1 min por despliegue). Rolling con 2+ instancias.
+      No usar Immutable ni TrafficSplitting: ahí no corren las migraciones (leader_only).
+  PgPoolMax:
+    Type: Number
+    Default: 10
+    MinValue: 1
+    MaxValue: 50
+    Description: >-
+      Conexiones a Postgres por instancia. InstanciasMax × PgPoolMax + 5 debe quedar bajo el
+      max_connections de RDS (~80 en db.t4g.micro, ~400 en db.t4g.medium).
+  CorreosRevisores:
+    Type: String
+    Default: ""
+    Description: Cuentas con modo revisión (REVIEWER_EMAILS), separadas por coma. Vacío = nadie.
+
+Conditions:
+  HayRevisores: !Not [!Equals [!Ref CorreosRevisores, ""]]
+
+Resources:
+  # ---------------------------------------------------------------------------------------------
+  # Secretos (Secrets Manager). Los genera CloudFormation: nadie los ve ni los escribe a mano.
+  # Elastic Beanstalk los entrega a la app como variables de entorno al arrancar la instancia.
+  # ---------------------------------------------------------------------------------------------
+  SecretoBaseDatos:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Description: Usuario y clave maestros de la base de Eureka (RDS).
+      GenerateSecretString:
+        SecretStringTemplate: '{"username": "eureka"}'
+        GenerateStringKey: password
+        PasswordLength: 40
+        # Solo letras y números: va dentro de una URL de conexión sin sorpresas.
+        ExcludePunctuation: true
+
+  SecretoSesion:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Description: SESSION_SECRET de Eureka (firma de la cookie de sesión). 64 caracteres.
+      GenerateSecretString:
+        PasswordLength: 64
+        ExcludePunctuation: true
+
+  # ---------------------------------------------------------------------------------------------
+  # Red: grupos de seguridad. Cadena permitida: CloudFront → ALB (443) → instancias → RDS (5432).
+  # ---------------------------------------------------------------------------------------------
+  SgBalanceador:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Eureka ALB - solo HTTPS desde CloudFront
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        # Sin esto, cualquiera podría llamar al ALB directo, saltarse las cabeceras de CloudFront
+        # e inventar su IP en X-Forwarded-For (TRUST_PROXY_HOPS=3 asume que el primer salto es
+        # CloudFront).
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          SourcePrefixListId: !Ref ListaPrefijosCloudFront
+          Description: CloudFront origin-facing
+      Tags:
+        - { Key: Name, Value: eureka-alb }
+
+  SgInstancias:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      # Elastic Beanstalk agrega además su propio grupo, que solo deja entrar al ALB por el
+      # puerto 80. Este grupo no abre nada: sirve de «credencial» para entrar a RDS.
+      GroupDescription: Eureka API - identidad de las instancias para RDS
+      VpcId: !Ref VpcId
+      Tags:
+        - { Key: Name, Value: eureka-api }
+
+  SgBaseDatos:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Eureka RDS - solo Postgres desde las instancias de la API
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          SourceSecurityGroupId: !Ref SgInstancias
+          Description: Instancias de la API
+      Tags:
+        - { Key: Name, Value: eureka-rds }
+
+  # ---------------------------------------------------------------------------------------------
+  # Base de datos: RDS PostgreSQL privado, cifrado, con respaldos automáticos.
+  # ---------------------------------------------------------------------------------------------
+  SubredesBaseDatos:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: Subredes de la base de Eureka
+      SubnetIds: !Ref SubredesInstancias
+
+  BaseDatos:
+    Type: AWS::RDS::DBInstance
+    # Al borrar la pila (o si un cambio obligara a reemplazarla) queda una instantánea final.
+    DeletionPolicy: Snapshot
+    UpdateReplacePolicy: Snapshot
+    Properties:
+      DBInstanceIdentifier: eureka
+      Engine: postgres
+      EngineVersion: !Ref VersionPostgres
+      DBInstanceClass: !Ref ClaseInstanciaBd
+      AllocatedStorage: !Ref AlmacenamientoBdGB
+      StorageType: gp3
+      StorageEncrypted: true
+      MultiAZ: false
+      PubliclyAccessible: false
+      DBName: eureka
+      MasterUsername: !Sub "{{resolve:secretsmanager:${SecretoBaseDatos}:SecretString:username}}"
+      MasterUserPassword: !Sub "{{resolve:secretsmanager:${SecretoBaseDatos}:SecretString:password}}"
+      DBSubnetGroupName: !Ref SubredesBaseDatos
+      VPCSecurityGroups: [!Ref SgBaseDatos]
+      BackupRetentionPeriod: !Ref DiasRespaldo
+      # UTC. En Chile continental: 03:00 en horario de verano (UTC-3) y 02:00 en invierno (UTC-4).
+      PreferredBackupWindow: "06:00-06:30"
+      PreferredMaintenanceWindow: "sun:06:30-sun:07:30"
+      AutoMinorVersionUpgrade: true
+      CopyTagsToSnapshot: true
+      DeletionProtection: true
+      EnableCloudwatchLogsExports: [postgresql]
+      Tags:
+        - { Key: Name, Value: eureka }
+
+  # ---------------------------------------------------------------------------------------------
+  # Web: bucket S3 privado; solo CloudFront (OAC) puede leerlo.
+  # ---------------------------------------------------------------------------------------------
+  BucketWeb:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub eureka-web-${AWS::AccountId}
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: { SSEAlgorithm: AES256 }
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      # Versiones: permite volver atrás un index.html. Las viejas se borran a los 30 días.
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: borrar-versiones-antiguas
+            Status: Enabled
+            NoncurrentVersionExpiration: { NoncurrentDays: 30 }
+            AbortIncompleteMultipartUpload: { DaysAfterInitiation: 7 }
+
+  PoliticaBucketWeb:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref BucketWeb
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: SoloCloudFrontDeEureka
+            Effect: Allow
+            Principal: { Service: cloudfront.amazonaws.com }
+            Action: s3:GetObject
+            Resource: !Sub ${BucketWeb.Arn}/*
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/${Distribucion}
+          - Sid: SoloTLS
+            Effect: Deny
+            Principal: "*"
+            Action: s3:*
+            Resource: [!GetAtt BucketWeb.Arn, !Sub "${BucketWeb.Arn}/*"]
+            Condition:
+              Bool: { aws:SecureTransport: "false" }
+
+  # Bucket para los paquetes (zip) de la API que se suben a Elastic Beanstalk.
+  BucketVersionesApi:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub eureka-api-versiones-${AWS::AccountId}
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: { SSEAlgorithm: AES256 }
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+
+  # ---------------------------------------------------------------------------------------------
+  # CloudFront: un solo sitio para el navegador. /api/* va al ALB sin caché; el resto, a S3.
+  # Así la cookie de sesión (sameSite lax + secure) es del mismo sitio y no hace falta CORS.
+  # ---------------------------------------------------------------------------------------------
+  AccesoOrigenWeb:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub eureka-web-${AWS::StackName}
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  CabecerasSeguridadWeb:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties:
+      ResponseHeadersPolicyConfig:
+        Name: !Sub eureka-cabeceras-${AWS::StackName}
+        Comment: Cabeceras de seguridad del cliente (specs/023 y 025)
+        SecurityHeadersConfig:
+          StrictTransportSecurity:
+            AccessControlMaxAgeSec: 63072000
+            IncludeSubdomains: true
+            Preload: false
+            Override: true
+          ContentTypeOptions: { Override: true }
+          FrameOptions: { FrameOption: DENY, Override: true }
+          ReferrerPolicy: { ReferrerPolicy: strict-origin-when-cross-origin, Override: true }
+          # Verificada contra el build real (scripts/construir-web.sh): sin scripts ni estilos
+          # en línea, sin data: ni blob:, fuente Comic Neue servida desde /assets y la API en
+          # el mismo dominio. React aplica style={{…}} por CSSOM, que CSP no bloquea.
+          ContentSecurityPolicy:
+            Override: true
+            ContentSecurityPolicy: >-
+              default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';
+              font-src 'self'; connect-src 'self'; manifest-src 'self'; media-src 'self';
+              object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';
+              upgrade-insecure-requests
+        CustomHeadersConfig:
+          Items:
+            - Header: Permissions-Policy
+              Value: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+              Override: true
+            - Header: Cross-Origin-Opener-Policy
+              Value: same-origin
+              Override: true
+
+  Distribucion:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Comment: Eureka - web y /api
+        Enabled: true
+        Aliases: [!Ref DominioWeb]
+        ViewerCertificate:
+          AcmCertificateArn: !Ref CertificadoWebArn
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
+        HttpVersion: http2and3
+        IPV6Enabled: true
+        # PriceClass_All es la única que incluye las ubicaciones de Sudamérica (Santiago, São
+        # Paulo). Con las otras, Chile se atendería desde EE. UU.
+        PriceClass: PriceClass_All
+        DefaultRootObject: index.html
+        Origins:
+          - Id: web-s3
+            DomainName: !GetAtt BucketWeb.RegionalDomainName
+            OriginAccessControlId: !GetAtt AccesoOrigenWeb.Id
+            S3OriginConfig:
+              OriginAccessIdentity: ""
+          - Id: api-alb
+            DomainName: !Ref DominioApiOrigen
+            CustomOriginConfig:
+              HTTPSPort: 443
+              OriginProtocolPolicy: https-only
+              OriginSSLProtocols: [TLSv1.2]
+              OriginReadTimeout: 30
+              OriginKeepaliveTimeout: 5
+        DefaultCacheBehavior:
+          TargetOriginId: web-s3
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods: [GET, HEAD, OPTIONS]
+          CachedMethods: [GET, HEAD]
+          Compress: true
+          # Administrada «CachingOptimized»: respeta el Cache-Control que se sube con cada archivo
+          # (index.html no-cache; /assets inmutables). Ver el runbook de specs/025.
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          ResponseHeadersPolicyId: !Ref CabecerasSeguridadWeb
+        CacheBehaviors:
+          - PathPattern: /api/*
+            TargetOriginId: api-alb
+            ViewerProtocolPolicy: https-only
+            AllowedMethods: [GET, HEAD, OPTIONS, PUT, PATCH, POST, DELETE]
+            CachedMethods: [GET, HEAD]
+            Compress: true
+            # Administrada «CachingDisabled»: la API nunca se guarda en caché.
+            CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
+            # Administrada «AllViewerExceptHostHeader»: pasa cookies, todas las query strings y
+            # las cabeceras del navegador, menos Host (el certificado del ALB es de
+            # DominioApiOrigen, no de DominioWeb). Las cabeceras de seguridad de /api las pone
+            # helmet en el servidor.
+            OriginRequestPolicyId: b689b0a8-53d0-40ab-baf2-68738e2966ac
+
+  # ---------------------------------------------------------------------------------------------
+  # Permisos (IAM).
+  # ---------------------------------------------------------------------------------------------
+  RolInstanciasApi:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: Instancias EC2 de la API de Eureka (Elastic Beanstalk)
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: ec2.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSElasticBeanstalkWebTier
+        # Session Manager: entrar a la instancia sin abrir SSH (el puerto 22 queda cerrado).
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      Policies:
+        - PolicyName: leer-secretos-eureka
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: secretsmanager:GetSecretValue
+                Resource: [!Ref SecretoBaseDatos, !Ref SecretoSesion]
+        - PolicyName: leer-paquetes-api
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: !Sub ${BucketVersionesApi.Arn}/*
+
+  PerfilInstanciasApi:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles: [!Ref RolInstanciasApi]
+
+  RolServicioEb:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: Rol de servicio de Elastic Beanstalk para el entorno de Eureka
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: elasticbeanstalk.amazonaws.com }
+            Action: sts:AssumeRole
+            Condition:
+              StringEquals: { sts:ExternalId: elasticbeanstalk }
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth
+        - arn:aws:iam::aws:policy/AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy
+
+  # ---------------------------------------------------------------------------------------------
+  # API: Elastic Beanstalk. El entorno nace con la app de ejemplo de AWS; la versión real se
+  # sube después con el runbook de specs/025 (create-application-version + update-environment).
+  # ---------------------------------------------------------------------------------------------
+  AplicacionEb:
+    Type: AWS::ElasticBeanstalk::Application
+    Properties:
+      ApplicationName: eureka
+      Description: Eureka - API
+      ResourceLifecycleConfig:
+        ServiceRole: !GetAtt RolServicioEb.Arn
+        VersionLifecycleConfig:
+          # Guarda las últimas 30 versiones para poder volver atrás; borra las demás y su zip.
+          MaxCountRule:
+            Enabled: true
+            MaxCount: 30
+            DeleteSourceFromS3: true
+
+  EntornoApi:
+    Type: AWS::ElasticBeanstalk::Environment
+    Properties:
+      ApplicationName: !Ref AplicacionEb
+      EnvironmentName: eureka-api
+      Description: API de Eureka detrás de CloudFront
+      SolutionStackName: !Ref PilaPlataformaEb
+      Tier: { Name: WebServer, Type: Standard }
+      OptionSettings:
+        # Capacidad
+        - { Namespace: "aws:elasticbeanstalk:environment", OptionName: EnvironmentType, Value: LoadBalanced }
+        - { Namespace: "aws:elasticbeanstalk:environment", OptionName: LoadBalancerType, Value: application }
+        - { Namespace: "aws:elasticbeanstalk:environment", OptionName: ServiceRole, Value: !GetAtt RolServicioEb.Arn }
+        - { Namespace: "aws:ec2:instances", OptionName: InstanceTypes, Value: !Ref TipoInstanciaApi }
+        - { Namespace: "aws:ec2:instances", OptionName: SupportedArchitectures, Value: arm64 }
+        - { Namespace: "aws:autoscaling:asg", OptionName: MinSize, Value: !Ref InstanciasMin }
+        - { Namespace: "aws:autoscaling:asg", OptionName: MaxSize, Value: !Ref InstanciasMax }
+        - { Namespace: "aws:autoscaling:launchconfiguration", OptionName: IamInstanceProfile, Value: !Ref PerfilInstanciasApi }
+        - { Namespace: "aws:autoscaling:launchconfiguration", OptionName: SecurityGroups, Value: !Ref SgInstancias }
+        - { Namespace: "aws:autoscaling:launchconfiguration", OptionName: DisableIMDSv1, Value: "true" }
+        - { Namespace: "aws:autoscaling:launchconfiguration", OptionName: RootVolumeType, Value: gp3 }
+        # Red: subredes públicas de la VPC por defecto, sin NAT Gateway (≈ USD 40/mes menos).
+        - { Namespace: "aws:ec2:vpc", OptionName: VPCId, Value: !Ref VpcId }
+        - { Namespace: "aws:ec2:vpc", OptionName: Subnets, Value: !Join [",", !Ref SubredesInstancias] }
+        - { Namespace: "aws:ec2:vpc", OptionName: ELBSubnets, Value: !Join [",", !Ref SubredesBalanceador] }
+        - { Namespace: "aws:ec2:vpc", OptionName: AssociatePublicIpAddress, Value: "true" }
+        - { Namespace: "aws:ec2:vpc", OptionName: ELBScheme, Value: public }
+        # Balanceador: solo HTTPS (443) con el certificado de DominioApiOrigen; sin puerto 80.
+        - { Namespace: "aws:elbv2:loadbalancer", OptionName: SecurityGroups, Value: !Ref SgBalanceador }
+        - { Namespace: "aws:elbv2:loadbalancer", OptionName: ManagedSecurityGroup, Value: !Ref SgBalanceador }
+        - { Namespace: "aws:elbv2:listener:default", OptionName: ListenerEnabled, Value: "false" }
+        - { Namespace: "aws:elbv2:listener:443", OptionName: ListenerEnabled, Value: "true" }
+        - { Namespace: "aws:elbv2:listener:443", OptionName: Protocol, Value: HTTPS }
+        - { Namespace: "aws:elbv2:listener:443", OptionName: SSLCertificateArns, Value: !Ref CertificadoApiArn }
+        - { Namespace: "aws:elbv2:listener:443", OptionName: SSLPolicy, Value: ELBSecurityPolicy-TLS13-1-2-2021-06 }
+        - { Namespace: "aws:elasticbeanstalk:environment:process:default", OptionName: HealthCheckPath, Value: /api/health }
+        - { Namespace: "aws:elasticbeanstalk:environment:process:default", OptionName: MatcherHTTPCode, Value: "200" }
+        - { Namespace: "aws:elasticbeanstalk:environment:process:default", OptionName: HealthCheckInterval, Value: "15" }
+        # Al sacar una instancia, 20 s para terminar lo que esté en curso (no los 300 por defecto).
+        - { Namespace: "aws:elasticbeanstalk:environment:process:default", OptionName: DeregistrationTimeout, Value: "20" }
+        # Despliegues
+        - { Namespace: "aws:elasticbeanstalk:command", OptionName: DeploymentPolicy, Value: !Ref PoliticaDespliegue }
+        - { Namespace: "aws:elasticbeanstalk:command", OptionName: BatchSizeType, Value: Fixed }
+        - { Namespace: "aws:elasticbeanstalk:command", OptionName: BatchSize, Value: "1" }
+        # El primer despliegue siembra el banco completo: más margen que los 600 s por defecto.
+        - { Namespace: "aws:elasticbeanstalk:command", OptionName: Timeout, Value: "1800" }
+        # Salud, registros y actualizaciones de plataforma
+        - { Namespace: "aws:elasticbeanstalk:healthreporting:system", OptionName: SystemType, Value: enhanced }
+        - { Namespace: "aws:elasticbeanstalk:cloudwatch:logs", OptionName: StreamLogs, Value: "true" }
+        - { Namespace: "aws:elasticbeanstalk:cloudwatch:logs", OptionName: RetentionInDays, Value: "30" }
+        - { Namespace: "aws:elasticbeanstalk:cloudwatch:logs", OptionName: DeleteOnTerminate, Value: "false" }
+        - { Namespace: "aws:elasticbeanstalk:managedactions", OptionName: ManagedActionsEnabled, Value: "true" }
+        - { Namespace: "aws:elasticbeanstalk:managedactions", OptionName: PreferredStartTime, Value: "Sun:07:30" }
+        - { Namespace: "aws:elasticbeanstalk:managedactions:platformupdate", OptionName: UpdateLevel, Value: minor }
+        # Variables de la app (no secretas)
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: NODE_ENV, Value: production }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: PORT, Value: "8080" }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: CLIENT_ORIGIN, Value: !Sub "https://${DominioWeb}" }
+        # navegador → CloudFront → ALB → nginx → Node (server/src/lib/proxy.ts)
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: TRUST_PROXY_HOPS, Value: "3" }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: DB_HOST, Value: !GetAtt BaseDatos.Endpoint.Address }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: DB_PORT, Value: !GetAtt BaseDatos.Endpoint.Port }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: DB_NAME, Value: eureka }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: DB_USER, Value: eureka }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: DB_SSL, Value: verificar }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: PG_POOL_MAX, Value: !Ref PgPoolMax }
+        - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: SEMBRAR_BANCO, Value: si }
+        - !If
+          - HayRevisores
+          - { Namespace: "aws:elasticbeanstalk:application:environment", OptionName: REVIEWER_EMAILS, Value: !Ref CorreosRevisores }
+          - !Ref AWS::NoValue
+        # Secretos: EB los lee de Secrets Manager al arrancar cada instancia. Nunca quedan
+        # escritos en la configuración del entorno ni en la consola.
+        - { Namespace: "aws:elasticbeanstalk:application:environmentsecrets", OptionName: DB_PASSWORD, Value: !Sub "${SecretoBaseDatos}:password" }
+        - { Namespace: "aws:elasticbeanstalk:application:environmentsecrets", OptionName: SESSION_SECRET, Value: !Ref SecretoSesion }
+
+Outputs:
+  DominioCloudFront:
+    Description: "CNAME en Lovable: app → este valor"
+    Value: !GetAtt Distribucion.DomainName
+  IdDistribucion:
+    Description: Para invalidar la caché después de subir la web
+    Value: !Ref Distribucion
+  BucketWeb:
+    Value: !Ref BucketWeb
+  BucketVersionesApi:
+    Value: !Ref BucketVersionesApi
+  DominioBalanceador:
+    Description: "CNAME en Lovable: api-origen → este valor (sin el https://)"
+    Value: !GetAtt EntornoApi.EndpointURL
+  EntornoEb:
+    Value: !Ref EntornoApi
+  ExtremoBaseDatos:
+    Value: !GetAtt BaseDatos.Endpoint.Address
+  SecretoBaseDatosArn:
+    Value: !Ref SecretoBaseDatos

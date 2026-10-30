@@ -28,6 +28,9 @@ import { applyImageRemovals } from "./seed/imagenes/applyImageRemovals.js";
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PUBLIC_DIR = fileURLToPath(new URL("../../client/public", import.meta.url));
+// En el paquete de despliegue de la API (specs/025) no viajan las imágenes del cliente (van a S3)
+// ni las specs: ahí se omiten la verificación de archivos y el reporte. En el repo corre todo.
+const EN_EL_REPO = existsSync(PUBLIC_DIR);
 
 export async function integrateImageBank(): Promise<string[]> {
   const problems: string[] = [];
@@ -121,8 +124,12 @@ export async function integrateImageBank(): Promise<string[]> {
 
   // Las 4.222 rutas del paquete (PNG + SVG) existen en client/public.
   const packagePaths = bancoVisual.entries.flatMap((e) => (e.svgSrc ? [e.src, e.svgSrc] : [e.src]));
-  const missingFiles = packagePaths.filter((p) => !existsSync(PUBLIC_DIR + p));
-  console.log(`Rutas del banco visual verificadas: ${packagePaths.length - missingFiles.length}/${packagePaths.length}`);
+  const missingFiles = EN_EL_REPO ? packagePaths.filter((p) => !existsSync(PUBLIC_DIR + p)) : [];
+  if (EN_EL_REPO) {
+    console.log(`Rutas del banco visual verificadas: ${packagePaths.length - missingFiles.length}/${packagePaths.length}`);
+  } else {
+    console.log("Sin client/public (paquete de despliegue): no se verifican los archivos de imagen.");
+  }
   for (const p of missingFiles) problems.push(`falta el archivo ${p}`);
 
   // Toda imagen vinculada: ruta del curso correcto, archivo presente y alt en ambos idiomas.
@@ -147,18 +154,20 @@ export async function integrateImageBank(): Promise<string[]> {
       const expectedPrefix =
         image.source === "banco_visual" ? `/exercise-images/${grade}b__${ex.id}__` : `/banco-imagenes/${grade}_basico/${lang}/`;
       if (!src.startsWith(expectedPrefix)) problems.push(`${ex.id}: ruta ${lang} no calza con el curso (${src})`);
-      if (!existsSync(PUBLIC_DIR + src)) problems.push(`${ex.id}: falta el archivo ${src}`);
+      if (EN_EL_REPO && !existsSync(PUBLIC_DIR + src)) problems.push(`${ex.id}: falta el archivo ${src}`);
       if (!image.alt[lang]) problems.push(`${ex.id}: falta el texto alternativo ${lang}`);
     }
   }
   console.log(`Ejercicios con imagen en la BD: ${linked.length} (${fromBancoVisual} del banco visual)`, perGrade);
 
-  const reportDir = fileURLToPath(new URL("../../specs/010-banco-visual-completo", import.meta.url));
-  mkdirSync(reportDir, { recursive: true });
-  writeFileSync(
-    `${reportDir}/reporte_integracion.json`,
-    JSON.stringify({ ...bv, rutasVerificadas: packagePaths.length - missingFiles.length, rutasTotales: packagePaths.length, conImagen: linked.length, porCurso: perGrade }, null, 1) + "\n",
-  );
+  if (EN_EL_REPO) {
+    const reportDir = fileURLToPath(new URL("../../specs/010-banco-visual-completo", import.meta.url));
+    mkdirSync(reportDir, { recursive: true });
+    writeFileSync(
+      `${reportDir}/reporte_integracion.json`,
+      JSON.stringify({ ...bv, rutasVerificadas: packagePaths.length - missingFiles.length, rutasTotales: packagePaths.length, conImagen: linked.length, porCurso: perGrade }, null, 1) + "\n",
+    );
+  }
   for (const o of missing) problems.push(`${o.id}: labelEn "${o.labelEn}" no quedó en la BD`);
 
   return problems;

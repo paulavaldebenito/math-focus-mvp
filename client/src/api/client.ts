@@ -1,4 +1,6 @@
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4100";
+// En producción la web y la API comparten dominio (CloudFront sirve /api), así la cookie de sesión
+// es del mismo sitio: rutas relativas.
+const API_URL = import.meta.env.VITE_API_URL ?? (import.meta.env.PROD ? "" : "http://localhost:4100");
 
 export class ApiError extends Error {
   status: number;
