@@ -2,16 +2,23 @@ import { z } from "zod";
 import { COMPANION_KEYS } from "../domain/companions.js";
 import { INTEREST_KEYS, MAX_INTERESTS } from "../domain/interests.js";
 
+/// Tope de largo de contraseña: scrypt corre de forma síncrona, y sin tope una contraseña de
+/// ~100 KB (el límite del body) bloquea el servidor mientras se calcula (specs/023).
+export const PASSWORD_MAX_LENGTH = 128;
+
 export const registerSchema = z.object({
   email: z.string().trim().toLowerCase().email(),
-  password: z.string().min(8, "La contraseña debe tener al menos 8 caracteres."),
+  password: z
+    .string()
+    .min(8, "La contraseña debe tener al menos 8 caracteres.")
+    .max(PASSWORD_MAX_LENGTH, `La contraseña puede tener como máximo ${PASSWORD_MAX_LENGTH} caracteres.`),
 });
 
 export type RegisterInput = z.infer<typeof registerSchema>;
 
 export const loginSchema = z.object({
   email: z.string().trim().toLowerCase().email(),
-  password: z.string().min(1),
+  password: z.string().min(1).max(PASSWORD_MAX_LENGTH),
 });
 
 export type LoginInput = z.infer<typeof loginSchema>;

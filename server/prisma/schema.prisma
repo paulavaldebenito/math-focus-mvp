@@ -43,6 +43,9 @@ model Consent {
   grantedAt    DateTime      @default(now())
   revokedAt    DateTime?
   childProfile ChildProfile?
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([adultUserId])
 }
 
 /// Perfil del estudiante. Datos mínimos: sin diagnósticos ni datos de salud.
@@ -94,6 +97,9 @@ model ChildProfile {
   enrollments          ClassEnrollment[]
   placements           SkillPlacement[]
   teacherNotes         TeacherNote[]
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([adultUserId])
 }
 
 /// Patrón de error OBSERVABLE (nunca un diagnóstico clínico). Catálogo fijo,
@@ -250,6 +256,9 @@ model Session {
   starEvents        StarEvent[]
   checkIns          WellbeingCheckIn[]
   reflection        SessionReflection?
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([childProfileId, startedAt])
 }
 
 /// Un intento de respuesta a un ejercicio dentro de una sesión.
@@ -281,6 +290,9 @@ model Attempt {
   hintsUsed        Int             @default(0)
   createdAt        DateTime        @default(now())
   hints            Hint[]
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([sessionId, createdAt])
 }
 
 /// Pista mostrada durante un intento. Progresiva: `level` 1, 2, 3…
@@ -291,6 +303,9 @@ model Hint {
   level     Int
   text      String
   shownAt   DateTime @default(now())
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([attemptId])
 }
 
 /// Pausa activa ofrecida durante una sesión. Siempre opcional — `accepted`
@@ -307,6 +322,9 @@ model PauseEvent {
   /// "globo" o "saltos-estrella"). Nullable: pausas rechazadas o anteriores
   /// a este campo. Sirve para no repetir el mismo ejercicio en una sesión.
   exerciseKey String?
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([sessionId])
 }
 
 /// Autorreporte breve y OPCIONAL del niño al empezar una práctica, con 5
@@ -327,6 +345,10 @@ model WellbeingCheckIn {
   /// (ansiedad = 6 − mathFeeling). NULL = no respondió.
   mathFeeling    Int?
   createdAt      DateTime     @default(now())
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([childProfileId, createdAt])
+  @@index([sessionId])
 }
 
 /// Pregunta social semanal (specs/018): cómo le fue con los demás esta
@@ -364,6 +386,9 @@ model AdaptiveDecision {
   previousLevel Int
   newLevel      Int
   createdAt     DateTime @default(now())
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([sessionId])
 }
 
 /// Una estrella otorgada — siempre con un motivo trazable, nunca aleatorio
@@ -379,6 +404,10 @@ model StarEvent {
   session        Session?     @relation(fields: [sessionId], references: [id])
   reason         String
   createdAt      DateTime     @default(now())
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([childProfileId, createdAt])
+  @@index([sessionId])
 }
 
 /// Fotografía de progreso personal — nunca comparado con otros estudiantes.
@@ -391,6 +420,9 @@ model ProgressSnapshot {
   exercisesCompleted Int
   accuracyRate       Float
   createdAt          DateTime     @default(now())
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([childProfileId])
 }
 
 /// Nota de una revisora sobre un ejercicio, escrita desde el modo revisión
@@ -478,6 +510,8 @@ model SchoolStaff {
   classrooms  Classroom[]
 
   @@unique([schoolId, adultUserId])
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([adultUserId])
 }
 
 /// Curso de un colegio (p. ej. "3° B"), a cargo de una docente. Las familias
@@ -494,6 +528,10 @@ model Classroom {
   createdAt   DateTime          @default(now())
   enrollments ClassEnrollment[]
   notes       TeacherNote[]
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([schoolId])
+  @@index([teacherId])
 }
 
 /// Un niño en un curso. Unirse ES el consentimiento de la familia para
@@ -512,6 +550,8 @@ model ClassEnrollment {
   leftAt         DateTime?
 
   @@unique([classroomId, childProfileId])
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([childProfileId])
 }
 
 /// Nota privada de la docente sobre un estudiante (no la ve la familia).
@@ -525,6 +565,10 @@ model TeacherNote {
   author         AdultUser    @relation(fields: [authorId], references: [id])
   text           String
   createdAt      DateTime     @default(now())
+
+  // Índices de claves foráneas (specs/024): Postgres no los crea solo.
+  @@index([childProfileId])
+  @@index([classroomId])
 }
 
 /// Ubicación del niño en una habilidad (specs/020-ubicacion-adaptativa): qué domina y qué debe
@@ -546,4 +590,16 @@ model SkillPlacement {
   createdAt      DateTime     @default(now())
 
   @@unique([childProfileId, mathSkillId])
+}
+
+/// Sesión de login de un adulto (cookie `mathfocus.sid`), guardada por express-session vía
+/// PrismaSessionStore (src/auth/sessionStore.ts) para que sobreviva reinicios y despliegues
+/// (specs/021). `sess` es el objeto de sesión serializado; `expire`, cuándo vence la cookie.
+model HttpSession {
+  sid    String   @id @db.VarChar
+  sess   Json     @db.Json
+  expire DateTime @db.Timestamp(6)
+
+  @@index([expire])
+  @@map("http_session")
 }

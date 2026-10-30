@@ -3,6 +3,7 @@ import { z } from "zod";
 import { prisma } from "../db/prisma.js";
 import { requireAuth } from "../auth/session.js";
 import { hashPassword, verifyPassword } from "../auth/password.js";
+import { PASSWORD_MAX_LENGTH } from "../auth/schemas.js";
 
 /**
  * Espacio familia (specs/018). El niño y el adulto usan la misma app y la misma cuenta, así que el
@@ -54,17 +55,17 @@ familyRouter.get("/status", requireAuth, async (req, res) => {
 /// Crear o cambiar el PIN: siempre con la contraseña de la cuenta (así un niño que conoce el PIN no
 /// puede cambiarlo, y un adulto que lo olvidó lo recupera). Deja el espacio desbloqueado.
 familyRouter.put("/pin", requireAuth, async (req, res) => {
-  const parsed = z.object({ pin: pinSchema, password: z.string().min(1) }).strict().safeParse(req.body);
+  const parsed = z.object({ pin: pinSchema, password: z.string().min(1).max(PASSWORD_MAX_LENGTH) }).strict().safeParse(req.body);
   if (!parsed.success) {
     res.status(400).json({ error: "invalid_payload", details: parsed.error.flatten() });
     return;
   }
   const adult = await prisma.adultUser.findUnique({ where: { id: req.session.adultUserId! } });
-  if (!adult || !verifyPassword(parsed.data.password, adult.passwordHash)) {
+  if (!adult || !(await verifyPassword(parsed.data.password, adult.passwordHash))) {
     res.status(401).json({ error: "wrong_password" });
     return;
   }
-  await prisma.adultUser.update({ where: { id: adult.id }, data: { familyPinHash: hashPassword(parsed.data.pin) } });
+  await prisma.adultUser.update({ where: { id: adult.id }, data: { familyPinHash: await hashPassword(parsed.data.pin) } });
   req.session.familyPinFails = 0;
   req.session.familyPinLockedUntil = undefined;
   req.session.familyUnlockedUntil = Date.now() + FAMILY_UNLOCK_MS;
@@ -86,7 +87,7 @@ familyRouter.post("/unlock", requireAuth, async (req, res) => {
     res.status(403).json({ error: "family_pin_required" });
     return;
   }
-  if (!verifyPassword(parsed.data.pin, adult.familyPinHash)) {
+  if (!(await verifyPassword(parsed.data.pin, adult.familyPinHash))) {
     const fails = (req.session.familyPinFails ?? 0) + 1;
     req.session.familyPinFails = fails;
     if (fails >= MAX_FAILS) {

@@ -22,7 +22,7 @@ authRouter.post("/register", async (req, res) => {
     return;
   }
 
-  const passwordHash = hashPassword(password);
+  const passwordHash = await hashPassword(password);
   const adult = await prisma.adultUser.create({ data: { email, passwordHash } });
 
   // Nunca se devuelve passwordHash en la respuesta.
@@ -40,7 +40,7 @@ authRouter.post("/login", async (req, res) => {
   const adult = await prisma.adultUser.findUnique({ where: { email } });
 
   // Mensaje genérico en ambos casos — no revela si el correo existe o no.
-  if (!adult || !verifyPassword(password, adult.passwordHash)) {
+  if (!adult || !(await verifyPassword(password, adult.passwordHash))) {
     res.status(401).json({ error: "invalid_credentials" });
     return;
   }

@@ -4,6 +4,7 @@ import { socialCheckInRouter, socialConsentRouter } from "./routes/social.js";
 import express from "express";
 import type { NextFunction, Request, Response } from "express";
 import cors from "cors";
+import helmet from "helmet";
 import { authRouter } from "./routes/auth.js";
 import { consentRouter } from "./routes/consent.js";
 import { childrenRouter } from "./routes/children.js";
@@ -21,6 +22,7 @@ import {
 import { homeSummaryRouter } from "./routes/homeSummary.js";
 import { skillPathRouter } from "./routes/skillPath.js";
 import { sessionMiddleware } from "./auth/session.js";
+import { joinCodeLimiter, loginLimiter, passwordCheckLimiter, registerLimiter } from "./auth/rateLimit.js";
 import { checkInsRouter } from "./routes/checkIns.js";
 import { reviewRouter } from "./routes/review.js";
 import { homeGamesRouter, reflectionRouter } from "./routes/reflection.js";
@@ -28,8 +30,21 @@ import { childClassroomRouter, schoolRouter } from "./routes/school.js";
 
 export const app = express();
 
+// En AWS el servidor queda detrás de un balanceador / CloudFront que termina HTTPS: sin esto
+// Express ve la conexión como HTTP, nunca manda la cookie `secure` y el login no persiste.
+// También hace que el límite de intentos use la IP real del cliente y no la del proxy.
+if (process.env.NODE_ENV === "production") {
+  if (!process.env.CLIENT_ORIGIN) {
+    throw new Error("CLIENT_ORIGIN es obligatoria en producción (dominio del cliente para CORS).");
+  }
+  app.set("trust proxy", 1);
+}
+
 // El cliente vive en otro puerto (Vite) y necesita mandar la cookie de
 // sesión — sin credentials:true aquí, el login nunca persistiría.
+// Cabeceras de seguridad (specs/023): nosniff, sin iframes ajenos (clickjacking), HSTS, sin
+// referrer hacia otros sitios, y sin delatar «X-Powered-By: Express».
+app.use(helmet());
 app.use(
   cors({
     origin: process.env.CLIENT_ORIGIN ?? "http://localhost:5173",
@@ -42,6 +57,12 @@ app.use(sessionMiddleware);
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true });
 });
+
+app.post("/api/auth/login", loginLimiter);
+app.post("/api/auth/register", registerLimiter);
+app.put("/api/family/pin", passwordCheckLimiter);
+app.post("/api/school/join", joinCodeLimiter);
+app.post("/api/children/:childId/classroom", joinCodeLimiter);
 
 app.use("/api/auth", authRouter);
 app.use("/api/consent", consentRouter);
@@ -78,6 +99,14 @@ app.use((_req, res) => {
 // defecto de Express — el cliente recibía un body vacío sin poder saber qué
 // pasó. Nunca se expone el mensaje/stack real al cliente, solo se loguea.
 app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
+  // Errores del propio cliente al mandar el body (JSON mal formado, demasiado grande): son 4xx,
+  // no fallas del servidor — antes respondían 500 y llenaban el log de errores (specs/023).
+  const status = (err as { status?: number; type?: string } | null)?.status;
+  if (typeof status === "number" && status >= 400 && status < 500) {
+    const type = (err as { type?: string }).type;
+    res.status(status).json({ error: type === "entity.too.large" ? "payload_too_large" : "invalid_body" });
+    return;
+  }
   console.error(err);
   res.status(500).json({ error: "internal_error" });
 });

@@ -10,6 +10,7 @@ function errorMessage(err: unknown, mode: "login" | "register", lang: Lang): str
     const code = (err.body as { error?: string } | null)?.error;
     if (code === "email_already_registered") return t(lang, "authErrEmailTaken");
     if (code === "invalid_credentials") return t(lang, "authErrInvalidCredentials");
+    if (code === "too_many_attempts") return t(lang, "authErrTooManyAttempts");
     if (code === "invalid_payload") {
       return mode === "register" ? t(lang, "authErrInvalidPayloadRegister") : t(lang, "authErrInvalidPayloadLogin");
     }

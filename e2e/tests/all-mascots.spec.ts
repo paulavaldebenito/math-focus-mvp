@@ -1,12 +1,9 @@
-import { test, type Page } from "@playwright/test";
+import { test } from "@playwright/test";
+import { finishPlacementAssessment, finishPracticeSession } from "./helpers/practice.js";
 
 // Script de una sola vez — crea una cuenta por mascota y captura Home real.
 
 test.use({ channel: "chrome" });
-
-function enabledOption(page: Page) {
-  return page.locator(".option-btn:not([disabled])").first();
-}
 
 const COMPANIONS = ["Capi", "Búho", "Zorro", "Conejo"];
 
@@ -43,14 +40,7 @@ for (const companion of COMPANIONS) {
   await page.getByRole("heading", { name: "Vamos a conocernos" }).waitFor();
     await page.getByRole("button", { name: "Empezar" }).click();
 
-    const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
-    for (let i = 0; i < 10; i++) {
-      if (await doneAssessment.isVisible()) break;
-      const option = enabledOption(page);
-      await Promise.race([doneAssessment.waitFor({ state: "visible" }), option.waitFor({ state: "visible" })]);
-      if (await doneAssessment.isVisible()) break;
-      await option.click({ timeout: 3000 }).catch(() => {});
-    }
+    await finishPlacementAssessment(page);
     await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
   // El mapa de habilidades reemplazó al botón directo de practicar: se elige
@@ -65,27 +55,7 @@ for (const companion of COMPANIONS) {
     await page.getByRole("heading", { name: "Antes de empezar" }).waitFor();
     await page.getByRole("button", { name: "Empezar ahora" }).click();
 
-    const doneSession = page.getByRole("heading", { name: "¡Práctica terminada!" });
-    const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
-    for (let i = 0; i < 20; i++) {
-      if (await doneSession.isVisible()) break;
-      const option = enabledOption(page);
-      await Promise.race([
-        doneSession.waitFor({ state: "visible" }),
-        pauseDecline.waitFor({ state: "visible" }),
-        option.waitFor({ state: "visible" }),
-      ]);
-      if (await doneSession.isVisible()) break;
-      if (await pauseDecline.isVisible().catch(() => false)) {
-        await pauseDecline.click({ timeout: 3000 }).catch(() => {});
-        continue;
-      }
-      await option.click({ timeout: 3000 }).catch(() => {});
-      const continueBtn = page.getByRole("button", { name: "Continuar" });
-      await continueBtn.waitFor({ state: "visible", timeout: 5000 }).catch(() => {});
-      if (!(await continueBtn.isVisible())) continue;
-      await continueBtn.click();
-    }
+    await finishPracticeSession(page);
     await page.getByRole("button", { name: "Volver al inicio" }).click();
 
     await page.getByRole("heading").first().waitFor();

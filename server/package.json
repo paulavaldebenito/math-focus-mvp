@@ -20,10 +20,12 @@
     "@prisma/client": "^7.9.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
     "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
     "pg": "^8.23.0",
     "prisma": "^7.9.1",
-    "zod": "^4.4.3"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",

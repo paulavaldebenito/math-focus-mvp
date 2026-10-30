@@ -1,4 +1,5 @@
 import { test, type Page } from "@playwright/test";
+import { finishPlacementAssessment, finishPracticeSession } from "./helpers/practice.js";
 
 // Script de una sola vez para tomar capturas del flujo real con el nuevo
 // reskin — no forma parte de la suite de regresión, se puede borrar después.
@@ -46,14 +47,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
   await page.screenshot({ path: "screenshots/04-assessment-intro.png" });
   await page.getByRole("button", { name: "Empezar" }).click();
 
-  const doneAssessment = page.getByRole("heading", { name: "¡Listo!" });
-  for (let i = 0; i < 10; i++) {
-    if (await doneAssessment.isVisible()) break;
-    const option = enabledOption(page);
-    await Promise.race([doneAssessment.waitFor({ state: "visible" }), option.waitFor({ state: "visible" })]);
-    if (await doneAssessment.isVisible()) break;
-    await option.click();
-  }
+  await finishPlacementAssessment(page);
   await page.screenshot({ path: "screenshots/05-assessment-outro.png" });
   await page.getByRole("button", { name: "Vamos a practicar" }).click();
 
@@ -80,27 +74,7 @@ test("captura de pantallas con el reskin Lego", async ({ page }) => {
   await page.getByRole("button", { name: "Continuar" }).click();
 
   // Home.
-  const doneSession = page.getByRole("heading", { name: "¡Práctica terminada!" });
-  const pauseDecline = page.getByRole("button", { name: "Prefiero seguir" });
-  for (let i = 0; i < 20; i++) {
-    if (await doneSession.isVisible()) break;
-    const option = enabledOption(page);
-    await Promise.race([
-      doneSession.waitFor({ state: "visible" }),
-      pauseDecline.waitFor({ state: "visible" }),
-      option.waitFor({ state: "visible" }),
-    ]);
-    if (await doneSession.isVisible()) break;
-    if (await pauseDecline.isVisible().catch(() => false)) {
-      await pauseDecline.click({ timeout: 3000 }).catch(() => {});
-      continue;
-    }
-    await option.click({ timeout: 3000 }).catch(() => {});
-    const continueBtn = page.getByRole("button", { name: "Continuar" });
-    await continueBtn.waitFor({ state: "visible", timeout: 5000 }).catch(() => {});
-    if (!(await continueBtn.isVisible())) continue;
-    await continueBtn.click();
-  }
+  await finishPracticeSession(page);
   await page.screenshot({ path: "screenshots/09-session-done.png" });
   await page.getByRole("button", { name: "Volver al inicio" }).click();
 

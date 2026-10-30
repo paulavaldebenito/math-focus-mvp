@@ -1,8 +1,22 @@
 :root {
-  /* Letra de toda la app: Comic Sans (Windows/Mac). En iPhone, iPad y
-     Android no viene instalada: ahí se usa Comic Neue (Google Fonts, cargada
-     en index.html), su versión libre casi idéntica. */
-  --font-app: "Comic Sans MS", "Comic Sans", "Comic Neue", "Chalkboard SE", sans-serif;
+  /* Letra de toda la app: Comic Neue, la misma en computador, iPhone y Android
+     (antes se prefería Comic Sans, que solo existe en computador, y la app se veía
+     distinta en el celular). Va dentro de la app (@fontsource, importada en
+     main.tsx): no depende de Google Fonts ni le manda a Google la IP de los niños. */
+  --font-app: "Comic Neue", "Comic Sans MS", "Chalkboard SE", sans-serif;
+
+  /* Escala de letra única de la app — ningún texto usa otro tamaño. rem = 19.2 px
+     (ver `html` abajo). Nada baja de --text-sm (~17 px): por debajo, a un niño que
+     recién lee le cuesta. Emojis, dibujos y avatares no son texto y no la usan. */
+  --text-sm: 0.875rem;  /* ~17 px: etiquetas, tablas y datos secundarios (adultos) */
+  --text-md: 1rem;      /* ~19 px: texto general, formularios */
+  --text-lg: 1.15rem;   /* ~22 px: botones principales */
+  /* Todo lo que el niño lee al practicar —pregunta, alternativas, feedback, pista,
+     «así se resuelve», pasos— va en UN tamaño: ~22 px en celular, hasta 25 px en
+     pantallas grandes. La pregunta se distingue por la negrita, no por el tamaño. */
+  --text-read: clamp(1.15rem, 1rem + 0.8vw, 1.3rem);
+  --text-h2: 1.3rem;    /* ~25 px: subtítulos, cifras destacadas */
+  --text-h1: clamp(1.4rem, 1.15rem + 1.2vw, 1.75rem); /* ~27 px en celular */
   --ground: #FBF3E3;
   --surface: #FFFFFF;
   --border: #E8D9B8;
@@ -113,13 +127,13 @@ h1, h2, h3 {
 
 button {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: var(--text-md);
   cursor: pointer;
 }
 
 input, select, textarea {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: var(--text-md);
 }
 
 button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-visible {
@@ -144,7 +158,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
   color: var(--ink-soft, #5b6476);
   border-radius: 999px;
   padding: 0.45rem 1rem;
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
   cursor: pointer;
 }
 .family-alert-dot {
@@ -182,7 +196,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
 }
 .week-card h3 {
   margin: 0 0 0.25rem;
-  font-size: 1rem;
+  font-size: var(--text-md);
 }
 .week-card p {
   margin: 0.25rem 0;
@@ -197,7 +211,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .week-card.status-sin_datos,
 .week-card.status-desactivado { border-color: #d9dee8; background: #f7f8fb; }
 .week-link {
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
 }
 .social-signal {
   border-radius: 16px;
@@ -210,7 +224,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .social-signal h3 { margin-top: 0; }
 .social-signal h4 { margin: 0.9rem 0 0.25rem; }
 .table-scroll { overflow-x: auto; }
-.social-history { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.social-history { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
 .social-history caption { text-align: left; font-weight: 700; padding: 0.5rem 0; }
 .social-history th, .social-history td { padding: 0.4rem 0.5rem; border-bottom: 1px solid #e6e9f0; text-align: left; }
 .plan-teaser ul { text-align: left; }
@@ -230,8 +244,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, [tabindex]:focus-vis
 /* Repaso en el mapa (specs/020). */
 .skill-review { margin: 0 0 1.5rem; padding: 1rem; border-radius: 20px; background: var(--brand-bg); }
 .skill-review .skill-axis-header { margin-top: 0; }
-.skill-review-hint { margin: 0 0 0.75rem; font-size: 0.95rem; }
-.skill-node-after-review { display: inline-block; margin-top: 0.25rem; font-size: 0.8rem; opacity: 0.8; }
+.skill-review-hint { margin: 0 0 0.75rem; font-size: var(--text-sm); }
+.skill-node-after-review { display: inline-block; margin-top: 0.25rem; font-size: var(--text-sm); opacity: 0.8; }
 .placement-list { margin: 0.5rem 0 0.75rem; padding-left: 1.25rem; }
 .placement-list li { margin-bottom: 0.35rem; }
 .assessment-dont-know { margin-top: 0.25rem; }

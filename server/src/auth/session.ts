@@ -1,5 +1,6 @@
 import session from "express-session";
 import type { RequestHandler } from "express";
+import { PrismaSessionStore } from "./sessionStore.js";
 
 declare module "express-session" {
   interface SessionData {
@@ -11,12 +12,21 @@ const secret = process.env.SESSION_SECRET;
 if (!secret) {
   throw new Error("SESSION_SECRET no está definida. Copia .env.example a .env.");
 }
+// En producción, un secreto corto o el de ejemplo permitiría falsificar cookies de sesión.
+if (
+  process.env.NODE_ENV === "production" &&
+  (secret.length < 32 || secret.startsWith("reemplazar-con"))
+) {
+  throw new Error("SESSION_SECRET de producción debe ser propio y tener al menos 32 caracteres.");
+}
 
-/// MVP: MemoryStore (por defecto). No apto para producción con más de un
-/// proceso — pendiente decidir un store persistente (ej. sesiones en
-/// Postgres) antes de desplegar. Ver README.
+/// Las sesiones viven en Postgres (tabla `http_session`, migración 20261027180000), no en
+/// memoria: así un reinicio o despliegue no cierra la sesión de todas las familias y el
+/// servidor puede correr en más de una instancia (specs/021).
 export const sessionMiddleware = session({
   secret,
+  // Borra sesiones vencidas cada 15 min; en pruebas no, para no dejar timers vivos.
+  store: new PrismaSessionStore({ pruneIntervalMs: process.env.NODE_ENV === "test" ? false : 15 * 60 * 1000 }),
   name: "mathfocus.sid",
   resave: false,
   saveUninitialized: false,

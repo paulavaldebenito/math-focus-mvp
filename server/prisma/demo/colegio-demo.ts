@@ -34,7 +34,7 @@ const NAMES = ["Agustina", "Benjamín", "Catalina", "Diego", "Emilia", "Felipe",
 const INITIALS = "ABCDEFGHIJKLMNOPRSTUV";
 
 async function adult(email: string) {
-  return prisma.adultUser.upsert({ where: { email }, create: { email, passwordHash: hashPassword(PASSWORD) }, update: {} });
+  return prisma.adultUser.upsert({ where: { email }, create: { email, passwordHash: await hashPassword(PASSWORD) }, update: {} });
 }
 
 async function wipe() {
@@ -74,8 +74,8 @@ async function wipe() {
 async function sofia(schoolId: string) {
   const fam = await prisma.adultUser.upsert({
     where: { email: "demo.sofia@example.test" },
-    create: { email: "demo.sofia@example.test", passwordHash: hashPassword(PASSWORD), familyPinHash: hashPassword("2468"), plan: "familia" },
-    update: { familyPinHash: hashPassword("2468"), plan: "familia" },
+    create: { email: "demo.sofia@example.test", passwordHash: await hashPassword(PASSWORD), familyPinHash: await hashPassword("2468"), plan: "familia" },
+    update: { familyPinHash: await hashPassword("2468"), plan: "familia" },
   });
   const consent = await prisma.consent.create({ data: { adultUserId: fam.id, scope: "Datos ficticios de demostración" } });
   const child = await prisma.childProfile.create({
